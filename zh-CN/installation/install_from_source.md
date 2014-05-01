@@ -5,13 +5,13 @@ sort: 2
 
 # 源码安装
 
-## Dependencies
+## 安装依赖
 
-### Overall
+### 基本依赖
 
-- [Go Programming Language](http://golang.org): Version >= 1.2
+- [Go 语言](http://golang.org)：版本 >= 1.2
 
-### Third-party packages
+### 第三方包
 
 - [github.com/codegangsta/cli](https://github.com/codegangsta/cli)
 - [github.com/go-martini/martini](https://github.com/go-martini/martini)
@@ -26,28 +26,28 @@ sort: 2
 - [github.com/robfig/cron](https://github.com/robfig/cron)
 - [github.com/juju2013/goldap](https://github.com/juju2013/goldap)
 
-### Install
+### 安装
 
 ```
-# Check update of gopm
+# 检查更新 gopm
 $ gopm update -v
 
-# Download and build binary
+# 下载并构建二进制
 $ gopm bin -u -v gogs path/to/anywhere
 ```
 
 Or
 
 ```
-# Download and install dependencies
+# 下载并安装依赖
 $ go get -u github.com/gogits/gogs
 
-# Build main program
+# 构建主程序
 $ cd $GOPATH/src/github.com/gogits/gogs
 $ go build
 ```
 
-If you need to enable SQLite3, please delete all related files with Gogs in `$GOPATH/pkg` and do:
+如果您想要启动 SQLite3 请先删除在 `$GOPATH/pkg` 中所有与 Gogs 有关的文件：
 
 ```
 $ go get -u -tags sqlite github.com/gogits/gogs
@@ -55,4 +55,4 @@ $ cd $GOPATH/src/github.com/gogits/gogs
 $ go build -tags sqlite
 ```
 
-See [Configuration and run](configuration_and_run.md) to go further.
+安装完成后可继续参照 [配置与运行](configuration_and_run.md)。

@@ -7,44 +7,45 @@ sort: 3
 
 ## 配置文件
 
-### Default configuration
+### 默认配置文件
 
-The default configuration is saved in `conf/app.ini`, you do **NOT** need to edit it at all.
+默认配置都保存在 `conf/app.ini`，您 **永远不需要** 编辑它。
 
-### Custom configuration
+### 自定义配置文件
 
-So how to do custom configuration if you are not allowed to edit `conf/app.ini`? Well, create `custom/conf/app.ini` then! Overwrite corresponding key in corresponding section in `custom/conf/app.ini`.
+那么，在不允许修改默认配置文件 `conf/app.ini` 的情况下，怎么才能自定义配置呢？很简单，只要创建 `custom/conf/app.ini` 就可以！在 `custom/conf/app.ini` 文件中修改相应选项的值即可。
 
-For example, to change the root path of where repository raw data being stored, add something like follows:
+例如，需要改变仓库根目录的路径：
 
 ```
-RUN_USER= jiahuachen
+[repository]
+ROOT = /home/jiahuachen/gogs-repositories
 ```
 
-Of course, you want to change database setting as well:
+当然，您也可以修改数据库配置：
 
 ```
 [database]
 PASSWD = root
 ```
 
-### Why are we doing this?
+### 为什么要这么做？
 
-Yes, why don't you just edit `conf/app.ini`? The reason is that to keep your custom configuration safe:
+乍一看，这么做有些复杂，但是这么做可以有效地保护您的自定义配置不被破坏：
 
-- For people who install from binary, every time after you ship the program, can just simply copy and paste without re-configuring anything.
-- For people who install from source, we've ruled out the `custom/conf/app.ini` in `.gitignore` so it will not cause changes in version control which you have to do batch of other stuff before updating.
+- 从二进制安装的用户，可以直接替换二进制及其它文件而不至于重新编写自定义配置。
+- 从源码安装的用户，可以避免由于版本管理系统导致的文件修改冲突。
 
 ## 运行 Gogs 服务
 
-### For Developers
+### 开发者模式
 
-- You need to set key `security -> INSTALL_LOCK` to be `true` in file `custom/conf/app.ini` in order to run from source.
-- You can enable live compile by executing `bee run`/`fswatch` in the Gogs source folder
- - Install [bee](https://github.com/beego/bee) tool: `go get -u github.com/beego/bee`
- - Install [fswatch](https://github.com/codeskyblue/fswatch): `go get -u github.com/codeskyblue/fswatch`
+- 您需要在 `custom/conf/app.ini` 文件中将选项 `security -> INSTALL_LOCK` 的值设置为 `true`。
+- 您可以在 Gogs 源码目录使用命令 `bee run`/`fswatch`：
+ - 安装 [bee](https://github.com/beego/bee) 工具：`go get -u github.com/beego/bee`
+ - 安装 [fswatch](https://github.com/codeskyblue/fswatch)：`go get -u github.com/codeskyblue/fswatch`
 
-### For Deployment
+### 部署模式
 
-- Just use `./gogs web`
-- Go to `/install` to do your first-time run configuration.
+- 只需运行 `./gogs web`
+- 然后访问 `/install` 来完成首次运行的配置工作

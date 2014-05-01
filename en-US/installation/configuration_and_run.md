@@ -18,7 +18,8 @@ So how to do custom configuration if you are not allowed to edit `conf/app.ini`?
 For example, to change the root path of where repository raw data being stored, add something like follows:
 
 ```
-RUN_USER= jiahuachen
+[repository]
+ROOT = /home/jiahuachen/gogs-repositories
 ```
 
 Of course, you want to change database setting as well:
