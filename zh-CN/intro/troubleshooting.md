@@ -15,6 +15,10 @@ sort: 2
 
 该错误会发生在 Windows 安装 Git Bash 时未启用 `cmd` 选项，需要重装并启用选项。
 
+#### 无法通过 SSH 操作仓库
+
+- 您的机器上同时有 GitLab 和 Gogs 使用同一个 `authorized_keys` 文件。
+
 ### Register/create user/repository
 
 #### `Repository/User name contains illegal characters`

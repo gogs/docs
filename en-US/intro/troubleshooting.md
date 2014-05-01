@@ -15,6 +15,10 @@ That's because you change the location of Gogs server after a while and the old 
 
 It happens when Windows users install Git Bash without enabling the `cmd` option, please reinstall and enable it.
 
+#### Cannot access repository through SSH
+
+- You use same `authorized_keys` file for both GitLab and Gogs.
+
 ### Register/create user/repository
 
 #### `Repository/User name contains illegal characters`

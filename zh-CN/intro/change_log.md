@@ -12,10 +12,12 @@ sort: 1
 - 在公开活动列表显示私有仓库活动 [#148](https://github.com/gogits/gogs/issues/148)
 - 安装页面管理员用户名未进行验证 [#149](https://github.com/gogits/gogs/issues/149)
 - 修改用户名未完全更新权限表 [#150](https://github.com/gogits/gogs/issues/150)
+- 没有 master 分支时发生 panic
 
 #### 新增特性
 
 - 支持用户名包含点 `.` [#91](https://github.com/gogits/gogs/issues/91)
+- 支持 添加/删除 仓库协作者
 
 ### V0.3.1(2014-4-28)
 

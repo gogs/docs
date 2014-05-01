@@ -12,10 +12,12 @@ sort: 1
 - Show private repository activities on public activities list [#148](https://github.com/gogits/gogs/issues/148)
 - Does not verify admin user name in install page [#149](https://github.com/gogits/gogs/issues/149)
 - Does not update all accesses when change user name [#150](https://github.com/gogits/gogs/issues/150)
+- Panic when no master branch
 
 #### Feature
 
 - Support user name contains dot `.` [#91](https://github.com/gogits/gogs/issues/91)
+- Support add/remove repository collaborators
 
 ### V0.3.1(2014-4-28)
 
