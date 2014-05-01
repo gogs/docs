@@ -18,6 +18,7 @@ sort: 1
 
 - 支持用户名包含点 `.` [#91](https://github.com/gogits/gogs/issues/91)
 - 支持 添加/删除 仓库协作者
+- 增加 `server -> ROUTER_LOG` 配置选项来控制路由访问日志
 
 ### V0.3.1(2014-4-28)
 

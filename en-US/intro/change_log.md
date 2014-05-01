@@ -18,6 +18,7 @@ sort: 1
 
 - Support user name contains dot `.` [#91](https://github.com/gogits/gogs/issues/91)
 - Support add/remove repository collaborators
+- Add `server -> ROUTER_LOG` option for controling router log
 
 ### V0.3.1(2014-4-28)
 
