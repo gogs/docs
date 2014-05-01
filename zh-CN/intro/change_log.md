@@ -5,6 +5,18 @@ sort: 1
 
 # 变更日志
 
+### V0.4.0(2014-5-31)
+
+#### Bug 修复
+
+- 在公开活动列表显示私有仓库活动 [#148](https://github.com/gogits/gogs/issues/148)
+- 安装页面管理员用户名未进行验证 [#149](https://github.com/gogits/gogs/issues/149)
+- 修改用户名未完全更新权限表 [#150](https://github.com/gogits/gogs/issues/150)
+
+#### 新增特性
+
+- 支持用户名包含点 `.` [#91](https://github.com/gogits/gogs/issues/91)
+
 ### V0.3.1(2014-4-28)
 
 #### Bug 修复

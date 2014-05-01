@@ -5,6 +5,18 @@ sort: 1
 
 # Change Log
 
+### V0.4.0(2014-5-31)
+
+#### Bug fix
+
+- Show private repository activities on public activities list [#148](https://github.com/gogits/gogs/issues/148)
+- Does not verify admin user name in install page [#149](https://github.com/gogits/gogs/issues/149)
+- Does not update all accesses when change user name [#150](https://github.com/gogits/gogs/issues/150)
+
+#### Feature
+
+- Support user name contains dot `.` [#91](https://github.com/gogits/gogs/issues/91)
+
 ### V0.3.1(2014-4-28)
 
 #### Bug fix
