@@ -1,6 +1,6 @@
 ---
 name: Config and run
-sort: 3
+sort: 4
 ---
 
 # Configuration and run
