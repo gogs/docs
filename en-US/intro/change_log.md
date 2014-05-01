@@ -1,6 +1,6 @@
 ---
 name: Change Log
-sort: 2
+sort: 1
 ---
 
 # Change Log
