@@ -5,7 +5,7 @@
 </h4>
 
 <h4>	
-	<b>支付宝捐赠</b>：<a href="http://me.alipay.com/obahua" target="_blank"><img src="/static/img/alipay.png"></a>
+	<b>支付宝捐赠</b>：<img src="/static/img/alipay.png">
 </h4>
 
 <h4>	
@@ -33,4 +33,4 @@
 
 | 捐赠时间          | 捐赠人     | 金额      | 附言                     |
 | ---------------- |:---------:| --------:| ----------------------- |
-| xxx | xxx     | ¥xxx  |   xxx|
+| 2014-05-01 | codepapa     | ¥199.00  |   多出教程|
