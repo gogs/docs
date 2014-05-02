@@ -19,6 +19,12 @@ sort: 2
 
 我们会在 `v0.4.0` 增加一个 用户-缺陷 关系表来更好地处理和表达它们之间的关系。因此旧版本所产生的数据可能会有统计上的误差，但数据本身是兼容的。
 
+### 仓库
+
+#### Tag
+
+- 当 tag 名称包含 `/` 时会发生 panic。
+
 ### Git
 
 #### `git push` with error `cannot find parent commit of XXX`

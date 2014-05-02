@@ -9,6 +9,7 @@ sort: 1
 
 #### Bug fix
 
+- Cannot migrate repository when use PostgreSQL [#141](https://github.com/gogits/gogs/issues/141)
 - Show private repository activities on public activities list [#148](https://github.com/gogits/gogs/issues/148)
 - Does not verify admin user name in install page [#149](https://github.com/gogits/gogs/issues/149)
 - Does not update all accesses when change user name [#150](https://github.com/gogits/gogs/issues/150)
@@ -19,6 +20,12 @@ sort: 1
 - Support user name contains dot `.` [#91](https://github.com/gogits/gogs/issues/91)
 - Support add/remove repository collaborators
 - Add `server -> ROUTER_LOG` option for controling router log
+- Add `picture -> DISABLE_GRAVATAR` option for disabling Gravatar
+- Add command `gogs dump` for dumping files
+
+#### Other
+
+- Official website online([gogs.io](http://gogs.io))
 
 ### V0.3.1(2014-4-28)
 

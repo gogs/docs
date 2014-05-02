@@ -19,6 +19,12 @@ Undetermined error in Go tip, please use Go 1.2 or Go 1.2.1.
 
 We're going to add a new issue-user relation table for recording statistic information of an issue and a user in a repository in `v0.4.0`, so the current statistic system of issue will be replaced, which program still works with data that are created before `v0.4.0` but has wrong statistic information.
 
+### Repository
+
+#### Tag
+
+- Panic when Tag name contains `/`.
+
 ### Git
 
 #### `git push` with error `cannot find parent commit of XXX`

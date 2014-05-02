@@ -9,6 +9,7 @@ sort: 1
 
 #### Bug 修复
 
+- 使用 PostgreSQL 时无法迁移仓库 [#141](https://github.com/gogits/gogs/issues/141)
 - 在公开活动列表显示私有仓库活动 [#148](https://github.com/gogits/gogs/issues/148)
 - 安装页面管理员用户名未进行验证 [#149](https://github.com/gogits/gogs/issues/149)
 - 修改用户名未完全更新权限表 [#150](https://github.com/gogits/gogs/issues/150)
@@ -19,6 +20,12 @@ sort: 1
 - 支持用户名包含点 `.` [#91](https://github.com/gogits/gogs/issues/91)
 - 支持 添加/删除 仓库协作者
 - 增加 `server -> ROUTER_LOG` 配置选项来控制路由访问日志
+- 增加 `picture -> DISABLE_GRAVATAR` 配置选项来禁止 Gravatar
+- 增加 `gogs dump` 命令用于打包文件
+
+#### 其它变更
+
+- 官方网站上线（[gogs.io](http://gogs.io)）
 
 ### V0.3.1(2014-4-28)
 
