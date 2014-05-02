@@ -23,7 +23,7 @@ We're going to add a new issue-user relation table for recording statistic infor
 
 #### Tag
 
-- Panic when Tag name contains `/`.
+- Panic when Tag name contains `/` [#101](https://github.com/gogits/gogs/issues/101).
 
 ### Git
 

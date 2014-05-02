@@ -23,7 +23,7 @@ sort: 2
 
 #### Tag
 
-- 当 tag 名称包含 `/` 时会发生 panic。
+- 当 tag 名称包含 `/` 时会发生 panic [#101](https://github.com/gogits/gogs/issues/101)。
 
 ### Git
 

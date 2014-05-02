@@ -14,6 +14,7 @@ sort: 1
 - 安装页面管理员用户名未进行验证 [#149](https://github.com/gogits/gogs/issues/149)
 - 修改用户名未完全更新权限表 [#150](https://github.com/gogits/gogs/issues/150)
 - 没有 master 分支时发生 panic
+- 当评论者不是仓库拥有者时，会跳转至 404 页面 [#159](https://github.com/gogits/gogs/issues/159)
 
 #### 新增特性
 
@@ -26,6 +27,7 @@ sort: 1
 #### 其它变更
 
 - 官方网站上线（[gogs.io](http://gogs.io)）
+- 支持通过 Vagrant 安装（[备注](https://github.com/geerlingguy/ansible-vagrant-examples/tree/master/gogs)）
 
 ### V0.3.1(2014-4-28)
 
@@ -78,7 +80,6 @@ sort: 1
 - 支持 `go get` 的 `meta` 标签
 - 支持设置默认分支
 - 支持 HTTP(S) 推送
-- 支持 Docker 部署（[备注](https://github.com/gogits/gogs/tree/master/dockerfiles)）
 - 支持在指定分支根据关键字搜索 commit
 - 支持私有仓库
 - 支持迁移和镜像 公开/私有 仓库
@@ -90,6 +91,7 @@ sort: 1
 #### 其它变更
 
 - 服务端和客户端的 Git 版本要求提升至 1.6.6（用于支持 Smart HTTP）
+- 支持 Docker 部署（[备注](https://github.com/gogits/gogs/tree/master/dockerfiles)）
 
 ### V0.2.0(2014-4-1)
 

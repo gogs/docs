@@ -14,6 +14,7 @@ sort: 1
 - Does not verify admin user name in install page [#149](https://github.com/gogits/gogs/issues/149)
 - Does not update all accesses when change user name [#150](https://github.com/gogits/gogs/issues/150)
 - Panic when no master branch
+- Redirect to 404 page when commenter is not the repository owner [#159](https://github.com/gogits/gogs/issues/159)
 
 #### Feature
 
@@ -26,6 +27,7 @@ sort: 1
 #### Other
 
 - Official website online([gogs.io](http://gogs.io))
+- Support install with Vagrant([note](https://github.com/geerlingguy/ansible-vagrant-examples/tree/master/gogs))
 
 ### V0.3.1(2014-4-28)
 
@@ -78,7 +80,6 @@ sort: 1
 - Support `go get` in `meta` block
 - Support setting default branch
 - Support HTTP(S) push
-- Support deploy with Docker([note](https://github.com/gogits/gogs/tree/master/dockerfiles))
 - Support search commits by keyword in specific branch
 - Support private repository
 - Support migrate and mirror public/private repository
@@ -89,6 +90,7 @@ sort: 1
 
 #### Other
 
+- Support deploy with Docker([note](https://github.com/gogits/gogs/tree/master/dockerfiles))
 - Git version requirement for both server and client sides become v1.6.6(Smart HTTP support).
 
 ### V0.2.0(2014-4-1)
