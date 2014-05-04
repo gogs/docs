@@ -14,6 +14,7 @@ sort: 1
 - Does not verify admin user name in install page [#149](https://github.com/gogits/gogs/issues/149)
 - Does not update all accesses when change user name [#150](https://github.com/gogits/gogs/issues/150)
 - Panic when no master branch
+- Panic when delete a branch [#155](https://github.com/gogits/gogs/issues/155)
 - Redirect to 404 page when commenter is not the repository owner [#159](https://github.com/gogits/gogs/issues/159)
 
 #### Feature

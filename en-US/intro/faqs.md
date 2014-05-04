@@ -5,6 +5,23 @@ sort: 3
 
 # FAQs
 
+### Deployment
+
+#### How use Nginx with Reverse Proxy?
+
+Add following `server` section inside `http` section in `nginx.conf` and reload configuration:
+
+```
+server {
+    listen 80;
+    server_name git.crystalnetwork.us;
+
+    location / {
+        proxy_pass http://localhost:3000;
+    }
+}
+```
+
 ### Administration
 
 #### How to become an administrator?

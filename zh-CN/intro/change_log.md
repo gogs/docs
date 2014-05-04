@@ -14,6 +14,7 @@ sort: 1
 - 安装页面管理员用户名未进行验证 [#149](https://github.com/gogits/gogs/issues/149)
 - 修改用户名未完全更新权限表 [#150](https://github.com/gogits/gogs/issues/150)
 - 没有 master 分支时发生 panic
+- 删除分支时发生 panic [#155](https://github.com/gogits/gogs/issues/155)
 - 当评论者不是仓库拥有者时，会跳转至 404 页面 [#159](https://github.com/gogits/gogs/issues/159)
 
 #### 新增特性
