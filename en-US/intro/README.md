@@ -16,7 +16,7 @@ More importantly, Gogs only needs one binary to setup your own project hosting o
 
 ## Requirements
 
-- Web Framework: [github.com/codegangsta/martini](https://github.com/codegangsta/martini)
+- Web Framework: [github.com/go-martini/martini](https://github.com/go-martini/martini)
 - UI Framework: [TODC Bootstrap](http://todc.github.io/todc-bootstrap/) + [Font Awesome](http://fontawesome.io/)
 - ORM: [github.com/lunny/xorm](https://github.com/lunny/xorm)
 - Database Driver: [github.com/go-sql-driver/mysql](https://github.com/go-sql-driver/mysql) or [github.com/lib/pq](https://github.com/lib/pq) or [github.com/mattn/go-sqlite3](https://github.com/mattn/go-sqlite3)
