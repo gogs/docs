@@ -17,13 +17,17 @@ sort: 1
 - 删除分支时发生 panic [#155](https://github.com/gogits/gogs/issues/155)
 - 当评论者不是仓库拥有者时，会跳转至 404 页面 [#159](https://github.com/gogits/gogs/issues/159)
 
+#### 功能改进
+
+- 允许通过设置环境变量 `GOGS_CONFIG` 来加载全局配置文件，该加载操作发生在加载 `custom/conf/app.ini` 之前 [#145](https://github.com/gogits/gogs/issues/145)
+
 #### 新增特性
 
 - 支持用户名包含点 `.` [#91](https://github.com/gogits/gogs/issues/91)
 - 支持 添加/删除 仓库协作者
 - 增加 `server -> ROUTER_LOG` 配置选项来控制路由访问日志
 - 增加 `picture -> DISABLE_GRAVATAR` 配置选项来禁止 Gravatar
-- 增加 `gogs dump` 命令用于打包文件
+- 增加 `gogs dump` 命令用于打包文件和数据库
 
 #### 其它变更
 

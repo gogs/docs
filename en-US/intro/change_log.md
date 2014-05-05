@@ -17,13 +17,17 @@ sort: 1
 - Panic when delete a branch [#155](https://github.com/gogits/gogs/issues/155)
 - Redirect to 404 page when commenter is not the repository owner [#159](https://github.com/gogits/gogs/issues/159)
 
+#### Improvement
+
+- Able to set `GOGS_CONFIG` envrionment variable to load global configuration file before loading `custom/conf/app.ini` [#145](https://github.com/gogits/gogs/issues/145)
+
 #### Feature
 
 - Support user name contains dot `.` [#91](https://github.com/gogits/gogs/issues/91)
 - Support add/remove repository collaborators
 - Add `server -> ROUTER_LOG` option for controling router log
 - Add `picture -> DISABLE_GRAVATAR` option for disabling Gravatar
-- Add command `gogs dump` for dumping files
+- Add command `gogs dump` for dumping files and database
 
 #### Other
 
