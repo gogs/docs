@@ -20,6 +20,7 @@ sort: 1
 #### Improvement
 
 - Able to set `GOGS_CONFIG` envrionment variable to load global configuration file before loading `custom/conf/app.ini` [#145](https://github.com/gogits/gogs/issues/145)
+- Able to unbind social account from database
 
 #### Feature
 

@@ -20,6 +20,7 @@ sort: 1
 #### 功能改进
 
 - 允许通过设置环境变量 `GOGS_CONFIG` 来加载全局配置文件，该加载操作发生在加载 `custom/conf/app.ini` 之前 [#145](https://github.com/gogits/gogs/issues/145)
+- 允许在数据库中取消社交帐号的关联
 
 #### 新增特性
 
