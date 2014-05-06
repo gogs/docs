@@ -21,14 +21,18 @@ sort: 1
 
 - 允许通过设置环境变量 `GOGS_CONFIG` 来加载全局配置文件，该加载操作发生在加载 `custom/conf/app.ini` 之前 [#145](https://github.com/gogits/gogs/issues/145)
 - 允许在数据库中取消社交帐号的关联
+- 增加新增评论和在评论中被提醒的邮件提醒
+- 增加当有新评论时会显示在活动列表中
+- 管理面板增加清理未绑定 OAuth 操作
 
 #### 新增特性
 
 - 支持用户名包含点 `.` [#91](https://github.com/gogits/gogs/issues/91)
 - 支持 添加/删除 仓库协作者
-- 增加 `server -> ROUTER_LOG` 配置选项来控制路由访问日志
+- 增加 `server -> DISABLE_ROUTER_LOG` 配置选项来禁止路由访问日志
 - 增加 `picture -> DISABLE_GRAVATAR` 配置选项来禁止 Gravatar
 - 增加 `gogs dump` 命令用于打包文件和数据库
+- 支持 Web 钩子服务 [#98](https://github.com/gogits/gogs/issues/98)
 
 #### 其它变更
 

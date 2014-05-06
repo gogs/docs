@@ -21,14 +21,18 @@ sort: 1
 
 - Able to set `GOGS_CONFIG` envrionment variable to load global configuration file before loading `custom/conf/app.ini` [#145](https://github.com/gogits/gogs/issues/145)
 - Able to unbind social account from database
+- Add mail notification for new comment and mentioned in new comment
+- Add comment on issue activity
+- Add clean unbind OAuthes operation in admin panel
 
 #### Feature
 
 - Support user name contains dot `.` [#91](https://github.com/gogits/gogs/issues/91)
 - Support add/remove repository collaborators
-- Add `server -> ROUTER_LOG` option for controling router log
+- Add `server -> DISABLE_ROUTER_LOG` option for disabling router log
 - Add `picture -> DISABLE_GRAVATAR` option for disabling Gravatar
 - Add command `gogs dump` for dumping files and database
+- Support webhook services [#98](https://github.com/gogits/gogs/issues/98)
 
 #### Other
 
