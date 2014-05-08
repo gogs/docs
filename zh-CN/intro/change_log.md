@@ -24,6 +24,7 @@ sort: 1
 - 增加新增评论和在评论中被提醒的邮件提醒
 - 增加当有新评论时会显示在活动列表中
 - 管理面板增加清理未绑定 OAuth 操作
+- 缺陷管理底层系统
 
 #### 新增特性
 
@@ -33,6 +34,7 @@ sort: 1
 - 增加 `picture -> DISABLE_GRAVATAR` 配置选项来禁止 Gravatar
 - 增加 `gogs dump` 命令用于打包文件和数据库
 - 支持 Web 钩子服务 [#98](https://github.com/gogits/gogs/issues/98)
+- 增加 已读/未读 状态给 Issue
 
 #### 其它变更
 
@@ -43,7 +45,7 @@ sort: 1
 
 #### Bug 修复
 
-- 当 tag 没有作者时会导致 Panic [#92](https://github.com/gogits/gogs/issues/92)
+- 当 tag 没有作者时会导致 panic [#92](https://github.com/gogits/gogs/issues/92)
 - Docker 启动脚本的相关问题 [#124](https://github.com/gogits/gogs/pull/124) [#129](https://github.com/gogits/gogs/pull/129)
 - 单个文件浏览时图片体积过大而导致样式溢出
 

@@ -24,6 +24,7 @@ sort: 1
 - Add mail notification for new comment and mentioned in new comment
 - Add comment on issue activity
 - Add clean unbind OAuthes operation in admin panel
+- Underlying system of issue tracker
 
 #### Feature
 
@@ -33,6 +34,7 @@ sort: 1
 - Add `picture -> DISABLE_GRAVATAR` option for disabling Gravatar
 - Add command `gogs dump` for dumping files and database
 - Support webhook services [#98](https://github.com/gogits/gogs/issues/98)
+- Add read/unread status to issue
 
 #### Other
 
