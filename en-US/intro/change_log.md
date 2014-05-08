@@ -35,6 +35,7 @@ sort: 1
 - Add command `gogs dump` for dumping files and database
 - Support webhook services [#98](https://github.com/gogits/gogs/issues/98)
 - Add read/unread status to issue
+- Add assignee to issue
 
 #### Other
 

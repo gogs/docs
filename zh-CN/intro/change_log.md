@@ -35,6 +35,7 @@ sort: 1
 - 增加 `gogs dump` 命令用于打包文件和数据库
 - 支持 Web 钩子服务 [#98](https://github.com/gogits/gogs/issues/98)
 - 增加 已读/未读 状态给 Issue
+- 增加 Issue 指派人员功能
 
 #### 其它变更
 
