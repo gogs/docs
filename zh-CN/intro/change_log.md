@@ -16,6 +16,7 @@ sort: 1
 - 没有 master 分支时发生 panic
 - 删除分支时发生 panic [#155](https://github.com/gogits/gogs/issues/155)
 - 当评论者不是仓库拥有者时，会跳转至 404 页面 [#159](https://github.com/gogits/gogs/issues/159)
+- 当 Issue 的创建者已不存在时，会跳转至 500 页面 [#167](https://github.com/gogits/gogs/issues/167)
 
 #### 功能改进
 

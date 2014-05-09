@@ -16,6 +16,7 @@ sort: 1
 - Panic when no master branch
 - Panic when delete a branch [#155](https://github.com/gogits/gogs/issues/155)
 - Redirect to 404 page when commenter is not the repository owner [#159](https://github.com/gogits/gogs/issues/159)
+- Show 500 page when poster of issue no longer exists [#167](https://github.com/gogits/gogs/issues/167)
 
 #### Improvement
 
