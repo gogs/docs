@@ -11,6 +11,10 @@ sort: 2
 
 That's because you change the location of Gogs server after a while and the old path was hard coded into `~/.ssh/authorized_keys` file.
 
+#### fatal: 'XX/XX.git' does not appear to be a git repository
+
+There was already same key in the `authorized_keys` file, delete the old one and keep the one that was added by Gogs only.
+
 #### `repo.NewRepoContext(fail to set git user.email):`
 
 It happens when Windows users install Git Bash without enabling the `cmd` option, please reinstall and enable it.

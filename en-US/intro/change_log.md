@@ -9,6 +9,7 @@ sort: 1
 
 #### Bug fix
 
+- Cannot clone through SSH with non-default port(22) [#94](https://github.com/gogits/gogs/issues/94)
 - Cannot migrate repository when use PostgreSQL [#141](https://github.com/gogits/gogs/issues/141)
 - Show private repository activities on public activities list [#148](https://github.com/gogits/gogs/issues/148)
 - Does not verify admin user name in install page [#149](https://github.com/gogits/gogs/issues/149)

@@ -11,6 +11,10 @@ sort: 2
 
 这是因为您修改了 Gogs 服务器的路径后导致新的路径与记录在 `~/.ssh/authorized_keys` 文件中的不同。
 
+#### fatal: 'XX/XX.git' does not appear to be a git repository
+
+这是因为 `authorized_keys` 文件已经存在和您添加到 Gogs 中相同的 Key，删除旧的 Key 即可。
+
 #### `repo.NewRepoContext(fail to set git user.email):`
 
 该错误会发生在 Windows 安装 Git Bash 时未启用 `cmd` 选项，需要重装并启用选项。

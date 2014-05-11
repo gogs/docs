@@ -9,6 +9,7 @@ sort: 1
 
 #### Bug 修复
 
+- 当未使用 SSH 默认端口（22）时无法执行克隆操作 [#94](https://github.com/gogits/gogs/issues/94) 
 - 使用 PostgreSQL 时无法迁移仓库 [#141](https://github.com/gogits/gogs/issues/141)
 - 在公开活动列表显示私有仓库活动 [#148](https://github.com/gogits/gogs/issues/148)
 - 安装页面管理员用户名未进行验证 [#149](https://github.com/gogits/gogs/issues/149)
