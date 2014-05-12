@@ -1,6 +1,6 @@
 ---
 name: On Ubuntu
-sort: 3
+sort: 4
 ---
 
 ## Binary install Gogs on Ubuntu 14.04 LTS

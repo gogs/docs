@@ -1,6 +1,6 @@
 ---
 name: Ubuntu 安装
-sort: 3
+sort: 4
 ---
 
 ## 在 Ubuntu 14.04 LTS 上二进制安装

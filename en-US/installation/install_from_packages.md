@@ -1,6 +1,6 @@
 ---
 name: From packages
-sort: 1
+sort: 3
 ---
 
 # Install from packages
