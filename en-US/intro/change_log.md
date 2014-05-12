@@ -28,6 +28,7 @@ sort: 1
 - Add clean unbind OAuthes operation in admin panel
 - Underlying system of issue tracker
 - Able to log message to different adapters by level at same time
+- Show collaborative repositories in dashboard
 
 #### Feature
 

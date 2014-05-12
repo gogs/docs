@@ -47,5 +47,11 @@ Yes, why don't you just edit `conf/app.ini`? The reason is that to keep your cus
 
 ### For Deployment
 
-- Just use `./gogs web`
+- There are 3 ways to start by default:
+	- Plain: just use `./gogs web`
+	- Script: execute `./start.sh` or `./start.bat`
+	- Supervisor: 
+		- Start: `./gogs_supervisord.sh start`
+		- Stop: `./gogs_supervisord.sh stop`
+		- Restart: `./gogs_supervisord.sh restart`
 - Go to `/install` to do your first-time run configuration.

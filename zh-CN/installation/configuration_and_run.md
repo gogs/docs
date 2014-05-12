@@ -47,5 +47,11 @@ PASSWD = root
 
 ### 部署模式
 
-- 只需运行 `./gogs web`
+- 默认支持 3 种方式的启动：
+	- 普通：只需执行 `./gogs web`
+	- 脚本：执行 `./start.sh` 或 `./start.bat`
+	- Supervisor： 
+		- 启动：`./gogs_supervisord.sh start`
+		- 停止：`./gogs_supervisord.sh stop`
+		- 重启：`./gogs_supervisord.sh restart`
 - 然后访问 `/install` 来完成首次运行的配置工作
