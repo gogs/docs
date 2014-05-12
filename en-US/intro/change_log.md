@@ -5,7 +5,7 @@ sort: 1
 
 # Change Log
 
-### V0.4.0(2014-5-31)
+### V0.4.0(2014-6-10)
 
 #### Bug fix
 
@@ -27,6 +27,7 @@ sort: 1
 - Add comment on issue activity
 - Add clean unbind OAuthes operation in admin panel
 - Underlying system of issue tracker
+- Able to log message to different adapters by level at same time
 
 #### Feature
 
@@ -38,11 +39,13 @@ sort: 1
 - Support webhook services [#98](https://github.com/gogits/gogs/issues/98)
 - Add read/unread status to issue
 - Add assignee to issue
+- Add support for adding custom .gitignore and license files by adding them to `custom/conf/gitignore` and `custom/conf/license` [#174](https://github.com/gogits/gogs/issues/174)
 
 #### Other
 
 - Official website online([gogs.io](http://gogs.io))
 - Support install with Vagrant([note](https://github.com/geerlingguy/ansible-vagrant-examples/tree/master/gogs))
+- Support install from AUR packages [#176](https://github.com/gogits/gogs/issues/176)
 
 ### V0.3.1(2014-4-28)
 

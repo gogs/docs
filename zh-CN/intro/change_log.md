@@ -5,7 +5,7 @@ sort: 1
 
 # 变更日志
 
-### V0.4.0(2014-5-31)
+### V0.4.0(2014-6-10)
 
 #### Bug 修复
 
@@ -27,6 +27,7 @@ sort: 1
 - 增加当有新评论时会显示在活动列表中
 - 管理面板增加清理未绑定 OAuth 操作
 - 缺陷管理底层系统
+- 支持同时将日志记录到多个符合条件的适配器
 
 #### 新增特性
 
@@ -38,11 +39,13 @@ sort: 1
 - 支持 Web 钩子服务 [#98](https://github.com/gogits/gogs/issues/98)
 - 增加 已读/未读 状态给 Issue
 - 增加 Issue 指派人员功能
+- 增加自定义 .gitignore 和 license 文件的支持，将新文件增加至 `custom/conf/gitignore` 和 `custom/conf/license` 即可 [#174](https://github.com/gogits/gogs/issues/174)
 
 #### 其它变更
 
 - 官方网站上线（[gogs.io](http://gogs.io)）
 - 支持通过 Vagrant 安装（[备注](https://github.com/geerlingguy/ansible-vagrant-examples/tree/master/gogs)）
+- 支持通过 AUR 包管理安装 [#176](https://github.com/gogits/gogs/issues/176)
 
 ### V0.3.1(2014-4-28)
 
