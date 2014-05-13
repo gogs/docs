@@ -18,6 +18,7 @@ sort: 1
 - 删除分支时发生 panic [#155](https://github.com/gogits/gogs/issues/155)
 - 当评论者不是仓库拥有者时，会跳转至 404 页面 [#159](https://github.com/gogits/gogs/issues/159)
 - 当 Issue 的创建者已不存在时，会跳转至 500 页面 [#167](https://github.com/gogits/gogs/issues/167)
+- 在代码块中使用 @ 符号会被认为是提醒操作 [#178](https://github.com/gogits/gogs/issues/178)
 
 #### 功能改进
 
@@ -40,6 +41,7 @@ sort: 1
 - 支持 Web 钩子服务 [#98](https://github.com/gogits/gogs/issues/98)
 - 增加 已读/未读 状态给 Issue
 - 增加 Issue 指派人员功能
+- 增加文件历史页面 [#166](https://github.com/gogits/gogs/issues/166)
 - 增加自定义 .gitignore 和 license 文件的支持，将新文件增加至 `custom/conf/gitignore` 和 `custom/conf/license` 即可 [#174](https://github.com/gogits/gogs/issues/174)
 
 #### 其它变更

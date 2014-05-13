@@ -18,6 +18,7 @@ sort: 1
 - Panic when delete a branch [#155](https://github.com/gogits/gogs/issues/155)
 - Redirect to 404 page when commenter is not the repository owner [#159](https://github.com/gogits/gogs/issues/159)
 - Show 500 page when poster of issue no longer exists [#167](https://github.com/gogits/gogs/issues/167)
+- Using @ in code block tries to make a mention [#178](https://github.com/gogits/gogs/issues/178)
 
 #### Improvement
 
@@ -40,6 +41,7 @@ sort: 1
 - Support webhook services [#98](https://github.com/gogits/gogs/issues/98)
 - Add read/unread status to issue
 - Add assignee to issue
+- Add history page for file [#166](https://github.com/gogits/gogs/issues/166)
 - Add support for adding custom .gitignore and license files by adding them to `custom/conf/gitignore` and `custom/conf/license` [#174](https://github.com/gogits/gogs/issues/174)
 
 #### Other
