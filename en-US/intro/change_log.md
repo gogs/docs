@@ -43,6 +43,7 @@ sort: 1
 - Add assignee to issue
 - Add history page for file [#166](https://github.com/gogits/gogs/issues/166)
 - Add support for adding custom .gitignore and license files by adding them to `custom/conf/gitignore` and `custom/conf/license` [#174](https://github.com/gogits/gogs/issues/174)
+- Add milestone to issue tracker
 
 #### Other
 

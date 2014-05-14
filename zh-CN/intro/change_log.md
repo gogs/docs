@@ -43,6 +43,7 @@ sort: 1
 - 增加 Issue 指派人员功能
 - 增加文件历史页面 [#166](https://github.com/gogits/gogs/issues/166)
 - 增加自定义 .gitignore 和 license 文件的支持，将新文件增加至 `custom/conf/gitignore` 和 `custom/conf/license` 即可 [#174](https://github.com/gogits/gogs/issues/174)
+- 增加里程碑功能到缺陷追踪
 
 #### 其它变更
 
