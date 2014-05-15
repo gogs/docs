@@ -20,8 +20,3 @@
 
 - Team role: Front and back-end developer.
 - Social network: [Sina Weibo](http://weibo.com/slene) [GitHub](https://github.com/slene) [Twitter](https://twitter.com/slene)
-
-### Codeskyblue
-
-- Team role: Back-end developer.
-- Social network: [Sina Weibo](http://weibo.com/u/2453147494) [GitHub](https://github.com/codeskyblue)
