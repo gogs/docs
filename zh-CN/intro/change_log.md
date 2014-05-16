@@ -33,6 +33,7 @@ sort: 1
 
 #### 新增特性
 
+- 支持 SMTP 用户认证 [#8](https://github.com/gogits/gogs/issues/8)
 - 支持用户名包含点 `.` [#91](https://github.com/gogits/gogs/issues/91)
 - 支持 添加/删除 仓库协作者
 - 增加 `server -> DISABLE_ROUTER_LOG` 配置选项来禁止路由访问日志

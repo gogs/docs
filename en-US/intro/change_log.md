@@ -33,6 +33,7 @@ sort: 1
 
 #### Feature
 
+- Support SMTP authentication [#8](https://github.com/gogits/gogs/issues/8)
 - Support user name contains dot `.` [#91](https://github.com/gogits/gogs/issues/91)
 - Support add/remove repository collaborators
 - Add `server -> DISABLE_ROUTER_LOG` option for disabling router log
@@ -42,7 +43,7 @@ sort: 1
 - Add read/unread status to issue
 - Add assignee to issue
 - Add history page for file [#166](https://github.com/gogits/gogs/issues/166)
-- Add support for adding custom .gitignore and license files by adding them to `custom/conf/gitignore` and `custom/conf/license` [#174](https://github.com/gogits/gogs/issues/174)
+- Support add custom .gitignore and license files by adding them to `custom/conf/gitignore` and `custom/conf/license` [#174](https://github.com/gogits/gogs/issues/174)
 - Add milestone to issue tracker
 
 #### Other
