@@ -45,6 +45,8 @@ sort: 1
 - Add history page for file [#166](https://github.com/gogits/gogs/issues/166)
 - Support add custom .gitignore and license files by adding them to `custom/conf/gitignore` and `custom/conf/license` [#174](https://github.com/gogits/gogs/issues/174)
 - Add milestone to issue tracker
+- Support download tar.gz for releases [#186](https://github.com/gogits/gogs/issues/186)
+
 
 #### Other
 
