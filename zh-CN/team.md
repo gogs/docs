@@ -20,3 +20,8 @@
 
 - 团队角色：前、后端开发者
 - 社交网络：[新浪微博](http://weibo.com/slene) [GitHub](https://github.com/slene) [Twitter](https://twitter.com/slene)
+
+### codeskyblue
+
+- 团队角色: 后端开发者
+- 社交网络：[Github](https://github.com/codeskyblue)
