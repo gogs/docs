@@ -12,4 +12,4 @@ sort: 2
 
 ## Tips
 
-- Login Gogs with OAuth
+- [Login Gogs with OAuth](http://obahua.com/login-gogs-with-oauth/)

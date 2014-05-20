@@ -12,4 +12,4 @@ sort: 2
 
 ## 高阶指南
 
-- 使用 OAuth 登录 Gogs
+- [使用 OAuth 登录 Gogs](http://wuwen.org/article/30/login-gogs-with-oauth.html)
