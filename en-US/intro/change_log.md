@@ -30,6 +30,7 @@ sort: 1
 - Underlying system of issue tracker
 - Able to log message to different adapters by level at same time
 - Show collaborative repositories in dashboard
+- Able to preview option for editing of issue [#204](https://github.com/gogits/gogs/issues/204)
 
 #### Feature
 

@@ -9,6 +9,7 @@ sort: 2
 
 - `v0.2.0`：[Gogs：用二进制才是真正的部署](http://wuwen.org/article/27/gogs-binary-is-what-called-real-deployment.html)
 - `v0.3.0`：[使用 Gogs 搭建私有 Git 托管服务](http://wuwen.org/article/29/setup-your-private-git-hosting-with-gogs.html)
+- `v0.4.0`：基于 Gogs 进行协同工作
 
 ## 高阶指南
 
