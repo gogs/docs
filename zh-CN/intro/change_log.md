@@ -22,7 +22,6 @@ sort: 1
 
 #### 功能改进
 
-- 允许通过设置环境变量 `GOGS_CONFIG` 来加载全局配置文件，该加载操作发生在加载 `custom/conf/app.ini` 之前 [#145](https://github.com/gogits/gogs/issues/145)
 - 允许在数据库中取消社交帐号的关联
 - 增加新增评论和在评论中被提醒的邮件提醒
 - 增加当有新评论时会显示在活动列表中
@@ -31,6 +30,7 @@ sort: 1
 - 支持同时将日志记录到多个符合条件的适配器
 - 在用户首页显示参与协作的项目
 - 增加编辑 Issue 时可进行预览 [#204](https://github.com/gogits/gogs/issues/204)
+- 允许通过设置环境变量 `GOGS_CUSTOM` 来设置全局自定义目录 [#209](https://github.com/gogits/gogs/issues/209)
 
 #### 新增特性
 
@@ -47,6 +47,7 @@ sort: 1
 - 增加自定义 .gitignore 和 license 文件的支持，将新文件增加至 `custom/conf/gitignore` 和 `custom/conf/license` 即可 [#174](https://github.com/gogits/gogs/issues/174)
 - 增加里程碑功能到缺陷追踪
 - 支持下载 tar.gz 格式的发布版本源码 [#186](https://github.com/gogits/gogs/issues/186)
+- 增加 `server -> STATIC_ROOT_PATH` 配置选项来指定自定义模板和静态文件路径 [#209](https://github.com/gogits/gogs/issues/209)
 
 #### 其它变更
 

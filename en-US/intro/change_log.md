@@ -22,7 +22,6 @@ sort: 1
 
 #### Improvement
 
-- Able to set `GOGS_CONFIG` envrionment variable to load global configuration file before loading `custom/conf/app.ini` [#145](https://github.com/gogits/gogs/issues/145)
 - Able to unbind social account from database
 - Add mail notification for new comment and mentioned in new comment
 - Add comment on issue activity
@@ -31,6 +30,7 @@ sort: 1
 - Able to log message to different adapters by level at same time
 - Show collaborative repositories in dashboard
 - Able to preview option for editing of issue [#204](https://github.com/gogits/gogs/issues/204)
+- Able to set `GOGS_CUSTOM` envrionment variable to set global custom path [#209](https://github.com/gogits/gogs/issues/209)
 
 #### Feature
 
@@ -47,6 +47,7 @@ sort: 1
 - Support add custom .gitignore and license files by adding them to `custom/conf/gitignore` and `custom/conf/license` [#174](https://github.com/gogits/gogs/issues/174)
 - Add milestone to issue tracker
 - Support download tar.gz for releases [#186](https://github.com/gogits/gogs/issues/186)
+- Add `server -> STATIC_ROOT_PATH` option for indicating custom template and static file path [#209](https://github.com/gogits/gogs/issues/209)
 
 
 #### Other
