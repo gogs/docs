@@ -31,6 +31,7 @@ sort: 1
 - 在用户首页显示参与协作的项目
 - 增加编辑 Issue 时可进行预览 [#204](https://github.com/gogits/gogs/issues/204)
 - 允许通过设置环境变量 `GOGS_CUSTOM` 来设置全局自定义目录 [#209](https://github.com/gogits/gogs/issues/209)
+- 增加 `log -> ROOT_PATH` 配置选项来自定义日志文件路径 [#209](https://github.com/gogits/gogs/issues/209)
 
 #### 新增特性
 

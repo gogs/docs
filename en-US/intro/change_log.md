@@ -31,6 +31,7 @@ sort: 1
 - Show collaborative repositories in dashboard
 - Able to preview option for editing of issue [#204](https://github.com/gogits/gogs/issues/204)
 - Able to set `GOGS_CUSTOM` envrionment variable to set global custom path [#209](https://github.com/gogits/gogs/issues/209)
+- Add `log -> ROOT_PATH` option for custom log file path [#209](https://github.com/gogits/gogs/issues/209)
 
 #### Feature
 
