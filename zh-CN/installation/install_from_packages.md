@@ -12,6 +12,8 @@ sort: 3
 	- `master` 分支：[链接](https://aur.archlinux.org/packages/gogs-git/)
 	- `dev` 分支：[链接](https://aur.archlinux.org/packages/gogs-git-dev/)
 	- `v0.3.1` 版本：[链接](https://aur.archlinux.org/packages/gogs/)
+	
+能可以到 [Arch Linux Wiki entry](https://wiki.archlinux.org/index.php/Gogs) 查看完整说明。
 
 ### Ubuntu
 
