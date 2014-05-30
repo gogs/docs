@@ -12,7 +12,7 @@ You're free to download up-to-date binary from [gobuild.io](http://gobuild.io/do
 - General builds: provided by [gobuild.io](http://gobuild.io/download/github.com/gogits/gogs).
 - Official builds: 64-bit machine only, with SQLite3, redis, memcache drivers built-in.
 
-### V0.4.0(2014-6-3)
+### V0.4.0(2014-5-31)
 
 - General builds: Windows([i386](http://gobuild.io/github.com/gogits/gogs/v0.4.0/windows/386) [amd64](http://gobuild.io/github.com/gogits/gogs/v0.4.0/windows/amd64)) - Linux([i386](http://gobuild.io/github.com/gogits/gogs/v0.4.0/linux/386) [amd64](http://gobuild.io/github.com/gogits/gogs/v0.4.0/linux/amd64)) - Max OS X([i386](http://gobuild.io/github.com/gogits/gogs/v0.4.0/darwin/386) [amd64](http://gobuild.io/github.com/gogits/gogs/v0.4.0/darwin/amd64))
 - Official builds: 

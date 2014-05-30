@@ -12,7 +12,7 @@ sort: 1
 - 一般构建：由 [gobuild.io](http://gobuild.io/download/github.com/gogits/gogs) 提供技术支持。
 - 官方构建：仅支持 64 位机器，内置 SQLite3、redis 和 memcache 驱动。
 
-### V0.4.0(2014-6-3)
+### V0.4.0(2014-5-31)
 
 - 一般构建：Windows([i386](http://gobuild.io/github.com/gogits/gogs/v0.4.0/windows/386) [amd64](http://gobuild.io/github.com/gogits/gogs/v0.4.0/windows/amd64)) - Linux([i386](http://gobuild.io/github.com/gogits/gogs/v0.4.0/linux/386) [amd64](http://gobuild.io/github.com/gogits/gogs/v0.4.0/linux/amd64)) - Max OS X([i386](http://gobuild.io/github.com/gogits/gogs/v0.4.0/darwin/386) [amd64](http://gobuild.io/github.com/gogits/gogs/v0.4.0/darwin/amd64))
 - 官方构建：
