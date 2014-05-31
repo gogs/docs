@@ -29,4 +29,4 @@
 
 | Donated at       | Donator    | Amount   | Comments               |
 | ---------------- |:---------:| --------:| ----------------------- |
-|  xxx | xxx     | $xxx   |          |
+|  2014-5-31 | Mr. Fanningert     | $50.00   |          |
