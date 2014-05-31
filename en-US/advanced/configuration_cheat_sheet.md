@@ -27,6 +27,7 @@ If you see anything like `%(X)s`, it's the feature powered by [goconfig](https:/
 - `DOMAIN`: Domain name of your server.
 - `ROOT_URL`: Cut out the port number if you deploy Gogs in public domain.
 - `HTTP_PORT`: HTTP port you want Gogs server to listen.
+- `STATIC_ROOT_PATH`: Upper level of template and static file path, default is the path where Gogs is executed.
 
 ## Database
 
@@ -51,8 +52,30 @@ If you see anything like `%(X)s`, it's the feature powered by [goconfig](https:/
 
 ## OAuth
 
+- `ENABLED`: General switch for oAuth, default value is "false"
+
 ## Cache
 
 ## Session
 
 ## Log
+
+- `ROOT_PATH`: Root path for log files
+- `MODE`: Logging mode, default is "console". For multiple modes, use comma to separate it.
+- `LEVEL`: General log level, default is "Trace"
+
+### log.console
+
+- `LEVEL`: Log level for console output. When no value is set, it is general log level.
+
+### log.file
+
+- `LEVEL`: Log level for file output. When no value is set, it is general log level.
+
+### log.conn
+
+- `LEVEL`: Log level for connection output. When no value is set, it is general log level.
+
+### log.smtp
+
+- `LEVEL`: Log level for smtp output. When no value is set, it is general log level.
