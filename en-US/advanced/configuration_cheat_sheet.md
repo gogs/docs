@@ -20,28 +20,47 @@ If you see anything like `%(X)s`, it's the feature powered by [goconfig](https:/
 
 ## Repository
 
-- `ROOT`: Root path of repositories that will be stored for all users.
+- `ROOT`: Root path of repositories that will be stored for all users, default is `~/<user name>/gogs-repositories`.
+- `SCRIPT_TYPE`: The script type your server supports, usually is `bash`, but some customers report that they only have `sh`.
 
 ## Server
 
+- `PROTOCOL`: Either `http` or `https`.
 - `DOMAIN`: Domain name of your server.
-- `ROOT_URL`: Cut out the port number if you deploy Gogs in public domain.
+- `ROOT_URL`: Full URL of Gogs server in public domain.
 - `HTTP_PORT`: HTTP port you want Gogs server to listen.
+- `SSH_PORT`: The SSH port, in case yours is not `22`.
+- `OFFLINE_MODE`: Enable this to not use CDN for static files.
+- `DISABLE_ROUTER_LOG`: Enable this to not print router log.
+- `CERT_FILE`: Cert file path of HTTPS.
+- `KEY_FILE`: Key file path of HTTPS.
 - `STATIC_ROOT_PATH`: Upper level of template and static file path, default is the path where Gogs is executed.
 
 ## Database
+
+- `DB_TYPE`: The database type you choose.
+- `HOST`: Database host address and port.
+- `NAME`: Database name for Gogs.
+- `USER`: Database user name.
+- `PASSWD`: Database password.
+- `SSL_MODE`: For PostgreSQL only.
+- `PATH`: For SQLite3 only, the database file path.
 
 ## Security
 
 - `INSTALL_LOCK`: To indicate whether allow open install page(setting admin account involved so it's a very important value).
 - `SECRET_KEY`: Global secret key for your server security, you'd better change it.
+- `LOGIN_REMEMBER_DAYS`: The days of cookies life time.
 
 ## Service
 
-- `REGISTER_EMAIL_CONFIRM`: This enables mail confirmation of registration, requires enabled `Mailer`.
-- `DISENABLE_REGISTERATION`: Disenables registration which only admin can create account for users.
-- `REQUIRE_SIGNIN_VIEW`: This forces users to log in to view any page.
-- `ENABLE_NOTIFY_MAIL`: This indicates whether send e-mail to watchers of repository when something happens like create issue, requires enabled `Mailer`.
+- `ACTIVE_CODE_LIVE_MINUTES`: The minutes of active code life time.
+- `RESET_PASSWD_CODE_LIVE_MINUTES`: The minutes of reset password code life time.
+- `REGISTER_EMAIL_CONFIRM`: Enable this to ask for mail confirmation of registration, requires enable `Mailer`.
+- `DISENABLE_REGISTERATION`: Disable registration, which only admin can create accounts for users.
+- `REQUIRE_SIGNIN_VIEW`: Enable this to force users to log in to view any page.
+- `ENABLE_CACHE_AVATAR`: Enable this to cache avatar from Gravatar.
+- `ENABLE_NOTIFY_MAIL`: This indicates whether send e-mail to watchers of repository when something happens like create issue, requires enable `Mailer`.
 
 ## Mailer
 
