@@ -5,6 +5,12 @@ sort: 1
 
 # Change Log
 
+### V0.4.2(2014-6-6)
+
+#### Bug fix
+
+- Verbose prefix of gitignore and license files in create repository page [#230](https://github.com/gogits/gogs/issues/230)
+
 ### V0.4.1(2014-6-2)
 
 #### Bug fix

@@ -5,6 +5,12 @@ sort: 1
 
 # 变更日志
 
+### V0.4.2(2014-6-6)
+
+#### Bug 修复
+
+- 创建仓库页面 gitignore 和 license 选项列表不必要的前缀 [#230](https://github.com/gogits/gogs/issues/230)
+
 ### V0.4.1(2014-6-2)
 
 #### Bug 修复
