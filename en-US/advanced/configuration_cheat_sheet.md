@@ -75,13 +75,22 @@ If you see anything like `%(X)s`, it's the feature powered by [goconfig](https:/
 
 ## Cache
 
+- `ADAPTER`: Cache engine adapter, either `momery`, `redis`, or `memcache`. If you want to use `redis` or `memcache`, be sure to rebuild everything with build tags `redis` or `memcahce`: `go build -tags='redis'`.
+- `INTERVAL`: for memory cache only, GC interval in seconds.
+- `HOST`: For redis and memcache, the host address and port number.
+
 ## Session
+
+- `PROVIDER`: Session engine provider, either `memory`, `file`, `redis`, or `mysql`. 
+- `PROVIDER_CONFIG`: For file, it's the root path; for others, it's the host address and port number.
+- `COOKIE_SECURE`: Enable this to force using HTTPS for all session access.
+- `GC_INTERVAL_TIME`: GC interval in seconds.
 
 ## Log
 
-- `ROOT_PATH`: Root path for log files
-- `MODE`: Logging mode, default is "console". For multiple modes, use comma to separate it.
-- `LEVEL`: General log level, default is "Trace"
+- `ROOT_PATH`: Root path for log files.
+- `MODE`: Logging mode, default is `console`. For multiple modes, use comma to separate it.
+- `LEVEL`: General log level, default is `Trace`.
 
 ### log.console
 

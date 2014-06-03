@@ -10,6 +10,7 @@ sort: 1
 #### Bug 修复
 
 - 创建仓库页面 gitignore 和 license 选项列表不必要的前缀 [#230](https://github.com/gogits/gogs/issues/230)
+- 评论长度最大为 255 [#232](https://github.com/gogits/gogs/issues/232)
 
 ### V0.4.1(2014-6-2)
 

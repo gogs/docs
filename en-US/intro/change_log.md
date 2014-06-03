@@ -10,6 +10,7 @@ sort: 1
 #### Bug fix
 
 - Verbose prefix of gitignore and license files in create repository page [#230](https://github.com/gogits/gogs/issues/230)
+- Comment length is limited to 255 [#232](https://github.com/gogits/gogs/issues/232)
 
 ### V0.4.1(2014-6-2)
 
