@@ -75,7 +75,7 @@ If you see anything like `%(X)s`, it's the feature powered by [goconfig](https:/
 
 ## Cache
 
-- `ADAPTER`: Cache engine adapter, either `momery`, `redis`, or `memcache`. If you want to use `redis` or `memcache`, be sure to rebuild everything with build tags `redis` or `memcahce`: `go build -tags='redis'`.
+- `ADAPTER`: Cache engine adapter, either `momery`, `redis`, or `memcache`. If you want to use `redis` or `memcache`, be sure to rebuild everything with build tags `redis` or `memcache`: `go build -tags='redis'`.
 - `INTERVAL`: for memory cache only, GC interval in seconds.
 - `HOST`: For redis and memcache, the host address and port number.
 
