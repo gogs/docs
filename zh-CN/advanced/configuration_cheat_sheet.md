@@ -20,90 +20,90 @@ sort: 1
 
 ## Repository
 
-- `ROOT`: Root path of repositories that will be stored for all users, default is `~/<user name>/gogs-repositories`.
-- `SCRIPT_TYPE`: The script type your server supports, usually is `bash`, but some customers report that they only have `sh`.
+- `ROOT`：用户仓库存储根目录，默认为 `~/<user name>/gogs-repositories`
+- `SCRIPT_TYPE`：系统脚本类型，一般情况下均为 `bash`，但有些用户反应只能使用 `sh`
 
 ## Server
 
-- `PROTOCOL`: Either `http` or `https`.
-- `DOMAIN`: Domain name of your server.
-- `ROOT_URL`: Full URL of Gogs server in public domain.
-- `HTTP_PORT`: HTTP port you want Gogs server to listen.
-- `SSH_PORT`: The SSH port, in case yours is not `22`.
-- `OFFLINE_MODE`: Enable this to not use CDN for static files.
-- `DISABLE_ROUTER_LOG`: Enable this to not print router log.
-- `CERT_FILE`: Cert file path of HTTPS.
-- `KEY_FILE`: Key file path of HTTPS.
-- `STATIC_ROOT_PATH`: Upper level of template and static file path, default is the path where Gogs is executed.
+- `PROTOCOL`：`http` 或 `https`
+- `DOMAIN`：服务器域名
+- `ROOT_URL`：Gogs 应用的完整 URL 路径
+- `HTTP_PORT`：Gogs 应用监听的端口号
+- `SSH_PORT`：SSH 端口号，如果不为 `22` 的话可以在此修改
+- `OFFLINE_MODE`：激活该选项来禁止从 CDN 获取静态资源
+- `DISABLE_ROUTER_LOG`：激活该选项来禁止打印路由日志
+- `CERT_FILE`：HTTPS 授权文件路径
+- `KEY_FILE`：HTTPS 的密钥文件路径
+- `STATIC_ROOT_PATH`：模板文件和静态文件的上级目录，默认为 Gogs 应用的执行路径
 
 ## Database
 
-- `DB_TYPE`: The database type you choose.
-- `HOST`: Database host address and port.
-- `NAME`: Database name for Gogs.
-- `USER`: Database user name.
-- `PASSWD`: Database password.
-- `SSL_MODE`: For PostgreSQL only.
-- `PATH`: For SQLite3 only, the database file path.
+- `DB_TYPE`：数据库类型
+- `HOST`：数据库主机地址与端口
+- `NAME`：Gogs 的数据库名称
+- `USER`：数据库用户名
+- `PASSWD`：数据库密码
+- `SSL_MODE`：仅限 PostgreSQL 使用
+- `PATH`：仅限 SQLite3 使用，数据库文件路径
 
 ## Security
 
-- `INSTALL_LOCK`: To indicate whether allow open install page(setting admin account involved so it's a very important value).
-- `SECRET_KEY`: Global secret key for your server security, you'd better change it.
-- `LOGIN_REMEMBER_DAYS`: The days of cookies life time.
+- `INSTALL_LOCK`：用于指示是否允许访问安装页面（该页面可以设置管理员帐号，因此该选项非常重要）
+- `SECRET_KEY`：全局的秘密密钥，修改该值以确保您的服务器安全
+- `LOGIN_REMEMBER_DAYS`：记住登录的天数
 
 ## Service
 
-- `ACTIVE_CODE_LIVE_MINUTES`: The minutes of active code life time.
-- `RESET_PASSWD_CODE_LIVE_MINUTES`: The minutes of reset password code life time.
-- `REGISTER_EMAIL_CONFIRM`: Enable this to ask for mail confirmation of registration, requires enable `Mailer`.
-- `DISENABLE_REGISTERATION`: Disable registration, which only admin can create accounts for users.
-- `REQUIRE_SIGNIN_VIEW`: Enable this to force users to log in to view any page.
-- `ENABLE_CACHE_AVATAR`: Enable this to cache avatar from Gravatar.
-- `ENABLE_NOTIFY_MAIL`: This indicates whether send e-mail to watchers of repository when something happens like create issue, requires enable `Mailer`.
+- `ACTIVE_CODE_LIVE_MINUTES`：激活码的有效期，单位为分钟
+- `RESET_PASSWD_CODE_LIVE_MINUTES`：重置密码的有效期，单位为分钟
+- `REGISTER_EMAIL_CONFIRM`：激活该选项来要求注册用户必须验证邮箱，要求已启用 `Mailer`
+- `DISENABLE_REGISTERATION`：激活该选项来禁止用户注册功能，只能由管理员创建帐号
+- `REQUIRE_SIGNIN_VIEW`：激活该选项来要求用户必须登录才能浏览任何页面
+- `ENABLE_CACHE_AVATAR`：激活该选项来缓存 Gravatar 的头像
+- `ENABLE_NOTIFY_MAIL`：激活该选项来发送通知邮件给关注者，例如创建 issue 时，要求已启用 `Mailer`
 
 ## Mailer
 
-- `ENABLED`: To indicate whether enable mail service of any.
-- `HOST`: SMTP mail host address.
-- `USER`: User name of system mailer(usually just your e-mail address).
-- `PASSWD`: Password of you mailer.
+- `ENABLED`：用于指示是否激活邮件服务
+- `HOST`：SMTP 主机地址与端口
+- `USER`：邮箱用户名
+- `PASSWD`：邮箱密码
 
 ## OAuth
 
-- `ENABLED`: General switch for oAuth, default value is "false"
+- `ENABLED`：OAuth 服务的基本开关
 
 ## Cache
 
-- `ADAPTER`: Cache engine adapter, either `momery`, `redis`, or `memcache`. If you want to use `redis` or `memcache`, be sure to rebuild everything with build tags `redis` or `memcahce`: `go build -tags='redis'`.
-- `INTERVAL`: for memory cache only, GC interval in seconds.
-- `HOST`: For redis and memcache, the host address and port number.
+- `ADAPTER`：缓存引擎适配器，可以为 `momery`、`redis` 或 `memcache`。如果您使用 `redis` 或 `memcache`，请确保使用 `-tags` 选项重新构建所有依赖，例如：`go build -tags='redis'`
+- `INTERVAL`：仅限内存缓存使用，GC 周期，单位为秒
+- `HOST`：仅限 redis 和 memcache 使用，主机地址和端口号
 
 ## Session
 
-- `PROVIDER`: Session engine provider, either `memory`, `file`, `redis`, or `mysql`. 
-- `PROVIDER_CONFIG`: For file, it's the root path; for others, it's the host address and port number.
-- `COOKIE_SECURE`: Enable this to force using HTTPS for all session access.
-- `GC_INTERVAL_TIME`: GC interval in seconds.
+- `PROVIDER`：Session 引擎提供者，可以是 `memory`、`file`、`redis` 或 `mysql`
+- `PROVIDER_CONFIG`：如果提供者为 file，则为文件根目录；如果为其它提供者，则为主机地址和端口号
+- `COOKIE_SECURE`：激活该选项以要求所有 session 操作均通过 HTTPS
+- `GC_INTERVAL_TIME`：GC 周期，单位为秒
 
 ## Log
 
-- `ROOT_PATH`: Root path for log files.
-- `MODE`: Logging mode, default is `console`. For multiple modes, use comma to separate it.
-- `LEVEL`: General log level, default is `Trace`.
+- `ROOT_PATH`：日志文件的根目录
+- `MODE`：日志记录模式，默认为 `console`。如果想要开启多模式，请使用逗号分割
+- `LEVEL`：基本日志级别，默认为 `Trace`
 
 ### log.console
 
-- `LEVEL`: Log level for console output. When no value is set, it is general log level.
+- `LEVEL`：console 模式的日志级别，如果该值为空，则使用基本日志级别
 
 ### log.file
 
-- `LEVEL`: Log level for file output. When no value is set, it is general log level.
+- `LEVEL`：file 模式的日志级别，如果该值为空，则使用基本日志级别
 
 ### log.conn
 
-- `LEVEL`: Log level for connection output. When no value is set, it is general log level.
+- `LEVEL`：conn 模式的日志级别，如果该值为空，则使用基本日志级别
 
 ### log.smtp
 
-- `LEVEL`: Log level for smtp output. When no value is set, it is general log level.
+- `LEVEL`：smtp 模式的日志级别，如果该值为空，则使用基本日志级别

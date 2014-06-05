@@ -9,8 +9,10 @@ sort: 1
 
 #### Bug fix
 
+- System mail didn't use `mailer -> FROM` as sender name [#214](https://github.com/gogits/gogs/issues/214)
 - Verbose prefix of gitignore and license files in create repository page [#230](https://github.com/gogits/gogs/issues/230)
 - Comment length is limited to 255 [#232](https://github.com/gogits/gogs/issues/232)
+- Cannot create repository with custom gitignore or license files [#237](https://github.com/gogits/gogs/issues/237)
 
 ### V0.4.1(2014-6-2)
 

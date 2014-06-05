@@ -9,8 +9,10 @@ sort: 1
 
 #### Bug 修复
 
+- 系统邮件未使用 `mailer -> FROM` 配置选项的值作为发送者 [#214](https://github.com/gogits/gogs/issues/214)
 - 创建仓库页面 gitignore 和 license 选项列表不必要的前缀 [#230](https://github.com/gogits/gogs/issues/230)
 - 评论长度最大为 255 [#232](https://github.com/gogits/gogs/issues/232)
+- 无法创建使用自定义 gitignore 和 license 文件的仓库 [#237](https://github.com/gogits/gogs/issues/237)
 
 ### V0.4.1(2014-6-2)
 
