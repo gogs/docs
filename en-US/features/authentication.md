@@ -7,10 +7,12 @@ sort: 1
 
 ## LDAP
 
-The following 2 pictures are examples of using LDAP, both in Windows Active Directory servers:
+The following 2 pictures are examples of using LDAP.
+
+Windows Active Directory servers:
 
 ![](/docs/images/ldap_example1.jpg)
 
-Another:
+Novell's eDirectory:
 
 ![](/docs/images/ldap_example2.png)
