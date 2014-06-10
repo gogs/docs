@@ -5,6 +5,17 @@ sort: 1
 
 # Change Log
 
+### V0.5.0(2014-7-8)
+
+#### Bug fix
+
+- Webhook doesn't deliver for SSH pushes [#242](https://github.com/gogits/gogs/issues/242)
+
+#### Improvement
+
+- Add `webhook` section for configuring web hook **task interval** and **deliver timeout**
+- Add download TAR.GZ button in repository viewer.
+
 ### V0.4.2(2014-6-6)
 
 #### Bug fix
