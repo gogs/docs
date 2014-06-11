@@ -16,6 +16,10 @@ sort: 1
 - Add `webhook` section for configuring web hook **task interval** and **deliver timeout**
 - Add download TAR.GZ button in repository viewer.
 
+#### Feature
+
+- Add command `gogs fix location <old path>` to handle Gogs app location change.
+
 ### V0.4.2(2014-6-6)
 
 #### Bug fix
