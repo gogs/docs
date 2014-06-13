@@ -9,16 +9,19 @@ sort: 1
 
 #### Bug 修复
 
+- 浏览由 Gogs 创建的 release 时发生 panic [#197](https://github.com/gogits/gogs/issues/197)
 - 通过 SSH 推送的代码无法触发 Web 钩子 [#242](https://github.com/gogits/gogs/issues/242)
 
 #### 功能改进
 
 - 增加 `webhook` 配置分区来自定义 Web 钩子 **任务检查周期** 和 **发送超时**
 - 增加仓库 TAR.GZ 格式打包下载按钮
+- 当不同 release 具有相同数量的 commit 时，使用创建时间排序 [#199](https://github.com/gogits/gogs/issues/199)
 
 #### 功能改进
 
 - 增加命令 `gogs fix location <old path>` 用于处理 Gogs 应用位置改变
+- 支持编辑 release 以及保存为草稿
 
 ### V0.4.2(2014-6-6)
 

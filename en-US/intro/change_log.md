@@ -9,16 +9,19 @@ sort: 1
 
 #### Bug fix
 
+- Panic when view releases that were created by Gogs [#197](https://github.com/gogits/gogs/issues/197)
 - Webhook doesn't deliver for SSH pushes [#242](https://github.com/gogits/gogs/issues/242)
 
 #### Improvement
 
 - Add `webhook` section for configuring web hook **task interval** and **deliver timeout**
-- Add download TAR.GZ button in repository viewer.
+- Add download TAR.GZ button in repository viewer
+- Sort releases by created time if they have same number of commits [#199](https://github.com/gogits/gogs/issues/199)
 
 #### Feature
 
-- Add command `gogs fix location <old path>` to handle Gogs app location change.
+- Add command `gogs fix location <old path>` to handle Gogs app location change
+- Support edit release and save as draft
 
 ### V0.4.2(2014-6-6)
 
