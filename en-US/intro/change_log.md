@@ -22,6 +22,7 @@ sort: 1
 
 - Add command `gogs fix location <old path>` to handle Gogs app location change
 - Support edit release and save as draft
+- Add cron task monitor panel
 
 ### V0.4.2(2014-6-6)
 

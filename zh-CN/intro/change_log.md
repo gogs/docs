@@ -18,10 +18,11 @@ sort: 1
 - 增加仓库 TAR.GZ 格式打包下载按钮
 - 当不同 release 具有相同数量的 commit 时，使用创建时间排序 [#199](https://github.com/gogits/gogs/issues/199)
 
-#### 功能改进
+#### 新增特性
 
 - 增加命令 `gogs fix location <old path>` 用于处理 Gogs 应用位置改变
 - 支持编辑 release 以及保存为草稿
+- 增加 Cron 任务监控面板
 
 ### V0.4.2(2014-6-6)
 

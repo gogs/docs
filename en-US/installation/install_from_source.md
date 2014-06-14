@@ -24,7 +24,6 @@ sort: 2
 - [github.com/go-xorm/core](http://github.com/go-xorm/core)
 - [github.com/go-xorm/xorm](http://github.com/go-xorm/xorm)
 - [github.com/qiniu/log](https://github.com/qiniu/log)
-- [github.com/robfig/cron](https://github.com/robfig/cron)
 - [github.com/juju2013/goldap](https://github.com/juju2013/goldap)
 
 ### Install
