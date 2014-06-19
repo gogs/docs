@@ -6,8 +6,9 @@ sort: 1
 
 ## Requirements
 
-- [MySQL](http://dev.mysql.com): Version >= 5.1 or [PostgreSQL](http://www.postgresql.org/) or **NOTHING**.
+- [MySQL](http://dev.mysql.com): Version >= 5.1 or [PostgreSQL](http://www.postgresql.org/) or **NOTHING**
 - [git](http://git-scm.com/)(bash): Version >= 1.6.6(both server and client)
+- A functioning SSH server
 
 ### Install Database
 
