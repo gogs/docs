@@ -22,7 +22,10 @@ sort: 1
 
 - Add command `gogs fix location <old path>` to handle Gogs app location change
 - Support edit release and save as draft
-- Add cron task monitor panel
+- Add cron task and running process monitor panel
+- Add database adapter for logging
+- Add delete all inactivate accounts operation in admin panel
+- Add reverse proxy authentication support [#165](https://github.com/gogits/gogs/issues/165)
 
 ### V0.4.2(2014-6-6)
 

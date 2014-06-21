@@ -22,7 +22,10 @@ sort: 1
 
 - 增加命令 `gogs fix location <old path>` 用于处理 Gogs 应用位置改变
 - 支持编辑 release 以及保存为草稿
-- 增加 Cron 任务监控面板
+- 增加 Cron 任务和运行进程监控面板
+- 增加记录日志到数据库选项
+- 管理员面板增加删除所有未激活帐户操作
+- 增加反向代理用户认证支持 [#165](https://github.com/gogits/gogs/issues/165)
 
 ### V0.4.2(2014-6-6)
 

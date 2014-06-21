@@ -23,7 +23,6 @@ sort: 2
 - [github.com/beego/redigo/redis](https://github.com/beego/redigo/redis) or [github.com/beego/memcache](https://github.com/beego/memcache)
 - [github.com/go-xorm/core](http://github.com/go-xorm/core)
 - [github.com/go-xorm/xorm](http://github.com/go-xorm/xorm)
-- [github.com/qiniu/log](https://github.com/qiniu/log)
 - [github.com/juju2013/goldap](https://github.com/juju2013/goldap)
 
 ### Install
