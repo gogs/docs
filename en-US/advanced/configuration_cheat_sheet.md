@@ -20,7 +20,7 @@ If you see anything like `%(X)s`, it's the feature powered by [goconfig](https:/
 
 ## Repository
 
-- `ROOT`: Root path of repositories that will be stored for all users, default is `~/<user name>/gogs-repositories`.
+- `ROOT`: Root path of repositories that will be stored for all users, it has to be absolute path, default is `~/<user name>/gogs-repositories`.
 - `SCRIPT_TYPE`: The script type your server supports, usually is `bash`, but some customers report that they only have `sh`.
 
 ## Server

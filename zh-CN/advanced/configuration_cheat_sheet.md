@@ -20,7 +20,7 @@ sort: 1
 
 ## Repository
 
-- `ROOT`：用户仓库存储根目录，默认为 `~/<user name>/gogs-repositories`
+- `ROOT`：用户仓库存储根目录，必须为绝对路径，默认为 `~/<user name>/gogs-repositories`
 - `SCRIPT_TYPE`：系统脚本类型，一般情况下均为 `bash`，但有些用户反应只能使用 `sh`
 
 ## Server
