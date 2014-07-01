@@ -29,7 +29,7 @@ sort: 2
 
 为了防止不必要的异常，您的用户名或仓库在符合以下任意一条规则时会被认为非法： 
 
-- 名称为 `"raw", "install", "api", "avatar", "user", "help", "stars", "issues", "pulls", "commits", "repo", "template", "admin"`。
+- 名称为 `"raw", "install", "api", "avatar", "user", "org", "help", "stars", "issues", "pulls", "commits", "repo", "template", "admin", "new"`。
 - 名称后缀为 `".git"`。
 
 ### Cache

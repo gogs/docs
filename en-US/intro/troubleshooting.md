@@ -29,7 +29,7 @@ It happens when Windows users install Git Bash without enabling the `cmd` option
 
 In order to prevent unexpected exceptions, your user/repository name will be considered as illegal if they match any of the following rules: 
 
-- Name equals to any word of `"raw", "install", "api", "avatar", "user", "help", "stars", "issues", "pulls", "commits", "repo", "template", "admin"`.
+- Name equals to any word of `"raw", "install", "api", "avatar", "user", "org", "help", "stars", "issues", "pulls", "commits", "repo", "template", "admin", "new"`.
 - Name has suffix `".git"`.
 
 ### Cache
