@@ -11,6 +11,9 @@ sort: 1
 
 - Panic when view releases that were created by Gogs [#197](https://github.com/gogits/gogs/issues/197)
 - Webhook doesn't deliver for SSH pushes [#242](https://github.com/gogits/gogs/issues/242)
+- Not able to serve static files in Windows [#271](https://github.com/gogits/gogs/issues/271)
+- Dashboard issue link is incomplete [#273](https://github.com/gogits/gogs/issues/273)
+- Collaborators are able to change repository settings.
 
 #### Improvement
 

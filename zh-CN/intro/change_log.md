@@ -11,6 +11,9 @@ sort: 1
 
 - 浏览由 Gogs 创建的 release 时发生 panic [#197](https://github.com/gogits/gogs/issues/197)
 - 通过 SSH 推送的代码无法触发 Web 钩子 [#242](https://github.com/gogits/gogs/issues/242)
+- 无法在 Windows 下获取静态文件 [#271](https://github.com/gogits/gogs/issues/271)
+- Dashboard 的 issue 链接显示不完整 [#273](https://github.com/gogits/gogs/issues/273)
+- 协作者能够修改项目设置
 
 #### 功能改进
 
