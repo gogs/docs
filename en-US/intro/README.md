@@ -10,7 +10,7 @@ Gogs(Go Git Service) is a Self Hosted Git Service in the Go Programming Language
 
 ## Purpose
 
-Since we choose to use pure Go implementation of Git manipulation, Gogs certainly supports **ALL platforms**  that Go supports, including Linux, Mac OS X, and Windows with **ZERO** dependency. 
+Since we choose to use a pure Go implementation of Git, Gogs supports **ALL platforms**  that Go supports, including Linux, Mac OS X, and Windows with **ZERO** dependencies.
 
 More importantly, Gogs only needs one binary to setup your own project hosting on the fly!
 
@@ -24,18 +24,18 @@ More importantly, Gogs only needs one binary to setup your own project hosting o
 ## Directory Structure
 
 - `/conf` - configuration files
- - `/content` - global content
- - `/gitignore` - .gitignore files for supported languages
- - `/license` - license files for supported licenses
-- `/models` -  business logics
+- `/content` - global content
+- `/gitignore` - .gitignore files for supported languages
+- `/license` - license files for supported licenses
+- `/models` -  business logic
 - `/modules` - helper modules
- - `/auth` - authorization and forms
- - `/avatar` - avatar cache service
- - `/base` - base functions and types
- - `/cron` - cron tasks
- - `/log` - log wrapper of gogits/log
- - `/mailer` - mail service
- - `/middleware` - custom middlewares  
-- `public`   -  static web elements: CSS, JS, images, fonts
-- `routers` - controller logics
-- `templates`    -  web templates
+- `/auth` - authorization and forms
+- `/avatar` - avatar cache service
+- `/base` - base functions and types
+- `/cron` - cron tasks
+- `/log` - log wrapper of gogits/log
+- `/mailer` - mail service
+- `/middleware` - custom middlewares  
+- `public` - static web elements: CSS, JS, images, fonts
+- `routers` - controller logic
+- `templates` - web templates
