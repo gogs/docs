@@ -1,9 +1,9 @@
 ---
-name: Release and tips
+name: Release notes and tips
 sort: 2
 ---
 
-# Release and tips blogs
+# Release notes and tips
 
 ## Releases
 
