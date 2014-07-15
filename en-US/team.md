@@ -12,8 +12,8 @@
 
 ### Fuxiaohei
 
-- Team role: Front-end developer.
-- Social network: [Sina Weibo](http://weibo.com/fuxiaohei) [GitHub](https://github.com/fuxiaohei)
+- Team role: Front and back-end developer.
+- Social network: [Sina Weibo](http://weibo.com/fuxiaohei) [GitHub](https://github.com/fuxiaohei) [Twitter](https://twitter.com/fuxiaohei)
 
 
 ### Slene
