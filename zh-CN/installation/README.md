@@ -7,7 +7,7 @@ sort: 1
 ## 环境要求
 
 - [MySQL](http://dev.mysql.com)：版本 >= 5.1 或者 [PostgreSQL](http://www.postgresql.org/) 或者 **什么都不需要**
-- [git](http://git-scm.com/)（bash）：版本 >= 1.6.6（服务端和客户端均需）
+- [git](http://git-scm.com/)（bash）：版本 >= 1.8.0（服务端和客户端均需）
 - SSH 服务器
 
 ### 安装数据库

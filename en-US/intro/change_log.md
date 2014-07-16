@@ -30,6 +30,10 @@ sort: 1
 - Add delete all inactivate accounts operation in admin panel
 - Add reverse proxy authentication support [#165](https://github.com/gogits/gogs/issues/165)
 
+#### Other
+
+- Official website brand new design([gogs.io](http://gogs.io))
+
 ### V0.4.2(2014-6-6)
 
 #### Bug fix
