@@ -17,7 +17,7 @@ Gogs supports MySQL, PostgreSQL and SQLite3, based on your choice, install eithe
 - [MySQL](http://dev.mysql.com/downloads/mysql/) (Engine: INNODB)
 - [PostgreSQL](http://www.postgresql.org/download/)
 
-**REMEMBER** use `conf/mysql.sql` to create a database called `gogs`(default). If you create it manually, make sure the encoding is `utf8`.
+**REMEMBER** use `etc/mysql.sql` to create a database called `gogs`(default). If you create it manually, make sure the encoding is `utf8`.
  
 ### Install other requirements
 #### Max OS X
@@ -42,5 +42,5 @@ $ sudo apt-get install git
 
 ## Install Gogs
 
-- [Install from binary](install_from_binary.md)
-- [Install from source](install_from_source.md)
+- [Install from binary](http://gogs.io/docs/installation/install_from_binary.html)
+- [Install from source](http://gogs.io/docs/installation/install_from_source.html)

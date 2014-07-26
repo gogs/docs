@@ -47,6 +47,8 @@ Yes, why don't you just edit `conf/app.ini`? The reason is that to keep your cus
 
 ### For Deployment
 
+**Scripts are in `scripts` directory**
+
 - There are 3 ways to start by default:
 	- Plain: just use `./gogs web`
 	- Script: execute `./start.sh` or `./start.bat`

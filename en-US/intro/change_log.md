@@ -10,16 +10,23 @@ sort: 1
 #### Bug fix
 
 - Panic when view releases that were created by Gogs [#197](https://github.com/gogits/gogs/issues/197)
+- Content lost if user changes milestone or assignee [#216](https://github.com/gogits/gogs/issues/216)
 - Webhook doesn't deliver for SSH pushes [#242](https://github.com/gogits/gogs/issues/242)
 - Not able to serve static files in Windows [#271](https://github.com/gogits/gogs/issues/271)
 - Dashboard issue link is incomplete [#273](https://github.com/gogits/gogs/issues/273)
-- Collaborators are able to change repository settings.
+- Collaborators are able to change repository settings
+- Edit issue label does not require repository owner or collaborator [#288](https://github.com/gogits/gogs/issues/288)
+- Milestone issue stats not update when reopening/closing issue
 
 #### Improvement
 
 - Add `webhook` section for configuring web hook **task interval** and **deliver timeout**
 - Add download TAR.GZ button in repository viewer
 - Sort releases by created time if they have same number of commits [#199](https://github.com/gogits/gogs/issues/199)
+- Add Git version check in start
+- Add more SSH key type verification support [#293](https://github.com/gogits/gogs/pull/293)
+- Allow clickable links in the repository description [#300](https://github.com/gogits/gogs/pull/300)
+- Allow `/:username` as user home page route 
 
 #### Feature
 
@@ -29,6 +36,7 @@ sort: 1
 - Add database adapter for logging
 - Add delete all inactivate accounts operation in admin panel
 - Add reverse proxy authentication support [#165](https://github.com/gogits/gogs/issues/165)
+- Add application level GZIP support by `server -> ENABLE_GZIP` config option.
 
 #### Other
 

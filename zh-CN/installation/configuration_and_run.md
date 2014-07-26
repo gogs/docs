@@ -47,6 +47,8 @@ PASSWD = root
 
 ### 部署模式
 
+**脚本均放置在 `scripts` 目录**
+
 - 默认支持 3 种方式的启动：
 	- 普通：只需执行 `./gogs web`
 	- 脚本：执行 `./start.sh` 或 `./start.bat`

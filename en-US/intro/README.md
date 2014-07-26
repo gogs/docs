@@ -6,36 +6,50 @@ sort: 0
 
 # What is Gogs?
 
-Gogs(Go Git Service) is a Self Hosted Git Service in the Go Programming Language. 
+Gogs(Go Git Service) is a painless self-hosted Git Service written in Go.
 
 ## Purpose
 
-Since we choose to use a pure Go implementation of Git, Gogs supports **ALL platforms**  that Go supports, including Linux, Mac OS X, and Windows with **ZERO** dependencies.
-
-More importantly, Gogs only needs one binary to setup your own project hosting on the fly!
+The goal of this project is to make the easiest, fastest and most painless way to set up a self-hosted Git service. With Go, this can be done in independent binary distribution across **ALL platforms** that Go supports, including Linux, Mac OS X, and Windows.
 
 ## Requirements
 
-- Web Framework: [github.com/go-martini/martini](https://github.com/go-martini/martini)
-- UI Framework: [TODC Bootstrap](http://todc.github.io/todc-bootstrap/) + [Font Awesome](http://fontawesome.io/)
-- ORM: [github.com/lunny/xorm](https://github.com/lunny/xorm)
+- Web Framework: [github.com/Unknwon/macaron](https://github.com/Unknwon/macaron)
+- UI Framework: [GitHub Octicons](https://octicons.github.com/) + [Font Awesome](http://fontawesome.io/)
+- ORM: [github.com/go-xorm/xorm](https://github.com/go-xorm/xorm)
 - Database Driver: [github.com/go-sql-driver/mysql](https://github.com/go-sql-driver/mysql) or [github.com/lib/pq](https://github.com/lib/pq) or [github.com/mattn/go-sqlite3](https://github.com/mattn/go-sqlite3)
 
 ## Directory Structure
 
-- `/conf` - configuration files
-- `/content` - global content
-- `/gitignore` - .gitignore files for supported languages
-- `/license` - license files for supported licenses
-- `/models` -  business logic
-- `/modules` - helper modules
-- `/auth` - authorization and forms
-- `/avatar` - avatar cache service
-- `/base` - base functions and types
-- `/cron` - cron tasks
-- `/log` - log wrapper of gogits/log
-- `/mailer` - mail service
-- `/middleware` - custom middlewares  
-- `public` - static web elements: CSS, JS, images, fonts
-- `routers` - controller logic
-- `templates` - web templates
+```
+cmd/								// commands
+conf/								// configuration
+  |__ content/						// global content
+  |__ gitignore/		
+  !__ license/				
+  |__ locale/						// i18n locales
+         |__ locale_en-US.ini
+         |__ locale_zh-CN.ini
+etc/
+models/								// business logic
+modules/							// helper modules
+  |__ auth/							// auth forms
+  |__ avatar/						// gravatar service
+  |__ base/							// common functions and types
+  |__ captcha/							
+  |__ cron/						
+  |__ git/							// git shell
+  |__ httplib/						// HTTP helpers
+  |__ log/					 
+  |__ mailer/						
+  |__ middleware/						
+  |__ process/						// process manager
+  |__ setting/						// app settings
+  |__ social/						// OAuth2
+  |__ ssh/							// SSH server(prototype)
+  |__ uuid/							
+public/								// static web elements
+routers/							// controller logic
+scripts/							// helper scripts
+templates/								
+```
