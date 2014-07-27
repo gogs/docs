@@ -41,9 +41,8 @@ PASSWD = root
 ### 开发者模式
 
 - 您需要在 `custom/conf/app.ini` 文件中将选项 `security -> INSTALL_LOCK` 的值设置为 `true`。
-- 您可以在 Gogs 源码目录使用命令 `bee run`/`fswatch`：
- - 安装 [bee](https://github.com/beego/bee) 工具：`go get -u github.com/beego/bee`
- - 安装 [fswatch](https://github.com/codeskyblue/fswatch)：`go get -u github.com/codeskyblue/fswatch`
+- 您可以在 Gogs 源码目录使用命令 `bra run`：
+	- 安装 [bra](https://github.com/Unknwon/bra) 工具：`go get -u github.com/Unknwon/bra`
 
 ### 部署模式
 

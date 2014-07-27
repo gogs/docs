@@ -5,7 +5,7 @@ sort: 1
 
 # Change Log
 
-### V0.5.0(2014-8-12)
+### V0.5.0(2014-8-15)
 
 #### Bug fix
 
@@ -23,7 +23,7 @@ sort: 1
 - Add `webhook` section for configuring web hook **task interval** and **deliver timeout**
 - Add download TAR.GZ button in repository viewer
 - Sort releases by created time if they have same number of commits [#199](https://github.com/gogits/gogs/issues/199)
-- Add Git version check in start
+- Add Git installation and version check in start
 - Add more SSH key type verification support [#293](https://github.com/gogits/gogs/pull/293)
 - Allow clickable links in the repository description [#300](https://github.com/gogits/gogs/pull/300)
 - Allow `/:username` as user home page route 
@@ -41,6 +41,7 @@ sort: 1
 #### Other
 
 - Official website brand new design([gogs.io](http://gogs.io))
+- Whole site new UI design
 
 ### V0.4.2(2014-6-6)
 

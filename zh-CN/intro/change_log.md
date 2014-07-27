@@ -5,7 +5,7 @@ sort: 1
 
 # 变更日志
 
-### V0.5.0(2014-8-12)
+### V0.5.0(2014-8-15)
 
 #### Bug 修复
 
@@ -23,7 +23,7 @@ sort: 1
 - 增加 `webhook` 配置分区来自定义 Web 钩子 **任务检查周期** 和 **发送超时**
 - 增加仓库 TAR.GZ 格式打包下载按钮
 - 当不同 release 具有相同数量的 commit 时，使用创建时间排序 [#199](https://github.com/gogits/gogs/issues/199)
-- 在应用启动时检查 Git 版本
+- 在应用启动时检查 Git 安装和版本
 - 增加更多类型的 SSH 密钥类型验证支持 [#293](https://github.com/gogits/gogs/pull/293)
 - 仓库描述的链接可点击 [#300](https://github.com/gogits/gogs/pull/300)
 - 允许使用 `/:username` 作为用户主页路由
@@ -41,6 +41,7 @@ sort: 1
 #### 其它变更
 
 - 全新设计的官方网站（[gogs.io](http://gogs.io)）
+- 全站新 UI 设计
 
 ### V0.4.2(2014-6-6)
 

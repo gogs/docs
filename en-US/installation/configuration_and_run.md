@@ -41,9 +41,8 @@ Yes, why don't you just edit `conf/app.ini`? The reason is that to keep your cus
 ### For Developers
 
 - You need to set key `security -> INSTALL_LOCK` to be `true` in file `custom/conf/app.ini` in order to run from source.
-- You can enable live compile by executing `bee run`/`fswatch` in the Gogs source folder
- - Install [bee](https://github.com/beego/bee) tool: `go get -u github.com/beego/bee`
- - Install [fswatch](https://github.com/codeskyblue/fswatch): `go get -u github.com/codeskyblue/fswatch`
+- You can enable live compile by executing `bra run` in the Gogs source folder
+	- Install [bra](https://github.com/Unknwon/bra): `go get -u github.com/Unknwon/bra`
 
 ### For Deployment
 
