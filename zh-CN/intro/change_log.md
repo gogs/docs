@@ -12,11 +12,13 @@ sort: 1
 - 浏览由 Gogs 创建的 release 时发生 panic [#197](https://github.com/gogits/gogs/issues/197)
 - 编辑 issue 或评论时修改里程碑或标签会导致文本丢失 [#216](https://github.com/gogits/gogs/issues/216)
 - 通过 SSH 推送的代码无法触发 Web 钩子 [#242](https://github.com/gogits/gogs/issues/242)
+- 镜像仓库无法自动更新同步 [#258](https://github.com/gogits/gogs/issues/258)
 - 无法在 Windows 下获取静态文件 [#271](https://github.com/gogits/gogs/issues/271)
 - Dashboard 的 issue 链接显示不完整 [#273](https://github.com/gogits/gogs/issues/273)
 - 协作者能够修改项目设置
 - 非仓库拥有者或协作者也可修改 issue 标签 [#288](https://github.com/gogits/gogs/issues/288)
 - 关闭/开启 issue 时里程碑的统计数据未更新
+- 不正确的最大/最小长度限制错误提示 [#340](https://github.com/gogits/gogs/pull/340)
 
 #### 功能改进
 
@@ -24,9 +26,11 @@ sort: 1
 - 增加仓库 TAR.GZ 格式打包下载按钮
 - 当不同 release 具有相同数量的 commit 时，使用创建时间排序 [#199](https://github.com/gogits/gogs/issues/199)
 - 在应用启动时检查 Git 安装和版本
+- 在 commit 页面显示准确的提交时间 [#281](https://github.com/gogits/gogs/pull/281)
 - 增加更多类型的 SSH 密钥类型验证支持 [#293](https://github.com/gogits/gogs/pull/293)
 - 仓库描述的链接可点击 [#300](https://github.com/gogits/gogs/pull/300)
 - 允许使用 `/:username` 作为用户主页路由
+- 密码最大长度限制修改为 255 位 [#340](https://github.com/gogits/gogs/pull/340)
 
 #### 新增特性
 
@@ -37,6 +41,7 @@ sort: 1
 - 管理员面板增加删除所有未激活帐户操作
 - 增加反向代理用户认证支持 [#165](https://github.com/gogits/gogs/issues/165)
 - 增加 `server -> ENABLE_GZIP` 配置选项支持应用级别 GZIP
+- 通过 commit 关闭 issue [#302](https://github.com/gogits/gogs/issues/302)
 
 #### 其它变更
 

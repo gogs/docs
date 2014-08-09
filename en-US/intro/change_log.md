@@ -12,11 +12,13 @@ sort: 1
 - Panic when view releases that were created by Gogs [#197](https://github.com/gogits/gogs/issues/197)
 - Content lost if user changes milestone or assignee [#216](https://github.com/gogits/gogs/issues/216)
 - Webhook doesn't deliver for SSH pushes [#242](https://github.com/gogits/gogs/issues/242)
+- Mirror repositories are not updated at all [#258](https://github.com/gogits/gogs/issues/258)
 - Not able to serve static files in Windows [#271](https://github.com/gogits/gogs/issues/271)
 - Dashboard issue link is incomplete [#273](https://github.com/gogits/gogs/issues/273)
 - Collaborators are able to change repository settings
 - Edit issue label does not require repository owner or collaborator [#288](https://github.com/gogits/gogs/issues/288)
 - Milestone issue stats not update when reopening/closing issue
+- Incorrect max/min limitation error message [#340](https://github.com/gogits/gogs/pull/340)
 
 #### Improvement
 
@@ -24,9 +26,11 @@ sort: 1
 - Add download TAR.GZ button in repository viewer
 - Sort releases by created time if they have same number of commits [#199](https://github.com/gogits/gogs/issues/199)
 - Add Git installation and version check in start
+- Able to show precise time on commit page [#281](https://github.com/gogits/gogs/pull/281)
 - Add more SSH key type verification support [#293](https://github.com/gogits/gogs/pull/293)
 - Allow clickable links in the repository description [#300](https://github.com/gogits/gogs/pull/300)
 - Allow `/:username` as user home page route 
+- Change passowrd length limitation to 255 [#340](https://github.com/gogits/gogs/pull/340)
 
 #### Feature
 
@@ -37,6 +41,7 @@ sort: 1
 - Add delete all inactivate accounts operation in admin panel
 - Add reverse proxy authentication support [#165](https://github.com/gogits/gogs/issues/165)
 - Add application level GZIP support by `server -> ENABLE_GZIP` config option.
+- Closing issues through commits [#302](https://github.com/gogits/gogs/issues/302)
 
 #### Other
 
