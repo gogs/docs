@@ -42,6 +42,7 @@ sort: 1
 - Add reverse proxy authentication support [#165](https://github.com/gogits/gogs/issues/165)
 - Add application level GZIP support by `server -> ENABLE_GZIP` config option.
 - Closing issues through commits [#302](https://github.com/gogits/gogs/issues/302)
+- Able to star/unstar a repository
 
 #### Other
 

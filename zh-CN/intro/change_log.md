@@ -42,6 +42,7 @@ sort: 1
 - 增加反向代理用户认证支持 [#165](https://github.com/gogits/gogs/issues/165)
 - 增加 `server -> ENABLE_GZIP` 配置选项支持应用级别 GZIP
 - 通过 commit 关闭 issue [#302](https://github.com/gogits/gogs/issues/302)
+- 增加对仓库的 点赞/取消点赞 功能
 
 #### 其它变更
 
