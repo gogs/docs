@@ -30,7 +30,7 @@ sort: 1
 - Add more SSH key type verification support [#293](https://github.com/gogits/gogs/pull/293)
 - Allow clickable links in the repository description [#300](https://github.com/gogits/gogs/pull/300)
 - Allow `/:username` as user home page route 
-- Change passowrd length limitation to 255 [#340](https://github.com/gogits/gogs/pull/340)
+- Change passoword length limitation to 255 [#340](https://github.com/gogits/gogs/pull/340)
 
 #### Feature
 
