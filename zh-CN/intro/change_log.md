@@ -108,6 +108,7 @@ sort: 1
 - 增加里程碑功能到缺陷追踪
 - 支持下载 tar.gz 格式的发布版本源码 [#186](https://github.com/gogits/gogs/issues/186)
 - 增加 `server -> STATIC_ROOT_PATH` 配置选项来指定自定义模板和静态文件路径 [#209](https://github.com/gogits/gogs/issues/209)
+- 支持 创建/管理/删除 组织以及团队管理功能
 
 #### 其它变更
 
