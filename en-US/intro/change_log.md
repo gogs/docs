@@ -5,7 +5,7 @@ sort: 1
 
 # Change Log
 
-### V0.5.0(2014-8-15)
+### V0.5.0(2014-9-10)
 
 #### Bug fix
 
@@ -16,9 +16,11 @@ sort: 1
 - Not able to serve static files in Windows [#271](https://github.com/gogits/gogs/issues/271)
 - Dashboard issue link is incomplete [#273](https://github.com/gogits/gogs/issues/273)
 - Collaborators are able to change repository settings
-- Edit issue label does not require repository owner or collaborator [#288](https://github.com/gogits/gogs/issues/288)
-- Milestone issue stats not update when reopening/closing issue
+- Edit issue label does not require repository owner or collaborator [#303](https://github.com/gogits/gogs/issues/303)
+- Milestone issue stats not update when reopening/closing issue [#340](https://github.com/gogits/gogs/pull/340)
 - Incorrect max/min limitation error message [#340](https://github.com/gogits/gogs/pull/340)
+- Missing trailing '/' in `ROOT_URL` causes problems [#367](https://github.com/gogits/gogs/issues/367)
+- SSH keys that include new lines can't be deleted from authorized_keys [#370](https://github.com/gogits/gogs/issues/370)
 
 #### Improvement
 
@@ -27,10 +29,12 @@ sort: 1
 - Sort releases by created time if they have same number of commits [#199](https://github.com/gogits/gogs/issues/199)
 - Add Git installation and version check in start
 - Able to show precise time on commit page [#281](https://github.com/gogits/gogs/pull/281)
+- Make possible for administrators to change user's password [#291](https://github.com/gogits/gogs/pull/291)
 - Add more SSH key type verification support [#293](https://github.com/gogits/gogs/pull/293)
 - Allow clickable links in the repository description [#300](https://github.com/gogits/gogs/pull/300)
 - Allow `/:username` as user home page route 
 - Change passoword length limitation to 255 [#340](https://github.com/gogits/gogs/pull/340)
+- Add `.mkd` as Markdown file extension [#362](https://github.com/gogits/gogs/issues/362)
 
 #### Feature
 
@@ -43,11 +47,13 @@ sort: 1
 - Add application level GZIP support by `server -> ENABLE_GZIP` config option.
 - Closing issues through commits [#302](https://github.com/gogits/gogs/issues/302)
 - Able to star/unstar a repository
+- Ability to attach files to issues (attachments) [#307](https://github.com/gogits/gogs/pull/307)
 
 #### Other
 
 - Official website brand new design([gogs.io](http://gogs.io))
 - Whole site new UI design
+- Most of pages implement multiple languages
 
 ### V0.4.2(2014-6-6)
 

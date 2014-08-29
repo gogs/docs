@@ -5,28 +5,31 @@ sort: 1
 
 # 变更日志
 
-### V0.5.0(2014-8-15)
+### V0.5.0(2014-9-10)
 
 #### Bug 修复
 
-- 浏览由 Gogs 创建的 release 时发生 panic [#197](https://github.com/gogits/gogs/issues/197)
-- 编辑 issue 或评论时修改里程碑或标签会导致文本丢失 [#216](https://github.com/gogits/gogs/issues/216)
+- 浏览由 Gogs 创建的版本发布时发生 panic [#197](https://github.com/gogits/gogs/issues/197)
+- 编辑工单或评论时修改里程碑或标签会导致文本丢失 [#216](https://github.com/gogits/gogs/issues/216)
 - 通过 SSH 推送的代码无法触发 Web 钩子 [#242](https://github.com/gogits/gogs/issues/242)
 - 镜像仓库无法自动更新同步 [#258](https://github.com/gogits/gogs/issues/258)
 - 无法在 Windows 下获取静态文件 [#271](https://github.com/gogits/gogs/issues/271)
-- Dashboard 的 issue 链接显示不完整 [#273](https://github.com/gogits/gogs/issues/273)
+- 控制面板的工单那链接显示不完整 [#273](https://github.com/gogits/gogs/issues/273)
 - 协作者能够修改项目设置
 - 非仓库拥有者或协作者也可修改 issue 标签 [#288](https://github.com/gogits/gogs/issues/288)
-- 关闭/开启 issue 时里程碑的统计数据未更新
+- 关闭/开启工单时里程碑的统计数据未更新 [#303](https://github.com/gogits/gogs/issues/303)
 - 不正确的最大/最小长度限制错误提示 [#340](https://github.com/gogits/gogs/pull/340)
+- 配置选项 `ROOT_URL` 未以 `/` 结尾时出现错误 [#367](https://github.com/gogits/gogs/issues/367)
+- SSH 公钥包含换行符时无法被删除 [#370](https://github.com/gogits/gogs/issues/370)
 
 #### 功能改进
 
 - 增加 `webhook` 配置分区来自定义 Web 钩子 **任务检查周期** 和 **发送超时**
 - 增加仓库 TAR.GZ 格式打包下载按钮
-- 当不同 release 具有相同数量的 commit 时，使用创建时间排序 [#199](https://github.com/gogits/gogs/issues/199)
+- 当不同版本发布具有相同数量的提交时，使用创建时间排序 [#199](https://github.com/gogits/gogs/issues/199)
 - 在应用启动时检查 Git 安装和版本
-- 在 commit 页面显示准确的提交时间 [#281](https://github.com/gogits/gogs/pull/281)
+- 在提交页面显示准确的提交时间 [#281](https://github.com/gogits/gogs/pull/281)
+- 允许管理员修改用户密码 [#291](https://github.com/gogits/gogs/pull/291)
 - 增加更多类型的 SSH 密钥类型验证支持 [#293](https://github.com/gogits/gogs/pull/293)
 - 仓库描述的链接可点击 [#300](https://github.com/gogits/gogs/pull/300)
 - 允许使用 `/:username` 作为用户主页路由
@@ -35,19 +38,22 @@ sort: 1
 #### 新增特性
 
 - 增加命令 `gogs fix location <old path>` 用于处理 Gogs 应用位置改变
-- 支持编辑 release 以及保存为草稿
+- 支持编辑版本发布以及保存为草稿
 - 增加 Cron 任务和运行进程监控面板
 - 增加记录日志到数据库选项
 - 管理员面板增加删除所有未激活帐户操作
 - 增加反向代理用户认证支持 [#165](https://github.com/gogits/gogs/issues/165)
 - 增加 `server -> ENABLE_GZIP` 配置选项支持应用级别 GZIP
-- 通过 commit 关闭 issue [#302](https://github.com/gogits/gogs/issues/302)
+- 通过提交消息关闭工单 [#302](https://github.com/gogits/gogs/issues/302)
 - 增加对仓库的 点赞/取消点赞 功能
+- 增加 `.mkd` 作为 Markdown 文件扩展名 [#362](https://github.com/gogits/gogs/issues/362)
+- 增加工单评论附件支持 [#307](https://github.com/gogits/gogs/pull/307)
 
 #### 其它变更
 
 - 全新设计的官方网站（[gogs.io](http://gogs.io)）
 - 全站新 UI 设计
+- 大部分页面已实现多语言
 
 ### V0.4.2(2014-6-6)
 
