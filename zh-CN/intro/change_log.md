@@ -34,6 +34,7 @@ sort: 1
 - 仓库描述的链接可点击 [#300](https://github.com/gogits/gogs/pull/300)
 - 允许使用 `/:username` 作为用户主页路由
 - 密码最大长度限制修改为 255 位 [#340](https://github.com/gogits/gogs/pull/340)
+- Slack Web 钩子集成 [#379](https://github.com/gogits/gogs/pull/379)
 
 #### 新增特性
 
