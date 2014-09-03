@@ -42,8 +42,3 @@ sort: 1
  - CDN：~~[Windows](http://gogs.dn.qbox.me/gogs_v0.3.0_windows_amd64.zip) - [Linux](http://gogs.dn.qbox.me/gogs_v0.3.0_linux_amd64.zip) - [Mac OS X](http://gogs.dn.qbox.me/gogs_v0.3.0_darwin_amd64.zip)~~
  - ~~[GitHub](https://github.com/gogits/gogs/releases/tag/v0.3.0)~~
 
-### V0.2.0(2014-4-1)
-
-- 一般构建：~~Windows([i386](http://gobuild.io/github.com/gogits/gogs/v0.2.0/windows/386) [amd64](http://gobuild.io/github.com/gogits/gogs/v0.2.0/windows/amd64)) - Linux([i386](http://gobuild.io/github.com/gogits/gogs/v0.2.0/linux/386) [amd64](http://gobuild.io/github.com/gogits/gogs/v0.2.0/linux/amd64)) - Max OS X([i386](http://gobuild.io/github.com/gogits/gogs/v0.2.0/darwin/386) [amd64](http://gobuild.io/github.com/gogits/gogs/v0.2.0/darwin/amd64))~~
-- 官方构建：二进制因为服务器重装而丢失 :(
-

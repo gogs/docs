@@ -5,87 +5,88 @@ sort: 2
 
 # Troubleshooting
 
-### Git
+## Git
 
-#### `git push` through SSH get error `bash /path/to/gogs: no such file or directory`
+- Error: `bash /path/to/gogs: no such file or directory`
+- Causes: You change the location of Gogs server after a while and the old path was hard coded into `~/.ssh/authorized_keys` file.
+- Solution: execute `./gogs fix location <old Gogs path>` under new Gogs directory.
 
-That's because you change the location of Gogs server after a while and the old path was hard coded into `~/.ssh/authorized_keys` file.
+-----
 
-#### fatal: 'XX/XX.git' does not appear to be a git repository
+- Error: `fatal: 'XX/XX.git' does not appear to be a git repository`
+- Causes: there are duplicated SSH keys in `~/.ssh/authorized_keys` file, possibly you are/were using GitLab for same system user. 
+- Solution: delete the old one and keep the one that was added by Gogs only.
 
-There was already same key in the `authorized_keys` file, delete the old one and keep the one that was added by Gogs only.
+-----
 
-#### `repo.NewRepoContext(fail to set git user.email):`
+- Error: `repo.NewRepoContext(fail to set git user.emil):`
+- Causes: it happens when Windows users install Git Bash without enabling the `cmd` option
+- Solution: reinstall and enable `cmd` option.
 
-It happens when Windows users install Git Bash without enabling the `cmd` option, please reinstall and enable it.
+## Form Validation
 
-#### Cannot access repository through SSH
+- Error: `Repository/User name contains illegal characters`
+- Causes: in order to prevent unexpected exceptions, your user/repository name will be considered as illegal if they match any of the following rules: 
+	- Name equals to any word of `"raw", "install", "api", "avatar", "user", "org", "help", "stars", "issues", "pulls", "commits", "repo", "template", "admin", "new"`.
+	- Name has suffix `".git"`.
 
-- You use same `authorized_keys` file for both GitLab and Gogs.
+## Cache
 
-### Register/create user/repository
+- Error: `cache: unknown adaptername "memcache" (forgotten import?)`
+- Causes: To prevent unnecessary import of package, we use build tags to specify when needed
+- Solution: 
+	- Download: `go get -tags memcache github.com/gogits.gogs`
+	- Build: `go build -tags memcache`
+	- Same steps for `redis` when you want it to be the cache adapter.
 
-#### `Repository/User name contains illegal characters`
+## MySQL
 
-In order to prevent unexpected exceptions, your user/repository name will be considered as illegal if they match any of the following rules: 
+- Error: `Error 1071: Specified key was too long; max key length is 1000 bytes`
+- Causes: it is caused by MyISAM.
+- Solution: Once you import the `config/mysql.sql` then login into mysql and run:
 
-- Name equals to any word of `"raw", "install", "api", "avatar", "user", "org", "help", "stars", "issues", "pulls", "commits", "repo", "template", "admin", "new"`.
-- Name has suffix `".git"`.
-
-### Cache
-
-#### `cache: unknown adaptername "memcache" (forgotten import?)`
-
-To prevent unnecessary import of package, we use build tags to specify when needed:
-
-- Download: `go get -tags memcache github.com/gogits.gogs`
-- Build: `go build -tags memcache`
-
-Same steps for `redis` when you want it to be the cache adapter.
-
-### MySQL
-
-#### `Error 1071: Specified key was too long; max key length is 1000 bytes`
-
-It is caused by MyISAM. Once you import the `config/mysql.sql` then login into mysql and run:
-
-```sql
-use gogs;
-set global storage_engine=INNODB;
-```
+	```sql
+	use gogs;
+	set global storage_engine=INNODB;
+	```
 
 After that, go to [http://localhost:3000/install](http://localhost:3000/install) and everything works fine(thanks [@linc01n](https://github.com/linc01n)).
 
-### Mailer
+-----
 
-#### Cannot send e-mail
+- Error: `Database setting is not correct: This server only supports the insecure old password authentication. If you still want to use it, please add 'allowOldPasswords=1' to your DSN. See also https://github.com/go-sql-driver/mysql/wiki/old_passwords`
+- Causes: only updated the password for @localhost -- there was a second entry in the user table where @% still had the old password.
+- Solution: [GitHub comments](https://github.com/gogits/gogs/issues/385#issuecomment-54357073)
 
-Currently golang does not support send e-mail through SSL, so please choose a port that does not require SSL for sending e-mails. If you know how to send e-mail through SSL in Go, please contact us!
+## Mailer
 
-#### Gmail with Error 534: `Please log in via your web browser and then try again`
+- Error: cannot send e-mail
+- Causes: currently golang does not support send e-mail through SSL, so please choose a port that does not require SSL for sending e-mails.
+- Solution: if you know how to send e-mail through SSL in Go, please contact us!
 
-This is because Google does not trust your server, so first you need to visit https://accounts.google.com and log in, then go to https://accounts.google.com/DisplayUnlockCaptcha click `continue`. Now copy the link looks like this(prompt in Gogs server log): https://accounts.google.com/ContinueSignIn?sarp=1&scc=1&plt=AKgnsbvPPN_E_25__nyS*******f18O9uuLNtz0Imw and log in again. Things should work now. Last but not the least, check you `spam` box in case your mail service provider thinks your gmail is a spammer.
+-----
+ 
+- Error: Gmail with Error 534: `Please log in via your web browser and then try again`
+- Causes: this is because Google does not trust your server
+- Solution: 
+	- Visit https://accounts.google.com and log in.
+	- Go to https://accounts.google.com/DisplayUnlockCaptcha click `continue`. 
+	- Now copy the link looks like this(prompt in Gogs server log): https://accounts.google.com/ContinueSignIn?sarp=1&scc=1&plt=AKgnsbvPPN_E_25__nyS*******f18O9uuLNtz0Imw and log in again. 
+	- Things should work now. Last but not the least, check you `spam` box in case your mail service provider thinks your gmail is a spammer.
 
-### Other
+## Other
 
-#### `Error 1062: Duplicate entry 'Unknown-Mac' for key 'UQE_public_key_name'`
+- Error: `Error 1062: Duplicate entry 'Unknown-Mac' for key 'UQE_public_key_name'`
+- Causes: it is led by legacy code, `public_key` table used to have `UQE_public_key_name` unique rule for SSH key name in very early version.
+- Solution: you can delete that unique rule manually to fix this problem.
 
-It is led by legacy code, `public_key` table used to have `UQE_public_key_name` unique rule for SSH key name in very early version. You can delete that unique rule manually to fix this problem.
+-----
 
-#### `GLIBC_2.14 not found`
+- Error: `GLIBC_2.14 not found`
+- Solution: try `sudo apt-get -t testing install libc6-dev`.
 
-Try `sudo apt-get -t testing install libc6-dev`.
+-----
 
-#### Cannot parse `custom/conf/app.ini`
-
-You got error message like follows in start:
-
-```
-[FATAL][github.com/gogits/gogs/modules/base] conf.go:287: Cannot load config file(/Users/.../gogits/gogs/custom/conf/app.ini): could not parse line: ; App name that shows on every page title
-```
-
-It may because you save the file as `UTF8 with BOM`(normally happens in Windows), please change it to `UTF8`.
-
-#### Upgrade from `v0.2.0`
-
-- More secure way to encode user password, so all old users are asked to reset password(URL:`/user/forget_password`).
+- Error: `could not parse line: ; App name that shows on every page title`
+- Causes: it may because you save the file as `UTF8 with BOM`(normally happens in Windows).
+- Solution: change it to `UTF8`.
