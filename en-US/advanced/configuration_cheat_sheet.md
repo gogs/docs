@@ -57,7 +57,7 @@ If you see anything like `%(X)s`, it's the feature powered by [goconfig](https:/
 - `ACTIVE_CODE_LIVE_MINUTES`: The minutes of active code life time.
 - `RESET_PASSWD_CODE_LIVE_MINUTES`: The minutes of reset password code life time.
 - `REGISTER_EMAIL_CONFIRM`: Enable this to ask for mail confirmation of registration, requires enable `Mailer`.
-- `DISENABLE_REGISTERATION`: Disable registration, which only admin can create accounts for users.
+- `DISABLE_REGISTRATION`: Disable registration, which only admin can create accounts for users.
 - `REQUIRE_SIGNIN_VIEW`: Enable this to force users to log in to view any page.
 - `ENABLE_CACHE_AVATAR`: Enable this to cache avatar from Gravatar.
 - `ENABLE_NOTIFY_MAIL`: This indicates whether send e-mail to watchers of repository when something happens like create issue, requires enable `Mailer`.
