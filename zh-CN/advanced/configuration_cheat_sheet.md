@@ -57,7 +57,7 @@ sort: 1
 - `ACTIVE_CODE_LIVE_MINUTES`：激活码的有效期，单位为分钟
 - `RESET_PASSWD_CODE_LIVE_MINUTES`：重置密码的有效期，单位为分钟
 - `REGISTER_EMAIL_CONFIRM`：激活该选项来要求注册用户必须验证邮箱，要求已启用 `Mailer`
-- `DISENABLE_REGISTERATION`：激活该选项来禁止用户注册功能，只能由管理员创建帐号
+- `DISABLE_REGISTRATION`：激活该选项来禁止用户注册功能，只能由管理员创建帐号
 - `REQUIRE_SIGNIN_VIEW`：激活该选项来要求用户必须登录才能浏览任何页面
 - `ENABLE_CACHE_AVATAR`：激活该选项来缓存 Gravatar 的头像
 - `ENABLE_NOTIFY_MAIL`：激活该选项来发送通知邮件给关注者，例如创建 issue 时，要求已启用 `Mailer`
