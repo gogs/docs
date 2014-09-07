@@ -11,7 +11,6 @@ sort: 2
 
 - [Go 语言](http://golang.org)：版本 >= 1.2
 - [Git](http://git-scm.com)：版本 >= 1.8
-- [Mercurial](http://mercurial.selenic.com)：版本 >= 2.0 **(只用于取第三方包时)**
 
 ### 第三方包
 
@@ -37,7 +36,6 @@ sort: 2
 - [github.com/saintfish/chardet](https://github.com/saintfish/chardet)
 - [github.com/go-sql-driver/mysql](https://github.com/go-sql-driver/mysql) or [github.com/lib/pq](https://github.com/lib/pq) or [github.com/mattn/go-sqlite3](https://github.com/mattn/go-sqlite3)
 - [github.com/beego/redigo/redis](https://github.com/beego/redigo/redis) or [github.com/beego/memcache](https://github.com/beego/memcache)
-- [code.google.com/p/mahonia](https://code.google.com/p/mahonia) **(Mercurial 仓库)**
 
 ### 安装
 
