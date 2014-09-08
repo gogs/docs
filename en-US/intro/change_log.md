@@ -49,7 +49,8 @@ sort: 1
 - Able to star/unstar a repository
 - Ability to attach files to issues (attachments) [#307](https://github.com/gogits/gogs/pull/307)
 - Able to create/manage/delete organization with team management
-- Slack webhook integration [#379](https://github.com/gogits/gogs/pull/379)
+- Add Slack webhook integration [#379](https://github.com/gogits/gogs/pull/379)
+- Add Organization-level Webhooks [#442](https://github.com/gogits/gogs/pull/442)
 
 #### Other
 

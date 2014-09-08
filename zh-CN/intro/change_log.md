@@ -49,6 +49,7 @@ sort: 1
 - 增加对仓库的 点赞/取消点赞 功能
 - 增加 `.mkd` 作为 Markdown 文件扩展名 [#362](https://github.com/gogits/gogs/issues/362)
 - 增加工单评论附件支持 [#307](https://github.com/gogits/gogs/pull/307)
+- 增加组织级别 Web 钩子 [#442](https://github.com/gogits/gogs/pull/442)
 
 #### 其它变更
 
