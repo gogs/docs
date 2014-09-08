@@ -24,8 +24,6 @@ sort: 2
 - [github.com/go-martini/martini](https://github.com/go-martini/martini)
 - [github.com/go-xorm/core](http://github.com/go-xorm/core)
 - [github.com/go-xorm/xorm](http://github.com/go-xorm/xorm)
-- [github.com/johnweldon/asn1-ber](https://github.com/johnweldon/asn1-ber)
-- [github.com/juju2013/goldap](https://github.com/juju2013/goldap)
 - [github.com/macaron-contrib/cache](https://github.com/macaron-contrib/cache)
 - [github.com/macaron-contrib/captcha](https://github.com/macaron-contrib/captcha)
 - [github.com/macaron-contrib/csrf](https://github.com/macaron-contrib/csrf)
