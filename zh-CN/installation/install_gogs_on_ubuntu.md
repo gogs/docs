@@ -26,8 +26,8 @@ sort: 4
 
 - mkdir gogs
 - cd gogs
-- curl -L http://gobuild.io/github.com/gogits/gogs/v0.3.0/linux/amd64 -o v0.3.0.zip
-- unzip v0.3.0.zip
+- curl -L http://gobuild.io/github.com/gogits/gogs/v4.2.0/linux/amd64 -o v4.2.0.zip
+- unzip v4.2.0.zip
 - ./start.sh
 
 > 最新版二进制可以在该链接获取：
@@ -38,7 +38,7 @@ sort: 4
 ### 环境要求
 
 - Go 语言：版本 >= 1.2
-- Git（bash）：版本 >= 1.6.6（服务端和客户端均需）
+- Git（bash）：版本 >= 1.8.0（服务端和客户端均需）
 - MySQL：版本 >= 5.1 或者 PostgreSQL 或者 **什么都不需要**。
 
 ### 创建用户 git
@@ -66,7 +66,6 @@ sort: 4
 - sudo apt-get install mercurial
 - hg clone -r release https://go.googlecode.com/hg/ /home/git/golang/
  
-
 - echo export GOROOT=/home/git/golang >>.bashrc
 - echo export GOARCH=386   >>.bashrc 
 - echo export GOOS=linux  >>.bashrc 

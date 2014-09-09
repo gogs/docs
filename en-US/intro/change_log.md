@@ -35,6 +35,7 @@ sort: 1
 - Allow `/:username` as user home page route 
 - Change passoword length limitation to 255 [#340](https://github.com/gogits/gogs/pull/340)
 - Add `.mkd` as Markdown file extension [#362](https://github.com/gogits/gogs/issues/362)
+- Allow `.` in repository name [#453](https://github.com/gogits/gogs/issues/453)
 
 #### Feature
 
@@ -57,6 +58,7 @@ sort: 1
 - Official website brand new design([gogs.io](http://gogs.io))
 - Whole site new UI design
 - Most of pages implement multiple languages
+- Add Ubuntu install package [#455](https://github.com/gogits/gogs/pull/455)
 
 ### V0.4.2(2014-6-6)
 

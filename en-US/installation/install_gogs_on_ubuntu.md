@@ -26,8 +26,8 @@ sort: 4
 
 - mkdir gogs
 - cd gogs
-- curl -L http://gobuild.io/github.com/gogits/gogs/v0.3.0/linux/amd64 -o v0.3.0.zip
-- unzip v0.3.0.zip
+- curl -L http://gobuild.io/github.com/gogits/gogs/v0.4.2/linux/amd64 -o v4.2.0.zip
+- unzip v4.2.0.zip
 - ./start.sh
 
 > The up-to-date binary could be found at
@@ -38,7 +38,7 @@ sort: 4
 ### Requirements
 
 - Go Programming Language: Version >= 1.2
-- git(bash): Version >= 1.6.6(both server and client) 
+- git(bash): Version >= 1.8.0(both server and client) 
 - MySQL: Version >= 5.1 or PostgreSQL or NOTHING. 
 
 ### Create the user which will run git
@@ -66,7 +66,6 @@ sort: 4
 - sudo apt-get install mercurial
 - hg clone -r release https://go.googlecode.com/hg/ /home/git/golang/
  
-
 - echo export GOROOT=/home/git/golang >>.bashrc
 - echo export GOARCH=386   >>.bashrc 
 - echo export GOOS=linux  >>.bashrc 

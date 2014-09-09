@@ -35,6 +35,7 @@ sort: 1
 - 允许使用 `/:username` 作为用户主页路由
 - 密码最大长度限制修改为 255 位 [#340](https://github.com/gogits/gogs/pull/340)
 - Slack Web 钩子集成 [#379](https://github.com/gogits/gogs/pull/379)
+- 允许仓库名称包含 `.` [#453](https://github.com/gogits/gogs/issues/453)
 
 #### 新增特性
 
@@ -56,6 +57,7 @@ sort: 1
 - 全新设计的官方网站（[gogs.io](http://gogs.io)）
 - 全站新 UI 设计
 - 大部分页面已实现多语言
+- 增加 Ubuntu 包管理安装 [#455](https://github.com/gogits/gogs/pull/455)
 
 ### V0.4.2(2014-6-6)
 
