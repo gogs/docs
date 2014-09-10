@@ -12,7 +12,7 @@
 
 ### 傅小黑
 
-- 团队角色：前、后端开发者
+- 团队角色：前端开发者
 - 社交网络：[新浪微博](http://weibo.com/fuxiaohei) [GitHub](https://github.com/fuxiaohei) [Twitter](https://twitter.com/fuxiaohei)
 
 
