@@ -33,17 +33,15 @@ sort: 2
 - [github.com/nfnt/resize](https://github.com/nfnt/resize)
 - [github.com/saintfish/chardet](https://github.com/saintfish/chardet)
 - [github.com/go-sql-driver/mysql](https://github.com/go-sql-driver/mysql) or [github.com/lib/pq](https://github.com/lib/pq) or [github.com/mattn/go-sqlite3](https://github.com/mattn/go-sqlite3)
-- [github.com/beego/redigo/redis](https://github.com/beego/redigo/redis) or [github.com/beego/memcache](https://github.com/beego/memcache)
+- [github.com/beego/redigo](https://github.com/beego/redigo) or [github.com/beego/memcache](https://github.com/beego/memcache)
 
 ### 安装
 
 ```
 # 检查更新 Gopm
-
 $ gopm update -v
 
 # 下载并构建二进制
-
 $ gopm bin -u -v gogs path/to/anywhere
 ```
 
@@ -51,21 +49,32 @@ Or
 
 ```
 # 下载并安装依赖
-
 $ go get -u github.com/gogits/gogs
 
 # 构建主程序
-
 $ cd $GOPATH/src/github.com/gogits/gogs
 $ go build
 ```
 
-如果您想要启动 SQLite3 请先删除在 `$GOPATH/pkg` 中所有与 Gogs 有关的文件：
+#### 构建 `dev` 分支版本
 
 ```
-$ go get -u -tags sqlite github.com/gogits/gogs
+$ mkdir -p $GOPATH/src/github.com/gogits
+$ cd $GOPATH/src/github.com/gogits
+$ git clone -b dev https://github.com/gogits/gogs.git
+$ cd gogs
+$ go get ./...
+$ go build
+```
+
+#### 构建 SQLite3/Redis/Memcache 集成版
+
+如果您想要启动 SQLite3/Redis/Memcache 请先删除 `$GOPATH/pkg/{GOOS_GOARCH}/github.com/gogits/gogs` 目录，然后：
+
+```
+$ go get -u -tags "sqlite redis memecache" github.com/gogits/gogs
 $ cd $GOPATH/src/github.com/gogits/gogs
-$ go build -tags sqlite
+$ go build -tags "sqlite redis memecache"
 ```
 
 安装完成后可继续参照 [配置与运行](configuration_and_run.md)。

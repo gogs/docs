@@ -34,17 +34,15 @@ sort: 2
 - [github.com/nfnt/resize](https://github.com/nfnt/resize)
 - [github.com/saintfish/chardet](https://github.com/saintfish/chardet)
 - [github.com/go-sql-driver/mysql](https://github.com/go-sql-driver/mysql) or [github.com/lib/pq](https://github.com/lib/pq) or [github.com/mattn/go-sqlite3](https://github.com/mattn/go-sqlite3)
-- [github.com/beego/redigo/redis](https://github.com/beego/redigo/redis) or [github.com/beego/memcache](https://github.com/beego/memcache)
+- [github.com/beego/redigo](https://github.com/beego/redigo) or [github.com/beego/memcache](https://github.com/beego/memcache)
 
 ### Install
 
 ```
 # Check update of gopm
-
 $ gopm update -v
 
 # Download and build binary
-
 $ gopm bin -u -v gogs path/to/anywhere
 ```
 
@@ -52,21 +50,32 @@ Or
 
 ```
 # Download and install dependencies
-
 $ go get -u github.com/gogits/gogs
 
 # Build main program
-
 $ cd $GOPATH/src/github.com/gogits/gogs
 $ go build
 ```
 
-If you need to enable SQLite3, please delete all related files with Gogs in `$GOPATH/pkg` and do:
+#### Build from `dev` branch
 
 ```
-$ go get -u -tags sqlite github.com/gogits/gogs
+$ mkdir -p $GOPATH/src/github.com/gogits
+$ cd $GOPATH/src/github.com/gogits
+$ git clone -b dev https://github.com/gogits/gogs.git
+$ cd gogs
+$ go get ./...
+$ go build
+```
+
+#### Build with SQLite3/Redis/Memcache
+
+If you need to enable SQLite3/Redis/Memcache, please delete directory `$GOPATH/pkg/{GOOS_GOARCH}/github.com/gogits/gogs` and do:
+
+```
+$ go get -u -tags "sqlite redis memecache" github.com/gogits/gogs
 $ cd $GOPATH/src/github.com/gogits/gogs
-$ go build -tags sqlite
+$ go build -tags "sqlite redis memecache"
 ```
 
 See [Configuration and run](configuration_and_run.md) to go further.
