@@ -5,12 +5,11 @@ sort: 0
 
 # Webhook
 
-Gogs supports web hooks for repository events, you can find it in settings page(`/:username/:reponame/settings/hooks`). All event pushes are POST requests.
+Gogs supports web hooks for repository events, you can find it in settings page(`/:username/:reponame/settings/hooks`). All event pushes are POST requests, and we currently support two versions of formats: Gogs and Slack.
 
 ### Parameters
 
 - `Payload URL` is the URL address that receives the event push information.
-- Only support JSON format event information currently.
 - `Secret` helps your server identify.
 - Only support `git push` event hook currently.
 - `Active` indicates whether the hook is enabled or not.

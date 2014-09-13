@@ -50,9 +50,9 @@ Yes, why don't you just edit `conf/app.ini`? The reason is that to keep your cus
 
 - There are 3 ways to start by default:
 	- Plain: just use `./gogs web`
-	- Script: execute `./start.sh` or `./start.bat`
+	- Script: execute `./scripts/start.sh` or `./scripts/start.bat`
 	- Supervisor: 
-		- Start: `./gogs_supervisord.sh start`
-		- Stop: `./gogs_supervisord.sh stop`
-		- Restart: `./gogs_supervisord.sh restart`
+		- Start: `./scripts/gogs_supervisord.sh start`
+		- Stop: `./scripts/gogs_supervisord.sh stop`
+		- Restart: `./scripts/gogs_supervisord.sh restart`
 - Go to `/install` to do your first-time run configuration.

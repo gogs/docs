@@ -26,7 +26,7 @@ cmd/								// commands
 conf/								// configuration
   |__ content/						// global content
   |__ gitignore/		
-  !__ license/				
+  |__ license/				
   |__ locale/						// i18n locales
          |__ locale_en-US.ini
          |__ locale_zh-CN.ini

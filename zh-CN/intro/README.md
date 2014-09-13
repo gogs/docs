@@ -26,7 +26,7 @@ cmd/								// 命令文件
 conf/								// 配置文件
   |__ content/						// 全局文件
   |__ gitignore/		
-  !__ license/				
+  |__ license/				
   |__ locale/						// i18n 本地化文件
          |__ locale_en-US.ini
          |__ locale_zh-CN.ini

@@ -5,12 +5,11 @@ sort: 0
 
 # Web 钩子
 
-Gogs 支持针对仓库事件的 Web 钩子服务，您可以在仓库的设置相关页面中找到（`/:username/:reponame/settings/hooks`）。所有的事件推送均为 POST 请求。
+Gogs 支持针对仓库事件的 Web 钩子服务，您可以在仓库的设置相关页面中找到（`/:username/:reponame/settings/hooks`）。所有的事件推送均为 POST 请求，目前支持 Gogs 和 Slack 两种格式的内容。
 
 ### 设置参数
 
 - 参数 `Payload URL` 表示事件信息推送的 URL 地址。
-- 目前仅支持 JSON 格式的事件信息。
 - 参数 `Secret` 可让您对事件推送者进行身份验证。
 - 目前仅支持仓库 `git push` 事件的钩子。
 - 参数 `Active` 表示您当前是否希望激活该钩子。

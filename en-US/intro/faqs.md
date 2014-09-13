@@ -22,6 +22,10 @@ server {
 }
 ```
 
+#### How get current Gogs version?
+
+The plain text format of Gogs version is in the file `templates/VERSION`.
+
 ### Administration
 
 #### How to become an administrator?
