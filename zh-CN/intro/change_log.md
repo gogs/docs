@@ -5,6 +5,17 @@ sort: 1
 
 # 变更日志
 
+### v0.5.1
+
+#### Bug 修复
+
+- 配置选项 `REQUIRE_SIGNIN_VIEW=true` 时依旧可以访问某些页面 [#464](https://github.com/gogits/gogs/issues/464)
+- 模板渲染错误 `html/template: "user/activate" is undefined` [#465](https://github.com/gogits/gogs/issues/465)
+
+#### 其它变更
+
+- 演示站点启动 HTTPS 和新域名 [https://try.gogs.io](https://try.gogs.io)
+
 ### V0.5.0(2014-9-15)
 
 #### Bug 修复

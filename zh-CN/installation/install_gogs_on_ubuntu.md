@@ -26,8 +26,8 @@ sort: 4
 
 - mkdir gogs
 - cd gogs
-- curl -L http://gobuild.io/github.com/gogits/gogs/v4.2.0/linux/amd64 -o v4.2.0.zip
-- unzip v4.2.0.zip
+- curl -L http://gobuild.io/github.com/gogits/gogs/v0.5.1/linux/amd64 -o v0.5.1.zip
+- unzip v0.5.1.zip
 - ./start.sh
 
 > 最新版二进制可以在该链接获取：

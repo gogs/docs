@@ -5,6 +5,17 @@ sort: 1
 
 # Change Log
 
+### V0.5.1
+
+#### Bug fix
+
+- Can access some pages without signin with `REQUIRE_SIGNIN_VIEW=true` [#464](https://github.com/gogits/gogs/issues/464)
+- Templating error `html/template: "user/activate" is undefined` [#465](https://github.com/gogits/gogs/issues/465)
+
+#### Other
+
+- Demo site use HTTPS with new domain [https://try.gogs.io](https://try.gogs.io)
+
 ### V0.5.0(2014-9-15)
 
 #### Bug fix

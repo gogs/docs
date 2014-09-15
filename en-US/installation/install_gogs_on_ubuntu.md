@@ -26,8 +26,8 @@ sort: 4
 
 - mkdir gogs
 - cd gogs
-- curl -L http://gobuild.io/github.com/gogits/gogs/v0.4.2/linux/amd64 -o v4.2.0.zip
-- unzip v4.2.0.zip
+- curl -L http://gobuild.io/github.com/gogits/gogs/v0.5.1/linux/amd64 -o v4.5.1.zip
+- unzip v0.5.1.zip
 - ./start.sh
 
 > The up-to-date binary could be found at
