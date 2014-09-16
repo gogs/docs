@@ -11,6 +11,8 @@ sort: 1
 
 - Can access some pages without signin with `REQUIRE_SIGNIN_VIEW=true` [#464](https://github.com/gogits/gogs/issues/464)
 - Templating error `html/template: "user/activate" is undefined` [#465](https://github.com/gogits/gogs/issues/465)
+- Missing arguments in `TimeSince` [#473](https://github.com/gogits/gogs/issues/473)
+- Wrong action permission check in organization dashboard [#474](https://github.com/gogits/gogs/pull/474)
 
 #### Other
 
