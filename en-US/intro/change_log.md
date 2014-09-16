@@ -9,10 +9,12 @@ sort: 1
 
 #### Bug fix
 
+- Incorrect permission check of `~/.ssh/` [#458](https://github.com/gogits/gogs/issues/458)
 - Can access some pages without signin with `REQUIRE_SIGNIN_VIEW=true` [#464](https://github.com/gogits/gogs/issues/464)
 - Templating error `html/template: "user/activate" is undefined` [#465](https://github.com/gogits/gogs/issues/465)
 - Missing arguments in `TimeSince` [#473](https://github.com/gogits/gogs/issues/473)
 - Wrong action permission check in organization dashboard [#474](https://github.com/gogits/gogs/pull/474)
+- Cannot add new SSH Key in Windows [#475](https://github.com/gogits/gogs/issues/475)
 
 #### Other
 

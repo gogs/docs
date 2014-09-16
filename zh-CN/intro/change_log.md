@@ -9,10 +9,12 @@ sort: 1
 
 #### Bug 修复
 
+- 错误的 `~/.ssh/` 目录权限检查 [#458](https://github.com/gogits/gogs/issues/458)
 - 配置选项 `REQUIRE_SIGNIN_VIEW=true` 时依旧可以访问某些页面 [#464](https://github.com/gogits/gogs/issues/464)
 - 模板渲染错误 `html/template: "user/activate" is undefined` [#465](https://github.com/gogits/gogs/issues/465)
 - 模板函数 `TimeSince` 参数不足 [#473](https://github.com/gogits/gogs/issues/473)
 - 组织控制面板中错误的权限检查 [#474](https://github.com/gogits/gogs/pull/474)
+- Windows 下无法添加新的 SSH 公钥 [#475](https://github.com/gogits/gogs/issues/475)
 
 #### 其它变更
 
