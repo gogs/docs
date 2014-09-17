@@ -19,6 +19,7 @@ sort: 1
 #### 功能改进
 
 - Git 版本要求降低为 1.7.1 [#476](https://github.com/gogits/gogs/issues/476)
+- 增加法语支持 [#479](https://github.com/gogits/gogs/pull/479)
 
 #### 其它变更
 

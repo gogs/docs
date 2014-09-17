@@ -19,6 +19,7 @@ sort: 1
 #### Improvement
 
 - Downgrade Git requirement to 1.7.1 [#476](https://github.com/gogits/gogs/issues/476)
+- Add French translation [#479](https://github.com/gogits/gogs/pull/479)
 
 #### Other
 
