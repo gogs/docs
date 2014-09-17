@@ -20,6 +20,7 @@ sort: 1
 
 - Git 版本要求降低为 1.7.1 [#476](https://github.com/gogits/gogs/issues/476)
 - 增加法语支持 [#479](https://github.com/gogits/gogs/pull/479)
+- 增加 `git -> MAX_GITDIFF_LINES` 配置选项用于指定 Git Diff 页面的最大显示行数
 
 #### 其它变更
 
