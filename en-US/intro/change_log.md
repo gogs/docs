@@ -5,7 +5,7 @@ sort: 1
 
 # Change Log
 
-### V0.5.1
+### V0.5.2
 
 #### Bug fix
 
@@ -15,6 +15,10 @@ sort: 1
 - Missing arguments in `TimeSince` [#473](https://github.com/gogits/gogs/issues/473)
 - Wrong action permission check in organization dashboard [#474](https://github.com/gogits/gogs/pull/474)
 - Cannot add new SSH Key in Windows [#475](https://github.com/gogits/gogs/issues/475)
+
+#### Improvement
+
+- Downgrade Git requirement to 1.7.1 [#476](https://github.com/gogits/gogs/issues/476)
 
 #### Other
 

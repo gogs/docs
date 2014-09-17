@@ -5,7 +5,7 @@ sort: 1
 
 # 变更日志
 
-### v0.5.1
+### v0.5.2
 
 #### Bug 修复
 
@@ -15,6 +15,10 @@ sort: 1
 - 模板函数 `TimeSince` 参数不足 [#473](https://github.com/gogits/gogs/issues/473)
 - 组织控制面板中错误的权限检查 [#474](https://github.com/gogits/gogs/pull/474)
 - Windows 下无法添加新的 SSH 公钥 [#475](https://github.com/gogits/gogs/issues/475)
+
+#### 功能改进
+
+- Git 版本要求降低为 1.7.1 [#476](https://github.com/gogits/gogs/issues/476)
 
 #### 其它变更
 
