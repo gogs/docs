@@ -15,6 +15,7 @@ sort: 1
 - 模板函数 `TimeSince` 参数不足 [#473](https://github.com/gogits/gogs/issues/473)
 - 组织控制面板中错误的权限检查 [#474](https://github.com/gogits/gogs/pull/474)
 - Windows 下无法添加新的 SSH 公钥 [#475](https://github.com/gogits/gogs/issues/475)
+- 无法转移仓库所有权 [#481](https://github.com/gogits/gogs/issues/481)
 
 #### 功能改进
 

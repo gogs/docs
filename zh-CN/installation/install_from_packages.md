@@ -15,9 +15,9 @@ sort: 3
 	
 能可以到 [Arch Linux Wiki entry](https://wiki.archlinux.org/index.php/Gogs) 查看完整说明。
 
-### Ubuntu
+### Ubuntu/Debian
 
-- 由于要求 Git 版本大于 1.8，因此当前只能用于 Ubuntu 14.04 版本。
+- 当前支持 Ubuntu 14.04/12.04 和 Debian 7 版本。
 - 可以从 [packager.io](https://packager.io/gh/pkgr/gogs) 获取到相应包管理资源。
 - 所有功能都经过 AWS 系统测试，并使用了以下脚本：[gogs.sh.erb](https://github.com/pkgr/showcase/blob/master/data/gogs.sh.erb)
 - 观看视频演示：[YouTube](http://www.youtube.com/watch?v=xllP7BP_qgs&feature=youtu.be) 

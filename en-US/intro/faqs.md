@@ -22,6 +22,22 @@ server {
 }
 ```
 
+#### How to setup HTTPS?
+
+Change following configuration options in `custom/conf/app.ini` file(this is a sample):
+
+```
+[server]
+PROTOCOL = https
+ROOT_URL = https://try.gogs.io/
+CERT_FILE = custom/https/cert.pem
+KEY_FILE = custom/https/key.pem
+```
+
+If you want to use self-signed HTTPS and installed Go, you can execute following commands to generate cert and key files:
+
+	go run $GOROOT/src/pkg/crypto/tls/generate_cert.go -ca=true -duration=8760h0m0s -host=myhost.example.com
+
 #### How get current Gogs version?
 
 The plain text format of Gogs version is in the file `templates/VERSION`.

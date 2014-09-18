@@ -15,9 +15,9 @@ sort: 3
 
 Information for the installation and configuration on Arch Linux can be found at this [Arch Linux Wiki entry](https://wiki.archlinux.org/index.php/Gogs).
 
-### Ubuntu
+### Ubuntu/Debian
 
-- Currently only enabled for Ubuntu 14.04, since the dependency on Git > 1.8 rules out other distributions.
+- Currently enabled for Ubuntu 14.04/12.04 and Debian 7.
 - Current packages available from [packager.io](https://packager.io/gh/pkgr/gogs).
 - Full system test is running on AWS based on the following code: [gogs.sh.erb](https://github.com/pkgr/showcase/blob/master/data/gogs.sh.erb).
 - Screencast demo available at [YouTube](http://www.youtube.com/watch?v=xllP7BP_qgs&feature=youtu.be).

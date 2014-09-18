@@ -22,6 +22,22 @@ server {
 }
 ```
 
+#### 如何使用 HTTPS？
+
+在 `custom/conf/app.ini` 文件中修改下列配置选项（下方只是一个示例）：
+
+```
+[server]
+PROTOCOL = https
+ROOT_URL = https://try.gogs.io/
+CERT_FILE = custom/https/cert.pem
+KEY_FILE = custom/https/key.pem
+```
+
+如果您想要使用自签名的 HTTPS 并且已经安装 Go 语言，则可以使用下列命令来生成所需文件：
+
+	go run $GOROOT/src/pkg/crypto/tls/generate_cert.go -ca=true -duration=8760h0m0s -host=myhost.example.com
+
 #### 如何获取 Gogs 当前版本？
 
 纯文本形式的 Gogs 版本存储在文件 `templates/VERSION` 中。
