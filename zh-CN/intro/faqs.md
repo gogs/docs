@@ -49,3 +49,15 @@ KEY_FILE = custom/https/key.pem
 1. 当用户注册时 `ID = 1` 则会自动成为管理员，无需邮箱验证。
 2. 默认管理员登录 `Admin -> Users` 面板并设置其它人员为管理员。
 3. 通过安装页面注册的用户会自动成为管理员。
+
+### Systemd 服务
+
+在 GitHub 上的 Gogs 仓库有一个 [systemd 服务模版文件](https://github.com/gogits/gogs/blob/master/scripts/systemd/gogs.service)，您需要做出一定的修改才能够使用它：
+
+1. 将 `ExecStart` 属性替换默认的 `start.sh` 路径为您的 Gogs 实际安装路径下的位置。
+2. 将 `WorkingDirectory` 属性替换为您的 Gogs 实际安装路径根目录。
+3. [可选] 如果您 Gogs 安装示例使用 `MySQL/MariaDB`、`PostgreSQL`、`Redis` 或 `memcached`，请去掉相应 `After` 属性的注释。
+
+当您完成修改后，请将文件保存至 `/etc/systemd` 然后执行 `sudo systemd restart gogs`。
+
+您可以通过 `sudo systemd status gogs -l` 或 `sudo journalctl -b -u gogs.service`  命令检查 Gogs 的运行状态。
