@@ -41,3 +41,7 @@ In the github repository of gogs is a [systemd service template file](https://gi
 1. Replace the `start.sh` path of `ExecStart` with the path of your gogs installation. 
 2. Also replace the path of `WorkingDirectory` with the path of your gogs installation.
 3. [optional] If you are would like to use gogs with `MySQL/MariaDB`, `PostgreSQL`, `Redis` or `memcached`, uncomment the corresponding line of `After`.
+
+When you are complete with your modification of the systemd file, save it in the `/etc/systemd` and start it with `sudo systemd restart gogs`.
+
+You can check the status of the gogs systemd service with `sudo systemd status gogs -l` or display directly the journald entries with `sudo journalctl -b -u gogs.service`.
