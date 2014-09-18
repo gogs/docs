@@ -5,7 +5,7 @@ sort: 1
 
 # Change Log
 
-### V0.5.2
+### v0.5.2 @ 2014-9-18
 
 #### Bug fix
 
@@ -27,7 +27,7 @@ sort: 1
 
 - Demo site use HTTPS with new domain [https://try.gogs.io](https://try.gogs.io)
 
-### V0.5.0(2014-9-15)
+### v0.5.0 @ 2014-9-15
 
 #### Bug fix
 
@@ -82,7 +82,7 @@ sort: 1
 - Most of pages implement multiple languages
 - Add Ubuntu install package [#455](https://github.com/gogits/gogs/pull/455)
 
-### V0.4.2(2014-6-6)
+### v0.4.2 @ 2014-6-6
 
 #### Bug fix
 
@@ -91,7 +91,7 @@ sort: 1
 - Comment length is limited to 255 [#232](https://github.com/gogits/gogs/issues/232)
 - Cannot create repository with custom gitignore or license files [#237](https://github.com/gogits/gogs/issues/237)
 
-### V0.4.1(2014-6-2)
+### v0.4.1 @ 2014-6-2
 
 #### Bug fix
 
@@ -143,7 +143,7 @@ sort: 1
 - Support install with Vagrant([note](https://github.com/geerlingguy/ansible-vagrant-examples/tree/master/gogs))
 - Support install from AUR packages [#176](https://github.com/gogits/gogs/issues/176)
 
-### V0.3.1(2014-4-28)
+### v0.3.1 @ 2014-4-28
 
 #### Bug fix
 
@@ -167,7 +167,7 @@ sort: 1
 - Solution for MySQL initialization error when use wrong engine([note](https://github.com/gogits/gogs/wiki/Troubleshooting#error-1071-specified-key-was-too-long-max-key-length-is-1000-bytes))
 - Make SQLite3 as default database option when enabled
 
-### V0.3.0(2014-4-23)
+### v0.3.0 @ 2014-4-23
 
 #### Bug fix
 
@@ -207,6 +207,6 @@ sort: 1
 - Support deploy with Docker([note](https://github.com/gogits/gogs/tree/master/dockerfiles))
 - Git version requirement for both server and client sides become v1.6.6(Smart HTTP support).
 
-### V0.2.0(2014-4-1)
+### v0.2.0 @ 2014-4-1
 
 - First public release.

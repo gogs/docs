@@ -5,7 +5,7 @@ sort: 1
 
 # 变更日志
 
-### v0.5.2
+### v0.5.2 @ 2014-9-18
 
 #### Bug 修复
 
@@ -27,7 +27,7 @@ sort: 1
 
 - 演示站点启动 HTTPS 和新域名 [https://try.gogs.io](https://try.gogs.io)
 
-### V0.5.0(2014-9-15)
+### v0.5.0 @ 2014-9-15
 
 #### Bug 修复
 
@@ -81,7 +81,7 @@ sort: 1
 - 大部分页面已实现多语言
 - 增加 Ubuntu 包管理安装 [#455](https://github.com/gogits/gogs/pull/455)
 
-### V0.4.2(2014-6-6)
+### v0.4.2 @ 2014-6-6
 
 #### Bug 修复
 
@@ -90,7 +90,7 @@ sort: 1
 - 评论长度最大为 255 [#232](https://github.com/gogits/gogs/issues/232)
 - 无法创建使用自定义 gitignore 和 license 文件的仓库 [#237](https://github.com/gogits/gogs/issues/237)
 
-### V0.4.1(2014-6-2)
+### v0.4.1 @ 2014-6-2
 
 #### Bug 修复
 
@@ -142,7 +142,7 @@ sort: 1
 - 支持通过 Vagrant 安装（[备注](https://github.com/geerlingguy/ansible-vagrant-examples/tree/master/gogs)）
 - 支持通过 AUR 包管理安装 [#176](https://github.com/gogits/gogs/issues/176)
 
-### V0.3.1(2014-4-28)
+### v0.3.1 @ 2014-4-28
 
 #### Bug 修复
 
@@ -166,7 +166,7 @@ sort: 1
 - 提供 MySQL 引擎初始化错误的解决方案（[备注](https://github.com/gogits/gogs/wiki/Troubleshooting#error-1071-specified-key-was-too-long-max-key-length-is-1000-bytes)）
 - 当激活 SQLite3 选项时将其作为默认数据库
 
-### V0.3.0(2014-4-23)
+### v0.3.0 @ 2014-4-23
 
 #### Bug 修复
 
@@ -206,6 +206,6 @@ sort: 1
 - 服务端和客户端的 Git 版本要求提升至 1.6.6（用于支持 Smart HTTP）
 - 支持 Docker 部署（[备注](https://github.com/gogits/gogs/tree/master/dockerfiles)）
 
-### V0.2.0(2014-4-1)
+### v0.2.0 @ 2014-4-1
 
 - 首个公开发布版本
