@@ -38,9 +38,9 @@ KEY_FILE = custom/https/key.pem
 
 	go run $GOROOT/src/pkg/crypto/tls/generate_cert.go -ca=true -duration=8760h0m0s -host=myhost.example.com
 
-#### 如何获取 Gogs 当前版本？
+#### 如何使用离线模式？
 
-纯文本形式的 Gogs 版本存储在文件 `templates/VERSION` 中。
+如果您需要将 Gogs 运行于内网环境下，只需将 `custom/conf/app.ini` 文件中的配置选项 `server -> OFFLINE_MODE` 修改为 `true` 即可。
 
 ### 管理权限
 
@@ -61,3 +61,9 @@ KEY_FILE = custom/https/key.pem
 当您完成修改后，请将文件保存至 `/etc/systemd` 然后执行 `sudo systemd restart gogs`。
 
 您可以通过 `sudo systemd status gogs -l` 或 `sudo journalctl -b -u gogs.service`  命令检查 Gogs 的运行状态。
+
+### 其它
+
+#### 如何获取 Gogs 当前版本？
+
+纯文本形式的 Gogs 版本存储在文件 `templates/VERSION` 中。

@@ -30,17 +30,17 @@ Change following configuration options in `custom/conf/app.ini` file(this is a s
 [server]
 PROTOCOL = https
 ROOT_URL = https://try.gogs.io/
-CERT_FILE = custom/https/cert.pem
-KEY_FILE = custom/https/key.pem
+CERT_FILE = custom/https/unified.cert
+KEY_FILE = custom/https/decryped-private.key
 ```
 
 If you want to use self-signed HTTPS and installed Go, you can execute following commands to generate cert and key files:
 
 	go run $GOROOT/src/pkg/crypto/tls/generate_cert.go -ca=true -duration=8760h0m0s -host=myhost.example.com
 
-#### How get current Gogs version?
+#### How to enable offline mode?
 
-The plain text format of Gogs version is in the file `templates/VERSION`.
+To run Gogs in an intranet, change configuration option `server -> OFFLINE_MODE` to be `true` in file `custom/conf/app.ini`.
 
 ### Administration
 
@@ -61,3 +61,9 @@ In the GitHub repository of Gogs is a [systemd service template file](https://gi
 When you are complete with your modification of the systemd file, save it in the `/etc/systemd` and start it with `sudo systemd restart gogs`.
 
 You can check the status of the Gogs systemd service with `sudo systemd status gogs -l` or display directly the journald entries with `sudo journalctl -b -u gogs.service`.
+
+### Others
+
+#### How to get current Gogs version?
+
+The plain text format of Gogs version is in the file `templates/VERSION`.
