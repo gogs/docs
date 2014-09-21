@@ -42,6 +42,10 @@ KEY_FILE = custom/https/key.pem
 
 如果您需要将 Gogs 运行于内网环境下，只需将 `custom/conf/app.ini` 文件中的配置选项 `server -> OFFLINE_MODE` 修改为 `true` 即可。
 
+#### 如何使用自定义 robots.txt？
+
+在 `custom` 目录下创建 `robots.txt` 文件即可。
+
 ### 管理权限
 
 #### 如果成为管理员？

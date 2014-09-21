@@ -5,6 +5,13 @@ sort: 1
 
 # 变更日志
 
+### v0.6.0
+
+#### 新增特性
+
+- 允许 Gogs 运行在反向代理的子路径下 [#463](https://github.com/gogits/gogs/pull/463)
+- 支持自定义 `robots.txt` 文件
+
 ### v0.5.2 @ 2014-9-18
 
 #### Bug 修复

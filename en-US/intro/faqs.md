@@ -42,6 +42,10 @@ If you want to use self-signed HTTPS and installed Go, you can execute following
 
 To run Gogs in an intranet, change configuration option `server -> OFFLINE_MODE` to be `true` in file `custom/conf/app.ini`.
 
+#### How to enable custom robots.txt?
+
+Create a file called `robots.txt` under `custom` directory.
+
 ### Administration
 
 #### How to become an administrator?

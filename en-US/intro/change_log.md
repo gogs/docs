@@ -5,9 +5,16 @@ sort: 1
 
 # Change Log
 
+### v0.6.0
+
+#### Features
+
+- Allow Gogs to run from a suburl behind a reverse proxy [#463](https://github.com/gogits/gogs/pull/463)
+- Support custom `robots.txt`
+
 ### v0.5.2 @ 2014-9-18
 
-#### Bug fix
+#### Bug fixes
 
 - Incorrect permission check of `~/.ssh/` [#458](https://github.com/gogits/gogs/issues/458)
 - Can access some pages without signin with `REQUIRE_SIGNIN_VIEW=true` [#464](https://github.com/gogits/gogs/issues/464)
@@ -17,19 +24,19 @@ sort: 1
 - Cannot add new SSH Key in Windows [#475](https://github.com/gogits/gogs/issues/475)
 - Cannot transfer repository ownership [#481](https://github.com/gogits/gogs/issues/481)
 
-#### Improvement
+#### Improvements
 
 - Downgrade Git requirement to 1.7.1 [#476](https://github.com/gogits/gogs/issues/476)
 - Add French translation [#479](https://github.com/gogits/gogs/pull/479)
 - Add `git -> MAX_GITDIFF_LINES` option to set max show line numbers of Git Diff page
 
-#### Other
+#### Others
 
 - Demo site use HTTPS with new domain [https://try.gogs.io](https://try.gogs.io)
 
 ### v0.5.0 @ 2014-9-15
 
-#### Bug fix
+#### Bug fixes
 
 - Panic when view releases that were created by Gogs [#197](https://github.com/gogits/gogs/issues/197)
 - Content lost if user changes milestone or assignee [#216](https://github.com/gogits/gogs/issues/216)
@@ -44,7 +51,7 @@ sort: 1
 - Missing trailing '/' in `ROOT_URL` causes problems [#367](https://github.com/gogits/gogs/issues/367)
 - SSH keys that include new lines can't be deleted from authorized_keys [#370](https://github.com/gogits/gogs/issues/370)
 
-#### Improvement
+#### Improvements
 
 - Add `webhook` section for configuring web hook **task interval** and **deliver timeout**
 - Add download TAR.GZ button in repository viewer
@@ -59,7 +66,7 @@ sort: 1
 - Add `.mkd` as Markdown file extension [#362](https://github.com/gogits/gogs/issues/362)
 - Allow `.` in repository name [#453](https://github.com/gogits/gogs/issues/453)
 
-#### Feature
+#### Features
 
 - Add command `gogs fix location <old path>` to handle Gogs app location change
 - Support edit release and save as draft
@@ -75,7 +82,7 @@ sort: 1
 - Add Slack webhook integration [#379](https://github.com/gogits/gogs/pull/379)
 - Add Organization-level Webhooks [#442](https://github.com/gogits/gogs/pull/442)
 
-#### Other
+#### Others
 
 - Official website brand new design([gogs.io](http://gogs.io))
 - Whole site new UI design
@@ -84,7 +91,7 @@ sort: 1
 
 ### v0.4.2 @ 2014-6-6
 
-#### Bug fix
+#### Bug fixes
 
 - System mail didn't use `mailer -> FROM` as sender name [#214](https://github.com/gogits/gogs/issues/214)
 - Verbose prefix of gitignore and license files in create repository page [#230](https://github.com/gogits/gogs/issues/230)
@@ -93,7 +100,7 @@ sort: 1
 
 ### v0.4.1 @ 2014-6-2
 
-#### Bug fix
+#### Bug fixes
 
 - Cannot clone through SSH with non-default port(22) [#94](https://github.com/gogits/gogs/issues/94)
 - Cannot migrate repository when use PostgreSQL [#141](https://github.com/gogits/gogs/issues/141)
@@ -106,7 +113,7 @@ sort: 1
 - Show 500 page when poster of issue no longer exists [#167](https://github.com/gogits/gogs/issues/167)
 - Using @ in code block tries to make a mention [#178](https://github.com/gogits/gogs/issues/178)
 
-#### Improvement
+#### Improvements
 
 - Able to unbind social account from database
 - Add mail notification for new comment and mentioned in new comment
@@ -119,7 +126,7 @@ sort: 1
 - Able to set `GOGS_CUSTOM` envrionment variable to set global custom path [#209](https://github.com/gogits/gogs/issues/209)
 - Add `log -> ROOT_PATH` option for custom log file path [#209](https://github.com/gogits/gogs/issues/209)
 
-#### Feature
+#### Features
 
 - Support SMTP authentication [#8](https://github.com/gogits/gogs/issues/8)
 - Support user name contains dot `.` [#91](https://github.com/gogits/gogs/issues/91)
@@ -137,7 +144,7 @@ sort: 1
 - Add `server -> STATIC_ROOT_PATH` option for indicating custom template and static file path [#209](https://github.com/gogits/gogs/issues/209)
 
 
-#### Other
+#### Others
 
 - Official website online([gogs.io](http://gogs.io))
 - Support install with Vagrant([note](https://github.com/geerlingguy/ansible-vagrant-examples/tree/master/gogs))
@@ -145,23 +152,23 @@ sort: 1
 
 ### v0.3.1 @ 2014-4-28
 
-#### Bug fix
+#### Bug fixes
 
 - Panic when try to get author of tag when there isn't one [#92](https://github.com/gogits/gogs/issues/92)
 - Problems with Docker setup scripts [#124](https://github.com/gogits/gogs/pull/124) [#129](https://github.com/gogits/gogs/pull/129)
 - Picture overflows when size is extremely large in single file page
 
-#### Improvement
+#### Improvements
 
 - Remember database option status in install page
 
-#### Feature
+#### Features
 
 - Basic support for LDAP/Microsoft Active Directory [#112](https://github.com/gogits/gogs/pull/112)
 - Offline mode to disable fetch static resources from CDN
 - Support log in by e-mail
 
-#### Other
+#### Others
 
 - Batch of typo and grammar fix
 - Solution for MySQL initialization error when use wrong engine([note](https://github.com/gogits/gogs/wiki/Troubleshooting#error-1071-specified-key-was-too-long-max-key-length-is-1000-bytes))
@@ -169,13 +176,13 @@ sort: 1
 
 ### v0.3.0 @ 2014-4-23
 
-#### Bug fix
+#### Bug fixes
 
 - One-click copy button of clone URL in repository viewer doesn't work([note](https://github.com/gogits/gogs/wiki/Known-Issues#repository-viewerurl-usernamereponame))
 - Doesn't delete corresponding accesses, watches when delete user
 - Server log doesn't log into correct file
 
-#### Improvement
+#### Improvements
 
 - Add corresponding issue link to create issue notify mail
 - Add salt for every single user
@@ -184,7 +191,7 @@ sort: 1
 - Show commits list by page, not all at once
 - Use build tag to enable SQLite3 support([note](https://github.com/gogits/gogs/wiki/Install-from-source#install))
 
-#### Feature
+#### Features
 
 - Support rename repository/user
 - Support transfer repository
@@ -202,7 +209,7 @@ sort: 1
 - Support download zip archive from any given commit
 - Support browse code by tag
 
-#### Other
+#### Others
 
 - Support deploy with Docker([note](https://github.com/gogits/gogs/tree/master/dockerfiles))
 - Git version requirement for both server and client sides become v1.6.6(Smart HTTP support).
