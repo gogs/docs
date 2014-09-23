@@ -7,10 +7,20 @@ sort: 1
 
 ### v0.6.0
 
+#### Bug fixes
+
+- Cannot download repository archive [#495](https://github.com/gogits/gogs/issues/495)
+- Cannot view repository by tag
+
+#### Improvements
+
+- Fix missing inline code Markdown style [#491](https://github.com/gogits/gogs/issues/491)
+
 #### Features
 
 - Allow Gogs to run from a suburl behind a reverse proxy [#463](https://github.com/gogits/gogs/pull/463)
-- Support custom `robots.txt`
+- Add support for custom `robots.txt`
+- Add basic support for submodule
 
 ### v0.5.2 @ 2014-9-18
 

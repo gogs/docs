@@ -34,9 +34,9 @@ CERT_FILE = custom/https/unified.cert
 KEY_FILE = custom/https/decryped-private.key
 ```
 
-If you want to use self-signed HTTPS and installed Go, you can execute following commands to generate cert and key files:
+If you want to use self-signed HTTPS, you can execute following commands to generate cert and key files:
 
-	go run $GOROOT/src/pkg/crypto/tls/generate_cert.go -ca=true -duration=8760h0m0s -host=myhost.example.com
+	$ ./gogs cert -ca=true -duration=8760h0m0s -host=myhost.example.com
 
 #### How to enable offline mode?
 

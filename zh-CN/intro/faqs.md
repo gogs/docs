@@ -34,9 +34,9 @@ CERT_FILE = custom/https/cert.pem
 KEY_FILE = custom/https/key.pem
 ```
 
-如果您想要使用自签名的 HTTPS 并且已经安装 Go 语言，则可以使用下列命令来生成所需文件：
+如果您想要使用自签名的 HTTPS，则可以使用下列命令来生成所需文件：
 
-	go run $GOROOT/src/pkg/crypto/tls/generate_cert.go -ca=true -duration=8760h0m0s -host=myhost.example.com
+	$ ./gogs cert -ca=true -duration=8760h0m0s -host=myhost.example.com
 
 #### 如何使用离线模式？
 

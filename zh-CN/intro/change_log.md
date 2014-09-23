@@ -7,10 +7,20 @@ sort: 1
 
 ### v0.6.0
 
+#### Bug 修复
+
+- 无法下载仓库存档 [#495](https://github.com/gogits/gogs/issues/495)
+- 无法根据标签（tag）浏览仓库代码
+
+#### 功能改进
+
+- 修正行内代码 Markdown 风格 [#491](https://github.com/gogits/gogs/issues/491)
+
 #### 新增特性
 
 - 允许 Gogs 运行在反向代理的子路径下 [#463](https://github.com/gogits/gogs/pull/463)
-- 支持自定义 `robots.txt` 文件
+- 增加自定义 `robots.txt` 文件支持
+- 增加基本的 SubModule 支持
 
 ### v0.5.2 @ 2014-9-18
 
