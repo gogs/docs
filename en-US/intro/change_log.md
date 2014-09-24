@@ -14,11 +14,13 @@ sort: 1
 
 #### Improvements
 
+- Improve e-mail security [#249](https://github.com/gogits/gogs/issues/249)
 - Fix missing inline code Markdown style [#491](https://github.com/gogits/gogs/issues/491)
 
 #### Features
 
 - Allow Gogs to run from a suburl behind a reverse proxy [#463](https://github.com/gogits/gogs/pull/463)
+- Add `gogs cert` command to generate files for self-signed HTTPS [#487](https://github.com/gogits/gogs/issues/487)
 - Add support for custom `robots.txt`
 - Add basic support for submodule
 

@@ -14,11 +14,13 @@ sort: 1
 
 #### 功能改进
 
+- 加强用户邮箱安全性 [#249](https://github.com/gogits/gogs/issues/249)
 - 修正行内代码 Markdown 风格 [#491](https://github.com/gogits/gogs/issues/491)
 
 #### 新增特性
 
 - 允许 Gogs 运行在反向代理的子路径下 [#463](https://github.com/gogits/gogs/pull/463)
+- 增加 `gogs cert` 命令用于生产自签名 HTTPS 的文件 [#487](https://github.com/gogits/gogs/issues/487)
 - 增加自定义 `robots.txt` 文件支持
 - 增加基本的 SubModule 支持
 
