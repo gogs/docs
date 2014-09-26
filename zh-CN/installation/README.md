@@ -8,7 +8,7 @@ sort: 1
 
 - [MySQL](http://dev.mysql.com)：版本 >= 5.1 或者 [PostgreSQL](http://www.postgresql.org/) 或者 **什么都不需要**
 - [git](http://git-scm.com/)（bash）：版本 >= 1.7.1（服务端和客户端均需）
-- SSH 服务器
+- SSH 服务器（**如果您只使用 HTTP/HTTPS 的话请忽略此项**）
 
 ### 安装数据库
 

@@ -13,7 +13,9 @@ sort: 2
 
 -----
 
-- 错误描述：`fatal: 'XX/XX.git' does not appear to be a git repository`
+- 错误描述：
+	- `fatal: 'XX/XX.git' does not appear to be a git repository`
+	- 推送代码提交后依旧显示为空仓库
 - 可能原因：`~/.ssh/authorized_keys` 文件中存在重复的 SSH 密钥，可能是由于您曾经或正在通过同一个系统用户使用 GitLab。
 - 解决方案：删除除了属于 Gogs 自动添加以外的所有密钥。
 

@@ -13,7 +13,9 @@ sort: 2
 
 -----
 
-- Error: `fatal: 'XX/XX.git' does not appear to be a git repository`
+- Error: 
+	- `fatal: 'XX/XX.git' does not appear to be a git repository`
+	- Pushed commits but still shows as a bare repository
 - Causes: there are duplicated SSH keys in `~/.ssh/authorized_keys` file, possibly you are/were using GitLab for same system user. 
 - Solution: delete the old one and keep the one that was added by Gogs only.
 

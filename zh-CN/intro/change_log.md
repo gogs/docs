@@ -17,6 +17,7 @@ sort: 1
 
 - 加强用户邮箱安全性 [#249](https://github.com/gogits/gogs/issues/249)
 - 修正行内代码 Markdown 风格 [#491](https://github.com/gogits/gogs/issues/491)
+- 在仓库列表视图中增加目录级别提交信息显示
 
 #### 新增特性
 

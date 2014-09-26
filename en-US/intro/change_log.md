@@ -17,6 +17,7 @@ sort: 1
 
 - Improve e-mail security [#249](https://github.com/gogits/gogs/issues/249)
 - Fix missing inline code Markdown style [#491](https://github.com/gogits/gogs/issues/491)
+- Add directory level commit message in repository list view 
 
 #### Features
 

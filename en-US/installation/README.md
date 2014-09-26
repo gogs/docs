@@ -8,7 +8,7 @@ sort: 1
 
 - [MySQL](http://dev.mysql.com): Version >= 5.1 or [PostgreSQL](http://www.postgresql.org/) or **NOTHING**
 - [git](http://git-scm.com/)(bash): Version >= 1.7.1(both server and client)
-- A functioning SSH server
+- A functioning SSH server(**ignore this if you're only using HTTP/HTTPS**)
 
 ### Install Database
 
