@@ -11,6 +11,7 @@ sort: 1
 
 - Cannot download repository archive [#495](https://github.com/gogits/gogs/issues/495)
 - Cannot view repository by tag
+- Cannot transfer repository from organization to individual
 
 #### Improvements
 

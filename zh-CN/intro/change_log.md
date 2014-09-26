@@ -11,6 +11,7 @@ sort: 1
 
 - 无法下载仓库存档 [#495](https://github.com/gogits/gogs/issues/495)
 - 无法根据标签（tag）浏览仓库代码
+- 无法将仓库从组织转移到个人用户
 
 #### 功能改进
 
