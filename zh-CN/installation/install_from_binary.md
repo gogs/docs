@@ -7,10 +7,12 @@ sort: 1
 
 您可以直接从 [gobuild.io](http://gobuild.io/github.com/gogits/gogs) 上下载基于最新源码构建的二进制。
 
+**从 v0.5.2 起（不包含 v0.5.2），除了 Windows i386 机器以外，所有构建都内置 SQLite3、Redis 和 Memcache 驱动**
+
 #### 构建类型
 
 - 一般构建：由 [gobuild.io](http://gobuild.io/github.com/gogits/gogs) 提供技术支持。
-- 官方构建：仅支持 64 位机器，内置 SQLite3、Redis 和 Memcache 驱动。
+- 官方构建：仅支持 64 位机器，稳定构建发布版。
 
 ### v0.5.2 @ 2014-9-18
 

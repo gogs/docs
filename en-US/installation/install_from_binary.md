@@ -7,10 +7,12 @@ sort: 1
 
 You're free to download up-to-date binary from [gobuild.io](http://gobuild.io/github.com/gogits/gogs).
 
+**After v0.5.2(exclusive v0.5.2), all builds now have SQLite3, Redis and Memcache drivers built-in except windows i386**
+
 #### Builds types
 
 - General builds: provided by [gobuild.io](http://gobuild.io/github.com/gogits/gogs).
-- Official builds: 64-bit machine only, with SQLite3, Redis and Memcache drivers built-in.
+- Official builds: 64-bit machine only, release with stable build.
 
 ### v0.5.2 @ 2014-9-18
 
