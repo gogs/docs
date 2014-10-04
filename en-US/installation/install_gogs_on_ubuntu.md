@@ -38,7 +38,7 @@ sort: 4
 ### Requirements
 
 - Go Programming Language: Version >= 1.2
-- git(bash): Version >= 1.8.0(both server and client) 
+- git(bash): Version >= 1.8.0 (both server and client) 
 - MySQL: Version >= 5.1 or PostgreSQL or NOTHING. 
 
 ### Create the user which will run git
