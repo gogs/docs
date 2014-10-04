@@ -73,9 +73,9 @@ $ go build
 If you need to enable SQLite3/Redis/Memcache, please delete directory `$GOPATH/pkg/{GOOS_GOARCH}/github.com/gogits/gogs` and do:
 
 ```
-$ go get -u -tags "sqlite redis memecache" github.com/gogits/gogs
+$ go get -u -tags "sqlite redis memcache" github.com/gogits/gogs
 $ cd $GOPATH/src/github.com/gogits/gogs
-$ go build -tags "sqlite redis memecache"
+$ go build -tags "sqlite redis memcache"
 ```
 
 See [Configuration and run](configuration_and_run.md) to go further.
