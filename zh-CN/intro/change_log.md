@@ -12,19 +12,25 @@ sort: 1
 - 无法下载仓库存档 [#495](https://github.com/gogits/gogs/issues/495)
 - 无法根据标签（tag）浏览仓库代码
 - 无法将仓库从组织转移到个人用户
+- 当仓库所有者将仓库转移给协作者时发生错误
+- 不支持注解标签 [#515](https://github.com/gogits/gogs/issues/515)
+- 无效的授权认证逻辑
 
 #### 功能改进
 
 - 加强用户邮箱安全性 [#249](https://github.com/gogits/gogs/issues/249)
 - 修正行内代码 Markdown 风格 [#491](https://github.com/gogits/gogs/issues/491)
 - 在仓库列表视图中增加目录级别提交信息显示
+- 修改工单标题最大长度为 255 个字符 [#522](https://github.com/gogits/gogs/issues/522)
 
 #### 新增特性
 
+- 增加 Git 钩子支持 [#264](https://github.com/gogits/gogs/issues/264)
 - 允许 Gogs 运行在反向代理的子路径下 [#463](https://github.com/gogits/gogs/pull/463)
 - 增加 `gogs cert` 命令用于生产自签名 HTTPS 的文件 [#487](https://github.com/gogits/gogs/issues/487)
 - 增加自定义 `robots.txt` 文件支持
 - 增加基本的 SubModule 支持
+- 增加法语和荷兰语支持
 
 ### v0.5.2 @ 2014-9-18
 

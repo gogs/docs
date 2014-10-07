@@ -76,6 +76,25 @@ After that, go to [http://localhost:3000/install](http://localhost:3000/install)
 	- Now copy the link looks like this(prompt in Gogs server log): https://accounts.google.com/ContinueSignIn?sarp=1&scc=1&plt=AKgnsbvPPN_E_25__nyS*******f18O9uuLNtz0Imw and log in again. 
 	- Things should work now. Last but not the least, check you `spam` box in case your mail service provider thinks your gmail is a spammer.
 
+## Windows
+
+- Error: 
+
+```
+2014/09/18 15:04:40 [repo.go:115 CreatePost()] [E] CreatePost: initRepository: initRepository(git clone): cygwin warning:
+MS-DOS style path detected: C:\Users\user\gogs-repositories\unos\test3.git/.git
+Preferred POSIX equivalent is: /cygdrive/c/Users/user/gogs-repositories/unos/test3.git/.git
+CYGWIN environment variable option "nodosfilewarning" turns off this warning.
+Consult the user's guide for more details about POSIX paths:
+http://cygwin.com/cygwin-ug-net/using.html#using-pathnames
+Cloning into 'C:\Users\user\AppData\Local\Temp\484264900'...
+fatal: '/cygdrive/d/svnroot/research/gogs/C:\Users\user\gogs-repositories\unos\test3.git' does not appear to be a git repository
+fatal: Could not read from remote repository.
+```
+
+- Causes: you installed the another shell in system, and has different path style.
+- Solution: please try to start Gogs through default CMD.
+
 ## Other
 
 - Error: `Error 1062: Duplicate entry 'Unknown-Mac' for key 'UQE_public_key_name'`

@@ -12,19 +12,25 @@ sort: 1
 - Cannot download repository archive [#495](https://github.com/gogits/gogs/issues/495)
 - Cannot view repository by tag
 - Cannot transfer repository from organization to individual
+- Error occurs when owner transfers repository to its collaborator
+- Does not support annotated tag [#515](https://github.com/gogits/gogs/issues/515)
+- Broken authentication logic
 
 #### Improvements
 
 - Improve e-mail security [#249](https://github.com/gogits/gogs/issues/249)
 - Fix missing inline code Markdown style [#491](https://github.com/gogits/gogs/issues/491)
 - Add directory level commit message in repository list view 
+- Change issue title length limitation to 255 characters [#522](https://github.com/gogits/gogs/issues/522)
 
 #### Features
 
+- Add support for Git hooks [#264](https://github.com/gogits/gogs/issues/264)
 - Allow Gogs to run from a suburl behind a reverse proxy [#463](https://github.com/gogits/gogs/pull/463)
 - Add `gogs cert` command to generate files for self-signed HTTPS [#487](https://github.com/gogits/gogs/issues/487)
 - Add support for custom `robots.txt`
 - Add basic support for submodule
+- Add Franch and Dutch languages.
 
 ### v0.5.2 @ 2014-9-18
 

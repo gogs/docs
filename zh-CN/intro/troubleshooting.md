@@ -75,6 +75,25 @@ sort: 2
 	- 访问 https://accounts.google.com/DisplayUnlockCaptcha 单击 `continue`。
 	- 重试发送。
 
+## Windows
+
+- 错误描述：
+
+```
+2014/09/18 15:04:40 [repo.go:115 CreatePost()] [E] CreatePost: initRepository: initRepository(git clone): cygwin warning:
+MS-DOS style path detected: C:\Users\user\gogs-repositories\unos\test3.git/.git
+Preferred POSIX equivalent is: /cygdrive/c/Users/user/gogs-repositories/unos/test3.git/.git
+CYGWIN environment variable option "nodosfilewarning" turns off this warning.
+Consult the user's guide for more details about POSIX paths:
+http://cygwin.com/cygwin-ug-net/using.html#using-pathnames
+Cloning into 'C:\Users\user\AppData\Local\Temp\484264900'...
+fatal: '/cygdrive/d/svnroot/research/gogs/C:\Users\user\gogs-repositories\unos\test3.git' does not appear to be a git repository
+fatal: Could not read from remote repository.
+```
+
+- 可能原因：您在系统中安装了另一种命令行工具，并且与系统默认的 CMD 有不同路径风格。
+- 解决方案：请您尝试用默认的 CMD 启动 Gogs。
+
 ## 其它
 
 - 错误描述：`Error 1062: Duplicate entry 'Unknown-Mac' for key 'UQE_public_key_name'`
