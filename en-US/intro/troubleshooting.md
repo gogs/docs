@@ -5,10 +5,16 @@ sort: 2
 
 # Troubleshooting
 
+## Installation
+
+- Error: `../gosrc/src/github.com/gogits/gogs/cmd/cert.go:79: undefined: elliptic.P224`
+- Causes: golang package in RHEL/CentOS does not support Elliptic Curve cryptography (because it's patented) and it's specifically removed from CentOS/RHEL.
+- Solution: download and install Go from [golang.org/dl](http://golang.org/dl).
+
 ## Git
 
 - Error: `bash /path/to/gogs: no such file or directory`
-- Causes: You change the location of Gogs server after a while and the old path was hard coded into `~/.ssh/authorized_keys` file.
+- Causes: you have changed the location of Gogs server after a while and the old path was hard coded into `~/.ssh/authorized_keys` file.
 - Solution: execute `./gogs fix location <old Gogs path>` under new Gogs directory.
 
 -----

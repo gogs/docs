@@ -5,6 +5,12 @@ sort: 2
 
 # 故障排查
 
+## 安装
+
+- 错误描述：`../gosrc/src/github.com/gogits/gogs/cmd/cert.go:79: undefined: elliptic.P224`
+- 可能原因：Go 语言的 RHEL/CentOS 官方发行版中因专利问题移除了相关加密算法的代码
+- 解决方案：从 [golang.org/dl](http://golang.org/dl) 下载安装 Go 语言
+
 ## Git
 
 - 错误描述：`bash /path/to/gogs: no such file or directory`
