@@ -22,6 +22,8 @@ sort: 1
 - 修正行内代码 Markdown 风格 [#491](https://github.com/gogits/gogs/issues/491)
 - 在仓库列表视图中增加目录级别提交信息显示
 - 修改工单标题最大长度为 255 个字符 [#522](https://github.com/gogits/gogs/issues/522)
+- 允许通过自签名服务器发送邮件
+- 支持自定义本地化文件
 
 #### 新增特性
 

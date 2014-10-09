@@ -22,6 +22,8 @@ sort: 1
 - Fix missing inline code Markdown style [#491](https://github.com/gogits/gogs/issues/491)
 - Add directory level commit message in repository list view 
 - Change issue title length limitation to 255 characters [#522](https://github.com/gogits/gogs/issues/522)
+- Allow mail with self-signed certificates
+- Allow custom locale files
 
 #### Features
 
