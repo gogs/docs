@@ -31,6 +31,7 @@ sort: 1
 - Add support for custom `robots.txt`
 - Add basic support for submodule
 - Add Franch and Dutch languages.
+- Add system notices for admin.
 
 ### v0.5.2 @ 2014-9-18
 
