@@ -5,7 +5,7 @@ sort: 1
 
 # Change Log
 
-### v0.6.0
+### v0.5.5 @ 2014-10-10
 
 #### Bug fixes
 

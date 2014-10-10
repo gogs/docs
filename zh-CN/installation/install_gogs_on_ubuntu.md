@@ -5,6 +5,8 @@ sort: 4
 
 ## 在 Ubuntu 14.04 LTS 上二进制安装
 
+> 由 [@chk1](https://github.com/chk1) 贡献
+
 ### 创建用户及安装依赖
 
 - sudo adduser git

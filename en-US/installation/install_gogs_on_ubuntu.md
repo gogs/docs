@@ -5,6 +5,8 @@ sort: 4
 
 ## Binary install Gogs on Ubuntu 14.04 LTS
 
+> Contrbutied by [@chk1](https://github.com/chk1)
+
 ### Create user and install denpendency
 
 - sudo adduser git
