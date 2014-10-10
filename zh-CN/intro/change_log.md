@@ -32,7 +32,7 @@ sort: 1
 - 增加 `gogs cert` 命令用于生产自签名 HTTPS 的文件 [#487](https://github.com/gogits/gogs/issues/487)
 - 增加自定义 `robots.txt` 文件支持
 - 增加基本的 SubModule 支持
-- 增加法语和荷兰语支持
+- 增加法语、荷兰语和繁体中文支持
 - 在管理面板增加系统提示功能
 
 ### v0.5.2 @ 2014-9-18

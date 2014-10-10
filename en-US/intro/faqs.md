@@ -46,15 +46,17 @@ To run Gogs in an intranet, change configuration option `server -> OFFLINE_MODE`
 
 Create a file called `robots.txt` under `custom` directory.
 
-### Administration
 
-#### How to become an administrator?
 
-1. You're the first registered user with `ID = 1`, and no e-mail confirmation required(if enabled).
-2. Default administrator log into `Admin -> Users` and authorize someone. 
-3. Register in the install page.
+#### How to run as daemon?
 
-### Systemd Service
+Gogs has some third-party scripts for supporting run as daemon:
+
+- [init.d/centos](https://github.com/gogits/gogs/blob/master/scripts/init/centos/gogs)
+- [init.d/debian](https://github.com/gogits/gogs/blob/master/scripts/init/debian/gogs)
+- Systemd in the following section.
+
+#### Systemd Service
 
 In the GitHub repository of Gogs is a [systemd service template file](https://github.com/gogits/gogs/blob/master/scripts/systemd/gogs.service) for Gogs. It needs some modifications for a working version for your installation. OK, start the editors.
 
@@ -65,6 +67,14 @@ In the GitHub repository of Gogs is a [systemd service template file](https://gi
 When you are complete with your modification of the systemd file, save it in the `/etc/systemd` and start it with `sudo systemd restart gogs`.
 
 You can check the status of the Gogs systemd service with `sudo systemd status gogs -l` or display directly the journald entries with `sudo journalctl -b -u gogs.service`.
+
+### Administration
+
+#### How to become an administrator?
+
+1. You're the first registered user with `ID = 1`, and no e-mail confirmation required(if enabled).
+2. Default administrator log into `Admin -> Users` and authorize someone. 
+3. Register in the install page.
 
 ### Others
 

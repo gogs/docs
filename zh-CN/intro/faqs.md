@@ -46,15 +46,15 @@ KEY_FILE = custom/https/key.pem
 
 在 `custom` 目录下创建 `robots.txt` 文件即可。
 
-### 管理权限
+#### 如何以守护进程形式运行？
 
-#### 如果成为管理员？
+Gogs 拥有一些由第三方提供的脚本来支持以守护进程形式运行：
 
-1. 当用户注册时 `ID = 1` 则会自动成为管理员，无需邮箱验证。
-2. 默认管理员登录 `Admin -> Users` 面板并设置其它人员为管理员。
-3. 通过安装页面注册的用户会自动成为管理员。
+- [init.d/centos](https://github.com/gogits/gogs/blob/master/scripts/init/centos/gogs)
+- [init.d/debian](https://github.com/gogits/gogs/blob/master/scripts/init/debian/gogs)
+- 下小节中的 Systemd 服务
 
-### Systemd 服务
+#### Systemd 服务
 
 在 GitHub 上的 Gogs 仓库有一个 [systemd 服务模版文件](https://github.com/gogits/gogs/blob/master/scripts/systemd/gogs.service)，您需要做出一定的修改才能够使用它：
 
@@ -65,6 +65,14 @@ KEY_FILE = custom/https/key.pem
 当您完成修改后，请将文件保存至 `/etc/systemd` 然后执行 `sudo systemd restart gogs`。
 
 您可以通过 `sudo systemd status gogs -l` 或 `sudo journalctl -b -u gogs.service`  命令检查 Gogs 的运行状态。
+
+### 管理权限
+
+#### 如果成为管理员？
+
+1. 当用户注册时 `ID = 1` 则会自动成为管理员，无需邮箱验证。
+2. 默认管理员登录 `Admin -> Users` 面板并设置其它人员为管理员。
+3. 通过安装页面注册的用户会自动成为管理员。
 
 ### 其它
 
