@@ -5,6 +5,18 @@ sort: 1
 
 # Change Log
 
+### v0.6.0
+
+#### Bug fixes
+
+- Line numbers are misaligned on Firefox [#457](https://github.com/gogits/gogs/issues/457)
+- Git hook does't filter `\r` character [#546](https://github.com/gogits/gogs/issues/546)
+- File view raw and history buttons don't show [#550](https://github.com/gogits/gogs/issues/550)
+
+#### Features
+
+- Able to view comparison page for 2 commits
+
 ### v0.5.5 @ 2014-10-10
 
 #### Bug fixes

@@ -28,8 +28,6 @@ conf/								// 配置文件
   |__ gitignore/		
   |__ license/				
   |__ locale/						// i18n 本地化文件
-         |__ locale_en-US.ini
-         |__ locale_zh-CN.ini
 etc/
 models/								// 业务逻辑
 modules/							// 辅助模块

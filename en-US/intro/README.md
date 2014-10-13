@@ -28,8 +28,6 @@ conf/								// configuration
   |__ gitignore/		
   |__ license/				
   |__ locale/						// i18n locales
-         |__ locale_en-US.ini
-         |__ locale_zh-CN.ini
 etc/
 models/								// business logic
 modules/							// helper modules

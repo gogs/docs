@@ -5,6 +5,18 @@ sort: 1
 
 # 变更日志
 
+### v0.6.0
+
+#### Bug 修复
+
+- 火狐下浏览代码行号与内容不对其 [#457](https://github.com/gogits/gogs/issues/457)
+- Git 钩子未过滤 `\r` 字符 [#546](https://github.com/gogits/gogs/issues/546)
+- 查看原始文件和文件历史按钮未显示 [#550](https://github.com/gogits/gogs/issues/550)
+
+#### 新增特性
+
+- 能够查看 2 次提交的内容对比页面
+
 ### v0.5.5 @ 2014-10-10
 
 #### Bug 修复

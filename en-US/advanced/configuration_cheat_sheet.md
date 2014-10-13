@@ -13,9 +13,8 @@ If you see anything like `%(X)s`, it's the feature powered by [goconfig](https:/
 
 ## Overall
 
-- `APP_NAME`: Application name of server, change to whatever you want.
-- `APP_LOGO`: The logo image path corresponding to `public` directory.
-- `RUN_USER`: The system user requires to run, we recommend to be `git`; however, change to whatever your user name is if you run the server in your personal computer. Server may crash due to not set this value properly.
+- `APP_NAME`: Application name, change to whatever you want.
+- `RUN_USER`: The system user requires to run, we recommend to be `git`; however, change to whatever your user name is if you run Gogs in your personal computer. Server may crash due to not set this value properly.
 - `RUN_MODE`: For performance and other purpose, change this to `prod` when deploy to production environment.
 
 ## Repository
