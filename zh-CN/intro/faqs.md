@@ -24,7 +24,7 @@ server {
 
 #### 如何使用 HTTPS？
 
-在 `custom/conf/app.ini` 文件中修改下列配置选项（下方只是一个示例）：
+在 `custom/conf/app.ini` 文件中修改下列配置选项（以下仅为示例）：
 
 ```
 [server]

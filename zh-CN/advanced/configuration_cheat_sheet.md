@@ -26,14 +26,16 @@ sort: 1
 
 - `PROTOCOL`：`http` 或 `https`
 - `DOMAIN`：服务器域名
-- `ROOT_URL`：Gogs 应用的完整 URL 路径
-- `HTTP_PORT`：Gogs 应用监听的端口号
+- `ROOT_URL`：应用的完整 URL 路径
+- `HTTP_ADDR`：应用 HTTP 监听地址
+- `HTTP_PORT`：应用 HTTP 监听端口号
 - `SSH_PORT`：SSH 端口号，如果不为 `22` 的话可以在此修改
 - `OFFLINE_MODE`：激活该选项来禁止从 CDN 获取静态资源
 - `DISABLE_ROUTER_LOG`：激活该选项来禁止打印路由日志
 - `CERT_FILE`：HTTPS 授权文件路径
 - `KEY_FILE`：HTTPS 的密钥文件路径
-- `STATIC_ROOT_PATH`：模板文件和静态文件的上级目录，默认为 Gogs 应用的执行路径
+- `STATIC_ROOT_PATH`：模板文件和静态文件的上级目录，默认为应用的执行路径
+- `ENABLE_GZIP`：激活该选项来启用应用级别 GZIP 支持
 
 ## Database
 

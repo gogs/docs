@@ -9,9 +9,14 @@ sort: 1
 
 #### Bug 修复
 
+- 配置选项 `ENABLE_GZIP` 无效 [#412](https://github.com/gogits/gogs/issues/412)
 - 火狐下浏览代码行号与内容不对其 [#457](https://github.com/gogits/gogs/issues/457)
 - Git 钩子未过滤 `\r` 字符 [#546](https://github.com/gogits/gogs/issues/546)
 - 查看原始文件和文件历史按钮未显示 [#550](https://github.com/gogits/gogs/issues/550)
+- 无法使用 Redis 作为缓存
+- 无法在 Markdown 文件中显示相对路径图片
+- 提交信息内容长度很大时 UI 被破坏 [#570](https://github.com/gogits/gogs/issues/570)
+- HTTP/HTTPS 克隆不支持 GZIP 编码 [#572](https://github.com/gogits/gogs/issues/572)
 
 #### 新增特性
 

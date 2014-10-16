@@ -46,8 +46,6 @@ To run Gogs in an intranet, change configuration option `server -> OFFLINE_MODE`
 
 Create a file called `robots.txt` under `custom` directory.
 
-
-
 #### How to run as daemon?
 
 Gogs has some third-party scripts for supporting run as daemon:

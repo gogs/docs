@@ -9,9 +9,14 @@ sort: 1
 
 #### Bug fixes
 
+- `ENABLE_GZIP` options does not work [#412](https://github.com/gogits/gogs/issues/412)
 - Line numbers are misaligned on Firefox [#457](https://github.com/gogits/gogs/issues/457)
 - Git hook does't filter `\r` character [#546](https://github.com/gogits/gogs/issues/546)
 - File view raw and history buttons don't show [#550](https://github.com/gogits/gogs/issues/550)
+- Redis as cache adapter does not work
+- Cannot show relative path image in Markdown files
+- UI break when commit message is very long [#570](https://github.com/gogits/gogs/issues/570)
+- HTTP/HTTPS clone does not handle GZIP encoding [#572](https://github.com/gogits/gogs/issues/572)
 
 #### Features
 

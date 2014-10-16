@@ -27,6 +27,7 @@ If you see anything like `%(X)s`, it's the feature powered by [goconfig](https:/
 - `PROTOCOL`: Either `http` or `https`.
 - `DOMAIN`: Domain name of your server.
 - `ROOT_URL`: Full URL of Gogs server in public domain.
+- `HTTP_ADDR`: Listen HTTP address.
 - `HTTP_PORT`: HTTP port you want Gogs server to listen.
 - `SSH_PORT`: The SSH port, in case yours is not `22`.
 - `OFFLINE_MODE`: Enable this to not use CDN for static files.
@@ -34,6 +35,7 @@ If you see anything like `%(X)s`, it's the feature powered by [goconfig](https:/
 - `CERT_FILE`: Cert file path of HTTPS.
 - `KEY_FILE`: Key file path of HTTPS.
 - `STATIC_ROOT_PATH`: Upper level of template and static file path, default is the path where Gogs is executed.
+- `ENABLE_GZIP`: Enable this to have application level GZIP support.
 
 ## Database
 
