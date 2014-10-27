@@ -39,19 +39,22 @@ sort: 1
 
 ## Database
 
-- `DB_TYPE`：数据库类型
+- `DB_TYPE`：数据库类型，可以是 `mysql`、`postgres` 或 `sqlite3`
 - `HOST`：数据库主机地址与端口
-- `NAME`：Gogs 的数据库名称
+- `NAME`：数据库名称
 - `USER`：数据库用户名
-- `PASSWD`：数据库密码
+- `PASSWD`：数据库用户密码
 - `SSL_MODE`：仅限 PostgreSQL 使用
 - `PATH`：仅限 SQLite3 使用，数据库文件路径
 
 ## Security
 
 - `INSTALL_LOCK`：用于指示是否允许访问安装页面（该页面可以设置管理员帐号，因此该选项非常重要）
-- `SECRET_KEY`：全局的秘密密钥，修改该值以确保您的服务器安全
+- `SECRET_KEY`：全局的加密密钥，**务必修改该值以确保您的服务器安全**（会在每次安装时自动生成随机字符串）
 - `LOGIN_REMEMBER_DAYS`：记住登录的天数
+- `COOKIE_USERNAME`：记录用户名的 Cookie 名称
+- `COOKIE_REMEMBER_NAME`：记录用户自动登录信息的 Cookie 名称
+- `REVERSE_PROXY_AUTHENTICATION_USER`：反向代理认证用户的 Header 字段名
 
 ## Service
 
@@ -62,6 +65,12 @@ sort: 1
 - `REQUIRE_SIGNIN_VIEW`：激活该选项来要求用户必须登录才能浏览任何页面
 - `ENABLE_CACHE_AVATAR`：激活该选项来缓存 Gravatar 的头像
 - `ENABLE_NOTIFY_MAIL`：激活该选项来发送通知邮件给关注者，例如创建 issue 时，要求已启用 `Mailer`
+- `ENABLE_REVERSE_PROXY_AUTHENTICATION`：激活该选项来开启反向代理用户认证，请从 https://github.com/gogits/gogs/issues/165 了解更多信息
+
+## Webhook
+
+- `TASK_INTERVAL`：发送通知的时间周期，以分钟为单位
+- `DELIVER_TIMEOUT`：发送通知的超时时间，以秒为单位
 
 ## Mailer
 

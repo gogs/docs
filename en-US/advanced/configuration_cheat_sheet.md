@@ -39,19 +39,22 @@ If you see anything like `%(X)s`, it's the feature powered by [goconfig](https:/
 
 ## Database
 
-- `DB_TYPE`: The database type you choose.
+- `DB_TYPE`: The database type you choose, either `mysql`, `postgres` or `sqlite3`.
 - `HOST`: Database host address and port.
-- `NAME`: Database name for Gogs.
+- `NAME`: Database name.
 - `USER`: Database user name.
-- `PASSWD`: Database password.
+- `PASSWD`: Database user password.
 - `SSL_MODE`: For PostgreSQL only.
 - `PATH`: For SQLite3 only, the database file path.
 
 ## Security
 
 - `INSTALL_LOCK`: To indicate whether allow open install page(setting admin account involved so it's a very important value).
-- `SECRET_KEY`: Global secret key for your server security, you'd better change it.
+- `SECRET_KEY`: Global secret key for your server security, **you'd better change it**(will generate a random string every time you install).
 - `LOGIN_REMEMBER_DAYS`: The days of cookies life time.
+- `COOKIE_USERNAME`: Cookie name to save username.
+- `COOKIE_REMEMBER_NAME`: Cookie name to save auto-login information.
+- `REVERSE_PROXY_AUTHENTICATION_USER`: Header name for reverse proxy authentication username.
 
 ## Service
 
@@ -61,7 +64,13 @@ If you see anything like `%(X)s`, it's the feature powered by [goconfig](https:/
 - `DISABLE_REGISTRATION`: Disable registration, which only admin can create accounts for users.
 - `REQUIRE_SIGNIN_VIEW`: Enable this to force users to log in to view any page.
 - `ENABLE_CACHE_AVATAR`: Enable this to cache avatar from Gravatar.
-- `ENABLE_NOTIFY_MAIL`: This indicates whether send e-mail to watchers of repository when something happens like create issue, requires enable `Mailer`.
+- `ENABLE_NOTIFY_MAIL`: Enable this to send e-mail to watchers of repository when something happens like create issue, requires enable `Mailer`.
+- `ENABLE_REVERSE_PROXY_AUTHENTICATION`: Enable this to allow reverse proxy authentication, more detail: https://github.com/gogits/gogs/issues/165
+
+## Webhook
+
+- `TASK_INTERVAL`: Time intercal in minutes for shooting webhooks.
+- `DELIVER_TIMEOUT`: Delivery timeout in seconds for shooting webhooks.
 
 ## Mailer
 

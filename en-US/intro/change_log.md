@@ -13,6 +13,7 @@ sort: 1
 - Line numbers are misaligned on Firefox [#457](https://github.com/gogits/gogs/issues/457)
 - Git hook does't filter `\r` character [#546](https://github.com/gogits/gogs/issues/546)
 - File view raw and history buttons don't show [#550](https://github.com/gogits/gogs/issues/550)
+- Some small problems about the alignment [#554](https://github.com/gogits/gogs/issues/554)
 - Redis as cache adapter does not work
 - Cannot show relative path image in Markdown files
 - UI break when commit message is very long [#570](https://github.com/gogits/gogs/issues/570)
