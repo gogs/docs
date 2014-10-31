@@ -117,3 +117,7 @@ sort: 1
 ### log.smtp
 
 - `LEVEL`：smtp 模式的日志级别，如果该值为空，则使用基本日志级别
+
+## Git
+
+- `MAX_GITDIFF_LINES`：对比页面显示的最大行数

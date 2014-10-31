@@ -74,14 +74,14 @@ If you see anything like `%(X)s`, it's the feature powered by [goconfig](https:/
 
 ## Mailer
 
-- `ENABLED`: To indicate whether enable mail service of any.
+- `ENABLED`: Enable this to use mail service of any.
 - `HOST`: SMTP mail host address.
 - `USER`: User name of system mailer(usually just your e-mail address).
 - `PASSWD`: Password of you mailer.
 
 ## OAuth
 
-- `ENABLED`: General switch for oAuth, default value is "false"
+- `ENABLED`: General switch for OAuth, default value is "false"
 
 ## Cache
 
@@ -117,3 +117,8 @@ If you see anything like `%(X)s`, it's the feature powered by [goconfig](https:/
 ### log.smtp
 
 - `LEVEL`: Log level for smtp output. When no value is set, it is general log level.
+
+## Git
+
+- `MAX_GITDIFF_LINES`: Maxium show lines in diff page.
+
