@@ -18,9 +18,11 @@ sort: 1
 - 无法在 Markdown 文件中显示相对路径图片
 - 提交信息内容长度很大时 UI 被破坏 [#570](https://github.com/gogits/gogs/issues/570)
 - HTTP/HTTPS 克隆不支持 GZIP 编码 [#572](https://github.com/gogits/gogs/issues/572)
+- 错误的 MIT 开源许可证文件 [#608](https://github.com/gogits/gogs/issues/608)
 
 #### 新增特性
 
+- 允许派生仓库 [#5](https://github.com/gogits/gogs/issues/5)
 - 能够查看 2 次提交的内容对比页面
 
 ### v0.5.5 @ 2014-10-10

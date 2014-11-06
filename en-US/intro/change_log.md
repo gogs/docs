@@ -18,9 +18,11 @@ sort: 1
 - Cannot show relative path image in Markdown files
 - UI break when commit message is very long [#570](https://github.com/gogits/gogs/issues/570)
 - HTTP/HTTPS clone does not handle GZIP encoding [#572](https://github.com/gogits/gogs/issues/572)
+- Wrong MIT LICENSE content file [#608](https://github.com/gogits/gogs/issues/608)
 
 #### Features
 
+- Able to fork repository [#5](https://github.com/gogits/gogs/issues/5)
 - Able to view comparison page for 2 commits
 
 ### v0.5.5 @ 2014-10-10
