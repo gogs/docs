@@ -9,6 +9,7 @@ sort: 1
 
 #### Bug fixes
 
+- Branch/tag name cannot contain `/` [#101](https://github.com/gogits/gogs/issues/101) [#255](https://github.com/gogits/gogs/issues/255)
 - `ENABLE_GZIP` options does not work [#412](https://github.com/gogits/gogs/issues/412)
 - Line numbers are misaligned on Firefox [#457](https://github.com/gogits/gogs/issues/457)
 - Git hook does't filter `\r` character [#546](https://github.com/gogits/gogs/issues/546)
@@ -18,7 +19,12 @@ sort: 1
 - Cannot show relative path image in Markdown files
 - UI break when commit message is very long [#570](https://github.com/gogits/gogs/issues/570)
 - HTTP/HTTPS clone does not handle GZIP encoding [#572](https://github.com/gogits/gogs/issues/572)
+- Cannot see private repositories when view own profile page [#605](https://github.com/gogits/gogs/issues/605)
 - Wrong MIT LICENSE content file [#608](https://github.com/gogits/gogs/issues/608)
+
+#### Improvements
+
+- Allow collaborators to see private repositories in profile page
 
 #### Features
 

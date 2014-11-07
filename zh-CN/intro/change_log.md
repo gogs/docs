@@ -9,6 +9,7 @@ sort: 1
 
 #### Bug 修复
 
+- 分支/标签名不能包含 `/` [#101](https://github.com/gogits/gogs/issues/101) [#255](https://github.com/gogits/gogs/issues/255)
 - 配置选项 `ENABLE_GZIP` 无效 [#412](https://github.com/gogits/gogs/issues/412)
 - 火狐下浏览代码行号与内容不对其 [#457](https://github.com/gogits/gogs/issues/457)
 - Git 钩子未过滤 `\r` 字符 [#546](https://github.com/gogits/gogs/issues/546)
@@ -18,7 +19,12 @@ sort: 1
 - 无法在 Markdown 文件中显示相对路径图片
 - 提交信息内容长度很大时 UI 被破坏 [#570](https://github.com/gogits/gogs/issues/570)
 - HTTP/HTTPS 克隆不支持 GZIP 编码 [#572](https://github.com/gogits/gogs/issues/572)
+- 在浏览自己的个人页面时无法查看私有仓库 [#605](https://github.com/gogits/gogs/issues/605)
 - 错误的 MIT 开源许可证文件 [#608](https://github.com/gogits/gogs/issues/608)
+
+#### 功能改进
+
+- 允许协作者在个人页面查看到私有仓库
 
 #### 新增特性
 
