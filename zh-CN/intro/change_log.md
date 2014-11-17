@@ -30,6 +30,8 @@ sort: 1
 
 - 允许派生仓库 [#5](https://github.com/gogits/gogs/issues/5)
 - 能够查看 2 次提交的内容对比页面
+- 支持设置 `[picture] GRAVATAR_SOURCE = duoshuo` 来使用 Gravatar 的中国镜像源
+
 
 ### v0.5.5 @ 2014-10-10
 

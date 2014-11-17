@@ -30,6 +30,7 @@ sort: 1
 
 - Able to fork repository [#5](https://github.com/gogits/gogs/issues/5)
 - Able to view comparison page for 2 commits
+- Able to set `[picture] GRAVATAR_SOURCE = duoshuo` to use Chinese mirror of Gravatar
 
 ### v0.5.5 @ 2014-10-10
 
