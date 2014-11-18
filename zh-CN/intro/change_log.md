@@ -9,6 +9,7 @@ sort: 1
 
 #### Bug 修复
 
+- 修复漏洞 CVE-2014-8681 CVE-2014-8682 CVE-2014-8683
 - 分支/标签名不能包含 `/` [#101](https://github.com/gogits/gogs/issues/101) [#255](https://github.com/gogits/gogs/issues/255)
 - 配置选项 `ENABLE_GZIP` 无效 [#412](https://github.com/gogits/gogs/issues/412)
 - 火狐下浏览代码行号与内容不对其 [#457](https://github.com/gogits/gogs/issues/457)
@@ -29,6 +30,7 @@ sort: 1
 #### 新增特性
 
 - 允许派生仓库 [#5](https://github.com/gogits/gogs/issues/5)
+- Drone CI 持续部署集成 [#12](https://github.com/gogits/gogs/issues/12)
 - 能够查看 2 次提交的内容对比页面
 - 支持设置 `[picture] GRAVATAR_SOURCE = duoshuo` 来使用 Gravatar 的中国镜像源
 

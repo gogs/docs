@@ -9,6 +9,7 @@ sort: 1
 
 #### Bug fixes
 
+- Fix vulnerabilities CVE-2014-8681 CVE-2014-8682 CVE-2014-8683
 - Branch/tag name cannot contain `/` [#101](https://github.com/gogits/gogs/issues/101) [#255](https://github.com/gogits/gogs/issues/255)
 - `ENABLE_GZIP` options does not work [#412](https://github.com/gogits/gogs/issues/412)
 - Line numbers are misaligned on Firefox [#457](https://github.com/gogits/gogs/issues/457)
@@ -29,6 +30,7 @@ sort: 1
 #### Features
 
 - Able to fork repository [#5](https://github.com/gogits/gogs/issues/5)
+- Drone CI integration [#12](https://github.com/gogits/gogs/issues/12)
 - Able to view comparison page for 2 commits
 - Able to set `[picture] GRAVATAR_SOURCE = duoshuo` to use Chinese mirror of Gravatar
 

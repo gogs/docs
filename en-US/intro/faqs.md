@@ -74,6 +74,12 @@ You can check the status of the Gogs systemd service with `sudo systemd status g
 2. Default administrator log into `Admin -> Users` and authorize someone. 
 3. Register in the install page.
 
+### Repository Management
+
+#### How to give Git hooks permission to users?
+
+This is **high level a permission which can damage your system** which you must enable/disable it in admin user management panel(`/admin/users/:userid`) to users who you really trust.
+
 ### Others
 
 #### How to get current Gogs version?
