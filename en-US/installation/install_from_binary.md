@@ -14,14 +14,21 @@ You're free to download up-to-date binary from [gobuild.io](http://gobuild.io/gi
 - General builds: provided by [gobuild.io](http://gobuild.io/github.com/gogits/gogs).
 - Official builds: 64-bit machine only, release with stable build.
 
+### v0.5.8 @ 2014-11-19
+
+- General builds: [gobuild.io](http://gobuild.io/github.com/gogits/gogs?tag=tag:v0.5.8)
+- Official builds: 
+	- CDN: [Windows](http://gogs.dn.qbox.me/gogs_v0.5.8_windows_amd64.zip) - [Linux](http://gogs.dn.qbox.me/gogs_v0.5.8_linux_amd64.zip) - [Mac OS X](http://gogs.dn.qbox.me/gogs_v0.5.8_darwin_amd64.zip)
+	- [GitHub](https://github.com/gogits/gogs/releases/tag/v0.5.8)
+
+See [Configuration and run](configuration_and_run.md) to go further.
+
 ### v0.5.5 @ 2014-10-10
 
 - General builds: [gobuild.io](http://gobuild.io/github.com/gogits/gogs?tag=tag:v0.5.5)
 - Official builds: 
 	- CDN: [Windows](http://gogs.dn.qbox.me/gogs_v0.5.5_windows_amd64.zip) - [Linux](http://gogs.dn.qbox.me/gogs_v0.5.5_linux_amd64.zip) - [Mac OS X](http://gogs.dn.qbox.me/gogs_v0.5.5_darwin_amd64.zip)
 	- [GitHub](https://github.com/gogits/gogs/releases/tag/v0.5.5)
-
-See [Configuration and run](configuration_and_run.md) to go further.
 
 ### v0.5.2 @ 2014-9-18
 
@@ -57,10 +64,3 @@ See [Configuration and run](configuration_and_run.md) to go further.
 - Official builds: 
  - CDN: ~~[Windows](http://gogs.dn.qbox.me/gogs_v0.3.1_windows_amd64.zip) - [Linux](http://gogs.dn.qbox.me/gogs_v0.3.1_linux_amd64.zip) - [Mac OS X](http://gogs.dn.qbox.me/gogs_v0.3.1_darwin_amd64.zip)~~
  - ~~[GitHub](https://github.com/gogits/gogs/releases/tag/v0.3.1)~~
-
-### v0.3.0 @ 2014-4-23
-
-- General builds: ~~[gobuild.io](http://gobuild.io/github.com/gogits/gogs?tag=tag:v0.3.0)~~
-- Official builds: 
- - CDN: ~~[Windows](http://gogs.dn.qbox.me/gogs_v0.3.0_windows_amd64.zip) - [Linux](http://gogs.dn.qbox.me/gogs_v0.3.0_linux_amd64.zip) - [Mac OS X](http://gogs.dn.qbox.me/gogs_v0.3.0_darwin_amd64.zip)~~
- - ~~[GitHub](https://github.com/gogits/gogs/releases/tag/v0.3.0)~~

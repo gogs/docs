@@ -5,7 +5,7 @@ sort: 1
 
 # Change Log
 
-### v0.6.0
+### v0.5.8 @ 2014-11-19
 
 #### Bug fixes
 
@@ -33,6 +33,7 @@ sort: 1
 - Drone CI integration [#12](https://github.com/gogits/gogs/issues/12)
 - Able to view comparison page for 2 commits
 - Able to set `[picture] GRAVATAR_SOURCE = duoshuo` to use Chinese mirror of Gravatar
+- Able to delete all repositories archives through admin panel [#635](https://github.com/gogits/gogs/issues/635)
 
 ### v0.5.5 @ 2014-10-10
 

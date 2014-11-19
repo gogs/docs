@@ -5,7 +5,7 @@ sort: 1
 
 # 变更日志
 
-### v0.6.0
+### v0.5.8 @ 2014-11-19
 
 #### Bug 修复
 
@@ -33,7 +33,7 @@ sort: 1
 - Drone CI 持续部署集成 [#12](https://github.com/gogits/gogs/issues/12)
 - 能够查看 2 次提交的内容对比页面
 - 支持设置 `[picture] GRAVATAR_SOURCE = duoshuo` 来使用 Gravatar 的中国镜像源
-
+- 支持通过管理面板清除所有仓库存档 [#635](https://github.com/gogits/gogs/issues/635)
 
 ### v0.5.5 @ 2014-10-10
 
