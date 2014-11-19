@@ -25,10 +25,10 @@ sort: 1
 
 ### v0.5.5 @ 2014-10-10
 
-- 一般构建：[gobuild.io](http://gobuild.io/github.com/gogits/gogs?tag=tag:v0.5.5)
+- 一般构建：~~[gobuild.io](http://gobuild.io/github.com/gogits/gogs?tag=tag:v0.5.5)~~
 - 官方构建：
-	- CDN：[Windows](http://gogs.dn.qbox.me/gogs_v0.5.5_windows_amd64.zip) - [Linux](http://gogs.dn.qbox.me/gogs_v0.5.5_linux_amd64.zip) - [Mac OS X](http://gogs.dn.qbox.me/gogs_v0.5.5_darwin_amd64.zip)
-	- [GitHub](https://github.com/gogits/gogs/releases/tag/v0.5.5)
+	- CDN：~~[Windows](http://gogs.dn.qbox.me/gogs_v0.5.5_windows_amd64.zip) - [Linux](http://gogs.dn.qbox.me/gogs_v0.5.5_linux_amd64.zip) - [Mac OS X](http://gogs.dn.qbox.me/gogs_v0.5.5_darwin_amd64.zip)~~
+	- ~~[GitHub](https://github.com/gogits/gogs/releases/tag/v0.5.5)~~
 
 ### v0.5.2 @ 2014-9-18
 
