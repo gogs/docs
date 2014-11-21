@@ -12,6 +12,10 @@ sort: 1
 - 管理面板无效的用户首页链接
 - 空仓库的设置页面出现模板渲染错误 [#643](https://github.com/gogits/gogs/issues/643)
 
+#### 新增特性
+
+- 支持上传自定义头像 [#139](https://github.com/gogits/gogs/issues/139)
+
 ### v0.5.8 @ 2014-11-19
 
 #### Bug 修复

@@ -12,6 +12,10 @@ sort: 1
 - Invalid links to user profile page in admin panel
 - Templating error on settings page of bare repository [#643](https://github.com/gogits/gogs/issues/643)
 
+#### Features
+
+- Able to upload custom avatar [#139](https://github.com/gogits/gogs/issues/139)
+
 ### v0.5.8 @ 2014-11-19
 
 #### Bug fixes
