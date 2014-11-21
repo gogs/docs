@@ -5,6 +5,13 @@ sort: 1
 
 # Change Log
 
+### v0.6.0
+
+#### Bug fixes
+
+- Invalid links to user profile page in admin panel
+- Templating error on settings page of bare repository [#643](https://github.com/gogits/gogs/issues/643)
+
 ### v0.5.8 @ 2014-11-19
 
 #### Bug fixes

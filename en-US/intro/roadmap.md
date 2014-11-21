@@ -9,8 +9,6 @@ This document describes when the MAJOR changes **will** or **may** happen in the
 
 Things are subject to change when unexpected things happen, but it's rare.
 
-Also, we're planning to release `v1.0.0` between Jan and Feb 2015.
-
 ## v0.6
 
 In this release, we will focus on repository management.
@@ -18,9 +16,6 @@ In this release, we will focus on repository management.
 - Will finish new UI style for all pages.
 - Will have ability to fork/pull request repositories.
 - Will have issues/pulls dashboard for individual users and organizations.
-- Will be able to upload custom avatar.
-- May have notification system and dashboard for users.
-- May be able to change some of configuration opetions in web interface.
 - May have webhook delivery history.
 - May be able to search repository/user/issue.
 
@@ -30,7 +25,8 @@ In this release, we will focus on cache system.
 
 - Will use database LRU cache powered by xorm.
 - Will have cache system for data in memory.
-- May be able to use custom services for caching avatar.
+- May have notification system and dashboard for users.
+- May be able to change some of configuration options in web interface.
 
 ## v0.8
 
