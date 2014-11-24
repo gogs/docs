@@ -15,6 +15,8 @@ sort: 1
 #### 新增特性
 
 - 支持上传自定义头像 [#139](https://github.com/gogits/gogs/issues/139)
+- 支持通过配置选项 `[server] LANDING_PAGE` 将探索页面设置为未登录用户的首页 [#543](https://github.com/gogits/gogs/issues/543)
+- 支持通过 `/:username.keys` 获取用户的公钥列表 [#652](https://github.com/gogits/gogs/issues/652)
 
 ### v0.5.8 @ 2014-11-19
 

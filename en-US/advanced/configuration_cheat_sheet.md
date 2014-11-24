@@ -36,6 +36,7 @@ If you see anything like `%(X)s`, it's the feature powered by [goconfig](https:/
 - `KEY_FILE`: Key file path of HTTPS.
 - `STATIC_ROOT_PATH`: Upper level of template and static file path, default is the path where Gogs is executed.
 - `ENABLE_GZIP`: Enable this to have application level GZIP support.
+- `LANDING_PAGE`: Non-logged users' landing page, either `home` or `explore`.
 
 ## Database
 

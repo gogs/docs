@@ -36,6 +36,7 @@ sort: 1
 - `KEY_FILE`：HTTPS 的密钥文件路径
 - `STATIC_ROOT_PATH`：模板文件和静态文件的上级目录，默认为应用的执行路径
 - `ENABLE_GZIP`：激活该选项来启用应用级别 GZIP 支持
+- `LANDING_PAGE`：未登录用户的默认首页，可以是 `home` 或 `explore`（探索页）
 
 ## Database
 

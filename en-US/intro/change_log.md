@@ -15,6 +15,8 @@ sort: 1
 #### Features
 
 - Able to upload custom avatar [#139](https://github.com/gogits/gogs/issues/139)
+- Able to set explore page as non-logged users' landing page through config option `[server] LANDING_PAGE` [#543](https://github.com/gogits/gogs/issues/543)
+- Able to view public key list of user by `/:username.keys` [#652](https://github.com/gogits/gogs/issues/652)
 
 ### v0.5.8 @ 2014-11-19
 
