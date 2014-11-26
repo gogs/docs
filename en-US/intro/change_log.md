@@ -11,6 +11,8 @@ sort: 1
 
 - Invalid links to user profile page in admin panel
 - Templating error on settings page of bare repository [#643](https://github.com/gogits/gogs/issues/643)
+- Panic when no SSH authorized_keys file exists for command `gogs fix location` [#659](https://github.com/gogits/gogs/issues/659)
+- Commits list doesn't show the oldest page [#664](https://github.com/gogits/gogs/issues/664)
 
 #### Features
 

@@ -11,6 +11,8 @@ sort: 1
 
 - 管理面板无效的用户首页链接
 - 空仓库的设置页面出现模板渲染错误 [#643](https://github.com/gogits/gogs/issues/643)
+- 当 SSH 授权文件不存在时，命令 `gogs fix location` 会发生错误 [#659](https://github.com/gogits/gogs/issues/659)
+- 提交历史页面未显示最旧的历史页 [#664](https://github.com/gogits/gogs/issues/664)
 
 #### 新增特性
 
