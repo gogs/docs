@@ -13,11 +13,13 @@ sort: 1
 - Templating error on settings page of bare repository [#643](https://github.com/gogits/gogs/issues/643)
 - Panic when no SSH authorized_keys file exists for command `gogs fix location` [#659](https://github.com/gogits/gogs/issues/659)
 - Commits list doesn't show the oldest page [#664](https://github.com/gogits/gogs/issues/664)
+- User home links in issue page no longer invalid [#682](https://github.com/gogits/gogs/issues/682)
 
 #### Features
 
 - Able to upload custom avatar [#139](https://github.com/gogits/gogs/issues/139)
 - Able to set explore page as non-logged users' landing page through config option `[server] LANDING_PAGE` [#543](https://github.com/gogits/gogs/issues/543)
+- Run `git fsck` as cron job and `git gc` as admin operation [#580](https://github.com/gogits/gogs/issues/580)
 - Able to view public key list of user by `/:username.keys` [#652](https://github.com/gogits/gogs/issues/652)
 
 ### v0.5.8 @ 2014-11-19
