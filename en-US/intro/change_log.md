@@ -15,6 +15,10 @@ sort: 1
 - Commits list doesn't show the oldest page [#664](https://github.com/gogits/gogs/issues/664)
 - User home links in issue page no longer invalid [#682](https://github.com/gogits/gogs/issues/682)
 
+#### Improvements
+
+- Expose `full_name` in user search API [#677](https://github.com/gogits/gogs/issues/677)
+
 #### Features
 
 - Able to upload custom avatar [#139](https://github.com/gogits/gogs/issues/139)

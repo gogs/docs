@@ -15,6 +15,10 @@ sort: 1
 - 提交历史页面未显示最旧的历史页 [#664](https://github.com/gogits/gogs/issues/664)
 - 工单页面的用户主页链接失效 [#682](https://github.com/gogits/gogs/issues/682)
 
+#### 功能改进
+
+- 在用户搜索 API 中显示 `full_name` 字段 [#677](https://github.com/gogits/gogs/issues/677)
+
 #### 新增特性
 
 - 支持上传自定义头像 [#139](https://github.com/gogits/gogs/issues/139)
