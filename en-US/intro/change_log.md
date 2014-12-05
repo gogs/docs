@@ -14,10 +14,12 @@ sort: 1
 - Panic when no SSH authorized_keys file exists for command `gogs fix location` [#659](https://github.com/gogits/gogs/issues/659)
 - Commits list doesn't show the oldest page [#664](https://github.com/gogits/gogs/issues/664)
 - User home links in issue page no longer invalid [#682](https://github.com/gogits/gogs/issues/682)
+- Avatar email addresses with uppercase resolve to wrong Gravatar hash [#700](https://github.com/gogits/gogs/issues/700)
 
 #### Improvements
 
 - Expose `full_name` in user search API [#677](https://github.com/gogits/gogs/issues/677)
+- Added issue link rendering in commit messages [#712](https://github.com/gogits/gogs/issues/712)
 
 #### Features
 

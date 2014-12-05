@@ -14,10 +14,12 @@ sort: 1
 - 当 SSH 授权文件不存在时，命令 `gogs fix location` 会发生错误 [#659](https://github.com/gogits/gogs/issues/659)
 - 提交历史页面未显示最旧的历史页 [#664](https://github.com/gogits/gogs/issues/664)
 - 工单页面的用户主页链接失效 [#682](https://github.com/gogits/gogs/issues/682)
+- 头像邮箱地址包含大写字母时会产生错误的哈希值 [#700](https://github.com/gogits/gogs/issues/700)
 
 #### 功能改进
 
 - 在用户搜索 API 中显示 `full_name` 字段 [#677](https://github.com/gogits/gogs/issues/677)
+- 在提交历史中显示工单链接 [#712](https://github.com/gogits/gogs/issues/712)
 
 #### 新增特性
 
