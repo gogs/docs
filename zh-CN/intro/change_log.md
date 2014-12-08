@@ -27,6 +27,7 @@ sort: 1
 - 支持通过配置选项 `[server] LANDING_PAGE` 将探索页面设置为未登录用户的首页 [#543](https://github.com/gogits/gogs/issues/543)
 - 运行 `git fack` 作为定时任务、`git gc` 作为管理员操作 [#580](https://github.com/gogits/gogs/issues/580)
 - 支持通过 `/:username.keys` 获取用户的公钥列表 [#652](https://github.com/gogits/gogs/issues/652)
+- 增加拉脱维亚语支持
 
 ### v0.5.8 @ 2014-11-19
 
