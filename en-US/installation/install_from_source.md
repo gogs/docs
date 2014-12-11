@@ -43,7 +43,7 @@ sort: 2
 $ gopm update -v
 
 # Download and build binary
-$ gopm bin -u -v gogs path/to/anywhere
+$ gopm bin -u -v -d path/to/anywhere gogs
 ```
 
 Or
