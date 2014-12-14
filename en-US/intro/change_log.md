@@ -5,7 +5,7 @@ sort: 1
 
 # Change Log
 
-### v0.6.0
+### v0.5.9 @ 2014-12-13
 
 #### Bug fixes
 
@@ -15,6 +15,9 @@ sort: 1
 - Commits list doesn't show the oldest page [#664](https://github.com/gogits/gogs/issues/664)
 - User home links in issue page no longer invalid [#682](https://github.com/gogits/gogs/issues/682)
 - Avatar email addresses with uppercase resolve to wrong Gravatar hash [#700](https://github.com/gogits/gogs/issues/700)
+- Markdown table requires padding [#703](https://github.com/gogits/gogs/issues/703)
+- Cannot display GBK content in diff page [#711](https://github.com/gogits/gogs/issues/711)
+- HTTP basic authentication failed when password contains `:` [#723](https://github.com/gogits/gogs/issues/723)
 
 #### Improvements
 

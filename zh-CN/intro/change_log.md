@@ -5,7 +5,7 @@ sort: 1
 
 # 变更日志
 
-### v0.6.0
+### v0.5.9 @ 2014-12-13
 
 #### Bug 修复
 
@@ -15,6 +15,9 @@ sort: 1
 - 提交历史页面未显示最旧的历史页 [#664](https://github.com/gogits/gogs/issues/664)
 - 工单页面的用户主页链接失效 [#682](https://github.com/gogits/gogs/issues/682)
 - 头像邮箱地址包含大写字母时会产生错误的哈希值 [#700](https://github.com/gogits/gogs/issues/700)
+- Markdown 表格样式不正常 [#703](https://github.com/gogits/gogs/issues/703) 
+- 在文件对比页面无法显示 GBK 编码字符 [#711](https://github.com/gogits/gogs/issues/711)
+- 当密码包含 `:` 时无法通过 HTTP 基本授权 [#723](https://github.com/gogits/gogs/issues/723)
 
 #### 功能改进
 
