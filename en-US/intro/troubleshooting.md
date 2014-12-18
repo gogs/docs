@@ -68,12 +68,6 @@ After that, go to [http://localhost:3000/install](http://localhost:3000/install)
 
 ## Mailer
 
-- Error: cannot send e-mail
-- Causes: currently golang does not support send e-mail through SSL, so please choose a port that does not require SSL for sending e-mails.
-- Solution: if you know how to send e-mail through SSL in Go, please contact us!
-
------
- 
 - Error: Gmail with Error 534: `Please log in via your web browser and then try again`
 - Causes: this is because Google does not trust your server
 - Solution: 
