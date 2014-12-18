@@ -5,6 +5,14 @@ sort: 1
 
 # 变更日志
 
+### v0.6.0
+
+#### Bug 修复
+
+- Git SubModule 导致 500 错误 [#741](https://github.com/gogits/gogs/issues/741)
+- 在用户个人首页显示私有仓库活动信息 [#751](https://github.com/gogits/gogs/issues/751)
+- 产生活动的用户不存在后导致 500 错误 [#754](https://github.com/gogits/gogs/issues/754)
+
 ### v0.5.9 @ 2014-12-13
 
 #### Bug 修复

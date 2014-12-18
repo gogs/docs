@@ -68,12 +68,6 @@ sort: 2
 
 ## 邮件服务
 
-- 错误描述：无法发送邮件
-- 可能原因：目前 Go 语言不支持基于 SSL 的电子邮件，所以请选择一个不需要 SSL 验证的端口。
-- 解决方案：如果您知道如何使用 Go 语言发送基于 SSL 的电子邮件，请联系我们！
-
------
-
 - 错误描述：Gmail 发送返回 Error 534: `Please log in via your web browser and then try again`
 - 可能原因：这是因为 Google 不信任您的服务器导致的。
 - 解决方案：
