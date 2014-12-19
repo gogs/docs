@@ -13,6 +13,13 @@ sort: 1
 - Showing activities for private repositories in user profile [#751](https://github.com/gogits/gogs/issues/751)
 - User who made activities no longer exists result 500 error [#754](https://github.com/gogits/gogs/issues/754)
 
+#### Improvements
+
+- Able to skip verification when send mails and use TLS when port is 465 [#761](https://github.com/gogits/gogs/pull/761)
+
+#### Features
+
+- Able to send mails with CRAM-MD5 authentication [#762](https://github.com/gogits/gogs/pull/762)
 
 ### v0.5.9 @ 2014-12-13
 

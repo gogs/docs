@@ -13,6 +13,14 @@ sort: 1
 - 在用户个人首页显示私有仓库活动信息 [#751](https://github.com/gogits/gogs/issues/751)
 - 产生活动的用户不存在后导致 500 错误 [#754](https://github.com/gogits/gogs/issues/754)
 
+#### 功能改进
+
+- 允许忽略邮件发送验证，并当端口为 465 时自动使用 TLS 加密 [#761](https://github.com/gogits/gogs/pull/761)
+
+#### 新增特性
+
+- 支持发送邮件时通过 CRAM-MD5 认证 [#762](https://github.com/gogits/gogs/pull/462)
+
 ### v0.5.9 @ 2014-12-13
 
 #### Bug 修复
