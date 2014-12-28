@@ -12,6 +12,7 @@ sort: 1
 - Git SubModule 导致 500 错误 [#741](https://github.com/gogits/gogs/issues/741)
 - 在用户个人首页显示私有仓库活动信息 [#751](https://github.com/gogits/gogs/issues/751)
 - 产生活动的用户不存在后导致 500 错误 [#754](https://github.com/gogits/gogs/issues/754)
+- 在组织邀请页面自动填入了自定义名称
 
 #### 功能改进
 

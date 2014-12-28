@@ -12,6 +12,7 @@ sort: 1
 - Git SubModules result 500 error [#741](https://github.com/gogits/gogs/issues/741)
 - Showing activities for private repositories in user profile [#751](https://github.com/gogits/gogs/issues/751)
 - User who made activities no longer exists result 500 error [#754](https://github.com/gogits/gogs/issues/754)
+- Auto-input username in organization invite page includes full name
 
 #### Improvements
 
