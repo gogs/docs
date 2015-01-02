@@ -13,6 +13,8 @@ sort: 1
 - Showing activities for private repositories in user profile [#751](https://github.com/gogits/gogs/issues/751)
 - User who made activities no longer exists result 500 error [#754](https://github.com/gogits/gogs/issues/754)
 - Auto-input username in organization invite page includes full name
+- Mirror repository does not work with SQLite3 [#805](https://github.com/gogits/gogs/issues/805)
+- Wrong image address when rendering Markdown files [#808](https://github.com/gogits/gogs/issues/808)
 
 #### Improvements
 
@@ -94,7 +96,7 @@ sort: 1
 
 - Improve e-mail security [#249](https://github.com/gogits/gogs/issues/249)
 - Fix missing inline code Markdown style [#491](https://github.com/gogits/gogs/issues/491)
-- Add directory level commit message in repository list view 
+- Add directory level commit message in repository list view
 - Change issue title length limitation to 255 characters [#522](https://github.com/gogits/gogs/issues/522)
 - Allow mail with self-signed certificates
 - Allow custom locale files
@@ -158,7 +160,7 @@ sort: 1
 - Make possible for administrators to change user's password [#291](https://github.com/gogits/gogs/pull/291)
 - Add more SSH key type verification support [#293](https://github.com/gogits/gogs/pull/293)
 - Allow clickable links in the repository description [#300](https://github.com/gogits/gogs/pull/300)
-- Allow `/:username` as user home page route 
+- Allow `/:username` as user home page route
 - Change passoword length limitation to 255 [#340](https://github.com/gogits/gogs/pull/340)
 - Add `.mkd` as Markdown file extension [#362](https://github.com/gogits/gogs/issues/362)
 - Allow `.` in repository name [#453](https://github.com/gogits/gogs/issues/453)
@@ -284,7 +286,7 @@ sort: 1
 - Add corresponding issue link to create issue notify mail
 - Add salt for every single user
 - Use PBKDF2 and user salt for encoding user password([note](https://github.com/gogits/gogs/wiki/Troubleshooting#upgrade-from-v020))
-- Huge time, CPU and memory reduction of getting repository files 
+- Huge time, CPU and memory reduction of getting repository files
 - Show commits list by page, not all at once
 - Use build tag to enable SQLite3 support([note](https://github.com/gogits/gogs/wiki/Install-from-source#install))
 

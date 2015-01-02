@@ -13,6 +13,8 @@ sort: 1
 - 在用户个人首页显示私有仓库活动信息 [#751](https://github.com/gogits/gogs/issues/751)
 - 产生活动的用户不存在后导致 500 错误 [#754](https://github.com/gogits/gogs/issues/754)
 - 在组织邀请页面自动填入了自定义名称
+- 镜像仓库无法在 SQLite3 下工作  [#805](https://github.com/gogits/gogs/issues/805)
+- 渲染 Markdown 时产生错误的图片链接 [#808](https://github.com/gogits/gogs/issues/808)
 
 #### 功能改进
 
@@ -32,7 +34,7 @@ sort: 1
 - 提交历史页面未显示最旧的历史页 [#664](https://github.com/gogits/gogs/issues/664)
 - 工单页面的用户主页链接失效 [#682](https://github.com/gogits/gogs/issues/682)
 - 头像邮箱地址包含大写字母时会产生错误的哈希值 [#700](https://github.com/gogits/gogs/issues/700)
-- Markdown 表格样式不正常 [#703](https://github.com/gogits/gogs/issues/703) 
+- Markdown 表格样式不正常 [#703](https://github.com/gogits/gogs/issues/703)
 - 在文件对比页面无法显示 GBK 编码字符 [#711](https://github.com/gogits/gogs/issues/711)
 - 当密码包含 `:` 时无法通过 HTTP 基本授权 [#723](https://github.com/gogits/gogs/issues/723)
 
@@ -198,7 +200,7 @@ sort: 1
 
 #### Bug 修复
 
-- 当未使用 SSH 默认端口（22）时无法执行克隆操作 [#94](https://github.com/gogits/gogs/issues/94) 
+- 当未使用 SSH 默认端口（22）时无法执行克隆操作 [#94](https://github.com/gogits/gogs/issues/94)
 - 使用 PostgreSQL 时无法迁移仓库 [#141](https://github.com/gogits/gogs/issues/141)
 - 在公开活动列表显示私有仓库活动 [#148](https://github.com/gogits/gogs/issues/148)
 - 安装页面管理员用户名未进行验证 [#149](https://github.com/gogits/gogs/issues/149)
