@@ -13,12 +13,17 @@ Currently we only provides 64-bit build binaries.
 2. Remove old `templates` directory.
 3. Unzip archive and copy-paste everything to corresponding location.
 
-### v0.5.9 @ 2014-12-13
+### v0.5.11 @ 2015-1-5
 
-- CDN: [Windows](http://gogs.dn.qbox.me/gogs_v0.5.9_windows_amd64.zip) - [Linux](http://gogs.dn.qbox.me/gogs_v0.5.9_linux_amd64.zip) - [Mac OS X](http://gogs.dn.qbox.me/gogs_v0.5.9_darwin_amd64.zip)
-- [GitHub](https://github.com/gogits/gogs/releases/tag/v0.5.9)
+- CDN: ~~[Windows](http://gogs.dn.qbox.me/gogs_v0.5.11_windows_amd64.zip)~~(No Windows Around Yet) - [Linux](http://gogs.dn.qbox.me/gogs_v0.5.11_linux_amd64.zip) - [Mac OS X](http://gogs.dn.qbox.me/gogs_v0.5.11_darwin_amd64.zip)
+- [GitHub](https://github.com/gogits/gogs/releases/tag/v0.5.11)
 
 See [Configuration and run](configuration_and_run.md) to go further.
+
+### v0.5.9 @ 2014-12-13
+
+- ~~CDN: [Windows](http://gogs.dn.qbox.me/gogs_v0.5.9_windows_amd64.zip) - [Linux](http://gogs.dn.qbox.me/gogs_v0.5.9_linux_amd64.zip) - [Mac OS X](http://gogs.dn.qbox.me/gogs_v0.5.9_darwin_amd64.zip)~~
+- ~~[GitHub](https://github.com/gogits/gogs/releases/tag/v0.5.9)~~
 
 ### v0.5.8 @ 2014-11-19
 
@@ -44,8 +49,3 @@ See [Configuration and run](configuration_and_run.md) to go further.
 
 - CDN: ~~[Windows](http://gogs.dn.qbox.me/gogs_v0.4.2_windows_amd64.zip) - [Linux](http://gogs.dn.qbox.me/gogs_v0.4.2_linux_amd64.zip) - [Mac OS X](http://gogs.dn.qbox.me/gogs_v0.4.2_darwin_amd64.zip)~~
 - ~~[GitHub](https://github.com/gogits/gogs/releases/tag/v0.4.2)~~
-
-### v0.3.1 @ 2014-4-28
-
-- CDN: ~~[Windows](http://gogs.dn.qbox.me/gogs_v0.3.1_windows_amd64.zip) - [Linux](http://gogs.dn.qbox.me/gogs_v0.3.1_linux_amd64.zip) - [Mac OS X](http://gogs.dn.qbox.me/gogs_v0.3.1_darwin_amd64.zip)~~
-- ~~[GitHub](https://github.com/gogits/gogs/releases/tag/v0.3.1)~~
