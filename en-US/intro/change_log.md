@@ -5,7 +5,7 @@ sort: 1
 
 # Change Log
 
-### v0.6.0
+### v0.5.11 @ 2015-1-5
 
 #### Bug fixes
 
@@ -19,6 +19,7 @@ sort: 1
 #### Improvements
 
 - Able to skip verification when send mails and use TLS when port is 465 [#761](https://github.com/gogits/gogs/pull/761)
+- Optmize git-fsck config options [#820](https://github.com/gogits/gogs/issues/820)
 
 #### Features
 

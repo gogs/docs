@@ -5,7 +5,7 @@ sort: 1
 
 # 变更日志
 
-### v0.6.0
+### v0.5.11 @ 2015-1-5
 
 #### Bug 修复
 
@@ -19,6 +19,7 @@ sort: 1
 #### 功能改进
 
 - 允许忽略邮件发送验证，并当端口为 465 时自动使用 TLS 加密 [#761](https://github.com/gogits/gogs/pull/761)
+- 优化 git-fsck 配置选项 [#820](https://github.com/gogits/gogs/issues/820)
 
 #### 新增特性
 
