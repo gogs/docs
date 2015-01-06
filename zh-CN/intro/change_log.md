@@ -5,6 +5,12 @@ sort: 1
 
 # 变更日志
 
+### v0.6.0
+
+#### Bug 修复
+
+- 当通过 SSH 推送代码时 Web 钩子会发生数据竞争 [#827](https://github.com/gogits/gogs/issues/827)
+
 ### v0.5.11 @ 2015-1-5
 
 #### Bug 修复

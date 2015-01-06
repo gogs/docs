@@ -5,6 +5,12 @@ sort: 1
 
 # Change Log
 
+### v0.6.0
+
+#### Bug fixes
+
+- Data racing when shoot webhook through SSH [#827](https://github.com/gogits/gogs/issues/827)
+
 ### v0.5.11 @ 2015-1-5
 
 #### Bug fixes
