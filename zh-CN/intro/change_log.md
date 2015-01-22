@@ -11,6 +11,11 @@ sort: 1
 
 - 当通过 SSH 推送代码时 Web 钩子会发生数据竞争 [#827](https://github.com/gogits/gogs/issues/827)
 
+#### 功能改进
+
+- 迁移仓库时使用标准库解析用户信息 [#822](https://github.com/gogits/gogs/pull/822)
+- 更加灵活的 SSH 公钥格式支持：OpenSSH、SSH2 和 base64 编码格式 [#825](https://github.com/gogits/gogs/pull/825)
+
 ### v0.5.11 @ 2015-1-5
 
 #### Bug 修复
