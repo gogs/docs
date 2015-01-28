@@ -1,26 +1,20 @@
 # About
 
-[![wercker status](https://app.wercker.com/status/ad0bdb0bc450ac6f09bc56b9640a50aa/s/ "wercker status")](https://app.wercker.com/project/bykey/ad0bdb0bc450ac6f09bc56b9640a50aa)
-
 This manual documents aspects of Gogs - Go Git Service.
 
-### New to Gogs? 
+### New to Gogs?
 
-Read about the [Quick Start](quickstart).
+Read about the [introduction](docs/intro).
 
-### Can't find what you're looking for? 
+### Need help?
 
-Search our [mailing list (gogits@googlegroups.com)](https://groups.google.com/forum/#!forum/gogits).
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/gogits/gogs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-### Need help? 
+### Find a bug?
 
-Send an email to the [gogits@googlegroups.com](mailto:gogits@googlegroups.com).
+File an [issue on GitHub](https://github.com/gogits/gogs/issues).
 
-### Find a bug? 
-
-Open an [issue on github](https://github.com/gogits/gogs/issues).
-
-### Want to be a contributor?
+### Want to contribute on documentation?
 
 Fork the [documentation project](https://github.com/gogits/docs), edit and pull request.
 
