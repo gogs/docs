@@ -10,6 +10,7 @@ sort: 1
 #### Bug fixes
 
 - Data racing when shoot webhook through SSH [#827](https://github.com/gogits/gogs/issues/827)
+- XSS attacks in commit messages [#828](https://github.com/gogits/gogs/issues/828)
 
 #### Improvements
 
