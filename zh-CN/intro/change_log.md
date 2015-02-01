@@ -18,6 +18,10 @@ sort: 1
 - 更加灵活的 SSH 公钥格式支持：OpenSSH、SSH2 和 base64 编码格式 [#825](https://github.com/gogits/gogs/pull/825)
 - 可以使用 `./gogs web -port 3001` 来防止第一次运行 Gogs 时发生端口冲突
 
+#### 新增特性
+
+- 能够根据数据完全重写 `.ssh/authorized_key` 文件 [#818](https://github.com/gogits/gogs/pull/818)
+
 ### v0.5.11 @ 2015-1-5
 
 #### Bug 修复
