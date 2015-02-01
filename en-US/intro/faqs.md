@@ -7,6 +7,14 @@ sort: 3
 
 ### Deployment
 
+#### What to do when I'm running another service on port 3000?
+
+To change the listening port number of Gogs when you first time run it:
+
+    ./gogs web -port 3001
+
+This flag also changes the port number in install page for you, so pick a number you want to assign for Gogs.
+
 #### How use Nginx with Reverse Proxy?
 
 Add following `server` section inside `http` section in `nginx.conf` and reload configuration:
@@ -58,7 +66,7 @@ Gogs has some third-party scripts for supporting run as daemon:
 
 In the GitHub repository of Gogs is a [systemd service template file](https://github.com/gogits/gogs/blob/master/scripts/systemd/gogs.service) for Gogs. It needs some modifications for a working version for your installation. OK, start the editors.
 
-1. Replace the `start.sh` path of `ExecStart` with the path of your Gogs installation. 
+1. Replace the `start.sh` path of `ExecStart` with the path of your Gogs installation.
 2. Also replace the path of `WorkingDirectory` with the path of your Gogs installation.
 3. [optional] If you are would like to use Gogs with `MySQL/MariaDB`, `PostgreSQL`, `Redis` or `memcached`, uncomment the corresponding line of `After`.
 
@@ -71,7 +79,7 @@ You can check the status of the Gogs systemd service with `sudo systemd status g
 #### How to become an administrator?
 
 1. You're the first registered user with `ID = 1`, and no e-mail confirmation required(if enabled).
-2. Default administrator log into `Admin -> Users` and authorize someone. 
+2. Default administrator log into `Admin -> Users` and authorize someone.
 3. Register in the install page.
 
 ### Repository Management

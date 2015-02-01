@@ -16,6 +16,7 @@ sort: 1
 
 - Parse user information with the golang tools when migrate [#822](https://github.com/gogits/gogs/pull/822)
 - Flexible SSH key format support: OpenSSH, SSH2 and base64 encoded key [#825](https://github.com/gogits/gogs/pull/825)
+- Able to use `./gogs web -port 3001` to prevent first time run port conflict
 
 ### v0.5.11 @ 2015-1-5
 
