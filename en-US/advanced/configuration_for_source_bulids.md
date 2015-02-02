@@ -5,8 +5,8 @@ sort: 4
 
 # Detailed Configuration For Source Builds
 
-Following the instruction of building [from source](/docs/en-US/installation/install_from_source.md), you should now have a local user `git` and a working setup of `go` and [Gogs](http://gogs.io/).
-We are gong to setup 'Gogs' along with **Nginx**. This way, we can take advantage of Nginx. This is useful for servers that already have an Nginx running.
+Following the instruction of building [from source](/docs/installation/install_from_source.md), you should now have a local user `git` and a working setup of `go` and [Gogs](http://gogs.io/).
+We are gong to setup Gogs along with **Nginx**. This way, we can take advantage of Nginx. This is useful for servers that already have an Nginx running.
 
 For the rest fo this document, we'll assume the following:
 
