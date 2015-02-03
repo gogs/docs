@@ -46,12 +46,11 @@ PASSWD = root
 
 ### 部署模式
 
-**脚本均放置在 `scripts` 目录**
+**脚本均放置在 `scripts` 目录，但请在仓库根目录执行它们**
 
 - 默认支持 3 种方式的启动：
 	- 普通：只需执行 `./gogs web`
-	- 脚本：执行 `./scripts/start.sh` 或 `./scripts/start.bat`
-	- Supervisor： 
+	- Supervisor：
 		- 启动：`./scripts/gogs_supervisord.sh start`
 		- 停止：`./scripts/gogs_supervisord.sh stop`
 		- 重启：`./scripts/gogs_supervisord.sh restart`

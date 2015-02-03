@@ -46,12 +46,11 @@ Yes, why don't you just edit `conf/app.ini`? The reason is that to keep your cus
 
 ### For Deployment
 
-**Scripts are in `scripts` directory**
+**Scripts are in `scripts` directory, but execute them at root of repository**
 
 - There are 3 ways to start by default:
 	- Plain: just use `./gogs web`
-	- Script: execute `./scripts/start.sh` or `./scripts/start.bat`
-	- Supervisor: 
+	- Supervisor:
 		- Start: `./scripts/gogs_supervisord.sh start`
 		- Stop: `./scripts/gogs_supervisord.sh stop`
 		- Restart: `./scripts/gogs_supervisord.sh restart`
