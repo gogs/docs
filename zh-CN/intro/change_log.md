@@ -24,6 +24,7 @@ sort: 1
 
 - 能够根据数据完全重写 `.ssh/authorized_key` 文件 [#818](https://github.com/gogits/gogs/pull/818)
 - 增加俄语和日语支持
+- 在对比模式下高亮选中代码 [@makhov](https://github.com/makhov)
 
 ### v0.5.11 @ 2015-1-5
 

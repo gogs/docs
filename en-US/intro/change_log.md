@@ -24,6 +24,7 @@ sort: 1
 
 - Able to rewrite full `.ssh/authorized_key` from database [#818](https://github.com/gogits/gogs/pull/818)
 - Add Russian and Japanese language support.
+- Highlighting selected code in diff view [@makhov](https://github.com/makhov)
 
 ### v0.5.11 @ 2015-1-5
 
