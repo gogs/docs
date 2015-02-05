@@ -93,3 +93,7 @@ This is **high level a permission which can damage your system** which you must 
 #### How to get current Gogs version?
 
 The plain text format of Gogs version is in the file `templates/VERSION`.
+
+#### What is `gogs serv` command for?
+
+You have no reason to execute this command manually, it will be called by Git update hook whenever new SSH push is coming.
