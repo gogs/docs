@@ -9,7 +9,7 @@ sort: 1
 
 请记住，任何修改都是发生在 `custom/conf/app.ini` 自定义配置文件中，而非默认的 `conf/app.ini` 配置文件。
 
-如果您看到类似 `%(X)s` 字符，这是由 [goconfig](https://github.com/Unknwon/goconfig) 提供的递归取值的特性。
+如果您看到类似 `%(X)s` 字符，这是由 [ini](https://github.com/go-ini/ini/tree/v1#recursive-values) 提供的递归取值的特性。
 
 ## 概览
 

@@ -9,7 +9,7 @@ This is a cheat sheet for Gogs configuration file, it helps some if you want to 
 
 Before we get started, make sure you know any change of configuration should be made in `custom/conf/app.ini` rather than `conf/app.ini`.
 
-If you see anything like `%(X)s`, it's the feature powered by [goconfig](https://github.com/Unknwon/goconfig) for reading value recursively.
+If you see anything like `%(X)s`, it's the feature powered by [ini](https://github.com/go-ini/ini/tree/v1#recursive-values) for reading value recursively.
 
 ## Overall
 
@@ -92,7 +92,7 @@ If you see anything like `%(X)s`, it's the feature powered by [goconfig](https:/
 
 ## Session
 
-- `PROVIDER`: Session engine provider, either `memory`, `file`, `redis`, or `mysql`. 
+- `PROVIDER`: Session engine provider, either `memory`, `file`, `redis`, or `mysql`.
 - `PROVIDER_CONFIG`: For file, it's the root path; for others, it's the host address and port number.
 - `COOKIE_SECURE`: Enable this to force using HTTPS for all session access.
 - `GC_INTERVAL_TIME`: GC interval in seconds.
@@ -122,4 +122,3 @@ If you see anything like `%(X)s`, it's the feature powered by [goconfig](https:/
 ## Git
 
 - `MAX_GITDIFF_LINES`: Maxium show lines in diff page.
-

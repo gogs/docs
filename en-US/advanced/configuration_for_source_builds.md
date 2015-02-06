@@ -1,5 +1,5 @@
 ---
-name: Detailed Configuration From Source
+name: Detailed Config From Source
 sort: 4
 ---
 
