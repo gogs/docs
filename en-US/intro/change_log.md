@@ -9,6 +9,7 @@ sort: 1
 
 #### Bug fixes
 
+- Migrated repository does not have update hook [#789](https://github.com/gogits/gogs/issues/789)
 - `num_watchers` not updated when adding a bare repository [#819](https://github.com/gogits/gogs/issues/819)
 - Data racing when shoot webhook through SSH [#827](https://github.com/gogits/gogs/issues/827)
 - XSS attacks in commit messages [#828](https://github.com/gogits/gogs/issues/828)

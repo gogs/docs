@@ -9,6 +9,7 @@ sort: 1
 
 #### Bug 修复
 
+- 迁移仓库没有 Update 钩子 [#789](https://github.com/gogits/gogs/issues/789)
 - 当添加空仓库时，`num_watchers` 字段更新失败 [#819](https://github.com/gogits/gogs/issues/819)
 - 当通过 SSH 推送代码时 Web 钩子会发生数据竞争 [#827](https://github.com/gogits/gogs/issues/827)
 - 代码提交消息可进行 XSS 攻击 [#828](https://github.com/gogits/gogs/issues/828)
