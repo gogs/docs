@@ -13,16 +13,19 @@ sort: 1
 - Data racing when shoot webhook through SSH [#827](https://github.com/gogits/gogs/issues/827)
 - XSS attacks in commit messages [#828](https://github.com/gogits/gogs/issues/828)
 - Choose wrong README sometimes [#877](https://github.com/gogits/gogs/issues/877)
+- Problem in LDAP UTF-8 string decoding [#916](https://github.com/gogits/gogs/issues/916)
 
 #### Improvements
 
 - Parse user information with the Go tools when migrate [#822](https://github.com/gogits/gogs/pull/822)
 - Flexible SSH key format support: OpenSSH, SSH2 and base64 encoded key [#825](https://github.com/gogits/gogs/pull/825)
 - Able to use `./gogs web -port 3001` to prevent first time run port conflict
+- Link to previous committed source file instead of returning 404 for deleted files [#911](https://github.com/gogits/gogs/pull/911)
 
 #### Features
 
 - Able to rewrite full `.ssh/authorized_key` from database [#818](https://github.com/gogits/gogs/pull/818)
+- Able to regenerate new update hook file for repositories
 - Add Russian and Japanese language support.
 - Highlighting selected code in diff view [@makhov](https://github.com/makhov)
 

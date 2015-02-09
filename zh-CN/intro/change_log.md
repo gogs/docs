@@ -13,16 +13,19 @@ sort: 1
 - 当通过 SSH 推送代码时 Web 钩子会发生数据竞争 [#827](https://github.com/gogits/gogs/issues/827)
 - 代码提交消息可进行 XSS 攻击 [#828](https://github.com/gogits/gogs/issues/828)
 - 有时会选择错误的 README 进行渲染 [#877](https://github.com/gogits/gogs/issues/877)
+- 无法正确解析来自 LDAP 的 UTF-8 编码的字符串 [#916](https://github.com/gogits/gogs/issues/916)
 
 #### 功能改进
 
 - 迁移仓库时使用标准库解析用户信息 [#822](https://github.com/gogits/gogs/pull/822)
 - 更加灵活的 SSH 公钥格式支持：OpenSSH、SSH2 和 base64 编码格式 [#825](https://github.com/gogits/gogs/pull/825)
 - 可以使用 `./gogs web -port 3001` 来防止第一次运行 Gogs 时发生端口冲突
+- 差异对比页面将被删除的文件链接到上一次提交的状态而不显示 404 页面 [#911](https://github.com/gogits/gogs/pull/911)
 
 #### 新增特性
 
 - 能够根据数据完全重写 `.ssh/authorized_key` 文件 [#818](https://github.com/gogits/gogs/pull/818)
+- 能够根据配置重新生成仓库的 Update 钩子文件
 - 增加俄语和日语支持
 - 在对比模式下高亮选中代码 [@makhov](https://github.com/makhov)
 
