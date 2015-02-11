@@ -41,9 +41,9 @@ In this release, we will focus on Git visualization.
 
 In this release, we will focus on integration services.
 
-- We will have more webhook format options.
-- We will have open APIs.
-- We may have hooks for issue tracker.
+- Will have more webhook format options.
+- Will have open APIs.
+- May have hooks for issue tracker.
 
 ## v1.0
 
