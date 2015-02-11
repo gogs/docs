@@ -22,6 +22,7 @@ sort: 1
 - 更加灵活的 SSH 公钥格式支持：OpenSSH、SSH2 和 base64 编码格式 [#825](https://github.com/gogits/gogs/pull/825)
 - 可以使用 `./gogs web -port 3001` 来防止第一次运行 Gogs 时发生端口冲突
 - 差异对比页面将被删除的文件链接到上一次提交的状态而不显示 404 页面 [#911](https://github.com/gogits/gogs/pull/911)
+- 能够在 Flash 被禁用的情况下一键选中仓库克隆地址以便复制 [#937](https://github.com/gogits/gogs/pull/937)
 
 #### 新增特性
 

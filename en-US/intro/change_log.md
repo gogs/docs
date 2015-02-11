@@ -22,6 +22,7 @@ sort: 1
 - Flexible SSH key format support: OpenSSH, SSH2 and base64 encoded key [#825](https://github.com/gogits/gogs/pull/825)
 - Able to use `./gogs web -port 3001` to prevent first time run port conflict
 - Link to previous committed source file instead of returning 404 for deleted files [#911](https://github.com/gogits/gogs/pull/911)
+- Able to select-on-click clone URL then copy in case Flash is disabled [#937](https://github.com/gogits/gogs/pull/937)
 
 #### Features
 
