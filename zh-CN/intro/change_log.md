@@ -9,27 +9,36 @@ sort: 1
 
 #### Bug 修复
 
+- 邮箱地址在渲染时被认作@某人 [#737](https://github.com/gogits/gogs/issues/737)
+- 使用 SQLite3 添加团队成员时发生恐慌 [#739](https://github.com/gogits/gogs/issues/739)
 - 迁移仓库没有 Update 钩子 [#789](https://github.com/gogits/gogs/issues/789)
 - 当添加空仓库时，`num_watchers` 字段更新失败 [#819](https://github.com/gogits/gogs/issues/819)
 - 当通过 SSH 推送代码时 Web 钩子会发生数据竞争 [#827](https://github.com/gogits/gogs/issues/827)
 - 代码提交消息可进行 XSS 攻击 [#828](https://github.com/gogits/gogs/issues/828)
+- 用户自动补全功能失效 [#832](https://github.com/gogits/gogs/issues/832)
 - 有时会选择错误的 README 进行渲染 [#877](https://github.com/gogits/gogs/issues/877)
 - 无法正确解析来自 LDAP 的 UTF-8 编码的字符串 [#916](https://github.com/gogits/gogs/issues/916)
+- 用户未登录时尝试关注某个仓库会发生恐慌 [#929](https://github.com/gogits/gogs/issues/929)
 
 #### 功能改进
 
 - 迁移仓库时使用标准库解析用户信息 [#822](https://github.com/gogits/gogs/pull/822)
 - 更加灵活的 SSH 公钥格式支持：OpenSSH、SSH2 和 base64 编码格式 [#825](https://github.com/gogits/gogs/pull/825)
 - 可以使用 `./gogs web -port 3001` 来防止第一次运行 Gogs 时发生端口冲突
+- 允许禁用 SSH 功能 [#883](https://github.com/gogits/gogs/issues/883)
+- 当注册被禁止时默认隐藏注册相关按钮和链接 [#884](https://github.com/gogits/gogs/issues/884)
+- 推送 Web 钩子时可以禁止验证证书有效性 [#891](https://github.com/gogits/gogs/issues/891)
 - 差异对比页面将被删除的文件链接到上一次提交的状态而不显示 404 页面 [#911](https://github.com/gogits/gogs/pull/911)
 - 能够在 Flash 被禁用的情况下一键选中仓库克隆地址以便复制 [#937](https://github.com/gogits/gogs/pull/937)
 
 #### 新增特性
 
+- 通过提交信息来控制工单状态 [#668](https://github.com/gogits/gogs/issues/668)
 - 能够根据数据完全重写 `.ssh/authorized_key` 文件 [#818](https://github.com/gogits/gogs/pull/818)
 - 能够根据配置重新生成仓库的 Update 钩子文件
 - 增加俄语和日语支持
 - 在对比模式下高亮选中代码 [@makhov](https://github.com/makhov)
+- 允许在通过 HTTP(S) 推送时使用应用密钥 [#842](https://github.com/gogits/gogs/issues/842)
 
 ### v0.5.11 @ 2015-1-5
 

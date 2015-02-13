@@ -9,27 +9,36 @@ sort: 1
 
 #### Bug fixes
 
+- Email addresses treated as at-mentions [#737](https://github.com/gogits/gogs/issues/737)
+- Add Team Repository error in SQLite3 [#739](https://github.com/gogits/gogs/issues/739)
 - Migrated repository does not have update hook [#789](https://github.com/gogits/gogs/issues/789)
 - `num_watchers` not updated when adding a bare repository [#819](https://github.com/gogits/gogs/issues/819)
 - Data racing when shoot webhook through SSH [#827](https://github.com/gogits/gogs/issues/827)
 - XSS attacks in commit messages [#828](https://github.com/gogits/gogs/issues/828)
+- User auto-completion fails [#832](https://github.com/gogits/gogs/issues/832)
 - Choose wrong README sometimes [#877](https://github.com/gogits/gogs/issues/877)
 - Problem in LDAP UTF-8 string decoding [#916](https://github.com/gogits/gogs/issues/916)
+- Panic when try to watch as non-logged user [#929](https://github.com/gogits/gogs/issues/929)
 
 #### Improvements
 
 - Parse user information with the Go tools when migrate [#822](https://github.com/gogits/gogs/pull/822)
 - Flexible SSH key format support: OpenSSH, SSH2 and base64 encoded key [#825](https://github.com/gogits/gogs/pull/825)
 - Able to use `./gogs web -port 3001` to prevent first time run port conflict
+- Able to disable SSH feature [#883](https://github.com/gogits/gogs/issues/883)
+- Add option for hiding "Sign Up" when register is disabled [#884](https://github.com/gogits/gogs/issues/884)
+- Optionally do not verify certificate for webhooks [#891](https://github.com/gogits/gogs/issues/891)
 - Link to previous committed source file instead of returning 404 for deleted files [#911](https://github.com/gogits/gogs/pull/911)
 - Able to select-on-click clone URL then copy in case Flash is disabled [#937](https://github.com/gogits/gogs/pull/937)
 
 #### Features
 
+- Able to control issues in commit message [#668](https://github.com/gogits/gogs/issues/668)
 - Able to rewrite full `.ssh/authorized_key` from database [#818](https://github.com/gogits/gogs/pull/818)
 - Able to regenerate new update hook file for repositories
 - Add Russian and Japanese language support.
 - Highlighting selected code in diff view [@makhov](https://github.com/makhov)
+- Allow HTTP(S) Git actions using application token [#842](https://github.com/gogits/gogs/issues/842)
 
 ### v0.5.11 @ 2015-1-5
 
