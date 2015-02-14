@@ -15,7 +15,7 @@ To change the listening port number of Gogs when you first time run it:
 
 This flag also changes the port number in install page for you, so pick a number you want to assign for Gogs.
 
-#### How use Nginx with Reverse Proxy?
+#### How to use Nginx with Reverse Proxy?
 
 Add following `server` section inside `http` section in `nginx.conf` and reload configuration:
 

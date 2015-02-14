@@ -13,12 +13,17 @@ sort: 1
 2. 删除当前的 `templates` 目录。
 3. 解压压缩包并将所有内容复制粘贴到相应位置。
 
-### v0.5.11 @ 2015-1-5
+### v0.5.13 @ 2015-2-13
 
-- CDN：~~[Windows](http://gogs.dn.qbox.me/gogs_v0.5.11_windows_amd64.zip)~~（身边暂时没有 Widnows） - [Linux](http://gogs.dn.qbox.me/gogs_v0.5.11_linux_amd64.zip) - [Mac OS X](http://gogs.dn.qbox.me/gogs_v0.5.11_darwin_amd64.zip)
-- [GitHub](https://github.com/gogits/gogs/releases/tag/v0.5.11)
+- CDN：[Windows](http://gogs.dn.qbox.me/gogs_v0.5.13_windows_amd64.zip) - [Linux](http://gogs.dn.qbox.me/gogs_v0.5.13_linux_amd64.zip) - [Mac OS X](http://gogs.dn.qbox.me/gogs_v0.5.13_darwin_amd64.zip)
+- [GitHub](https://github.com/gogits/gogs/releases/tag/v0.5.13)
 
 安装完成后可继续参照 [配置与运行](configuration_and_run.md)。
+
+### v0.5.11 @ 2015-1-5
+
+- CDN：~~[Linux](http://gogs.dn.qbox.me/gogs_v0.5.11_linux_amd64.zip) - [Mac OS X](http://gogs.dn.qbox.me/gogs_v0.5.11_darwin_amd64.zip)~~
+- ~~[GitHub](https://github.com/gogits/gogs/releases/tag/v0.5.11)~~
 
 ### v0.5.9 @ 2014-12-13
 
