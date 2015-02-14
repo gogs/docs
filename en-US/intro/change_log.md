@@ -5,6 +5,13 @@ sort: 1
 
 # Change Log
 
+### v0.6.0
+
+#### Bug fixes
+
+- Check template version before loading custom configuration [#954](https://github.com/gogits/gogs/issues/954)
+- Didn't check if attachments and avatars path in configuration is a absolutely path
+
 ### v0.5.13 @ 2015-2-13
 
 #### Bug fixes
