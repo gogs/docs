@@ -79,6 +79,7 @@ If you see anything like `%(X)s`, it's the feature powered by [ini](https://gith
 - `HOST`: SMTP mail host address.
 - `USER`: User name of system mailer(usually just your e-mail address).
 - `PASSWD`: Password of you mailer.
+- `SKIP_VERIFY`: Not verify the self-signed certificates
 
 ## OAuth
 
