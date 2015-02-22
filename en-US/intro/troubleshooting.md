@@ -19,10 +19,10 @@ sort: 2
 
 -----
 
-- Error: 
+- Error:
 	- `fatal: 'XX/XX.git' does not appear to be a git repository`
 	- Pushed commits but still shows as a bare repository
-- Causes: there are duplicated SSH keys in `~/.ssh/authorized_keys` file, possibly you are/were using GitLab for same system user. 
+- Causes: there are duplicated SSH keys in `~/.ssh/authorized_keys` file, possibly you are/were using GitLab for same system user.
 - Solution: delete the old one and keep the one that was added by Gogs only.
 
 -----
@@ -34,7 +34,7 @@ sort: 2
 ## Form Validation
 
 - Error: `Repository/User name contains illegal characters`
-- Causes: in order to prevent unexpected exceptions, your user/repository name will be considered as illegal if they match any of the following rules: 
+- Causes: in order to prevent unexpected exceptions, your user/repository name will be considered as illegal if they match any of the following rules:
 	- Name equals to any word of `"raw", "install", "api", "avatar", "user", "org", "help", "stars", "issues", "pulls", "commits", "repo", "template", "admin", "new"`.
 	- Name has suffix `".git"`.
 
@@ -42,7 +42,7 @@ sort: 2
 
 - Error: `cache: unknown adaptername "memcache" (forgotten import?)`
 - Causes: To prevent unnecessary import of package, we use build tags to specify when needed
-- Solution: 
+- Solution:
 	- Download: `go get -tags memcache github.com/gogits.gogs`
 	- Build: `go build -tags memcache`
 	- Same steps for `redis` when you want it to be the cache adapter.
@@ -70,15 +70,15 @@ After that, go to [http://localhost:3000/install](http://localhost:3000/install)
 
 - Error: Gmail with Error 534: `Please log in via your web browser and then try again`
 - Causes: this is because Google does not trust your server
-- Solution: 
+- Solution:
 	- Visit https://accounts.google.com and log in.
-	- Go to https://accounts.google.com/DisplayUnlockCaptcha click `continue`. 
-	- Now copy the link looks like this(prompt in Gogs server log): https://accounts.google.com/ContinueSignIn?sarp=1&scc=1&plt=AKgnsbvPPN_E_25__nyS*******f18O9uuLNtz0Imw and log in again. 
+	- Go to https://accounts.google.com/DisplayUnlockCaptcha click `continue`.
+	- Now copy the link looks like this(prompt in Gogs server log): https://accounts.google.com/ContinueSignIn?sarp=1&scc=1&plt=AKgnsbvPPN_E_25__nyS*******f18O9uuLNtz0Imw and log in again.
 	- Things should work now. Last but not the least, check you `spam` box in case your mail service provider thinks your gmail is a spammer.
 
 ## Windows
 
-- Error: 
+- Error:
 
 ```
 2014/09/18 15:04:40 [repo.go:115 CreatePost()] [E] CreatePost: initRepository: initRepository(git clone): cygwin warning:
@@ -96,6 +96,12 @@ fatal: Could not read from remote repository.
 - Solution: please try to start Gogs through default CMD.
 
 ## Other
+
+- Error: extremely slow page response but time show on the bottom looks normal(under 100ms)
+- Causes: it may be caused by Nginx try to resolve IPv4 address as IPv6.
+- Solution: use explicit hostname `127.0.0.1` instead of `localhost`.
+
+-----
 
 - Error: `Error 1062: Duplicate entry 'Unknown-Mac' for key 'UQE_public_key_name'`
 - Causes: it is led by legacy code, `public_key` table used to have `UQE_public_key_name` unique rule for SSH key name in very early version.

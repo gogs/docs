@@ -34,7 +34,7 @@ sort: 2
 ## 表单验证
 
 - 错误描述：`Repository/User name contains illegal characters`
-- 可能原因：为了防止不必要的异常，您的用户名或仓库在符合以下任意一条规则时会被认为非法： 
+- 可能原因：为了防止不必要的异常，您的用户名或仓库在符合以下任意一条规则时会被认为非法：
 	- 名称为 `"raw", "install", "api", "avatar", "user", "org", "help", "stars", "issues", "pulls", "commits", "repo", "template", "admin", "new"`。
 	- 名称后缀为 `".git"`。
 
@@ -95,6 +95,12 @@ fatal: Could not read from remote repository.
 - 解决方案：请您尝试用默认的 CMD 启动 Gogs。
 
 ## 其它
+
+- 错误描述：页面响应非常慢，但是显示在页面底部的时间正常（低于 100 毫秒）。
+- 可能原因：这可能是由于 Nginx 尝试通过 IPv6 的方式解析 IPv4 的地址。
+- 解决方案：显式的使用 `127.0.0.1` 作为主机名而不是 `localhost`。
+
+-----
 
 - 错误描述：`Error 1062: Duplicate entry 'Unknown-Mac' for key 'UQE_public_key_name'`
 - 可能原因：这是由于遗留代码导致的，`public_key` 表之前含有唯一索引 `UQE_public_key_name`。
