@@ -27,7 +27,7 @@ Gogs 支持从外部 Git 托管源导入功能来帮助您通过 HTTP/HTTPS 协�
 |---------|--------|----|
 |`username`|**是**|操作者用户名|
 |`password`|**是**|操作者密码|
-|`url`|**是**|HTTP/HTTPS URL|
+|`clone_addr`|**是**|克隆地址（HTTP/HTTPS URL 或本地路径）|
 |`auth_username`|否|授权认证用户名|
 |`auth_password`|否|授权认证密码|
 |`uid`|**是**|仓库拥有者 ID|
@@ -37,20 +37,11 @@ Gogs 支持从外部 Git 托管源导入功能来帮助您通过 HTTP/HTTPS 协�
 |`desc`|否|仓库描述|
 
 - **响应结果**:
-	- 迁移成功:
-	
-	```
-	{
-		"ok": true,
-		"data": <仓库 URL>
-	}
-	```
-
+	- 迁移成功（200）:
 	- 迁移失败:
-	
-	```
+
+	```json
 	{
-		"ok": false,
-		"error": <错误信息>
+		"message": <错误信息>
 	}
 	```

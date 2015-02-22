@@ -27,7 +27,7 @@ In case you have many repositories need to migrate from same of different source
 |---------|--------|----|
 |`username`|**True**|Operator username|
 |`password`|**True**|Operator password|
-|`url`|**True**|HTTP/HTTPS URL|
+|`clone_addr`|**True**|Clone address (HTTP/HTTPS URL or local path)|
 |`auth_username`|False|Authorization username|
 |`auth_password`|False|Authorization password|
 |`uid`|**True**|Repository owner ID|
@@ -37,20 +37,11 @@ In case you have many repositories need to migrate from same of different source
 |`desc`|False|Repository description|
 
 - **Response**:
-	- Success:
-	
-	```
-	{
-		"ok": true,
-		"data": <repository URL>
-	}
-	```
-
+	- Success(200):
 	- Failure:
-	
-	```
+
+	```json
 	{
-		"ok": false,
-		"error": <error message>
+		"message": <error message>
 	}
 	```

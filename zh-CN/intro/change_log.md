@@ -13,6 +13,10 @@ sort: 1
 - 未加载自定义配置就检查模板文件版本 [#954](https://github.com/gogits/gogs/issues/954)
 - 未判断附件和头像地址是否为绝对路径
 
+#### 新增特性
+
+- 支持绑定多个邮箱 [#755](https://github.com/gogits/gogs/pull/755)
+
 ### v0.5.13 @ 2015-2-13
 
 #### Bug 修复
