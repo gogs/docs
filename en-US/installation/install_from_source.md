@@ -19,7 +19,7 @@ We are going to create a new user called `git` and install/setup everything unde
 ## Installing Go
 If your system's Go matches the requirements skip this section.
 
-Install go in `/home/git/local/go` so it wouldn't interfer with future updates of your system's package manager:
+Install go in `/home/git/local/go` so it wouldn't interfere with future updates of your system's package manager:
 
 ```bash
 sudo su - git
@@ -63,7 +63,7 @@ See [gopmfile](https://github.com/gogits/gogs/blob/master/.gopmfile) for complet
 $ gopm update -v
 
 # Download and build binary
-$ gopm bin -u -v gogs path/to/anywhere
+$ gopm bin -u -v gogs -d path/to/anywhere
 ```
 
 Or

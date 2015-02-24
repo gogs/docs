@@ -23,7 +23,7 @@ sort: 2
 $ gopm update -v
 
 # 下载并构建二进制
-$ gopm bin -u -v gogs path/to/anywhere
+$ gopm bin -u -v gogs -d path/to/anywhere
 ```
 
 Or
