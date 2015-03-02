@@ -13,6 +13,10 @@ sort: 1
 - 未加载自定义配置就检查模板文件版本 [#954](https://github.com/gogits/gogs/issues/954)
 - 未判断附件和头像地址是否为绝对路径
 
+#### 功能改进
+
+- 允许 SMTP 客户端使用 TLS 证书 [#943](https://github.com/gogits/gogs/pull/943)
+
 #### 新增特性
 
 - 支持绑定多个邮箱 [#755](https://github.com/gogits/gogs/pull/755)

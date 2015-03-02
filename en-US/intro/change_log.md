@@ -13,6 +13,10 @@ sort: 1
 - Check template version before loading custom configuration [#954](https://github.com/gogits/gogs/issues/954)
 - Didn't check if attachments and avatars path in configuration is a absolutely path
 
+#### Improvements
+
+- Able to use TLS client certificate for SMTP [#943](https://github.com/gogits/gogs/pull/943)
+
 #### Features
 
 - Allow multiple e-mail addresses [#755](https://github.com/gogits/gogs/pull/755)
