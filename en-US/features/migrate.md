@@ -27,7 +27,7 @@ In case you have many repositories need to migrate from same of different source
 |---------|--------|----|
 |`username`|**True**|Operator username|
 |`password`|**True**|Operator password|
-|`clone_addr`|**True**|Clone address (HTTP/HTTPS URL or local path)|
+|`url`|**True**|Clone address (HTTP/HTTPS URL or local path)|
 |`auth_username`|False|Authorization username|
 |`auth_password`|False|Authorization password|
 |`uid`|**True**|Repository owner ID|
