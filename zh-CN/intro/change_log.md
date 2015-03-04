@@ -9,6 +9,7 @@ sort: 1
 
 #### Bug 修复
 
+- 拥有多个团队成员身份的用户仓库权限级别不正确 [#858](https://github.com/gogits/gogs/issues/858)
 - 可以向镜像仓库推送代码 [#948](https://github.com/gogits/gogs/issues/948)
 - 未加载自定义配置就检查模板文件版本 [#954](https://github.com/gogits/gogs/issues/954)
 - 未判断附件和头像地址是否为绝对路径

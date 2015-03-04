@@ -9,6 +9,7 @@ sort: 1
 
 #### Bug fixes
 
+- Person in multiple teams has incorrect access [#858](https://github.com/gogits/gogs/issues/858)
 - Can push to mirror repository [#948](https://github.com/gogits/gogs/issues/948)
 - Check template version before loading custom configuration [#954](https://github.com/gogits/gogs/issues/954)
 - Didn't check if attachments and avatars path in configuration is a absolutely path
