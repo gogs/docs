@@ -10,6 +10,7 @@ sort: 1
 #### Bug fixes
 
 - Person in multiple teams has incorrect access [#858](https://github.com/gogits/gogs/issues/858)
+- Issue label amount not updated on issue removal [#933](https://github.com/gogits/gogs/issues/933)
 - Can push to mirror repository [#948](https://github.com/gogits/gogs/issues/948)
 - Check template version before loading custom configuration [#954](https://github.com/gogits/gogs/issues/954)
 - Didn't check if attachments and avatars path in configuration is a absolutely path
@@ -19,6 +20,7 @@ sort: 1
 #### Improvements
 
 - Able to use TLS client certificate for SMTP [#943](https://github.com/gogits/gogs/pull/943)
+- Fix: 504 5.5.2 <localhost>: Helo command rejected [#973](https://github.com/gogits/gogs/pull/973)
 
 #### Features
 
