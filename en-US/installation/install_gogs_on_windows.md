@@ -23,6 +23,8 @@ This guide covers nssm.exe, which is [open source](https://git.nssm.cc/?p=nssm.g
 
 During setup, you will run Gogs as current local user, and then reconfigure to run as a service.
 
+When configuring Gogs through app.ini and web UI, use UNIX directory separators (forward slash `/`) where possible. If you are needing to use a UNC path to a network share, try [the Cygwin way](https://cygwin.com/cygwin-ug-net/using.html#unc-paths), or [map the path as a local drive](http://www.sevenforums.com/tutorials/49517-map-network-drive.html).
+
 ### Run as current local user
 
 Gogs is able to run as local user immediately, with no configuration. Simply unpack the [Windows binary](http://gogs.io/docs/installation/install_from_binary.html) zip file somewhere, go to command line, and do:
@@ -92,7 +94,7 @@ This is set in `C:\Gogs\custom\conf\app.ini` with:
 
 ```
 [repository]
-ROOT = C:\path\to\repositories
+ROOT = C:/path/to/repositories
 ```
 
 These will be bare repositories, with no working directory. You can clone them locally through the file system, with git.exe (which was required in [installation](http://gogs.io/docs/installation/), or with [TortoiseGit](https://code.google.com/p/tortoisegit/) if you prefer working through Windows Explorer.
@@ -241,7 +243,7 @@ An example of the logging and error handling in action:
 ROOT_PATH = C:\gogs\log
 ```
 
-Don't do that (at time of writing this line, for Go Git Service 0.5.13.0212 Beta). It will cause the following to print in `C:\gogs\log\gogs-nssm.txt`:
+At the time of writing this line, for Go Git Service 0.5.13.0212 Beta, it will cause the following to print in `C:\gogs\log\gogs-nssm.txt`:
 
 ```
 timestamp [T] Custom path: C:/gogs/custom
@@ -250,13 +252,13 @@ timestamp [I] Gogs: Go Git Service 0.5.13.0212 Beta
 timestamp [log.go:294 Error()] [E] Fail to set logger(file): invalid character 'g' in string escape code
 ```
 
-This is what it expected in `C:\custom\conf\app.ini`:
+This is what was expected in `C:\custom\conf\app.ini`:
 
 ```
 ROOT_PATH = C:/gogs/log
 ```
 
-And this is what the command line looks like:
+And this was the `nssm` interaction while solving it:
 
 ```
 C:\>nssm restart gogs
