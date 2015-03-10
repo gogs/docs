@@ -13,6 +13,8 @@ sort: 1
 - Can push to mirror repository [#948](https://github.com/gogits/gogs/issues/948)
 - Check template version before loading custom configuration [#954](https://github.com/gogits/gogs/issues/954)
 - Didn't check if attachments and avatars path in configuration is a absolutely path
+- Cannot delete repository with LDAP account [#1006](https://github.com/gogits/gogs/issues/1006)
+- Cannot handle SubModule without a .gitmodules entry [#1023](https://github.com/gogits/gogs/issues/1023)
 
 #### Improvements
 

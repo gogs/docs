@@ -13,6 +13,8 @@ sort: 1
 - 可以向镜像仓库推送代码 [#948](https://github.com/gogits/gogs/issues/948)
 - 未加载自定义配置就检查模板文件版本 [#954](https://github.com/gogits/gogs/issues/954)
 - 未判断附件和头像地址是否为绝对路径
+- LDAP 用户无法删除仓库 [#1006](https://github.com/gogits/gogs/issues/1006)
+- 无法处理没有 .gitmodules 文件的 SubModule [#1023](https://github.com/gogits/gogs/issues/1023)
 
 #### 功能改进
 
