@@ -166,10 +166,7 @@ Application tab:
 * Startup directory: C:\gogs
 * Arguments: web
 
-![](http://i.imgur.com/PPUCm5Y.png)
-<!--
 ![](/docs/images/install_gogs_on_windows_nssm_1.png)
--->
 
 Details tab:
 
@@ -179,10 +176,7 @@ Details tab:
 
 Note that we've chosen [delayed start](http://stackoverflow.com/a/11015576), so that the service will not impact the early boot time. Gogs will start two minutes after the non-delayed services.
 
-![](http://i.imgur.com/I7VgvpE.png)
-<!--
 ![](/docs/images/install_gogs_on_windows_nssm_2.png)
--->
 
 I/O tab:
 
@@ -191,20 +185,14 @@ I/O tab:
 
 That will capture all text output that you would normally receive from Gogs on the command line console, and log it to that file instead.
 
-![](http://i.imgur.com/y24pcxj.png)
-<!--
 ![](/docs/images/install_gogs_on_windows_nssm_3.png)
--->
 
 File rotation tab:
 
 * Check: Rotate files
 * Restrict rotation to files bigger than: 1000000 bytes
 
-![](http://i.imgur.com/H3ub6lk.png)
-<!--
 ![](/docs/images/install_gogs_on_windows_nssm_4.png)
--->
 
 Environment tab:
 
@@ -212,10 +200,7 @@ Environment tab:
 
 That is a guarantee that both gogs.exe and git.exe will be on the Gogs service's path variable during runtime.
 
-![](http://i.imgur.com/RwwTIf8.png)
-<!--
 ![](/docs/images/install_gogs_on_windows_nssm_5.png)
--->
 
 Click "Install service", and you should be confirmed that it succeeded. If it failed, refer back to the command line console you started, for the error message. When it succeeds, go to command line and do:
 
