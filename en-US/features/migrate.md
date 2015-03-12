@@ -34,7 +34,7 @@ In case you have many repositories need to migrate from same of different source
 |`repo_name`|**True**|Repository name|
 |`mirror`|False|Submit `on` if it's a mirror|
 |`private`|False|Submit `on` if it's private|
-|`desc`|False|Repository description|
+|`description`|False|Repository description|
 
 - **Response**:
 	- Success(200):

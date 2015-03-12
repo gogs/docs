@@ -15,6 +15,7 @@ sort: 1
 - 未判断附件和头像地址是否为绝对路径
 - LDAP 用户无法删除仓库 [#1006](https://github.com/gogits/gogs/issues/1006)
 - 无法处理没有 .gitmodules 文件的 SubModule [#1023](https://github.com/gogits/gogs/issues/1023)
+- HTTP/HTTPS 推送代码时 Update 函数调用错误 [#1037](https://github.com/gogits/gogs/issues/1037)
 
 #### 功能改进
 

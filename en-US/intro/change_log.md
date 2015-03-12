@@ -15,6 +15,7 @@ sort: 1
 - Didn't check if attachments and avatars path in configuration is a absolutely path
 - Cannot delete repository with LDAP account [#1006](https://github.com/gogits/gogs/issues/1006)
 - Cannot handle SubModule without a .gitmodules entry [#1023](https://github.com/gogits/gogs/issues/1023)
+- HTTP/HTTPS push update function call panic [#1037](https://github.com/gogits/gogs/issues/1037)
 
 #### Improvements
 
