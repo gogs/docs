@@ -10,6 +10,7 @@ sort: 1
 #### Bug 修复
 
 - 拥有多个团队成员身份的用户仓库权限级别不正确 [#858](https://github.com/gogits/gogs/issues/858)
+- 删除工单时标签计数不更新 [#933](https://github.com/gogits/gogs/issues/933)
 - 可以向镜像仓库推送代码 [#948](https://github.com/gogits/gogs/issues/948)
 - 未加载自定义配置就检查模板文件版本 [#954](https://github.com/gogits/gogs/issues/954)
 - 未判断附件和头像地址是否为绝对路径
@@ -20,6 +21,7 @@ sort: 1
 #### 功能改进
 
 - 允许 SMTP 客户端使用 TLS 证书 [#943](https://github.com/gogits/gogs/pull/943)
+- 修正 504 5.5.2 <localhost>: Helo command rejected [#973](https://github.com/gogits/gogs/pull/973)
 
 #### 新增特性
 
