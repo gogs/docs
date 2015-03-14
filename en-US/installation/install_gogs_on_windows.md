@@ -63,7 +63,7 @@ Gogs will create `C:\Users\your_username\.gitconfig` with the following:
 	email = gogitservice@gmail.com
 ```
 
-That [can be changed to whatever you like](http://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup), and it should be. It is the user to which all of your git operations will be attributed to. It can also be overridden per-repository, through `C:\path\to\repo\.git\config`.
+That [can be changed to whatever you like](http://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup), and it should be. It is the user to which all of your git operations will be attributed. It can also be overridden per-repository, through `C:\path\to\repo\.git\config`.
 
 ### Database
 
@@ -121,6 +121,25 @@ When working locally, it's not necessary to pass git operations through the Gogs
 
 At this point, you may choose to lock down file and directory permissions. Just keep in mind the paths to which Gogs requires write access, which includes the Gogs repository `ROOT`.
 
+#### Moving gogs.exe
+
+If you move `gogs.exe` after having made repositories, then you will also need to change a file in each repository you made.
+
+```
+C:\Users\username\gogs-repositories\gogs_user\repository_name.git\hooks\update
+```
+
+When Gogs creates a repository, it writes that file as follows:
+
+```
+#!/usr/bin/env bash
+"c:/gogs/gogs.exe" update $1 $2 $3 --config='c:/gogs/custom/conf/app.ini'
+```
+
+As you see, it has the full path to `gogs.exe` and `app.ini`. Not updating this after moving the Gogs directory would cause all `git push` commands to fail.
+
+#### Configure gogs as Local System user
+
 The following changes are made in `C:\Gogs\custom\conf\app.ini`:
 
 ```
@@ -130,6 +149,8 @@ RUN_USER = COMPUTERNAME$
 Sets Gogs to run as the local system user.
 
 `COMPUTERNAME` is whatever the response is from `echo %COMPUTERNAME%` on the command line. If the response is `USER-PC` then `RUN_USER = USER-PC$`
+
+#### Give Gogs a localhost domain name
 
 ```
 [server]
@@ -151,6 +172,8 @@ To complete that network route, open Notepad.exe as administrator and include th
 ```
 
 The hosts file entry will guarantee that all requests to the "gogs" domain are captured by your localhost interface. In a web browser, generally, `gogs/` in the address bar is sufficient to trigger that route.
+
+#### Configure Gogs as service (daemon)
 
 Get the [nssm.exe](http://nssm.cc/download) needed for your machine (32 or 64 bit; they're packaged together in Iain's zip file), and place it in a directory that is in (or will be added to) your %PATH% environment variable.
 
@@ -235,6 +258,8 @@ nssm restart gogs
 ```
 
 See the [configuration cheat sheet](http://gogs.io/docs/advanced/configuration_cheat_sheet.html) for reference of the `custom\conf\app.ini` settings.
+
+#### Troubleshoot Gogs service through NSSM
 
 An example of the logging and error handling in action:
 
