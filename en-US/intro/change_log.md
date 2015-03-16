@@ -14,9 +14,12 @@ sort: 1
 - Can push to mirror repository [#948](https://github.com/gogits/gogs/issues/948)
 - Check template version before loading custom configuration [#954](https://github.com/gogits/gogs/issues/954)
 - Didn't check if attachments and avatars path in configuration is a absolutely path
+- Duplicated suburl prefix in feeds [#988](https://github.com/gogits/gogs/issues/988)
 - Cannot delete repository with LDAP account [#1006](https://github.com/gogits/gogs/issues/1006)
 - Cannot handle SubModule without a .gitmodules entry [#1023](https://github.com/gogits/gogs/issues/1023)
 - HTTP/HTTPS push update function call panic [#1037](https://github.com/gogits/gogs/issues/1037)
+- Missing suburl prefix on admin panel [#1043](https://github.com/gogits/gogs/pull/1043)
+
 
 #### Improvements
 

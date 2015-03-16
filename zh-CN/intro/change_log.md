@@ -14,9 +14,11 @@ sort: 1
 - 可以向镜像仓库推送代码 [#948](https://github.com/gogits/gogs/issues/948)
 - 未加载自定义配置就检查模板文件版本 [#954](https://github.com/gogits/gogs/issues/954)
 - 未判断附件和头像地址是否为绝对路径
+- 活动时间线中重复的链接前缀 [#988](https://github.com/gogits/gogs/issues/988)
 - LDAP 用户无法删除仓库 [#1006](https://github.com/gogits/gogs/issues/1006)
 - 无法处理没有 .gitmodules 文件的 SubModule [#1023](https://github.com/gogits/gogs/issues/1023)
 - HTTP/HTTPS 推送代码时 Update 函数调用错误 [#1037](https://github.com/gogits/gogs/issues/1037)
+- 管理员页面在使用反向代理子路径时 URL 前缀未正确补上 [#1043](https://github.com/gogits/gogs/pull/1043)
 
 #### 功能改进
 
