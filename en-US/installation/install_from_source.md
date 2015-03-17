@@ -16,10 +16,17 @@ We are going to create a new user called `git` and install/setup everything unde
 
 `sudo adduser --disabled-login --gecos 'Gogs' git`
 
+### Third-party Packages
+
+If you're interested in which third-part packages we are using, see [gopmfile](https://github.com/gogits/gogs/blob/master/.gopmfile). You may need this when you are making build package for Gogs.
+
 ## Installing Go
+
+### Download
+
 If your system's Go matches the requirements skip this section.
 
-Install go in `/home/git/local/go` so it wouldn't interfere with future updates of your system's package manager:
+Install Go in `/home/git/local/go` so it wouldn't interfere with future updates of your system's package manager:
 
 ```bash
 sudo su - git
@@ -32,7 +39,9 @@ wget https://storage.googleapis.com/golang/go$VERSION.$OS-$ARCH.tar.gz
 tar -C /home/git/local -xzf go$VERSION.$OS-$ARCH.tar.gz
 ```
 
-Set the paths:
+### Set Up the Environment
+
+Set the paths that are corresponding to your system:
 
 ```bash
 sudo su - git
@@ -43,30 +52,9 @@ echo 'export PATH=$PATH:$GOROOT/bin:$GOPATH/bin' >> $HOME/.bashrc
 source $HOME/.bashrc
 ```
 
+### Install Gogs
 
-### Third-party packages
-
-You can install `gopm` by issuing:
-
-```
-sudo su - git
-cd ~
-go get -u github.com/gpmgo/gopm
-```
-
-See [gopmfile](https://github.com/gogits/gogs/blob/master/.gopmfile) for complete list of third-party packages.
-
-### Install
-
-```
-# Check update of gopm
-$ gopm update -v
-
-# Download and build binary
-$ gopm bin -u -v gogs -d path/to/anywhere
-```
-
-Or
+The general way to install Gogs, 
 
 ```
 # Download and install dependencies
@@ -77,25 +65,37 @@ $ cd $GOPATH/src/github.com/gogits/gogs
 $ go build
 ```
 
-#### Build from `dev` branch
+If you have gopm available, you can try the following way to install Gogs:
+
+```
+# Check update of gopm
+$ gopm update -v
+
+# Download and build binary
+$ gopm bin -u -v gogs -d path/to/anywhere
+```
+
+#### Build from `develop` branch
 
 ```
 $ mkdir -p $GOPATH/src/github.com/gogits
 $ cd $GOPATH/src/github.com/gogits
-$ git clone -b dev https://github.com/gogits/gogs.git
+$ git clone -b develop https://github.com/gogits/gogs.git
 $ cd gogs
 $ go get ./...
 $ go build
 ```
 
-#### Test
-To make sure 'gogs' is working:
+#### Test Installation
+
+To make sure Gogs is working:
 
 ```
 cd $GOPATH/src/github.com/gogits/gogs
 ./gogs web
 ```
-If you do not see error messages, hit `Ctrl-C` to stop the 'gogs'
+
+If you do not see error messages, hit `Ctrl-C` to stop Gogs.
 
 #### Build with SQLite3/Redis/Memcache
 

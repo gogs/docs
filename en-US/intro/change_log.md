@@ -19,6 +19,7 @@ sort: 1
 - Cannot handle SubModule without a .gitmodules entry [#1023](https://github.com/gogits/gogs/issues/1023)
 - HTTP/HTTPS push update function call panic [#1037](https://github.com/gogits/gogs/issues/1037)
 - Missing suburl prefix on admin panel [#1043](https://github.com/gogits/gogs/pull/1043)
+- Landing page setting does not consider suburl prefix [#1055](https://github.com/gogits/gogs/pull/1055)
 
 
 #### Improvements

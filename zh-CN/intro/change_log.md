@@ -19,6 +19,7 @@ sort: 1
 - 无法处理没有 .gitmodules 文件的 SubModule [#1023](https://github.com/gogits/gogs/issues/1023)
 - HTTP/HTTPS 推送代码时 Update 函数调用错误 [#1037](https://github.com/gogits/gogs/issues/1037)
 - 管理员页面在使用反向代理子路径时 URL 前缀未正确补上 [#1043](https://github.com/gogits/gogs/pull/1043)
+- 站点首页设置没有考虑反向代理子路径的情况 [#1055](https://github.com/gogits/gogs/pull/1055)
 
 #### 功能改进
 
