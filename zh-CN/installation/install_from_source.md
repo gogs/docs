@@ -48,7 +48,7 @@ echo 'export PATH=$PATH:$GOROOT/bin:$GOPATH/bin' >> $HOME/.bashrc
 source $HOME/.bashrc
 ```
 
-### 安装 Gogs
+## 安装 Gogs
 
 常用的安装方式：
 
@@ -71,7 +71,9 @@ $ gopm update -v
 $ gopm bin -u -v gogs -d path/to/anywhere
 ```
 
-#### 构建 `develop` 分支版本
+### 构建 `develop` 分支版本
+
+如果您想要安装 `develop` 分支版本，则可以通过以下命令：
 
 ```
 $ mkdir -p $GOPATH/src/github.com/gogits
@@ -82,7 +84,7 @@ $ go get ./...
 $ go build
 ```
 
-#### 测试安装
+### 测试安装
 
 您可以通过以下方式检查 Gogs 是否可以正常工作：
 
@@ -93,7 +95,7 @@ cd $GOPATH/src/github.com/gogits/gogs
 
 如果您没有发现任何错误信息，则可以使用 `Ctrl-C` 来终止运行。
 
-#### 构建 SQLite3/Redis/Memcache 集成版
+### 构建 SQLite3/Redis/Memcache 集成版
 
 如果您想要启动 SQLite3/Redis/Memcache 请先删除 `$GOPATH/pkg/{GOOS_GOARCH}/github.com/gogits/gogs` 目录，然后：
 

@@ -52,7 +52,7 @@ echo 'export PATH=$PATH:$GOROOT/bin:$GOPATH/bin' >> $HOME/.bashrc
 source $HOME/.bashrc
 ```
 
-### Install Gogs
+## Install Gogs
 
 The general way to install Gogs, 
 
@@ -75,7 +75,9 @@ $ gopm update -v
 $ gopm bin -u -v gogs -d path/to/anywhere
 ```
 
-#### Build from `develop` branch
+### Build from `develop` branch
+
+In case you want to try `develop` branch:
 
 ```
 $ mkdir -p $GOPATH/src/github.com/gogits
@@ -86,7 +88,7 @@ $ go get ./...
 $ go build
 ```
 
-#### Test Installation
+### Test Installation
 
 To make sure Gogs is working:
 
@@ -97,7 +99,7 @@ cd $GOPATH/src/github.com/gogits/gogs
 
 If you do not see error messages, hit `Ctrl-C` to stop Gogs.
 
-#### Build with SQLite3/Redis/Memcache
+### Build with SQLite3/Redis/Memcache
 
 If you need to enable SQLite3/Redis/Memcache, please delete directory `$GOPATH/pkg/{GOOS_GOARCH}/github.com/gogits/gogs` and do:
 
