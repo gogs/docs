@@ -9,6 +9,7 @@ sort: 1
 
 #### Bug fixes
 
+- Edit Account does not take into consideration password rules [#851](https://github.com/gogits/gogs/issues/851)
 - Person in multiple teams has incorrect access [#858](https://github.com/gogits/gogs/issues/858)
 - Issue label amount not updated on issue removal [#933](https://github.com/gogits/gogs/issues/933)
 - Can push to mirror repository [#948](https://github.com/gogits/gogs/issues/948)
@@ -20,15 +21,17 @@ sort: 1
 - HTTP/HTTPS push update function call panic [#1037](https://github.com/gogits/gogs/issues/1037)
 - Missing suburl prefix on admin panel [#1043](https://github.com/gogits/gogs/pull/1043)
 - Landing page setting does not consider suburl prefix [#1055](https://github.com/gogits/gogs/pull/1055)
-
+- Missing link in bare repository page for Help [#1082](https://github.com/gogits/gogs/issues/1082)
 
 #### Improvements
 
+- Allow MySQL socket connection instead of TCP [#872](https://github.com/gogits/gogs/issues/872)
 - Able to use TLS client certificate for SMTP [#943](https://github.com/gogits/gogs/pull/943)
 - Fix: 504 5.5.2 <localhost>: Helo command rejected [#973](https://github.com/gogits/gogs/pull/973)
 
 #### Features
 
+- Able to import local Git repositories [#99](https://github.com/gogits/gogs/issues/99)
 - Allow multiple e-mail addresses [#755](https://github.com/gogits/gogs/pull/755)
 
 ### v0.5.13 @ 2015-2-13

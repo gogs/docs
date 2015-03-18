@@ -9,6 +9,7 @@ sort: 1
 
 #### Bug 修复
 
+- 管理员修改用户密码未进行规则验证 [#851](https://github.com/gogits/gogs/issues/851)
 - 拥有多个团队成员身份的用户仓库权限级别不正确 [#858](https://github.com/gogits/gogs/issues/858)
 - 删除工单时标签计数不更新 [#933](https://github.com/gogits/gogs/issues/933)
 - 可以向镜像仓库推送代码 [#948](https://github.com/gogits/gogs/issues/948)
@@ -20,14 +21,17 @@ sort: 1
 - HTTP/HTTPS 推送代码时 Update 函数调用错误 [#1037](https://github.com/gogits/gogs/issues/1037)
 - 管理员页面在使用反向代理子路径时 URL 前缀未正确补上 [#1043](https://github.com/gogits/gogs/pull/1043)
 - 站点首页设置没有考虑反向代理子路径的情况 [#1055](https://github.com/gogits/gogs/pull/1055)
+- 空白仓库页面的帮助连接未正确显示 [#1082](https://github.com/gogits/gogs/issues/1082)
 
 #### 功能改进
 
+- 允许通过 Socket 连接 MySQL [#872](https://github.com/gogits/gogs/issues/872)
 - 允许 SMTP 客户端使用 TLS 证书 [#943](https://github.com/gogits/gogs/pull/943)
 - 修正 504 5.5.2 <localhost>: Helo command rejected [#973](https://github.com/gogits/gogs/pull/973)
 
 #### 新增特性
 
+- 允许导入本地 Git 仓库 [#99](https://github.com/gogits/gogs/issues/99)
 - 支持绑定多个邮箱 [#755](https://github.com/gogits/gogs/pull/755)
 
 ### v0.5.13 @ 2015-2-13
