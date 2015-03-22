@@ -5,7 +5,7 @@ sort: 5
 
 ## Install Gogs on Mac OS X
 
-> Contrbutied by [@fundon](https://github.com/fundon)
+> Contributed by [@fundon](https://github.com/fundon)
 
 ## Dependences
 
