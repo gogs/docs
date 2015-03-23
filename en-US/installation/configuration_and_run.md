@@ -9,7 +9,7 @@ sort: 7
 
 ### Default configuration
 
-The default configuration is saved in `conf/app.ini`, you do **NOT** need to edit it at all.
+The default configuration is saved in `conf/app.ini`, you do **NOT** need to edit it at all. Since `v0.6.0`, this file is embeded into binary.
 
 ### Custom configuration
 
