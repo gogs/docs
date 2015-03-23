@@ -7,15 +7,15 @@ sort: 1
 
 本手册会详尽地描述有关 Gogs 配置文件的选项，帮助您更好地理解和使用 Gogs。
 
-请记住，任何修改都是发生在 `custom/conf/app.ini` 自定义配置文件中，而非默认的 `conf/app.ini` 配置文件。
+请记住，任何修改都是发生在 `custom/conf/app.ini` 自定义配置文件中，该文件的具体位置与您的设置有关。
 
-如果您看到类似 `%(X)s` 字符，这是由 [ini](https://github.com/go-ini/ini/tree/v1#recursive-values) 提供的递归取值的特性。
+完整的默认设置可以通过 [app.ini](https://github.com/gogits/gogs/blob/master/conf/app.ini) 文件查看。如果您看到类似 `%(X)s` 字符，这是由 [ini](https://github.com/go-ini/ini/tree/v1#recursive-values) 提供的递归取值的特性。
 
 ## 概览
 
 - `APP_NAME`：应用名称，可以改成您的组织或公司名称
 - `RUN_USER`：运行应用的用户名称，我们建议您使用 `git`，但如果您在个人计算机上运行 Gogs，请修改为您的系统用户名称。如果没有正确设置这个值，很可能导致您的应用崩溃
-- `RUN_MODE`：请在部署环境下修改为 `prod` 模式
+- `RUN_MODE`：鉴于性能和其它考虑，建议在部署环境下修改为 `prod` 模式。在您完成安装操作时，该值也会被设置为 `prod`
 
 ## Repository
 
@@ -26,15 +26,16 @@ sort: 1
 
 - `PROTOCOL`：`http` 或 `https`
 - `DOMAIN`：服务器域名
-- `ROOT_URL`：应用的完整 URL 路径
+- `ROOT_URL`：公开的完整 URL 路径
 - `HTTP_ADDR`：应用 HTTP 监听地址
 - `HTTP_PORT`：应用 HTTP 监听端口号
+- `DISABLE_SSH`：当 SSH 功能不可用时可以禁用
 - `SSH_PORT`：SSH 端口号，如果不为 `22` 的话可以在此修改
 - `OFFLINE_MODE`：激活该选项来禁止从 CDN 获取静态资源
 - `DISABLE_ROUTER_LOG`：激活该选项来禁止打印路由日志
 - `CERT_FILE`：HTTPS 授权文件路径
 - `KEY_FILE`：HTTPS 的密钥文件路径
-- `STATIC_ROOT_PATH`：模板文件和静态文件的上级目录，默认为应用的执行路径
+- `STATIC_ROOT_PATH`：模板文件和静态文件的上级目录，默认为应用二进制所在的位置
 - `ENABLE_GZIP`：激活该选项来启用应用级别 GZIP 支持
 - `LANDING_PAGE`：未登录用户的默认首页，可以是 `home` 或 `explore`（探索页）
 
@@ -63,15 +64,18 @@ sort: 1
 - `RESET_PASSWD_CODE_LIVE_MINUTES`：重置密码的有效期，单位为分钟
 - `REGISTER_EMAIL_CONFIRM`：激活该选项来要求注册用户必须验证邮箱，要求已启用 `Mailer`
 - `DISABLE_REGISTRATION`：激活该选项来禁止用户注册功能，只能由管理员创建帐号
+- `SHOW_REGISTRATION_BUTTON`：用于指示是否显示注册按钮
 - `REQUIRE_SIGNIN_VIEW`：激活该选项来要求用户必须登录才能浏览任何页面
 - `ENABLE_CACHE_AVATAR`：激活该选项来缓存 Gravatar 的头像
 - `ENABLE_NOTIFY_MAIL`：激活该选项来发送通知邮件给关注者，例如创建 issue 时，要求已启用 `Mailer`
 - `ENABLE_REVERSE_PROXY_AUTHENTICATION`：激活该选项来开启反向代理用户认证，请从 https://github.com/gogits/gogs/issues/165 了解更多信息
+- `ENABLE_REVERSE_PROXY_AUTO_REGISTRATION`：激活该选项来开启反向代理用户认证的自动注册功能
 
 ## Webhook
 
 - `TASK_INTERVAL`：发送通知的时间周期，以分钟为单位
 - `DELIVER_TIMEOUT`：发送通知的超时时间，以秒为单位
+- `SKIP_TLS_VERIFY`：指示是否允许向具有非信任证书的地址发送通知
 
 ## Mailer
 
@@ -96,6 +100,11 @@ sort: 1
 - `PROVIDER_CONFIG`：如果提供者为 file，则为文件根目录；如果为其它提供者，则为主机地址和端口号
 - `COOKIE_SECURE`：激活该选项以要求所有 session 操作均通过 HTTPS
 - `GC_INTERVAL_TIME`：GC 周期，单位为秒
+
+## Picture
+
+- `GRAVATAR_SOURCE`：将值修改为 `duoshuo` 来解决 Gravatar 无法在中国大陆访问的问题
+- `DISABLE_GRAVATAR`：激活该选项来仅使用本地头像
 
 ## Log
 
