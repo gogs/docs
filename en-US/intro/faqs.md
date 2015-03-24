@@ -30,6 +30,23 @@ server {
 }
 ```
 
+#### Set up with suburl
+
+In case you need to use a sub-path for Gogs instance, you can change your Nginx config as follows(pay special attention to the suffix `/`):
+
+```
+server {
+    listen 80;
+    server_name git.crystalnetwork.us;
+
+    location /gogs/ {
+        proxy_pass http://localhost:3000/;
+    }
+}
+```
+
+Then set your `[server] ROOT_URL = http://git.crystalnetwork.us/gogs/` in configuration.
+
 #### How to setup HTTPS?
 
 Change following configuration options in `custom/conf/app.ini` file(this is a sample):

@@ -30,6 +30,23 @@ server {
 }
 ```
 
+##### 配置子路径
+
+如果您想要通过域名的子路径来访问 Gogs 实例，可以将 Nginx 的配置修改为以下形式（特别注意后缀 `/`）:
+
+```
+server {
+    listen 80;
+    server_name git.crystalnetwork.us;
+
+    location /gogs/ {
+        proxy_pass http://localhost:3000/;
+    }
+}
+```
+
+然后在配置文件中设置 `[server] ROOT_URL = http://git.crystalnetwork.us/gogs/`。
+
 #### 如何使用 HTTPS？
 
 在 `custom/conf/app.ini` 文件中修改下列配置选项（以下仅为示例）：
