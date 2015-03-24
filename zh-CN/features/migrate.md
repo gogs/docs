@@ -45,3 +45,8 @@ Gogs 支持从外部 Git 托管源导入功能来帮助您通过 HTTP/HTTPS 协�
 		"message": <错误信息>
 	}
 	```
+
+目前已经有一些第三方的迁移脚本：
+
+- [gogs-migrate](https://github.com/valeriangalliat/gogs-migrate)
+- [BitBucket to Gogs Migration Script](https://github.com/girvo/bitbucket-to-gogs-migrator)
