@@ -30,7 +30,7 @@ server {
 }
 ```
 
-#### Set up with suburl
+##### Set up with suburl
 
 In case you need to use a sub-path for Gogs instance, you can change your Nginx config as follows(pay special attention to the suffix `/`):
 
@@ -46,6 +46,23 @@ server {
 ```
 
 Then set your `[server] ROOT_URL = http://git.crystalnetwork.us/gogs/` in configuration.
+
+##### How about Apache 2 with suburl?
+
+Try following config template:
+
+```
+<VirtualHost *:443>
+        ...
+        <Proxy *>
+                 Order allow,deny
+                 Allow from all
+        </Proxy>
+
+        ProxyPass /git http://127.0.0.1:6000
+        ProxyPassReverse /git http://127.0.0.1:6000
+</VirtualHost>
+```
 
 #### How to setup HTTPS?
 

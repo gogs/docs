@@ -47,6 +47,23 @@ server {
 
 然后在配置文件中设置 `[server] ROOT_URL = http://git.crystalnetwork.us/gogs/`。
 
+##### 如果我用的是 Apache 2 怎么配置子路径？
+
+可以尝试使用下面的配置模板：
+
+```
+<VirtualHost *:443>
+        ...
+        <Proxy *>
+                 Order allow,deny
+                 Allow from all
+        </Proxy>
+
+        ProxyPass /git http://127.0.0.1:6000
+        ProxyPassReverse /git http://127.0.0.1:6000
+</VirtualHost>
+```
+
 #### 如何使用 HTTPS？
 
 在 `custom/conf/app.ini` 文件中修改下列配置选项（以下仅为示例）：
