@@ -11,10 +11,12 @@ sort: 1
 
 - 当 `REQUIRE_SIGNIN_VIEW = true` 时未登录用户仍旧能够访问组织页面 [#1101](https://github.com/gogits/gogs/issues/1101)
 - 即使组织中的其它团队和某个仓库没有联系，团队的成员也可以获得仓库的权限
+- LDAP 的添加和修改表单不一致 [#1124](https://github.com/gogits/gogs/issues/1124)
 
 #### 功能改进
 
 - 允许通过 `git://` 来迁移外部仓库 [#1105](https://github.com/gogits/gogs/pull/1105)
+- 增加配置选项 `[service] DISABLE_MINIMUM_KEY_SIZE_CHECK` 禁止检查响应类型的密钥最小长度 [#1133](https://github.com/gogits/gogs/pull/1133)
 
 #### 其它变更
 

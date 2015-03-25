@@ -70,6 +70,7 @@ All default settings can be found on [app.ini](https://github.com/gogits/gogs/bl
 - `ENABLE_NOTIFY_MAIL`: Enable this to send e-mail to watchers of repository when something happens like create issue, requires enable `Mailer`.
 - `ENABLE_REVERSE_PROXY_AUTHENTICATION`: Enable this to allow reverse proxy authentication, more detail: https://github.com/gogits/gogs/issues/165
 - `ENABLE_REVERSE_PROXY_AUTO_REGISTRATION`: Enable this to allow auto-registration for reverse authentication.
+- `DISABLE_MINIMUM_KEY_SIZE_CHECK`: Do not check minimum key size with corresponding type. 
 
 ## Webhook
 

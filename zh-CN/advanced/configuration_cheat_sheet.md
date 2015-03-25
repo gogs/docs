@@ -70,6 +70,7 @@ sort: 1
 - `ENABLE_NOTIFY_MAIL`：激活该选项来发送通知邮件给关注者，例如创建 issue 时，要求已启用 `Mailer`
 - `ENABLE_REVERSE_PROXY_AUTHENTICATION`：激活该选项来开启反向代理用户认证，请从 https://github.com/gogits/gogs/issues/165 了解更多信息
 - `ENABLE_REVERSE_PROXY_AUTO_REGISTRATION`：激活该选项来开启反向代理用户认证的自动注册功能
+- `DISABLE_MINIMUM_KEY_SIZE_CHECK`：激活该选项来禁止检查响应类型的密钥最小长度
 
 ## Webhook
 

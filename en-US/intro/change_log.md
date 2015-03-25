@@ -11,10 +11,12 @@ sort: 1
 
 - Non-logged users can view organization page when `REQUIRE_SIGNIN_VIEW = true` [#1101](https://github.com/gogits/gogs/issues/1101)
 - Other member of teams in same organization get access to repository when teams do not have relations to the repository
+- LDAP add and edit forms are misleading [#1124](https://github.com/gogits/gogs/issues/1124)
 
 #### Improvements
 
 - Allow to migrate through `git://` protocol [#1105](https://github.com/gogits/gogs/pull/1105)
+- Add config option `[service] DISABLE_MINIMUM_KEY_SIZE_CHECK` to not check minimum key size with corresponding type [#1133](https://github.com/gogits/gogs/pull/1133)
 
 #### Others
 
