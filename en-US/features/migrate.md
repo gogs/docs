@@ -45,3 +45,8 @@ In case you have many repositories need to migrate from same of different source
 		"message": <error message>
 	}
 	```
+
+There are also some scripts already available:
+
+- [gogs-migrate](https://github.com/valeriangalliat/gogs-migrate)
+- [BitBucket to Gogs Migration Script](https://github.com/girvo/bitbucket-to-gogs-migrator)
