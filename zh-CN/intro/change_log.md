@@ -12,6 +12,7 @@ sort: 1
 - 当 `REQUIRE_SIGNIN_VIEW = true` 时未登录用户仍旧能够访问组织页面 [#1101](https://github.com/gogits/gogs/issues/1101)
 - 即使组织中的其它团队和某个仓库没有联系，团队的成员也可以获得仓库的权限
 - LDAP 的添加和修改表单不一致 [#1124](https://github.com/gogits/gogs/issues/1124)
+- 向组织的仓库添加协作者时团队成员的权限会丢失 [#1143](https://github.com/gogits/gogs/issues/1143)
 
 #### 功能改进
 

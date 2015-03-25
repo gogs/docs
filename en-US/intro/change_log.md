@@ -12,6 +12,7 @@ sort: 1
 - Non-logged users can view organization page when `REQUIRE_SIGNIN_VIEW = true` [#1101](https://github.com/gogits/gogs/issues/1101)
 - Other member of teams in same organization get access to repository when teams do not have relations to the repository
 - LDAP add and edit forms are misleading [#1124](https://github.com/gogits/gogs/issues/1124)
+- Team member access lost when adding repository collaborator [#1143](https://github.com/gogits/gogs/issues/1143)
 
 #### Improvements
 
