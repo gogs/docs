@@ -5,6 +5,21 @@ sort: 1
 
 # 变更日志
 
+### v0.6.1
+
+#### Bug 修复
+
+- 当 `REQUIRE_SIGNIN_VIEW = true` 时未登录用户仍旧能够访问组织页面 [#1101](https://github.com/gogits/gogs/issues/1101)
+- 即使组织中的其它团队和某个仓库没有联系，团队的成员也可以获得仓库的权限
+
+#### 功能改进
+
+- 允许通过 `git://` 来迁移外部仓库 [#1105](https://github.com/gogits/gogs/pull/1105)
+
+#### 其它变更
+
+- 使用 `fake@gogs.local` 替换私有的邮箱地址作为默认的 Git `user.email` 设置 [#1089](https://github.com/gogits/gogs/issues/1089)
+
 ### v0.6.0
 
 #### Bug 修复

@@ -5,6 +5,21 @@ sort: 1
 
 # Change Log
 
+### v0.6.1
+
+#### Bug fixes
+
+- Non-logged users can view organization page when `REQUIRE_SIGNIN_VIEW = true` [#1101](https://github.com/gogits/gogs/issues/1101)
+- Other member of teams in same organization get access to repository when teams do not have relations to the repository
+
+#### Improvements
+
+- Allow to migrate through `git://` protocol [#1105](https://github.com/gogits/gogs/pull/1105)
+
+#### Others
+
+- Use `fake@gogs.local` as default Git `user.email` setting rather than private e-mail [#1089](https://github.com/gogits/gogs/issues/1089)
+
 ### v0.6.0
 
 #### Bug fixes
