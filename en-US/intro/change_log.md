@@ -9,15 +9,20 @@ sort: 1
 
 #### Bug fixes
 
+- Inline code markdown with leading hash is rendered as issue index [#637](https://github.com/gogits/gogs/issues/637)
 - Non-logged users can view organization page when `REQUIRE_SIGNIN_VIEW = true` [#1101](https://github.com/gogits/gogs/issues/1101)
+- New release button is always available to everyone [#1114](https://github.com/gogits/gogs/issues/1114)
+- Cannot update mirror repository after transfer ownership [#1120](https://github.com/gogits/gogs/issues/1120)
 - Other member of teams in same organization get access to repository when teams do not have relations to the repository
 - LDAP add and edit forms are misleading [#1124](https://github.com/gogits/gogs/issues/1124)
 - Team member access lost when adding repository collaborator [#1143](https://github.com/gogits/gogs/issues/1143)
 
 #### Improvements
 
+- Hide Gravatar e-mail setting field when Gravatar is disabled [#1098](https://github.com/gogits/gogs/issues/1098)
 - Allow to migrate through `git://` protocol [#1105](https://github.com/gogits/gogs/pull/1105)
 - Add config option `[service] DISABLE_MINIMUM_KEY_SIZE_CHECK` to not check minimum key size with corresponding type [#1133](https://github.com/gogits/gogs/pull/1133)
+- Do not exposure database password when it's not first time launch installation [#1140](https://github.com/gogits/gogs/issues/1140)
 
 #### Others
 

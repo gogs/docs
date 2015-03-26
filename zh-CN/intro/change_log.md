@@ -9,15 +9,20 @@ sort: 1
 
 #### Bug 修复
 
+- 带有 `#` 开头的行内代码被渲染为工单索引 [#637](https://github.com/gogits/gogs/issues/637)
 - 当 `REQUIRE_SIGNIN_VIEW = true` 时未登录用户仍旧能够访问组织页面 [#1101](https://github.com/gogits/gogs/issues/1101)
+- 新建版本发布按钮总是对所有人可见 [#1114](https://github.com/gogits/gogs/issues/1114)
+- 镜像仓库转移所有权后无法继续同步 [#1120](https://github.com/gogits/gogs/issues/1120)
 - 即使组织中的其它团队和某个仓库没有联系，团队的成员也可以获得仓库的权限
 - LDAP 的添加和修改表单不一致 [#1124](https://github.com/gogits/gogs/issues/1124)
 - 向组织的仓库添加协作者时团队成员的权限会丢失 [#1143](https://github.com/gogits/gogs/issues/1143)
 
 #### 功能改进
 
+- 当 Gravatar 被禁用时隐藏相应的设置字段 [#1098](https://github.com/gogits/gogs/issues/1098)
 - 允许通过 `git://` 来迁移外部仓库 [#1105](https://github.com/gogits/gogs/pull/1105)
 - 增加配置选项 `[service] DISABLE_MINIMUM_KEY_SIZE_CHECK` 禁止检查响应类型的密钥最小长度 [#1133](https://github.com/gogits/gogs/pull/1133)
+- 当不是第一次启动安装程序时，不在表单中自动填写数据库的密码 [#1140](https://github.com/gogits/gogs/issues/1140)
 
 #### 其它变更
 
