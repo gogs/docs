@@ -25,7 +25,7 @@ Remove the gogs repository and clone your fork in its place:
 Go inside the gogs directory, checkout the dev branch and use `go get` again to fetch any new dependencies:
 
     $ cd gogs
-    $ git checkout dev
+    $ git checkout develop
     $ go get
 
 That's it! You are ready to hack on Gogs. Test your changes, push them to your repository and open a pull request.
