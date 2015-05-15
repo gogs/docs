@@ -30,7 +30,7 @@ $ brew update
 $ brew install git
 ```
 
-#### Linux
+#### Debian/Ubuntu
 
 ```
 $ sudo apt-get update
