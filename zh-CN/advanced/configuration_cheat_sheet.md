@@ -31,7 +31,7 @@ sort: 1
 - `HTTP_PORT`：应用 HTTP 监听端口号
 - `DISABLE_SSH`：当 SSH 功能不可用时可以禁用
 - `SSH_PORT`：SSH 端口号，如果不为 `22` 的话可以在此修改
-- `OFFLINE_MODE`：激活该选项来禁止从 CDN 获取静态资源
+- `OFFLINE_MODE`：激活该选项来禁止从 CDN 获取静态资源，同时 Gravatar 服务也将被自动禁用
 - `DISABLE_ROUTER_LOG`：激活该选项来禁止打印路由日志
 - `CERT_FILE`：HTTPS 授权文件路径
 - `KEY_FILE`：HTTPS 的密钥文件路径
@@ -82,8 +82,10 @@ sort: 1
 
 - `ENABLED`：用于指示是否激活邮件服务
 - `HOST`：SMTP 主机地址与端口
+- `FROM`：邮箱的来自地址，遵循 RFC 5322规范，可以是一个单纯的邮箱地址或者 "名字" <email@example.com> 的形式
 - `USER`：邮箱用户名
 - `PASSWD`：邮箱密码
+- `SKIP_VERIFY`：不验证自签发证书的有效性
 
 ## OAuth
 

@@ -7,7 +7,7 @@ sort: 1
 
 This is a cheat sheet for Gogs configuration file, it helps some if you want to fully understand how it powers Gogs.
 
-Before we get started, make sure you know any change of configuration should be made in `custom/conf/app.ini` or any corresponding location. 
+Before we get started, make sure you know any change of configuration should be made in `custom/conf/app.ini` or any corresponding location.
 
 All default settings can be found on [app.ini](https://github.com/gogits/gogs/blob/master/conf/app.ini). If you see anything like `%(X)s`, it's the feature powered by [ini](https://github.com/go-ini/ini/tree/v1#recursive-values) for reading value recursively.
 
@@ -31,7 +31,7 @@ All default settings can be found on [app.ini](https://github.com/gogits/gogs/bl
 - `HTTP_PORT`: HTTP listen port.
 - `DISABLE_SSH`: Disable SSH feature when it's not available.
 - `SSH_PORT`: The SSH port, in case yours is not `22`.
-- `OFFLINE_MODE`: Enable this to not use CDN for static files.
+- `OFFLINE_MODE`: Enable this to not use CDN for static files, also Gravatar will be disabled automatically.
 - `DISABLE_ROUTER_LOG`: Enable this to not print router log.
 - `CERT_FILE`: Cert file path used for HTTPS.
 - `KEY_FILE`: Key file path used for HTTPS.
@@ -70,7 +70,7 @@ All default settings can be found on [app.ini](https://github.com/gogits/gogs/bl
 - `ENABLE_NOTIFY_MAIL`: Enable this to send e-mail to watchers of repository when something happens like create issue, requires enable `Mailer`.
 - `ENABLE_REVERSE_PROXY_AUTHENTICATION`: Enable this to allow reverse proxy authentication, more detail: https://github.com/gogits/gogs/issues/165
 - `ENABLE_REVERSE_PROXY_AUTO_REGISTRATION`: Enable this to allow auto-registration for reverse authentication.
-- `DISABLE_MINIMUM_KEY_SIZE_CHECK`: Do not check minimum key size with corresponding type. 
+- `DISABLE_MINIMUM_KEY_SIZE_CHECK`: Do not check minimum key size with corresponding type.
 
 ## Webhook
 
@@ -82,9 +82,10 @@ All default settings can be found on [app.ini](https://github.com/gogits/gogs/bl
 
 - `ENABLED`: Enable this to use mail service of any.
 - `HOST`: SMTP mail host address.
+- `FROM`: Mail from address, RFC 5322. This can be just an email address, or the "Name" <email@example.com> format.
 - `USER`: User name of system mailer(usually just your e-mail address).
 - `PASSWD`: Password of you mailer.
-- `SKIP_VERIFY`: Not verify the self-signed certificates
+- `SKIP_VERIFY`: Not verify the self-signed certificates.
 
 ## OAuth
 
