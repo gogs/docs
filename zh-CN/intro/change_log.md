@@ -23,6 +23,8 @@ sort: 1
 - 允许通过 `git://` 来迁移外部仓库 [#1105](https://github.com/gogits/gogs/pull/1105)
 - 增加配置选项 `[service] DISABLE_MINIMUM_KEY_SIZE_CHECK` 禁止检查响应类型的密钥最小长度 [#1133](https://github.com/gogits/gogs/pull/1133)
 - 当不是第一次启动安装程序时，不在表单中自动填写数据库的密码 [#1140](https://github.com/gogits/gogs/issues/1140)
+- 允许通过 `[mailer] DISABLE_HELO` 配置选项来禁用 HELO 操作
+- 允许通过 `[mailer] HELO_HOSTNAME` 配置选项来自定义 HELO 操作所使用的主机名
 
 #### 其它变更
 

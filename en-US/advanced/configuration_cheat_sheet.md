@@ -81,6 +81,8 @@ All default settings can be found on [app.ini](https://github.com/gogits/gogs/bl
 ## Mailer
 
 - `ENABLED`: Enable this to use mail service of any.
+- `DISABLE_HELO`: Disable HELO operation.
+- `HELO_HOSTNAME`: Custom hostname for HELO operation.
 - `HOST`: SMTP mail host address.
 - `FROM`: Mail from address, RFC 5322. This can be just an email address, or the "Name" <email@example.com> format.
 - `USER`: User name of system mailer(usually just your e-mail address).

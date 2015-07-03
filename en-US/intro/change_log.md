@@ -23,6 +23,8 @@ sort: 1
 - Allow to migrate through `git://` protocol [#1105](https://github.com/gogits/gogs/pull/1105)
 - Add config option `[service] DISABLE_MINIMUM_KEY_SIZE_CHECK` to not check minimum key size with corresponding type [#1133](https://github.com/gogits/gogs/pull/1133)
 - Do not exposure database password when it's not first time launch installation [#1140](https://github.com/gogits/gogs/issues/1140)
+- Able to use `[mailer] DISABLE_HELO` config option to disable HELO operation
+- Able to use `[mailer] HELO_HOSTNAME` config option to set custom hostname for HELO operation
 
 #### Others
 
