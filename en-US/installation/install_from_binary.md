@@ -15,6 +15,7 @@ Currently we only provides 64-bit build binaries.
 
 ### v0.6.1 @ 2015-3-26
 
+- CDN: [Windows](http://gogs.dn.qbox.me/gogs_v0.6.1_windows_amd64.zip) - [Linux](http://gogs.dn.qbox.me/gogs_v0.6.1_linux_amd64.zip) - [Mac OS X](http://gogs.dn.qbox.me/gogs_v0.6.1_darwin_amd64.zip)
 - [GitHub](https://github.com/gogits/gogs/releases/tag/v0.6.1)
 
 See [Configuration and run](configuration_and_run.md) to go further.

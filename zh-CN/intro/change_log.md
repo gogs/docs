@@ -29,6 +29,7 @@ sort: 1
 #### 其它变更
 
 - 使用 `fake@gogs.local` 替换私有的邮箱地址作为默认的 Git `user.email` 设置 [#1089](https://github.com/gogits/gogs/issues/1089)
+- 部分页面的 UI 改进
 
 ### v0.6.0
 

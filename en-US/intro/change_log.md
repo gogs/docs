@@ -29,6 +29,7 @@ sort: 1
 #### Others
 
 - Use `fake@gogs.local` as default Git `user.email` setting rather than private e-mail [#1089](https://github.com/gogits/gogs/issues/1089)
+- Improved UI for some pages.
 
 ### v0.6.0
 
