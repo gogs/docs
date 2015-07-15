@@ -35,8 +35,8 @@ sort: 2
 
 - Error: `Repository/User name contains illegal characters`
 - Causes: in order to prevent unexpected exceptions, your user/repository name will be considered as illegal if they match any of the following rules:
-	- Name equals to any word of `"raw", "install", "api", "avatar", "user", "org", "help", "stars", "issues", "pulls", "commits", "repo", "template", "admin", "new"`.
-	- Name has suffix `".git"`.
+	- Name equals to any word of `"debug", "raw", "install", "api", "avatar", "user", "org", "help", "stars", "issues", "pulls", "commits", "repo", "template", "admin", "new"`.
+	- Name has suffix `".git", ".keys"`.
 
 ## Cache
 
