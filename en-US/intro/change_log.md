@@ -5,6 +5,16 @@ sort: 1
 
 # Change Log
 
+### v0.6.3
+
+#### Bug fixes
+
+- Private repositories issues included in "Public Activity" [#1112](https://github.com/gogits/gogs/issues/1112)
+
+#### Others
+
+- Disable Macaron color log in production mode to improve performance
+
 ### v0.6.1
 
 #### Bug fixes
