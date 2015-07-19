@@ -14,6 +14,7 @@ sort: 1
 #### 其它变更
 
 - 在部署模式下禁用 Macaron 框架的彩色日志来提升性能
+- 在探索页面显示仓库所有者名称 [#1150](https://github.com/gogits/gogs/issues/1150)
 
 ### v0.6.1
 

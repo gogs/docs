@@ -64,6 +64,22 @@ server {
 </VirtualHost>
 ```
 
+##### 有没有用 lighttpd 配置子路径的例子？
+
+可以尝试使用下面的配置模板：
+
+```
+server.modules  += ( "mod_proxy_backend_http" )
+$HTTP["url"] =~ "^/gogs" {
+        proxy-core.protocol = "http"
+        proxy-core.backends = ( "localhost:3000" )
+        proxy-core.rewrite-request = (
+          "_uri" => ( "^/gogs/?(.*)" => "/$1" ),
+          "Host" => ( ".*" => "localhost:3000" ),
+        )
+}
+```
+
 #### 如何使用 HTTPS？
 
 在 `custom/conf/app.ini` 文件中修改下列配置选项（以下仅为示例）：

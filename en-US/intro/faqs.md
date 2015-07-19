@@ -64,6 +64,22 @@ Try following config template:
 </VirtualHost>
 ```
 
+##### Any example for lighttpd with suburl?
+
+Try following config template:
+
+```
+server.modules  += ( "mod_proxy_backend_http" )
+$HTTP["url"] =~ "^/gogs" {
+        proxy-core.protocol = "http"
+        proxy-core.backends = ( "localhost:3000" )
+        proxy-core.rewrite-request = (
+          "_uri" => ( "^/gogs/?(.*)" => "/$1" ),
+          "Host" => ( ".*" => "localhost:3000" ),
+        )
+}
+```
+
 #### How to setup HTTPS?
 
 Change following configuration options in `custom/conf/app.ini` file(this is a sample):

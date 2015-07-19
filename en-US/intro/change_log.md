@@ -14,6 +14,7 @@ sort: 1
 #### Others
 
 - Disable Macaron color log in production mode to improve performance
+- Show repository owner name in explore page [#1150](https://github.com/gogits/gogs/issues/1150)
 
 ### v0.6.1
 
