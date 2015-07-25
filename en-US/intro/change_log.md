@@ -9,7 +9,17 @@ sort: 1
 
 #### Bug fixes
 
+- Migrate repository requires HTTPS address [#1000](https://github.com/gogits/gogs/issues/1000)
 - Private repositories issues included in "Public Activity" [#1112](https://github.com/gogits/gogs/issues/1112)
+- All users email are public [#1127](https://github.com/gogits/gogs/issues/1127)
+- API calls are not hidden behind sign in [#1128](https://github.com/gogits/gogs/issues/1128)
+- Generated certificate doesn't have CN with the hostname [#1231](https://github.com/gogits/gogs/issues/1231)
+- Create repo for other users by hacking uid field [#1289](https://github.com/gogits/gogs/issues/1289)
+
+#### Improvements
+
+- Clearer error message for illegal characters [#1070](https://github.com/gogits/gogs/issues/1070)
+- Add full name field to admin's user edit page [#1130](https://github.com/gogits/gogs/issues/1130)
 
 #### Others
 

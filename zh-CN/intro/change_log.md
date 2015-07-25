@@ -9,7 +9,17 @@ sort: 1
 
 #### Bug 修复
 
+- 只允许使用 HTTPS 迁移仓库 [#1000](https://github.com/gogits/gogs/issues/1000)
 - 私有仓库的工单活动会显示在公开活动页面 [#1112](https://github.com/gogits/gogs/issues/1112)
+- 所有用户的邮箱都是公开的 [#1127](https://github.com/gogits/gogs/issues/1127)
+- API 调用未进行强制登录验证 [#1128](https://github.com/gogits/gogs/issues/1128)
+- 生成的 SSL 证书没有 CN 字段 [#1231](https://github.com/gogits/gogs/issues/1231)
+- 可以通过篡改表单创建其它用户的仓库 [#1289](https://github.com/gogits/gogs/issues/1289)
+
+#### 功能改进
+
+- 针对保留名称具有更清晰的错误描述 [#1070](https://github.com/gogits/gogs/issues/1070)
+- 管理员可以编辑用户的全名 [#1130](https://github.com/gogits/gogs/issues/1130)
 
 #### 其它变更
 
