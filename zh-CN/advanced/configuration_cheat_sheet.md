@@ -74,7 +74,7 @@ sort: 1
 
 ## Webhook
 
-- `TASK_INTERVAL`：发送通知的时间周期，以分钟为单位
+- `QUEUE_LENGTH`：发送通知的队列长度
 - `DELIVER_TIMEOUT`：发送通知的超时时间，以秒为单位
 - `SKIP_TLS_VERIFY`：指示是否允许向具有非信任证书的地址发送通知
 

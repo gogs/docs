@@ -74,7 +74,7 @@ All default settings can be found on [app.ini](https://github.com/gogits/gogs/bl
 
 ## Webhook
 
-- `TASK_INTERVAL`: Time intercal in minutes for shooting webhooks.
+- `QUEUE_LENGTH`: Hook task queue length.
 - `DELIVER_TIMEOUT`: Delivery timeout in seconds for shooting webhooks.
 - `SKIP_TLS_VERIFY`: Indicate whether allow insecure certification or not.
 
