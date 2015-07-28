@@ -14,6 +14,7 @@ sort: 1
 - Private repositories issues included in "Public Activity" [#1112](https://github.com/gogits/gogs/issues/1112)
 - All users email are public [#1127](https://github.com/gogits/gogs/issues/1127)
 - API calls are not hidden behind sign in [#1128](https://github.com/gogits/gogs/issues/1128)
+- It is possible to access user profiles using organization URL [#1169](https://github.com/gogits/gogs/issues/1169)
 - Generated certificate doesn't have CN with the hostname [#1231](https://github.com/gogits/gogs/issues/1231)
 - Create repo for other users by hacking uid field [#1289](https://github.com/gogits/gogs/issues/1289)
 

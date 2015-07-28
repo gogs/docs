@@ -14,6 +14,7 @@ sort: 1
 - 私有仓库的工单活动会显示在公开活动页面 [#1112](https://github.com/gogits/gogs/issues/1112)
 - 所有用户的邮箱都是公开的 [#1127](https://github.com/gogits/gogs/issues/1127)
 - API 调用未进行强制登录验证 [#1128](https://github.com/gogits/gogs/issues/1128)
+- 可以使用组织的 URL 来访问用户的个人页面 [#1169](https://github.com/gogits/gogs/issues/1169)
 - 生成的 SSL 证书没有 CN 字段 [#1231](https://github.com/gogits/gogs/issues/1231)
 - 可以通过篡改表单创建其它用户的仓库 [#1289](https://github.com/gogits/gogs/issues/1289)
 
