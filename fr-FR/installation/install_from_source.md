@@ -82,7 +82,7 @@ Dans le cas où vous voulez essayer la branche `develop` :
 ```
 $ mkdir -p $GOPATH/src/github.com/gogits
 $ cd $GOPATH/src/github.com/gogits
-$ git clone -b develop https://github.com/gogits/gogs.git
+$ git clone --depth=1 -b develop https://github.com/gogits/gogs.git
 $ cd gogs
 $ go get ./...
 $ go build
