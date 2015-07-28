@@ -48,10 +48,7 @@ Yes, why don't you just edit `conf/app.ini`? The reason is that to keep your cus
 
 **Scripts are in `scripts` directory, but execute them at root of repository**
 
-- There are 3 ways to start by default:
+- There are many ways to start:
 	- Plain: just use `./gogs web`
-	- Supervisor:
-		- Start: `./scripts/gogs_supervisord.sh start`
-		- Stop: `./scripts/gogs_supervisord.sh stop`
-		- Restart: `./scripts/gogs_supervisord.sh restart`
+	- Deamons: see [scripts](https://github.com/gogits/gogs/tree/master/scripts) folder
 - Go to `/install` to do your first-time run configuration.

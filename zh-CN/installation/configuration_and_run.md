@@ -48,10 +48,7 @@ PASSWD = root
 
 **脚本均放置在 `scripts` 目录，但请在仓库根目录执行它们**
 
-- 默认支持 3 种方式的启动：
+- Gogs 支持多种方式的启动：
 	- 普通：只需执行 `./gogs web`
-	- Supervisor：
-		- 启动：`./scripts/gogs_supervisord.sh start`
-		- 停止：`./scripts/gogs_supervisord.sh stop`
-		- 重启：`./scripts/gogs_supervisord.sh restart`
+	- 守护进程：详见 [scripts](https://github.com/gogits/gogs/tree/master/scripts) 文件夹
 - 然后访问 `/install` 来完成首次运行的配置工作
