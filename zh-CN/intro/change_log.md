@@ -18,12 +18,17 @@ sort: 1
 - 可以使用组织的 URL 来访问用户的个人页面 [#1169](https://github.com/gogits/gogs/issues/1169)
 - LDAP 授权未检查空白的用户名 [#1207](https://github.com/gogits/gogs/issues/1207)
 - 生成的 SSL 证书没有 CN 字段 [#1231](https://github.com/gogits/gogs/issues/1231)
+- 删除组织仓库的协作者会删除组织仓库 [#1279](https://github.com/gogits/gogs/issues/1279)
 - 可以通过篡改表单创建其它用户的仓库 [#1289](https://github.com/gogits/gogs/issues/1289)
 
 #### 功能改进
 
 - 针对保留名称具有更清晰的错误描述 [#1070](https://github.com/gogits/gogs/issues/1070)
 - 管理员可以编辑用户的全名 [#1130](https://github.com/gogits/gogs/issues/1130)
+
+#### 新增特性
+
+- 支持实时 Web 钩子 [#835](https://github.com/gogits/gogs/issues/835)
 
 #### 其它变更
 

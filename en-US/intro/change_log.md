@@ -18,12 +18,17 @@ sort: 1
 - It is possible to access user profiles using organization URL [#1169](https://github.com/gogits/gogs/issues/1169)
 - Didn't check blank user name on LDAP [#1207](https://github.com/gogits/gogs/issues/1207)
 - Generated certificate doesn't have CN with the hostname [#1231](https://github.com/gogits/gogs/issues/1231)
+- Removing user from organization collaboration removes repositiory [#1279](https://github.com/gogits/gogs/issues/1279)
 - Create repo for other users by hacking uid field [#1289](https://github.com/gogits/gogs/issues/1289)
 
 #### Improvements
 
 - Clearer error message for illegal characters [#1070](https://github.com/gogits/gogs/issues/1070)
 - Add full name field to admin's user edit page [#1130](https://github.com/gogits/gogs/issues/1130)
+
+#### Features
+
+- Support realtime webhook [#835](https://github.com/gogits/gogs/issues/835)
 
 #### Others
 
