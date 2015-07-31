@@ -5,7 +5,7 @@ sort: 1
 
 # Change Log
 
-### v0.6.3
+### v0.6.3(unreleased)
 
 #### Bug fixes
 
@@ -32,6 +32,7 @@ sort: 1
 
 #### Others
 
+- Add Italian language support.
 - Disable Macaron color log in production mode to improve performance
 - Show repository owner name in explore page [#1150](https://github.com/gogits/gogs/issues/1150)
 
