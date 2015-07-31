@@ -25,6 +25,8 @@ sort: 1
 
 - 针对保留名称具有更清晰的错误描述 [#1070](https://github.com/gogits/gogs/issues/1070)
 - 管理员可以编辑用户的全名 [#1130](https://github.com/gogits/gogs/issues/1130)
+- 不对未登录的用户显示组织邮箱 [#1204](https://github.com/gogits/gogs/issues/1204)
+- 允许使用带有 ".git" 后缀的 URL 访问仓库主页 [#1227](https://github.com/gogits/gogs/issues/1227)
 
 #### 新增特性
 

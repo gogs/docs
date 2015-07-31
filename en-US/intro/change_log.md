@@ -25,6 +25,8 @@ sort: 1
 
 - Clearer error message for illegal characters [#1070](https://github.com/gogits/gogs/issues/1070)
 - Add full name field to admin's user edit page [#1130](https://github.com/gogits/gogs/issues/1130)
+- Hide organization email for non logged-in users [#1204](https://github.com/gogits/gogs/issues/1204)
+- Visit Repository home page with ".git" appended URL [#1227](https://github.com/gogits/gogs/issues/1227)
 
 #### Features
 
