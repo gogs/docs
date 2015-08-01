@@ -10,6 +10,7 @@ sort: 1
 #### Bug 修复
 
 - 标签被编辑后消失 [#542](https://github.com/gogits/gogs/issues/542)
+- 文件差异页面如果文件名包含空格则会被截断 [#985](https://github.com/gogits/gogs/issues/985)
 - 只允许使用 HTTPS 迁移仓库 [#1000](https://github.com/gogits/gogs/issues/1000)
 - 私有仓库的工单活动会显示在公开活动页面 [#1112](https://github.com/gogits/gogs/issues/1112)
 - 所有用户的邮箱都是公开的 [#1127](https://github.com/gogits/gogs/issues/1127)

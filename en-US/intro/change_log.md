@@ -10,6 +10,7 @@ sort: 1
 #### Bug fixes
 
 - Label disappeared after edited a label [#542](https://github.com/gogits/gogs/issues/542)
+- Filename cut off in DIFF when containing spaces [#985](https://github.com/gogits/gogs/issues/985)
 - Migrate repository requires HTTPS address [#1000](https://github.com/gogits/gogs/issues/1000)
 - Private repositories issues included in "Public Activity" [#1112](https://github.com/gogits/gogs/issues/1112)
 - All users email are public [#1127](https://github.com/gogits/gogs/issues/1127)
