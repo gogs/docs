@@ -5,6 +5,13 @@ sort: 1
 
 # Change Log
 
+### v0.6.7(unreleased)
+
+#### Bug fixes
+
+- Does not allow anonymous SSH clone
+- Rename organization doesn't restrict Chinese [#1439](https://github.com/gogits/gogs/issues/1439)
+
 ### v0.6.3
 
 #### Bug fixes
