@@ -12,6 +12,10 @@ sort: 1
 - 不允许匿名的 SSH 克隆
 - 重命名组织时可以使用中文名 [#1439](https://github.com/gogits/gogs/issues/1439)
 
+#### 新增特性
+
+- 增加部署密钥支持 [#334](https://github.com/gogits/gogs/issues/334)
+
 ### v0.6.3
 
 #### Bug 修复

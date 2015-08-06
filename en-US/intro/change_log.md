@@ -12,6 +12,10 @@ sort: 1
 - Does not allow anonymous SSH clone
 - Rename organization doesn't restrict Chinese [#1439](https://github.com/gogits/gogs/issues/1439)
 
+#### Features
+
+- Add deploy key support [#334](https://github.com/gogits/gogs/issues/334)
+
 ### v0.6.3
 
 #### Bug fixes
