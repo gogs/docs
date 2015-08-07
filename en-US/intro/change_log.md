@@ -10,6 +10,8 @@ sort: 1
 #### Bug fixes
 
 - Does not allow anonymous SSH clone
+- Private repository cannot trigger webhook by pushing through SSH
+- Did not remove the temporary directory after initialized new repository [#1331](https://github.com/gogits/gogs/issues/1331)
 - Rename organization doesn't restrict Chinese [#1439](https://github.com/gogits/gogs/issues/1439)
 
 #### Features

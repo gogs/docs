@@ -10,6 +10,8 @@ sort: 1
 #### Bug 修复
 
 - 不允许匿名的 SSH 克隆
+- 私有仓库无法通过 SSH 推送来触发 Web 钩子
+- 初始化新仓库之后未删除临时目录 [#1331](https://github.com/gogits/gogs/issues/1331)
 - 重命名组织时可以使用中文名 [#1439](https://github.com/gogits/gogs/issues/1439)
 
 #### 新增特性
