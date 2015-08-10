@@ -108,7 +108,7 @@ All default settings can be found on [app.ini](https://github.com/gogits/gogs/bl
 
 ## Picture
 
-- `GRAVATAR_SOURCE`: can be changed to `duoshuo` while Gravatar is blocked in China.
+- `GRAVATAR_SOURCE`: Can be `gravatar`, `duoshuo` or anything like `http://cn.gravatar.com/avatar/`.
 - `DISABLE_GRAVATAR`: Enable this to use local avatar only.
 
 ## Log

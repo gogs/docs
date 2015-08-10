@@ -14,9 +14,14 @@ sort: 1
 - Did not remove the temporary directory after initialized new repository [#1331](https://github.com/gogits/gogs/issues/1331)
 - Rename organization doesn't restrict Chinese [#1439](https://github.com/gogits/gogs/issues/1439)
 
+#### Improvements
+
+- Allow custom avatar source [#1457](https://github.com/gogits/gogs/pull/1457)
+
 #### Features
 
 - Add deploy key support [#334](https://github.com/gogits/gogs/issues/334)
+- Generate random avatar based on e-mail when disable Gravatar
 
 ### v0.6.3
 

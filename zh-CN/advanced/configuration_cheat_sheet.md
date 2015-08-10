@@ -108,7 +108,7 @@ sort: 1
 
 ## Picture
 
-- `GRAVATAR_SOURCE`：将值修改为 `duoshuo` 来解决 Gravatar 无法在中国大陆访问的问题
+- `GRAVATAR_SOURCE`：可以是 `gravatar`、`duoshuo` 或任何 URL，例如：`http://cn.gravatar.com/avatar/`
 - `DISABLE_GRAVATAR`：激活该选项来仅使用本地头像
 
 ## Log

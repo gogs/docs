@@ -14,9 +14,14 @@ sort: 1
 - 初始化新仓库之后未删除临时目录 [#1331](https://github.com/gogits/gogs/issues/1331)
 - 重命名组织时可以使用中文名 [#1439](https://github.com/gogits/gogs/issues/1439)
 
+#### 功能改进
+
+- 支持自定义头像源 [#1457](https://github.com/gogits/gogs/pull/1457)
+
 #### 新增特性
 
 - 增加部署密钥支持 [#334](https://github.com/gogits/gogs/issues/334)
+- 禁用 Gravatar 时根据邮箱为用户生成随机头像
 
 ### v0.6.3
 
