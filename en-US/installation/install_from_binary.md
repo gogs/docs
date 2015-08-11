@@ -5,7 +5,7 @@ sort: 1
 
 # Install from binary
 
-Currently we only provides 64-bit build binaries.
+Currently we only provide 64-bit build binaries.
 
 ## How to upgrade from binary?
 
