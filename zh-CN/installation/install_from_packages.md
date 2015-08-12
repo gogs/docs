@@ -16,6 +16,6 @@ sort: 3
 - 基于源码构建，作者 [@fanningert](https://github.com/fanningert):
 	- `master` 分支：[AUR](https://aur.archlinux.org/packages/gogs-git/) [GitHub](https://github.com/fanningert/PKGBUILDs/tree/master/aur/gogs-git)
 	- `dev` 分支：[AUR](https://aur.archlinux.org/packages/gogs-git-dev/) [GitHub](https://github.com/fanningert/PKGBUILDs/tree/master/aur/gogs-git-dev)
-	- `v0.5.2` 版本：[AUR](https://aur.archlinux.org/packages/gogs/) [GitHub](https://github.com/fanningert/PKGBUILDs/tree/master/aur/gogs)
+	- 版本：[AUR](https://aur.archlinux.org/packages/gogs/) [GitHub](https://github.com/fanningert/PKGBUILDs/tree/master/aur/gogs)
 	
 能可以到 [Arch Linux Wiki entry](https://wiki.archlinux.org/index.php/Gogs) 查看完整说明。
