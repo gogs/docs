@@ -5,28 +5,28 @@ sort: 1
 
 # Configuration Cheat Sheet
 
-This is a cheat sheet for Gogs configuration file, it helps some if you want to fully understand how it powers Gogs.
+This is a cheat sheet for the Gogs configuration file, it helps some if you want to fully understand how it powers Gogs.
 
-Before we get started, make sure you know any change of configuration should be made in `custom/conf/app.ini` or any corresponding location.
+Before we get started, make sure you know that any change of configuration should be made in `custom/conf/app.ini` or any corresponding location.
 
-All default settings can be found on [app.ini](https://github.com/gogits/gogs/blob/master/conf/app.ini). If you see anything like `%(X)s`, it's the feature powered by [ini](https://github.com/go-ini/ini/tree/v1#recursive-values) for reading value recursively.
+All default settings can be found in [app.ini](https://github.com/gogits/gogs/blob/master/conf/app.ini). If you see anything like `%(X)s`, it's a feature powered by [ini](https://github.com/go-ini/ini/tree/v1#recursive-values) for reading value recursively.
 
 ## Overall
 
 - `APP_NAME`: Application name, change to whatever you want.
-- `RUN_USER`: The system user requires to run, we recommend to be `git`; however, change to whatever your user name is if you run Gogs in your personal computer. Server may crash due to not set this value properly.
-- `RUN_MODE`: For performance and other purpose, change this to `prod` when deploy to production environment. Installation process will set this to `prod` automatically.
+- `RUN_USER`: The user to run Gogs as, we recommend it be `git`; however, change this to whatever your user name is if you run Gogs on your personal computer. Gogs may crash if this value is not set properly.
+- `RUN_MODE`: For performance and other purposes, change this to `prod` when deployed to a production environment. The installation process will set this to `prod` automatically.
 
 ## Repository
 
-- `ROOT`: Root path for storing all users' repositoriy data, it has to be absolute path, default is `~/<user name>/gogs-repositories`.
-- `SCRIPT_TYPE`: The script type your server supports, usually is `bash`, but some customers report that they only have `sh`.
+- `ROOT`: Root path for storing all users' repository data. It has to be an absolute path, default is `~/<user name>/gogs-repositories`.
+- `SCRIPT_TYPE`: The script type your server supports, usually this is `bash`, but some customers report that they only have `sh`.
 
 ## Server
 
 - `PROTOCOL`: Either `http` or `https`.
 - `DOMAIN`: Domain name of your server.
-- `ROOT_URL`: Full URL of Gogs server in public domain.
+- `ROOT_URL`: Full public URL of Gogs server.
 - `HTTP_ADDR`: HTTP listen address.
 - `HTTP_PORT`: HTTP listen port.
 - `DISABLE_SSH`: Disable SSH feature when it's not available.
@@ -37,7 +37,7 @@ All default settings can be found on [app.ini](https://github.com/gogits/gogs/bl
 - `KEY_FILE`: Key file path used for HTTPS.
 - `STATIC_ROOT_PATH`: Upper level of template and static files path, default is the path where Gogs is located.
 - `ENABLE_GZIP`: Enable this to have application level GZIP support.
-- `LANDING_PAGE`: Non-logged users' landing page, either `home` or `explore`.
+- `LANDING_PAGE`: Non-logged-in users' landing page, either `home` or `explore`.
 
 ## Database
 
@@ -51,9 +51,9 @@ All default settings can be found on [app.ini](https://github.com/gogits/gogs/bl
 
 ## Security
 
-- `INSTALL_LOCK`: To indicate whether allow open install page(setting admin account involved so it's a very important value).
-- `SECRET_KEY`: Global secret key for your server security, **you'd better change it**(will generate a random string every time you install).
-- `LOGIN_REMEMBER_DAYS`: The days of cookies life time.
+- `INSTALL_LOCK`: Indicates whether to allow the open install page (setting admin account is involved, so it's a very important value).
+- `SECRET_KEY`: Global secret key for your server security, **you'd better change it** (will generate a random string every time you install).
+- `LOGIN_REMEMBER_DAYS`: The days of cookies' life time.
 - `COOKIE_USERNAME`: Cookie name to save username.
 - `COOKIE_REMEMBER_NAME`: Cookie name to save auto-login information.
 - `REVERSE_PROXY_AUTHENTICATION_USER`: Header name for reverse proxy authentication username.
@@ -62,12 +62,12 @@ All default settings can be found on [app.ini](https://github.com/gogits/gogs/bl
 
 - `ACTIVE_CODE_LIVE_MINUTES`: The minutes of active code life time.
 - `RESET_PASSWD_CODE_LIVE_MINUTES`: The minutes of reset password code life time.
-- `REGISTER_EMAIL_CONFIRM`: Enable this to ask for mail confirmation of registration, requires enable `Mailer`.
-- `DISABLE_REGISTRATION`: Disable registration, which only admin can create accounts for users.
+- `REGISTER_EMAIL_CONFIRM`: Enable this to ask for mail confirmation of registration, requires `Mailer` to be enabled.
+- `DISABLE_REGISTRATION`: Disable registration, after which only admin can create accounts for users.
 - `SHOW_REGISTRATION_BUTTON`: Indicate whether to show registration button or not.
 - `REQUIRE_SIGNIN_VIEW`: Enable this to force users to log in to view any page.
 - `ENABLE_CACHE_AVATAR`: Enable this to cache avatar from Gravatar.
-- `ENABLE_NOTIFY_MAIL`: Enable this to send e-mail to watchers of repository when something happens like create issue, requires enable `Mailer`.
+- `ENABLE_NOTIFY_MAIL`: Enable this to send e-mail to watchers of repository when something happens like creating issues, requires `Mailer` to be enabled.
 - `ENABLE_REVERSE_PROXY_AUTHENTICATION`: Enable this to allow reverse proxy authentication, more detail: https://github.com/gogits/gogs/issues/165
 - `ENABLE_REVERSE_PROXY_AUTO_REGISTRATION`: Enable this to allow auto-registration for reverse authentication.
 - `DISABLE_MINIMUM_KEY_SIZE_CHECK`: Do not check minimum key size with corresponding type.
@@ -76,22 +76,22 @@ All default settings can be found on [app.ini](https://github.com/gogits/gogs/bl
 
 - `QUEUE_LENGTH`: Hook task queue length.
 - `DELIVER_TIMEOUT`: Delivery timeout in seconds for shooting webhooks.
-- `SKIP_TLS_VERIFY`: Indicate whether allow insecure certification or not.
+- `SKIP_TLS_VERIFY`: Indicate whether to allow insecure certification or not.
 
 ## Mailer
 
-- `ENABLED`: Enable this to use mail service of any.
+- `ENABLED`: Enable this to use a mail service.
 - `DISABLE_HELO`: Disable HELO operation.
 - `HELO_HOSTNAME`: Custom hostname for HELO operation.
 - `HOST`: SMTP mail host address.
 - `FROM`: Mail from address, RFC 5322. This can be just an email address, or the "Name" <email@example.com> format.
-- `USER`: User name of system mailer(usually just your e-mail address).
-- `PASSWD`: Password of you mailer.
-- `SKIP_VERIFY`: Not verify the self-signed certificates.
+- `USER`: User name of mailer (usually just your e-mail address).
+- `PASSWD`: Password of mailer.
+- `SKIP_VERIFY`: Do not verify the self-signed certificates.
 
 ## OAuth
 
-- `ENABLED`: General switch for OAuth, default value is "false"
+- `ENABLED`: General switch for OAuth, default value is "false".
 
 ## Cache
 
@@ -111,7 +111,7 @@ All default settings can be found on [app.ini](https://github.com/gogits/gogs/bl
 ## Picture
 
 - `GRAVATAR_SOURCE`: Can be `gravatar`, `duoshuo` or anything like `http://cn.gravatar.com/avatar/`.
-- `DISABLE_GRAVATAR`: Enable this to use local avatar only.
+- `DISABLE_GRAVATAR`: Enable this to use local avatars only.
 
 ## Log
 
