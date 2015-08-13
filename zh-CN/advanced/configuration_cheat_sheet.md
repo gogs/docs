@@ -98,6 +98,8 @@ sort: 1
 - `ADAPTER`：缓存引擎适配器，可以为 `momery`、`redis` 或 `memcache`。如果您使用 `redis` 或 `memcache`，请确保使用 `-tags` 选项重新构建所有依赖，例如：`go build -tags='redis'`
 - `INTERVAL`：仅限内存缓存使用，GC 周期，单位为秒
 - `HOST`：仅限 redis 和 memcache 使用，主机地址和端口号
+    - Redis：`network=tcp,addr=127.0.0.1:6379,password=macaron,db=0,pool_size=100,idle_timeout=180`
+    - Memache：`127.0.0.1:9090;127.0.0.1:9091`
 
 ## Session
 

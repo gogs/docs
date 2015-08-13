@@ -98,6 +98,8 @@ All default settings can be found on [app.ini](https://github.com/gogits/gogs/bl
 - `ADAPTER`: Cache engine adapter, either `memory`, `redis`, or `memcache`. If you want to use `redis` or `memcache`, be sure to rebuild everything with build tags `redis` or `memcache`: `go build -tags='redis'`.
 - `INTERVAL`: for memory cache only, GC interval in seconds.
 - `HOST`: For redis and memcache, the host address and port number.
+    - Redis: `network=tcp,addr=127.0.0.1:6379,password=macaron,db=0,pool_size=100,idle_timeout=180`
+    - Memache: `127.0.0.1:9090;127.0.0.1:9091`
 
 ## Session
 
