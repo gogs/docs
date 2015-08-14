@@ -5,12 +5,16 @@ sort: 1
 
 # 变更日志
 
-### v0.6.7（未发布）
+### v0.6.5（未发布）
 
 #### Bug 修复
 
 - 不允许匿名的 SSH 克隆
 - 私有仓库无法通过 SSH 推送来触发 Web 钩子
+- 仓库所有者无法将工单指派给自己 [#747](https://github.com/gogits/gogs/issues/747)
+- 工单无法指派给组织成员 [#839](https://github.com/gogits/gogs/issues/839)
+- 创建工单时可能会触发多次请求 [#1051](https://github.com/gogits/gogs/issues/1051)
+- 添加附件时显示 "无法解析 JSON" [#1233](https://github.com/gogits/gogs/issues/1233)
 - 初始化新仓库之后未删除临时目录 [#1331](https://github.com/gogits/gogs/issues/1331)
 - 重命名组织时可以使用中文名 [#1439](https://github.com/gogits/gogs/issues/1439)
 

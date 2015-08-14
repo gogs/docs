@@ -5,12 +5,16 @@ sort: 1
 
 # Change Log
 
-### v0.6.7(unreleased)
+### v0.6.5(unreleased)
 
 #### Bug fixes
 
 - Does not allow anonymous SSH clone
 - Private repository cannot trigger webhook by pushing through SSH
+- Owners cannot assign any issue to themselves [#747](https://github.com/gogits/gogs/issues/747)
+- Issue assignee doesn't show organisation members [#839](https://github.com/gogits/gogs/issues/839)
+- Can send multiple requests when create issue [#1051](https://github.com/gogits/gogs/issues/1051)
+- Attachments a file said "Could not parse JSON" [#1233](https://github.com/gogits/gogs/issues/1233)
 - Did not remove the temporary directory after initialized new repository [#1331](https://github.com/gogits/gogs/issues/1331)
 - Rename organization doesn't restrict Chinese [#1439](https://github.com/gogits/gogs/issues/1439)
 
