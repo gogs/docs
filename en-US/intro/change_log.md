@@ -26,6 +26,7 @@ sort: 1
 
 - Add deploy key support [#334](https://github.com/gogits/gogs/issues/334)
 - Generate random avatar based on e-mail when disable Gravatar
+- Able to sort issues
 
 ### v0.6.3
 

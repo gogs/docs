@@ -26,6 +26,7 @@ sort: 1
 
 - 增加部署密钥支持 [#334](https://github.com/gogits/gogs/issues/334)
 - 禁用 Gravatar 时根据邮箱为用户生成随机头像
+- 增加对工单排序的功能
 
 ### v0.6.3
 
