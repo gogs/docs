@@ -5,6 +5,12 @@ sort: 1
 
 # 变更日志
 
+### v0.6.7（未发布）
+
+#### 功能改进
+
+- LDAP 支持 BindDN 字段和 TLS 协议 [#1145](https://github.com/gogits/gogs/issues/1145)
+
 ### v0.6.5
 
 #### Bug 修复

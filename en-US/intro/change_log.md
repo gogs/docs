@@ -5,6 +5,12 @@ sort: 1
 
 # Change Log
 
+### v0.6.7 (unreleased)
+
+#### Improvements
+
+- Support BindDN and TLS in LDAP [#1145](https://github.com/gogits/gogs/issues/1145)
+
 ### v0.6.5
 
 #### Bug fixes
