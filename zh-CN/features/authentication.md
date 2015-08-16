@@ -7,12 +7,6 @@ sort: 1
 
 ## LDAP
 
-下面两幅图演示了如何进行 LDAP 的配置.
+下幅图演示了如何进行 LDAP 的配置：
 
-Windows Active Directory 服务器：
-
-![](/docs/images/ldap_example1.jpg)
-
-Novell's eDirectory：
-
-![](/docs/images/ldap_example2.png)
+![](/docs/images/ldap_example.png)
