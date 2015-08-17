@@ -29,6 +29,7 @@
 
 | Donated at       | Donator    | Amount   | Comments               |
 | ---------------- |:---------:| --------:| ----------------------- |
+|  2015-8-17 | Tsingson Photography Studio | $20.00||
 |  2015-2-22 | Mr. Rinke  | $20.00   |          |
 |  2014-12-31 | Mr. Nakatsui  | $20.00   |          |
 |  2014-10-13 | Mr. Tsang     | $50.00   |          |
