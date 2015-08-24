@@ -7,9 +7,20 @@ sort: 1
 
 ### v0.6.7（未发布）
 
+#### Bug 修复
+
+- 文件名包含双引号导致仓库无法读取 [#966](https://github.com/gogits/gogs/issues/966)
+
 #### 功能改进
 
 - LDAP 支持 BindDN 字段和 TLS 协议 [#1145](https://github.com/gogits/gogs/issues/1145)
+- 邮件发送支持 'AUTH LOGIN' [#1517](https://github.com/gogits/gogs/pull/1517)
+
+#### 其它变更
+
+- 增加 [官方 Docker 镜像](https://hub.docker.com/r/gogs/gogs/)
+- 修改用户密码的最小允许长度为 1
+- 修改 RSA 的最小允许长度为 1024 [#1519](https://github.com/gogits/gogs/pull/1519)
 
 ### v0.6.5
 

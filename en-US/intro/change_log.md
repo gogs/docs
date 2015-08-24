@@ -7,9 +7,20 @@ sort: 1
 
 ### v0.6.7 (unreleased)
 
+#### Bug fixes
+
+- File name with double quotation mark makes the repository inaccessible [#966](https://github.com/gogits/gogs/issues/966)
+
 #### Improvements
 
 - Support BindDN and TLS in LDAP [#1145](https://github.com/gogits/gogs/issues/1145)
+- Support 'AUTH LOGIN' in mailer [#1517](https://github.com/gogits/gogs/pull/1517)
+
+#### Others
+
+- Add [official Docker images](https://hub.docker.com/r/gogs/gogs/)
+- Change minimum password length to 1
+- Change minimum size of RSA to 1024 [#1519](https://github.com/gogits/gogs/pull/1519)
 
 ### v0.6.5
 
