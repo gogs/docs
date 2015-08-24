@@ -47,6 +47,12 @@ server {
 
 Then set your `[server] ROOT_URL = http://git.crystalnetwork.us/gogs/` in configuration.
 
+##### *Note*:
+To allow for large file uploads in repositories allow for nginx to handle larger files. See a relevant discussion [here](http://stackoverflow.com/a/15021750). The common error is a 413 nginx error, to fix append this line in your server block.
+```
+client_max_body_size 50m;
+```
+
 ##### How about Apache 2 with suburl?
 
 Try following config template:
