@@ -16,6 +16,10 @@ sort: 1
 - LDAP 支持 BindDN 字段和 TLS 协议 [#1145](https://github.com/gogits/gogs/issues/1145)
 - 邮件发送支持 'AUTH LOGIN' [#1517](https://github.com/gogits/gogs/pull/1517)
 
+#### 新增特性
+
+- 为组织增加控制面板工单管理页面
+
 #### 其它变更
 
 - 增加 [官方 Docker 镜像](https://hub.docker.com/r/gogs/gogs/)

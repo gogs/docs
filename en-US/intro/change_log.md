@@ -16,6 +16,10 @@ sort: 1
 - Support BindDN and TLS in LDAP [#1145](https://github.com/gogits/gogs/issues/1145)
 - Support 'AUTH LOGIN' in mailer [#1517](https://github.com/gogits/gogs/pull/1517)
 
+#### Features
+
+- Add dashboard issues page for organization
+
 #### Others
 
 - Add [official Docker images](https://hub.docker.com/r/gogs/gogs/)
