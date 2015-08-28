@@ -5,16 +5,18 @@ sort: 1
 
 # Change Log
 
-### v0.6.7 (unreleased)
+### v0.6.9 (unreleased)
 
 #### Bug fixes
 
 - File name with double quotation mark makes the repository inaccessible [#966](https://github.com/gogits/gogs/issues/966)
+- Removing deploy key does not remove key [#1535](https://github.com/gogits/gogs/issues/1535)
 
 #### Improvements
 
 - Support BindDN and TLS in LDAP [#1145](https://github.com/gogits/gogs/issues/1145)
 - Support 'AUTH LOGIN' in mailer [#1517](https://github.com/gogits/gogs/pull/1517)
+- Add webhook last delivery status, recent deliveries and new events
 
 #### Features
 

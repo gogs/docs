@@ -5,16 +5,18 @@ sort: 1
 
 # 变更日志
 
-### v0.6.7（未发布）
+### v0.6.9（未发布）
 
 #### Bug 修复
 
 - 文件名包含双引号导致仓库无法读取 [#966](https://github.com/gogits/gogs/issues/966)
+- 删除部署密钥失败 [#1535](https://github.com/gogits/gogs/issues/1535)
 
 #### 功能改进
 
 - LDAP 支持 BindDN 字段和 TLS 协议 [#1145](https://github.com/gogits/gogs/issues/1145)
 - 邮件发送支持 'AUTH LOGIN' [#1517](https://github.com/gogits/gogs/pull/1517)
+- 增加 Web 钩子上次推送状态的显示、最近推送记录和新的钩子事件
 
 #### 新增特性
 
