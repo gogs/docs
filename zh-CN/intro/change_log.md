@@ -13,15 +13,17 @@ sort: 1
 - 删除部署密钥失败 [#1535](https://github.com/gogits/gogs/issues/1535)
 
 #### 功能改进
-``
-- LDAP 支持 BindDN 字段和 TLS 协议 [#1145](https://github.com/gogits/gogs/issues/1145)
-- 邮件发送支持 'AUTH LOGIN' [#1517](https://github.com/gogits/gogs/pull/1517)
+
 - 增加 Web 钩子上次推送状态的显示、最近推送记录和新的钩子事件
 - 自动记忆最后一次创建仓库的可见性 [#965](https://github.com/gogits/gogs/issues/965)
+- LDAP 支持 BindDN 字段和 TLS 协议 [#1145](https://github.com/gogits/gogs/issues/1145)
+- 显著改进 LDAP 支持 [#1476](https://github.com/gogits/gogs/pull/1476)
+- 邮件发送支持 'AUTH LOGIN' [#1517](https://github.com/gogits/gogs/pull/1517)
 
 #### 新增特性
 
 - 为组织增加控制面板工单管理页面
+- 允许编辑已发布的评论 [#1280](https://github.com/gogits/gogs/issues/1280)
 
 #### 其它变更
 

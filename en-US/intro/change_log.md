@@ -14,14 +14,16 @@ sort: 1
 
 #### Improvements
 
-- Support BindDN and TLS in LDAP [#1145](https://github.com/gogits/gogs/issues/1145)
-- Support 'AUTH LOGIN' in mailer [#1517](https://github.com/gogits/gogs/pull/1517)
 - Add webhook last delivery status, recent deliveries and new events
 - Auto-remember visibility of last created repository [#965](https://github.com/gogits/gogs/issues/965)
+- Support BindDN and TLS in LDAP [#1145](https://github.com/gogits/gogs/issues/1145)
+- Significantly enhanced LDAP support [#1476](https://github.com/gogits/gogs/pull/1476)
+- Support 'AUTH LOGIN' in mailer [#1517](https://github.com/gogits/gogs/pull/1517)
 
 #### Features
 
 - Add dashboard issues page for organization
+- Allow editing of past comments [#1280](https://github.com/gogits/gogs/issues/1280)
 
 #### Others
 
