@@ -82,9 +82,11 @@ In case you want to try `develop` branch:
 ```
 $ mkdir -p $GOPATH/src/github.com/gogits
 $ cd $GOPATH/src/github.com/gogits
+
+# Make sure you don't use "https://github.com/gogits/gogs.git"
 $ git clone --depth=1 -b develop https://github.com/gogits/gogs
 $ cd gogs
-$ go get ./...
+$ go get -u ./...
 $ go build
 ```
 

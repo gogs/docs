@@ -78,9 +78,11 @@ $ gopm bin -u -v gogs -d path/to/anywhere
 ```
 $ mkdir -p $GOPATH/src/github.com/gogits
 $ cd $GOPATH/src/github.com/gogits
+
+# 请确保没有使用 “https://github.com/gogits/gogs.git”
 $ git clone --depth=1 -b develop https://github.com/gogits/gogs
 $ cd gogs
-$ go get ./...
+$ go get -u ./...
 $ go build
 ```
 
