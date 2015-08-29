@@ -29,7 +29,7 @@ If your system's Go matches the requirements skip this section.
 Install Go in `/home/git/local/go` so it wouldn't interfere with future updates of your system's package manager:
 
 ```bash
-sudo su - git
+sudo -iu git
 cd ~
 # create a folder to install 'go'
 mkdir local
@@ -44,7 +44,7 @@ tar -C /home/git/local -xzf go$VERSION.$OS-$ARCH.tar.gz
 Set the paths that are corresponding to your system:
 
 ```bash
-sudo su - git
+sudo -iu git
 cd ~
 echo 'export GOROOT=$HOME/local/go' >> $HOME/.bashrc
 echo 'export GOPATH=$HOME/go' >> $HOME/.bashrc
