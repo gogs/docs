@@ -30,8 +30,10 @@ cd output_amd64
 ```bash
 # 确定自从构建之后就没有做过任何的修改才可以平滑升级,但是在运行的时候以防万一
 ./build_linux64.sh
+# 为了和官方给出的二进制包兼容，重命名文件夹
 mv output_amd64 gogs
 zip -r gogs.zip gogs
+rm -r gogs
 ```
 
 ## 如何通过二进制升级？
