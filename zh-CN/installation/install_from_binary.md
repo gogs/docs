@@ -12,7 +12,7 @@ sort: 1
 1. 先[构建分支](http://gogs.io/docs/installation/install_from_source.html#%E6%9E%84%E5%BB%BA-develop-%E5%88%86%E6%94%AF%E7%89%88%E6%9C%AC)版本，如有必要，[构建 SQLite3/Redis/Memcache 集成版](http://gogs.io/docs/installation/install_from_source.html#%E6%9E%84%E5%BB%BA-sqlite3%2Fredis%2Fmemcache-%E9%9B%86%E6%88%90%E7%89%88)
 2. 手动构建二进制
 ```bash
-cd $GOPATH/src/github.com/gogits/scripts
+cd $GOPATH/src/github.com/gogits/gogs/scripts
 # 32位系统可以使用 
 ./build.sh
 # bsd系统可以使用 
