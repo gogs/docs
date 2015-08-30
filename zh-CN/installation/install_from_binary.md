@@ -26,11 +26,12 @@ cd output_amd64
 ./gogs web
 ```
 
-4. 升级老版本
+4. 生成二进制包
 ```bash
 # 确定自从构建之后就没有做过任何的修改才可以平滑升级,但是在运行的时候以防万一
 ./build_linux64.sh
-cp -va output_amd64 /your/path/gogs
+mv output_amd64 gogs
+zip -r gogs.zip gogs
 ```
 
 ## 如何通过二进制升级？
