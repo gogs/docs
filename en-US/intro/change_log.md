@@ -10,6 +10,7 @@ sort: 1
 #### Bug fixes
 
 - File name with double quotation mark makes the repository inaccessible [#966](https://github.com/gogits/gogs/issues/966)
+- Time zone trouble [#1500](https://github.com/gogits/gogs/issues/1500)
 - Removing deploy key does not remove key [#1535](https://github.com/gogits/gogs/issues/1535)
 
 #### Improvements
@@ -19,11 +20,13 @@ sort: 1
 - Support BindDN and TLS in LDAP [#1145](https://github.com/gogits/gogs/issues/1145)
 - Significantly enhanced LDAP support [#1476](https://github.com/gogits/gogs/pull/1476)
 - Support 'AUTH LOGIN' in mailer [#1517](https://github.com/gogits/gogs/pull/1517)
+- Add `[markdown] ENABLE_HARD_LINE_BREAK` to enable Markdown hard line break extension
 
 #### Features
 
 - Add dashboard issues page for organization
 - Allow editing of past comments [#1280](https://github.com/gogits/gogs/issues/1280)
+- Support README template [#1487](https://github.com/gogits/gogs/issues/1487)
 
 #### Others
 
