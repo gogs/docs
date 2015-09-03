@@ -5,7 +5,36 @@ sort: 1
 
 # 二进制安装
 
-我们目前只提供 64 位操作系统的二进制。
+我们目前只提供 64 位操作系统的二进制。你也可以自己构建二进制包。
+
+## 如何自己构建二进制包？
+
+1. 先[构建分支](http://gogs.io/docs/installation/install_from_source.html#%E6%9E%84%E5%BB%BA-develop-%E5%88%86%E6%94%AF%E7%89%88%E6%9C%AC)版本，如有必要，[构建 SQLite3/Redis/Memcache 集成版](http://gogs.io/docs/installation/install_from_source.html#%E6%9E%84%E5%BB%BA-sqlite3%2Fredis%2Fmemcache-%E9%9B%86%E6%88%90%E7%89%88)
+2. 手动构建二进制
+```bash
+cd $GOPATH/src/github.com/gogits/gogs/scripts
+# 32位系统可以使用 
+./build.sh
+# bsd系统可以使用 
+./build_freebsd.sh
+# 64位系统可以使用
+./build_linux64.sh
+```
+3. 运行，检查功能
+```bash
+cd output_amd64
+./gogs web
+```
+
+4. 生成二进制包
+```bash
+# 确定自从构建之后就没有做过任何的修改才可以平滑升级,但是在运行的时候以防万一
+./build_linux64.sh
+# 为了和官方给出的二进制包兼容，重命名文件夹
+mv output_amd64 gogs
+zip -r gogs.zip gogs
+rm -r gogs
+```
 
 ## 如何通过二进制升级？
 
