@@ -33,6 +33,7 @@ sort: 1
 - 增加 [官方 Docker 镜像](https://hub.docker.com/r/gogs/gogs/)
 - 修改用户密码的最小允许长度为 1
 - 修改 RSA 的最小允许长度为 1024 [#1519](https://github.com/gogits/gogs/pull/1519)
+- 修改邮箱地址的最大允许长度为 254 [#1579](https://github.com/gogits/gogs/pull/1579)
 
 ### v0.6.5
 

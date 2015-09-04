@@ -33,6 +33,7 @@ sort: 1
 - Add [official Docker images](https://hub.docker.com/r/gogs/gogs/)
 - Change minimum password length to 1
 - Change minimum size of RSA to 1024 [#1519](https://github.com/gogits/gogs/pull/1519)
+- Change maximum size of e-maill to 254 [#1579](https://github.com/gogits/gogs/pull/1579)
 
 ### v0.6.5
 
