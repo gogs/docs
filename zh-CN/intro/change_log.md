@@ -5,6 +5,20 @@ sort: 1
 
 # 变更日志
 
+### v0.7.0（未发布）
+
+#### Bug 修复
+
+- 控制面板的协作仓库链接丢失子路径前缀 [#1594](https://github.com/gogits/gogs/issues/1594)
+
+#### 功能改进
+
+- 允许使用环境变量 `GOGS_WORK_DIR` 来指定工作目录
+
+#### 新增特性
+
+- 增加 Emoji 支持 [#633](https://github.com/gogits/gogs/issues/633)
+
 ### v0.6.9
 
 #### Bug 修复

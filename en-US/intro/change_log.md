@@ -5,6 +5,20 @@ sort: 1
 
 # Change Log
 
+### v0.7.0 (unreleased)
+
+#### Bug fixes
+
+- Collaborative repositories missing suburl on dashboard [#1594](https://github.com/gogits/gogs/issues/1594)
+
+#### Improvements
+
+- Able to use `GOGS_WORK_DIR` environment variable to specify work directory 
+
+#### Features
+
+- Add Emoji support [#633](https://github.com/gogits/gogs/issues/633)
+
 ### v0.6.9
 
 #### Bug fixes
