@@ -10,13 +10,17 @@ sort: 1
 #### Bug fixes
 
 - Collaborative repositories missing suburl on dashboard [#1594](https://github.com/gogits/gogs/issues/1594)
+- Duplicate commit references when push a new branch [#1595](https://github.com/gogits/gogs/issues/1595)
+- New SSH keys with comments including whitespace are truncated [#1622](https://github.com/gogits/gogs/issues/1622)
 
 #### Improvements
 
 - Able to use `GOGS_WORK_DIR` environment variable to specify work directory 
+- Sort owners list by last changed time when create and migrate repositoriy [#1585](https://github.com/gogits/gogs/issues/1585)
 
 #### Features
 
+- Add TiDB backend database support
 - Add Emoji support [#633](https://github.com/gogits/gogs/issues/633)
 
 ### v0.6.9

@@ -9,7 +9,7 @@ sort: 1
 - [MySQL](http://dev.mysql.com)：版本 >= 5.1 或者 [PostgreSQL](http://www.postgresql.org/) 或者 **什么都不需要**
 - [git](http://git-scm.com/)（bash）：版本 >= 1.7.1（服务端和客户端均需）
 - SSH 服务器（**如果您只使用 HTTP/HTTPS 的话请忽略此项**）
-    - 推荐 Windows 系统使用 [Cygwin OpenSSH](http://docs.oracle.com/cd/E24628_01/install.121/e22624/preinstall_req_cygwin_ssh.htm)
+    - 推荐 Windows 系统使用 [Cygwin OpenSSH](http://docs.oracle.com/cd/E24628_01/install.121/e22624/preinstall_req_cygwin_ssh.htm) 或 [Copssh](https://www.itefix.net/copssh)
 
 ### 安装数据库
 

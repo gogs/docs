@@ -10,13 +10,17 @@ sort: 1
 #### Bug 修复
 
 - 控制面板的协作仓库链接丢失子路径前缀 [#1594](https://github.com/gogits/gogs/issues/1594)
+- 推送新分支时会重复触发代码提交消息对工单的引用 [#1595](https://github.com/gogits/gogs/issues/1595)
+- 添加新的 SSH 公钥时注释包含空格会被截断 [#1622](https://github.com/gogits/gogs/issues/1622)
 
 #### 功能改进
 
 - 允许使用环境变量 `GOGS_WORK_DIR` 来指定工作目录
+- 在新建和迁移仓库时根据组织的最后更新时间进行排序 [#1585](https://github.com/gogits/gogs/issues/1585)
 
 #### 新增特性
 
+- 增加 TiDB 作为后端数据库的支持
 - 增加 Emoji 支持 [#633](https://github.com/gogits/gogs/issues/633)
 
 ### v0.6.9
