@@ -9,8 +9,10 @@ sort: 1
 
 #### Bug fixes
 
+- 404 when Repository name contains "git" [#1593](https://github.com/gogits/gogs/issues/1593)
 - Collaborative repositories missing suburl on dashboard [#1594](https://github.com/gogits/gogs/issues/1594)
 - Duplicate commit references when push a new branch [#1595](https://github.com/gogits/gogs/issues/1595)
+- Upload image does not handle suburl [#1603](https://github.com/gogits/gogs/issues/1603)
 - New SSH keys with comments including whitespace are truncated [#1622](https://github.com/gogits/gogs/issues/1622)
 
 #### Improvements
@@ -22,6 +24,8 @@ sort: 1
 
 - Add TiDB backend database support
 - Add Emoji support [#633](https://github.com/gogits/gogs/issues/633)
+- Able to disable captcha by config option `[service] ENABLE_CAPTCHA = false` [#697](https://github.com/gogits/gogs/issues/697)
+- Able to restrict SMTP authentication to specific domains [#1620](https://github.com/gogits/gogs/issues/1620)
 
 ### v0.6.9
 

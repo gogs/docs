@@ -9,8 +9,10 @@ sort: 1
 
 #### Bug 修复
 
+- 仓库名称包含 "git" 时无法访问 [#1593](https://github.com/gogits/gogs/issues/1593)
 - 控制面板的协作仓库链接丢失子路径前缀 [#1594](https://github.com/gogits/gogs/issues/1594)
 - 推送新分支时会重复触发代码提交消息对工单的引用 [#1595](https://github.com/gogits/gogs/issues/1595)
+- 上传图片未对子路径作处理 [#1603](https://github.com/gogits/gogs/issues/1603)
 - 添加新的 SSH 公钥时注释包含空格会被截断 [#1622](https://github.com/gogits/gogs/issues/1622)
 
 #### 功能改进
@@ -22,6 +24,8 @@ sort: 1
 
 - 增加 TiDB 作为后端数据库的支持
 - 增加 Emoji 支持 [#633](https://github.com/gogits/gogs/issues/633)
+- 增加通过设置配置选项 `[service] ENABLE_CAPTCHA = false` 来禁用验证码服务 [#697](https://github.com/gogits/gogs/issues/697)
+- 增加对 SMTP 授权时只允许特定域名的支持 [#1620](https://github.com/gogits/gogs/issues/1620)
 
 ### v0.6.9
 
