@@ -27,6 +27,10 @@ sort: 1
 - 增加通过设置配置选项 `[service] ENABLE_CAPTCHA = false` 来禁用验证码服务 [#697](https://github.com/gogits/gogs/issues/697)
 - 增加对 SMTP 授权时只允许特定域名的支持 [#1620](https://github.com/gogits/gogs/issues/1620)
 
+#### 其它变更
+
+- 移除社交帐号登录支持
+
 ### v0.6.9
 
 #### Bug 修复

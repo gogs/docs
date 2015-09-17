@@ -27,6 +27,10 @@ sort: 1
 - Able to disable captcha by config option `[service] ENABLE_CAPTCHA = false` [#697](https://github.com/gogits/gogs/issues/697)
 - Able to restrict SMTP authentication to specific domains [#1620](https://github.com/gogits/gogs/issues/1620)
 
+#### Others
+
+- Drop social account login support
+
 ### v0.6.9
 
 #### Bug fixes
