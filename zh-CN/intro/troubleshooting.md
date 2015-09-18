@@ -15,7 +15,7 @@ sort: 2
 
 - 错误描述：`bash /path/to/gogs: no such file or directory`
 - 可能原因：您修改了 Gogs 二进制的位置
-- 解决方案：在新的 Gogs 目录下执行 `./gogs fix location <old Gogs path>`
+- 解决方案：进入 `admin` 面板然后执行 `重新生成 '.ssh/authorized_keys' 文件` 和 `重新生成所有仓库的 Update 钩子` 操作
 
 -----
 

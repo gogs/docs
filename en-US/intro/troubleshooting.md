@@ -15,7 +15,7 @@ sort: 2
 
 - Error: `bash /path/to/gogs: no such file or directory`
 - Causes: you have changed the location of Gogs server after a while and the old path was hard coded into `~/.ssh/authorized_keys` file.
-- Solution: execute `./gogs fix location <old Gogs path>` under new Gogs directory.
+- Solution: go to `/admin` panel and do operation `Rewrite '.ssh/authorized_keys' file` and `Rewrite all update hook of repositories`.
 
 -----
 
