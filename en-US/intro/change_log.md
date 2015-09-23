@@ -5,7 +5,7 @@ sort: 1
 
 # Change Log
 
-### v0.7.0 (unreleased)
+### v0.6.16 (unreleased)
 
 #### Bug fixes
 
@@ -14,6 +14,7 @@ sort: 1
 - Duplicate commit references when push a new branch [#1595](https://github.com/gogits/gogs/issues/1595)
 - Upload image does not handle suburl [#1603](https://github.com/gogits/gogs/issues/1603)
 - New SSH keys with comments including whitespace are truncated [#1622](https://github.com/gogits/gogs/issues/1622)
+- Change label title resets color [#1659](https://github.com/gogits/gogs/issues/1659)
 
 #### Improvements
 

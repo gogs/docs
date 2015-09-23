@@ -5,7 +5,7 @@ sort: 1
 
 # 变更日志
 
-### v0.7.0（未发布）
+### v0.6.16（未发布）
 
 #### Bug 修复
 
@@ -14,6 +14,7 @@ sort: 1
 - 推送新分支时会重复触发代码提交消息对工单的引用 [#1595](https://github.com/gogits/gogs/issues/1595)
 - 上传图片未对子路径作处理 [#1603](https://github.com/gogits/gogs/issues/1603)
 - 添加新的 SSH 公钥时注释包含空格会被截断 [#1622](https://github.com/gogits/gogs/issues/1622)
+- 修改标签标题会重置其颜色 [#1659](https://github.com/gogits/gogs/issues/1659)
 
 #### 功能改进
 
