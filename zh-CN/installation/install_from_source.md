@@ -9,7 +9,7 @@ sort: 2
 
 ### 基本依赖
 
-- [Go 语言](http://golang.org)：版本 >= 1.2
+- [Go 语言](http://golang.org)：版本 >= 1.3
 - [Git](http://git-scm.com)：版本 >= 1.7.1
 
 ### 第三方包

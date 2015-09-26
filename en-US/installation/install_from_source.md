@@ -9,7 +9,7 @@ sort: 2
 
 ### Overall
 
-- [Go Programming Language](http://golang.org): Version >= 1.2
+- [Go Programming Language](http://golang.org): Version >= 1.3
 - [Git](http://git-scm.com): Version >= 1.7.1
 
 We are going to create a new user called `git` and install/setup everything under that user:
