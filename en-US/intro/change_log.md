@@ -5,6 +5,12 @@ sort: 1
 
 # Change Log
 
+### v0.6.22 (unrelease)
+
+#### Others
+
+- Drop Go 1.2.x support, minimum requirement of Go is 1.3
+
 ### v0.6.15
 
 #### Bug fixes
