@@ -5,7 +5,7 @@ sort: 1
 
 # 变更日志
 
-### v0.6.16（未发布）
+### v0.6.15（未发布）
 
 #### Bug 修复
 
@@ -19,6 +19,7 @@ sort: 1
 #### 功能改进
 
 - 允许使用环境变量 `GOGS_WORK_DIR` 来指定工作目录
+- 在创建完用户只会对用户类型进行转换 [#748](https://github.com/gogits/gogs/issues/748)
 - 在新建和迁移仓库时根据组织的最后更新时间进行排序 [#1585](https://github.com/gogits/gogs/issues/1585)
 
 #### 新增特性

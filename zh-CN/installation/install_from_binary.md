@@ -5,59 +5,12 @@ sort: 1
 
 # 二进制安装
 
-我们目前只提供 64 位操作系统的二进制。
+请访问 [GitHub Wiki](https://github.com/gogits/gogs/wiki/Download) 获取官方提供的二进制下载。
 
 ## 如何通过二进制升级？
 
 1. 下载最新版的二进制 ZIP 压缩包。
 2. 删除当前的 `templates` 目录。
-3. 解压压缩包并将所有内容复制粘贴到相应位置。
-
-### v0.6.9 @ 2015-9-5
-
-- CDN：[Windows](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.6.9_windows_amd64.zip) - [Linux](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.6.9_linux_amd64.zip) - [Mac OS X](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.6.9_darwin_amd64.zip)
-- [GitHub](https://github.com/gogits/gogs/releases/tag/v0.6.9)
+3. 解压压缩包并将所有内容复制粘贴到相应（当前）的位置。
 
 安装完成后可继续参照 [配置与运行](configuration_and_run.md)。
-
-### v0.6.5 @ 2015-8-16
-
-- CDN：~~[Windows](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.6.5_windows_amd64.zip) - [Linux](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.6.5_linux_amd64.zip) - [Mac OS X](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.6.5_darwin_amd64.zip)~~
-- ~~[GitHub](https://github.com/gogits/gogs/releases/tag/v0.6.5)~~
-
-### v0.6.3 @ 2015-8-2
-
-- CDN：~~[Windows](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.6.3_windows_amd64.zip) - [Linux](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.6.3_linux_amd64.zip) - [Mac OS X](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.6.3_darwin_amd64.zip)~~
-- ~~[GitHub](https://github.com/gogits/gogs/releases/tag/v0.6.3)~~
-
-### v0.6.1 @ 2015-3-26
-
-- CDN：~~[Windows](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.6.1_windows_amd64.zip) - [Linux](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.6.1_linux_amd64.zip) - [Mac OS X](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.6.1_darwin_amd64.zip)~~
-- ~~[GitHub](https://github.com/gogits/gogs/releases/tag/v0.6.1)~~
-
-### v0.6.0 @ 2015-3-19
-
-- CDN：~~[Windows](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.6.0_windows_amd64.zip) - [Linux](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.6.0_linux_amd64.zip) - [Mac OS X](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.6.0_darwin_amd64.zip)~~
-- ~~[GitHub](https://github.com/gogits/gogs/releases/tag/v0.6.0)~~
-
-### v0.5.13 @ 2015-2-13
-
-- CDN：~~[Windows](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.5.13_windows_amd64.zip) - [Linux](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.5.13_linux_amd64.zip) - [Mac OS X](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.5.13_darwin_amd64.zip)~~
-- ~~[GitHub](https://github.com/gogits/gogs/releases/tag/v0.5.13)~~
-
-### v0.5.11 @ 2015-1-5
-
-- CDN：~~[Linux](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.5.11_linux_amd64.zip) - [Mac OS X](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.5.11_darwin_amd64.zip)~~
-- ~~[GitHub](https://github.com/gogits/gogs/releases/tag/v0.5.11)~~
-
-### v0.5.9 @ 2014-12-13
-
-- CDN：[Windows](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.5.9_windows_amd64.zip) - [Linux](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.5.9_linux_amd64.zip) - [Mac OS X](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.5.9_darwin_amd64.zip)
-- [GitHub](https://github.com/gogits/gogs/releases/tag/v0.5.9)
-
-### v0.5.8 @ 2014-11-19
-
-- ~~CDN：[Windows](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.5.8_windows_amd64.zip) - [Linux](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.5.8_linux_amd64.zip) - [Mac OS X](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.5.8_darwin_amd64.zip)~~
-- ~~[GitHub](https://github.com/gogits/gogs/releases/tag/v0.5.8)~~
-
-**更早的版本可以通过 [GitHub](https://github.com/gogits/gogs/releases) 下载。**

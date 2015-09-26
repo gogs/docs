@@ -5,7 +5,7 @@ sort: 1
 
 # Change Log
 
-### v0.6.16 (unreleased)
+### v0.6.15 (unreleased)
 
 #### Bug fixes
 
@@ -19,6 +19,7 @@ sort: 1
 #### Improvements
 
 - Able to use `GOGS_WORK_DIR` environment variable to specify work directory 
+- Enable login type conversion after account creation [#748](https://github.com/gogits/gogs/issues/748)
 - Sort owners list by last changed time when create and migrate repositoriy [#1585](https://github.com/gogits/gogs/issues/1585)
 
 #### Features
