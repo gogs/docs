@@ -13,4 +13,4 @@ Please visit to [GitHub Wiki](https://github.com/gogits/gogs/wiki/Download) for 
 2. Remove old `templates` directory.
 3. Unzip archive and copy-paste everything to corresponding(old) location.
 
-See [Configuration and run](configuration_and_run.md) to go further.
+See [Configuration and run](/docs/installation/configuration_and_run) to go further.
