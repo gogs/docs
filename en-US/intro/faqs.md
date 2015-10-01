@@ -7,17 +7,17 @@ sort: 3
 
 ### Deployment
 
-#### What to do when I'm running another service on port 3000?
+#### What do I do if I'm running another service on port 3000?
 
-To change the listening port number of Gogs when you first time run it:
+Change the listening port of Gogs the first time you run it with:
 
     ./gogs web -port 3001
 
-This flag also changes the port number in install page for you, so pick a number you want to assign for Gogs.
+This flag also changes the port number in the install page for you, so pick a number you want to assign for Gogs.
 
-#### How to use Nginx with Reverse Proxy?
+#### How do I use NGINX with Reverse Proxy?
 
-Add following `server` section inside `http` section in `nginx.conf` and reload configuration:
+Add following `server` section inside the `http` section of `nginx.conf` and reload the configuration:
 
 ```
 server {
@@ -30,9 +30,10 @@ server {
 }
 ```
 
-##### Set up with suburl
+##### How do I set up a sub-URL with NGINX?
 
-In case you need to use a sub-path for Gogs instance, you can change your Nginx config as follows(pay special attention to the suffix `/`):
+In case you need to use a sub-path for your Gogs instance, you can change your NGINX configuration to the following 
+(note to the suffix `/`):
 
 ```
 server {
@@ -45,19 +46,19 @@ server {
 }
 ```
 
-Then set your `[server] ROOT_URL = http://git.crystalnetwork.us/gogs/` in configuration.
+Then set `[server] ROOT_URL = http://git.crystalnetwork.us/gogs/` in your configuration.
 
-##### Other notes
+##### I'm getting errors when uploading large files.
 
-To allow Nginx to handle large file uploads in repositories, please see a relevant discussion [here](http://stackoverflow.com/a/15021750). The common error is a 413 nginx error, append following line to your server block to fix this problem:
+To allow NGINX to handle large file uploads in repositories, please see a relevant discussion [here](http://stackoverflow.com/a/15021750). `413` is a common NGINX error; append following line to your server block to fix this:
 
 ```
 client_max_body_size 50m;
 ```
 
-##### How about Apache 2 with suburl?
+##### How do I set up a sub-URL with Apache 2?
 
-Try following config template:
+Use following configuration template:
 
 ```
 <VirtualHost *:443>
@@ -72,9 +73,9 @@ Try following config template:
 </VirtualHost>
 ```
 
-##### Any example for lighttpd with suburl?
+##### How do I set up a sub-URL with lighttpd?
 
-Try following config template:
+Use following configuration template:
 
 ```
 server.modules  += ( "mod_proxy_backend_http" )
@@ -88,9 +89,9 @@ $HTTP["url"] =~ "^/gogs" {
 }
 ```
 
-#### How to setup HTTPS?
+#### How to set up HTTPS?
 
-Change following configuration options in `custom/conf/app.ini` file(this is a sample):
+Change following configuration options in `custom/conf/app.ini` in the section that looks like this sample:
 
 ```
 [server]
@@ -100,58 +101,56 @@ CERT_FILE = custom/https/unified.cert
 KEY_FILE = custom/https/decryped-private.key
 ```
 
-If you want to use self-signed HTTPS, you can execute following commands to generate cert and key files:
+If you want to use self-signed HTTPS, you can execute the following command to generate a certificate and key files:
 
 	$ ./gogs cert -ca=true -duration=8760h0m0s -host=myhost.example.com
 
-#### How to enable offline mode?
+#### How do I run Gogs in offline mode/in an intranet?
 
-To run Gogs in an intranet, change configuration option `server -> OFFLINE_MODE` to be `true` in file `custom/conf/app.ini`.
+To run Gogs in an intranet, change the configuration option `server -> OFFLINE_MODE` to `true` in the file `custom/conf/app.ini`.
 
-#### How to enable custom robots.txt?
+#### How do I make a custom robots.txt?
 
-Create a file called `robots.txt` under `custom` directory.
+Create a file called `robots.txt` in the `custom` directory.
 
-#### How to run as daemon?
+#### How do I run Gogs as a daemon?
 
-Gogs has some third-party scripts for supporting run as daemon:
+Gogs has some third-party scripts that support running it as a daemon:
 
 - [init.d/centos](https://github.com/gogits/gogs/blob/master/scripts/init/centos/gogs)
 - [init.d/debian](https://github.com/gogits/gogs/blob/master/scripts/init/debian/gogs)
 - Systemd in the following section.
 
-#### Systemd Service
+#### How do I run Gogs at startup with Systemd?
 
-In the GitHub repository of Gogs is a [systemd service template file](https://github.com/gogits/gogs/blob/master/scripts/systemd/gogs.service) for Gogs. It needs some modifications for a working version for your installation. OK, start the editors.
+Three's a [systemd service template file](https://github.com/gogits/gogs/blob/master/scripts/systemd/gogs.service) in the Gogs GitHub repository. It needs some modifications for a working version for your installation:
 
 1. Replace the `start.sh` path of `ExecStart` with the path of your Gogs installation.
 2. Also replace the path of `WorkingDirectory` with the path of your Gogs installation.
-3. [optional] If you are would like to use Gogs with `MySQL/MariaDB`, `PostgreSQL`, `Redis` or `memcached`, uncomment the corresponding line of `After`.
+3. (Optional) If you are would like to use Gogs with `MySQL/MariaDB`, `PostgreSQL`, `Redis`, or `memcached`, uncomment the line corresponding to `After`.
 
-When you are complete with your modification of the systemd file, save it in the `/etc/systemd` and start it with `sudo systemd restart gogs`.
+When you are complete with your modification of the systemd file, save it in `/etc/systemd` and start it with `sudo systemd restart gogs`.
 
-You can check the status of the Gogs systemd service with `sudo systemd status gogs -l` or display directly the journald entries with `sudo journalctl -b -u gogs.service`.
+You can check the status of the Gogs systemd service with `sudo systemd status gogs -l` or display the journald entries directly with `sudo journalctl -b -u gogs.service`.
 
 ### Administration
 
-#### How to become an administrator?
+#### How can I become an administrator?
 
-1. You're the first registered user with `ID = 1`, and no e-mail confirmation required(if enabled).
-2. Default administrator log into `Admin -> Users` and authorize someone.
-3. Register in the install page.
+The first registered user with `ID = 1` is an administrator. No e-mail confirmation is required for this (if enabled). The default administrator can log into `Admin` > `Users` and authorize another user. A user will also be an administrator if they register in the install page.
 
 ### Repository Management
 
-#### How to give Git hooks permission to users?
+#### How do I give Git Hooks permission to users?
 
-This is **high level a permission which can damage your system** which you must enable/disable it in admin user management panel(`/admin/users/:userid`) to users who you really trust.
+This is **high-level a permission which can damage your system** which you must enable/disable in the admin user management panel (`/admin/users/:userid`). Only grant this permission to users who you really trust.
 
-### Others
+### Other
 
-#### How to get current Gogs version?
+#### How do I find the current version of Gogs?
 
-The plain text format of Gogs version is in the file `templates/VERSION`.
+The current version of Gogs is written in plain text in the file `templates/VERSION`.
 
-#### What is `gogs serv` command for?
+#### What is the `gogs serv` command for?
 
-You have no reason to execute this command manually, it will be called by Git update hook whenever new SSH push is coming.
+You have no reason to execute this command manually; it will be called by the Git update hook whenever new SSH pushes arrive.
