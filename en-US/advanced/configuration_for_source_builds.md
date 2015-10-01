@@ -237,4 +237,4 @@ Test your setup by running
 
 and visiting the URL for your site (ex. `git.example.com`)
 
-If you want to autostart gogs using `systemd`, check out [the related FAQ](/docs/intro/faqs.md#systemd-service).
+If you want to autostart gogs using `systemd`, check out [the related FAQ](/docs/intro/faqs#systemd-service).
