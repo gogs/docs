@@ -23,7 +23,7 @@ name: Donation
 
 ### Your donation will be used as:
 
-- Supports the development of Beego
+- Supports the development of Gogs
 - Supports maintaining the communities
 - Upgrade to better server
 - Award the outstanding contributors
