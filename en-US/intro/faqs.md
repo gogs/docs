@@ -48,7 +48,7 @@ server {
 
 Then set `[server] ROOT_URL = http://git.crystalnetwork.us/gogs/` in your configuration.
 
-##### I'm getting errors when uploading large files.
+##### Why am I getting errors when uploading large files?
 
 To allow NGINX to handle large file uploads in repositories, please see a relevant discussion [here](http://stackoverflow.com/a/15021750). `413` is a common NGINX error; append following line to your server block to fix this:
 
