@@ -7,6 +7,10 @@ sort: 1
 
 ### v0.6.22 (unrelease)
 
+#### Improvements
+
+- Able to triggere mailer for admin created accounts [#1525](https://github.com/gogits/gogs/issues/1525)
+
 #### Others
 
 - Drop Go 1.2.x support, minimum requirement of Go is 1.3
