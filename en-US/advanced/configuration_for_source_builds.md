@@ -185,7 +185,7 @@ You are basically done here, the next step outlines how to make Gogs start when 
 
 ## Adding Gogs to `init.d`
 
-This section describes how to properly start *Gogs* when your linux system reboots. For other platforms, consult the documentation to see how you can do this. For Mac OSX see [this document](/docs/installation/install_gogs_on_mac.md#run-gogs-server) to control app start-ups.
+This section describes how to properly start *Gogs* when your linux system reboots. For other platforms, consult the documentation to see how you can do this. For Mac OSX see [this document](/docs/installation/install_gogs_on_mac#run-gogs-server) to control app start-ups.
 
 If you followed previous steps, you can now enable automatic start of gogs. Under `debian`/`ubuntu`, we will use the script from `$GOPATH/src/github.com/gogits/gogs/scripts/init/debian/gogs`.
 
