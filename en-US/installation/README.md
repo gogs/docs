@@ -44,4 +44,4 @@ $ sudo apt-get install git
 ## Install Gogs
 
 - [Install from binary](/docs/installation/install_from_binary)
-- [Install from source](http://gogs.io/docs/installation/install_from_source.html)
+- [Install from source](/docs/installation/install_from_source)
