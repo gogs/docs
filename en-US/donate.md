@@ -5,11 +5,11 @@ name: Donation
 # Donation
 
 <h4>
-	<b><font color="red">We will continue hard working with your huge support!</font></b>
+	<b><font color="red">We will continue hard working with your support!</font></b>
 </h4>
 
 <h4>
-	<b>Donate by Paypal:</b>
+	<b>Donate through PayPal:</b>
 	<p>
 		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 			<input type="hidden" name="cmd" value="_s-xclick">
@@ -21,13 +21,13 @@ name: Donation
 	</p>
 </h4>
 
-### Your donation will be used as:
+### Your donation will be used for:
 
-- Supports the development of Gogs
-- Supports maintaining the communities
-- Upgrade to better server
-- Award the outstanding contributors
-- Holds community activities and lectures
+- Supporting the development of Gogs
+- Supporting and maintaining the community
+- Upgrading to better servers
+- Awarding outstanding contributors
+- Holding community activities and lectures
 
 ### Donation Lists (descending by donating time)
 
