@@ -15,7 +15,7 @@ For the rest fo this document, we'll assume the following:
 - `postgresql` is your database server
 - and you want your git repository URLs look like `git.example.com`
 
-As mentioned in [Configuration and run](/docs/installation/configuration_and_run.md), you should create your own configuration file in `$GOPATH/src/github.com/gogits/gogs/custom/conf/app.ini`
+As mentioned in [Configuration and run](/docs/installation/configuration_and_run), you should create your own configuration file in `$GOPATH/src/github.com/gogits/gogs/custom/conf/app.ini`
 
 Let's first setup some directories:
 
