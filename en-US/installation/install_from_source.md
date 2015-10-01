@@ -113,5 +113,5 @@ $ go build -tags "sqlite redis memcache"
 
 ## Next steps
 
-- See [Configuration and run](configuration_and_run.md) to go further.
-- For more detailed instructions including setting webserver and database see [the detailed steps](/docs/advanced/configuration_for_source_builds.md).
+- See [Configuration and run](/docs/installation/configuration_and_run) to go further.
+- For more detailed instructions including setting webserver and database see [the detailed steps](/docs/advanced/configuration_for_source_builds).
