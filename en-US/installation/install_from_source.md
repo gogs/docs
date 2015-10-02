@@ -18,7 +18,7 @@ We are going to create a new user called `git` and install/setup everything unde
 
 ### Third-party Packages
 
-If you're interested in which third-part packages we are using, see [gopmfile](https://github.com/gogits/gogs/blob/master/.gopmfile). You may need this when you are making build package for Gogs.
+If you're interested in which third-party packages we are using, see [gopmfile](https://github.com/gogits/gogs/blob/master/.gopmfile). You may need this when you are making build package for Gogs.
 
 ## Installing Go
 
@@ -41,7 +41,7 @@ tar -C /home/git/local -xzf go$VERSION.$OS-$ARCH.tar.gz
 
 ### Set Up the Environment
 
-Set the paths that are corresponding to your system:
+Set the paths that correspond to your system:
 
 ```bash
 sudo su - git
@@ -54,9 +54,9 @@ source $HOME/.bashrc
 
 ## Install Gogs
 
-The general way to install Gogs, 
+The general way to install Gogs:
 
-```
+```bash
 # Download and install dependencies
 $ go get -u github.com/gogits/gogs
 
@@ -67,7 +67,7 @@ $ go build
 
 If you have gopm available, you can try the following way to install Gogs:
 
-```
+```bash
 # Check update of gopm
 $ gopm update -v
 
@@ -79,7 +79,7 @@ $ gopm bin -u -v gogs -d path/to/anywhere
 
 In case you want to try `develop` branch:
 
-```
+```bash
 $ mkdir -p $GOPATH/src/github.com/gogits
 $ cd $GOPATH/src/github.com/gogits
 
@@ -94,7 +94,7 @@ $ go build
 
 To make sure Gogs is working:
 
-```
+```bash
 cd $GOPATH/src/github.com/gogits/gogs
 ./gogs web
 ```
@@ -105,7 +105,7 @@ If you do not see error messages, hit `Ctrl-C` to stop Gogs.
 
 If you need to enable SQLite3/Redis/Memcache, please delete directory `$GOPATH/pkg/{GOOS_GOARCH}/github.com/gogits/gogs` and do:
 
-```
+```bash
 $ go get -u -tags "sqlite redis memcache" github.com/gogits/gogs
 $ cd $GOPATH/src/github.com/gogits/gogs
 $ go build -tags "sqlite redis memcache"
