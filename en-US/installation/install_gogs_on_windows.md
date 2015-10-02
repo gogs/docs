@@ -21,13 +21,13 @@ To run Gogs as a service, you will need one of:
 
 This guide covers nssm.exe, which is [open source](https://git.nssm.cc/?p=nssm.git) and [public domain](https://git.nssm.cc/?p=nssm.git;a=blob_plain;f=README.txt;hb=HEAD).
 
-During setup, you will run Gogs as current local user, and then reconfigure to run as a service.
+During setup, you will run Gogs as the current local user, and then reconfigure to run as a service.
 
 When configuring Gogs through app.ini and web UI, use UNIX directory separators (forward slash `/`) where possible. If you are needing to use a UNC path to a network share, try [the Cygwin way](https://cygwin.com/cygwin-ug-net/using.html#unc-paths), or [map the path as a local drive](http://www.sevenforums.com/tutorials/49517-map-network-drive.html).
 
-### Run as current local user
+### Run as the current local user
 
-Gogs is able to run as local user immediately, with no configuration. Simply unpack the [Windows binary](http://gogs.io/docs/installation/install_from_binary.html) zip file somewhere, go to command line, and do:
+Gogs is able to run as the local user immediately, with no configuration. Simply unpack the [Windows binary](http://gogs.io/docs/installation/install_from_binary.html) zip file somewhere, go to command line, and do:
 
 ```
 C:>cd C:\path\to\gogs
