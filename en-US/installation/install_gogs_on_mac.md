@@ -7,7 +7,7 @@ sort: 5
 
 > Contributed by [@fundon](https://github.com/fundon)
 
-## Dependences
+## Dependencies
 
 * [homebrew][]
 * [git][]
@@ -88,8 +88,8 @@ postgres -D /usr/local/var/postgres
 
 #### custom/conf/app.ini
 
-You can add git user or use currently logged in user.
-If you want to add git user to run gogs, see http://wiki.freegeek.org/index.php/Mac_OSX_adduser_script.
+You can add a git user or use the currently logged in user.
+If you want to add the git user to run gogs, see http://wiki.freegeek.org/index.php/Mac_OSX_adduser_script.
 
 ```sh
 # Create custom folder
