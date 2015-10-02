@@ -17,4 +17,4 @@ sort: 3
 	- Branch `dev`: [AUR](https://aur.archlinux.org/packages/gogs-git-dev/) [GitHub](https://github.com/fanningert/PKGBUILDs/tree/master/aur/gogs-git-dev)
 	- Release: [AUR](https://aur.archlinux.org/packages/gogs/) [GitHub](https://github.com/fanningert/PKGBUILDs/tree/master/aur/gogs)
 
-Information for the installation and configuration on Arch Linux can be found at this [Arch Linux Wiki entry](https://wiki.archlinux.org/index.php/Gogs).
+Information for installation and configuration on Arch Linux can be found at this [Arch Linux Wiki entry](https://wiki.archlinux.org/index.php/Gogs).
