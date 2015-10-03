@@ -9,7 +9,7 @@ name: 捐赠我们
 </h4>
 
 <h4>	
-	<b>支付宝捐赠</b>：<img src="/imgs/alipay.png">
+	<b>支付宝捐赠</b>：<img src="/img/alipay.png">
 </h4>
 
 <h4>	
