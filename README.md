@@ -16,4 +16,4 @@ Gogs documentation is written using standard [markdown syntax](https://help.gith
 
 ## License
 
-This project is under the Apache version 2.0 license. See [LICENSE](LICENSE) in the repository for the full license text.
+This project is under the Apache License, Version 2.0. See the [LICENSE](LICENSE) file for the full license text.
