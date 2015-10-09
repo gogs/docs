@@ -89,7 +89,7 @@ $HTTP["url"] =~ "^/gogs" {
 }
 ```
 
-#### How to set up HTTPS?
+#### How do I set up HTTPS?
 
 Change following configuration options in `custom/conf/app.ini` in the section that looks like this sample:
 
