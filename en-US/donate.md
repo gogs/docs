@@ -33,6 +33,7 @@ name: Donation
 
 | Donated at       | Donator    | Amount   | Comments               |
 | ---------------- |:---------:| --------:| ----------------------- |
+|  2015-10-13 | Mr. Grant | $50.00||
 |  2015-9-24 | Mr. Collantes | $20.00||
 |  2015-8-25 | Mr. Matthijssen | $10.00||
 |  2015-8-17 | Tsingson Photography Studio | $20.00||
