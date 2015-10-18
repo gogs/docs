@@ -1,6 +1,5 @@
 ---
 name: Troubleshooting
-sort: 2
 ---
 
 # Troubleshooting
@@ -114,6 +113,6 @@ fatal: Could not read from remote repository.
 
 -----
 
-- Error: `could not parse line: ; App name that shows on every page title`
-- Causes: it may because you save the file as `UTF8 with BOM`(normally happens in Windows).
-- Solution: change it to `UTF8`.
+- Error: `[Macaron] PANIC: session(start): mkdir data: permission denied`
+- Causes: Gogs creates `data` subdirectory at the same directory where Gogs binary is located.
+- Solution: make sure Gogs has permission to create subdirectory at that directory.

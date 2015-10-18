@@ -1,6 +1,5 @@
 ---
 name: 故障排查
-sort: 2
 ---
 
 # 故障排查
@@ -113,6 +112,6 @@ fatal: Could not read from remote repository.
 
 -----
 
-- 错误描述：`could not parse line: ; App name that shows on every page title`
-- 可能原因：这可能是您的编辑器将配置文件保存为 `UTF8 with BOM` 导致的（一般发生下 Windows 下）。
-- 解决方案：请修改编码为 `UTF8`。
+- 错误描述：`[Macaron] PANIC: session(start): mkdir data: permission denied`
+- 可能原因：Gogs 会在程序所在目录创建 `data` 子目录。
+- 解决方案：确保 Gogs 具有在相同目录创建子目录的权限。
