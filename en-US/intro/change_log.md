@@ -7,6 +7,10 @@ sort: 1
 
 ### v0.6.22 (unrelease)
 
+#### Bug fixes
+
+- Huge diff causes out of memory [#1790](https://github.com/gogits/gogs/issues/1790)
+
 #### Improvements
 
 - Able to triggere mailer for admin created accounts [#1525](https://github.com/gogits/gogs/issues/1525)
