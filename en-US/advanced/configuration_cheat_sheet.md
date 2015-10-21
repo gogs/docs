@@ -83,11 +83,13 @@ All default settings can be found in [app.ini](https://github.com/gogits/gogs/bl
 - `ENABLED`: Enable this to use a mail service.
 - `DISABLE_HELO`: Disable HELO operation.
 - `HELO_HOSTNAME`: Custom hostname for HELO operation.
-- `HOST`: SMTP mail host address.
+- `HOST`: SMTP mail host address and port (example: smtp.gogs.io:587).
 - `FROM`: Mail from address, RFC 5322. This can be just an email address, or the "Name" <email@example.com> format.
 - `USER`: User name of mailer (usually just your e-mail address).
 - `PASSWD`: Password of mailer.
 - `SKIP_VERIFY`: Do not verify the self-signed certificates.
+
+Note: Actually, Gogs support only SMTP with STARTTLS.
 
 ## OAuth
 
