@@ -5,7 +5,7 @@ sort: 1
 
 # Change Log
 
-### v0.6.22 (unrelease)
+### v0.7.0 (unrelease)
 
 #### Bug fixes
 
