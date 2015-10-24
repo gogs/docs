@@ -1,6 +1,5 @@
 ---
 name: 配置文件手册
-sort: 1
 ---
 
 # 配置文件手册
@@ -11,18 +10,38 @@ sort: 1
 
 完整的默认设置可以通过 [app.ini](https://github.com/gogits/gogs/blob/master/conf/app.ini) 文件查看。如果您看到类似 `%(X)s` 字符，这是由 [ini](https://github.com/go-ini/ini/tree/v1#recursive-values) 提供的递归取值的特性。
 
+任何带有 :exclamation: 标记的配置选项表示除非您完全了解修改后的影响，否则请保持默认值。
+
 ## 概览
 
 - `APP_NAME`：应用名称，可以改成您的组织或公司名称
 - `RUN_USER`：运行应用的用户名称，我们建议您使用 `git`，但如果您在个人计算机上运行 Gogs，请修改为您的系统用户名称。如果没有正确设置这个值，很可能导致您的应用崩溃
 - `RUN_MODE`：鉴于性能和其它考虑，建议在部署环境下修改为 `prod` 模式。在您完成安装操作时，该值也会被设置为 `prod`
 
-## Repository
+## Repository (`repository`)
 
 - `ROOT`：用户仓库存储根目录，必须为绝对路径，默认为 `~/<user name>/gogs-repositories`
 - `SCRIPT_TYPE`：系统脚本类型，一般情况下均为 `bash`，但有些用户反应只能使用 `sh`
+- `PULL_REQUEST_QUEUE_LENGTH`:exclamation:：测试合并请求（Pull Request）的任务队列长度，该值越大越好
 
-## Server
+## UI (`ui`)
+
+- `EXPLORE_PAGING_NUM`：探索页面每页显示仓库的数量
+- `ISSUE_PAGING_NUM`：每页显示工单（Issue）的数量（应用到所有以列表形式显示工单的页面）
+- `FEED_MAX_COMMIT_NUM`：一条最新活动中显示代码提交（Commit）的最大数量
+
+### UI - Admin (`ui.admin`)
+
+- `USER_PAGING_NUM`：用户管理页面每页显示记录条数
+- `REPO_PAGING_NUM`：仓库管理页面每页显示记录条数
+- `NOTICE_PAGING_NUM`：系统提示管理页面每页显示记录条数
+- `ORG_PAGING_NUM`：组织管理页面每页显示记录条数
+
+## Markdown (`markdown`)
+
+- `ENABLE_HARD_LINE_BREAK`：指示是否启动硬性换行扩展
+
+## Server (`server`)
 
 - `PROTOCOL`：`http` 或 `https`
 - `DOMAIN`：服务器域名
@@ -39,7 +58,7 @@ sort: 1
 - `ENABLE_GZIP`：激活该选项来启用应用级别 GZIP 支持
 - `LANDING_PAGE`：未登录用户的默认首页，可以是 `home` 或 `explore`（探索页）
 
-## Database
+## Database (`database`)
 
 - `DB_TYPE`：数据库类型，可以是 `mysql`、`postgres` 或 `sqlite3`
 - `HOST`：数据库主机地址与端口
@@ -49,7 +68,7 @@ sort: 1
 - `SSL_MODE`：仅限 PostgreSQL 使用
 - `PATH`：仅限 SQLite3 使用，数据库文件路径
 
-## Security
+## Security (`security`)
 
 - `INSTALL_LOCK`：用于指示是否允许访问安装页面（该页面可以设置管理员帐号，因此该选项非常重要）
 - `SECRET_KEY`：全局的加密密钥，**务必修改该值以确保您的服务器安全**（会在每次安装时自动生成随机字符串）
@@ -58,7 +77,7 @@ sort: 1
 - `COOKIE_REMEMBER_NAME`：记录用户自动登录信息的 Cookie 名称
 - `REVERSE_PROXY_AUTHENTICATION_USER`：反向代理认证用户的 Header 字段名
 
-## Service
+## Service (`service`)
 
 - `ACTIVE_CODE_LIVE_MINUTES`：激活码的有效期，单位为分钟
 - `RESET_PASSWD_CODE_LIVE_MINUTES`：重置密码的有效期，单位为分钟
@@ -72,13 +91,13 @@ sort: 1
 - `ENABLE_REVERSE_PROXY_AUTO_REGISTRATION`：激活该选项来开启反向代理用户认证的自动注册功能
 - `DISABLE_MINIMUM_KEY_SIZE_CHECK`：激活该选项来禁止检查响应类型的密钥最小长度
 
-## Webhook
+## Webhook (`webhook`)
 
-- `QUEUE_LENGTH`：发送通知的队列长度
+- `QUEUE_LENGTH`:exclamation:：发送通知的队列长度
 - `DELIVER_TIMEOUT`：发送通知的超时时间，以秒为单位
 - `SKIP_TLS_VERIFY`：指示是否允许向具有非信任证书的地址发送通知
 
-## Mailer
+## Mailer (`mailer`)
 
 - `ENABLED`：用于指示是否激活邮件服务
 - `DISABLE_HELO`：禁用 HELO 操作
@@ -89,11 +108,7 @@ sort: 1
 - `PASSWD`：邮箱密码
 - `SKIP_VERIFY`：不验证自签发证书的有效性
 
-## OAuth
-
-- `ENABLED`：OAuth 服务的基本开关
-
-## Cache
+## Cache (`cache`)
 
 - `ADAPTER`：缓存引擎适配器，可以为 `momery`、`redis` 或 `memcache`。如果您使用 `redis` 或 `memcache`，请确保使用 `-tags` 选项重新构建所有依赖，例如：`go build -tags='redis'`
 - `INTERVAL`：仅限内存缓存使用，GC 周期，单位为秒
@@ -101,40 +116,24 @@ sort: 1
     - Redis：`network=tcp,addr=127.0.0.1:6379,password=macaron,db=0,pool_size=100,idle_timeout=180`
     - Memache：`127.0.0.1:9090;127.0.0.1:9091`
 
-## Session
+## Session (`session`)
 
 - `PROVIDER`：Session 引擎提供者，可以是 `memory`、`file`、`redis` 或 `mysql`
 - `PROVIDER_CONFIG`：如果提供者为 file，则为文件根目录；如果为其它提供者，则为主机地址和端口号
 - `COOKIE_SECURE`：激活该选项以要求所有 session 操作均通过 HTTPS
 - `GC_INTERVAL_TIME`：GC 周期，单位为秒
 
-## Picture
+## Picture (`picture`)
 
 - `GRAVATAR_SOURCE`：可以是 `gravatar`、`duoshuo` 或任何 URL，例如：`http://cn.gravatar.com/avatar/`
 - `DISABLE_GRAVATAR`：激活该选项来仅使用本地头像
 
-## Log
+## Log (`log`)
 
 - `ROOT_PATH`：日志文件的根目录
 - `MODE`：日志记录模式，默认为 `console`。如果想要开启多模式，请使用逗号分割
 - `LEVEL`：基本日志级别，默认为 `Trace`
 
-### log.console
-
-- `LEVEL`：console 模式的日志级别，如果该值为空，则使用基本日志级别
-
-### log.file
-
-- `LEVEL`：file 模式的日志级别，如果该值为空，则使用基本日志级别
-
-### log.conn
-
-- `LEVEL`：conn 模式的日志级别，如果该值为空，则使用基本日志级别
-
-### log.smtp
-
-- `LEVEL`：smtp 模式的日志级别，如果该值为空，则使用基本日志级别
-
-## Git
+## Git (`git`)
 
 - `MAX_GITDIFF_LINES`：对比页面显示的最大行数

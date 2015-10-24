@@ -1,6 +1,5 @@
 ---
 name: Config Cheat Sheet
-sort: 1
 ---
 
 # Configuration Cheat Sheet
@@ -11,18 +10,38 @@ Before we get started, make sure you know that any change of configuration shoul
 
 All default settings can be found in [app.ini](https://github.com/gogits/gogs/blob/master/conf/app.ini). If you see anything like `%(X)s`, it's a feature powered by [ini](https://github.com/go-ini/ini/tree/v1#recursive-values) for reading value recursively.
 
+Any configuration option that is marked by :exclamation: means remain default unless you really understand what you are doing.
+
 ## Overall
 
 - `APP_NAME`: Application name, change to whatever you want.
 - `RUN_USER`: The user to run Gogs as, we recommend it be `git`; however, change this to whatever your user name is if you run Gogs on your personal computer. Gogs may crash if this value is not set properly.
 - `RUN_MODE`: For performance and other purposes, change this to `prod` when deployed to a production environment. The installation process will set this to `prod` automatically.
 
-## Repository
+## Repository (`repository`)
 
 - `ROOT`: Root path for storing all users' repository data. It has to be an absolute path, default is `~/<user name>/gogs-repositories`.
 - `SCRIPT_TYPE`: The script type your server supports, usually this is `bash`, but some customers report that they only have `sh`.
+- `PULL_REQUEST_QUEUE_LENGTH`:exclamation:: Length of pull request patch test queue, make it as large as possible.
 
-## Server
+## UI (`ui`)
+
+- `EXPLORE_PAGING_NUM`: Number of repositories that are showed in one explore page.
+- `ISSUE_PAGING_NUM`: Number of issues that are showed in one page (for all pages that list issues).
+- `FEED_MAX_COMMIT_NUM`: Number of maximum commits showed in one activity feed.
+
+### UI - Admin (`ui.admin`)
+
+- `USER_PAGING_NUM`: Number of users that are showed in one page.
+- `REPO_PAGING_NUM`: Number of repos that are showed in one page.
+- `NOTICE_PAGING_NUM`: Number of notices that are showed in one page.
+- `ORG_PAGING_NUM`: Number of organization that are showed in one page.
+
+## Markdown (`markdown`)
+
+- `ENABLE_HARD_LINE_BREAK`: Enable hard line break extension or not.
+
+## Server (`server`)
 
 - `PROTOCOL`: Either `http` or `https`.
 - `DOMAIN`: Domain name of your server.
@@ -39,7 +58,7 @@ All default settings can be found in [app.ini](https://github.com/gogits/gogs/bl
 - `ENABLE_GZIP`: Enable this to have application level GZIP support.
 - `LANDING_PAGE`: Non-logged-in users' landing page, either `home` or `explore`.
 
-## Database
+## Database (`database`)
 
 - `DB_TYPE`: The database type you choose, either `mysql`, `postgres` or `sqlite3`.
 - `HOST`: Database host address and port.
@@ -49,7 +68,7 @@ All default settings can be found in [app.ini](https://github.com/gogits/gogs/bl
 - `SSL_MODE`: For PostgreSQL only.
 - `PATH`: For SQLite3 only, the database file path.
 
-## Security
+## Security (`security`)
 
 - `INSTALL_LOCK`: Indicates whether to allow the open install page (setting admin account is involved, so it's a very important value).
 - `SECRET_KEY`: Global secret key for your server security, **you'd better change it** (will generate a random string every time you install).
@@ -58,7 +77,7 @@ All default settings can be found in [app.ini](https://github.com/gogits/gogs/bl
 - `COOKIE_REMEMBER_NAME`: Cookie name to save auto-login information.
 - `REVERSE_PROXY_AUTHENTICATION_USER`: Header name for reverse proxy authentication username.
 
-## Service
+## Service (`service`)
 
 - `ACTIVE_CODE_LIVE_MINUTES`: The minutes of active code life time.
 - `RESET_PASSWD_CODE_LIVE_MINUTES`: The minutes of reset password code life time.
@@ -72,13 +91,13 @@ All default settings can be found in [app.ini](https://github.com/gogits/gogs/bl
 - `ENABLE_REVERSE_PROXY_AUTO_REGISTRATION`: Enable this to allow auto-registration for reverse authentication.
 - `DISABLE_MINIMUM_KEY_SIZE_CHECK`: Do not check minimum key size with corresponding type.
 
-## Webhook
+## Webhook (`webhook`)
 
-- `QUEUE_LENGTH`: Hook task queue length.
+- `QUEUE_LENGTH`:exclamation:: Hook task queue length.
 - `DELIVER_TIMEOUT`: Delivery timeout in seconds for shooting webhooks.
 - `SKIP_TLS_VERIFY`: Indicate whether to allow insecure certification or not.
 
-## Mailer
+## Mailer (`mailer`)
 
 - `ENABLED`: Enable this to use a mail service.
 - `DISABLE_HELO`: Disable HELO operation.
@@ -89,11 +108,7 @@ All default settings can be found in [app.ini](https://github.com/gogits/gogs/bl
 - `PASSWD`: Password of mailer.
 - `SKIP_VERIFY`: Do not verify the self-signed certificates.
 
-## OAuth
-
-- `ENABLED`: General switch for OAuth, default value is "false".
-
-## Cache
+## Cache (`cache`)
 
 - `ADAPTER`: Cache engine adapter, either `memory`, `redis`, or `memcache`. If you want to use `redis` or `memcache`, be sure to rebuild everything with build tags `redis` or `memcache`: `go build -tags='redis'`.
 - `INTERVAL`: for memory cache only, GC interval in seconds.
@@ -101,40 +116,24 @@ All default settings can be found in [app.ini](https://github.com/gogits/gogs/bl
     - Redis: `network=tcp,addr=127.0.0.1:6379,password=macaron,db=0,pool_size=100,idle_timeout=180`
     - Memache: `127.0.0.1:9090;127.0.0.1:9091`
 
-## Session
+## Session (`session`)
 
 - `PROVIDER`: Session engine provider, either `memory`, `file`, `redis`, or `mysql`.
 - `PROVIDER_CONFIG`: For file, it's the root path; for others, it's the host address and port number.
 - `COOKIE_SECURE`: Enable this to force using HTTPS for all session access.
 - `GC_INTERVAL_TIME`: GC interval in seconds.
 
-## Picture
+## Picture (`picture`)
 
 - `GRAVATAR_SOURCE`: Can be `gravatar`, `duoshuo` or anything like `http://cn.gravatar.com/avatar/`.
 - `DISABLE_GRAVATAR`: Enable this to use local avatars only.
 
-## Log
+## Log (`log`)
 
 - `ROOT_PATH`: Root path for log files.
 - `MODE`: Logging mode, default is `console`. For multiple modes, use comma to separate it.
 - `LEVEL`: General log level, default is `Trace`.
 
-### log.console
-
-- `LEVEL`: Log level for console output. When no value is set, it is general log level.
-
-### log.file
-
-- `LEVEL`: Log level for file output. When no value is set, it is general log level.
-
-### log.conn
-
-- `LEVEL`: Log level for connection output. When no value is set, it is general log level.
-
-### log.smtp
-
-- `LEVEL`: Log level for smtp output. When no value is set, it is general log level.
-
-## Git
+## Git (`git`)
 
 - `MAX_GITDIFF_LINES`: Maxium show lines in diff page.
