@@ -13,7 +13,7 @@ sort: 1
 
 #### Improvements
 
-- Able to triggere mailer for admin created accounts [#1525](https://github.com/gogits/gogs/issues/1525)
+- Able to trigger mailer for admin created accounts [#1525](https://github.com/gogits/gogs/issues/1525)
 
 #### Others
 
