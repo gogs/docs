@@ -7,6 +7,10 @@ sort: 1
 
 ### v0.6.22（未发布）
 
+#### Bug 修复
+
+- 超大的文件差异对比导致内存溢出 [#1790](https://github.com/gogits/gogs/issues/1790)
+
 #### 功能改进
 
 - 管理员可以在后台创建用户的同时向其发送注册成功邮件 [#1525](https://github.com/gogits/gogs/issues/1525)
