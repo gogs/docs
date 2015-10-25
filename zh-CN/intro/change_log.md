@@ -9,11 +9,15 @@ sort: 1
 
 #### Bug 修复
 
-- 超大的文件差异对比导致内存溢出 [#1790](https://github.com/gogits/gogs/issues/1790)
+- 超大的文件差异（Diff）对比导致内存溢出 [#1790](https://github.com/gogits/gogs/issues/1790)
 
 #### 功能改进
 
 - 管理员可以在后台创建用户的同时向其发送注册成功邮件 [#1525](https://github.com/gogits/gogs/issues/1525)
+
+#### 新增特性
+
+- 支持合并请求（Pull Request） [#5](https://github.com/gogits/gogs/issues/5)
 
 #### 其它变更
 

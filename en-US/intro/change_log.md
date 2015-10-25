@@ -15,6 +15,10 @@ sort: 1
 
 - Able to trigger mailer for admin created accounts [#1525](https://github.com/gogits/gogs/issues/1525)
 
+#### Features
+
+- Support pull requests [#5](https://github.com/gogits/gogs/issues/5)
+
 #### Others
 
 - Drop Go 1.2.x support, minimum requirement of Go is 1.3
