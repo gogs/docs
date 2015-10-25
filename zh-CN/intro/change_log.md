@@ -1,6 +1,5 @@
 ---
 name: 变更日志
-sort: 1
 ---
 
 # 变更日志
@@ -19,6 +18,7 @@ sort: 1
 #### 新增特性
 
 - 支持合并请求（Pull Request） [#5](https://github.com/gogits/gogs/issues/5)
+- 新增配置选项 `[repository] FORCE_PRIVATE` 来强制要求所有新建仓库必须为私有的 [#1657](https://github.com/gogits/gogs/issues/1657)
 
 #### 其它变更
 

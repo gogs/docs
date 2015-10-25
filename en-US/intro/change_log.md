@@ -1,6 +1,5 @@
 ---
 name: Change Log
-sort: 1
 ---
 
 # Change Log
@@ -19,6 +18,7 @@ sort: 1
 #### Features
 
 - Support pull requests [#5](https://github.com/gogits/gogs/issues/5)
+- Add config option `[repository] FORCE_PRIVATE` that allows forcing all new repositories to be private [#1657](https://github.com/gogits/gogs/issues/1657)
 
 #### Others
 
