@@ -9,6 +9,7 @@ sort: 1
 
 #### Bug fixes
 
+- Wrong commits reference order on issue page [#1602](https://github.com/gogits/gogs/issues/1602)
 - Huge diff causes out of memory [#1790](https://github.com/gogits/gogs/issues/1790)
 
 #### Improvements
