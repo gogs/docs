@@ -8,6 +8,7 @@ name: 变更日志
 
 #### Bug 修复
 
+- 安装时管理员邮箱不允许使用 `root@localhost` [#470](https://github.com/gogits/gogs/issues/470)
 - 工单（Issue）浏览页面错误的代码提交（Commit）引用顺序 [#1602](https://github.com/gogits/gogs/issues/1602)
 - 超大的文件差异（Diff）对比导致内存溢出 [#1790](https://github.com/gogits/gogs/issues/1790)
 
