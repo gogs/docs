@@ -103,9 +103,10 @@ If you do not see error messages, hit `Ctrl-C` to stop Gogs.
 
 ### Build with SQLite3/Redis/Memcache
 
-If you need to enable SQLite3/Redis/Memcache, please delete directory `$GOPATH/pkg/{GOOS_GOARCH}/github.com/gogits/gogs` and do:
+If you need to enable SQLite3/Redis/Memcache, please delete directory `$GOPATH/pkg/${GOOS_GOARCH}/github.com/gogits/gogs` and do:
 
 ```bash
+$ get -x github.com/mattn/go-sqlite3
 $ go get -u -tags "sqlite redis memcache" github.com/gogits/gogs
 $ cd $GOPATH/src/github.com/gogits/gogs
 $ go build -tags "sqlite redis memcache"
