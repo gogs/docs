@@ -31,13 +31,13 @@ name: Donation
 
 ### Donation Lists (descending by donating time)
 
-| Donated at       | Donator    | Amount   | Comments               |
-| ---------------- |:---------:| --------:| ----------------------- |
-|  2015-10-13 | Mr. Grant | $50.00||
-|  2015-9-24 | Mr. Collantes | $20.00||
-|  2015-8-25 | Mr. Matthijssen | $10.00||
-|  2015-8-17 | Tsingson Photography Studio | $20.00||
-|  2015-2-22 | Mr. Rinke  | $20.00   |          |
-|  2014-12-31 | Mr. Nakatsui  | $20.00   |          |
-|  2014-10-13 | Mr. Tsang     | $50.00   |          |
-|  2014-5-31 | Mr. Fanningert     | $50.00   |          |
+| Donated at       | Donator    | Amount   |
+| ---------------- |:---------:| --------:|
+|  2015-10-13 | Mr. Grant | $50.00|
+|  2015-9-24 | Mr. Collantes | $20.00|
+|  2015-8-25 | Mr. Matthijssen | $10.00|
+|  2015-8-17 | Tsingson Photography Studio |
+|  2015-2-22 | Mr. Rinke  | $20.00   |
+|  2014-12-31 | Mr. Nakatsui  | $20.00   |
+|  2014-10-13 | Mr. Tsang     | $50.00   |
+|  2014-5-31 | Mr. Fanningert     | $50.00   |

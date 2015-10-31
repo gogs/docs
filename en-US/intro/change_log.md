@@ -10,6 +10,7 @@ name: Change Log
 
 - Admin e-mail does not allow `root@localhost` when install [#470](https://github.com/gogits/gogs/issues/470)
 - Wrong commits reference order on issue page [#1602](https://github.com/gogits/gogs/issues/1602)
+- Inconsistent link of e-mail URL after sign up [#1697](https://github.com/gogits/gogs/issues/1697)
 - Huge diff causes out of memory [#1790](https://github.com/gogits/gogs/issues/1790)
 
 #### Improvements
