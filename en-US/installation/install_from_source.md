@@ -10,7 +10,7 @@ sort: 2
 ### Overall
 
 - [Go Programming Language](http://golang.org): Version >= 1.3
-- [Git](http://git-scm.com): Version >= 1.7.1
+- [Git](http://git-scm.com): Version >= 1.7.2 # CentOS has 1.7.1 which will hang when pulling go pkg dependent
 
 We are going to create a new user called `git` and install/setup everything under that user:
 
@@ -103,9 +103,10 @@ If you do not see error messages, hit `Ctrl-C` to stop Gogs.
 
 ### Build with SQLite3/Redis/Memcache
 
-If you need to enable SQLite3/Redis/Memcache, please delete directory `$GOPATH/pkg/{GOOS_GOARCH}/github.com/gogits/gogs` and do:
+If you need to enable SQLite3/Redis/Memcache, please delete directory `$GOPATH/pkg/${GOOS}_${GOARCH}/github.com/gogits/gogs` and do:
 
 ```bash
+$ go get -u github.com/mattn/go-sqlite3 #  go-sqlite3 does not pull in automatically on CentOS 6.x
 $ go get -u -tags "sqlite redis memcache" github.com/gogits/gogs
 $ cd $GOPATH/src/github.com/gogits/gogs
 $ go build -tags "sqlite redis memcache"
