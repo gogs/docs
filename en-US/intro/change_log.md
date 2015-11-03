@@ -26,6 +26,7 @@ name: Change Log
 #### Others
 
 - Drop Go 1.2.x support, minimum requirement of Go is 1.3
+- 0.5.x will no longer be supported in 0.8
 
 ### v0.6.15
 
