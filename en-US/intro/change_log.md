@@ -4,7 +4,7 @@ name: Change Log
 
 # Change Log
 
-### v0.7.0 (unrelease)
+### v0.7.0 (unreleased)
 
 #### Bug fixes
 
@@ -15,6 +15,7 @@ name: Change Log
 
 #### Improvements
 
+- Detect file renames/moves in diffs [#1078](https://github.com/gogits/gogs/issues/1078)
 - Able to trigger mailer for admin created accounts [#1525](https://github.com/gogits/gogs/issues/1525)
 
 #### Features

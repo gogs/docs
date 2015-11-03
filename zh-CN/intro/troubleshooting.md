@@ -42,7 +42,7 @@ name: 故障排查
 - 错误描述：`cache: unknown adaptername "memcache" (forgotten import?)`
 - 可能原因：为了减少不必要的导入，您需要使用构建 tags 来启用某个缓存适配器。
 - 解决方案：
-	- 下载：`go get -tags memcache github.com/gogits.gogs`
+	- 下载：`go get -tags memcache github.com/gogits/gogs`
 	- 构建：`go build -tags memcache`
 	- 如果要启用 `redis` 也是一样的步骤。
 
@@ -92,6 +92,12 @@ fatal: Could not read from remote repository.
 
 - 可能原因：您在系统中安装了另一种命令行工具，并且与系统默认的 CMD 有不同路径风格。
 - 解决方案：请您尝试用默认的 CMD 启动 Gogs。
+
+-----
+
+- 错误描述：`Resource interpreted as Stylesheet but transferred with MIME type application/x-css`
+- 可能原因：Windows 注册表中错误的值
+- 解决方案：在注册表中找到 `HKEY_CLASSES_ROOT` 下的 `.css`，并将其 `Content Type` 的值修改为 `text/css`。
 
 ## 其它
 

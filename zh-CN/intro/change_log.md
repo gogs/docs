@@ -15,6 +15,7 @@ name: 变更日志
 
 #### 功能改进
 
+- 在文件对比差异中识别文件重命名和位置变更 [#1078](https://github.com/gogits/gogs/issues/1078)
 - 管理员可以在后台创建用户的同时向其发送注册成功邮件 [#1525](https://github.com/gogits/gogs/issues/1525)
 
 #### 新增特性
