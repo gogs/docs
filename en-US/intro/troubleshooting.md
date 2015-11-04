@@ -42,7 +42,7 @@ name: Troubleshooting
 - Error: `cache: unknown adaptername "memcache" (forgotten import?)`
 - Causes: To prevent unnecessary import of package, we use build tags to specify when needed
 - Solution:
-	- Download: `go get -tags memcache github.com/gogits.gogs`
+	- Download: `go get -tags memcache github.com/gogits/gogs`
 	- Build: `go build -tags memcache`
 	- Same steps for `redis` when you want it to be the cache adapter.
 
@@ -93,6 +93,12 @@ fatal: Could not read from remote repository.
 
 - Causes: you installed the another shell in system, and has different path style.
 - Solution: please try to start Gogs through default CMD.
+
+-----
+
+- Error: `Resource interpreted as Stylesheet but transferred with MIME type application/x-css`
+- Causes: wrong value in the Windows registry
+- Solution: Find `.css` in `HKEY_CLASSES_ROOT` in registry and change its `Content Type` to `text/css`.
 
 ## Other
 
