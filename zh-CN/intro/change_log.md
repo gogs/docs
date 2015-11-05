@@ -28,7 +28,7 @@ name: 变更日志
 - 停止对 Go 1.2 系列版本的支持，最低要求改为 Go 1.3 版本。
 - 0.5 系列版本将从 0.8 版本开始停止支持
 
-### v0.6.15
+### v0.6.15 @ 2015-09-26
 
 #### Bug 修复
 
@@ -56,7 +56,7 @@ name: 变更日志
 
 - 移除社交帐号登录支持
 
-### v0.6.9
+### v0.6.9 @ 2015-09-05
 
 #### Bug 修复
 
@@ -86,7 +86,7 @@ name: 变更日志
 - 修改 RSA 的最小允许长度为 1024 [#1519](https://github.com/gogits/gogs/pull/1519)
 - 修改邮箱地址的最大允许长度为 254 [#1579](https://github.com/gogits/gogs/pull/1579)
 
-### v0.6.5
+### v0.6.5 @ 2015-08-16
 
 #### Bug 修复
 
@@ -109,7 +109,7 @@ name: 变更日志
 - 禁用 Gravatar 时根据邮箱为用户生成随机头像
 - 增加对工单排序的功能
 
-### v0.6.3
+### v0.6.3 @ 2015-08-02
 
 #### Bug 修复
 
@@ -143,7 +143,7 @@ name: 变更日志
 - 在部署模式下禁用 Macaron 框架的彩色日志来提升性能
 - 在探索页面显示仓库所有者名称 [#1150](https://github.com/gogits/gogs/issues/1150)
 
-### v0.6.1
+### v0.6.1 @ 2015-03-26
 
 #### Bug 修复
 
@@ -169,7 +169,7 @@ name: 变更日志
 - 使用 `fake@gogs.local` 替换私有的邮箱地址作为默认的 Git `user.email` 设置 [#1089](https://github.com/gogits/gogs/issues/1089)
 - 部分页面的 UI 改进
 
-### v0.6.0
+### v0.6.0 @ 2015-03-19
 
 #### Bug 修复
 
@@ -198,7 +198,7 @@ name: 变更日志
 - 允许导入本地 Git 仓库 [#99](https://github.com/gogits/gogs/issues/99)
 - 支持绑定多个邮箱 [#755](https://github.com/gogits/gogs/pull/755)
 
-### v0.5.13 @ 2015-2-13
+### v0.5.13 @ 2015-02-13
 
 #### Bug 修复
 
@@ -232,112 +232,5 @@ name: 变更日志
 - 增加俄语和日语支持
 - 在对比模式下高亮选中代码 [@makhov](https://github.com/makhov)
 - 允许在通过 HTTP(S) 推送时使用应用密钥 [#842](https://github.com/gogits/gogs/issues/842)
-
-### v0.5.11 @ 2015-1-5
-
-#### Bug 修复
-
-- Git SubModule 导致 500 错误 [#741](https://github.com/gogits/gogs/issues/741)
-- 在用户个人首页显示私有仓库活动信息 [#751](https://github.com/gogits/gogs/issues/751)
-- 产生活动的用户不存在后导致 500 错误 [#754](https://github.com/gogits/gogs/issues/754)
-- 在组织邀请页面自动填入了自定义名称
-- 镜像仓库无法在 SQLite3 下工作  [#805](https://github.com/gogits/gogs/issues/805)
-- 渲染 Markdown 时产生错误的图片链接 [#808](https://github.com/gogits/gogs/issues/808)
-
-#### 功能改进
-
-- 允许忽略邮件发送验证，并当端口为 465 时自动使用 TLS 加密 [#761](https://github.com/gogits/gogs/pull/761)
-- 优化 git-fsck 配置选项 [#820](https://github.com/gogits/gogs/issues/820)
-
-#### 新增特性
-
-- 支持发送邮件时通过 CRAM-MD5 认证 [#762](https://github.com/gogits/gogs/pull/462)
-
-### v0.5.9 @ 2014-12-13
-
-#### Bug 修复
-
-- 管理面板无效的用户首页链接
-- 空仓库的设置页面出现模板渲染错误 [#643](https://github.com/gogits/gogs/issues/643)
-- 当 SSH 授权文件不存在时，命令 `gogs fix location` 会发生错误 [#659](https://github.com/gogits/gogs/issues/659)
-- 提交历史页面未显示最旧的历史页 [#664](https://github.com/gogits/gogs/issues/664)
-- 工单页面的用户主页链接失效 [#682](https://github.com/gogits/gogs/issues/682)
-- 头像邮箱地址包含大写字母时会产生错误的哈希值 [#700](https://github.com/gogits/gogs/issues/700)
-- Markdown 表格样式不正常 [#703](https://github.com/gogits/gogs/issues/703)
-- 在文件对比页面无法显示 GBK 编码字符 [#711](https://github.com/gogits/gogs/issues/711)
-- 当密码包含 `:` 时无法通过 HTTP 基本授权 [#723](https://github.com/gogits/gogs/issues/723)
-
-#### 功能改进
-
-- 在用户搜索 API 中显示 `full_name` 字段 [#677](https://github.com/gogits/gogs/issues/677)
-- 在提交历史中显示工单链接 [#712](https://github.com/gogits/gogs/issues/712)
-
-#### 新增特性
-
-- 支持上传自定义头像 [#139](https://github.com/gogits/gogs/issues/139)
-- 支持通过配置选项 `[server] LANDING_PAGE` 将探索页面设置为未登录用户的首页 [#543](https://github.com/gogits/gogs/issues/543)
-- 运行 `git fack` 作为定时任务、`git gc` 作为管理员操作 [#580](https://github.com/gogits/gogs/issues/580)
-- 支持通过 `/:username.keys` 获取用户的公钥列表 [#652](https://github.com/gogits/gogs/issues/652)
-- 增加拉脱维亚语支持
-
-### v0.5.8 @ 2014-11-19
-
-#### Bug 修复
-
-- 修复漏洞 CVE-2014-8681 CVE-2014-8682 CVE-2014-8683
-- 分支/标签名不能包含 `/` [#101](https://github.com/gogits/gogs/issues/101) [#255](https://github.com/gogits/gogs/issues/255)
-- 配置选项 `ENABLE_GZIP` 无效 [#412](https://github.com/gogits/gogs/issues/412)
-- 火狐下浏览代码行号与内容不对其 [#457](https://github.com/gogits/gogs/issues/457)
-- Git 钩子未过滤 `\r` 字符 [#546](https://github.com/gogits/gogs/issues/546)
-- 查看原始文件和文件历史按钮未显示 [#550](https://github.com/gogits/gogs/issues/550)
-- 几处 UI 对齐问题 [#554](https://github.com/gogits/gogs/issues/554)
-- 无法使用 Redis 作为缓存
-- 无法在 Markdown 文件中显示相对路径图片
-- 提交信息内容长度很大时 UI 被破坏 [#570](https://github.com/gogits/gogs/issues/570)
-- HTTP/HTTPS 克隆不支持 GZIP 编码 [#572](https://github.com/gogits/gogs/issues/572)
-- 在浏览自己的个人页面时无法查看私有仓库 [#605](https://github.com/gogits/gogs/issues/605)
-- 错误的 MIT 开源许可证文件 [#608](https://github.com/gogits/gogs/issues/608)
-
-#### 功能改进
-
-- 允许协作者在个人页面查看到私有仓库
-
-#### 新增特性
-
-- 允许派生仓库 [#5](https://github.com/gogits/gogs/issues/5)
-- Drone CI 持续部署集成 [#12](https://github.com/gogits/gogs/issues/12)
-- 能够查看 2 次提交的内容对比页面
-- 支持设置 `[picture] GRAVATAR_SOURCE = duoshuo` 来使用 Gravatar 的中国镜像源
-- 支持通过管理面板清除所有仓库存档 [#635](https://github.com/gogits/gogs/issues/635)
-
-### v0.5.5 @ 2014-10-10
-
-#### Bug 修复
-
-- 无法下载仓库存档 [#495](https://github.com/gogits/gogs/issues/495)
-- 无法根据标签（tag）浏览仓库代码
-- 无法将仓库从组织转移到个人用户
-- 当仓库所有者将仓库转移给协作者时发生错误
-- 不支持注解标签 [#515](https://github.com/gogits/gogs/issues/515)
-- 无效的授权认证逻辑
-
-#### 功能改进
-
-- 加强用户邮箱安全性 [#249](https://github.com/gogits/gogs/issues/249)
-- 修正行内代码 Markdown 风格 [#491](https://github.com/gogits/gogs/issues/491)
-- 在仓库列表视图中增加目录级别提交信息显示
-- 修改工单标题最大长度为 255 个字符 [#522](https://github.com/gogits/gogs/issues/522)
-- 允许通过自签名服务器发送邮件
-- 支持自定义本地化文件
-
-#### 新增特性
-
-- 增加 Git 钩子支持 [#264](https://github.com/gogits/gogs/issues/264)
-- 允许 Gogs 运行在反向代理的子路径下 [#463](https://github.com/gogits/gogs/pull/463)
-- 增加 `gogs cert` 命令用于生产自签名 HTTPS 的文件 [#487](https://github.com/gogits/gogs/issues/487)
-- 增加自定义 `robots.txt` 文件支持
-- 增加基本的 SubModule 支持
-- 增加法语、荷兰语和繁体中文支持
-- 在管理面板增加系统提示功能
 
 **更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases) 上找到。**

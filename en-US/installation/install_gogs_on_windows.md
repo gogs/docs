@@ -1,6 +1,5 @@
 ---
 name: On Windows
-sort: 6
 ---
 
 ## Binary install Gogs on Windows 7

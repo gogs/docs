@@ -1,13 +1,12 @@
 ---
 name: From packages
-sort: 3
 ---
 
 # Install from packages
 
 ### Packager.io
 
-- Currently enabled for Ubuntu 12.04/14.04, CentOS 6/7 and Debian 7/8.
+- Currently enabled for Ubuntu 12.04 + 14.04, CentOS 6 + 7 and Debian 7 + 8.
 - Current packages available from [packager.io](https://packager.io/gh/pkgr/gogs).
 
 ### Arch Linux

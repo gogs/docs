@@ -1,6 +1,5 @@
 ---
 name: 源码安装
-sort: 2
 ---
 
 # 源码安装
@@ -10,7 +9,6 @@ sort: 2
 ### 基本依赖
 
 - [Go 语言](http://golang.org)：版本 >= 1.3
-- [Git](http://git-scm.com)：版本 >= 1.7.1
 
 ### 第三方包
 
@@ -18,13 +16,13 @@ sort: 2
 
 ## 安装 Go 语言
 
-### 下载
-
 如果您的系统已经安装要求版本的 Go 语言，可以跳过此小节。
+
+### 下载
 
 您可以通过以下方式安装 Go 语言到 `/home/git/local/go` 目录：
 
-```bash
+```sh
 sudo su - git
 cd ~
 # create a folder to install 'go'
@@ -39,7 +37,7 @@ tar -C /home/git/local -xzf go$VERSION.$OS-$ARCH.tar.gz
 
 请设置和您系统环境对应的路径：
 
-```bash
+```sh
 sudo su - git
 cd ~
 echo 'export GOROOT=$HOME/local/go' >> $HOME/.bashrc
@@ -52,7 +50,7 @@ source $HOME/.bashrc
 
 常用的安装方式：
 
-```
+```sh
 # 下载并安装依赖
 $ go get -u github.com/gogits/gogs
 
@@ -63,7 +61,7 @@ $ go build
 
 如果您已经安装 gopm，则可以尝试使用以下方式安装：
 
-```
+```sh
 # 检查更新 Gopm
 $ gopm update -v
 
@@ -73,9 +71,9 @@ $ gopm bin -u -v gogs -d path/to/anywhere
 
 ### 构建 `develop` 分支版本
 
-如果您想要安装 `develop` 分支版本，则可以通过以下命令：
+如果您想要安装 `develop`（或其它）分支版本，则可以通过以下命令：
 
-```
+```sh
 $ mkdir -p $GOPATH/src/github.com/gogits
 $ cd $GOPATH/src/github.com/gogits
 
@@ -90,21 +88,30 @@ $ go build
 
 您可以通过以下方式检查 Gogs 是否可以正常工作：
 
-```
+```sh
 cd $GOPATH/src/github.com/gogits/gogs
 ./gogs web
 ```
 
 如果您没有发现任何错误信息，则可以使用 `Ctrl-C` 来终止运行。
 
-### 构建 SQLite3/Redis/Memcache 集成版
+### 使用标签构建
 
-如果您想要启动 SQLite3/Redis/Memcache 请先删除 `$GOPATH/pkg/{GOOS_GOARCH}/github.com/gogits/gogs` 目录，然后：
+Gogs 默认并没有支持一些功能，这些功能需要在构建时明确使用构建标签（[build tags](https://golang.org/pkg/go/build/#hdr-Build_Constraints)）来支持。
 
-```
-$ go get -u -tags "sqlite redis memecache" github.com/gogits/gogs
+目前使用标签构建的功能如下：
+
+- `sqlite3`/`tidb`：SQLite3/TiDB 数据库支持
+- `redis`/`memcache`：Redis/Memcache 缓存/会话 后端支持
+- `pam`：PAM 授权认证支持
+- `cert`：生成自定义证书支持
+
+例如，您需要支持以上所有功能，则需要先删除 `$GOPATH/pkg/{GOOS_GOARCH}/github.com/gogits/gogs` 目录，然后执行以下命令：
+
+```sh
+$ go get -u -tags "sqlite tidb redis memcache pam cert" github.com/gogits/gogs
 $ cd $GOPATH/src/github.com/gogits/gogs
-$ go build -tags "sqlite redis memecache"
+$ go build -tags "sqlite tidb redis memcache pam cert"
 ```
 
 安装完成后可继续参照 [配置与运行](configuration_and_run.md)。

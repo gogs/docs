@@ -1,5 +1,3 @@
 ---
-root: true
-name: 高级技巧
-sort: 3
+name: 高级用法
 ---

@@ -1,6 +1,5 @@
 ---
 name: Release notes and tips
-sort: 2
 ---
 
 # Release notes and tips

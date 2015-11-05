@@ -28,7 +28,7 @@ name: Change Log
 - Drop Go 1.2.x support, minimum requirement of Go is 1.3
 - 0.5.x will no longer be supported in 0.8
 
-### v0.6.15
+### v0.6.15 @ 2015-09-26
 
 #### Bug fixes
 
@@ -41,7 +41,7 @@ name: Change Log
 
 #### Improvements
 
-- Able to use `GOGS_WORK_DIR` environment variable to specify work directory 
+- Able to use `GOGS_WORK_DIR` environment variable to specify work directory
 - Enable login type conversion after account creation [#748](https://github.com/gogits/gogs/issues/748)
 - Sort owners list by last changed time when create and migrate repositoriy [#1585](https://github.com/gogits/gogs/issues/1585)
 
@@ -56,7 +56,7 @@ name: Change Log
 
 - Drop social account login support
 
-### v0.6.9
+### v0.6.9 @ 2015-09-05
 
 #### Bug fixes
 
@@ -86,7 +86,7 @@ name: Change Log
 - Change minimum size of RSA to 1024 [#1519](https://github.com/gogits/gogs/pull/1519)
 - Change maximum size of e-mail to 254 [#1579](https://github.com/gogits/gogs/pull/1579)
 
-### v0.6.5
+### v0.6.5 @ 2015-08-16
 
 #### Bug fixes
 
@@ -109,7 +109,7 @@ name: Change Log
 - Generate random avatar based on e-mail when disable Gravatar
 - Able to sort issues
 
-### v0.6.3
+### v0.6.3 @ 2015-08-02
 
 #### Bug fixes
 
@@ -143,7 +143,7 @@ name: Change Log
 - Disable Macaron color log in production mode to improve performance
 - Show repository owner name in explore page [#1150](https://github.com/gogits/gogs/issues/1150)
 
-### v0.6.1
+### v0.6.1 @ 2015-03-26
 
 #### Bug fixes
 
@@ -169,7 +169,7 @@ name: Change Log
 - Use `fake@gogs.local` as default Git `user.email` setting rather than private e-mail [#1089](https://github.com/gogits/gogs/issues/1089)
 - Improved UI for some pages.
 
-### v0.6.0
+### v0.6.0 @ 2015-03-19
 
 #### Bug fixes
 
@@ -198,7 +198,7 @@ name: Change Log
 - Able to import local Git repositories [#99](https://github.com/gogits/gogs/issues/99)
 - Allow multiple e-mail addresses [#755](https://github.com/gogits/gogs/pull/755)
 
-### v0.5.13 @ 2015-2-13
+### v0.5.13 @ 2015-02-13
 
 #### Bug fixes
 
@@ -232,112 +232,5 @@ name: Change Log
 - Add Russian and Japanese language support.
 - Highlighting selected code in diff view [@makhov](https://github.com/makhov)
 - Allow HTTP(S) Git actions using application token [#842](https://github.com/gogits/gogs/issues/842)
-
-### v0.5.11 @ 2015-1-5
-
-#### Bug fixes
-
-- Git SubModules result 500 error [#741](https://github.com/gogits/gogs/issues/741)
-- Showing activities for private repositories in user profile [#751](https://github.com/gogits/gogs/issues/751)
-- User who made activities no longer exists result 500 error [#754](https://github.com/gogits/gogs/issues/754)
-- Auto-input username in organization invite page includes full name
-- Mirror repository does not work with SQLite3 [#805](https://github.com/gogits/gogs/issues/805)
-- Wrong image address when rendering Markdown files [#808](https://github.com/gogits/gogs/issues/808)
-
-#### Improvements
-
-- Able to skip verification when send mails and use TLS when port is 465 [#761](https://github.com/gogits/gogs/pull/761)
-- Optmize git-fsck config options [#820](https://github.com/gogits/gogs/issues/820)
-
-#### Features
-
-- Able to send mails with CRAM-MD5 authentication [#762](https://github.com/gogits/gogs/pull/762)
-
-### v0.5.9 @ 2014-12-13
-
-#### Bug fixes
-
-- Invalid links to user profile page in admin panel
-- Templating error on settings page of bare repository [#643](https://github.com/gogits/gogs/issues/643)
-- Panic when no SSH authorized_keys file exists for command `gogs fix location` [#659](https://github.com/gogits/gogs/issues/659)
-- Commits list doesn't show the oldest page [#664](https://github.com/gogits/gogs/issues/664)
-- User home links in issue page no longer invalid [#682](https://github.com/gogits/gogs/issues/682)
-- Avatar email addresses with uppercase resolve to wrong Gravatar hash [#700](https://github.com/gogits/gogs/issues/700)
-- Markdown table requires padding [#703](https://github.com/gogits/gogs/issues/703)
-- Cannot display GBK content in diff page [#711](https://github.com/gogits/gogs/issues/711)
-- HTTP basic authentication failed when password contains `:` [#723](https://github.com/gogits/gogs/issues/723)
-
-#### Improvements
-
-- Expose `full_name` in user search API [#677](https://github.com/gogits/gogs/issues/677)
-- Added issue link rendering in commit messages [#712](https://github.com/gogits/gogs/issues/712)
-
-#### Features
-
-- Able to upload custom avatar [#139](https://github.com/gogits/gogs/issues/139)
-- Able to set explore page as non-logged users' landing page through config option `[server] LANDING_PAGE` [#543](https://github.com/gogits/gogs/issues/543)
-- Run `git fsck` as cron job and `git gc` as admin operation [#580](https://github.com/gogits/gogs/issues/580)
-- Able to view public key list of user by `/:username.keys` [#652](https://github.com/gogits/gogs/issues/652)
-- Add Latvian language support.
-
-### v0.5.8 @ 2014-11-19
-
-#### Bug fixes
-
-- Fix vulnerabilities CVE-2014-8681 CVE-2014-8682 CVE-2014-8683
-- Branch/tag name cannot contain `/` [#101](https://github.com/gogits/gogs/issues/101) [#255](https://github.com/gogits/gogs/issues/255)
-- `ENABLE_GZIP` options does not work [#412](https://github.com/gogits/gogs/issues/412)
-- Line numbers are misaligned on Firefox [#457](https://github.com/gogits/gogs/issues/457)
-- Git hook does't filter `\r` character [#546](https://github.com/gogits/gogs/issues/546)
-- File view raw and history buttons don't show [#550](https://github.com/gogits/gogs/issues/550)
-- Some small problems about the alignment [#554](https://github.com/gogits/gogs/issues/554)
-- Redis as cache adapter does not work
-- Cannot show relative path image in Markdown files
-- UI break when commit message is very long [#570](https://github.com/gogits/gogs/issues/570)
-- HTTP/HTTPS clone does not handle GZIP encoding [#572](https://github.com/gogits/gogs/issues/572)
-- Cannot see private repositories when view own profile page [#605](https://github.com/gogits/gogs/issues/605)
-- Wrong MIT LICENSE content file [#608](https://github.com/gogits/gogs/issues/608)
-
-#### Improvements
-
-- Allow collaborators to see private repositories in profile page
-
-#### Features
-
-- Able to fork repository [#5](https://github.com/gogits/gogs/issues/5)
-- Drone CI integration [#12](https://github.com/gogits/gogs/issues/12)
-- Able to view comparison page for 2 commits
-- Able to set `[picture] GRAVATAR_SOURCE = duoshuo` to use Chinese mirror of Gravatar
-- Able to delete all repositories archives through admin panel [#635](https://github.com/gogits/gogs/issues/635)
-
-### v0.5.5 @ 2014-10-10
-
-#### Bug fixes
-
-- Cannot download repository archive [#495](https://github.com/gogits/gogs/issues/495)
-- Cannot view repository by tag
-- Cannot transfer repository from organization to individual
-- Error occurs when owner transfers repository to its collaborator
-- Does not support annotated tag [#515](https://github.com/gogits/gogs/issues/515)
-- Broken authentication logic
-
-#### Improvements
-
-- Improve e-mail security [#249](https://github.com/gogits/gogs/issues/249)
-- Fix missing inline code Markdown style [#491](https://github.com/gogits/gogs/issues/491)
-- Add directory level commit message in repository list view
-- Change issue title length limitation to 255 characters [#522](https://github.com/gogits/gogs/issues/522)
-- Allow mail with self-signed certificates
-- Allow custom locale files
-
-#### Features
-
-- Add support for Git hooks [#264](https://github.com/gogits/gogs/issues/264)
-- Allow Gogs to run from a suburl behind a reverse proxy [#463](https://github.com/gogits/gogs/pull/463)
-- Add `gogs cert` command to generate files for self-signed HTTPS [#487](https://github.com/gogits/gogs/issues/487)
-- Add support for custom `robots.txt`
-- Add basic support for submodule
-- Add Franch, Dutch and Traditional Chinese languages.
-- Add system notices for admin.
 
 **Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases).**

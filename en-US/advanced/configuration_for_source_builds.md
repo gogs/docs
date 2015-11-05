@@ -1,6 +1,5 @@
 ---
 name: Detailed Config From Source
-sort: 4
 ---
 
 # Detailed Configuration For Source Builds

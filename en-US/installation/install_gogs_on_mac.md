@@ -1,6 +1,5 @@
 ---
 name: On Mac OS
-sort: 5
 ---
 
 ## Install Gogs on Mac OS X

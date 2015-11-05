@@ -1,6 +1,5 @@
 ---
 name: FAQs
-sort: 3
 ---
 
 # FAQs
@@ -32,7 +31,7 @@ server {
 
 ##### How do I set up a sub-URL with NGINX?
 
-In case you need to use a sub-path for your Gogs instance, you can change your NGINX configuration to the following 
+In case you need to use a sub-path for your Gogs instance, you can change your NGINX configuration to the following
 (note to the suffix `/`):
 
 ```
@@ -143,13 +142,13 @@ The first registered user with `ID = 1` is an administrator. No e-mail confirmat
 
 #### How do I give Git Hooks permission to users?
 
-This is **high-level a permission which can damage your system** which you must enable/disable in the admin user management panel (`/admin/users/:userid`). Only grant this permission to users who you really trust.
+This is a **high-level permission which can damage your system** which you must enable/disable in the admin user management panel (`/admin/users/:userid`). Only grant this permission to users who you really trust.
 
 ### Other
 
 #### How do I find the current version of Gogs?
 
-The current version of Gogs is written in plain text in the file `templates/VERSION`.
+The current version of Gogs is written in plain text in the file `templates/.VERSION`.
 
 #### What is the `gogs serv` command for?
 

@@ -1,26 +1,31 @@
 ---
-root: true
 name: Installation
-sort: 1
 ---
 
-## Requirements
+## Prerequisites
 
-- [MySQL](http://dev.mysql.com): Version >= 5.1 or [PostgreSQL](http://www.postgresql.org/) or **NOTHING**
-- [git](http://git-scm.com/)(bash): Version >= 1.7.1 (both server and client)
-- A functioning SSH server (**ignore this if you're only using HTTP/HTTPS**)
-    - Recommend [Cygwin OpenSSH](http://docs.oracle.com/cd/E24628_01/install.121/e22624/preinstall_req_cygwin_ssh.htm) or [Copssh](https://www.itefix.net/copssh) under Windows.
+- Database (choose one of following):
+    - [MySQL](http://dev.mysql.com): Version >= 5.1
+    - [PostgreSQL](http://www.postgresql.org/)
+    - or **NOTHING** with SQLite3 or TiDB (experimental)
+- [Git](http://git-scm.com/) (bash):
+    - Version >= 1.7.1 for both server and client sides
+    - Best to use latest version for Windows
+- A functioning SSH server:
+    - **Ignore this if you're only going to use HTTP/HTTPS**
+    - Recommend [Cygwin OpenSSH](http://docs.oracle.com/cd/E24628_01/install.121/e22624/preinstall_req_cygwin_ssh.htm) or [Copssh](https://www.itefix.net/copssh) for Windows.
 
 ### Install Database
 
-Gogs supports MySQL, PostgreSQL, and SQLite3. Based on your choice, install either one of them or skip this step:
+Gogs supports MySQL, PostgreSQL, SQLite3 and TiDB. Based on your choice, install either one of them or skip this step:
 
 - [MySQL](http://dev.mysql.com/downloads/mysql/) (Engine: INNODB)
 - [PostgreSQL](http://www.postgresql.org/download/)
 
-**REMEMBER** use `etc/mysql.sql` to create a database called `gogs` (default). If you create it manually, make sure the encoding is `utf8`.
+**REMEMBER** Please use `etc/mysql.sql` to create a database called `gogs` (default). If you create it manually, make sure the encoding is `utf8`.
 
 ### Install other requirements
+
 #### Max OS X
 
 Assume you've installed [Homebrew](http://brew.sh/) already:

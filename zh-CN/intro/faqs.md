@@ -1,6 +1,5 @@
 ---
 name: 常见问题
-sort: 3
 ---
 
 # 常见问题
@@ -142,7 +141,7 @@ Gogs 拥有一些由第三方提供的脚本来支持以守护进程形式运行
 
 #### 如何获取 Gogs 当前版本？
 
-纯文本形式的 Gogs 版本存储在文件 `templates/VERSION` 中。
+纯文本形式的 Gogs 版本存储在文件 `templates/.VERSION` 中。
 
 #### `gogs serv` 命令是做什么用的？
 

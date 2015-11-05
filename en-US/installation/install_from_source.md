@@ -1,6 +1,5 @@
 ---
 name: From source
-sort: 2
 ---
 
 # Install from source
@@ -10,11 +9,12 @@ sort: 2
 ### Overall
 
 - [Go Programming Language](http://golang.org): Version >= 1.3
-- [Git](http://git-scm.com): Version >= 1.7.1
 
 We are going to create a new user called `git` and install/setup everything under that user:
 
-`sudo adduser --disabled-login --gecos 'Gogs' git`
+```sh
+sudo adduser --disabled-login --gecos 'Gogs' git
+```
 
 ### Third-party Packages
 
@@ -22,13 +22,13 @@ If you're interested in which third-party packages we are using, see [gopmfile](
 
 ## Installing Go
 
-### Download
+If your system's Go matches the requirements, please skip this section.
 
-If your system's Go matches the requirements skip this section.
+### Download
 
 Install Go in `/home/git/local/go` so it wouldn't interfere with future updates of your system's package manager:
 
-```bash
+```sh
 sudo su - git
 cd ~
 # create a folder to install 'go'
@@ -43,7 +43,7 @@ tar -C /home/git/local -xzf go$VERSION.$OS-$ARCH.tar.gz
 
 Set the paths that correspond to your system:
 
-```bash
+```sh
 sudo su - git
 cd ~
 echo 'export GOROOT=$HOME/local/go' >> $HOME/.bashrc
@@ -56,7 +56,7 @@ source $HOME/.bashrc
 
 The general way to install Gogs:
 
-```bash
+```sh
 # Download and install dependencies
 $ go get -u github.com/gogits/gogs
 
@@ -67,7 +67,7 @@ $ go build
 
 If you have gopm available, you can try the following way to install Gogs:
 
-```bash
+```sh
 # Check update of gopm
 $ gopm update -v
 
@@ -77,9 +77,9 @@ $ gopm bin -u -v gogs -d path/to/anywhere
 
 ### Build from `develop` branch
 
-In case you want to try `develop` branch:
+In case you want to try `develop` (or any other) branch:
 
-```bash
+```sh
 $ mkdir -p $GOPATH/src/github.com/gogits
 $ cd $GOPATH/src/github.com/gogits
 
@@ -94,21 +94,30 @@ $ go build
 
 To make sure Gogs is working:
 
-```bash
+```sh
 cd $GOPATH/src/github.com/gogits/gogs
 ./gogs web
 ```
 
-If you do not see error messages, hit `Ctrl-C` to stop Gogs.
+If you do not see any error messages, hit `Ctrl-C` to stop Gogs.
 
-### Build with SQLite3/Redis/Memcache
+### Build with Tags
 
-If you need to enable SQLite3/Redis/Memcache, please delete directory `$GOPATH/pkg/{GOOS_GOARCH}/github.com/gogits/gogs` and do:
+A couple of things do not come with Gogs automatically, you need to compile Gogs with corresponding [build tags](https://golang.org/pkg/go/build/#hdr-Build_Constraints).
 
-```bash
-$ go get -u -tags "sqlite redis memcache" github.com/gogits/gogs
+Available build tags are:
+
+- `sqlite3`/`tidb`: SQLite3/TiDB database support
+- `redis`/`memcache`: Redis/Memcache cache/session backend support
+- `pam`: PAM authentication support
+- `cert`: Generate self-signed certificates support
+
+For example, you want to support all of them, first delete directory `$GOPATH/pkg/{GOOS_GOARCH}/github.com/gogits/gogs` and then do:
+
+```sh
+$ go get -u -tags "sqlite tidb redis memcache pam cert" github.com/gogits/gogs
 $ cd $GOPATH/src/github.com/gogits/gogs
-$ go build -tags "sqlite redis memcache"
+$ go build -tags "sqlite tidb redis memcache pam cert"
 ```
 
 ## Next steps

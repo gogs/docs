@@ -1,6 +1,5 @@
 ---
 name: Hacking on Gogs
-sort: 3
 ---
 
 # Hacking on Gogs

@@ -1,6 +1,5 @@
 ---
 name: Config and run
-sort: 7
 ---
 
 # Configuration and run
