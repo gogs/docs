@@ -18,6 +18,7 @@ name: Change Log
 
 - Detect file renames/moves in diffs [#1078](https://github.com/gogits/gogs/issues/1078)
 - Able to trigger mailer for admin created accounts [#1525](https://github.com/gogits/gogs/issues/1525)
+- Show clone URL with original cases [#1895](https://github.com/gogits/gogs/issues/1895)
 
 #### Features
 

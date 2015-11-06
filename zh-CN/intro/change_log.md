@@ -18,6 +18,7 @@ name: 变更日志
 
 - 在文件对比差异中识别文件重命名和位置变更 [#1078](https://github.com/gogits/gogs/issues/1078)
 - 管理员可以在后台创建用户的同时向其发送注册成功邮件 [#1525](https://github.com/gogits/gogs/issues/1525)
+- 克隆 URL 显示原本的大小写 [#1895](https://github.com/gogits/gogs/issues/1895)
 
 #### 新增特性
 
