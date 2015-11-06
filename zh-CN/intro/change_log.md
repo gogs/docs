@@ -11,6 +11,8 @@ name: 变更日志
 - 安装时管理员邮箱不允许使用 `root@localhost` [#470](https://github.com/gogits/gogs/issues/470)
 - 工单（Issue）浏览页面错误的代码提交（Commit）引用顺序 [#1602](https://github.com/gogits/gogs/issues/1602)
 - 注册成功后提示了不准确的邮箱登陆地址 [#1697](https://github.com/gogits/gogs/issues/1697)
+- 迁移仓库无法使用 `--all` 参数推送 [#1705](https://github.com/gogits/gogs/issues/1705)
+- 拥有管理员权限的团队成员无法关闭或重新开启工单（Issue）[#1748](https://github.com/gogits/gogs/issues/1748)
 - 超大的文件差异（Diff）对比导致内存溢出 [#1790](https://github.com/gogits/gogs/issues/1790)
 - 当没有实际可更新内容时，推送会返回错误消息 [#1896](https://github.com/gogits/gogs/issues/1896) 
 
