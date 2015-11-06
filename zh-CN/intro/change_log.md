@@ -12,6 +12,7 @@ name: 变更日志
 - 工单（Issue）浏览页面错误的代码提交（Commit）引用顺序 [#1602](https://github.com/gogits/gogs/issues/1602)
 - 注册成功后提示了不准确的邮箱登陆地址 [#1697](https://github.com/gogits/gogs/issues/1697)
 - 超大的文件差异（Diff）对比导致内存溢出 [#1790](https://github.com/gogits/gogs/issues/1790)
+- 当没有实际可更新内容时，推送会返回错误消息 [#1896](https://github.com/gogits/gogs/issues/1896) 
 
 #### 功能改进
 

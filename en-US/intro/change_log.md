@@ -12,6 +12,7 @@ name: Change Log
 - Wrong commits reference order on issue page [#1602](https://github.com/gogits/gogs/issues/1602)
 - Inconsistent link of e-mail URL after sign up [#1697](https://github.com/gogits/gogs/issues/1697)
 - Huge diff causes out of memory [#1790](https://github.com/gogits/gogs/issues/1790)
+- Push returns fail message when no actual update needed [#1896](https://github.com/gogits/gogs/issues/1896) 
 
 #### Improvements
 
