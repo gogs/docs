@@ -15,6 +15,7 @@ name: Change Log
 - Members of team has admin access can't close/reopen issues [#1748](https://github.com/gogits/gogs/issues/1748)
 - Huge diff causes out of memory [#1790](https://github.com/gogits/gogs/issues/1790)
 - Push returns fail message when no actual update needed [#1896](https://github.com/gogits/gogs/issues/1896) 
+- Wrong image link is rendered for relative links [#1904](https://github.com/gogits/gogs/issues/1904) 
 
 #### Improvements
 

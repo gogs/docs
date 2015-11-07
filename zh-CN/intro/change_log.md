@@ -15,6 +15,7 @@ name: 变更日志
 - 拥有管理员权限的团队成员无法关闭或重新开启工单（Issue）[#1748](https://github.com/gogits/gogs/issues/1748)
 - 超大的文件差异（Diff）对比导致内存溢出 [#1790](https://github.com/gogits/gogs/issues/1790)
 - 当没有实际可更新内容时，推送会返回错误消息 [#1896](https://github.com/gogits/gogs/issues/1896) 
+- 使用相对路径的图片生成错误的超链接 [#1904](https://github.com/gogits/gogs/issues/1904) 
 
 #### 功能改进
 
