@@ -4,7 +4,7 @@ name: 变更日志
 
 # 变更日志
 
-### v0.7.0（未发布）
+### v0.7.0 @ 2015-11-08
 
 #### Bug 修复
 
@@ -20,6 +20,7 @@ name: 变更日志
 #### 功能改进
 
 - 在文件对比差异中识别文件重命名和位置变更 [#1078](https://github.com/gogits/gogs/issues/1078)
+- 控制面板的工单（Issue）增加排序功能 [#1459](https://github.com/gogits/gogs/issues/1459)
 - 只允许管理员或授权用户迁移本地仓库 [#1511](https://github.com/gogits/gogs/issues/1511)
 - 管理员可以在后台创建用户的同时向其发送注册成功邮件 [#1525](https://github.com/gogits/gogs/issues/1525)
 - 克隆 URL 显示原本的大小写 [#1895](https://github.com/gogits/gogs/issues/1895)
@@ -27,6 +28,7 @@ name: 变更日志
 #### 新增特性
 
 - 支持合并请求（Pull Request） [#5](https://github.com/gogits/gogs/issues/5)
+- 支持自动为图片渲染可单击的链接 [#1433](https://github.com/gogits/gogs/issues/1433)
 - 新增配置选项 `[repository] FORCE_PRIVATE` 来强制要求所有新建仓库必须为私有的 [#1657](https://github.com/gogits/gogs/issues/1657)
 
 #### 其它变更

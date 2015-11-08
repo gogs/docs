@@ -4,7 +4,7 @@ name: Change Log
 
 # Change Log
 
-### v0.7.0 (unreleased)
+### v0.7.0 @ 2015-11-08
 
 #### Bug fixes
 
@@ -20,6 +20,7 @@ name: Change Log
 #### Improvements
 
 - Detect file renames/moves in diffs [#1078](https://github.com/gogits/gogs/issues/1078)
+- Dashboard issues add sorting [#1459](https://github.com/gogits/gogs/issues/1459)
 - Allow import local repositories only for admin or permitted users [#1511](https://github.com/gogits/gogs/issues/1511)
 - Able to trigger mailer for admin created accounts [#1525](https://github.com/gogits/gogs/issues/1525)
 - Show clone URL with original cases [#1895](https://github.com/gogits/gogs/issues/1895)
@@ -27,6 +28,7 @@ name: Change Log
 #### Features
 
 - Support pull requests [#5](https://github.com/gogits/gogs/issues/5)
+- Auto-render clickable links for images [#1433](https://github.com/gogits/gogs/issues/1433)
 - Add config option `[repository] FORCE_PRIVATE` that allows forcing all new repositories to be private [#1657](https://github.com/gogits/gogs/issues/1657)
 
 #### Others
