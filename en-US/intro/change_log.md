@@ -4,6 +4,12 @@ name: Change Log
 
 # Change Log
 
+### v0.7.x (Unreleased)
+
+#### Bug fixes
+
+- Images in subdirectory does not have correct relative links [#1904](https://github.com/gogits/gogs/issues/1904) 
+
 ### v0.7.0 @ 2015-11-08
 
 #### Bug fixes
