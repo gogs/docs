@@ -10,6 +10,11 @@ name: 故障排查
 - 可能原因：Go 语言的 RHEL/CentOS 官方发行版中因专利问题移除了相关加密算法的代码
 - 解决方案：从 [golang.org/dl](http://golang.org/dl) 下载安装 Go 语言
 
+## SSH
+
+- 错误描述：SSH 链接挂起 60 秒
+- 可能原因：Gogs 会在每次 SSH Push 完成之后请求自身的 Web 服务，您的防火墙或服务器提供商未允许该操作
+
 ## Git
 
 - 错误描述：`bash /path/to/gogs: no such file or directory`

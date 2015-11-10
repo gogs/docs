@@ -10,6 +10,11 @@ name: Troubleshooting
 - Causes: golang package in RHEL/CentOS does not support Elliptic Curve cryptography (because it's patented) and it's specifically removed from CentOS/RHEL.
 - Solution: download and install Go from [golang.org/dl](http://golang.org/dl).
 
+## SSH
+
+- Error: SSH conection hangs for 60 seconds
+- Causes: Gogs will request itself (web service) after every SSH push, and your server firewall or ISP does not allow that happen
+
 ## Git
 
 - Error: `bash /path/to/gogs: no such file or directory`
