@@ -11,6 +11,10 @@ name: 变更日志
 - 子目录下的图片不能正确渲染相对链接 [#1904](https://github.com/gogits/gogs/issues/1904)
 - SSH 操作无法处理大小写混合的 URL
 
+#### 新增特性
+
+- 允许使用配置选项 `[server] START_SSH_SERVER = true` 来启动内置 SSH 服务器
+
 ### v0.7.0 @ 2015-11-08
 
 #### Bug 修复
