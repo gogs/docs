@@ -66,4 +66,4 @@ name: 二进制安装
 2. 删除当前的 `templates` 目录。
 3. 解压压缩包并将所有内容复制粘贴到相应（当前）的位置。
 
-安装完成后可继续参照 [配置与运行](configuration_and_run.md)。
+安装完成后可继续参照 [配置与运行](configuration_and_run.html)。
