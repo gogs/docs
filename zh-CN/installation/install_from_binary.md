@@ -12,13 +12,13 @@ name: 二进制安装
 
 |系统名称|系统类型|SQLite|TiDB|PAM|下载|
 |------|----|------|----|---|--------|
-|Linux|386|✅|❌|✅|CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.0_linux_386.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.0_linux_386.tar.gz) - [GitHub](https://github.com/gogits/gogs/releases/tag/v0.7.0)|
-|Linux|amd64|✅|✅|✅|CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.0_linux_amd64.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.0_linux_amd64.tar.gz) - [GitHub](https://github.com/gogits/gogs/releases/tag/v0.7.0)|
-|Linux|arm|❌|✅|❌|CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.0_linux_arm.zip) - [GitHub](https://github.com/gogits/gogs/releases/tag/v0.7.0)|
-|Raspberry Pi|v2|✅|✅|✅|CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.0_raspi2.zip) - [GitHub](https://github.com/gogits/gogs/releases/tag/v0.7.0)|
-|Windows|386|❌|✅|❌|[CDN](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.0_windows_386.zip) - [GitHub](https://github.com/gogits/gogs/releases/tag/v0.7.0)|
-|Windows|amd64|✅|✅|❌|[CDN](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.0_windows_amd64.zip) - [GitHub](https://github.com/gogits/gogs/releases/tag/v0.7.0)|
-|Mac OS|amd64|✅|✅|❌|[CDN](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.0_darwin_amd64.zip) - [GitHub](https://github.com/gogits/gogs/releases/tag/v0.7.0)|
+|Linux|386|✅|❌|✅|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.7.0_linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/gogs_v0.7.0_linux_386.tar.gz) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.0_linux_386.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.0_linux_386.tar.gz)|
+|Linux|amd64|✅|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.7.0_linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/gogs_v0.7.0_linux_amd64.tar.gz) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.0_linux_amd64.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.0_linux_amd64.tar.gz)|
+|Linux|arm|❌|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.7.0_linux_arm.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.0_linux_arm.zip)|
+|Raspberry Pi|v2|✅|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.7.0_raspi2.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.0_raspi2.zip)|
+|Windows|386|❌|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.7.0_windows_386.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.0_windows_386.zip)|
+|Windows|amd64|✅|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.7.0_windows_amd64.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.0_windows_amd64.zip)|
+|Mac OS|amd64|✅|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.7.0_darwin_amd64.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.0_darwin_amd64.zip)|
 
 ### v0.6.15 @ 2015-09-26
 
