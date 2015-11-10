@@ -11,6 +11,10 @@ name: Change Log
 - Images in subdirectory does not have correct relative links [#1904](https://github.com/gogits/gogs/issues/1904) 
 - SSH operations do not handle mixed cases URL
 
+#### Improvements
+
+- Show current branch in commit overview [#1572](https://github.com/gogits/gogs/issues/1572) 
+
 #### Features
 
 - Able to start builtin SSH server by config option `[server] START_SSH_SERVER = true`
