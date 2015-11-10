@@ -9,6 +9,7 @@ name: Change Log
 #### Bug fixes
 
 - Images in subdirectory does not have correct relative links [#1904](https://github.com/gogits/gogs/issues/1904) 
+- SSH operations do not handle mixed cases URL
 
 ### v0.7.0 @ 2015-11-08
 
