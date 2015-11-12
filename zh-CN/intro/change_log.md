@@ -4,16 +4,18 @@ name: 变更日志
 
 # 变更日志
 
-### v0.7.x（未发布）
+### v0.7.6 @ 2015-11-12
 
 #### Bug 修复
 
 - 子目录下的图片不能正确渲染相对链接 [#1904](https://github.com/gogits/gogs/issues/1904)
 - SSH 操作无法处理大小写混合的 URL
+- 使用子路径时删除系统提示后重定向至错误的 URL [#1930](https://github.com/gogits/gogs/issues/1930) 
 
 #### 功能改进
 
 - 在代码提交历史页面显示当前历史所属的分支 [#1572](https://github.com/gogits/gogs/issues/1572) 
+- 允许在工单页面使用 Tab 键移动焦点至按钮并使用 `Enter` 或空格触发单击事件 [#1824](https://github.com/gogits/gogs/issues/1824) [#1917](https://github.com/gogits/gogs/issues/1917) 
 
 #### 新增特性
 

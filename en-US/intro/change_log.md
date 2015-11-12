@@ -4,16 +4,18 @@ name: Change Log
 
 # Change Log
 
-### v0.7.x (Unreleased)
+### v0.7.6 @ 2015-11-12
 
 #### Bug fixes
 
 - Images in subdirectory does not have correct relative links [#1904](https://github.com/gogits/gogs/issues/1904) 
 - SSH operations do not handle mixed cases URL
+- Wrong redirection after deleting system notice with sub-path [#1930](https://github.com/gogits/gogs/issues/1930) 
 
 #### Improvements
 
 - Show current branch in commit overview [#1572](https://github.com/gogits/gogs/issues/1572) 
+- Allow tab to button in issue view page and use `enter` or space bar to trigger click [#1824](https://github.com/gogits/gogs/issues/1824) [#1917](https://github.com/gogits/gogs/issues/1917) 
 
 #### Features
 
