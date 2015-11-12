@@ -127,3 +127,8 @@ fatal: Could not read from remote repository.
 - Error: `[Macaron] PANIC: session(start): mkdir data: permission denied`
 - Causes: Gogs creates `data` subdirectory at the same directory where Gogs binary is located.
 - Solution: make sure Gogs has permission to create subdirectory at that directory.
+
+-----
+- Error: `! [remote rejected] master -> master (hook declined)`
+- Causes: Git fails to execute the update script for some reason.
+- Solution: make sure you have the `bash` shell available in your system, all the hook scripts needs it.
