@@ -31,7 +31,7 @@ name: Troubleshooting
 
 -----
 
-- Error: `repo.NewRepoContext(fail to set git user.emil):`
+- Error: `repo.NewRepoContext(fail to set git user.email):`
 - Causes: it happens when Windows users install Git Bash without enabling the `cmd` option
 - Solution: reinstall and enable `cmd` option.
 
