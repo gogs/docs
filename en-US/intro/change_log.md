@@ -4,6 +4,12 @@ name: Change Log
 
 # Change Log
 
+### v0.7.x (unreleased)
+
+#### Improvements
+
+- Show issue title for comment news feeds [#1854](https://github.com/gogits/gogs/issues/1854) 
+
 ### v0.7.6 @ 2015-11-12
 
 #### Bug fixes
