@@ -8,7 +8,9 @@ name: Change Log
 
 #### Improvements
 
-- Show issue title for comment news feeds [#1854](https://github.com/gogits/gogs/issues/1854) 
+- Sort collaborative repositories by last updated time in dashboard [#1302](https://github.com/gogits/gogs/issues/1302) 
+- Show issue title and content in news feeds [#1854](https://github.com/gogits/gogs/issues/1854) 
+- Show custom avatar for pushed commits list in news feeds
 
 ### v0.7.6 @ 2015-11-12
 

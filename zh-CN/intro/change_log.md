@@ -8,7 +8,9 @@ name: 变更日志
 
 #### 功能改进
 
-- 评论工单（Issue）的活动线显示工单的标题 [#1854](https://github.com/gogits/gogs/issues/1854) 
+- 控制面板的协作仓库根据最后更新时间排序 [#1302](https://github.com/gogits/gogs/issues/1302) 
+- 在活动线显示工单（Issue）的标题和内容 [#1854](https://github.com/gogits/gogs/issues/1854) 
+- 在活动线的推送代码列表中显示可用的自定义头像
 
 ### v0.7.6 @ 2015-11-12
 
