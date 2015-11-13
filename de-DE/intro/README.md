@@ -8,7 +8,7 @@ Gogs (Go Git Service) ist ein einfacher selbst-gehosteter Git Service.
 
 ## Grund
 
-Das Ziel dieses Projektes ist es, einen einfachen, schnellen und in der Regel schmerzfreien Weg zu schaffen, einen selbst-gehosteten Git Service einzurichten. Mit Go kann das mit einer unabhängigen Programmstruktur auf **ALLEN Platformen** getan werden, die Go unterstützt. Dazu zählen Linux, Mac OS X, Windows und ARM.
+Das Ziel dieses Projektes ist es, einen einfachen, schnellen und in der Regel schmerzfreien Weg zu schaffen, einen selbst-gehosteten Git Service einzurichten. Mit Go kann das mit einer unabhängigen Programmstruktur auf **ALLEN Plattformen** getan werden, die Go unterstützt. Dazu zählen Linux, Mac OS X, Windows und ARM.
 
 ## Open Source Komponenten
 
