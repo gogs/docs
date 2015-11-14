@@ -4,15 +4,16 @@ name: Introduction
 sort: 0
 ---
 
-# Qu'es ce que Gogs?
+# Qu'est-ce que Gogs ?
 
-Gogs (Go Git Service) est une service git auto-hébergé sans douleur écrit en Go.
+Gogs (Go Git Service) est une solution Git auto-hébergée garantie sans prise de tête et écrite en Go.
 
 ## Objectif
 
-Le but de ce projet est de rendre le plus facile, plus rapide et la moins douloureuse pour mettre en place un service Git auto-hébergé. Avec Go, cela peut être fait dans une distribution binaire indépendante à travers **toutes les plates-formes** qui prend en charge Go, notamment Linux, Mac OS X, et Windows.
+Le but de ce projet est de rendre la mise en place d'une solution Git auto-hébergée simple, rapide et sans prise de tête.
+Avec Go, cela peut être fait avec une distribution binaire indépendante à travers **TOUTES les plates-formes** qui supportent ce langage, notamment Linux, Mac OS X, Windows, ainsi que ARM.
 
-## Conditions de base
+## Ressources utilisées
 
 - Web Framework : [Macaron](https://github.com/Unknwon/macaron)
 - UI Framework : [Semantic UI](http://semantic-ui.com/) + [GitHub Octicons](https://octicons.github.com/) + [Font Awesome](http://fontawesome.io/)
