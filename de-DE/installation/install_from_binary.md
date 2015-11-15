@@ -58,7 +58,7 @@ Alle Downlodas haben **MySQL** und **PostgreeSQL** Unterstützung und wurden mit
 |Windows|amd64|✅|❌|❌|[CDN](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.6.5_windows_amd64.zip) - [GitHub](https://github.com/gogits/gogs/releases/tag/v0.6.5)|
 |Mac OS|amd64|✅|❌|❌|[CDN](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.6.5_darwin_amd64.zip) - [GitHub](https://github.com/gogits/gogs/releases/tag/v0.6.5)|
 
-## Wie benutze ich die Downloads?\
+## Wie benutze ich die Downloads?
 
 1. Entpacke das Archiv
 2. `cd` in das eben angelegte Verzeichnis.
