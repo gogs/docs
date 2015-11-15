@@ -112,7 +112,7 @@ Available build tags are:
 - `pam`: PAM authentication support
 - `cert`: Generate self-signed certificates support
 
-For example, you want to support all of them, first delete directory `$GOPATH/pkg/{GOOS_GOARCH}/github.com/gogits/gogs` and then do:
+For example, you want to support all of them, first delete directory `$GOPATH/pkg/${GOOS}_${GOARCH}/github.com/gogits/gogs` and then do:
 
 ```sh
 $ go get -u -tags "sqlite tidb redis memcache pam cert" github.com/gogits/gogs
