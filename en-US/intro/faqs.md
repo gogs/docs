@@ -100,7 +100,7 @@ CERT_FILE = custom/https/unified.cert
 KEY_FILE = custom/https/decryped-private.key
 ```
 
-If you want to use self-signed HTTPS, you can execute the following command to generate a certificate and key files:
+If you want to use self-signed HTTPS, you can execute the following command to generate a certificate and key files (make sure you use `cert` build tag or download the official binary):
 
 	$ ./gogs cert -ca=true -duration=8760h0m0s -host=myhost.example.com
 

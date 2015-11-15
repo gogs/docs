@@ -6,6 +6,10 @@ name: 变更日志
 
 ### v0.7.x（未发布）
 
+#### Bug 修复
+
+- 分支和标签选择列表的 z-index 值错误 [#1942](https://github.com/gogits/gogs/issues/1942) 
+
 #### 功能改进
 
 - 控制面板的协作仓库根据最后更新时间排序 [#1302](https://github.com/gogits/gogs/issues/1302) 

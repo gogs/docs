@@ -6,6 +6,10 @@ name: Change Log
 
 ### v0.7.x (unreleased)
 
+#### Bug fixes
+
+- Branch/tag selection has wrong z-index [#1942](https://github.com/gogits/gogs/issues/1942) 
+
 #### Improvements
 
 - Sort collaborative repositories by last updated time in dashboard [#1302](https://github.com/gogits/gogs/issues/1302) 

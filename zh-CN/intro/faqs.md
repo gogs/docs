@@ -91,7 +91,7 @@ CERT_FILE = custom/https/cert.pem
 KEY_FILE = custom/https/key.pem
 ```
 
-如果您想要使用自签名的 HTTPS，则可以使用下列命令来生成所需文件：
+如果您想要使用自签名的 HTTPS，则可以使用下列命令来生成所需文件（需要使用构建标签 `cert` 或直接从官方下载二进制）：
 
 	$ ./gogs cert -ca=true -duration=8760h0m0s -host=myhost.example.com
 
