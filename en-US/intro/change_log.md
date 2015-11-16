@@ -8,6 +8,7 @@ name: Change Log
 
 #### Bug fixes
 
+- Bad syntax highlighting [#670](https://github.com/gogits/gogs/issues/670) [#1315](https://github.com/gogits/gogs/issues/1315) [#1549](https://github.com/gogits/gogs/issues/1549) [#1712](https://github.com/gogits/gogs/issues/1712)
 - Broken copy link button [#1168](https://github.com/gogits/gogs/issues/1168)  [#1396](https://github.com/gogits/gogs/issues/1396) 
 - Broken download archive UI [#1668](https://github.com/gogits/gogs/issues/1668)
 - Test patch does not checkout correct base branch [#1931](https://github.com/gogits/gogs/issues/1931) 

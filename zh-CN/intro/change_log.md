@@ -8,6 +8,7 @@ name: 变更日志
 
 #### Bug 修复
 
+- 坑爹的代码高亮 [#670](https://github.com/gogits/gogs/issues/670) [#1315](https://github.com/gogits/gogs/issues/1315) [#1549](https://github.com/gogits/gogs/issues/1549) [#1712](https://github.com/gogits/gogs/issues/1712)
 - 坑爹的复制链接按钮 [#1168](https://github.com/gogits/gogs/issues/1168) [#1396](https://github.com/gogits/gogs/issues/1396) 
 - 坑爹的下载源码 UI [#1668](https://github.com/gogits/gogs/issues/1668)
 - 测试补丁（Patch）时未检出正确的基准分支 [#1931](https://github.com/gogits/gogs/issues/1931) 
