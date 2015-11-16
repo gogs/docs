@@ -100,7 +100,7 @@ CERT_FILE = custom/https/zertifikat.cert
 KEY_FILE = custom/https/privater-schluessel.key
 ```
 
-Wenn du ein selbst-signiertes Zertifikat benutzen möchtest, kannst du das folgende Kommando ausführen, um die Zertifikats- und Schlüssel-Dateien zu erzeugen:
+Wenn du ein selbst-signiertes Zertifikat benutzen möchtest, kannst du das folgende Kommando ausführen, um die Zertifikats- und Schlüssel-Dateien zu erzeugen (stelle sicher, dass du das Programm mit dem Build-Tag `cert` kompilierst oder das offizielle Programm verwendest):
 
 	$ ./gogs cert -ca=true -duration=8760h0m0s -host=myhost.example.com
 
