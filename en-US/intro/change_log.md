@@ -8,7 +8,11 @@ name: Change Log
 
 #### Bug fixes
 
+- Broken copy link button [#1168](https://github.com/gogits/gogs/issues/1168)  [#1396](https://github.com/gogits/gogs/issues/1396) 
+- Broken download archive UI [#1668](https://github.com/gogits/gogs/issues/1668)
+- Test patch does not checkout correct base branch [#1931](https://github.com/gogits/gogs/issues/1931) 
 - Branch/tag selection has wrong z-index [#1942](https://github.com/gogits/gogs/issues/1942) 
+- Huge image does not display correctly in file view
 
 #### Improvements
 

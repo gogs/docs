@@ -8,7 +8,11 @@ name: 变更日志
 
 #### Bug 修复
 
+- 坑爹的复制链接按钮 [#1168](https://github.com/gogits/gogs/issues/1168) [#1396](https://github.com/gogits/gogs/issues/1396) 
+- 坑爹的下载源码 UI [#1668](https://github.com/gogits/gogs/issues/1668)
+- 测试补丁（Patch）时未检出正确的基准分支 [#1931](https://github.com/gogits/gogs/issues/1931) 
 - 分支和标签选择列表的 z-index 值错误 [#1942](https://github.com/gogits/gogs/issues/1942) 
+- 文件内容浏览页面无法正确显示巨型图片
 
 #### 功能改进
 
