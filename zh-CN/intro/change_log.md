@@ -14,12 +14,16 @@ name: 变更日志
 - 测试补丁（Patch）时未检出正确的基准分支 [#1931](https://github.com/gogits/gogs/issues/1931) 
 - 分支和标签选择列表的 z-index 值错误 [#1942](https://github.com/gogits/gogs/issues/1942) 
 - 文件内容浏览页面无法正确显示巨型图片
+- 管理员创建的帐户注册通知邮件中未提供登录 URL [#1979](https://github.com/gogits/gogs/issues/1979) 
+- 仓库描述在派生完成之后未真正同步 [#1981](https://github.com/gogits/gogs/issues/1981) 
+- 派生仓库在修改设置时会自动修改可见性 [#1987](https://github.com/gogits/gogs/issues/1987) 
 
 #### 功能改进
 
 - 控制面板的协作仓库根据最后更新时间排序 [#1302](https://github.com/gogits/gogs/issues/1302) 
 - 在活动线显示工单（Issue）的标题和内容 [#1854](https://github.com/gogits/gogs/issues/1854) 
 - 在活动线的推送代码列表中显示可用的自定义头像
+- 允许使用配置选项 `[other] SHOW_FOOTER_VERSION = true` 来禁止在非管理员页面的页脚显示版本信息 [#1957](https://github.com/gogits/gogs/issues/1957) 
 
 ### v0.7.6 @ 2015-11-12
 

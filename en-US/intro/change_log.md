@@ -14,12 +14,16 @@ name: Change Log
 - Test patch does not checkout correct base branch [#1931](https://github.com/gogits/gogs/issues/1931) 
 - Branch/tag selection has wrong z-index [#1942](https://github.com/gogits/gogs/issues/1942) 
 - Huge image does not display correctly in file view
+- No links in email for admin created account [#1979](https://github.com/gogits/gogs/issues/1979) 
+- Repository description is not copied after forked [#1981](https://github.com/gogits/gogs/issues/1981) 
+- Forked repository's visibility is changed itself when update settings [#1987](https://github.com/gogits/gogs/issues/1987) 
 
 #### Improvements
 
 - Sort collaborative repositories by last updated time in dashboard [#1302](https://github.com/gogits/gogs/issues/1302) 
 - Show issue title and content in news feeds [#1854](https://github.com/gogits/gogs/issues/1854) 
 - Show custom avatar for pushed commits list in news feeds
+- Able to use config option `[other] SHOW_FOOTER_VERSION = true` disable version display on non-admin pages' footer [#1957](https://github.com/gogits/gogs/issues/1957) 
 
 ### v0.7.6 @ 2015-11-12
 
