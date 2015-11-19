@@ -25,6 +25,10 @@ name: 变更日志
 - 在活动线的推送代码列表中显示可用的自定义头像
 - 允许使用配置选项 `[other] SHOW_FOOTER_VERSION = true` 来禁止在非管理员页面的页脚显示版本信息 [#1957](https://github.com/gogits/gogs/issues/1957) 
 
+#### 新增特性
+
+- 管理员允许浏览和修改私有仓库的设置 [#493](https://github.com/gogits/gogs/issues/493) [#1401](https://github.com/gogits/gogs/issues/1401) 
+
 ### v0.7.6 @ 2015-11-12
 
 #### Bug 修复

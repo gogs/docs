@@ -25,6 +25,10 @@ name: Change Log
 - Show custom avatar for pushed commits list in news feeds
 - Able to use config option `[other] SHOW_FOOTER_VERSION = true` disable version display on non-admin pages' footer [#1957](https://github.com/gogits/gogs/issues/1957) 
 
+#### Features
+
+- Admin can now view and edit settings of private repositories [#493](https://github.com/gogits/gogs/issues/493) [#1401](https://github.com/gogits/gogs/issues/1401) 
+
 ### v0.7.6 @ 2015-11-12
 
 #### Bug fixes
