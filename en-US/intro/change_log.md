@@ -22,6 +22,7 @@ name: Change Log
 #### Improvements
 
 - Sort collaborative repositories by last updated time in dashboard [#1302](https://github.com/gogits/gogs/issues/1302) 
+- Able to delete a release [#1383](https://github.com/gogits/gogs/issues/1383) 
 - Update default branch in Git repository while change in web view [#1742](https://github.com/gogits/gogs/issues/1742)
 - Show issue title and content in news feeds [#1854](https://github.com/gogits/gogs/issues/1854) 
 - Show custom avatar for pushed commits list in news feeds
