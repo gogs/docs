@@ -11,6 +11,7 @@ name: Change Log
 - Bad syntax highlighting [#670](https://github.com/gogits/gogs/issues/670) [#1315](https://github.com/gogits/gogs/issues/1315) [#1549](https://github.com/gogits/gogs/issues/1549) [#1712](https://github.com/gogits/gogs/issues/1712)
 - Broken copy link button [#1168](https://github.com/gogits/gogs/issues/1168)  [#1396](https://github.com/gogits/gogs/issues/1396) 
 - Broken download archive UI [#1668](https://github.com/gogits/gogs/issues/1668)
+- Pull request does not support merge BIN diff [#1922](https://github.com/gogits/gogs/issues/1922)
 - Test patch does not checkout correct base branch [#1931](https://github.com/gogits/gogs/issues/1931) 
 - Branch/tag selection has wrong z-index [#1942](https://github.com/gogits/gogs/issues/1942) 
 - Huge image does not display correctly in file view
