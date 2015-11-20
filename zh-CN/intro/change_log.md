@@ -22,6 +22,7 @@ name: 变更日志
 #### 功能改进
 
 - 控制面板的协作仓库根据最后更新时间排序 [#1302](https://github.com/gogits/gogs/issues/1302) 
+- 在 Web 界面先修改默认分支时同时修改 Git 仓库的相应值 [#1742](https://github.com/gogits/gogs/issues/1742)
 - 在活动线显示工单（Issue）的标题和内容 [#1854](https://github.com/gogits/gogs/issues/1854) 
 - 在活动线的推送代码列表中显示可用的自定义头像
 - 允许使用配置选项 `[other] SHOW_FOOTER_VERSION = true` 来禁止在非管理员页面的页脚显示版本信息 [#1957](https://github.com/gogits/gogs/issues/1957) 
