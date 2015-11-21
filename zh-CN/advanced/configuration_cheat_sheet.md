@@ -22,6 +22,8 @@ name: 配置文件手册
 
 - `ROOT`：用户仓库存储根目录，必须为绝对路径，默认为 `~/<user name>/gogs-repositories`
 - `SCRIPT_TYPE`：系统脚本类型，一般情况下均为 `bash`，但有些用户反应只能使用 `sh`
+- `ANSI_CHARSET`：当遇到无法识别的字符集时使用的默认字符集
+- `FORCE_PRIVATE`：强制要求所有新建的仓库都是私有的
 - `PULL_REQUEST_QUEUE_LENGTH`:exclamation:：测试合并请求（Pull Request）的任务队列长度，该值越大越好
 
 ## UI (`ui`)
@@ -49,6 +51,7 @@ name: 配置文件手册
 - `HTTP_ADDR`：应用 HTTP 监听地址
 - `HTTP_PORT`：应用 HTTP 监听端口号
 - `DISABLE_SSH`：当 SSH 功能不可用时可以禁用
+- `START_SSH_SERVER`：启用该选项来启动内置 SSH 服务器
 - `SSH_PORT`：SSH 端口号，如果不为 `22` 的话可以在此修改
 - `OFFLINE_MODE`：激活该选项来禁止从 CDN 获取静态资源，同时 Gravatar 服务也将被自动禁用
 - `DISABLE_ROUTER_LOG`：激活该选项来禁止打印路由日志
@@ -96,10 +99,11 @@ name: 配置文件手册
 - `QUEUE_LENGTH`:exclamation:：发送通知的队列长度
 - `DELIVER_TIMEOUT`：发送通知的超时时间，以秒为单位
 - `SKIP_TLS_VERIFY`：指示是否允许向具有非信任证书的地址发送通知
+- `PAGING_NUM`：Web 钩子历史页面每页显示记录条数
 
 ## Mailer (`mailer`)
 
-- `ENABLED`：用于指示是否激活邮件服务
+- `ENABLED`：启用该选项以激活邮件服务
 - `DISABLE_HELO`：禁用 HELO 操作
 - `HELO_HOSTNAME`：HELO 操作的自定义主机名
 - `HOST`：SMTP 主机地址与端口
@@ -127,6 +131,14 @@ name: 配置文件手册
 
 - `GRAVATAR_SOURCE`：可以是 `gravatar`、`duoshuo` 或任何 URL，例如：`http://cn.gravatar.com/avatar/`
 - `DISABLE_GRAVATAR`：激活该选项来仅使用本地头像
+
+## Attachment (`attachment`)
+
+- `ENABLED`：启用该选项以允许用户上传附件
+- `PATH`：存放附件的路径
+- `ALLOWED_TYPES`：允许上传的 MIME 类型，例如 `image/jpeg|image/png`
+- `MAX_SIZE`：最大允许上传的附件体积，单位为 MB，例如 `4`
+- `MAX_FILES`：最大允许一次性上传的附件个数，例如 `5`
 
 ## Log (`log`)
 

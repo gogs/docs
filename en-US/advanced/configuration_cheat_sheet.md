@@ -22,6 +22,8 @@ Any configuration option that is marked by :exclamation: means remain default un
 
 - `ROOT`: Root path for storing all users' repository data. It has to be an absolute path, default is `~/<user name>/gogs-repositories`.
 - `SCRIPT_TYPE`: The script type your server supports, usually this is `bash`, but some customers report that they only have `sh`.
+- `ANSI_CHARSET`: The default charset for unrecognized charset.
+- `FORCE_PRIVATE`: Force every new repository to be private
 - `PULL_REQUEST_QUEUE_LENGTH`:exclamation:: Length of pull request patch test queue, make it as large as possible.
 
 ## UI (`ui`)
@@ -49,6 +51,7 @@ Any configuration option that is marked by :exclamation: means remain default un
 - `HTTP_ADDR`: HTTP listen address.
 - `HTTP_PORT`: HTTP listen port.
 - `DISABLE_SSH`: Disable SSH feature when it's not available.
+- `START_SSH_SERVER`: Enable this to start builtin SSH server.
 - `SSH_PORT`: The SSH port, in case yours is not `22`.
 - `OFFLINE_MODE`: Enable this to not use CDN for static files, also Gravatar will be disabled automatically.
 - `DISABLE_ROUTER_LOG`: Enable this to not print router log.
@@ -96,6 +99,7 @@ Any configuration option that is marked by :exclamation: means remain default un
 - `QUEUE_LENGTH`:exclamation:: Hook task queue length.
 - `DELIVER_TIMEOUT`: Delivery timeout in seconds for shooting webhooks.
 - `SKIP_TLS_VERIFY`: Indicate whether to allow insecure certification or not.
+- `PAGING_NUM`: Number of webhook history that are showed in one page.
 
 ## Mailer (`mailer`)
 
@@ -129,6 +133,14 @@ Note: Actually, Gogs support only SMTP with STARTTLS.
 
 - `GRAVATAR_SOURCE`: Can be `gravatar`, `duoshuo` or anything like `http://cn.gravatar.com/avatar/`.
 - `DISABLE_GRAVATAR`: Enable this to use local avatars only.
+
+## Attachment (`attachment`)
+
+- `ENABLED`: Enable this to allow users upload attachments.
+- `PATH`: Path to store attachments.
+- `ALLOWED_TYPES`: Allowed MIME types, e.g. `image/jpeg|image/png`.
+- `MAX_SIZE`: Maximum size in MB, e.g. `4`
+- `MAX_FILES`: Maximum number of attachments can be uploaded at once, e.g. `5`.
 
 ## Log (`log`)
 
