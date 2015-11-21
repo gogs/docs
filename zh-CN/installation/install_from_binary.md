@@ -6,7 +6,7 @@ name: 二进制安装
 
 **目前只提供最近 5 次版本发布的二进制下载，更多版本下载请前往 [GitHub](https://github.com/gogits/gogs/releases?after=v0.6.9) 查看。**
 
-所有的版本都支持 **MySQL** 和 **PostgreSQL** 作为数据库，并且均使用构建标签（build tags）**`redis memcache cert`** 进行构建。需要注意的是，不同的版本的支持状态有所不同，请根据实际的 Gogs 提示进行操作。
+所有的版本都支持 **MySQL** 和 **PostgreSQL** 作为数据库，并且均使用构建标签（build tags）**`redis memcache cert`** 进行构建（`v0.7.19` 之后不再使用 `redis memcache` 构建标签）。需要注意的是，不同的版本的支持状态有所不同，请根据实际的 Gogs 提示进行操作。
 
 ### v0.7.19 @ 2015-11-21
 

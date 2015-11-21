@@ -108,16 +108,15 @@ A couple of things do not come with Gogs automatically, you need to compile Gogs
 Available build tags are:
 
 - `sqlite3`/`tidb`: SQLite3/TiDB database support
-- `redis`/`memcache`: Redis/Memcache cache/session backend support
 - `pam`: PAM authentication support
 - `cert`: Generate self-signed certificates support
 
 For example, you want to support all of them, first delete directory `$GOPATH/pkg/${GOOS}_${GOARCH}/github.com/gogits/gogs` and then do:
 
 ```sh
-$ go get -u -tags "sqlite tidb redis memcache pam cert" github.com/gogits/gogs
+$ go get -u -tags "sqlite tidb pam cert" github.com/gogits/gogs
 $ cd $GOPATH/src/github.com/gogits/gogs
-$ go build -tags "sqlite tidb redis memcache pam cert"
+$ go build -tags "sqlite tidb pam cert"
 ```
 
 ## Next steps

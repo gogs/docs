@@ -102,16 +102,15 @@ Gogs 默认并没有支持一些功能，这些功能需要在构建时明确使
 目前使用标签构建的功能如下：
 
 - `sqlite3`/`tidb`：SQLite3/TiDB 数据库支持
-- `redis`/`memcache`：Redis/Memcache 缓存/会话 后端支持
 - `pam`：PAM 授权认证支持
 - `cert`：生成自定义证书支持
 
 例如，您需要支持以上所有功能，则需要先删除 `$GOPATH/pkg/{GOOS_GOARCH}/github.com/gogits/gogs` 目录，然后执行以下命令：
 
 ```sh
-$ go get -u -tags "sqlite tidb redis memcache pam cert" github.com/gogits/gogs
+$ go get -u -tags "sqlite tidb pam cert" github.com/gogits/gogs
 $ cd $GOPATH/src/github.com/gogits/gogs
-$ go build -tags "sqlite tidb redis memcache pam cert"
+$ go build -tags "sqlite tidb pam cert"
 ```
 
 安装完成后可继续参照 [配置与运行](configuration_and_run.html)。

@@ -6,7 +6,7 @@ name: From binary
 
 **Downloads are only available for latest 5 releases, older downloads can be found at [releases](https://github.com/gogits/gogs/releases?after=v0.6.9).**
 
-All downloads come with **MySQL** and **PostgreSQL** support, and build **with tags `redis memcache cert`**. Keep in mind that support status may be different from older releases, please follow the instructions on older Gogs instances.
+All downloads come with **MySQL** and **PostgreSQL** support, and build **with tags `redis memcache cert`** (no more tags `redis memcache` after `v0.7.19`). Keep in mind that support status may be different from older releases, please follow the instructions on older Gogs instances.
 
 ### v0.7.19 @ 2015-11-21
 
