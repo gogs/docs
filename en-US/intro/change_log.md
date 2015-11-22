@@ -4,6 +4,12 @@ name: Change Log
 
 # Change Log
 
+### v0.8.0 (unreleased)
+
+#### Others
+
+- All pages uses new Semantic UI theme [#650](https://github.com/gogits/gogs/issues/650) 
+
 ### v0.7.19 @ 2015-11-21
 
 #### Bug fixes

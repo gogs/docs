@@ -4,6 +4,12 @@ name: 变更日志
 
 # 变更日志
 
+### v0.8.0（未发布）
+
+#### 其它变更
+
+- 所有页面均以使用全新的 Semantic UI [#650](https://github.com/gogits/gogs/issues/650)
+
 ### v0.7.19 @ 2015-11-21
 
 #### Bug 修复
