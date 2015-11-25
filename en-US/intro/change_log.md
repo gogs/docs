@@ -4,7 +4,15 @@ name: Change Log
 
 # Change Log
 
-### v0.8.0 (unreleased)
+### v0.7.22 (unreleased)
+
+#### Bug fixes
+
+- Panic when two links are nested in Markdown [#2019](https://github.com/gogits/gogs/issues/2019) 
+
+#### Improvements
+
+- Drop `org/` URL path prefix in organization home page [#1944](https://github.com/gogits/gogs/issues/1944) 
 
 #### Bug fixes
 

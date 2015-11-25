@@ -4,7 +4,15 @@ name: 变更日志
 
 # 变更日志
 
-### v0.8.0（未发布）
+### v0.7.22（未发布）
+
+#### Bug 修复
+
+- Markdown 存在双层嵌套链接时发生 panic [#2019](https://github.com/gogits/gogs/issues/2019) 
+
+#### 功能改进
+
+- 组织首页 URL 去除 `org/` 前缀 [#1944](https://github.com/gogits/gogs/issues/1944) 
 
 #### Bug 修复
 
