@@ -9,14 +9,11 @@ name: 变更日志
 #### Bug 修复
 
 - Markdown 存在双层嵌套链接时发生 panic [#2019](https://github.com/gogits/gogs/issues/2019) 
+- 内置 SSH 服务器在 Windows 无法工作
 
 #### 功能改进
 
 - 组织首页 URL 去除 `org/` 前缀 [#1944](https://github.com/gogits/gogs/issues/1944) 
-
-#### Bug 修复
-
-- 内置 SSH 服务器在 Windows 无法工作
 
 #### 其它变更
 

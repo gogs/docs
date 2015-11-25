@@ -9,14 +9,11 @@ name: Change Log
 #### Bug fixes
 
 - Panic when two links are nested in Markdown [#2019](https://github.com/gogits/gogs/issues/2019) 
+- Builtin SSH server does not work on Windows 
 
 #### Improvements
 
 - Drop `org/` URL path prefix in organization home page [#1944](https://github.com/gogits/gogs/issues/1944) 
-
-#### Bug fixes
-
-- Builtin SSH server does not work on Windows 
 
 #### Others
 
