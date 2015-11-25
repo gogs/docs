@@ -4,7 +4,7 @@ name: Change Log
 
 # Change Log
 
-### v0.7.22 (unreleased)
+### v0.7.22 @ 2015-11-25
 
 #### Bug fixes
 
