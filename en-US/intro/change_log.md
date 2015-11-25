@@ -6,6 +6,10 @@ name: Change Log
 
 ### v0.8.0 (unreleased)
 
+#### Bug fixes
+
+- Builtin SSH server does not work on Windows 
+
 #### Others
 
 - All pages uses new Semantic UI theme [#650](https://github.com/gogits/gogs/issues/650) 

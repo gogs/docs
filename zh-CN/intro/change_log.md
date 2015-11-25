@@ -6,6 +6,10 @@ name: 变更日志
 
 ### v0.8.0（未发布）
 
+#### Bug 修复
+
+- 内置 SSH 服务器在 Windows 无法工作
+
 #### 其它变更
 
 - 所有页面均以使用全新的 Semantic UI [#650](https://github.com/gogits/gogs/issues/650)
