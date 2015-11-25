@@ -129,34 +129,4 @@ name: Change Log
 
 - Drop social account login support
 
-### v0.6.9 @ 2015-09-05
-
-#### Bug fixes
-
-- File name with double quotation mark makes the repository inaccessible [#966](https://github.com/gogits/gogs/issues/966)
-- Time zone trouble [#1500](https://github.com/gogits/gogs/issues/1500)
-- Removing deploy key does not remove key [#1535](https://github.com/gogits/gogs/issues/1535)
-
-#### Improvements
-
-- Add webhook last delivery status, recent deliveries and new events
-- Auto-remember visibility of last created repository [#965](https://github.com/gogits/gogs/issues/965)
-- Support BindDN and TLS in LDAP [#1145](https://github.com/gogits/gogs/issues/1145)
-- Significantly enhanced LDAP support [#1476](https://github.com/gogits/gogs/pull/1476)
-- Support 'AUTH LOGIN' in mailer [#1517](https://github.com/gogits/gogs/pull/1517)
-- Add `[markdown] ENABLE_HARD_LINE_BREAK` to enable Markdown hard line break extension
-
-#### Features
-
-- Add dashboard issues page for organization
-- Allow editing of past comments [#1280](https://github.com/gogits/gogs/issues/1280)
-- Support README template [#1487](https://github.com/gogits/gogs/issues/1487)
-
-#### Others
-
-- Add [official Docker images](https://hub.docker.com/r/gogs/gogs/)
-- Change minimum password length to 1
-- Change minimum size of RSA to 1024 [#1519](https://github.com/gogits/gogs/pull/1519)
-- Change maximum size of e-mail to 254 [#1579](https://github.com/gogits/gogs/pull/1579)
-
 **Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases).**

@@ -4,9 +4,21 @@ name: 二进制安装
 
 # 二进制安装
 
-**目前只提供最近 5 次版本发布的二进制下载，更多版本下载请前往 [GitHub](https://github.com/gogits/gogs/releases?after=v0.6.9) 查看。**
+**目前只提供最近 5 次版本发布的二进制下载，更多版本下载请前往 [GitHub](https://github.com/gogits/gogs/releases?after=v0.6.15) 查看。**
 
 所有的版本都支持 **MySQL** 和 **PostgreSQL** 作为数据库，并且均使用构建标签（build tags）**`redis memcache cert`** 进行构建（`v0.7.19` 之后不再使用 `redis memcache` 构建标签）。需要注意的是，不同的版本的支持状态有所不同，请根据实际的 Gogs 提示进行操作。
+
+### v0.7.22 @ 2015-11-25
+
+|系统名称|系统类型|SQLite|TiDB|PAM|下载|
+|------|----|------|----|---|--------|
+|Linux|386|✅|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.7.22_linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/gogs_v0.7.22_linux_386.tar.gz) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.22_linux_386.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.22_linux_386.tar.gz)|
+|Linux|amd64|✅|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.7.22_linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/gogs_v0.7.22_linux_amd64.tar.gz) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.22_linux_amd64.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.22_linux_amd64.tar.gz)|
+|Linux|arm|❌|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.7.22_linux_arm.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.22_linux_arm.zip)|
+|Raspberry Pi|v2|✅|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.7.22_raspi2.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.22_raspi2.zip)|
+|Windows|386|❌|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.7.22_windows_386.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.22_windows_386.zip)|
+|Windows|amd64|✅|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.7.22_windows_amd64.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.22_windows_amd64.zip)|
+|Mac OS|amd64|✅|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.7.22_darwin_amd64.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.22_darwin_amd64.zip)|
 
 ### v0.7.19 @ 2015-11-21
 
@@ -53,14 +65,6 @@ name: 二进制安装
 |Windows|386|❌|✅|❌|[CDN](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.6.15_windows_386.zip) - [GitHub](https://github.com/gogits/gogs/releases/tag/v0.6.15)|
 |Windows|amd64|✅|✅|❌|[CDN](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.6.15_windows_amd64.zip) - [GitHub](https://github.com/gogits/gogs/releases/tag/v0.6.15)|
 |Mac OS|amd64|✅|✅|❌|[CDN](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.6.15_darwin_amd64.zip) - [GitHub](https://github.com/gogits/gogs/releases/tag/v0.6.15)|
-
-### v0.6.9 @ 2015-09-05
-
-|系统名称|系统类型|SQLite|TiDB|PAM|下载|
-|------|----|------|----|---|--------|
-|Linux|amd64|✅|❌|✅|[CDN](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.6.9_linux_amd64.zip) - [GitHub](https://github.com/gogits/gogs/releases/tag/v0.6.9)|
-|Windows|amd64|✅|❌|❌|[CDN](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.6.9_windows_amd64.zip) - [GitHub](https://github.com/gogits/gogs/releases/tag/v0.6.9)|
-|Mac OS|amd64|✅|❌|❌|[CDN](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.6.9_darwin_amd64.zip) - [GitHub](https://github.com/gogits/gogs/releases/tag/v0.6.9)|
 
 ## 如何使用下载好的压缩包？
 

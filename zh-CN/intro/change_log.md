@@ -129,34 +129,4 @@ name: 变更日志
 
 - 移除社交帐号登录支持
 
-### v0.6.9 @ 2015-09-05
-
-#### Bug 修复
-
-- 文件名包含双引号导致仓库无法读取 [#966](https://github.com/gogits/gogs/issues/966)
-- 时区显示问题 [#1500](https://github.com/gogits/gogs/issues/1500)
-- 删除部署密钥失败 [#1535](https://github.com/gogits/gogs/issues/1535)
-
-#### 功能改进
-
-- 增加 Web 钩子上次推送状态的显示、最近推送记录和新的钩子事件
-- 自动记忆最后一次创建仓库的可见性 [#965](https://github.com/gogits/gogs/issues/965)
-- LDAP 支持 BindDN 字段和 TLS 协议 [#1145](https://github.com/gogits/gogs/issues/1145)
-- 显著改进 LDAP 支持 [#1476](https://github.com/gogits/gogs/pull/1476)
-- 邮件发送支持 'AUTH LOGIN' [#1517](https://github.com/gogits/gogs/pull/1517)
-- 增加配置选项 `[markdown] ENABLE_HARD_LINE_BREAK` 来开启 Markdown 渲染时的换行扩展
-
-#### 新增特性
-
-- 为组织增加控制面板工单管理页面
-- 允许编辑已发布的评论 [#1280](https://github.com/gogits/gogs/issues/1280)
-- 支持 README 模板 [#1487](https://github.com/gogits/gogs/issues/1487)
-
-#### 其它变更
-
-- 增加 [官方 Docker 镜像](https://hub.docker.com/r/gogs/gogs/)
-- 修改用户密码的最小允许长度为 1
-- 修改 RSA 的最小允许长度为 1024 [#1519](https://github.com/gogits/gogs/pull/1519)
-- 修改邮箱地址的最大允许长度为 254 [#1579](https://github.com/gogits/gogs/pull/1579)
-
 **更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases) 上找到。**
