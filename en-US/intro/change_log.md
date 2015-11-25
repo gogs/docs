@@ -14,6 +14,7 @@ name: Change Log
 #### Improvements
 
 - Drop `org/` URL path prefix in organization home page [#1944](https://github.com/gogits/gogs/issues/1944) 
+- More native supported Git hooks
 
 #### Others
 

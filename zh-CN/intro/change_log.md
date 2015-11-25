@@ -14,6 +14,7 @@ name: 变更日志
 #### 功能改进
 
 - 组织首页 URL 去除 `org/` 前缀 [#1944](https://github.com/gogits/gogs/issues/1944) 
+- 更多 Git 钩子的原生支持
 
 #### 其它变更
 
