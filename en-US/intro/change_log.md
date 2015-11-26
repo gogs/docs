@@ -4,6 +4,12 @@ name: Change Log
 
 # Change Log
 
+### v0.8.0 (unreleased)
+
+#### Bug fixes
+
+- LDAP search with non-ascii characters does not work [#1139](https://github.com/gogits/gogs/issues/1139) 
+
 ### v0.7.22 @ 2015-11-25
 
 #### Bug fixes
