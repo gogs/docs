@@ -148,4 +148,4 @@ name: 配置文件手册
 
 ## Git (`git`)
 
-- `MAX_GITDIFF_LINES`：对比页面显示的最大行数
+- `MAX_GIT_DIFF_LINES`：对比页面显示的最大行数
