@@ -10,6 +10,10 @@ name: 变更日志
 
 - LDAP 搜索非 ASCII 字符失败 [#1139](https://github.com/gogits/gogs/issues/1139) 
 
+#### 新增特性
+
+- 新增仓库 Wiki 支持
+
 ### v0.7.22 @ 2015-11-25
 
 #### Bug 修复
