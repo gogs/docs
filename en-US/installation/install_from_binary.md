@@ -72,6 +72,12 @@ All downloads come with **MySQL** and **PostgreSQL** support, and build **with t
 2. `cd` into the directory just created.
 3. Execute `./gogs web` and you're done.
 
+For instructions specific to our supported OS platforms, see:
+
+* [On Ubuntu](/docs/installation/install_gogs_on_ubuntu.html) for Linux distributions using apt.
+* [On Mac](/docs/installation/install_gogs_on_mac.html)
+* [On Windows](/docs/installation/install_gogs_on_windows.html)
+
 ## How to upgrade from binary?
 
 1. Download latest binary release ZIP archive.
