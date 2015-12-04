@@ -9,10 +9,13 @@ name: 变更日志
 #### Bug 修复
 
 - LDAP 搜索非 ASCII 字符失败 [#1139](https://github.com/gogits/gogs/issues/1139) 
+- 删除仓库时未移除相应的称赞数据 [#2042](https://github.com/gogits/gogs/issues/2042) 
+- 无法在 Windows 下创建合并请求（Pull Request）[#2093](https://github.com/gogits/gogs/issues/2093) 
 
 #### 新增特性
 
-- 新增仓库 Wiki 支持
+- 新增仓库 Wiki 支持 [#270](https://github.com/gogits/gogs/issues/270) 
+- 开放更多 API 接口：操作用户公钥 [#976](https://github.com/gogits/gogs/issues/976) 
 
 ### v0.7.22 @ 2015-11-25
 

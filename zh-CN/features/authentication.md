@@ -28,6 +28,9 @@ name: 授权认证
       privileged as an administrator.
     * Example: (objectClass=adminAccount)
 
+- 用户名属性（可选）
+  - 包含用户名的 LDAP 记录属性。留空则表示使用用户登录时所用的值来当做用户名。
+
 * 名字属性（可选）
     * The attribute of the user's LDAP record containing the user's first name.
       This will be used to populate their account information.
