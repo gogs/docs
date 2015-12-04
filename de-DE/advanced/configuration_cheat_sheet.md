@@ -22,6 +22,8 @@ Jede Konfiguration, die mit :exclamation: markiert ist, solltest du auf dem Stan
 
 - `ROOT`: Wurzelpfad, in dem die Repositories aller Benutzer gespeichert werden. Das muss ein absoluter Pfad sein, Standard ist `~/<user name>/gogs-repositories`.
 - `SCRIPT_TYPE`: Die Skript-Sprache, die dein Server unterstützt. Normalerweise ist das `bash`, aber einige Benutzer haben gemeldet, sie haben bloß `sh`.
+- `ANSI_CHARSET`: Das Standard-Charset für unbekannte Charsets.
+- `FORCE_PRIVATE`: Jedes neue Projekt als private erzwingen.
 - `PULL_REQUEST_QUEUE_LENGTH`:exclamation:: Test-Länge bei Pull-Requests. Mach es so lang wie möglich.
 
 ## UI (`ui`)
@@ -49,6 +51,7 @@ Jede Konfiguration, die mit :exclamation: markiert ist, solltest du auf dem Stan
 - `HTTP_ADDR`: HTTP Adresse, auf der Gogs lauscht.
 - `HTTP_PORT`: HTTP Port, auf dem Gogs lauscht.
 - `DISABLE_SSH`: Schaltet das SSH Featureaus, wenn es nicht verfügbar ist.
+- `START_SSH_SERVER`: Aktivieren, um den eingebauten SSH-Server zu starten.
 - `SSH_PORT`: Der SSH-Port, falls es nicht `22` ist.
 - `OFFLINE_MODE`: Schaltet CDN und Gravatar aus.
 - `DISABLE_ROUTER_LOG`: Anschalten, um keine Router-Logs auszugeben
@@ -96,6 +99,7 @@ Jede Konfiguration, die mit :exclamation: markiert ist, solltest du auf dem Stan
 - `QUEUE_LENGTH`:exclamation:: Warteschlangenlänge für Hook Aufträge
 - `DELIVER_TIMEOUT`: Auslieferungs-Timeout in Sekunden für das Absenden von Webhooks
 - `SKIP_TLS_VERIFY`: Entscheidet ob unsichere Zertifikate erlaubt sind oder nicht.
+- `PAGING_NUM`: Anzahl der Webhook-Historie, die auf einer Seite angezeigt wird.
 
 ## Mailer (`mailer`)
 
@@ -130,6 +134,14 @@ Hinweis: Gogs unterstützt nur SMTP mit STARTTLS.
 - `GRAVATAR_SOURCE`: Kann `gravatar`, `duoshuo` oder etwas wie `http://cn.gravatar.com/avatar/` sein.
 - `DISABLE_GRAVATAR`: Aktivieren, um nur lokale Gravatars zu benutzen.
 
+## Anhänge (`attachment`)
+
+- `ENABLED`: Aktivieren, um Usern Uploads zu erlauben.
+- `PATH`: Pfad, unter dem Anhänge gespeichert werden.
+- `ALLOWED_TYPES`: erlaubte MIME-Types (z.B. `image/jpeg|image/png`.
+- `MAX_SIZE`: Maximale Größe in MB (z.B. `4`)
+- `MAX_FILES`: Maximale Anzahl an Dateien, die gleichzeitig hochgeladen werden kann.
+
 ## Log (`log`)
 
 - `ROOT_PATH`: Wurzelpfad zum Log-Pfad
@@ -138,4 +150,4 @@ Hinweis: Gogs unterstützt nur SMTP mit STARTTLS.
 
 ## Git (`git`)
 
-- `MAX_GITDIFF_LINES`: Maximale Anzahl an Zeilen, die in einem Diff angezeigt werden.
+- `MAX_GIT_DIFF_LINES`: Maximale Anzahl an Zeilen, die in einem Diff angezeigt werden.

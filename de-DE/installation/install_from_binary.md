@@ -4,9 +4,33 @@ name: Von Binärdateien
 
 # Installation von Binärdateien
 
-**Downloads sind nur für die letzten 5 Versionen verfügbar, ältere sind auf [releases](https://github.com/gogits/gogs/releases?after=v0.6.5) zu finden.**
+**Downloads sind nur für die letzten 5 Versionen verfügbar, ältere sind auf [releases](https://github.com/gogits/gogs/releases?after=v0.6.15) zu finden.**
 
-Alle Downlodas haben **MySQL** und **PostgreeSQL** Unterstützung und wurden mit den **Tags `redis memcache cert`** kompiliert. Beachte, dass die Unterstützung bei älteren Versionen anders sein kann, folge den Instruktionen zu älteren Gogs-Instanzen.
+Alle Downlodas haben **MySQL** und **PostgreeSQL** Unterstützung und wurden mit den **Tags `redis memcache cert`** kompiliert (keine Tags `redis memcache` nach `v0.7.19`). Beachte, dass die Unterstützung bei älteren Versionen anders sein kann, folge den Instruktionen zu älteren Gogs-Instanzen.
+
+### v0.7.22 @ 2015-11-25
+
+|System|Architektur|SQLite|TiDB|PAM|Download|
+|------|----|------|----|---|--------|
+|Linux|386|✅|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.7.22_linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/gogs_v0.7.22_linux_386.tar.gz) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.22_linux_386.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.22_linux_386.tar.gz)|
+|Linux|amd64|✅|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.7.22_linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/gogs_v0.7.22_linux_amd64.tar.gz) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.22_linux_amd64.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.22_linux_amd64.tar.gz)|
+|Linux|arm|❌|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.7.22_linux_arm.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.22_linux_arm.zip)|
+|Raspberry Pi|v2|✅|❌|✅|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.7.22_raspi2.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.22_raspi2.zip)|
+|Windows|386|❌|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.7.22_windows_386.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.22_windows_386.zip)|
+|Windows|amd64|✅|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.7.22_windows_amd64.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.22_windows_amd64.zip)|
+|Mac OS|amd64|✅|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.7.22_darwin_amd64.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.22_darwin_amd64.zip)|
+
+### v0.7.19 @ 2015-11-21
+
+|System|Architektur|SQLite|TiDB|PAM|Download|
+|------|----|------|----|---|--------|
+|Linux|386|✅|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.7.19_linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/gogs_v0.7.19_linux_386.tar.gz) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.19_linux_386.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.19_linux_386.tar.gz)|
+|Linux|amd64|✅|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.7.19_linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/gogs_v0.7.19_linux_amd64.tar.gz) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.19_linux_amd64.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.19_linux_amd64.tar.gz)|
+|Linux|arm|❌|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.7.19_linux_arm.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.19_linux_arm.zip)|
+|Raspberry Pi|v2|✅|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.7.19_raspi2.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.19_raspi2.zip)|
+|Windows|386|❌|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.7.19_windows_386.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.19_windows_386.zip)|
+|Windows|amd64|✅|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.7.19_windows_amd64.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.19_windows_amd64.zip)|
+|Mac OS|amd64|✅|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.7.19_darwin_amd64.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.19_darwin_amd64.zip)|
 
 ### v0.7.6 @ 2015-11-12
 
@@ -41,22 +65,6 @@ Alle Downlodas haben **MySQL** und **PostgreeSQL** Unterstützung und wurden mit
 |Windows|386|❌|✅|❌|[CDN](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.6.15_windows_386.zip) - [GitHub](https://github.com/gogits/gogs/releases/tag/v0.6.15)|
 |Windows|amd64|✅|✅|❌|[CDN](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.6.15_windows_amd64.zip) - [GitHub](https://github.com/gogits/gogs/releases/tag/v0.6.15)|
 |Mac OS|amd64|✅|✅|❌|[CDN](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.6.15_darwin_amd64.zip) - [GitHub](https://github.com/gogits/gogs/releases/tag/v0.6.15)|
-
-### v0.6.9 @ 2015-09-05
-
-|System|Architektur|SQLite|TiDB|PAM|Download|
-|------|----|------|----|---|--------|
-|Linux|amd64|✅|❌|✅|[CDN](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.6.9_linux_amd64.zip) - [GitHub](https://github.com/gogits/gogs/releases/tag/v0.6.9)|
-|Windows|amd64|✅|❌|❌|[CDN](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.6.9_windows_amd64.zip) - [GitHub](https://github.com/gogits/gogs/releases/tag/v0.6.9)|
-|Mac OS|amd64|✅|❌|❌|[CDN](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.6.9_darwin_amd64.zip) - [GitHub](https://github.com/gogits/gogs/releases/tag/v0.6.9)|
-
-### v0.6.5 @ 2015-08-16
-
-|System|Architektur|SQLite|TiDB|PAM|Download|
-|------|----|------|----|---|--------|
-|Linux|amd64|✅|❌|✅|[CDN](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.6.5_linux_amd64.zip) - [GitHub](https://github.com/gogits/gogs/releases/tag/v0.6.5)|
-|Windows|amd64|✅|❌|❌|[CDN](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.6.5_windows_amd64.zip) - [GitHub](https://github.com/gogits/gogs/releases/tag/v0.6.5)|
-|Mac OS|amd64|✅|❌|❌|[CDN](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.6.5_darwin_amd64.zip) - [GitHub](https://github.com/gogits/gogs/releases/tag/v0.6.5)|
 
 ## Wie benutze ich die Downloads?
 
