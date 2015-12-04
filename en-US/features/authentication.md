@@ -30,6 +30,7 @@ Both the LDAP via BindDN and the simple auth LDAP share the following fields:
 
 - Username attribute (optional)
   - The attribute of the user's LDAP record containing the user name. Leave empty to use sign-in form value for user name.
+  - Example: (&(objectClass=Person)(|(uid=%[1]s)(mail=%[1]s)))
 
 * First name attribute (optional)
     * The attribute of the user's LDAP record containing the user's first name.

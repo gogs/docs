@@ -30,6 +30,7 @@ name: 授权认证
 
 - 用户名属性（可选）
   - 包含用户名的 LDAP 记录属性。留空则表示使用用户登录时所用的值来当做用户名。
+  - 例如：(&(objectClass=Person)(|(uid=%[1]s)(mail=%[1]s)))
 
 * 名字属性（可选）
     * The attribute of the user's LDAP record containing the user's first name.
