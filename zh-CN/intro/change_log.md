@@ -15,6 +15,7 @@ name: 变更日志
 #### 功能改进
 
 - 允许禁用仓库的 Wiki/工单（Issue）/合并请求（Pull Request）功能 [#1829](https://github.com/gogits/gogs/issues/1829) 
+- 允许通过 Web 界面触发测试 Web 钩子 [#1857](https://github.com/gogits/gogs/issues/1857) 
 
 #### 新增特性
 

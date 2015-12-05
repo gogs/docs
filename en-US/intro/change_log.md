@@ -15,6 +15,7 @@ name: Change Log
 #### Improvements
 
 - Able to disable wiki/issues/pull requests of repository [#1829](https://github.com/gogits/gogs/issues/1829) 
+- Able to trigger test webhook in web UI [#1857](https://github.com/gogits/gogs/issues/1857) 
 
 #### Features
 
