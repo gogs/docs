@@ -12,9 +12,14 @@ name: 变更日志
 - 删除仓库时未移除相应的称赞数据 [#2042](https://github.com/gogits/gogs/issues/2042) 
 - 无法在 Windows 下创建合并请求（Pull Request）[#2093](https://github.com/gogits/gogs/issues/2093) 
 
+#### 功能改进
+
+- 允许禁用仓库的 Wiki/工单（Issue）/合并请求（Pull Request）功能 [#1829](https://github.com/gogits/gogs/issues/1829) 
+
 #### 新增特性
 
 - 新增仓库 Wiki 支持 [#270](https://github.com/gogits/gogs/issues/270) 
+- 支持工单链接生成相应的外部链接 [#890](https://github.com/gogits/gogs/issues/890) 
 - 开放更多 API 接口：操作用户公钥 [#976](https://github.com/gogits/gogs/issues/976) 
 
 ### v0.7.22 @ 2015-11-25

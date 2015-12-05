@@ -12,9 +12,14 @@ name: Change Log
 - Delete repository does not remove its stars [#2042](https://github.com/gogits/gogs/issues/2042) 
 - Cannot create pull request on Windows [#2093](https://github.com/gogits/gogs/issues/2093) 
 
+#### Improvements
+
+- Able to disable wiki/issues/pull requests of repository [#1829](https://github.com/gogits/gogs/issues/1829) 
+
 #### Features
 
 - Support repository wiki [#270](https://github.com/gogits/gogs/issues/270) 
+- Support issue links are rendered for external tracker [#890](https://github.com/gogits/gogs/issues/890) 
 - Add more APIs: public keys [#976](https://github.com/gogits/gogs/issues/976) 
 
 ### v0.7.22 @ 2015-11-25
