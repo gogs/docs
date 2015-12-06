@@ -4,7 +4,7 @@ name: Change Log
 
 # Change Log
 
-### v0.7.33 (unreleased)
+### v0.7.33
 
 #### Bug fixes
 
@@ -17,6 +17,8 @@ name: Change Log
 
 - Able to disable wiki/issues/pull requests of repository [#1829](https://github.com/gogits/gogs/issues/1829) 
 - Able to trigger test webhook in web UI [#1857](https://github.com/gogits/gogs/issues/1857) 
+- Able to batch delete system notices [#2052](https://github.com/gogits/gogs/issues/2052) 
+- Able to delete repository in admin panel [#2063](https://github.com/gogits/gogs/issues/2063) 
 
 #### Features
 

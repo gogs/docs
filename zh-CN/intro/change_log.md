@@ -4,7 +4,7 @@ name: 变更日志
 
 # 变更日志
 
-### v0.7.33（未发布）
+### v0.7.33
 
 #### Bug 修复
 
@@ -17,6 +17,8 @@ name: 变更日志
 
 - 允许禁用仓库的 Wiki/工单（Issue）/合并请求（Pull Request）功能 [#1829](https://github.com/gogits/gogs/issues/1829) 
 - 允许通过 Web 界面触发测试 Web 钩子 [#1857](https://github.com/gogits/gogs/issues/1857) 
+- 允许批量删除系统提示 [#2052](https://github.com/gogits/gogs/issues/2052) 
+- 允许在管理员面板删除指定仓库 [#2063](https://github.com/gogits/gogs/issues/2063) 
 
 #### 新增特性
 
