@@ -4,12 +4,13 @@ name: 变更日志
 
 # 变更日志
 
-### v0.8.0（未发布）
+### v0.7.33（未发布）
 
 #### Bug 修复
 
 - LDAP 搜索非 ASCII 字符失败 [#1139](https://github.com/gogits/gogs/issues/1139) 
 - 删除仓库时未移除相应的称赞数据 [#2042](https://github.com/gogits/gogs/issues/2042) 
+- 当文件差异存在超级长的一行时无法完整显示 [#2071](https://github.com/gogits/gogs/issues/2071)
 - 无法在 Windows 下创建合并请求（Pull Request）[#2093](https://github.com/gogits/gogs/issues/2093) 
 
 #### 功能改进

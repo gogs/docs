@@ -4,12 +4,13 @@ name: Change Log
 
 # Change Log
 
-### v0.8.0 (unreleased)
+### v0.7.33 (unreleased)
 
 #### Bug fixes
 
 - LDAP search with non-ascii characters does not work [#1139](https://github.com/gogits/gogs/issues/1139) 
 - Delete repository does not remove its stars [#2042](https://github.com/gogits/gogs/issues/2042) 
+- Diff is not showing full content when has super long one line [#2071](https://github.com/gogits/gogs/issues/2071)
 - Cannot create pull request on Windows [#2093](https://github.com/gogits/gogs/issues/2093) 
 
 #### Improvements

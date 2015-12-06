@@ -12,8 +12,16 @@ name: Troubleshooting
 
 ## SSH
 
-- Error: SSH conection hangs for 60 seconds
+#### SSH conection hangs for 60 seconds
+
 - Causes: Gogs will request itself (web service) after every SSH push, and your server firewall or ISP does not allow that happen
+
+#### Incorrect binary path for update hook
+
+- Causes: you moved Gogs binary to a different location from previous installation. 
+- Solution: go to admin dashboard (`/admin`) and run two tasks:
+	- `Rewrite '.ssh/authorized_keys' file`
+	- `Rewrite all update hook of repositories`
 
 ## Git
 
