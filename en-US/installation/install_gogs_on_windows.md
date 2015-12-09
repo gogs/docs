@@ -4,26 +4,6 @@ name: On Windows
 
 ## Binary install Gogs on Windows 7
 
-> Contributed by [@victorsegall](https://github.com/victorsegall)
-
-### Prerequisites
-
-Check the main [installation page](http://gogs.io/docs/installation/) to confirm before you go on. You need [git for Windows](http://git-scm.com/download/win).
-
-An SSH server is not needed on your Windows machine, if this Gogs instance will be for you alone, or if you only need the HTTP(S) service that Gogs provides.
-
-To run Gogs as a service, you will need one of:
-
-* Iain Patterson's [nssm.exe](http://nssm.cc/)
-* Nick Rozanski's [SRVSTART.EXE](http://rozanski.org.uk/software)
-* Microsoft's [Srvany.exe](https://support.microsoft.com/kb/137890)
-
-This guide covers nssm.exe, which is [open source](https://git.nssm.cc/?p=nssm.git) and [public domain](https://git.nssm.cc/?p=nssm.git;a=blob_plain;f=README.txt;hb=HEAD).
-
-During setup, you will run Gogs as the current local user, and then reconfigure to run as a service.
-
-When configuring Gogs through app.ini and web UI, use UNIX directory separators (forward slash `/`) where possible. If you are needing to use a UNC path to a network share, try [the Cygwin way](https://cygwin.com/cygwin-ug-net/using.html#unc-paths), or [map the path as a local drive](http://www.sevenforums.com/tutorials/49517-map-network-drive.html).
-
 ### Run as the current local user
 
 Gogs is able to run as the local user immediately, with no configuration. Simply unpack the [Windows binary](http://gogs.io/docs/installation/install_from_binary.html) zip file somewhere, go to command line, and do:
@@ -151,129 +131,19 @@ To complete that network route, open Notepad.exe as administrator and include th
 
 The hosts file entry will guarantee that all requests to the "gogs" domain are captured by your localhost interface. In a web browser, generally, `gogs/` in the address bar is sufficient to trigger that route.
 
-Get the [nssm.exe](http://nssm.cc/download) needed for your machine (32 or 64 bit; they're packaged together in Iain's zip file), and place it in a directory that is in (or will be added to) your %PATH% environment variable.
-
-Open a command line as administrator and do `nssm install gogs` to configure Gogs as a service.
-
+Open a command prompt (cmd.exe) as an Administrator. Run the following command:
 ```
-C:\>nssm install gogs
+C:\> sc create gogs start= auto binPath= """C:\gogs\gogs.exe"" web --config ""C:\gogs\conf\app.ini"""
 ```
+Ensure there is a space after each "=". You can choose to add additional Arguments
+to further modify your service, or modify it manually in the service management console.
 
-"NSSM service installer" will appear. Configure it as follows:
-
-Application tab:
-
-* Path: C:\gogs\gogs.exe
-* Startup directory: C:\gogs
-* Arguments: web
-
-![](/docs/images/install_gogs_on_windows_nssm_1.png)
-
-Details tab:
-
-* Display name: Go Gits Service
-* Description: Gogs (Go Git Service) is a painless self-hosted Git service written in Go.
-* Startup type: Automatic (Delayed Start)
-
-Note that we've chosen [delayed start](http://stackoverflow.com/a/11015576), so that the service will not impact the early boot time. Gogs will start two minutes after the non-delayed services.
-
-![](/docs/images/install_gogs_on_windows_nssm_2.png)
-
-I/O tab:
-
-* Output (stdout): C:\gogs\log\gogs-nssm.txt
-* Error (stderr): C:\gogs\log\gogs-nssm.txt
-
-That will capture all text output that you would normally receive from Gogs on the command line console, and log it to that file instead.
-
-![](/docs/images/install_gogs_on_windows_nssm_3.png)
-
-File rotation tab:
-
-* Check: Rotate files
-* Restrict rotation to files bigger than: 1000000 bytes
-
-![](/docs/images/install_gogs_on_windows_nssm_4.png)
-
-Environment tab:
-
-* Environment variables: PATH=%PATH%;C:\gogs;C:\Program Files (x86)\Git\bin
-
-That is a guarantee that both gogs.exe and git.exe will be on the Gogs service's path variable during runtime.
-
-![](/docs/images/install_gogs_on_windows_nssm_5.png)
-
-Click "Install service", and you should be confirmed that it succeeded. If it failed, refer back to the command line console you started, for the error message. When it succeeds, go to command line and do:
-
+To start the service run
 ```
-nssm start gogs
+C:\> net start gogs
 ```
-
-You should see:
-
+You should see
 ```
-gogs: START: The operation completed successfully.
-```
-
-Check that this is true by opening `C:\gogs\log\gogs-nssm.txt`. You should see Gogs' start up procedures, ending with:
-
-```
-timestamp [I] SQLite3 Enabled
-timestamp [I] Run Mode: Production
-timestamp [I] Listen: http://127.0.1.1:80
-```
-
-Now point your web browser at `http://gogs/` and log in.
-
-Gogs is running as a service, and will not need to be run manually, unless something goes wrong. NSSM will attempt to restart the service for you, if the Gogs server crashes.
-
-When you need to restart it after `app.ini` changes, go to an administrator command line after the changes, and do:
-
-```
-nssm restart gogs
-```
-
-See the [configuration cheat sheet](http://gogs.io/docs/advanced/configuration_cheat_sheet.html) for reference of the `custom\conf\app.ini` settings.
-
-An example of the logging and error handling in action:
-
-```
-[log]
-ROOT_PATH = C:\gogs\log
-```
-
-At the time of writing this line, for Go Git Service 0.5.13.0212 Beta, it will cause the following to print in `C:\gogs\log\gogs-nssm.txt`:
-
-```
-timestamp [T] Custom path: C:/gogs/custom
-timestamp [T] Log path: C:\gogs\log
-timestamp [I] Gogs: Go Git Service 0.5.13.0212 Beta
-timestamp [log.go:294 Error()] [E] Fail to set logger(file): invalid character 'g' in string escape code
-```
-
-This is what was expected in `C:\custom\conf\app.ini`:
-
-```
-ROOT_PATH = C:/gogs/log
-```
-
-And this was the `nssm` interaction while solving it:
-
-```
-C:\>nssm restart gogs
-gogs: STOP: The operation completed successfully.
-gogs: Unexpected status SERVICE_PAUSED in response to START control.
-
-C:\>nssm start gogs
-gogs: START: An instance of the service is already running.
-
-C:\>nssm stop gogs
-gogs: STOP: The operation completed successfully.
-
-C:\>nssm start gogs
-gogs: Unexpected status SERVICE_PAUSED in response to START control.
-
-C:\>nssm restart gogs
-gogs: STOP: The operation completed successfully.
-gogs: START: The operation completed successfully.
+The gogs service is starting.
+The gogs service was started successfully.
 ```
