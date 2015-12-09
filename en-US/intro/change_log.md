@@ -4,6 +4,13 @@ name: Change Log
 
 # Change Log
 
+### v0.8.0 (unreleased)
+
+#### Improvements
+
+- Show mirror address on repository pages [#1984](https://github.com/gogits/gogs/issues/1984) 
+- Able to change mirror source address
+
 ### v0.7.33
 
 #### Bug fixes
