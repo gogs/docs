@@ -34,9 +34,15 @@ The general way to upgrade Gogs:
 # Upgrade source and install dependencies
 $ go get -u github.com/gogits/gogs
 
-# Remove or move old build and build new main program
 $ cd $GOPATH/src/github.com/gogits/gogs
-$ rm gogs # mv gogs gogs.old
+
+# Remove old build
+$ rm gogs
+
+# or move old build
+mv gogs gogs.$(date +%Y-%m-%d).old
+
+# And rebuild Gogs
 $ go build
 ```
 
@@ -51,17 +57,23 @@ cd $GOPATH/src/github.com/gogits/gogs
 
 If you do not see error messages, hit `Ctrl-C` to stop Gogs.
 
-### Build with SQLite3/Redis/Memcache
+### Rebuild with SQLite3/Redis/Memcache
 
-If you need to enable SQLite3/Redis/Memcache, please delete directory `$GOPATH/pkg/{GOOS_GOARCH}/github.com/gogits/gogs` and do:
+If your previous environment runs with SQLite3/Redis/Memcache, update as below:
 
 ```bash
 # Upgrade source and install dependencies
 $ go get -u -tags "sqlite redis memcache" github.com/gogits/gogs
 
-# Remove or move old build and build new main program
 $ cd $GOPATH/src/github.com/gogits/gogs
-$ rm gogs # mv gogs gogs.old
+
+# Remove old build
+$ rm gogs
+
+# or move old build
+mv gogs gogs.$(date +%Y-%m-%d).old
+
+# And rebuild Gogs with SQLite3/Redis/Memcache
 $ go build -tags "sqlite redis memcache"
 ```
 
