@@ -1,5 +1,3 @@
 ---
-root: true
-name: Features
-sort: 2
+name: Upgrade
 ---
