@@ -40,7 +40,7 @@ $ cd $GOPATH/src/github.com/gogits/gogs
 $ rm gogs
 
 # or move old build
-mv gogs gogs.$(date +%Y-%m-%d).old
+$ mv gogs gogs.$(date +%Y-%m-%d).old
 
 # And rebuild Gogs
 $ go build
@@ -71,7 +71,7 @@ $ cd $GOPATH/src/github.com/gogits/gogs
 $ rm gogs
 
 # or move old build
-mv gogs gogs.$(date +%Y-%m-%d).old
+$ mv gogs gogs.$(date +%Y-%m-%d).old
 
 # And rebuild Gogs with SQLite3/Redis/Memcache
 $ go build -tags "sqlite redis memcache"
