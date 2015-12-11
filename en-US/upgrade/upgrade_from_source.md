@@ -1,6 +1,6 @@
 ---
 name: From source
-sort: 1
+sort: 2
 ---
 
 # Upgrade from source

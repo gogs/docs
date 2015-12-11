@@ -74,10 +74,5 @@ All downloads come with **MySQL** and **PostgreSQL** support, and build **with t
 2. `cd` into the directory just created.
 3. Execute `./gogs web` and you're done.
 
-## How to upgrade from binary?
-
-1. Download latest binary release ZIP archive.
-2. Remove old `templates` directory.
-3. Extract archive and copy-paste everything to corresponding (old) location.
 
 See [Configuration and run](/docs/installation/configuration_and_run) to go further.
