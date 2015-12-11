@@ -10,7 +10,7 @@ sort: 1
 Find the location where the current binary is.
 
 ```bash
-# On default environment generaly is on git home folder
+# On default environment generally is on git home folder
 $ sudo su - git
 $ cd ~
 $ pwd
