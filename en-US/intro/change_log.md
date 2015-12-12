@@ -8,14 +8,17 @@ name: Change Log
 
 #### Bug fixes
 
+- Cannot push repository with massive commits like Linux kernel [#279](https://github.com/gogits/gogs/issues/279) 
 - SMTP authentication makes invalid assumption on protocol [#2152](https://github.com/gogits/gogs/issues/2152) 
 
 #### Improvements
 
 - Send email when a new pull request is submitted [#1612](https://github.com/gogits/gogs/issues/1612) 
 - Auto login after install if admin is configured [#1627](https://github.com/gogits/gogs/issues/1627) 
+- Disable change username and password for non-local users [#1374](https://github.com/gogits/gogs/issues/1374)  [#1938](https://github.com/gogits/gogs/issues/1938) [#2154](https://github.com/gogits/gogs/issues/2154) 
 - Able to config `git fsck` timeout [#1943](https://github.com/gogits/gogs/issues/1943) 
-- Able to show and edit mirror address on repository pages [#1984](https://github.com/gogits/gogs/issues/1984) 
+- Able to show and edit mirror address on repository pages [#1984](https://github.com/gogits/gogs/issues/1984)
+- Do not show content of issue in activity timeline [#2029](https://github.com/gogits/gogs/issues/2029)
 - Show author email in commit diff [#2035](https://github.com/gogits/gogs/issues/2035) 
 - Able to change mirror source address
 - Add "New Mirror" button on dashboard [#2037](https://github.com/gogits/gogs/issues/2037) 
