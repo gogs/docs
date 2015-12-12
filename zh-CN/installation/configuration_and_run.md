@@ -40,6 +40,13 @@ PASSWD = root
 ### 开发者模式
 
 - 您需要在 `custom/conf/app.ini` 文件中将选项 `security -> INSTALL_LOCK` 的值设置为 `true`。
+- 您可以使用超能的 `make` 命令：
+
+	```sh
+$ make
+$ ./gogs web
+	```
+	
 - 您可以在 Gogs 源码目录使用命令 `bra run`：
 	- 安装 [bra](https://github.com/Unknwon/bra) 工具：`go get -u github.com/Unknwon/bra`
 

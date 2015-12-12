@@ -6,12 +6,24 @@ name: Change Log
 
 ### v0.8.0 (unreleased)
 
+#### Bug fixes
+
+- SMTP authentication makes invalid assumption on protocol [#2152](https://github.com/gogits/gogs/issues/2152) 
+
 #### Improvements
 
-- Show mirror address on repository pages [#1984](https://github.com/gogits/gogs/issues/1984) 
+- Auto login after install if admin is configured [#1627](https://github.com/gogits/gogs/issues/1627) 
+- Able to config `git fsck` timeout [#1943](https://github.com/gogits/gogs/issues/1943) 
+- Able to show and edit mirror address on repository pages [#1984](https://github.com/gogits/gogs/issues/1984) 
+- Show author email in commit diff [#2035](https://github.com/gogits/gogs/issues/2035) 
 - Able to change mirror source address
+- Add "New Mirror" button on dashboard [#2037](https://github.com/gogits/gogs/issues/2037) 
 
-### v0.7.33
+#### Features
+
+- Able to select branch in commits page [#1846](https://github.com/gogits/gogs/issues/1846) 
+
+### v0.7.33 @ 2015-12-06
 
 #### Bug fixes
 

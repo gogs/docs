@@ -40,6 +40,13 @@ Yes, why don't you just edit `conf/app.ini`? The reason is to keep your custom c
 ### For Developers
 
 - You need to set key `security -> INSTALL_LOCK` to be `true` in file `custom/conf/app.ini` in order to run from source.
+- You can use famous `make` command:
+
+	```sh
+$ make
+$ ./gogs web
+	```
+	
 - You can enable live compile by executing `bra run` in the Gogs source folder
 	- To install [bra](https://github.com/Unknwon/bra): `go get -u github.com/Unknwon/bra`
 

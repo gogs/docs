@@ -24,6 +24,7 @@ name: 配置文件手册
 - `SCRIPT_TYPE`：系统脚本类型，一般情况下均为 `bash`，但有些用户反应只能使用 `sh`
 - `ANSI_CHARSET`：当遇到无法识别的字符集时使用的默认字符集
 - `FORCE_PRIVATE`：强制要求所有新建的仓库都是私有的
+- `MAX_CREATION_LIMIT`：全局默认的每个用户可创建创建仓库上限，`-1` 表示无限制
 - `PULL_REQUEST_QUEUE_LENGTH`:exclamation:：测试合并请求（Pull Request）的任务队列长度，该值越大越好
 
 ## UI (`ui`)
@@ -93,6 +94,7 @@ name: 配置文件手册
 - `ENABLE_REVERSE_PROXY_AUTHENTICATION`：激活该选项来开启反向代理用户认证，请从 https://github.com/gogits/gogs/issues/165 了解更多信息
 - `ENABLE_REVERSE_PROXY_AUTO_REGISTRATION`：激活该选项来开启反向代理用户认证的自动注册功能
 - `DISABLE_MINIMUM_KEY_SIZE_CHECK`：激活该选项来禁止检查响应类型的密钥最小长度
+- `ENABLE_CAPTCHA`：激活该选项以在用户注册时要求输入验证码
 
 ## Webhook (`webhook`)
 
@@ -136,7 +138,7 @@ name: 配置文件手册
 
 - `ENABLED`：启用该选项以允许用户上传附件
 - `PATH`：存放附件的路径
-- `ALLOWED_TYPES`：允许上传的 MIME 类型，例如 `image/jpeg|image/png`
+- `ALLOWED_TYPES`：允许上传的 MIME 类型，例如 `image/jpeg|image/png`，使用 `*/*` 允许所有类型的文件
 - `MAX_SIZE`：最大允许上传的附件体积，单位为 MB，例如 `4`
 - `MAX_FILES`：最大允许一次性上传的附件个数，例如 `5`
 
@@ -146,6 +148,32 @@ name: 配置文件手册
 - `MODE`：日志记录模式，默认为 `console`。如果想要开启多模式，请使用逗号分割
 - `LEVEL`：基本日志级别，默认为 `Trace`
 
+## Cron (`cron`)
+
+- `ENABLED`：激活该选项以允许周期性运行 Cron 任务
+- `RUN_AT_START`：激活该选项以允许在启动时执行 Cron 任务
+
+### Cron - Update Mirrors (`cron.update_mirrors`)
+
+- `SCHEDULE`：定时更新仓库镜像的 Cron 语法，例如：`@every 1h`
+
+### Cron - Repository Health Check (`cron.repo_health_check`)
+
+- `SCHEDULE`：定时进行仓库健康检查的 Cron 语法，例如：`@every 24h`
+- `TIMEOUT`：仓库健康检查超时的定义语法，例如：`60s`
+- `ARGS`：`git fsck` 命令的参数，例如：`--unreachable --tags`
+
+### Cron - Repository Statistics Check (`cron.check_repo_stats`)
+
+- `RUN_AT_START`：激活该选项以在启动时执行仓库统计检查
+- `SCHEDULE`：定时进行仓库统计检查的 Cron 语法，例如：`@every 24h`
+
 ## Git (`git`)
 
 - `MAX_GIT_DIFF_LINES`：对比页面显示的最大行数
+- `GC_ARGS`：`git gc` 命令的参数，例如：`--aggressive --auto`
+
+## Other (`other`)
+
+- `SHOW_FOOTER_BRANDING`：激活该选项以在页脚显示 Gogs 推广信息
+- `SHOW_FOOTER_VERSION`：激活该选项以在页脚显示 Gogs 版本信息

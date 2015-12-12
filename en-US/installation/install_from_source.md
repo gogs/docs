@@ -13,7 +13,7 @@ name: From source
 We are going to create a new user called `git` and install/setup everything under that user:
 
 ```sh
-sudo adduser --disabled-login --gecos 'Gogs' git
+$ sudo adduser --disabled-login --gecos 'Gogs' git
 ```
 
 ### Third-party Packages
@@ -29,14 +29,14 @@ If your system's Go matches the requirements, please skip this section.
 Install Go in `/home/git/local/go` so it wouldn't interfere with future updates of your system's package manager:
 
 ```sh
-sudo su - git
-cd ~
+$ sudo su - git
+$ cd ~
 # create a folder to install 'go'
-mkdir local
+$ mkdir local
 # Download go (change go$VERSION.$OS-$ARCH.tar.gz to the latest realse)
-wget https://storage.googleapis.com/golang/go$VERSION.$OS-$ARCH.tar.gz
+$ wget https://storage.googleapis.com/golang/go$VERSION.$OS-$ARCH.tar.gz
 # expand it to ~/local
-tar -C /home/git/local -xzf go$VERSION.$OS-$ARCH.tar.gz
+$ tar -C /home/git/local -xzf go$VERSION.$OS-$ARCH.tar.gz
 ```
 
 ### Set Up the Environment
@@ -44,12 +44,12 @@ tar -C /home/git/local -xzf go$VERSION.$OS-$ARCH.tar.gz
 Set the paths that correspond to your system:
 
 ```sh
-sudo su - git
-cd ~
-echo 'export GOROOT=$HOME/local/go' >> $HOME/.bashrc
-echo 'export GOPATH=$HOME/go' >> $HOME/.bashrc
-echo 'export PATH=$PATH:$GOROOT/bin:$GOPATH/bin' >> $HOME/.bashrc
-source $HOME/.bashrc
+$ sudo su - git
+$ cd ~
+$ echo 'export GOROOT=$HOME/local/go' >> $HOME/.bashrc
+$ echo 'export GOPATH=$HOME/go' >> $HOME/.bashrc
+$ echo 'export PATH=$PATH:$GOROOT/bin:$GOPATH/bin' >> $HOME/.bashrc
+$ source $HOME/.bashrc
 ```
 
 ## Install Gogs
@@ -95,8 +95,8 @@ $ go build
 To make sure Gogs is working:
 
 ```sh
-cd $GOPATH/src/github.com/gogits/gogs
-./gogs web
+$ cd $GOPATH/src/github.com/gogits/gogs
+$ ./gogs web
 ```
 
 If you do not see any error messages, hit `Ctrl-C` to stop Gogs.

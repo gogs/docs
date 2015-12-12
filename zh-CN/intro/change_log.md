@@ -6,12 +6,24 @@ name: 变更日志
 
 ### v0.8.0（未发布）
 
+#### Bug 修复
+
+- SMTP 授权认证未完全遵循协议规定 [#2152](https://github.com/gogits/gogs/issues/2152) 
+
 #### 功能改进
 
-- 在仓库页面显示镜像的地址 [#1984](https://github.com/gogits/gogs/issues/1984) 
+- 如果在安装页面设置了管理员，完成安装后自动登录 [#1627](https://github.com/gogits/gogs/issues/1627) 
+- 允许自定义 `git fsck` 的超时设置 [#1943](https://github.com/gogits/gogs/issues/1943) 
+- 在仓库页面显示和编辑镜像的地址 [#1984](https://github.com/gogits/gogs/issues/1984) 
+- 在差异对比页面显示作者的邮箱 [#2035](https://github.com/gogits/gogs/issues/2035) 
 - 允许修改仓库的镜像源地址
+- 控制面板增加 “创建新的镜像” 按钮 [#2037](https://github.com/gogits/gogs/issues/2037) 
 
-### v0.7.33
+#### 功能改进
+
+- 允许在代码提交页面直接切换分支 [#1846](https://github.com/gogits/gogs/issues/1846) 
+
+### v0.7.33 @ 2015-12-06
 
 #### Bug 修复
 

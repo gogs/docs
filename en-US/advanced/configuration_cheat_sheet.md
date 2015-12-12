@@ -23,7 +23,8 @@ Any configuration option that is marked by :exclamation: means remain default un
 - `ROOT`: Root path for storing all users' repository data. It has to be an absolute path, default is `~/<user name>/gogs-repositories`.
 - `SCRIPT_TYPE`: The script type your server supports, usually this is `bash`, but some customers report that they only have `sh`.
 - `ANSI_CHARSET`: The default charset for unrecognized charset.
-- `FORCE_PRIVATE`: Force every new repository to be private
+- `FORCE_PRIVATE`: Force every new repository to be private.
+- `MAX_CREATION_LIMIT`: Global maximum creation limit of repository per user, `-1` means no limit.
 - `PULL_REQUEST_QUEUE_LENGTH`:exclamation:: Length of pull request patch test queue, make it as large as possible.
 
 ## UI (`ui`)
@@ -93,6 +94,7 @@ Any configuration option that is marked by :exclamation: means remain default un
 - `ENABLE_REVERSE_PROXY_AUTHENTICATION`: Enable this to allow reverse proxy authentication, more detail: https://github.com/gogits/gogs/issues/165
 - `ENABLE_REVERSE_PROXY_AUTO_REGISTRATION`: Enable this to allow auto-registration for reverse authentication.
 - `DISABLE_MINIMUM_KEY_SIZE_CHECK`: Do not check minimum key size with corresponding type.
+- `ENABLE_CAPTCHA`: Enable this to use captcha validation for registration.
 
 ## Webhook (`webhook`)
 
@@ -138,7 +140,7 @@ Note: Actually, Gogs support only SMTP with STARTTLS.
 
 - `ENABLED`: Enable this to allow users upload attachments.
 - `PATH`: Path to store attachments.
-- `ALLOWED_TYPES`: Allowed MIME types, e.g. `image/jpeg|image/png`.
+- `ALLOWED_TYPES`: Allowed MIME types, e.g. `image/jpeg|image/png`, use `*/*` for all types.
 - `MAX_SIZE`: Maximum size in MB, e.g. `4`
 - `MAX_FILES`: Maximum number of attachments can be uploaded at once, e.g. `5`.
 
@@ -148,6 +150,32 @@ Note: Actually, Gogs support only SMTP with STARTTLS.
 - `MODE`: Logging mode, default is `console`. For multiple modes, use comma to separate it.
 - `LEVEL`: General log level, default is `Trace`.
 
+## Cron (`cron`)
+
+- `ENABLED`: Enable this to run cron tasks periodically.
+- `RUN_AT_START`: Enable this to run cron tasks at start time.
+
+### Cron - Update Mirrors (`cron.update_mirrors`)
+
+- `SCHEDULE`: Cron syntax for scheduling update mirrors, e.g. `@every 1h`.
+
+### Cron - Repository Health Check (`cron.repo_health_check`)
+
+- `SCHEDULE`: Cron syntax for scheduling repository health check, e.g. `@every 24h`.
+- `TIMEOUT`: Time duration syntax for health check execution timeout, e.g. `60s`.
+- `ARGS`: Arguments for command `git fsck`, e.g. `--unreachable --tags`.
+
+### Cron - Repository Statistics Check (`cron.check_repo_stats`)
+
+- `RUN_AT_START`: Enable this to run repository statistics check at start time.
+- `SCHEDULE`: Cron syntax for scheduling repository statistics check, e.g. `@every 24h`.
+
 ## Git (`git`)
 
 - `MAX_GIT_DIFF_LINES`: Maxium show lines in diff page.
+- `GC_ARGS`: Arguments for command `git gc`, e.g. `--aggressive --auto`.
+
+## Other (`other`)
+
+- `SHOW_FOOTER_BRANDING`: Enable this to show Gogs branding in the footer.
+- `SHOW_FOOTER_VERSION`: Enable this to show Gogs version information in the footer.
