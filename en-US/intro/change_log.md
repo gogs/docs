@@ -12,6 +12,7 @@ name: Change Log
 
 #### Improvements
 
+- Send email when a new pull request is submitted [#1612](https://github.com/gogits/gogs/issues/1612) 
 - Auto login after install if admin is configured [#1627](https://github.com/gogits/gogs/issues/1627) 
 - Able to config `git fsck` timeout [#1943](https://github.com/gogits/gogs/issues/1943) 
 - Able to show and edit mirror address on repository pages [#1984](https://github.com/gogits/gogs/issues/1984) 
@@ -21,7 +22,12 @@ name: Change Log
 
 #### Features
 
+- Able to limit repository creation per user [#1575](https://github.com/gogits/gogs/issues/1575) 
 - Able to select branch in commits page [#1846](https://github.com/gogits/gogs/issues/1846) 
+
+#### Others
+
+- Drop `0.5.x` support, minimum auto-migration version is `0.6.0`.
 
 ### v0.7.33 @ 2015-12-06
 

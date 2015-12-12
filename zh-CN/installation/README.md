@@ -12,7 +12,7 @@ name: 下载安装
     - 服务端和客户端均需版本 >= 1.7.1
     - Windows 系统建议使用最新版
 - SSH 服务器：
-    - **如果您只使用 HTTP/HTTPS 的话请忽略此项**
+    - **如果您只使用 HTTP/HTTPS 或者内置 SSH 服务器的话请忽略此项**
     - 推荐 Windows 系统使用 [Cygwin OpenSSH](http://docs.oracle.com/cd/E24628_01/install.121/e22624/preinstall_req_cygwin_ssh.htm) 或 [Copssh](https://www.itefix.net/copssh)
 
 ### 安装数据库

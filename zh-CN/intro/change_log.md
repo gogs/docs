@@ -12,6 +12,7 @@ name: 变更日志
 
 #### 功能改进
 
+- 当有新的合并请求提交时发送邮件提醒 [#1612](https://github.com/gogits/gogs/issues/1612) 
 - 如果在安装页面设置了管理员，完成安装后自动登录 [#1627](https://github.com/gogits/gogs/issues/1627) 
 - 允许自定义 `git fsck` 的超时设置 [#1943](https://github.com/gogits/gogs/issues/1943) 
 - 在仓库页面显示和编辑镜像的地址 [#1984](https://github.com/gogits/gogs/issues/1984) 
@@ -21,7 +22,12 @@ name: 变更日志
 
 #### 功能改进
 
+- 允许限制每个用户的最大允许创建仓库数 [#1575](https://github.com/gogits/gogs/issues/1575) 
 - 允许在代码提交页面直接切换分支 [#1846](https://github.com/gogits/gogs/issues/1846) 
+
+#### 其它变更
+
+- 停止支持 `0.5.x` 系列版本，最低要求的自动迁移版本为 `0.6.0`。
 
 ### v0.7.33 @ 2015-12-06
 

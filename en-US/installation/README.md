@@ -12,7 +12,7 @@ name: Installation
     - Version >= 1.7.1 for both server and client sides
     - Best to use latest version for Windows
 - A functioning SSH server:
-    - **Ignore this if you're only going to use HTTP/HTTPS**
+    - **Ignore this if you're only going to use HTTP/HTTPS or use builtin SSH server**
     - Recommend [Cygwin OpenSSH](http://docs.oracle.com/cd/E24628_01/install.121/e22624/preinstall_req_cygwin_ssh.htm) or [Copssh](https://www.itefix.net/copssh) for Windows.
 
 ### Install Database
