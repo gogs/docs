@@ -4,7 +4,7 @@ name: Change Log
 
 # Change Log
 
-### v0.8.0 (unreleased)
+### v0.8.0 @ 2015-12-13
 
 #### Bug fixes
 
@@ -22,6 +22,7 @@ name: Change Log
 - Show author email in commit diff [#2035](https://github.com/gogits/gogs/issues/2035) 
 - Able to change mirror source address
 - Add "New Mirror" button on dashboard [#2037](https://github.com/gogits/gogs/issues/2037) 
+- Able to set external URL for wiki [#2114](https://github.com/gogits/gogs/issues/2114) 
 
 #### Features
 

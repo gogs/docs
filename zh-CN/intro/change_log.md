@@ -4,7 +4,7 @@ name: 变更日志
 
 # 变更日志
 
-### v0.8.0（未发布）
+### v0.8.0 @ 2015-12-13
 
 #### Bug 修复
 
@@ -22,6 +22,7 @@ name: 变更日志
 - 在差异对比页面显示作者的邮箱 [#2035](https://github.com/gogits/gogs/issues/2035) 
 - 允许修改仓库的镜像源地址
 - 控制面板增加 “创建新的镜像” 按钮 [#2037](https://github.com/gogits/gogs/issues/2037) 
+- 允许使用外部 Wiki 链接 [#2114](https://github.com/gogits/gogs/issues/2114)
 
 #### 功能改进
 
