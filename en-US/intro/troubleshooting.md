@@ -12,7 +12,7 @@ name: Troubleshooting
 
 ## SSH
 
-#### SSH conection hangs for 60 seconds
+#### SSH connection hangs for 60 seconds
 
 - Causes: Gogs will request itself (web service) after every SSH push, and your server firewall or ISP does not allow that happen
 
@@ -86,7 +86,7 @@ After that, go to [http://localhost:3000/install](http://localhost:3000/install)
 	- Visit https://accounts.google.com and log in.
 	- Go to https://accounts.google.com/DisplayUnlockCaptcha click `continue`.
 	- Now copy the link looks like this(prompt in Gogs server log): https://accounts.google.com/ContinueSignIn?sarp=1&scc=1&plt=AKgnsbvPPN_E_25__nyS*******f18O9uuLNtz0Imw and log in again.
-	- Things should work now. Last but not the least, check you `spam` box in case your mail service provider thinks your gmail is a spammer.
+	- Things should work now. Last but not the least, check your `spam` box in case your mail service provider thinks your gmail is a spammer.
 
 ## Windows
 
