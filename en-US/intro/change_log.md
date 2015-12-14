@@ -31,7 +31,7 @@ name: Change Log
 
 #### Others
 
-- Drop `0.5.x` support, minimum auto-migration version is `0.6.0`.
+- Drop `0.5.x` support, minimum auto-migration version is `0.6.0`
 
 ### v0.7.33 @ 2015-12-06
 

@@ -8,7 +8,7 @@ name: From source
 
 ### Overall
 
-- [Go Programming Language](http://golang.org): Version >= 1.3
+- [Go Programming Language](http://golang.org): Version >= 1.4
 
 We are going to create a new user called `git` and install/setup everything under that user:
 
