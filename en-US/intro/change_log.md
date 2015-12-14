@@ -4,6 +4,12 @@ name: Change Log
 
 # Change Log
 
+### v0.8.x (unreleased)
+
+#### Bug fixes
+
+- Cannot detect correct file encoding [#2185](https://github.com/gogits/gogs/issues/2185) 
+
 ### v0.8.0 @ 2015-12-13
 
 #### Bug fixes
