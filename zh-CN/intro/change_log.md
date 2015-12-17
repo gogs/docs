@@ -8,7 +8,15 @@ name: 变更日志
 
 #### Bug 修复
 
+- 火狐下无法预览 Wiki [#2176](https://github.com/gogits/gogs/issues/2176)
+- 使用 PostgreSQL 作为数据库时无法正常浏览仓库的关注者和称赞者 [#2176](https://github.com/gogits/gogs/issues/2176)
 - 无法检测正确的文件编码 [#2185](https://github.com/gogits/gogs/issues/2185) 
+- 超大文件差异对比导致无响应
+- 无法处理非代码提交（Commit）关联的标签（Tag）
+
+#### 新增特性
+
+- 开放更多 API 接口：操作用户邮箱 
 
 ### v0.8.0 @ 2015-12-13
 
@@ -30,7 +38,7 @@ name: 变更日志
 - 控制面板增加 “创建新的镜像” 按钮 [#2037](https://github.com/gogits/gogs/issues/2037) 
 - 允许使用外部 Wiki 链接 [#2114](https://github.com/gogits/gogs/issues/2114)
 
-#### 功能改进
+#### 新增特性
 
 - 允许限制每个用户的最大允许创建仓库数 [#1575](https://github.com/gogits/gogs/issues/1575) 
 - 允许在代码提交页面直接切换分支 [#1846](https://github.com/gogits/gogs/issues/1846) 
@@ -125,65 +133,5 @@ name: 变更日志
 #### 其它变更
 
 - 开启在线论坛 http://forum.gogs.io/
-
-### v0.7.0 @ 2015-11-08
-
-#### Bug 修复
-
-- 安装时管理员邮箱不允许使用 `root@localhost` [#470](https://github.com/gogits/gogs/issues/470)
-- 工单（Issue）浏览页面错误的代码提交（Commit）引用顺序 [#1602](https://github.com/gogits/gogs/issues/1602)
-- 注册成功后提示了不准确的邮箱登陆地址 [#1697](https://github.com/gogits/gogs/issues/1697)
-- 迁移仓库无法使用 `--all` 参数推送 [#1705](https://github.com/gogits/gogs/issues/1705)
-- 拥有管理员权限的团队成员无法关闭或重新开启工单（Issue）[#1748](https://github.com/gogits/gogs/issues/1748)
-- 超大的文件差异（Diff）对比导致内存溢出 [#1790](https://github.com/gogits/gogs/issues/1790)
-- 当没有实际可更新内容时，推送会返回错误消息 [#1896](https://github.com/gogits/gogs/issues/1896) 
-- 使用相对路径的图片生成错误的超链接 [#1904](https://github.com/gogits/gogs/issues/1904) 
-
-#### 功能改进
-
-- 在文件对比差异中识别文件重命名和位置变更 [#1078](https://github.com/gogits/gogs/issues/1078)
-- 控制面板的工单（Issue）增加排序功能 [#1459](https://github.com/gogits/gogs/issues/1459)
-- 只允许管理员或授权用户迁移本地仓库 [#1511](https://github.com/gogits/gogs/issues/1511)
-- 管理员可以在后台创建用户的同时向其发送注册成功邮件 [#1525](https://github.com/gogits/gogs/issues/1525)
-- 克隆 URL 显示原本的大小写 [#1895](https://github.com/gogits/gogs/issues/1895)
-
-#### 新增特性
-
-- 支持合并请求（Pull Request） [#5](https://github.com/gogits/gogs/issues/5)
-- 支持自动为图片渲染可单击的链接 [#1433](https://github.com/gogits/gogs/issues/1433)
-- 新增配置选项 `[repository] FORCE_PRIVATE` 来强制要求所有新建仓库必须为私有的 [#1657](https://github.com/gogits/gogs/issues/1657)
-
-#### 其它变更
-
-- 停止对 Go 1.2 系列版本的支持，最低要求改为 Go 1.3 版本。
-- 0.5 系列版本将从 0.8 版本开始停止支持
-
-### v0.6.15 @ 2015-09-26
-
-#### Bug 修复
-
-- 仓库名称包含 "git" 时无法访问 [#1593](https://github.com/gogits/gogs/issues/1593)
-- 控制面板的协作仓库链接丢失子路径前缀 [#1594](https://github.com/gogits/gogs/issues/1594)
-- 推送新分支时会重复触发代码提交消息对工单的引用 [#1595](https://github.com/gogits/gogs/issues/1595)
-- 上传图片未对子路径作处理 [#1603](https://github.com/gogits/gogs/issues/1603)
-- 添加新的 SSH 公钥时注释包含空格会被截断 [#1622](https://github.com/gogits/gogs/issues/1622)
-- 修改标签标题会重置其颜色 [#1659](https://github.com/gogits/gogs/issues/1659)
-
-#### 功能改进
-
-- 允许使用环境变量 `GOGS_WORK_DIR` 来指定工作目录
-- 在创建完用户只会对用户类型进行转换 [#748](https://github.com/gogits/gogs/issues/748)
-- 在新建和迁移仓库时根据组织的最后更新时间进行排序 [#1585](https://github.com/gogits/gogs/issues/1585)
-
-#### 新增特性
-
-- 增加 TiDB 作为后端数据库的支持
-- 增加 Emoji 支持 [#633](https://github.com/gogits/gogs/issues/633)
-- 增加通过设置配置选项 `[service] ENABLE_CAPTCHA = false` 来禁用验证码服务 [#697](https://github.com/gogits/gogs/issues/697)
-- 增加对 SMTP 授权时只允许特定域名的支持 [#1620](https://github.com/gogits/gogs/issues/1620)
-
-#### 其它变更
-
-- 移除社交帐号登录支持
 
 **更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases) 上找到。**
