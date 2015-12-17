@@ -109,7 +109,7 @@ Any configuration option that is marked by :exclamation: means remain default un
 - `DISABLE_HELO`: Disable HELO operation.
 - `HELO_HOSTNAME`: Custom hostname for HELO operation.
 - `HOST`: SMTP mail host address and port (example: smtp.gogs.io:587).
-- `FROM`: Mail from address, RFC 5322. This can be just an email address, or the "Name" <email@example.com> format.
+- `FROM`: Mail from address, RFC 5322. This can be just an email address, or the "Name" \<email@example.com\> format.
 - `USER`: User name of mailer (usually just your e-mail address).
 - `PASSWD`: Password of mailer.
 - `SKIP_VERIFY`: Do not verify the self-signed certificates.
