@@ -4,7 +4,7 @@ name: 变更日志
 
 # 变更日志
 
-### v0.8.x（未发布）
+### v0.8.10 @ 2015-12-18
 
 #### Bug 修复
 
@@ -115,25 +115,4 @@ name: 变更日志
 
 - 管理员允许浏览和修改私有仓库的设置 [#493](https://github.com/gogits/gogs/issues/493) [#1401](https://github.com/gogits/gogs/issues/1401) 
 
-### v0.7.6 @ 2015-11-12
-
-#### Bug 修复
-
-- 子目录下的图片不能正确渲染相对链接 [#1904](https://github.com/gogits/gogs/issues/1904)
-- SSH 操作无法处理大小写混合的 URL
-- 使用子路径时删除系统提示后重定向至错误的 URL [#1930](https://github.com/gogits/gogs/issues/1930) 
-
-#### 功能改进
-
-- 在代码提交历史页面显示当前历史所属的分支 [#1572](https://github.com/gogits/gogs/issues/1572) 
-- 允许在工单页面使用 Tab 键移动焦点至按钮并使用 `Enter` 或空格触发单击事件 [#1824](https://github.com/gogits/gogs/issues/1824) [#1917](https://github.com/gogits/gogs/issues/1917) 
-
-#### 新增特性
-
-- 允许使用配置选项 `[server] START_SSH_SERVER = true` 来启动内置 SSH 服务器
-
-#### 其它变更
-
-- 开启在线论坛 http://forum.gogs.io/
-
-**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases) 上找到。**
+**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.7.19) 上找到。**
