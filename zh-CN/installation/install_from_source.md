@@ -104,6 +104,7 @@ Gogs 默认并没有支持一些功能，这些功能需要在构建时明确使
 - `sqlite3`/`tidb`：SQLite3/TiDB 数据库支持
 - `pam`：PAM 授权认证支持
 - `cert`：生成自定义证书支持
+- `miniwinsvc`：Windows 服务内置支持（或者您可以使用 NSSM 来创建服务）
 
 例如，您需要支持以上所有功能，则需要先删除 `$GOPATH/pkg/{GOOS_GOARCH}/github.com/gogits/gogs` 目录，然后执行以下命令：
 

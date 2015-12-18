@@ -110,6 +110,7 @@ Available build tags are:
 - `sqlite3`/`tidb`: SQLite3/TiDB database support
 - `pam`: PAM authentication support
 - `cert`: Generate self-signed certificates support
+- `miniwinsvc`: Builtin windows service support (or you can use NSSM to create a service)
 
 For example, you want to support all of them, first delete directory `$GOPATH/pkg/${GOOS}_${GOARCH}/github.com/gogits/gogs` and then do:
 
