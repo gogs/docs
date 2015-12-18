@@ -8,15 +8,17 @@ name: Change Log
 
 #### Bug fixes
 
+- Can't identify git version on Windows [#2167](https://github.com/gogits/gogs/issues/2167)
 - Wiki preview does not work on Firefox [#2171](https://github.com/gogits/gogs/issues/2171)
 - 500 when view repository watchers and stargazers with PostgreSQL [#2176](https://github.com/gogits/gogs/issues/2176)
 - Cannot detect correct file encoding [#2185](https://github.com/gogits/gogs/issues/2185) 
 - Huge diff hangs 
 - Cannot handle non-commit tag
+- Dashboard news feeds for organizations are wrong [#2223](https://github.com/gogits/gogs/issues/2223) 
 
 #### Features
 
-- Add more APIs: user emails
+- Add more APIs: user emails, organizations [#1692](https://github.com/gogits/gogs/issues/1692) 
 
 ### v0.8.0 @ 2015-12-13
 

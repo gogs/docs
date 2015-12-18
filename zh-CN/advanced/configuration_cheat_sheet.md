@@ -109,7 +109,7 @@ name: 配置文件手册
 - `DISABLE_HELO`：禁用 HELO 操作
 - `HELO_HOSTNAME`：HELO 操作的自定义主机名
 - `HOST`：SMTP 主机地址与端口
-- `FROM`：邮箱的来自地址，遵循 RFC 5322规范，可以是一个单纯的邮箱地址或者 "名字" <email@example.com> 的形式
+- `FROM`：邮箱的来自地址，遵循 RFC 5322规范，可以是一个单纯的邮箱地址或者 "名字" \<email@example.com\> 的形式
 - `USER`：邮箱用户名
 - `PASSWD`：邮箱密码
 - `SKIP_VERIFY`：不验证自签发证书的有效性
