@@ -29,8 +29,13 @@ Both the LDAP via BindDN and the simple auth LDAP share the following fields:
   - Example: `(objectClass=adminAccount)`
 
 - Username attribute (optional)
-  - The attribute of the user's LDAP record containing the user name. Leave empty to use sign-in form value for user name.
-  - Example: `(&(objectClass=Person)(|(uid=%[1]s)(mail=%[1]s)))`
+  - The attribute of the user's LDAP record containing the user name. Given
+    attribute value will be used for new Gogs account user name after first
+    successful sign-in. Leave empty to use login name given on sign-in form.
+  - This is useful when supplied login name is matched against multiple
+    attributes, but only single specific attribute should be used for Gogs
+    account name, see "User Filter".
+  - Example: `uid`
 
 - First name attribute (optional)
   - The attribute of the user's LDAP record containing the user's first name.
@@ -65,20 +70,25 @@ Both the LDAP via BindDN and the simple auth LDAP share the following fields:
 
 - User Filter **(required)**
   - An LDAP filter declaring how to find the user record that is attempting to
-    authenticate. The '%s' matching parameter will be substituted with the
-    user's username.
+    authenticate. The `%s` matching parameter will be substituted with login
+    name given on sign-in form.
   - Example: `(&(objectClass=posixAccount)(uid=%s))`
+  - To substitute more than once `%[1]s` should be used instead, eg. when
+    matching supplied login name against multiple attributes such as user
+    identifier, email or even phone number.
+  - Example: `(&(objectClass=Person)(|(uid=%[1]s)(mail=%[1]s)(mobile=%[1]s)))`
 
 **LDAP using simple auth** adds the following fields:
 
 - User DN **(required)**
   - A template to use as the user's DN. The `%s` matching parameter will be
-    substituted with the user's username.
+    substituted with login name given on sign-in form.
   - Example: `cn=%s,ou=Users,dc=mydomain,dc=com`
   - Example: `uid=%s,ou=Users,dc=mydomain,dc=com`
 
 - User Filter **(required)**
   - An LDAP filter declaring when a user should be allowed to log in. The `%s`
-    matching parameter will be substituted with the user's username.
+    matching parameter will be substituted with login name given on sign-in
+    form.
   - Example: `(&(objectClass=posixAccount)(cn=%s))`
   - Example: `(&(objectClass=posixAccount)(uid=%s))`
