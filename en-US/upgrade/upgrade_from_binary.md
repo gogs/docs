@@ -6,6 +6,8 @@ name: From binary
 
 **Downloads are available on [Install from binary](/docs/installation/install_from_binary).**
 
+**Note** If you plan to do copy-paste upgrade, make sure you delete old `templates` directory first!
+
 Find the location where the current installation is:
 
 ```bash
