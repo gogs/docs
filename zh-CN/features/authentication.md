@@ -13,11 +13,11 @@ name: 授权认证
 
 * 主机地址 **（必填）**
     * The address where the LDAP server can be reached.
-    * Example: mydomain.com
+    * Example: `mydomain.com`
 
 * 主机端口 **（必填）**
     * The port to use when connecting to the server.
-    * Example: 636
+    * Example: `636`
 
 * 启用 TLS 加密（可选）
     * Whether to use TLS when connecting to the LDAP server.
@@ -26,21 +26,26 @@ name: 授权认证
     * An LDAP filter specifying if a user should be given administrator
       privileges. If a user accounts passes the filter, the user will be
       privileged as an administrator.
-    * Example: (objectClass=adminAccount)
+    * Example: `(objectClass=adminAccount)`
 
 - 用户名属性（可选）
-  - 包含用户名的 LDAP 记录属性。留空则表示使用用户登录时所用的值来当做用户名。
-  - 例如：(&(objectClass=Person)(|(uid=%[1]s)(mail=%[1]s)))
+  - The attribute of the user's LDAP record containing the user name. Given
+    attribute value will be used for new Gogs account user name after first
+    successful sign-in. Leave empty to use login name given on sign-in form.
+  - This is useful when supplied login name is matched against multiple
+    attributes, but only single specific attribute should be used for Gogs
+    account name, see "User Filter".
+  - 例如：`uid`
 
 * 名字属性（可选）
     * The attribute of the user's LDAP record containing the user's first name.
       This will be used to populate their account information.
-    * Example: givenName
+    * Example: `givenName`
 
 * 姓氏属性（可选）
     * The attribute of the user's LDAP record containing the user's surname This
       will be used to populate their account information.
-    * Example: sn
+    * Example: `sn`
 
 * 邮箱属性 **（必填）**
     * The attribute of the user's LDAP record containing the user's email
@@ -64,21 +69,25 @@ name: 授权认证
     * Example: ou=Users,dc=mydomain,dc=com
 
 * 用户过滤规则 **（必填）**
-    * An LDAP filter declaring how to find the user record that is attempting to
-      authenticate. The '%s' matching parameter will be substituted with the
-      user's username.
-    * Example: (&(objectClass=posixAccount)(uid=%s))
+  - An LDAP filter declaring how to find the user record that is attempting to
+    authenticate. The `%s` matching parameter will be substituted with login
+    name given on sign-in form.
+  - Example: `(&(objectClass=posixAccount)(uid=%s))`
+  - To substitute more than once `%[1]s` should be used instead, eg. when
+    matching supplied login name against multiple attributes such as user
+    identifier, email or even phone number.
+  - Example: `(&(objectClass=Person)(|(uid=%[1]s)(mail=%[1]s)(mobile=%[1]s)))`
 
 **基于 simple auth** 需要填充以下字段：
 
-* User DN **（必填）**
-    * A template to use as the user's DN. The `%s` matching parameter will be
-      substituted with the user's username.
-    * Example: cn=%s,ou=Users,dc=mydomain,dc=com
-    * Example: uid=%s,ou=Users,dc=mydomain,dc=com
+- User DN **（必填）**
+  - A template to use as the user's DN. The `%s` matching parameter will be substituted with login name given on sign-in form.
+  - Example: `cn=%s,ou=Users,dc=mydomain,dc=com`
+  - Example: `uid=%s,ou=Users,dc=mydomain,dc=com`
 
-* 用户过滤规则 **（必填）**
-    * An LDAP filter declaring when a user should be allowed to log in. The `%s`
-      matching parameter will be substituted with the user's username.
-    * Example: (&(objectClass=posixAccount)(cn=%s))
-    * Example: (&(objectClass=posixAccount)(uid=%s))
+- 用户过滤规则 **（必填）**
+  - An LDAP filter declaring when a user should be allowed to log in. The `%s`
+    matching parameter will be substituted with login name given on sign-in
+    form.
+  - Example: `(&(objectClass=posixAccount)(cn=%s))`
+  - Example: `(&(objectClass=posixAccount)(uid=%s))`

@@ -81,8 +81,7 @@ Both the LDAP via BindDN and the simple auth LDAP share the following fields:
 **LDAP using simple auth** adds the following fields:
 
 - User DN **(required)**
-  - A template to use as the user's DN. The `%s` matching parameter will be
-    substituted with login name given on sign-in form.
+  - A template to use as the user's DN. The `%s` matching parameter will be substituted with login name given on sign-in form.
   - Example: `cn=%s,ou=Users,dc=mydomain,dc=com`
   - Example: `uid=%s,ou=Users,dc=mydomain,dc=com`
 
