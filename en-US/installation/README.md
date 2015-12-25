@@ -5,7 +5,7 @@ name: Installation
 ## Prerequisites
 
 - Database (choose one of following):
-    - [MySQL](http://dev.mysql.com): Version >= 5.1
+    - [MySQL](http://dev.mysql.com): Version >= 5.5.3
     - [PostgreSQL](http://www.postgresql.org/)
     - or **NOTHING** with SQLite3 or TiDB (experimental)
 - [Git](http://git-scm.com/) (bash):
@@ -22,7 +22,7 @@ Gogs supports MySQL, PostgreSQL, SQLite3 and TiDB. Based on your choice, install
 - [MySQL](http://dev.mysql.com/downloads/mysql/) (Engine: INNODB)
 - [PostgreSQL](http://www.postgresql.org/download/)
 
-**REMEMBER** Please use `etc/mysql.sql` to create a database called `gogs` (default). If you create it manually, make sure the encoding is `utf8`.
+**REMEMBER** Please use `etc/mysql.sql` to create a database called `gogs` (default). If you create it manually, make sure the encoding is `utf8mb4`.
 
 ### Install other requirements
 

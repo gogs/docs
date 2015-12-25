@@ -5,7 +5,7 @@ name: 下载安装
 ## 环境要求
 
 - 数据库（选择以下一项）：
-    - [MySQL](http://dev.mysql.com)：版本 >= 5.1
+    - [MySQL](http://dev.mysql.com)：版本 >= 5.5.3
     - [PostgreSQL](http://www.postgresql.org/)
     - 或者 **什么都不安装** 直接使用 SQLite3 或 TiDB
 - [git](http://git-scm.com/)（bash）：
@@ -22,7 +22,7 @@ Gogs 支持 MySQL、PostgreSQL、SQLite3 和 TiDB（实验性支持），请根�
 - [MySQL](http://dev.mysql.com/downloads/mysql/)（引擎：INNODB）
 - [PostgreSQL](http://www.postgresql.org/download/)
 
-**注意事项** 您可以使用 `etc/mysql.sql` 来自动创建名为 `gogs` 的数据库。如果您选择手动创建，请务必将编码设置为 `utf8`。
+**注意事项** 您可以使用 `etc/mysql.sql` 来自动创建名为 `gogs` 的数据库。如果您选择手动创建，请务必将编码设置为 `utf8mb4`。
 
 ### 安装其它要求
 

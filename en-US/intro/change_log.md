@@ -8,6 +8,7 @@ name: Change Log
 
 #### Bug fixes
 
+- Pull request can not change branch when both sides are organizations [#2014](https://github.com/gogits/gogs/issues/2014)
 - Rename organization redirects to old name [#2268](https://github.com/gogits/gogs/issues/2268) 
 
 #### Improvements

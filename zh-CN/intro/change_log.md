@@ -8,6 +8,7 @@ name: 变更日志
 
 #### Bug 修复
 
+- 当合并请求（Pull Request）的发起者为组织时无法修改分支 [#2014](https://github.com/gogits/gogs/issues/2014)
 - 重命名组织后重定向到错误的 URL [#2268](https://github.com/gogits/gogs/issues/2268) 
 
 #### 功能改进
