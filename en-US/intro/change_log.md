@@ -4,6 +4,20 @@ name: Change Log
 
 # Change Log
 
+### v0.8.x (unreleased)
+
+#### Bug fixes
+
+- Rename organization redirects to old name [#2268](https://github.com/gogits/gogs/issues/2268) 
+
+#### Improvements
+
+- Add config option `[server] SSH_ROOT_PATH` to indicate directory of `authorized_keys` file [#1436](https://github.com/gogits/gogs/issues/1436)
+
+#### Features
+
+- Add more APIs: user followers [#1692](https://github.com/gogits/gogs/issues/1692) 
+
 ### v0.8.10 @ 2015-12-18
 
 #### Bug fixes

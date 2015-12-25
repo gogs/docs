@@ -4,6 +4,20 @@ name: 变更日志
 
 # 变更日志
 
+### v0.8.x（未发布）
+
+#### Bug 修复
+
+- 重命名组织后重定向到错误的 URL [#2268](https://github.com/gogits/gogs/issues/2268) 
+
+#### 功能改进
+
+- 允许通过配置选项 `[server] SSH_ROOT_PATH` 来指定 `authorized_keys` 文件所在的目录 [#1436](https://github.com/gogits/gogs/issues/1436)
+
+#### 新增特性
+
+- 开放更多 API 接口：操作用户关注者 [#1692](https://github.com/gogits/gogs/issues/1692) 
+
 ### v0.8.10 @ 2015-12-18
 
 #### Bug 修复
