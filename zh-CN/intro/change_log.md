@@ -9,11 +9,14 @@ name: 变更日志
 #### Bug 修复
 
 - 当合并请求（Pull Request）的发起者为组织时无法修改分支 [#2014](https://github.com/gogits/gogs/issues/2014)
+- 目录中显示重复的文件名 [#2254](https://github.com/gogits/gogs/issues/2254)
 - 重命名组织后重定向到错误的 URL [#2268](https://github.com/gogits/gogs/issues/2268) 
+- HTML 页面在原始模式浏览时被渲染 [#2283](https://github.com/gogits/gogs/issues/2283) 
 
 #### 功能改进
 
 - 允许通过配置选项 `[server] SSH_ROOT_PATH` 来指定 `authorized_keys` 文件所在的目录 [#1436](https://github.com/gogits/gogs/issues/1436)
+- 控制面板的代码提交 ID 使用等宽字体 [#2264](https://github.com/gogits/gogs/issues/2264)
 
 #### 新增特性
 

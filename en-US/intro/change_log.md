@@ -9,11 +9,14 @@ name: Change Log
 #### Bug fixes
 
 - Pull request can not change branch when both sides are organizations [#2014](https://github.com/gogits/gogs/issues/2014)
+- Duplicate of files' name in directory [#2254](https://github.com/gogits/gogs/issues/2254)
 - Rename organization redirects to old name [#2268](https://github.com/gogits/gogs/issues/2268) 
+- HTML pages are rendered in raw mode [#2283](https://github.com/gogits/gogs/issues/2283) 
 
 #### Improvements
 
 - Add config option `[server] SSH_ROOT_PATH` to indicate directory of `authorized_keys` file [#1436](https://github.com/gogits/gogs/issues/1436)
+- Commit IDs use monospace fonts [#2264](https://github.com/gogits/gogs/issues/2264)
 
 #### Features
 
