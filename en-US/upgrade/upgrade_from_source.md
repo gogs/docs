@@ -16,7 +16,7 @@ $ cd $GOPATH/src/github.com/gogits/gogs
 $ rm gogs
 
 # or move old build
-$ mv gogs gogs.$(date +%Y-%m-%d).old
+$ mv gogs gogs-$(./gogs -v | awk '{print $3}')
 
 # And rebuild Gogs
 $ go build
