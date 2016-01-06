@@ -21,6 +21,7 @@ name: Change Log
 #### Features
 
 - Add more APIs: user followers [#1692](https://github.com/gogits/gogs/issues/1692) 
+- Support side-by-side diff view [#1925](https://github.com/gogits/gogs/issues/1925)  [#2296](https://github.com/gogits/gogs/issues/2296) 
 
 ### v0.8.10 @ 2015-12-18
 
