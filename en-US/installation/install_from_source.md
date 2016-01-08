@@ -112,6 +112,8 @@ Available build tags are:
 - `cert`: Generate self-signed certificates support
 - `miniwinsvc`: Builtin windows service support (or you can use NSSM to create a service)
 
+**Note** Please follow [instructions](https://github.com/pingcap/tidb/blob/master/docs/QUICKSTART.md#pre-requirement) to install TiDB if you want to use it.
+
 For example, you want to support all of them, first delete directory `$GOPATH/pkg/${GOOS}_${GOARCH}/github.com/gogits/gogs` and then do:
 
 ```sh

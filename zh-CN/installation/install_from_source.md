@@ -106,6 +106,8 @@ Gogs 默认并没有支持一些功能，这些功能需要在构建时明确使
 - `cert`：生成自定义证书支持
 - `miniwinsvc`：Windows 服务内置支持（或者您可以使用 NSSM 来创建服务）
 
+**备注** 使用 TiDB 需要按照 [说明](https://github.com/pingcap/tidb/blob/master/docs/QUICKSTART.md#pre-requirement) 进行额外安装
+
 例如，您需要支持以上所有功能，则需要先删除 `$GOPATH/pkg/{GOOS_GOARCH}/github.com/gogits/gogs` 目录，然后执行以下命令：
 
 ```sh
