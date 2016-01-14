@@ -21,7 +21,8 @@ name: 变更日志
 #### 新增特性
 
 - 开放更多 API 接口：操作用户关注者 [#1692](https://github.com/gogits/gogs/issues/1692) 
-- 支持分列文件差异对比 [#1925](https://github.com/gogits/gogs/issues/1925)  [#2296](https://github.com/gogits/gogs/issues/2296) 
+- 支持分列文件差异对比 [#1925](https://github.com/gogits/gogs/issues/1925) [#2296](https://github.com/gogits/gogs/issues/2296) 
+- 支持行内差异高亮显示 [#2335](https://github.com/gogits/gogs/issues/2335)
 
 ### v0.8.10 @ 2015-12-18
 
