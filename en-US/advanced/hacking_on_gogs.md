@@ -27,4 +27,11 @@ Go inside the gogs directory, checkout the dev branch and use `go get -u ./...` 
     $ git checkout develop
     $ go get -u ./...
 
+Gogs have a test suite that can be run with the `make test` command. Writing
+test cases is not mandatory to contribute, but we will be happy if you do.
+More information about writing tests in Go can be found on
+[the oficial documentation](golangtesting).
+
 That's it! You are ready to hack on Gogs. Test your changes, push them to your repository and open a pull request.
+
+[golangtesting]: https://golang.org/pkg/testing/
