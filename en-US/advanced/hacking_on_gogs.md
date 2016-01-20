@@ -21,10 +21,17 @@ Remove the gogs repository and clone your fork in its place:
     $ rm -rf gogs
     $ git clone git@github.com:<USERNAME>/gogs.git gogs
 
-Go inside the gogs directory, checkout the dev branch and use `go get` again to fetch any new dependencies:
+Go inside the gogs directory, checkout the dev branch and use `go get -u ./...` again to fetch any new dependencies:
 
     $ cd gogs
     $ git checkout develop
-    $ go get
+    $ go get -u ./...
+
+Gogs have a test suite that can be run with the `make test` command. Writing
+test cases is not mandatory to contribute, but we will be happy if you do.
+More information about writing tests in Go can be found on
+[the oficial documentation](golangtesting).
 
 That's it! You are ready to hack on Gogs. Test your changes, push them to your repository and open a pull request.
+
+[golangtesting]: https://golang.org/pkg/testing/
