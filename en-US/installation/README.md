@@ -22,7 +22,7 @@ Gogs supports MySQL, PostgreSQL, SQLite3 and TiDB. Based on your choice, install
 - [MySQL](http://dev.mysql.com/downloads/mysql/) (Engine: INNODB)
 - [PostgreSQL](http://www.postgresql.org/download/)
 
-**REMEMBER** Please use `etc/mysql.sql` to create a database called `gogs` (default). If you create it manually, make sure the encoding is `utf8mb4`.
+**REMEMBER** Please use `scripts/mysql.sql` to create a database called `gogs` (default). If you create it manually, make sure the encoding is `utf8mb4`.
 
 ### Install other requirements
 
