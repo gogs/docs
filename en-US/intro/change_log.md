@@ -13,6 +13,7 @@ name: Change Log
 - Rename organization redirects to old name [#2268](https://github.com/gogits/gogs/issues/2268) 
 - HTML pages are rendered in raw mode [#2283](https://github.com/gogits/gogs/issues/2283) 
 - Allow access to non-home pages of empty repository [#2345](https://github.com/gogits/gogs/issues/2345) 
+- 500 when viewing authentication-related pages [#2349](https://github.com/gogits/gogs/issues/2349)
 - 500 when filename starts with ':' [#2373](https://github.com/gogits/gogs/issues/2373)
 
 #### Improvements

@@ -13,6 +13,7 @@ name: 变更日志
 - 重命名组织后重定向到错误的 URL [#2268](https://github.com/gogits/gogs/issues/2268) 
 - HTML 页面在原始模式浏览时被渲染 [#2283](https://github.com/gogits/gogs/issues/2283) 
 - 允许访问空仓库的非首页页面 [#2345](https://github.com/gogits/gogs/issues/2345) 
+- 访问授权认证有关的页面时发生错误 [#2349](https://github.com/gogits/gogs/issues/2349)
 - 无法处理以 ':' 开头的文件名 [#2373](https://github.com/gogits/gogs/issues/2373)
 
 #### 功能改进
