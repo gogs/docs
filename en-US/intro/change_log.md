@@ -12,6 +12,8 @@ name: Change Log
 - Duplicate of files' name in directory [#2254](https://github.com/gogits/gogs/issues/2254)
 - Rename organization redirects to old name [#2268](https://github.com/gogits/gogs/issues/2268) 
 - HTML pages are rendered in raw mode [#2283](https://github.com/gogits/gogs/issues/2283) 
+- Allow access to non-home pages of empty repository [#2345](https://github.com/gogits/gogs/issues/2345) 
+- 500 when filename starts with ':' [#2373](https://github.com/gogits/gogs/issues/2373)
 
 #### Improvements
 
