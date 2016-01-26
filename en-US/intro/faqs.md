@@ -122,7 +122,7 @@ Gogs has some third-party scripts that support running it as a daemon:
 
 #### How do I run Gogs at startup with Systemd?
 
-Three's a [systemd service template file](https://github.com/gogits/gogs/blob/master/scripts/systemd/gogs.service) in the Gogs GitHub repository. It needs some modifications for a working version for your installation:
+There's a [systemd service template file](https://github.com/gogits/gogs/blob/master/scripts/systemd/gogs.service) in the Gogs GitHub repository. It needs some modifications for a working version for your installation:
 
 1. Replace the `start.sh` path of `ExecStart` with the path of your Gogs installation.
 2. Also replace the path of `WorkingDirectory` with the path of your Gogs installation.
