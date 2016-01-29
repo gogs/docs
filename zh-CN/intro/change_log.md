@@ -20,9 +20,11 @@ name: 变更日志
 
 - 允许通过配置选项 `[server] SSH_ROOT_PATH` 来指定 `authorized_keys` 文件所在的目录 [#1436](https://github.com/gogits/gogs/issues/1436)
 - 控制面板的代码提交 ID 使用等宽字体 [#2264](https://github.com/gogits/gogs/issues/2264)
+- 仓库名称过长时进行截断 [#2287](https://github.com/gogits/gogs/issues/2287)
 
 #### 新增特性
 
+- 支持 GitHub 风格的 Markdown 检查列表 [#1048](https://github.com/gogits/gogs/issues/1048) 
 - 开放更多 API 接口：操作用户关注者 [#1692](https://github.com/gogits/gogs/issues/1692) 
 - 支持分列文件差异对比 [#1925](https://github.com/gogits/gogs/issues/1925) [#2296](https://github.com/gogits/gogs/issues/2296) 
 - 支持行内差异高亮显示 [#2335](https://github.com/gogits/gogs/issues/2335)

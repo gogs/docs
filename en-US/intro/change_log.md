@@ -20,9 +20,11 @@ name: Change Log
 
 - Add config option `[server] SSH_ROOT_PATH` to indicate directory of `authorized_keys` file [#1436](https://github.com/gogits/gogs/issues/1436)
 - Commit IDs use monospace fonts [#2264](https://github.com/gogits/gogs/issues/2264)
+- Truncate repository name if too long [#2287](https://github.com/gogits/gogs/issues/2287)
 
 #### Features
 
+- Support GitHub style Markdown checklist [#1048](https://github.com/gogits/gogs/issues/1048) 
 - Add more APIs: user followers [#1692](https://github.com/gogits/gogs/issues/1692) 
 - Support side-by-side diff view [#1925](https://github.com/gogits/gogs/issues/1925) [#2296](https://github.com/gogits/gogs/issues/2296) 
 - Support highlight inline diff [#2335](https://github.com/gogits/gogs/issues/2335)
