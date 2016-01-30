@@ -4,7 +4,7 @@ name: 变更日志
 
 # 变更日志
 
-### v0.8.x（未发布）
+### v0.8.25 @ 2016-01-30
 
 #### Bug 修复
 
@@ -111,33 +111,5 @@ name: 变更日志
 #### 其它变更
 
 - 所有页面均以使用全新的 Semantic UI [#650](https://github.com/gogits/gogs/issues/650)
-
-### v0.7.19 @ 2015-11-21
-
-#### Bug 修复
-
-- 坑爹的代码高亮 [#670](https://github.com/gogits/gogs/issues/670) [#1315](https://github.com/gogits/gogs/issues/1315) [#1549](https://github.com/gogits/gogs/issues/1549) [#1712](https://github.com/gogits/gogs/issues/1712)
-- 坑爹的复制链接按钮 [#1168](https://github.com/gogits/gogs/issues/1168) [#1396](https://github.com/gogits/gogs/issues/1396) 
-- 坑爹的下载源码 UI [#1668](https://github.com/gogits/gogs/issues/1668)
-- 合并请求（Pull Request）不支持 BIN 格式的差异对比 [#1922](https://github.com/gogits/gogs/issues/1922)
-- 测试补丁（Patch）时未检出正确的基准分支 [#1931](https://github.com/gogits/gogs/issues/1931) 
-- 分支和标签选择列表的 z-index 值错误 [#1942](https://github.com/gogits/gogs/issues/1942) 
-- 文件内容浏览页面无法正确显示巨型图片
-- 管理员创建的帐户注册通知邮件中未提供登录 URL [#1979](https://github.com/gogits/gogs/issues/1979) 
-- 仓库描述在派生完成之后未真正同步 [#1981](https://github.com/gogits/gogs/issues/1981) 
-- 派生仓库在修改设置时会自动修改可见性 [#1987](https://github.com/gogits/gogs/issues/1987) 
-
-#### 功能改进
-
-- 控制面板的协作仓库根据最后更新时间排序 [#1302](https://github.com/gogits/gogs/issues/1302) 
-- 支持删除某个版本发布 [#1383](https://github.com/gogits/gogs/issues/1383) 
-- 在 Web 界面先修改默认分支时同时修改 Git 仓库的相应值 [#1742](https://github.com/gogits/gogs/issues/1742)
-- 在活动线显示工单（Issue）的标题和内容 [#1854](https://github.com/gogits/gogs/issues/1854) 
-- 在活动线的推送代码列表中显示可用的自定义头像
-- 允许使用配置选项 `[other] SHOW_FOOTER_VERSION = true` 来禁止在非管理员页面的页脚显示版本信息 [#1957](https://github.com/gogits/gogs/issues/1957) 
-
-#### 新增特性
-
-- 管理员允许浏览和修改私有仓库的设置 [#493](https://github.com/gogits/gogs/issues/493) [#1401](https://github.com/gogits/gogs/issues/1401) 
 
 **更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.7.19) 上找到。**
