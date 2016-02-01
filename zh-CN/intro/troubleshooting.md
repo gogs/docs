@@ -25,11 +25,7 @@ name: 故障排查
 
 ## Git
 
-- 错误描述：`bash /path/to/gogs: no such file or directory`
-- 可能原因：您修改了 Gogs 二进制的位置
-- 解决方案：进入 `admin` 面板然后执行 `重新生成 '.ssh/authorized_keys' 文件` 和 `重新生成所有仓库的 Update 钩子` 操作
-
------
+#### 公钥使用冲突
 
 - 错误描述：
 	- `fatal: 'XX/XX.git' does not appear to be a git repository`
@@ -37,7 +33,7 @@ name: 故障排查
 - 可能原因：`~/.ssh/authorized_keys` 文件中存在重复的 SSH 密钥，可能是由于您曾经或正在通过同一个系统用户使用 GitLab。
 - 解决方案：删除除了属于 Gogs 自动添加以外的所有密钥。
 
------
+#### Gogs 无法调用 'git' 命令
 
 - 错误描述：`repo.NewRepoContext(fail to set git user.email):`
 - 可能原因：该错误会发生在 Windows 安装 Git Bash 时未启用 `cmd` 选项。
@@ -59,7 +55,9 @@ name: 故障排查
 	- 构建：`go build -tags memcache`
 	- 如果要启用 `redis` 也是一样的步骤。
 
-## MySQL
+## 数据库
+
+#### 使用错误的 MySQL 存储引擎
 
 - 错误描述：`Error 1071: Specified key was too long; max key length is 1000 bytes`
 - 可能原因：这是由于数据库引擎为 MyISAM 导致的。
@@ -72,11 +70,17 @@ name: 故障排查
 
 最后，访问 [http://localhost:3000/install](http://localhost:3000/install) 即可（感谢 [@linc01n](https://github.com/linc01n)）。
 
------
+#### 过时的 MySQL 密码设置
 
 - 错误描述：`Database setting is not correct: This server only supports the insecure old password authentication. If you still want to use it, please add 'allowOldPasswords=1' to your DSN. See also https://github.com/go-sql-driver/mysql/wiki/old_passwords`
 - 可能原因：只更新了 @localhost 的密码，但 @% 用户依旧使用旧密码
 - 解决方案：[GitHub 讨论](https://github.com/gogits/gogs/issues/385#issuecomment-54357073)
+
+#### 连接到错误的 SQLite3 数据库
+
+- 错误描述：推送仓库显示仓库所有者（Owner）未注册。
+- 可能原因：您以服务形式启动 Gogs 的时候，Gogs 可能会使用和您预期所不同的 SQLite3 数据库文件。
+- 解决方案：使用绝对路径配置 SQLite3 数据库文件路径。
 
 ## 邮件服务
 

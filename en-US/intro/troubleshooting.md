@@ -25,11 +25,7 @@ name: Troubleshooting
 
 ## Git
 
-- Error: `bash /path/to/gogs: no such file or directory`
-- Causes: you have changed the location of Gogs server after a while and the old path was hard coded into `~/.ssh/authorized_keys` file.
-- Solution: go to `/admin` panel and do operation `Rewrite '.ssh/authorized_keys' file` and `Rewrite all update hook of repositories`.
-
------
+#### Public key conflict
 
 - Error:
 	- `fatal: 'XX/XX.git' does not appear to be a git repository`
@@ -37,7 +33,7 @@ name: Troubleshooting
 - Causes: there are duplicated SSH keys in `~/.ssh/authorized_keys` file, possibly you are/were using GitLab for same system user.
 - Solution: delete the old one and keep the one that was added by Gogs only.
 
------
+#### Cannot call 'git' command by Gogs
 
 - Error: `repo.NewRepoContext(fail to set git user.email):`
 - Causes: it happens when Windows users install Git Bash without enabling the `cmd` option
@@ -59,7 +55,9 @@ name: Troubleshooting
 	- Build: `go build -tags memcache`
 	- Same steps for `redis` when you want it to be the cache adapter.
 
-## MySQL
+## Database 
+
+#### Incorrect MySQL storate engine
 
 - Error: `Error 1071: Specified key was too long; max key length is 1000 bytes`
 - Causes: it is caused by MyISAM.
@@ -72,11 +70,17 @@ name: Troubleshooting
 
 After that, go to [http://localhost:3000/install](http://localhost:3000/install) and everything works fine(thanks [@linc01n](https://github.com/linc01n)).
 
------
+#### Outdated MySQL password setting
 
 - Error: `Database setting is not correct: This server only supports the insecure old password authentication. If you still want to use it, please add 'allowOldPasswords=1' to your DSN. See also https://github.com/go-sql-driver/mysql/wiki/old_passwords`
 - Causes: only updated the password for @localhost -- there was a second entry in the user table where @% still had the old password.
 - Solution: [GitHub comments](https://github.com/gogits/gogs/issues/385#issuecomment-54357073)
+
+#### Connect to wrong SQLite3 database
+
+- Error: Push to repository shows owner is not registered.
+- Causes: You might start Gogs as service and it is using different SQLite3 file that you expect.
+- Solution: Use absolute path to config SQLite3 database path.
 
 ## Mailer
 
