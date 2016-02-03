@@ -5,9 +5,9 @@ name: Installation depuis un binaire
 # Installation depuis un binaire
 
 
-** Seuls les fichiers des 5 dernières versions sont disponibles, les fichiers plus anciens étant [disponibles ici](https://github.com/gogits/gogs/releases?after=v0.7.19).**
+**Seuls les fichiers des 5 dernières versions sont disponibles, les fichiers plus anciens étant [disponibles ici](https://github.com/gogits/gogs/releases?after=v0.7.19).**
 
-Touts les fichiers sont fournis avec le support de **MySQL** et **PostgreSQL** support, et compilés avec le **tag `cert`**. Le support peut varier au fil du temps et être différent pour les versions antérieures : ne pas oublier de lire les instructions pour les instances Gogs anciennes.
+Tous les fichiers sont fournis avec le support de **MySQL** et de **PostgreSQL**, et compilés avec le **tag `cert`**. Le support peut varier au fil du temps et être différent pour les versions antérieures : ne pas oublier de lire les instructions pour les instances Gogs anciennes.
 
 **Note**: `mws` signifie *Windows service support*. Utilisez-en un autre si vous utilisez NSSM.
 
@@ -77,4 +77,4 @@ Touts les fichiers sont fournis avec le support de **MySQL** et **PostgreSQL** s
 |Windows|amd64|✅|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.7.22_windows_amd64.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.22_windows_amd64.zip)|
 |Mac OS|amd64|✅|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.7.22_darwin_amd64.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.7.22_darwin_amd64.zip)|
 
-Voir [Configuration and run](/docs/installation/configuration_and_run) pour aller plus loin.
+Voir [configuration et lancement](/docs/installation/configuration_and_run) pour poursuivre.
