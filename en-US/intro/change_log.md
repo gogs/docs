@@ -4,6 +4,12 @@ name: Change Log
 
 # Change Log
 
+### v0.8.x (unreleased)
+
+#### Improvements
+
+- Highlight code blocks in issue page [#2538](https://github.com/gogits/gogs/pull/2538)
+
 ### v0.8.25 @ 2016-01-30
 
 #### Bug fixes
