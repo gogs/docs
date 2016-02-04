@@ -21,7 +21,7 @@ Remove the gogs repository and clone your fork in its place:
     $ rm -rf gogs
     $ git clone git@github.com:<USERNAME>/gogs.git gogs
 
-Go inside the gogs directory, checkout the dev branch and use `go get -u ./...` again to fetch any new dependencies:
+Go inside the gogs directory, checkout the develop branch and use `go get -u ./...` again to fetch any new dependencies:
 
     $ cd gogs
     $ git checkout develop
