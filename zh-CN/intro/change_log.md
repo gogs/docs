@@ -6,6 +6,10 @@ name: 变更日志
 
 ### v0.8.x（未发布）
 
+#### Bug 修复
+
+- 反向代理子路径下的工单（Issue）引用链接不正确 [#2229](https://github.com/gogits/gogs/issues/2229)
+
 #### 功能改进
 
 - 在工单（Issue）页面高亮代码块 [#2538](https://github.com/gogits/gogs/pull/2538)

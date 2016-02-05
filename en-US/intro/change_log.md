@@ -6,6 +6,10 @@ name: Change Log
 
 ### v0.8.x (unreleased)
 
+#### Bug fixes
+
+- Issue references have bad links behind a reverse proxy sub-path [#2229](https://github.com/gogits/gogs/issues/2229)
+
 #### Improvements
 
 - Highlight code blocks in issue page [#2538](https://github.com/gogits/gogs/pull/2538)
