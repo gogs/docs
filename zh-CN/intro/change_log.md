@@ -14,6 +14,10 @@ name: 变更日志
 
 - 在工单（Issue）页面高亮代码块 [#2538](https://github.com/gogits/gogs/pull/2538)
 
+#### 新增特性
+
+- 支持通过配置选项 `[markdown] CUSTOM_URL_SCHEMES` 来允许 Markdown 渲染自定义的 URL 协议 [#2406](https://github.com/gogits/gogs/pull/2406)
+
 ### v0.8.25 @ 2016-01-30
 
 #### Bug 修复

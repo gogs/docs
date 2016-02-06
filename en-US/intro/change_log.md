@@ -14,6 +14,10 @@ name: Change Log
 
 - Highlight code blocks in issue page [#2538](https://github.com/gogits/gogs/pull/2538)
 
+#### Features
+
+- Add config option `[markdown] CUSTOM_URL_SCHEMES` to allows Markdown render custom URL schemes [#2406](https://github.com/gogits/gogs/pull/2406)
+
 ### v0.8.25 @ 2016-01-30
 
 #### Bug fixes
