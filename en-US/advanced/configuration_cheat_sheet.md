@@ -172,7 +172,7 @@ Note: Actually, Gogs support only SMTP with STARTTLS.
 
 ## Git (`git`)
 
-- `MAX_GIT_DIFF_LINES`: Maxium show lines in diff page.
+- `MAX_GIT_DIFF_LINES`: Maximum show lines in diff page.
 - `GC_ARGS`: Arguments for command `git gc`, e.g. `--aggressive --auto`.
 
 ## Other (`other`)
