@@ -9,6 +9,7 @@ name: 变更日志
 #### Bug 修复
 
 - 反向代理子路径下的工单（Issue）引用链接不正确 [#2229](https://github.com/gogits/gogs/issues/2229)
+- 较长的 Web 钩子 URL 被强行截断 [#2465](https://github.com/gogits/gogs/issues/2465)
 
 #### 功能改进
 

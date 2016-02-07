@@ -78,7 +78,7 @@ After that, go to [http://localhost:3000/install](http://localhost:3000/install)
 
 #### Connect to wrong SQLite3 database
 
-- Error: Push to repository shows owner is not registered.
+- Error: Push to repository shows owner is not registered or `user` table does not exist.
 - Causes: You might start Gogs as service and it is using different SQLite3 file that you expect.
 - Solution: Use absolute path to config SQLite3 database path.
 

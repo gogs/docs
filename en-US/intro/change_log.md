@@ -9,6 +9,7 @@ name: Change Log
 #### Bug fixes
 
 - Issue references have bad links behind a reverse proxy sub-path [#2229](https://github.com/gogits/gogs/issues/2229)
+- Long webhook URL is truncated [#2465](https://github.com/gogits/gogs/issues/2465)
 
 #### Improvements
 
