@@ -18,6 +18,7 @@ name: Change Log
 #### Features
 
 - Add config option `[markdown] CUSTOM_URL_SCHEMES` to allows Markdown render custom URL schemes [#2406](https://github.com/gogits/gogs/pull/2406)
+- Support syntax highlight on diff view [#2528](https://github.com/gogits/gogs/pull/2528)
 
 ### v0.8.25 @ 2016-01-30
 
