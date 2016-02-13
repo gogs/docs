@@ -33,6 +33,7 @@ name: Donation
 
 | Donated at       | Donator    | Amount   |
 | ---------------- |:---------:| --------:|
+|  2016-02-13 | Mr. Li | $10.00 |
 |  2016-02-01 |  Loan File Intelligent Review Systems | $100.00 |
 |  2016-01-11 | Mr. Sales | $10.00 |
 |  2016-01-06 | Mr. Audne | $10.00 |
