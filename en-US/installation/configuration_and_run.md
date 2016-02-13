@@ -25,8 +25,10 @@ Of course, you want to change the database setting as well:
 
 ```
 [database]
-PASSWD = root
+PASSWD = `root`
 ```
+
+Note: please quote passwords using `` ` ``
 
 ### Why are we doing this?
 
@@ -46,7 +48,7 @@ Yes, why don't you just edit `conf/app.ini`? The reason is to keep your custom c
 $ make
 $ ./gogs web
 	```
-	
+
 - You can enable live compile by executing `bra run` in the Gogs source folder
 	- To install [bra](https://github.com/Unknwon/bra): `go get -u github.com/Unknwon/bra`
 
