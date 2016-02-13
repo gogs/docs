@@ -14,6 +14,7 @@ name: Change Log
 
 #### Improvements
 
+- Add `default_branch` field to repository object in webhooks [#1059](https://github.com/gogits/gogs/issues/1059)
 - Highlight code blocks in issue page [#2538](https://github.com/gogits/gogs/pull/2538)
 
 #### Features

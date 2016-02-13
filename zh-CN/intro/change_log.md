@@ -14,6 +14,7 @@ name: 变更日志
 
 #### 功能改进
 
+- 在 Web 钩子的仓库对象中增加 `default_branch` 字段 [#1059](https://github.com/gogits/gogs/issues/1059)
 - 在工单（Issue）页面高亮代码块 [#2538](https://github.com/gogits/gogs/pull/2538)
 
 #### 新增特性
