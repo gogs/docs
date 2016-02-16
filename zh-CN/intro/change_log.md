@@ -11,6 +11,7 @@ name: 变更日志
 - 反向代理子路径下的工单（Issue）引用链接不正确 [#2229](https://github.com/gogits/gogs/issues/2229)
 - 较长的 Web 钩子 URL 被强行截断 [#2465](https://github.com/gogits/gogs/issues/2465)
 - 图片 URL 包含空格时无法显示 [#2556](https://github.com/gogits/gogs/issues/2556)
+- Web 钩子的 `avatar_url` 字段值不正确 [#2630](https://github.com/gogits/gogs/issues/2630)
 
 #### 功能改进
 

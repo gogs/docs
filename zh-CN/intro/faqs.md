@@ -14,7 +14,7 @@ name: 常见问题
 
 该方法同样会在您填写安装页面时生效，因此请选择一个您希望以后一直给 Gogs 使用的端口号。
 
-#### 如何使用 Nginx 的反向代理？
+#### 如何使用 NGINX 的反向代理？
 
 在 `nginx.conf` 文件中，将下面的 `server` 部分增加至 `http` 分区内并重载配置：
 
@@ -31,7 +31,7 @@ server {
 
 ##### 配置子路径
 
-如果您想要通过域名的子路径来访问 Gogs 实例，可以将 Nginx 的配置修改为以下形式（特别注意后缀 `/`）:
+如果您想要通过域名的子路径来访问 Gogs 实例，可以将 NGINX 的配置修改为以下形式（特别注意后缀 `/`）:
 
 ```
 server {
@@ -45,6 +45,14 @@ server {
 ```
 
 然后在配置文件中设置 `[server] ROOT_URL = http://git.crystalnetwork.us/gogs/`。
+
+##### 为什么上传大文件时总是发生错误？
+
+想要了解如何让 NGINX 支持大文件上传的讨论，可以查看 [此贴](http://stackoverflow.com/a/15021750) 。一般 NGINX 会返回 `413` 错误，在配置文件中加入以下内容可以解决该问题：
+
+```
+client_max_body_size 50m;
+```
 
 ##### 如果我用的是 Apache 2 怎么配置子路径？
 
@@ -115,13 +123,12 @@ Gogs 拥有一些由第三方提供的脚本来支持以守护进程形式运行
 
 在 GitHub 上的 Gogs 仓库有一个 [systemd 服务模版文件](https://github.com/gogits/gogs/blob/master/scripts/systemd/gogs.service)，您需要做出一定的修改才能够使用它：
 
-1. 将 `ExecStart` 属性替换默认的 `start.sh` 路径为您的 Gogs 实际安装路径下的位置。
-2. 将 `WorkingDirectory` 属性替换为您的 Gogs 实际安装路径根目录。
+1. 更新 `User`、`Group`、`WorkingDirectory`、`ExecStart` 和 `Environment` 为相对应的值。其中 `WorkingDirectory` 为您的 Gogs 实际安装路径根目录。
 3. [可选] 如果您 Gogs 安装示例使用 `MySQL/MariaDB`、`PostgreSQL`、`Redis` 或 `memcached`，请去掉相应 `After` 属性的注释。
 
-当您完成修改后，请将文件保存至 `/etc/systemd` 然后执行 `sudo systemd restart gogs`。
+当您完成修改后，请将文件保存至 `/etc/systemd/system/gogs.service`，然后通过 `sudo systemctl enable gogs` 命令激活，最后执行 `sudo systemd start gogs`。
 
-您可以通过 `sudo systemd status gogs -l` 或 `sudo journalctl -b -u gogs.service`  命令检查 Gogs 的运行状态。
+您可以通过 `sudo systemd status gogs -l` 或 `sudo journalctl -b -u gogs`  命令检查 Gogs 的运行状态。
 
 ### 管理权限
 

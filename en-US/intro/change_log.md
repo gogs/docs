@@ -11,6 +11,7 @@ name: Change Log
 - Issue references have bad links behind a reverse proxy sub-path [#2229](https://github.com/gogits/gogs/issues/2229)
 - Long webhook URL is truncated [#2465](https://github.com/gogits/gogs/issues/2465)
 - Image path breaks when it contains space [#2556](https://github.com/gogits/gogs/issues/2556)
+- Wrong `avatar_url` field in webhook payload [#2630](https://github.com/gogits/gogs/issues/2630)
 
 #### Improvements
 
