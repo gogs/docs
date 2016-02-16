@@ -122,15 +122,15 @@ Gogs has some third-party scripts that support running it as a daemon:
 
 #### How do I run Gogs at startup with Systemd?
 
-There's a [systemd service template file](https://github.com/gogits/gogs/blob/master/scripts/systemd/gogs.service) in the Gogs GitHub repository. It needs some modifications for a working version for your installation:
+There's a [systemd service template file](https://github.com/gogits/gogs/blob/master/scripts/systemd/gogs.service) in the Gogs GitHub repository, and in the installed files at `./scripts/systemd/gogs.service`. You will likely need to modify it for your installation:
 
-1. Replace the `start.sh` path of `ExecStart` with the path of your Gogs installation.
-2. Also replace the path of `WorkingDirectory` with the path of your Gogs installation.
-3. (Optional) If you are would like to use Gogs with `MySQL/MariaDB`, `PostgreSQL`, `Redis`, or `memcached`, uncomment the line corresponding to `After`.
+1. Update `User`, `Group`, `WorkingDirectory`, `ExecStart`, and
+   `Environment` with values appropriate to your Gogs installation.
+2. (Optional) If you would like to use Gogs with `MySQL/MariaDB`, `PostgreSQL`, `Redis`, or `memcached` then uncomment the appropriate `After` lines.
 
-When you are complete with your modification of the systemd file, save it in `/etc/systemd` and start it with `sudo systemd restart gogs`.
+Save your modified service file at `/etc/systemd/system/gogs.service`, enable it with `sudo systemctl enable gogs`, and start it with `sudo systemctl start gogs`.
 
-You can check the status of the Gogs systemd service with `sudo systemd status gogs -l` or display the journald entries directly with `sudo journalctl -b -u gogs.service`.
+You can check the status of the Gogs service with `sudo systemctl status gogs -l`, or display the journal entries with `sudo journalctl -b -u gogs`.
 
 ### Administration
 
