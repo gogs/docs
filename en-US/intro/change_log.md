@@ -11,10 +11,12 @@ name: Change Log
 - Issue references have bad links behind a reverse proxy sub-path [#2229](https://github.com/gogits/gogs/issues/2229)
 - Long webhook URL is truncated [#2465](https://github.com/gogits/gogs/issues/2465)
 - Image path breaks when it contains space [#2556](https://github.com/gogits/gogs/issues/2556)
+- 500 after delete user when view releases [#2596](https://github.com/gogits/gogs/issues/2596)
 - Wrong `avatar_url` field in webhook payload [#2630](https://github.com/gogits/gogs/issues/2630)
 
 #### Improvements
 
+- Able to config log path on install page [#691](https://github.com/gogits/gogs/issues/691)
 - Add `default_branch` field to repository object in webhooks [#1059](https://github.com/gogits/gogs/issues/1059)
 - Highlight code blocks in issue page [#2538](https://github.com/gogits/gogs/pull/2538)
 

@@ -11,10 +11,12 @@ name: 变更日志
 - 反向代理子路径下的工单（Issue）引用链接不正确 [#2229](https://github.com/gogits/gogs/issues/2229)
 - 较长的 Web 钩子 URL 被强行截断 [#2465](https://github.com/gogits/gogs/issues/2465)
 - 图片 URL 包含空格时无法显示 [#2556](https://github.com/gogits/gogs/issues/2556)
+- 删除用户后访问版本发布页面发生错误 [#2596](https://github.com/gogits/gogs/issues/2596)
 - Web 钩子的 `avatar_url` 字段值不正确 [#2630](https://github.com/gogits/gogs/issues/2630)
 
 #### 功能改进
 
+- 支持在安装页面配置日志路径 [#691](https://github.com/gogits/gogs/issues/691)
 - 在 Web 钩子的仓库对象中增加 `default_branch` 字段 [#1059](https://github.com/gogits/gogs/issues/1059)
 - 在工单（Issue）页面高亮代码块 [#2538](https://github.com/gogits/gogs/pull/2538)
 
