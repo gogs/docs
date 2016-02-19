@@ -57,7 +57,7 @@ client_max_body_size 50m;
 
 ##### How do I set up a sub-URL with Apache 2?
 
-Use following configuration template:
+Use following configuration template (don't forget to enable http-proxy apache mod):
 
 ```
 <VirtualHost *:443>
@@ -67,8 +67,8 @@ Use following configuration template:
                  Allow from all
         </Proxy>
 
-        ProxyPass /git http://127.0.0.1:6000
-        ProxyPassReverse /git http://127.0.0.1:6000
+        ProxyPass /git http://127.0.0.1:3000/
+        ProxyPassReverse /git http://127.0.0.1:3000/
 </VirtualHost>
 ```
 
