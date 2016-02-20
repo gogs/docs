@@ -23,6 +23,20 @@ name: Troubleshooting
 	- `Rewrite '.ssh/authorized_keys' file`
 	- `Rewrite all update hook of repositories`
 
+#### Push was successful but no activities are shown on dashboard
+
+##### Causes
+
+When use mount devices, you could possibly disable execute permission from SSH:
+
+```
+/dev/sda1 on /media/storage type ext4 (rw,nosuid,nodev,noexec,relatime,data=ordered)
+```
+
+##### Solution
+
+Disabled `nosuid` and `noexec` options. 
+
 ## Git
 
 #### Public key conflict

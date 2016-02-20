@@ -8,8 +8,10 @@ name: Change Log
 
 #### Bug fixes
 
+- Old activities still visible for repositories that lost access [#2148](https://github.com/gogits/gogs/issues/2148)
 - Issue references have bad links behind a reverse proxy sub-path [#2229](https://github.com/gogits/gogs/issues/2229)
 - Long webhook URL is truncated [#2465](https://github.com/gogits/gogs/issues/2465)
+- Multiple Webhooks with Slack type send wrong payloads [#2485](https://github.com/gogits/gogs/issues/2485)
 - Image path breaks when it contains space [#2556](https://github.com/gogits/gogs/issues/2556)
 - 500 after delete user when view releases [#2596](https://github.com/gogits/gogs/issues/2596)
 - Wrong `avatar_url` field in webhook payload [#2630](https://github.com/gogits/gogs/issues/2630)

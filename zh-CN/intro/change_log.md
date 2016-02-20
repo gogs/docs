@@ -8,8 +8,10 @@ name: 变更日志
 
 #### Bug 修复
 
+- 对仓库没有操作权限后依旧显示相应的最近活动 [#2148](https://github.com/gogits/gogs/issues/2148)
 - 反向代理子路径下的工单（Issue）引用链接不正确 [#2229](https://github.com/gogits/gogs/issues/2229)
 - 较长的 Web 钩子 URL 被强行截断 [#2465](https://github.com/gogits/gogs/issues/2465)
+- 存在 Slack 类型的多个 Web 钩子会发送错误的推送信息 [#2485](https://github.com/gogits/gogs/issues/2485)
 - 图片 URL 包含空格时无法显示 [#2556](https://github.com/gogits/gogs/issues/2556)
 - 删除用户后访问版本发布页面发生错误 [#2596](https://github.com/gogits/gogs/issues/2596)
 - Web 钩子的 `avatar_url` 字段值不正确 [#2630](https://github.com/gogits/gogs/issues/2630)

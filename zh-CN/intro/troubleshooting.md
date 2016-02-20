@@ -23,6 +23,20 @@ name: 故障排查
 	- `重新生成 '.ssh/authorized_keys' 文件`
 	- `重新生成所有仓库的 Update 钩子`
 
+#### 推送成功但控制面板没有活动更新
+
+##### 可能原因
+
+当使用挂载（Mount）设备时，禁用了来自 SSH 链接的可执行权限：
+
+```
+/dev/sda1 on /media/storage type ext4 (rw,nosuid,nodev,noexec,relatime,data=ordered)
+```
+
+##### 解决方案
+
+禁用 `nosuid` 和 `noexec` 选项。
+
 ## Git
 
 #### 公钥使用冲突
