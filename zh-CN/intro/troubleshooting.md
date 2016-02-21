@@ -27,15 +27,13 @@ name: 故障排查
 
 ##### 可能原因
 
-当使用挂载（Mount）设备时，禁用了来自 SSH 链接的可执行权限：
-
-```
-/dev/sda1 on /media/storage type ext4 (rw,nosuid,nodev,noexec,relatime,data=ordered)
-```
+在使用 SSH 推送时，Gogs 依赖通过执行钩子脚本（Hook Script）来更新仓库和最近活动。但出于某种原因，执行脚本的权限被拒绝了，尤其是在使用挂载（Mount）设备时。
 
 ##### 解决方案
 
-禁用 `nosuid` 和 `noexec` 选项。
+- 请确保挂载设备时没有启用 `noexec` 选项，必要时需要明确指定 `exec` 选项。
+- 如果使用 `vfat`（或者 `cifs`）类型的挂载，请确保 `uid`、`gid` 和 `fmask` 选项允许运行 Gogs 的用户在挂载设备上执行脚本。
+- 如果使用网络类型的挂载，请确保服务器（NFS 或 Samba）没有禁止远程文件系统的执行脚本权限。
 
 ## Git
 

@@ -23,25 +23,19 @@ name: Troubleshooting
 	- `Rewrite '.ssh/authorized_keys' file`
 	- `Rewrite all update hook of repositories`
 
-#### Push succeeds, but the timeline/repository doesn't update
+#### Push succeeds, but the dashboard timeline doesn't update
 
 ##### Causes
 
-When using git over SSH, gogs relies on the hook scripts to update the timeline
-and repository display. Unfortunately, there are many different ways to disable
-the execution of these scripts.
+When using git over SSH, Gogs relies on the hook scripts to update the timeline and repository display. Unfortunately, there are many different ways to disable the execution of these scripts. 
+
+This happens more often when you store repositories on a mounted device.
 
 ##### Solutions
 
-- Ensure that the mount point containing the repositories is not set as `noexec`
-by issuing the `mount` command. If necessary, add the `exec` option to the mount
-point in `/etc/fstab`.
-- For `vfat` (and possibly `cifs`) mounts, ensure that the `uid`, `gid`, and
-`fmask` options permit either the gogs user or a group to which it belongs to
-execute files on the mount.
-- For network-mounted shares, ensure that your server (NFS or Samba) isn't set
-to disallow execution on the remote filesystem (refer to the respective documentation
-for how to accomplish this).
+- Ensure that the mount point containing the repositories is not set as `noexec` by issuing the `mount` command. If necessary, add the `exec` option to the mount point in `/etc/fstab`.
+- For `vfat` (and possibly `cifs`) mounts, ensure that the `uid`, `gid`, and `fmask` options permit either the Gogs user or a group to which it belongs to execute files on the mount.
+- For network-mounted shares, ensure that your server (NFS or Samba) isn't set to disallow execution on the remote filesystem (refer to the respective documentation for how to accomplish this).
 
 ## Git
 
