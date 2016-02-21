@@ -13,6 +13,7 @@ name: 变更日志
 - 较长的 Web 钩子 URL 被强行截断 [#2465](https://github.com/gogits/gogs/issues/2465)
 - 存在 Slack 类型的多个 Web 钩子会发送错误的推送信息 [#2485](https://github.com/gogits/gogs/issues/2485)
 - 图片 URL 包含空格时无法显示 [#2556](https://github.com/gogits/gogs/issues/2556)
+- 在转移仓库所有权后修改 Wiki 页面发生错误 [#2558](https://github.com/gogits/gogs/issues/2558)
 - 删除用户后访问版本发布页面发生错误 [#2596](https://github.com/gogits/gogs/issues/2596)
 - Web 钩子的 `avatar_url` 字段值不正确 [#2630](https://github.com/gogits/gogs/issues/2630)
 

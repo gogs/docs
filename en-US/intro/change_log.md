@@ -13,6 +13,7 @@ name: Change Log
 - Long webhook URL is truncated [#2465](https://github.com/gogits/gogs/issues/2465)
 - Multiple Webhooks with Slack type send wrong payloads [#2485](https://github.com/gogits/gogs/issues/2485)
 - Image path breaks when it contains space [#2556](https://github.com/gogits/gogs/issues/2556)
+- 500 when edit wiki after transfer the repository [#2558](https://github.com/gogits/gogs/issues/2558)
 - 500 after delete user when view releases [#2596](https://github.com/gogits/gogs/issues/2596)
 - Wrong `avatar_url` field in webhook payload [#2630](https://github.com/gogits/gogs/issues/2630)
 
