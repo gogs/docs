@@ -4,7 +4,7 @@ name: Change Log
 
 # Change Log
 
-### v0.8.x (unreleased)
+### v0.8.43 @ 2016-02-24
 
 #### Bug fixes
 
@@ -124,24 +124,4 @@ name: Change Log
 - Support issue links are rendered for external tracker [#890](https://github.com/gogits/gogs/issues/890) 
 - Add more APIs: public keys [#976](https://github.com/gogits/gogs/issues/976) 
 
-### v0.7.22 @ 2015-11-25
-
-#### Bug fixes
-
-- Panic when two links are nested in Markdown [#2019](https://github.com/gogits/gogs/issues/2019) 
-- Builtin SSH server does not work on Windows 
-
-#### Improvements
-
-- Drop `org/` URL path prefix in organization home page [#1944](https://github.com/gogits/gogs/issues/1944) 
-- More native supported Git hooks
-
-#### Others
-
-- All pages uses new Semantic UI theme [#650](https://github.com/gogits/gogs/issues/650) 
-
-#### Others
-
-- New discussion forum http://forum.gogs.io/
-
-**Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.7.19).**
+**Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.7.22).**

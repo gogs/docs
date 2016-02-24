@@ -4,7 +4,7 @@ name: 变更日志
 
 # 变更日志
 
-### v0.8.x（未发布）
+### v0.8.43 @ 2016-02-24
 
 #### Bug 修复
 
@@ -124,20 +124,4 @@ name: 变更日志
 - 支持工单链接生成相应的外部链接 [#890](https://github.com/gogits/gogs/issues/890) 
 - 开放更多 API 接口：操作用户公钥 [#976](https://github.com/gogits/gogs/issues/976) 
 
-### v0.7.22 @ 2015-11-25
-
-#### Bug 修复
-
-- Markdown 存在双层嵌套链接时发生 panic [#2019](https://github.com/gogits/gogs/issues/2019) 
-- 内置 SSH 服务器在 Windows 无法工作
-
-#### 功能改进
-
-- 组织首页 URL 去除 `org/` 前缀 [#1944](https://github.com/gogits/gogs/issues/1944) 
-- 更多 Git 钩子的原生支持
-
-#### 其它变更
-
-- 所有页面均以使用全新的 Semantic UI [#650](https://github.com/gogits/gogs/issues/650)
-
-**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.7.19) 上找到。**
+**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.7.22) 上找到。**
