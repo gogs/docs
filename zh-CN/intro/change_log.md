@@ -10,6 +10,7 @@ name: 变更日志
 
 - 对仓库没有操作权限后依旧显示相应的最近活动 [#2148](https://github.com/gogits/gogs/issues/2148)
 - 反向代理子路径下的工单（Issue）引用链接不正确 [#2229](https://github.com/gogits/gogs/issues/2229)
+- Email 中的换行符没用使用 HTML 格式 [#2332](https://github.com/gogits/gogs/issues/2332)
 - 较长的 Web 钩子 URL 被强行截断 [#2465](https://github.com/gogits/gogs/issues/2465)
 - 存在 Slack 类型的多个 Web 钩子会发送错误的推送信息 [#2485](https://github.com/gogits/gogs/issues/2485)
 - 图片 URL 包含空格时无法显示 [#2556](https://github.com/gogits/gogs/issues/2556)
@@ -21,7 +22,9 @@ name: 变更日志
 
 - 支持在安装页面配置日志路径 [#691](https://github.com/gogits/gogs/issues/691)
 - 在 Web 钩子的仓库对象中增加 `default_branch` 字段 [#1059](https://github.com/gogits/gogs/issues/1059)
-- 在工单（Issue）页面高亮代码块 [#2538](https://github.com/gogits/gogs/pull/2538)
+- 增加显示关闭和重启工单的最近活动 [#1821](https://github.com/gogits/gogs/issues/1821)
+- 允许派生镜像仓库 [#2505](https://github.com/gogits/gogs/issues/2505)
+- 在工单页面高亮代码块 [#2538](https://github.com/gogits/gogs/pull/2538)
 
 #### 新增特性
 
