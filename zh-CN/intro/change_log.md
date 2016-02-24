@@ -27,6 +27,7 @@ name: 变更日志
 
 - 支持通过配置选项 `[markdown] CUSTOM_URL_SCHEMES` 来允许 Markdown 渲染自定义的 URL 协议 [#2406](https://github.com/gogits/gogs/pull/2406)
 - 支持在文件差异对比（Diff）页面显示代码高亮 [#2528](https://github.com/gogits/gogs/pull/2528)
+- 支持将镜像仓库转换为普通类型的仓库 [#2607](https://github.com/gogits/gogs/issues/2607)
 
 ### v0.8.25 @ 2016-01-30
 
