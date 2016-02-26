@@ -1,8 +1,14 @@
 ---
-name: Change Log
+name: Changelog
 ---
 
-# Change Log
+# Changelog
+
+### v0.9.0 (unreleased)
+
+#### Bug fixes
+
+- Panic when close issue through commit message [#2697](https://github.com/gogits/gogs/issues/2697)
 
 ### v0.8.43 @ 2016-02-24
 
