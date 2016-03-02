@@ -9,6 +9,16 @@ name: Changelog
 #### Bug fixes
 
 - Panic when close issue through commit message [#2697](https://github.com/gogits/gogs/issues/2697)
+- Panic when create issue with two or more labels using SQLite3 [#2700](https://github.com/gogits/gogs/issues/2700)
+
+#### Improvements
+
+- Able to test mail settings in admin panel [#1531](https://github.com/gogits/gogs/issues/1531)
+- Improve issue lable readability [#2033](https://github.com/gogits/gogs/issues/2033)
+
+#### Features
+
+- Able to checkout pull requests locally [#1655](https://github.com/gogits/gogs/issues/1655)
 
 ### v0.8.43 @ 2016-02-24
 

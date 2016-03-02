@@ -9,6 +9,16 @@ name: 变更日志
 #### Bug 修复
 
 - 使用代码提交消息关闭工单时发生错误 [#2697](https://github.com/gogits/gogs/issues/2697)
+- 使用 SQLite3 作为数据库时无法在创建工单时同时指定 2 个或更多的标签 [#2700](https://github.com/gogits/gogs/issues/2700)
+
+#### 功能改进
+
+- 允许在管理员面板测试邮件服务设置 [#1531](https://github.com/gogits/gogs/issues/1531)
+- 增强工单标签的可读性 [#2033](https://github.com/gogits/gogs/issues/2033)
+
+#### 新增特性
+
+- 支持在本地仓库检出合并请求 [#1655](https://github.com/gogits/gogs/issues/1655)
 
 ### v0.8.43 @ 2016-02-24
 
