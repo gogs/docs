@@ -91,3 +91,8 @@ Both the LDAP via BindDN and the simple auth LDAP share the following fields:
     form.
   - Example: `(&(objectClass=posixAccount)(cn=%s))`
   - Example: `(&(objectClass=posixAccount)(uid=%s))`
+
+## PAM
+
+To configure this you just need to set the 'PAM Service Name' to a filename in /etc/pam.d/.
+If you want it to work with normal linux passwords, the user running Gogs must have read access to /etc/shadow.
