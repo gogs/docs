@@ -6,7 +6,7 @@ name: Webhook
 
 Gogs unterstützt Webhooks für Repository-Ereignisse. Du findest es auf der Einstellungs-Seite (`/:username/:reponame/settings/hooks`). Alle Ereignis-Pushs sind POST-Anfragen. Wir unterstützen zur Zeit zwei Versionen von Formaten: Gogs und Slack.
 
-### Ereignis Invormation
+### Ereignis Informationen
 
 Hier folgt ein Beispiel der Ereignis-Informationen, die Gogs an die URL sendet:
 
