@@ -15,6 +15,7 @@ name: 变更日志
 
 - 允许在管理员面板测试邮件服务设置 [#1531](https://github.com/gogits/gogs/issues/1531)
 - 增强工单标签的可读性 [#2033](https://github.com/gogits/gogs/issues/2033)
+- 允许为 Git 操作自定义超时 [#2653](https://github.com/gogits/gogs/issues/2653) [#2701](https://github.com/gogits/gogs/issues/2701) [#2704](https://github.com/gogits/gogs/issues/2704)
 
 #### 新增特性
 

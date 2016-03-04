@@ -15,6 +15,7 @@ name: Changelog
 
 - Able to test mail settings in admin panel [#1531](https://github.com/gogits/gogs/issues/1531)
 - Improve issue lable readability [#2033](https://github.com/gogits/gogs/issues/2033)
+- Add config options for Git operation timeout [#2653](https://github.com/gogits/gogs/issues/2653) [#2701](https://github.com/gogits/gogs/issues/2701) [#2704](https://github.com/gogits/gogs/issues/2704)
 
 #### Features
 
