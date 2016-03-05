@@ -1,5 +1,5 @@
 ---
-name: Authentifzierung
+name: Authentifizierung
 ---
 
 # Authentifizierung
@@ -15,30 +15,30 @@ Sowohl LDAP via BindDN und simple auth LDAP benutzen die folgenden Felder:
     * Die Adresse, unter dem der LDAP-Server erreicht werden kann.
     * Beispiel: mydomain.com
 
-* Port **(benötig)**
+* Port **(benötigt)**
     * Der Port, über den die Verbindung zum Server aufgebaut wird
     * Beispiel: 636
 
 * TLS-Verschlüsselung aktivieren (optional)
     * Entscheidet, ob der Server mittels TLS mit dem Server kommuniziert
 
-* Admin Filter (optional)
+* Admin-Filter (optional)
     * Ein LDAP-Filter, der Benutzer identifiziert, denen Admin-Rechte
       gewährt werden. Wenn ein Account diesem Filter entspricht, werden
       diesem User Admin-Rechte gewährt.
     * Beispiel: (objectClass=adminAccount)
 
-* Vorname Attribut (optional)
+* Vorname-Attribut (optional)
     * Das Attribut des LDAP-Eintrags, in dem der Vorname gespeichert wird.
       Dieser Wert wird dem User-Account hinzugefügt werden.
     * Beispiel: givenName
 
-* Nachname Attribut (optional)
+* Nachname-Attribut (optional)
     * Das Attribut des LDAP-Eintrags, in dem der Nachname gespeichert wird.
       Dieser Wert wird dem User-Account hinzugefügt werden.
     * Beispiel: sn
 
-* E-Mail Attribut **(benötigt)**
+* E-Mail-Attribut **(benötigt)**
     * Das Attribut des LDAP-Eintrags, in dem die e-Mail-Adresse des Benutzers gespeichert
       wird. Dieser Eintrag wird in den User-Account übernommen.
     * Beispiel: mail
@@ -77,4 +77,4 @@ Sowohl LDAP via BindDN und simple auth LDAP benutzen die folgenden Felder:
       sollen. Der `%s` Parameter wird dabei wieder mit dem Usernamen des
       Benutzers ersetzt.
     * Beispiel: (&(objectClass=posixAccount)(cn=%s))
-    * Besipiel: (&(objectClass=posixAccount)(uid=%s))
+    * Beispiel: (&(objectClass=posixAccount)(uid=%s))

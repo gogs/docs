@@ -15,12 +15,12 @@ Jede Konfiguration, die mit :exclamation: markiert ist, solltest du auf dem Stan
 ## Generell
 
 - `APP_NAME`: Name der Applikation, ändere es zu was immer du haben willst
-- `RUN_USER`: Der Benutzer, unter dem Gogs läuft, wir empfählen `git`; wie dem auch sei, ändere das zu was immer dein Benutzername ist, wenn du Gogs auf deinem Privatrechner ausführst.Gogs stürzt möglicherweise ab, wenn dieser Wert falsch gesetzt ist.
+- `RUN_USER`: Der Benutzer, unter dem Gogs läuft, wir empfehlen `git`; wie dem auch sei, ändere das zu was immer dein Benutzername ist, wenn du Gogs auf deinem Privatrechner ausführst. Gogs stürzt möglicherweise ab, wenn dieser Wert falsch gesetzt ist.
 - `RUN_MODE`: Aufgrund von Performance- und anderen Gründen ändere diesen Wert zu `prod` wenn du Gogs in einer Produktions-Umgebung verwendest. Der Installer wird diesen Wert automatisch auf `prod` setzen.
 
 ## Repository (`repository`)
 
-- `ROOT`: Wurzelpfad, in dem die Repositories aller Benutzer gespeichert werden. Das muss ein absoluter Pfad sein, Standard ist `~/<user name>/gogs-repositories`.
+- `ROOT`: Wurzelpfad, in dem die Repositorys aller Benutzer gespeichert werden. Das muss ein absoluter Pfad sein, Standard ist `~/<user name>/gogs-repositories`.
 - `SCRIPT_TYPE`: Die Skript-Sprache, die dein Server unterstützt. Normalerweise ist das `bash`, aber einige Benutzer haben gemeldet, sie haben bloß `sh`.
 - `ANSI_CHARSET`: Das Standard-Charset für unbekannte Charsets.
 - `FORCE_PRIVATE`: Jedes neue Projekt als private erzwingen.
@@ -28,7 +28,7 @@ Jede Konfiguration, die mit :exclamation: markiert ist, solltest du auf dem Stan
 
 ## UI (`ui`)
 
-- `EXPLORE_PAGING_NUM`: Anzahl der Repositories, die in einer Explore-Seite angezeigt werden.
+- `EXPLORE_PAGING_NUM`: Anzahl der Repositorys, die in einer Explore-Seite angezeigt werden.
 - `ISSUE_PAGING_NUM`: Anzahl an Issues, die auf einer Seite angezeigt werden (für alle Seiten, auf denen Issues angezeigt werden)
 - `FEED_MAX_COMMIT_NUM`: Anzahl an maximalen Commits. die im Aktivitäts-Feed angezeigt werden.
 
@@ -50,7 +50,7 @@ Jede Konfiguration, die mit :exclamation: markiert ist, solltest du auf dem Stan
 - `ROOT_URL`: Die komplette öffentliche URL deines Gogs Servers.
 - `HTTP_ADDR`: HTTP Adresse, auf der Gogs lauscht.
 - `HTTP_PORT`: HTTP Port, auf dem Gogs lauscht.
-- `DISABLE_SSH`: Schaltet das SSH Featureaus, wenn es nicht verfügbar ist.
+- `DISABLE_SSH`: Schaltet das SSH Feature aus, wenn es nicht verfügbar ist.
 - `START_SSH_SERVER`: Aktivieren, um den eingebauten SSH-Server zu starten.
 - `SSH_PORT`: Der SSH-Port, falls es nicht `22` ist.
 - `OFFLINE_MODE`: Schaltet CDN und Gravatar aus.
@@ -84,9 +84,9 @@ Jede Konfiguration, die mit :exclamation: markiert ist, solltest du auf dem Stan
 
 - `ACTIVE_CODE_LIVE_MINUTES`: Lebensdauer des Aktivierungs-Codes (in Minuten)
 - `RESET_PASSWD_CODE_LIVE_MINUTES`: Lebensdauer des Passwort-Reset-Codes (in Minuten)
-- `REGISTER_EMAIL_CONFIRM`: Aktivieren, um bei der Registierung eine e-Mail-Bestätigung zu erfragen. `Mailer` muss dafür aktiviert sein.
-- `DISABLE_REGISTRATION`: Deaktiviert die Registierung, wodurch nur noch Administratoren Accounts anlegen dürfen.
-- `SHOW_REGISTRATION_BUTTON`: Entscheidet, ob ein Registrieren-Button angezeig wird.
+- `REGISTER_EMAIL_CONFIRM`: Aktivieren, um bei der Registrierung eine e-Mail-Bestätigung zu erfragen. `Mailer` muss dafür aktiviert sein.
+- `DISABLE_REGISTRATION`: Deaktiviert die Registrierung, wodurch nur noch Administratoren Accounts anlegen dürfen.
+- `SHOW_REGISTRATION_BUTTON`: Entscheidet, ob ein Registrieren-Button angezeigt wird.
 - `REQUIRE_SIGNIN_VIEW`: Aktiviere das, um Nutzer zu zwingen sich einzuloggen um andere Seiten zu sehen.
 - `ENABLE_CACHE_AVATAR`: Aktivieren, um Gravatars lokal zwischenzuspeichern.
 - `ENABLE_NOTIFY_MAIL`: Aktivieren, um bei Ereignissen e-Mails an die Nutzer zu schicken (z.B. beim Issue schließen). `Mailer` muss dafür aktiviert sein.
@@ -117,7 +117,7 @@ Hinweis: Gogs unterstützt nur SMTP mit STARTTLS.
 ## Cache (`cache`)
 
 - `ADAPTER`: Cache-Engine-Adapter, entweder `memory`, `redis`, oder `memcache`. Wenn du `redis` oder `memcache` nutzen willst, stelle sicher, dass Gogs mit den Build-Tags `redis` oder `memcache` erstellt wurde (z.B. : `go build -tags='redis'`).
-- `INTERVAL`: Nur für Memory-Cache, Speicherbereinigungs-Intervall in sekunden
+- `INTERVAL`: Nur für Memory-Cache, Speicherbereinigungs-Intervall in Sekunden
 - `HOST`: Nur für redis und memcache, die Server-Adresse und Port.
     - Redis: `network=tcp,addr=127.0.0.1:6379,password=macaron,db=0,pool_size=100,idle_timeout=180`
     - Memache: `127.0.0.1:9090;127.0.0.1:9091`
@@ -145,7 +145,7 @@ Hinweis: Gogs unterstützt nur SMTP mit STARTTLS.
 ## Log (`log`)
 
 - `ROOT_PATH`: Wurzelpfad zum Log-Pfad
-- `MODE`: Logging-Methode. Standard ist `console`. Für mehrere Methoden liste sie Kommaseperiert auf.
+- `MODE`: Logging-Methode. Standard ist `console`. Für mehrere Methoden liste sie kommasepariert auf.
 - `LEVEL`: Generelles Log-Level, Standard ist `Trace`.
 
 ## Git (`git`)

@@ -33,7 +33,7 @@ PASSWD = root
 Ja, warum nicht einfach `conf/app.ini` verändern? Der Grund ist, die eigene Konfiguration sicher zu speichern:
 
 - Alle, die das Programm aus der Binärdateien installieren, können jedes mal, wenn eine neue Version rauskommt, die Dateien einfach in den Ordner kopieren, ohne etwas neu konfigurieren zu müssen.
-- Für alle, die das Programm aus den Quelldateien installieren, haben wir die `custom/conf/app.ini` in der `,gitignore` aus der Versionskontrolle ausgenommen, sodass es keine neue Version erzeugt, wenn man Konfigurationsänderungen macht oder eine neue Version herunterlädt.
+- Für alle, die das Programm aus den Quelldateien installieren, haben wir die `custom/conf/app.ini` in der `.gitignore` aus der Versionskontrolle ausgenommen, sodass es keine neue Version erzeugt, wenn man Konfigurationsänderungen macht oder eine neue Version herunterlädt.
 
 ## Gogs Server starten
 
@@ -45,7 +45,7 @@ Ja, warum nicht einfach `conf/app.ini` verändern? Der Grund ist, die eigene Kon
 
 ### Für normalen Einsatz
 
-**Die Skripte liegen im `scripts`-Ordner, aber führe sie immer im Wurzelverzeichnis des Repositories aus**
+**Die Skripte liegen im `scripts`-Ordner, aber führe sie immer im Wurzelverzeichnis des Repositorys aus**
 
 - Es gibt einige Wege, Gogs zu starten:
 	- Einfach: Nutze einfach `./gogs web`

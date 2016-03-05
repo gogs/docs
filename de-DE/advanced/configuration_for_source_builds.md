@@ -1,8 +1,8 @@
 ---
-name: Detailierte Konfiguration aus den Quellen
+name: Detaillierte Konfiguration aus den Quellen
 ---
 
-# Detailierte Konfiguration für Erstellung aus den Quelldateien
+# Detaillierte Konfiguration für Erstellung aus den Quelldateien
 
 Folge den Anweisungen zum Erstellen [aus den Quellen](/docs/installation/install_from_source), du solltest dann einen lokalen Benutzer `git` und ein funktionierendes Setup von `go` und [Gogs](http://gogs.io/) haben.
 Wir werden Gogs mit **Nginx** installieren. Bei diesem Weg werden wir die Vorteile von Nginx nutzen. Das ist auf Servern, auf denen Nginx schon läuft sehr hilfreich.
@@ -14,7 +14,7 @@ Für den Rest dieses Dokuments werden wir folgendes annehmen:
 - `postgresql` ist dein Datenbankserver
 - Du möchtest, dass alle deine Git-URL wie `git.example.com` aussehen.
 
-Wie schon in [Konfiguration und Start](/docs/installation/configuration_and_run) erwähnt, solltest du deine eigene Konfigurations-Datei in `$GOPATH/src/github.com/gogits/gogs/custom/conf/app.ini` anlegen.
+Wie schon in [Konfiguration und Start](/docs/installation/configuration_and_run) erwähnt, solltest du deine eigene Konfigurationsdatei in `$GOPATH/src/github.com/gogits/gogs/custom/conf/app.ini` anlegen.
 
 Als ersten Schritt legen wir einige Ordner an:
 
@@ -27,7 +27,7 @@ mkdir -p $GOPATH/src/github.com/gogits/gogs/custom/conf
 mkdir -p ~/gogs-repositories
 ```
 
-Kopiere jetzt die Standard-Konfigurations-Datei, sodass du sie editieren kannst:
+Kopiere jetzt die Standard-Konfigurationsdatei, sodass du sie editieren kannst:
 
 ```bash
 cd $GOPATH/src/github.com/gogits/gogs
@@ -95,7 +95,7 @@ sudo -u postgres psql -d template1
 Danach, in der PostgreSQL-Prompt, gib ein:
 
 ```sql
-# Erstelle einen User fuer git
+# Erstelle einen User für git
 # Das folgende wird in den Prompt geschrieben
 CREATE USER git CREATEDB;
 
@@ -106,17 +106,17 @@ CREATE USER git CREATEDB;
 # Erstelle die Datenbank und gib alle Rechte an git
 CREATE DATABASE gogs_production OWNER git;
 
-#Schliesse die Datenbank-Sitzung
+#Schließe die Datenbanksitzung
 \q
 
 #Versuche dich mit dem neuen User zu verbinden
 sudo -u git -H psql -d gogs_production
 
-# Und schliesse die Datenbank-Sitzung wieder
+# Und schließe die Datenbanksitzung wieder
 gogs_production> \q
 ```
 
-Jetzt können wir `app.ini` anpassen. öffne also `$GOPATH/src/github.com/gogits/gogs/custom/conf/app.ini` in deinem Editor und ändere das folgende (stelle dabei sicher, dass du gerade der User `git` bist, falls nicht gib voher noch `sudo su - git` ein):
+Jetzt können wir `app.ini` anpassen. öffne also `$GOPATH/src/github.com/gogits/gogs/custom/conf/app.ini` in deinem Editor und ändere das folgende (stelle dabei sicher, dass du gerade der User `git` bist, falls nicht, gib vorher noch `sudo su - git` ein):
 
 ### `[database]` Sektion
 
@@ -129,7 +129,7 @@ PASSWD =__postgresql_passwort_aus_vorherigem_schritt__
 PATH = data/gogs.db
 ```
 
-## Nginx Server einrichten
+## Nginx-Server einrichten
 
 Wenn noch nicht installiert, installiere Nginx unter `Debian`/`Ubuntu` mit:
 
@@ -137,11 +137,11 @@ Wenn noch nicht installiert, installiere Nginx unter `Debian`/`Ubuntu` mit:
 sudo apt-get install -y nginx
 ```
 
-Jetzt erstellen wir eine Nginx Konfiguration für unser Gogs:
+Jetzt erstellen wir eine Nginx-Konfiguration für unser Gogs:
 
 ```bash
 sudo su - git
-# Benutze deinen Editor und erstelle eine temporaere Datei
+# Benutze deinen Editor und erstelle eine temporäre Datei
 vim /tmp/gogs
 ```
 Und füge dann folgendes ein:
@@ -180,13 +180,13 @@ Natürlich wirst du, falls du das initiale Setup noch nicht durchgeführt hast, 
 
 Ändere den **Datenbank-Typ** auf *PostgreSQL*, falls es nicht schon ausgewählt ist. Nach dem du überprüft hast, dass alle Einstellungen denen entsprechen, die du in der `app.ini` gesetzt hast, klicke auf installieren und freue dich über deine neue Git Webseite!
 
-Grundsätzlich bist du an dieser stelle fertig, die nächsten Schritte beschreiben, wie man Gogs startet wenn `Debain`/`Ubuntu` neu gestartet werden.
+Grundsätzlich bist du an dieser stelle fertig, die nächsten Schritte beschreiben, wie man Gogs startet wenn `Debian`/`Ubuntu` neu gestartet werden.
 
 ### Gogs zu `init.d` hinzufügen
 
-Diese Sektion beschreibt, wie man *Gogs* startet, wenn das Linux-System neu gestartet wird. Für andere Platformen gucke die Dokumentation duch, um herauszufinden, wie du das tun kannst. Für Mac OSX schaue dir [dieses Dokument](/docs/installation/install_gogs_on_mac#run-gogs-server) um Autostart-Programme zu verwalten
+Diese Sektion beschreibt, wie man *Gogs* startet, wenn das Linux-System neu gestartet wird. Für andere Plattformen gucke die Dokumentation durch, um herauszufinden, wie du das tun kannst. Für Mac OSX schaue dir [dieses Dokument](/docs/installation/install_gogs_on_mac#run-gogs-server) um Autostart-Programme zu verwalten
 
-Wenn du den vorherigen Schritten gefolgt bist, kannst du jetzt das automatische Starten von gogs aktivieren. Unter `Debian`/`Ubuntu` werden wir das Skript aus `$GOPATH/src/githb.com/gogits/gogs/scripts/init/debain/gogs` benutzen.
+Wenn du den vorherigen Schritten gefolgt bist, kannst du jetzt das automatische Starten von gogs aktivieren. Unter `Debian`/`Ubuntu` werden wir das Skript aus `$GOPATH/src/githb.com/gogits/gogs/scripts/init/debian/gogs` benutzen.
 
 Kopieren wir also die Datei und verändern sie:
 
