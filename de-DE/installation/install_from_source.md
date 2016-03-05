@@ -18,7 +18,7 @@ sudo adduser --disabled-login --gecos 'Gogs' git
 
 ### Drittanbieter-Software
 
-Wenn dich interressiert, welche Drittanbieter-Pakete wir benutzen, schaue dir das [gopmfile](https://github.com/gogits/gogs/blob/master/.gopmfile). Möglicherweise brauchst du das, wenn du Pakete für Gogs erstellst.
+Wenn dich interessiert, welche Drittanbieter-Pakete wir benutzen, schaue dir das [gopmfile](https://github.com/gogits/gogs/blob/master/.gopmfile). Möglicherweise brauchst du das, wenn du Pakete für Gogs erstellst.
 
 ## Go-Installation
 
@@ -111,7 +111,7 @@ Verfügbare Build-Tags sind:
 - `pam`: PAM-Authentifizierungs-Support
 - `cert`: Unterstützung für selbst-signierte Zertifikate
 
-Beispiel: Wenn du alles mit dabei haben wilst, lösche zuerst den Ordner `$GOPATH/pkg/${GOOS}_$GOARCH}/github.com/gogits/gogs` und führe dann aus:
+Beispiel: Wenn du alles mit dabei haben willst, lösche zuerst den Ordner `$GOPATH/pkg/${GOOS}_$GOARCH}/github.com/gogits/gogs` und führe dann aus:
 
 ```sh
 $ go get -u -tags "sqlite tidb pam cert" github.com/gogits/gogs
@@ -122,4 +122,4 @@ $ go build -tags "sqlite tidb pam cert"
 ## Weitere Schritte
 
 - [Konfiguration und Start](/docs/installation/configuration_and_run) für tiefergehende Informationen
-- Für detailliertere Instruktionen, darin enthalten Webserver und Datenbank aufsetzen, schaue dir die [detaillierten Schritte](/docs/advanced/configuration_for_soruce_builds) an
+- Für detailliertere Instruktionen, darin enthalten Webserver und Datenbank aufsetzen, schaue dir die [detaillierten Schritte](/docs/advanced/configuration_for_source_builds) an

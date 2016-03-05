@@ -81,22 +81,22 @@ SSL_MODE = disable
 PATH = data/gogs.db
 ```
 
-Dort werden alle Gogs-Daten außer den Git-Daten gespeichert. Git-Daten (Repository-Daten, Historie, etc.) wird außerhalb von Gogs im Dateisystem gespeichert, während Gogs eine Zwischenebene bietet, um Issues zu erstellen, die Historie sich anzugucken und Repositories zu konfigurieren.
+Dort werden alle Gogs-Daten außer den Git-Daten gespeichert. Git-Daten (Repository-Daten, Historie, etc.) werden außerhalb von Gogs im Dateisystem gespeichert, während Gogs eine Zwischenebene bietet, um Issues zu erstellen, die Historie sich anzugucken und Repositorys zu konfigurieren.
 
 Aufgrund dessen hat Benutzer-Verwaltung und Authorizierung, die du in Gogs einstellst keinen Effekt auf Git-Operationen die über das Dateisystem passieren.
 
 ### Lokal arbeiten
 
-Standardmäßig sind die von Gogs verwaltete Repositories in `C:\Users\dein_benutzername\gogs-repositories`
+Standardmäßig sind die von Gogs verwaltete Repositorys in `C:\Users\dein_benutzername\gogs-repositories`
 
-Diese Einstellung wird in `C:\gogs\custom\conf\app.ini` gesetst durch:
+Diese Einstellung wird in `C:\gogs\custom\conf\app.ini` gesetzt durch:
 
 ```
 [repository]
 ROOT=C:/pfad/zu/repositories
 ```
 
-Dort werden Roh-Repositoryies liegen ohne Arbeitsverzeichnis. Du kannst die Repos über das Dateisystem klonen, z.B. mit git.exe (Benötigt in [Installation](http://gogs.io/docs/installation/), oder mit [TortoiseGit](https://code.google.com/p/tortoisegit/), falls du lieber mit dem Windows-Explorer arbeitest.
+Dort werden Roh-Repositorys liegen ohne Arbeitsverzeichnis. Du kannst die Repos über das Dateisystem klonen, z.B. mit git.exe (Benötigt in [Installation](http://gogs.io/docs/installation/), oder mit [TortoiseGit](https://code.google.com/p/tortoisegit/), falls du lieber mit dem Windows-Explorer arbeitest.
 
 Auf der Kommandozeile kannst du z.B. folgendes tun:
 
@@ -114,7 +114,7 @@ Cloning into 'C:\Users\your_username\Documents\repos\repo_name'...
 done.
 ```
 
-Wenn du lokal arbeitest, brauchst du nicht alle Git-Operationen über den Gogs Service laufen zu lassen. Gogs wird sich aktualisieren, wenn du deinen Klon des Repos mit `git push` wieder zu seinem Ursprung in `C:\Users\dein_benutzername\gogs-repositories\...` hochlädst. Klone das Repo wenn du ein Arbeitsverzeichnis brauchst, selbst wenn es nur so rumfliegt. Das erlaubt dir, Gogs und die Repositories einfach zu verschieben, ohne dass der Prozess die Arbeitzverzeichnisse beeinflusst.
+Wenn du lokal arbeitest, brauchst du nicht alle Git-Operationen über den Gogs Service laufen zu lassen. Gogs wird sich aktualisieren, wenn du deinen Klon des Repos mit `git push` wieder zu seinem Ursprung in `C:\Users\dein_benutzername\gogs-repositories\...` hochlädst. Klone das Repo wenn du ein Arbeitsverzeichnis brauchst, selbst wenn es nur so rumfliegt. Das erlaubt dir, Gogs und die Repositorys einfach zu verschieben, ohne dass der Prozess die Arbeitsverzeichnisse beeinflusst.
 
 ### Gogs als Service starten
 
@@ -149,9 +149,9 @@ Um die Netzwerk-Routen zu komplettieren öffne einen Editor als Administrator un
 127.0.1.1	gogs
 ```
 
-Dieser Host-Datei-Eintrg garantiert, dass alle Anfragen an die "gogs"-Domäne an das lokale Interface gehen. In einem Webbrowser ist allgemein `gogs/` in der Adresszeile ausreichend, um auf diese Route zu kommen.
+Dieser Host-Datei-Eintrag garantiert, dass alle Anfragen an die "gogs"-Domäne an das lokale Interface gehen. In einem Webbrowser ist allgemein `gogs/` in der Adresszeile ausreichend, um auf diese Route zu kommen.
 
-Lade dir jetzt [nssm.exe](http://nssm.cc/download) für deine Maschine herunter (32 oder 64 bit; beide sind im Zip-Archiv) und speichere sie in einem Verzeichnis, dass in der %PATH%-Umgebunsvariable enthalten ist (oder hinzugefügt wird)
+Lade dir jetzt [nssm.exe](http://nssm.cc/download) für deine Maschine herunter (32 oder 64 bit; beide sind im Zip-Archiv) und speichere sie in einem Verzeichnis, dass in der %PATH%-Umgebungsvariable enthalten ist (oder hinzugefügt wird)
 
 Öffne jetzt eine Kommandozeile als Administrator und führe `nssm install gogs` aus, um Gogs als Service zu konfigurieren.
 

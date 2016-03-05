@@ -18,7 +18,7 @@ name: Troubleshooting
 ## GIT
 
 - Fehler: `bash /path/to/gogs: no such file or directory`
-- Grund: Du hast die Gogs-Dateien verschoben und der alte Pfad war hardgecoded in der Datei `~/.ssh/authorized_keys`
+- Grund: Du hast die Gogs-Dateien verschoben und der alte Pfad war in der Datei `~/.ssh/authorized_keys` fest kodiert.
 - Lösung: Gehe auf das Admin-Panel (`/admin`) und führe da die Operation `Überschreibe '.ssh/authorized_keys' Datei` und `Überschreibe alle Hooks der Repositories` aus.
 
 -----
@@ -68,7 +68,7 @@ Danach gehe auf [http://localhost:3000/install](http://localhost:3000/install). 
 
 - Fehler: `Database setting is not correct: This server only supports the insecure old password authentication. If you still want to use it, please add 'allowOldPasswords=1' to your DSN. See also https://github.com/go-sql-driver/mysql/wiki/old_passwords`
 - Grund: Es wurden nur Passwörter für @localhost erneuert -- es gab einen zweiten Eintrag in der User-Tabelle, in dem @% immer noch das alte Passwort hat.
-- Lösung: [GitHub Kommentare](https://github.com/gogits/gogs/issues/385#issuecomment-54357073) 
+- Lösung: [GitHub Kommentare](https://github.com/gogits/gogs/issues/385#issuecomment-54357073)
 
 ## Mailer
 
@@ -108,7 +108,7 @@ fatal: Could not read from remote repository.
 ## Anderes
 
 - Fehler: Extrem langsamer Seitenaufbau, obwohl im Seitenfuß die Zeit normal aussieht (unter 100ms)
-- Grund: Es könnte von NGINX herforgerufen werden, der versucht IPv4 als IPv6-Adressen aufzurufen
+- Grund: Es könnte von NGINX hervorgerufen werden, der versucht IPv4 als IPv6-Adressen aufzurufen
 - Lösung: Nutze expliziten Hostnamen `127.0.0.1` statt `localhost`
 
 -----
@@ -131,5 +131,5 @@ fatal: Could not read from remote repository.
 -----
 
 - Fehler: `! [remote rejected] master -> master (hook declined)`
-- Grund: Git konnte das update-skript nicht ausführen
+- Grund: Git konnte das Update-Skript nicht ausführen
 - Lösung: Kontrolliere, dass die `bash` auf deinem System verfügbar ist. Alle Hook-Skripte benötigen diese Shell.

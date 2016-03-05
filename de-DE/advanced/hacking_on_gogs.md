@@ -6,7 +6,7 @@ name: Bei Gogs mitwirken
 
 Wenn du zu Gogs etwas beitragen willst, solltest du das Projekt forken und auf dem dev Branch arbeiten.
 Es gibt eine kleine Stolperfalle: einige interne Pakete sind über ihre Github URL eingebunden.
-Du musst also das Go tool austricksen, sodass es denkt, du hättest einen Klon des offiziellen Repositories.
+Du musst also das Go tool austricksen, sodass es denkt, du hättest einen Klon des offiziellen Repositorys.
 
 Starte mit dem Download des Quellcodes, wie du es normalerweise tun würdest:
 

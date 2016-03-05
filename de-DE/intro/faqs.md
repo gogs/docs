@@ -8,7 +8,7 @@ name: FAQs
 
 #### Was mache ich wenn ein anderer Service auf Port 3000 läuft?
 
-Ändere den Port, auf dem Gogs läuft, wenn es das erste mal gestartet wird mit:
+Ändere den Port, auf dem Gogs läuft, wenn es das erste Mal gestartet wird mit:
 
 	./gogs web -port 3001
 
@@ -50,7 +50,7 @@ Setze dann in deiner Konfiguration `[server] ROOT_URL = http://git.crystalnetwor
 
 ##### Warum bekomme ich Fehlermeldungen, wenn ich große Dateien hochlade?
 
-Um NGINX zu erlauben, große Dateien in die Repositories hochzuladen, schau dir bitte [hier](http://stackoverflow.com/a/15021750) (englisch) die Diskussion an. `413` ist ein verbreiteter NGINX-Fehler; füge einfach die folgende zeile in deinem Server-Block ein, um das Problem zu beheben:
+Um NGINX zu erlauben, große Dateien in die Repositorys hochzuladen, schau dir bitte [hier](http://stackoverflow.com/a/15021750) (englisch) die Diskussion an. `413` ist ein verbreiteter NGINX-Fehler; füge einfach die folgende zeile in deinem Server-Block ein, um das Problem zu beheben:
 ```
 client_max_body_size 50m;
 ```
@@ -126,17 +126,17 @@ Es gibt eine [systemd-Vorlage-Datei](https://github.com/gogits/gogs/blob/master/
 
 1. Ersetze den `start.sh`-Pfad in `ExecStart` mit dem Pfad zu deiner Gogs-Installation.
 2. Ersetze auch den Pfad in `WorkingDirectory` mit diesem Pfad.
-3. (Optional) Wenn du Gogs mit `MySQL/MariaDB`, `PostgreeSQL`, `Redis` oder `memcached` betreiben willst, entferne den Kommentar vor der entspechenden `After`-Zeile .
+3. (Optional) Wenn du Gogs mit `MySQL/MariaDB`, `PostgreeSQL`, `Redis` oder `memcached` betreiben willst, entferne den Kommentar vor der entsprechenden `After`-Zeile .
 
 Wenn du deine Änderungen abgeschlossen hast, speichere die Datei im Ordner `/etc/systemd` und starte Gogs mit `sudo systemd restart gogs`.
 
-Den Status des Gogs-Systemd-Services kannst du mittels `sudo systemd status gogs -l` oder mit `sudo journalctl -b -u gogs.service` die journald-Einträge direkt anzeigen lassen 
+Den Status des Gogs-Systemd-Services kannst du mittels `sudo systemd status gogs -l` oder mit `sudo journalctl -b -u gogs.service` die journald-Einträge direkt anzeigen lassen
 
 ### Administration
 
 #### Wie kann ich Administrator werden?
 
-Der erste registrierte Benutzer mit `ID = 1` ist ein Administrator. Eine e-Mail-Bestätigung ist dafür nicht erforderlich (selbst wenn sie eingeschaltet ist). Der Standard-Administrator kann unter `Admin` > `Users` andere Benutzer authorisieren. Registriert sich der Benutzer auf der Installationsseite, wird er auch automatisch zum Administrator.
+Der erste registrierte Benutzer mit `ID = 1` ist ein Administrator. Eine e-Mail-Bestätigung ist dafür nicht erforderlich (selbst wenn sie eingeschaltet ist). Der Standard-Administrator kann unter `Admin` > `Users` andere Benutzer autorisieren. Registriert sich der Benutzer auf der Installationsseite, wird er auch automatisch zum Administrator.
 
 ### Repository-Management
 
