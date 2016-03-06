@@ -8,7 +8,9 @@ name: From binary
 
 All downloads come with **MySQL** and **PostgreSQL** support, and build **with tags `cert`**. Keep in mind that support status may be different from older releases, please follow the instructions on older Gogs instances.
 
-**Note**: `mws` means builtin Windows service support. Please use the other one if you're using NSSM.
+## Notes
+
+- `mws` means builtin Windows service support. Please use the other one if you're using NSSM.
 
 ## How to use downloads?
 

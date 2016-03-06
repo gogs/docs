@@ -21,6 +21,10 @@ name: Changelog
 
 - Able to checkout pull requests locally [#1655](https://github.com/gogits/gogs/issues/1655)
 
+#### Others
+
+- Add Finnish support
+
 ### v0.8.43 @ 2016-02-24
 
 #### Bug fixes
