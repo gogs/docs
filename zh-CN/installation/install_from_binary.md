@@ -24,6 +24,18 @@ name: 二进制安装
 2. 删除当前的 `templates` 目录。
 3. 解压压缩包并将所有内容复制粘贴到相应（当前）的位置。
 
+### v0.9.0 @ 2016-03-06
+
+|系统名称|系统类型|SQLite|TiDB|PAM|下载（[GitHub](https://github.com/gogits/gogs/releases/tag/v0.9.0)）|
+|------|----|------|----|---|--------|
+|Linux|386|✅|❌|✅|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.0_linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/gogs_v0.9.0_linux_386.tar.gz) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.0_linux_386.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.0_linux_386.tar.gz)|
+|Linux|amd64|✅|❌|✅|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.0_linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/gogs_v0.9.0_linux_amd64.tar.gz) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.0_linux_amd64.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.0_linux_amd64.tar.gz)|
+|Linux|arm|❌|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.0_linux_arm.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.0_linux_arm.zip)|
+|Raspberry Pi|v2|✅|❌|✅|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.0_raspi2.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.0_raspi2.zip)|
+|Windows|386|❌|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.0_windows_386.zip) \| [ZIP w/ mws](https://dl.gogs.io/gogs_v0.9.0_windows_386_mws.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.0_windows_386.zip) \| [ZIP w/mws](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.0_windows_386_mws.zip)|
+|Windows|amd64|✅|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.0_windows_amd64.zip) \| [ZIP w/ mws](https://dl.gogs.io/gogs_v0.9.0_windows_amd64_mws.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.0_windows_amd64.zip) \| [ZIP w/ mws](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.0_windows_amd64_mws.zip)|
+|Mac OS|amd64|✅|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.0_darwin_amd64.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.0_darwin_amd64.zip)|
+
 ### v0.8.43 @ 2016-02-24
 
 |系统名称|系统类型|SQLite|TiDB|PAM|下载（[GitHub](https://github.com/gogits/gogs/releases/tag/v0.8.43)）|
@@ -59,18 +71,6 @@ name: 二进制安装
 |Windows|386|❌|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.8.10_windows_386.zip) \| [ZIP w/ mws](https://dl.gogs.io/gogs_v0.8.10_windows_386_mws.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.8.10_windows_386.zip) \| [ZIP w/mws](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.8.10_windows_386_mws.zip)|
 |Windows|amd64|✅|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.8.10_windows_amd64.zip) \| [ZIP w/ mws](https://dl.gogs.io/gogs_v0.8.10_windows_amd64_mws.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.8.10_windows_amd64.zip) \| [ZIP w/ mws](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.8.10_windows_amd64_mws.zip)|
 |Mac OS|amd64|✅|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.8.10_darwin_amd64.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.8.10_darwin_amd64.zip)|
-
-### v0.8.0 @ 2015-12-13
-
-|系统名称|系统类型|SQLite|TiDB|PAM|下载|
-|------|----|------|----|---|--------|
-|Linux|386|✅|❌|✅|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.8.0_linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/gogs_v0.8.0_linux_386.tar.gz) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.8.0_linux_386.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.8.0_linux_386.tar.gz)|
-|Linux|amd64|✅|❌|✅|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.8.0_linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/gogs_v0.8.0_linux_amd64.tar.gz) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.8.0_linux_amd64.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.8.0_linux_amd64.tar.gz)|
-|Linux|arm|❌|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.8.0_linux_arm.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.8.0_linux_arm.zip)|
-|Raspberry Pi|v2|✅|❌|✅|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.8.0_raspi2.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.8.0_raspi2.zip)|
-|Windows|386|❌|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.8.0_windows_386.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.8.0_windows_386.zip)|
-|Windows|amd64|✅|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.8.0_windows_amd64.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.8.0_windows_amd64.zip)|
-|Mac OS|amd64|✅|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.8.0_darwin_amd64.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.8.0_darwin_amd64.zip)|
 
 ### v0.7.33 @ 2015-12-06
 

@@ -4,7 +4,7 @@ name: Changelog
 
 # Changelog
 
-### v0.9.0 (unreleased)
+### v0.9.0 @ 2016-03-06
 
 #### Bug fixes
 
@@ -16,10 +16,12 @@ name: Changelog
 - Able to test mail settings in admin panel [#1531](https://github.com/gogits/gogs/issues/1531)
 - Improve issue lable readability [#2033](https://github.com/gogits/gogs/issues/2033)
 - Add config options for Git operation timeout [#2653](https://github.com/gogits/gogs/issues/2653) [#2701](https://github.com/gogits/gogs/issues/2701) [#2704](https://github.com/gogits/gogs/issues/2704)
+- Able to delete current avatar of user and organization
 
 #### Features
 
 - Able to checkout pull requests locally [#1655](https://github.com/gogits/gogs/issues/1655)
+- Able to delete Wiki page and entire data [#2183](https://github.com/gogits/gogs/issues/2183)
 
 #### Others
 
@@ -93,35 +95,6 @@ name: Changelog
 #### Features
 
 - Add more APIs: user emails, organizations [#1692](https://github.com/gogits/gogs/issues/1692) 
-
-### v0.8.0 @ 2015-12-13
-
-#### Bug fixes
-
-- Cannot push repository with massive commits like Linux kernel [#279](https://github.com/gogits/gogs/issues/279) 
-- SMTP authentication makes invalid assumption on protocol [#2152](https://github.com/gogits/gogs/issues/2152) 
-
-#### Improvements
-
-- Send email when a new pull request is submitted [#1612](https://github.com/gogits/gogs/issues/1612) 
-- Auto login after install if admin is configured [#1627](https://github.com/gogits/gogs/issues/1627) 
-- Disable change username and password for non-local users [#1374](https://github.com/gogits/gogs/issues/1374)  [#1938](https://github.com/gogits/gogs/issues/1938) [#2154](https://github.com/gogits/gogs/issues/2154) 
-- Able to config `git fsck` timeout [#1943](https://github.com/gogits/gogs/issues/1943) 
-- Able to show and edit mirror address on repository pages [#1984](https://github.com/gogits/gogs/issues/1984)
-- Do not show content of issue in activity timeline [#2029](https://github.com/gogits/gogs/issues/2029)
-- Show author email in commit diff [#2035](https://github.com/gogits/gogs/issues/2035) 
-- Able to change mirror source address
-- Add "New Mirror" button on dashboard [#2037](https://github.com/gogits/gogs/issues/2037) 
-- Able to set external URL for wiki [#2114](https://github.com/gogits/gogs/issues/2114) 
-
-#### Features
-
-- Able to limit repository creation per user [#1575](https://github.com/gogits/gogs/issues/1575) 
-- Able to select branch in commits page [#1846](https://github.com/gogits/gogs/issues/1846) 
-
-#### Others
-
-- Drop `0.5.x` support, minimum auto-migration version is `0.6.0`
 
 ### v0.7.33 @ 2015-12-06
 

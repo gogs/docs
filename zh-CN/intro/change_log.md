@@ -4,7 +4,7 @@ name: 变更日志
 
 # 变更日志
 
-### v0.9.0（未发布）
+### v0.9.0 @ 2016-03-06
 
 #### Bug 修复
 
@@ -16,10 +16,12 @@ name: 变更日志
 - 允许在管理员面板测试邮件服务设置 [#1531](https://github.com/gogits/gogs/issues/1531)
 - 增强工单标签的可读性 [#2033](https://github.com/gogits/gogs/issues/2033)
 - 允许为 Git 操作自定义超时 [#2653](https://github.com/gogits/gogs/issues/2653) [#2701](https://github.com/gogits/gogs/issues/2701) [#2704](https://github.com/gogits/gogs/issues/2704)
+- 允许删除用户或组织的当前使用头像
 
 #### 新增特性
 
 - 支持在本地仓库检出合并请求 [#1655](https://github.com/gogits/gogs/issues/1655)
+- 允许删除 Wiki 页面和其所有数据 [#2183](https://github.com/gogits/gogs/issues/2183)
 
 #### 其它变更
 
@@ -93,35 +95,6 @@ name: 变更日志
 #### 新增特性
 
 - 开放更多 API 接口：操作用户邮箱、管理组织 [#1692](https://github.com/gogits/gogs/issues/1692) 
-
-### v0.8.0 @ 2015-12-13
-
-#### Bug 修复
-
-- 无法推送像 Linux Kernel 这么多代码提交（Commit）的仓库 [#279](https://github.com/gogits/gogs/issues/279) 
-- SMTP 授权认证未完全遵循协议规定 [#2152](https://github.com/gogits/gogs/issues/2152) 
-
-#### 功能改进
-
-- 当有新的合并请求提交时发送邮件提醒 [#1612](https://github.com/gogits/gogs/issues/1612) 
-- 如果在安装页面设置了管理员，完成安装后自动登录 [#1627](https://github.com/gogits/gogs/issues/1627) 
-- 禁止非本地类型的用户修改用户名和密码 [#1374](https://github.com/gogits/gogs/issues/1374)  [#1938](https://github.com/gogits/gogs/issues/1938) [#2154](https://github.com/gogits/gogs/issues/2154) 
-- 允许自定义 `git fsck` 的超时设置 [#1943](https://github.com/gogits/gogs/issues/1943) 
-- 在仓库页面显示和编辑镜像的地址 [#1984](https://github.com/gogits/gogs/issues/1984) 
-- 不在活动线中显示工单（Issue）的内容 [#2029](https://github.com/gogits/gogs/issues/2029)
-- 在差异对比页面显示作者的邮箱 [#2035](https://github.com/gogits/gogs/issues/2035) 
-- 允许修改仓库的镜像源地址
-- 控制面板增加 “创建新的镜像” 按钮 [#2037](https://github.com/gogits/gogs/issues/2037) 
-- 允许使用外部 Wiki 链接 [#2114](https://github.com/gogits/gogs/issues/2114)
-
-#### 新增特性
-
-- 允许限制每个用户的最大允许创建仓库数 [#1575](https://github.com/gogits/gogs/issues/1575) 
-- 允许在代码提交页面直接切换分支 [#1846](https://github.com/gogits/gogs/issues/1846) 
-
-#### 其它变更
-
-- 停止支持 `0.5.x` 系列版本，最低要求的自动迁移版本为 `0.6.0`
 
 ### v0.7.33 @ 2015-12-06
 
