@@ -20,6 +20,8 @@ name: 变更日志
 
 #### 新增特性
 
+- 更加细化的协作者权限管理 [#1146](https://github.com/gogits/gogs/issues/1146)
+- 支持在同个仓库内的不同分支之间发起合并请求 [#1597](https://github.com/gogits/gogs/issues/1597)
 - 支持在本地仓库检出合并请求 [#1655](https://github.com/gogits/gogs/issues/1655)
 - 允许删除 Wiki 页面和其所有数据 [#2183](https://github.com/gogits/gogs/issues/2183)
 

@@ -20,6 +20,8 @@ name: Changelog
 
 #### Features
 
+- More refined collaboration access rights [#1146](https://github.com/gogits/gogs/issues/1146)
+- Able to create pull requests between branches in same repository [#1597](https://github.com/gogits/gogs/issues/1597)
 - Able to checkout pull requests locally [#1655](https://github.com/gogits/gogs/issues/1655)
 - Able to delete Wiki page and entire data [#2183](https://github.com/gogits/gogs/issues/2183)
 
