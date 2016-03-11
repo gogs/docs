@@ -4,6 +4,16 @@ name: 变更日志
 
 # 变更日志
 
+### v0.9.x（未发布）
+
+#### Bug 修复
+
+- 管理员无法在组织首页查看私有仓库 [#2372](https://github.com/gogits/gogs/issues/2372)
+
+#### 新增特性
+
+- 支持在探索和管理面板搜索用户和仓库 [#13](https://github.com/gogits/gogs/issues/13)
+
 ### v0.9.0 @ 2016-03-06
 
 #### Bug 修复

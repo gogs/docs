@@ -4,6 +4,16 @@ name: Changelog
 
 # Changelog
 
+### v0.9.x (unreleased)
+
+#### Bug fixes
+
+- Site admin cannot see private repositories on organization home page [#2372](https://github.com/gogits/gogs/issues/2372)
+
+#### Features
+
+- Support search user and repository on both explore page and admin panel [#13](https://github.com/gogits/gogs/issues/13)
+
 ### v0.9.0 @ 2016-03-06
 
 #### Bug fixes
