@@ -69,7 +69,7 @@ HTTP_ADDR = localhost
 HTTP_PORT = 3000
 ```
 
-## Setting up `postgresql` sever
+## Setting up `postgresql` server
 
 Under `debian`/`ubuntu` you can install it using:
 
