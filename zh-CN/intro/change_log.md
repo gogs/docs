@@ -10,6 +10,10 @@ name: 变更日志
 
 - 管理员无法在组织首页查看私有仓库 [#2372](https://github.com/gogits/gogs/issues/2372)
 
+#### 功能改进
+
+- 允许使用用户名或全名搜索用户 [#2792](https://github.com/gogits/gogs/issues/2792)
+
 #### 新增特性
 
 - 支持在探索和管理面板搜索用户和仓库 [#13](https://github.com/gogits/gogs/issues/13)

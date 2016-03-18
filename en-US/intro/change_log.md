@@ -10,6 +10,10 @@ name: Changelog
 
 - Site admin cannot see private repositories on organization home page [#2372](https://github.com/gogits/gogs/issues/2372)
 
+#### Improvements
+
+- Able to search user with username and full name [#2792](https://github.com/gogits/gogs/issues/2792)
+
 #### Features
 
 - Support search user and repository on both explore page and admin panel [#13](https://github.com/gogits/gogs/issues/13)
