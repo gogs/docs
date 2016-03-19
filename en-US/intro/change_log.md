@@ -4,14 +4,18 @@ name: Changelog
 
 # Changelog
 
-### v0.9.x (unreleased)
+### v0.9.13 @ 2016-03-19
 
 #### Bug fixes
 
 - Site admin cannot see private repositories on organization home page [#2372](https://github.com/gogits/gogs/issues/2372)
+- Non-local users can reset their password [#2811](https://github.com/gogits/gogs/issues/2811)
+- 500 when compare branches with name contains '#' [#2822](https://github.com/gogits/gogs/issues/2822)
+- Potential concurrency issue with builtin SSH server [#2850](https://github.com/gogits/gogs/issues/2850)
 
 #### Improvements
 
+- Set HTML meta values for repository [#2670](https://github.com/gogits/gogs/issues/2670)
 - Able to search user with username and full name [#2792](https://github.com/gogits/gogs/issues/2792)
 
 #### Features
@@ -95,22 +99,6 @@ name: Changelog
 - Add more APIs: user followers [#1692](https://github.com/gogits/gogs/issues/1692) 
 - Support side-by-side diff view [#1925](https://github.com/gogits/gogs/issues/1925) [#2296](https://github.com/gogits/gogs/issues/2296) 
 - Support highlight inline diff [#2335](https://github.com/gogits/gogs/issues/2335)
-
-### v0.8.10 @ 2015-12-18
-
-#### Bug fixes
-
-- Can't identify git version on Windows [#2167](https://github.com/gogits/gogs/issues/2167)
-- Wiki preview does not work on Firefox [#2171](https://github.com/gogits/gogs/issues/2171)
-- 500 when view repository watchers and stargazers with PostgreSQL [#2176](https://github.com/gogits/gogs/issues/2176)
-- Cannot detect correct file encoding [#2185](https://github.com/gogits/gogs/issues/2185) 
-- Huge diff hangs 
-- Cannot handle non-commit tag
-- Dashboard news feeds for organizations are wrong [#2223](https://github.com/gogits/gogs/issues/2223) 
-
-#### Features
-
-- Add more APIs: user emails, organizations [#1692](https://github.com/gogits/gogs/issues/1692) 
 
 ### v0.7.33 @ 2015-12-06
 

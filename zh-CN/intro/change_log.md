@@ -4,14 +4,18 @@ name: 变更日志
 
 # 变更日志
 
-### v0.9.x（未发布）
+### v0.9.13 @ 2016-03-19
 
 #### Bug 修复
 
 - 管理员无法在组织首页查看私有仓库 [#2372](https://github.com/gogits/gogs/issues/2372)
+- 非本地类型用户允许重置密码 [#2811](https://github.com/gogits/gogs/issues/2811)
+- 分支名称包含 '#' 符号时发起合并请求会发生错误 [#2822](https://github.com/gogits/gogs/issues/2822)
+- 内置 SSH 服务器潜在的并发问题 [#2850](https://github.com/gogits/gogs/issues/2850)
 
 #### 功能改进
 
+- 根据仓库信息输出相应的 HTML meta 值 [#2670](https://github.com/gogits/gogs/issues/2670)
 - 允许使用用户名或全名搜索用户 [#2792](https://github.com/gogits/gogs/issues/2792)
 
 #### 新增特性
@@ -95,22 +99,6 @@ name: 变更日志
 - 开放更多 API 接口：操作用户关注者 [#1692](https://github.com/gogits/gogs/issues/1692) 
 - 支持分列文件差异对比 [#1925](https://github.com/gogits/gogs/issues/1925) [#2296](https://github.com/gogits/gogs/issues/2296) 
 - 支持行内差异高亮显示 [#2335](https://github.com/gogits/gogs/issues/2335)
-
-### v0.8.10 @ 2015-12-18
-
-#### Bug 修复
-
-- 在 Windows 下无法识别 Git 版本 [#2167](https://github.com/gogits/gogs/issues/2167)
-- 火狐下无法预览 Wiki [#2176](https://github.com/gogits/gogs/issues/2176)
-- 使用 PostgreSQL 作为数据库时无法正常浏览仓库的关注者和称赞者 [#2176](https://github.com/gogits/gogs/issues/2176)
-- 无法检测正确的文件编码 [#2185](https://github.com/gogits/gogs/issues/2185) 
-- 超大文件差异对比导致无响应
-- 无法处理非代码提交（Commit）关联的标签（Tag）
-- 组织控制面板的最近活动出现串号显示 [#2223](https://github.com/gogits/gogs/issues/2223) 
-
-#### 新增特性
-
-- 开放更多 API 接口：操作用户邮箱、管理组织 [#1692](https://github.com/gogits/gogs/issues/1692) 
 
 ### v0.7.33 @ 2015-12-06
 
