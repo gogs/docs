@@ -41,7 +41,7 @@ Ja, warum nicht einfach `conf/app.ini` verändern? Der Grund ist, die eigene Kon
 
 - Setze den Schlüssel `security -> INSTALL_LOCK` auf `true` in der `custom/conf/app.ini` um Gogs aus den Quelldateien zu starten
 - Du kannst Live-Compiling anschalten mit `bra run` im Gogs Quell-Ordner
-	- Installation von [bra](https://github.com/Unknwon/bra): ` go get -u githum.com/Unknwon/bra`
+	- Installation von [bra](https://github.com/Unknwon/bra): ` go get -u github.com/Unknwon/bra`
 
 ### Für normalen Einsatz
 
