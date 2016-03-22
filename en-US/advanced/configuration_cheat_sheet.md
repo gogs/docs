@@ -8,7 +8,7 @@ This is a cheat sheet for the Gogs configuration file, it helps some if you want
 
 Before we get started, make sure you know that any change of configuration should be made in `custom/conf/app.ini` or any corresponding location.
 
-All default settings can be found in [app.ini](https://github.com/gogits/gogs/blob/master/conf/app.ini). If you see anything like `%(X)s`, it's a feature powered by [ini](https://github.com/go-ini/ini/tree/v1#recursive-values) for reading value recursively.
+All default settings can be found in [app.ini](https://github.com/gogits/gogs/blob/master/conf/app.ini). If you see anything like `%(X)s`, it's a feature powered by [ini](https://github.com/go-ini/ini/#recursive-values) for reading value recursively.
 
 Any configuration option that is marked by :exclamation: means remain default unless you really understand what you are doing.
 
