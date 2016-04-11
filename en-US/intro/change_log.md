@@ -4,6 +4,12 @@ name: Changelog
 
 # Changelog
 
+### v0.9.x (unreleased)
+
+#### Bug fixes
+
+- Raw file link broken when filename contains spaces [#2842](https://github.com/gogits/gogs/issues/2842)
+
 ### v0.9.13 @ 2016-03-19
 
 #### Bug fixes
