@@ -26,7 +26,7 @@ Gogs 支持 MySQL、PostgreSQL、SQLite3 和 TiDB（实验性支持），请根�
 
 ### 安装其它要求
 
-#### Max OS X
+#### Mac OS X
 
 假设您已经安装 [Homebrew](http://brew.sh/)：
 
