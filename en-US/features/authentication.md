@@ -101,7 +101,7 @@ If you want it to work with normal linux passwords, the user running Gogs must h
 
 This option allow Gogs to login in your SMTP host as Gogs user. To configure this you just need to set fields below:
 
-- Authorization Name **(required)**
+- Authentication Name **(required)**
   - A name to assign to the new method of authorization.
 
 - SMTP Authentication Type **(required)**
