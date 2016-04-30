@@ -1,5 +1,5 @@
 ---
-name: Auf Mac OS
+name: auf Mac OS
 ---
 
 # Installation von Gogs auf Mac OS X
