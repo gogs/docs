@@ -1,5 +1,5 @@
 ---
-name: Aus Paketquellen
+name: aus Paketquellen
 ---
 
 # Installation aus Paketquellen
