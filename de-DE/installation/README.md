@@ -17,18 +17,18 @@ name: Installation
 
 ### Installation der Datenbank
 
-Gogs unterstützt MySQL, PostgreSQL, SQLite3 und TiDB. Je nach dem , wofür du dich entscheidest, installiere die jeweilige Datenbank oder überspringe diesen Schritt.
+Gogs unterstützt MySQL, PostgreSQL, SQLite3 und TiDB. Je nachdem, wofür du dich entscheidest, installiere die jeweilige Datenbank oder überspringe diesen Schritt.
 
  - [MySQL](http://dev.mysql.com/downloads/mysql/) (Engine: INNODB)
  - [PostgreSQL](http://www.postgresql.org/download/)
 
-**WICHTIG** Benutze `etc/mysql.sql` um eine Datenbank mit dem Namen `gogs` anzulegen (das ist der Standard-Name). Erzeugst du sie manuell, stelle sicher, dass das Encoding auf `utf8mb4` gesetzt ist.
+**WICHTIG** Benutze `etc/mysql.sql` um eine Datenbank mit dem Namen `gogs` anzulegen (Standard-Name). Erzeugst du sie manuell, stelle sicher, dass das Encoding auf `utf8mb4` gesetzt ist.
 
-### Andere Abhängigkeiten installieren
+### Git installieren
 
 #### Mac OS X
 
-Angenommen, du hast [Homebrew](http://brew.sh/) schon installiert:
+Falls du [Homebrew](http://brew.sh/) schon installiert hast:
 
 ```
 $ brew update
@@ -44,7 +44,7 @@ $ sudo apt-get install git
 
 #### Windows
 
-[Downloade und installiere Git](http://git-scm.com/downloads)
+[Git herunterladen und installieren](http://git-scm.com/downloads)
 
 ## Installation von Gogs
 
