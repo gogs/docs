@@ -1,5 +1,5 @@
 ---
-name: unter Windows
+name: auf Windows
 ---
 
 ## Programm-Installation von Gogs auf Windows 7
