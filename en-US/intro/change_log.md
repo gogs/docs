@@ -10,6 +10,19 @@ name: Changelog
 
 - Raw file link broken when filename contains spaces [#2842](https://github.com/gogits/gogs/issues/2842)
 
+#### Improvements
+
+- Ask user to confirm before leaving page with unsaved changes [#2881](https://github.com/gogits/gogs/issues/2881)
+
+#### Features
+
+- Support alphanumeric issue style (ABC-1234) for external issue tracker [#2992](https://github.com/gogits/gogs/issues/2992)
+- Support PDF preview [#2993](https://github.com/gogits/gogs/issues/2993)
+
+#### Others
+
+- Add Turkish support
+
 ### v0.9.13 @ 2016-03-19
 
 #### Bug fixes

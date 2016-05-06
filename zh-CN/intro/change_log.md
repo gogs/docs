@@ -10,6 +10,19 @@ name: 变更日志
 
 - 原始文件链接包含空格时跳转不正确 [#2842](https://github.com/gogits/gogs/issues/2842)
 
+#### 功能改进
+
+- 离开有未保存内容的页面时提醒用户确认 [#2881](https://github.com/gogits/gogs/issues/2881)
+
+#### 新增特性
+
+- 支持字母结合数字格式（ABC-1234）作为外部工单系统的匹配模式 [#2992](https://github.com/gogits/gogs/issues/2992)
+- 支持 PDF 预览 [#2993](https://github.com/gogits/gogs/issues/2993)
+
+#### 其它变更
+
+- 增加土耳其语支持
+
 ### v0.9.13 @ 2016-03-19
 
 #### Bug 修复

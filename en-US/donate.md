@@ -33,6 +33,7 @@ name: Donation
 
 | Donated at       | Donator    | Amount   |
 | ---------------- |:---------:| --------:|
+| 2016-04-29 | Mr. Brendel | $10.00 |
 | 2016-04-17 | Mr. Khromov | $10.00 |
 | 2016-04-08 | Mr. Stefanovic | $50.00 |
 | 2016-03-20 | Mr. Rátkai | $10.00 |
