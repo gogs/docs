@@ -1,0 +1,11 @@
+---
+name: API
+---
+
+Gogs has an API roughly matching the re-implemeted parts of Github.
+
+To get started, you need an API-key from `http://YOUR_GOGS_URL/user/settings/applications`. You can test it out by with a simple cURL command:
+
+    curl -v --header "Authentication: token YOUR_GOGS_TOKEN" http://YOUR_GOGS_URL/api/v1/users/YOUR_USER_NAME
+
+A list of available endpoints can be found at https://github.com/gogits/go-gogs-client/wiki
