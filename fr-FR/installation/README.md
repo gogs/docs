@@ -44,7 +44,7 @@ $ sudo apt-get install git
 
 #### Windows
 
-[Téléchargez et installez Git](http://git-scm.com/downloads)
+[Télécharger et installer Git](http://git-scm.com/downloads)
 
 ## Installation de Gogs
 
