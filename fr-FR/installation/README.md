@@ -10,7 +10,7 @@ name: Installation
     - ou **RIEN** avec SQLite3 ou TiDB (expérimental)
 - [Git](http://git-scm.com/) (bash) :
     - Version >= 1.7.1 pour le serveur et le client
-    - Il est conseillé d'utilisé la dernière version pour Windows
+    - Il est conseillé d'utiliser la dernière version pour Windows
 - Un serveur SSH fonctionnel :
     - **Ignorez cette étape si vous utilisez seulement la connexion HTTP/HTTPS ou si vous utilisez un serveur SSH interne**
     - Recommandé [Cygwin OpenSSH](http://docs.oracle.com/cd/E24628_01/install.121/e22624/preinstall_req_cygwin_ssh.htm) ou [Copssh](https://www.itefix.net/copssh) pour Windows.
