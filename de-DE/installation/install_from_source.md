@@ -6,7 +6,7 @@ name: aus Quelldateien
 
 ## Abhängigkeiten
 
-### Generell
+### Allgemein
 
 - [Go Programming Language](http://golang.org): Version >= 1.4
 
@@ -22,26 +22,28 @@ Wenn dich interessiert, welche Drittanbieter-Pakete wir benutzen, schaue dir das
 
 ## Go-Installation
 
-Wenn Go auf deinem System schon den Anforderungen entspricht, überspringe diese Sektion bitte.
+Wenn Go auf deinem System schon den Anforderungen entspricht, überspringe diesen Abschnitt.
 
 ### Download
+Die aktuellen Versionen für dein Betriebssystem findest du auf der offiziellen Seite [golang.org](https://golang.org/dl/)
 
-Installiere Go in `/home/git/local/go`, sodass es keine Konflikte mit zukünftigen Updates des Paketmanagers gibtÖ
+Installiere Go in `/home/git/local/go`, sodass es keine Konflikte mit zukünftigen Updates des Paketmanagers gibt:
 
 ```sh
+# Zum Benutzer `git` wechseln
 sudo su - git
 cd ~
-# create a folder to install 'go'
+# einen Ordner erstellen, um 'go' zu installieren
 mkdir local
-# Download go (change go$VERSION.$OS-$ARCH.tar.gz to the latest realse)
+# go herunterladen (ändere go$VERSION.$OS-$ARCH.tar.gz zur aktuellsten Version)
 wget https://storage.googleapis.com/golang/go$VERSION.$OS-$ARCH.tar.gz
-# expand it to ~/local
+# Archiv in ~/local entpacken
 tar -C /home/git/local -xzf go$VERSION.$OS-$ARCH.tar.gz
 ```
 
 ### Umgebung einrichten
 
-Setzen der Pfade entsprechend deinem System:
+Pfade entsprechend deinem System einrichten:
 
 ```sh
 sudo su - git
@@ -57,21 +59,21 @@ source $HOME/.bashrc
 Der allgemeine Weg um Go zu installieren:
 
 ```sh
-# Download and install dependencies
+# Abhängigkeiten herunterladen und installieren
 $ go get -u github.com/gogits/gogs
 
-# Build main program
+# Hauptprogramm erstellen
 $ cd $GOPATH/src/github.com/gogits/gogs
 $ go build
 ```
 
-Wenn du gopm hast, kannst du den folgenden Weg ausprobieren:
+Wenn du gopm installiert hast, kannst du Gogs auch wie folgt installieren:
 
 ```sh
-# Check update of gopm
+# gopm auf Updates überprüfen
 $ gopm update -v
 
-# Download and build binary
+# Herunterladen und erstellen der Binärdatei
 $ gopm bin -u -v gogs -d path/to/anywhere
 ```
 
@@ -83,7 +85,7 @@ Falls du den `develop`-branch ausprobieren möchtest:
 $ mkdir -p $GOPATH/src/github.com/gogits
 $ cd $GOPATH/src/github.com/gogits
 
-# Make sure you don't use "https://github.com/gogits/gogs.git"
+# Sicherstellen dass du nicht "https://github.com/gogits/gogs.git" benutzt
 $ git clone --depth=1 -b develop https://github.com/gogits/gogs
 $ cd gogs
 $ go get -u ./...
@@ -92,7 +94,7 @@ $ go build
 
 ### Testen der Installation
 
-Um zu testen, das Gogs funktioniert:
+Um zu testen, ob Gogs funktioniert:
 
 ```sh
 cd $GOPATH/src/github.com/gogits/gogs
@@ -110,8 +112,11 @@ Verfügbare Build-Tags sind:
 - `sqlite3`/`tidb`: SQLite3/TiDB-Datenbank-Unterstützung
 - `pam`: PAM-Authentifizierungs-Support
 - `cert`: Unterstützung für selbst-signierte Zertifikate
+- `miniwinsvc`: Eingebauter Windows Service Support (alternativ NSSM nutzen um den Service zu erstellen)
 
-Beispiel: Wenn du alles mit dabei haben willst, lösche zuerst den Ordner `$GOPATH/pkg/${GOOS}_$GOARCH}/github.com/gogits/gogs` und führe dann aus:
+**Hinweis** Solltest du TiDB verwenden wollen, folge bitte dieser [Anleitung](https://github.com/pingcap/tidb/blob/master/docs/QUICKSTART.md#pre-requirement)
+
+Beispiel: Wenn du alles mit dabei haben willst, lösche zuerst den Ordner `$GOPATH/pkg/${GOOS}_$GOARCH}/github.com/gogits/gogs` und führe dann folgende Befehle aus:
 
 ```sh
 $ go get -u -tags "sqlite tidb pam cert" github.com/gogits/gogs
@@ -121,5 +126,5 @@ $ go build -tags "sqlite tidb pam cert"
 
 ## Weitere Schritte
 
-- [Konfiguration und Start](/docs/installation/configuration_and_run) für tiefergehende Informationen
-- Für detailliertere Instruktionen, darin enthalten Webserver und Datenbank aufsetzen, schaue dir die [detaillierten Schritte](/docs/advanced/configuration_for_source_builds) an
+- [Konfiguration und Start](/docs/installation/configuration_and_run) um fortzufahren
+- Für detailliertere Instruktionen, auch um einen Webserver und eine Datenbank aufsetzen, schaue dir die [detaillierten Schritte](/docs/advanced/configuration_for_source_builds) an
