@@ -12,6 +12,7 @@ name: Changelog
 
 #### Improvements
 
+- Create archives with parent directory in repository name [#518](https://github.com/gogits/gogs/issues/518)
 - Ask user to confirm before leaving page with unsaved changes [#2881](https://github.com/gogits/gogs/issues/2881)
 
 #### Features

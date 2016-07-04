@@ -12,6 +12,7 @@ name: 变更日志
 
 #### 功能改进
 
+- 下载的档案压缩包内创建与仓库名称相同的父目录 [#518](https://github.com/gogits/gogs/issues/518)
 - 离开有未保存内容的页面时提醒用户确认 [#2881](https://github.com/gogits/gogs/issues/2881)
 
 #### 新增特性

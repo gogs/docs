@@ -170,7 +170,9 @@ name: 配置文件手册
 
 ## Git (`git`)
 
-- `MAX_GIT_DIFF_LINES`：对比页面显示的最大行数
+- `MAX_GIT_DIFF_LINES`: 差异对比页面单个文件显示的最大行数
+- `MAX_GIT_DIFF_LINE_CHARACTERS`: 差异对比页面单行显示的最大字符数
+- `MAX_GIT_DIFF_FILES`: 差异对比页面文件显示的最多个数
 - `GC_ARGS`：`git gc` 命令的参数，例如：`--aggressive --auto`
 
 ## Other (`other`)
