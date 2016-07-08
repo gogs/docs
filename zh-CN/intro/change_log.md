@@ -9,6 +9,7 @@ name: 变更日志
 #### Bug 修复
 
 - 原始文件链接包含空格时跳转不正确 [#2842](https://github.com/gogits/gogs/issues/2842)
+- 用户可以获取任意仓库的 Web 钩子内容 [#3057](https://github.com/gogits/gogs/issues/3057)
 
 #### 功能改进
 

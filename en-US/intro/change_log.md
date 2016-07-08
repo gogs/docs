@@ -9,6 +9,7 @@ name: Changelog
 #### Bug fixes
 
 - Raw file link broken when filename contains spaces [#2842](https://github.com/gogits/gogs/issues/2842)
+- Possible to get webhooks from arbitrary repositories [#3057](https://github.com/gogits/gogs/issues/3057)
 
 #### Improvements
 
