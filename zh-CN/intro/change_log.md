@@ -14,7 +14,9 @@ name: 变更日志
 #### 功能改进
 
 - 下载的档案压缩包内创建与仓库名称相同的父目录 [#518](https://github.com/gogits/gogs/issues/518)
+- 使用 `text/plain` 作为默认的邮件内容格式 [#1496](https://github.com/gogits/gogs/issues/1496)
 - 离开有未保存内容的页面时提醒用户确认 [#2881](https://github.com/gogits/gogs/issues/2881)
+- 私有仓库在被删除后所有分支将变成独立的仓库 [#3232](https://github.com/gogits/gogs/pull/3232)
 
 #### 新增特性
 

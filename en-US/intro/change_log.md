@@ -14,7 +14,9 @@ name: Changelog
 #### Improvements
 
 - Create archives with parent directory in repository name [#518](https://github.com/gogits/gogs/issues/518)
+- Use `text/plain` as default email content type [#1496](https://github.com/gogits/gogs/issues/1496)
 - Ask user to confirm before leaving page with unsaved changes [#2881](https://github.com/gogits/gogs/issues/2881)
+- Private forks will become independent repositories after upstream deletion [#3232](https://github.com/gogits/gogs/pull/3232)
 
 #### Features
 
