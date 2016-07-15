@@ -8,8 +8,11 @@ name: Changelog
 
 #### Bug fixes
 
+- Crash with huge size text file [#1513](https://github.com/gogits/gogs/issues/1513)
+- Emojis are removed when issue is edited [#2458](https://github.com/gogits/gogs/issues/2458)
 - Raw file link broken when filename contains spaces [#2842](https://github.com/gogits/gogs/issues/2842)
 - Possible to get webhooks from arbitrary repositories [#3057](https://github.com/gogits/gogs/issues/3057)
+- When repository name are `.` and `..` cause browser automatic behaviors [#3229](https://github.com/gogits/gogs/issues/3229)
 
 #### Improvements
 

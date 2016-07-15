@@ -8,8 +8,11 @@ name: 变更日志
 
 #### Bug 修复
 
+- 显示超大体积的文本文件时崩溃 [#1513](https://github.com/gogits/gogs/issues/1513)
+- 编辑工单后 Emoji 表情被过滤 [#2458](https://github.com/gogits/gogs/issues/2458)	
 - 原始文件链接包含空格时跳转不正确 [#2842](https://github.com/gogits/gogs/issues/2842)
 - 用户可以获取任意仓库的 Web 钩子内容 [#3057](https://github.com/gogits/gogs/issues/3057)
+- 当仓库名称为 `.` 和 `..` 时会触发浏览器的自动行为 [#3229](https://github.com/gogits/gogs/issues/3229)
 
 #### 功能改进
 
