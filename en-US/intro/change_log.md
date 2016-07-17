@@ -10,7 +10,9 @@ name: Changelog
 
 - Crash with huge size text file [#1513](https://github.com/gogits/gogs/issues/1513)
 - Emojis are removed when issue is edited [#2458](https://github.com/gogits/gogs/issues/2458)
+- Did not validate attributes fetched from LDAP [#2709](https://github.com/gogits/gogs/issues/2709)
 - Raw file link broken when filename contains spaces [#2842](https://github.com/gogits/gogs/issues/2842)
+- No mail notification when issue is closed/reopened [#2854](https://github.com/gogits/gogs/issues/2854)
 - Possible to get webhooks from arbitrary repositories [#3057](https://github.com/gogits/gogs/issues/3057)
 - When repository name are `.` and `..` cause browser automatic behaviors [#3229](https://github.com/gogits/gogs/issues/3229)
 
@@ -23,6 +25,7 @@ name: Changelog
 
 #### Features
 
+- Support prohibit user login [#2937](https://github.com/gogits/gogs/issues/2937)
 - Support alphanumeric issue style (ABC-1234) for external issue tracker [#2992](https://github.com/gogits/gogs/issues/2992)
 - Support PDF preview [#2993](https://github.com/gogits/gogs/issues/2993)
 

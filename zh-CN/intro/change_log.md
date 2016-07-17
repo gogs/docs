@@ -10,7 +10,9 @@ name: 变更日志
 
 - 显示超大体积的文本文件时崩溃 [#1513](https://github.com/gogits/gogs/issues/1513)
 - 编辑工单后 Emoji 表情被过滤 [#2458](https://github.com/gogits/gogs/issues/2458)	
+- 没有对从 LDAP 获取的属性进行规则验证 [#2709](https://github.com/gogits/gogs/issues/2709)
 - 原始文件链接包含空格时跳转不正确 [#2842](https://github.com/gogits/gogs/issues/2842)
+- 工单被关闭或重新开启时没有邮件提醒 [#2854](https://github.com/gogits/gogs/issues/2854)
 - 用户可以获取任意仓库的 Web 钩子内容 [#3057](https://github.com/gogits/gogs/issues/3057)
 - 当仓库名称为 `.` 和 `..` 时会触发浏览器的自动行为 [#3229](https://github.com/gogits/gogs/issues/3229)
 
@@ -23,6 +25,7 @@ name: 变更日志
 
 #### 新增特性
 
+- 支持禁止用户登录 [#2937](https://github.com/gogits/gogs/issues/2937)
 - 支持字母结合数字格式（ABC-1234）作为外部工单系统的匹配模式 [#2992](https://github.com/gogits/gogs/issues/2992)
 - 支持 PDF 预览 [#2993](https://github.com/gogits/gogs/issues/2993)
 
