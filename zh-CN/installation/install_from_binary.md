@@ -33,7 +33,7 @@ name: 二进制安装
 |Linux|arm|❌|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.46_linux_arm.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.46_linux_arm.zip)|
 |Raspberry Pi|v2|N/A|N/A|N/A|LOCAL: N/A - CDN: N/A|
 |Windows|386|N/A|N/A|N/A|LOCAL: N/A - CDN: N/A|
-|Windows|amd64|N/A|N/A|N/A|LOCAL: N/A - CDN: N/A|
+|Windows|amd64|✅|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.46_windows_amd64.zip) \| [ZIP w/ mws](https://dl.gogs.io/gogs_v0.9.46_windows_amd64_mws.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.46_windows_amd64.zip) \| [ZIP w/ mws](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.46_windows_amd64_mws.zip)|
 |Mac OS|amd64|✅|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.46_darwin_amd64.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.46_darwin_amd64.zip)|
 
 ### v0.9.13 @ 2016-03-19

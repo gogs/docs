@@ -27,7 +27,7 @@ All downloads come with **MySQL** and **PostgreSQL** support, and build **with t
 |Linux|arm|❌|❌|❌|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.46_linux_arm.zip) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.46_linux_arm.zip)|
 |Raspberry Pi|v2|N/A|N/A|N/A|LOCAL: N/A - CDN: N/A|
 |Windows|386|N/A|N/A|N/A|LOCAL: N/A - CDN: N/A|
-|Windows|amd64|N/A|N/A|N/A|LOCAL: N/A - CDN: N/A|
+|Windows|amd64|✅|❌|❌|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.46_windows_amd64.zip) \| [ZIP w/ mws](https://dl.gogs.io/gogs_v0.9.46_windows_amd64_mws.zip) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.46_windows_amd64.zip) \| [ZIP w/ mws](https://cdn.gogs.io/gogs_v0.9.46_windows_amd64_mws.zip)|
 |Mac OS|amd64|✅|❌|❌|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.46_darwin_amd64.zip) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.46_darwin_amd64.zip)|
 
 ### v0.9.13 @ 2016-03-19
