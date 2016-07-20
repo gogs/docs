@@ -4,7 +4,7 @@ name: 变更日志
 
 # 变更日志
 
-### v0.9.x（未发布）
+### v0.9.46 @ 2016-07-17
 
 #### Bug 修复
 
@@ -129,26 +129,4 @@ name: 变更日志
 - 支持分列文件差异对比 [#1925](https://github.com/gogits/gogs/issues/1925) [#2296](https://github.com/gogits/gogs/issues/2296) 
 - 支持行内差异高亮显示 [#2335](https://github.com/gogits/gogs/issues/2335)
 
-### v0.7.33 @ 2015-12-06
-
-#### Bug 修复
-
-- LDAP 搜索非 ASCII 字符失败 [#1139](https://github.com/gogits/gogs/issues/1139) 
-- 删除仓库时未移除相应的称赞数据 [#2042](https://github.com/gogits/gogs/issues/2042) 
-- 当文件差异存在超级长的一行时无法完整显示 [#2071](https://github.com/gogits/gogs/issues/2071)
-- 无法在 Windows 下创建合并请求（Pull Request）[#2093](https://github.com/gogits/gogs/issues/2093) 
-
-#### 功能改进
-
-- 允许禁用仓库的 Wiki/工单（Issue）/合并请求（Pull Request）功能 [#1829](https://github.com/gogits/gogs/issues/1829) 
-- 允许通过 Web 界面触发测试 Web 钩子 [#1857](https://github.com/gogits/gogs/issues/1857) 
-- 允许批量删除系统提示 [#2052](https://github.com/gogits/gogs/issues/2052) 
-- 允许在管理员面板删除指定仓库 [#2063](https://github.com/gogits/gogs/issues/2063) 
-
-#### 新增特性
-
-- 新增仓库 Wiki 支持 [#270](https://github.com/gogits/gogs/issues/270) 
-- 支持工单链接生成相应的外部链接 [#890](https://github.com/gogits/gogs/issues/890) 
-- 开放更多 API 接口：操作用户公钥 [#976](https://github.com/gogits/gogs/issues/976) 
-
-**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.7.22) 上找到。**
+**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.8.25) 上找到。**

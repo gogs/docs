@@ -4,7 +4,7 @@ name: Changelog
 
 # Changelog
 
-### v0.9.x (unreleased)
+### v0.9.46 @ 2016-07-17
 
 #### Bug fixes
 
@@ -129,26 +129,4 @@ name: Changelog
 - Support side-by-side diff view [#1925](https://github.com/gogits/gogs/issues/1925) [#2296](https://github.com/gogits/gogs/issues/2296) 
 - Support highlight inline diff [#2335](https://github.com/gogits/gogs/issues/2335)
 
-### v0.7.33 @ 2015-12-06
-
-#### Bug fixes
-
-- LDAP search with non-ascii characters does not work [#1139](https://github.com/gogits/gogs/issues/1139) 
-- Delete repository does not remove its stars [#2042](https://github.com/gogits/gogs/issues/2042) 
-- Diff is not showing full content when has super long one line [#2071](https://github.com/gogits/gogs/issues/2071)
-- Cannot create pull request on Windows [#2093](https://github.com/gogits/gogs/issues/2093) 
-
-#### Improvements
-
-- Able to disable wiki/issues/pull requests of repository [#1829](https://github.com/gogits/gogs/issues/1829) 
-- Able to trigger test webhook in web UI [#1857](https://github.com/gogits/gogs/issues/1857) 
-- Able to batch delete system notices [#2052](https://github.com/gogits/gogs/issues/2052) 
-- Able to delete repository in admin panel [#2063](https://github.com/gogits/gogs/issues/2063) 
-
-#### Features
-
-- Support repository wiki [#270](https://github.com/gogits/gogs/issues/270) 
-- Support issue links are rendered for external tracker [#890](https://github.com/gogits/gogs/issues/890) 
-- Add more APIs: public keys [#976](https://github.com/gogits/gogs/issues/976) 
-
-**Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.7.22).**
+**Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.8.25).**

@@ -17,4 +17,5 @@ Lade dir bei [GitHub die aktuellste Version von Gogs](https://github.com/gogits/
 3. `./gogs web` ausführen. Fertig!
 
 ## Weitere Informationen
+
 Lies [Konfiguration und Start](/docs/installation/configuration_and_run) für weitere Informationen.
