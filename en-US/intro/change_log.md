@@ -4,6 +4,13 @@ name: Changelog
 
 # Changelog
 
+### v0.9.x (unreleased)
+
+#### Bug fixes
+
+- 500 when create pull request with SQLite3 [#3291](https://github.com/gogits/gogs/issues/3291)
+- Wrong LDAP username vaildation logic [#3295](https://github.com/gogits/gogs/issues/3295)
+
 ### v0.9.46 @ 2016-07-17
 
 #### Bug fixes

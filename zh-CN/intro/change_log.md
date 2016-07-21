@@ -4,6 +4,13 @@ name: 变更日志
 
 # 变更日志
 
+### v0.9.x（未发布）
+
+#### Bug 修复
+
+- 使用 SQLite3 创建合并请求（Pull Reuqest）时发生错误 [#3291](https://github.com/gogits/gogs/issues/3291)
+- 错误的 LDAP 用户名验证规则 [#3295](https://github.com/gogits/gogs/issues/3295)
+
 ### v0.9.46 @ 2016-07-17
 
 #### Bug 修复
