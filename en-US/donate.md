@@ -33,6 +33,7 @@ name: Donation
 
 | Donated at       | Donator    | Amount   |
 | ---------------- |:---------:| --------:|
+| 2016-07-22 | Mr. Espinosa | $10.00 |
 | 2016-05-21 | Wyozi Software Solutions | $5.00 |
 | 2016-05-19 | Mr. RIT | $10.00 |
 | 2016-04-29 | Mr. Brendel | $10.00 |
