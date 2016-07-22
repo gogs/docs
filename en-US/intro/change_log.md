@@ -4,12 +4,13 @@ name: Changelog
 
 # Changelog
 
-### v0.9.x (unreleased)
+### v0.9.48 @ 2016-07-22
 
 #### Bug fixes
 
 - 500 when create pull request with SQLite3 [#3291](https://github.com/gogits/gogs/issues/3291)
 - Wrong LDAP username vaildation logic [#3295](https://github.com/gogits/gogs/issues/3295)
+- Rewrite update hook operation does not fix wrong permission of script [#3302](https://github.com/gogits/gogs/issues/3302)
 
 ### v0.9.46 @ 2016-07-17
 
@@ -111,29 +112,4 @@ name: Changelog
 - Support syntax highlight on diff view [#2528](https://github.com/gogits/gogs/pull/2528)
 - Support convert mirror repository to regular type [#2607](https://github.com/gogits/gogs/issues/2607)
 
-### v0.8.25 @ 2016-01-30
-
-#### Bug fixes
-
-- Pull request can not change branch when both sides are organizations [#2014](https://github.com/gogits/gogs/issues/2014)
-- Duplicate of files' name in directory [#2254](https://github.com/gogits/gogs/issues/2254)
-- Rename organization redirects to old name [#2268](https://github.com/gogits/gogs/issues/2268) 
-- HTML pages are rendered in raw mode [#2283](https://github.com/gogits/gogs/issues/2283) 
-- Allow access to non-home pages of empty repository [#2345](https://github.com/gogits/gogs/issues/2345) 
-- 500 when viewing authentication-related pages [#2349](https://github.com/gogits/gogs/issues/2349)
-- 500 when filename starts with ':' [#2373](https://github.com/gogits/gogs/issues/2373)
-
-#### Improvements
-
-- Add config option `[server] SSH_ROOT_PATH` to indicate directory of `authorized_keys` file [#1436](https://github.com/gogits/gogs/issues/1436)
-- Commit IDs use monospace fonts [#2264](https://github.com/gogits/gogs/issues/2264)
-- Truncate repository name if too long [#2287](https://github.com/gogits/gogs/issues/2287)
-
-#### Features
-
-- Support GitHub style Markdown checklist [#1048](https://github.com/gogits/gogs/issues/1048) 
-- Add more APIs: user followers [#1692](https://github.com/gogits/gogs/issues/1692) 
-- Support side-by-side diff view [#1925](https://github.com/gogits/gogs/issues/1925) [#2296](https://github.com/gogits/gogs/issues/2296) 
-- Support highlight inline diff [#2335](https://github.com/gogits/gogs/issues/2335)
-
-**Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.8.25).**
+**Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.8.43).**

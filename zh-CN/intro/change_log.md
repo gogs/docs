@@ -4,12 +4,13 @@ name: 变更日志
 
 # 变更日志
 
-### v0.9.x（未发布）
+### v0.9.48 @ 2016-07-22
 
 #### Bug 修复
 
 - 使用 SQLite3 创建合并请求（Pull Reuqest）时发生错误 [#3291](https://github.com/gogits/gogs/issues/3291)
 - 错误的 LDAP 用户名验证规则 [#3295](https://github.com/gogits/gogs/issues/3295)
+- 重新生成 Update 钩子操作没有修复错误的脚本权限 [#3302](https://github.com/gogits/gogs/issues/3302)
 
 ### v0.9.46 @ 2016-07-17
 
@@ -111,29 +112,4 @@ name: 变更日志
 - 支持在文件差异对比（Diff）页面显示代码高亮 [#2528](https://github.com/gogits/gogs/pull/2528)
 - 支持将镜像仓库转换为普通类型的仓库 [#2607](https://github.com/gogits/gogs/issues/2607)
 
-### v0.8.25 @ 2016-01-30
-
-#### Bug 修复
-
-- 当合并请求（Pull Request）的发起者为组织时无法修改分支 [#2014](https://github.com/gogits/gogs/issues/2014)
-- 目录中显示重复的文件名 [#2254](https://github.com/gogits/gogs/issues/2254)
-- 重命名组织后重定向到错误的 URL [#2268](https://github.com/gogits/gogs/issues/2268) 
-- HTML 页面在原始模式浏览时被渲染 [#2283](https://github.com/gogits/gogs/issues/2283) 
-- 允许访问空仓库的非首页页面 [#2345](https://github.com/gogits/gogs/issues/2345) 
-- 访问授权认证有关的页面时发生错误 [#2349](https://github.com/gogits/gogs/issues/2349)
-- 无法处理以 ':' 开头的文件名 [#2373](https://github.com/gogits/gogs/issues/2373)
-
-#### 功能改进
-
-- 允许通过配置选项 `[server] SSH_ROOT_PATH` 来指定 `authorized_keys` 文件所在的目录 [#1436](https://github.com/gogits/gogs/issues/1436)
-- 控制面板的代码提交 ID 使用等宽字体 [#2264](https://github.com/gogits/gogs/issues/2264)
-- 仓库名称过长时进行截断 [#2287](https://github.com/gogits/gogs/issues/2287)
-
-#### 新增特性
-
-- 支持 GitHub 风格的 Markdown 检查列表 [#1048](https://github.com/gogits/gogs/issues/1048) 
-- 开放更多 API 接口：操作用户关注者 [#1692](https://github.com/gogits/gogs/issues/1692) 
-- 支持分列文件差异对比 [#1925](https://github.com/gogits/gogs/issues/1925) [#2296](https://github.com/gogits/gogs/issues/2296) 
-- 支持行内差异高亮显示 [#2335](https://github.com/gogits/gogs/issues/2335)
-
-**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.8.25) 上找到。**
+**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.8.43) 上找到。**
