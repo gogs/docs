@@ -25,7 +25,7 @@ All downloads come with **MySQL** and **PostgreSQL** support, and build **with t
 |Linux|386|N/A|N/A|N/A|LOCAL: N/A - CDN: N/A|
 |Linux|amd64|✅|❌|✅|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.48_linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/gogs_v0.9.48_linux_amd64.tar.gz) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.48_linux_amd64.zip) \| [TAR.GZ](https://cdn.gogs.io/gogs_v0.9.48_linux_amd64.tar.gz)|
 |Linux|arm|❌|❌|❌|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.48_linux_arm.zip) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.48_linux_arm.zip)|
-|Raspberry Pi|v2|N/A|N/A|N/A|LOCAL: N/A - CDN: N/A|
+|Raspberry Pi|v2|✅|❌|✅|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.48_raspi2.zip) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.48_raspi2.zip)|
 |Windows|386|✅|❌|❌|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.48_windows_386.zip) \| [ZIP w/ mws](https://dl.gogs.io/gogs_v0.9.48_windows_386_mws.zip) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.48_windows_386.zip) \| [ZIP w/mws](https://cdn.gogs.io/gogs_v0.9.48_windows_386_mws.zip)|
 |Windows|amd64|✅|❌|❌|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.48_windows_amd64.zip) \| [ZIP w/ mws](https://dl.gogs.io/gogs_v0.9.48_windows_amd64_mws.zip) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.48_windows_amd64.zip) \| [ZIP w/ mws](https://cdn.gogs.io/gogs_v0.9.48_windows_amd64_mws.zip)|
 |Mac OS|amd64|✅|❌|❌|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.48_darwin_amd64.zip) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.48_darwin_amd64.zip)|

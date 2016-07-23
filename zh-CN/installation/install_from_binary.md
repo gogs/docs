@@ -31,7 +31,7 @@ name: 二进制安装
 |Linux|386|N/A|N/A|N/A|LOCAL: N/A - CDN: N/A|
 |Linux|amd64|✅|❌|✅|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.48_linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/gogs_v0.9.48_linux_amd64.tar.gz) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.48_linux_amd64.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.48_linux_amd64.tar.gz)|
 |Linux|arm|❌|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.48_linux_arm.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.48_linux_arm.zip)|
-|Raspberry Pi|v2|N/A|N/A|N/A|LOCAL: N/A - CDN: N/A|
+|Raspberry Pi|v2|✅|❌|✅|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.48_raspi2.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.48_raspi2.zip)|
 |Windows|386|✅|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.48_windows_386.zip) \| [ZIP w/ mws](https://dl.gogs.io/gogs_v0.9.48_windows_386_mws.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.48_windows_386.zip) \| [ZIP w/mws](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.48_windows_386_mws.zip)|
 |Windows|amd64|✅|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.48_windows_amd64.zip) \| [ZIP w/ mws](https://dl.gogs.io/gogs_v0.9.48_windows_amd64_mws.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.48_windows_amd64.zip) \| [ZIP w/ mws](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.48_windows_amd64_mws.zip)|
 |Mac OS|amd64|✅|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.48_darwin_amd64.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.48_darwin_amd64.zip)|
