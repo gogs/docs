@@ -4,6 +4,16 @@ name: Changelog
 
 # Changelog
 
+### v0.9.x (unreleased)
+
+#### Bug fixes
+
+- Diff split view not working on pull requests [#2790](https://github.com/gogits/gogs/issues/2790)
+- 500 when creating a release with an invalid tag name [#3076](https://github.com/gogits/gogs/issues/3076)
+- Cannot mention user name contains dash [#3107](https://github.com/gogits/gogs/issues/3107)
+- 500 after delete base branch of pull request [#3181](https://github.com/gogits/gogs/issues/3181)
+- Wrong link of new pull request of fork repositories [#3186](https://github.com/gogits/gogs/issues/3186)
+
 ### v0.9.48 @ 2016-07-22
 
 #### Bug fixes
