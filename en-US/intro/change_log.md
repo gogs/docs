@@ -14,6 +14,11 @@ name: Changelog
 - 500 after delete base branch of pull request [#3181](https://github.com/gogits/gogs/issues/3181)
 - Wrong link of new pull request of fork repositories [#3186](https://github.com/gogits/gogs/issues/3186)
 
+#### Improvements
+
+- Add pagination for repositories [#1384](https://github.com/gogits/gogs/issues/1384)
+- Use different reversed word and pattern list for repository and user [#2903](https://github.com/gogits/gogs/issues/2903)
+
 ### v0.9.48 @ 2016-07-22
 
 #### Bug fixes

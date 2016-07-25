@@ -14,6 +14,11 @@ name: 变更日志
 - 删除合并请求的基准分支后无法浏览页面 [#3181](https://github.com/gogits/gogs/issues/3181)
 - 派生仓库的新建合并请求所指向的链接不存在 [#3186](https://github.com/gogits/gogs/issues/3186)
 
+#### 功能改进
+
+- 对仓库进行分页显示 [#1384](https://github.com/gogits/gogs/issues/1384)
+- 针对仓库和用户使用不同的保留关键字和匹配模式 [#2903](https://github.com/gogits/gogs/issues/2903)
+
 ### v0.9.48 @ 2016-07-22
 
 #### Bug 修复
