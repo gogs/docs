@@ -13,6 +13,7 @@ name: 变更日志
 - 无法 @ 用户名包含横线的用户 [#3107](https://github.com/gogits/gogs/issues/3107)
 - 删除合并请求的基准分支后无法浏览页面 [#3181](https://github.com/gogits/gogs/issues/3181)
 - 派生仓库的新建合并请求所指向的链接不存在 [#3186](https://github.com/gogits/gogs/issues/3186)
+- 使用标签过滤工单时发生错误 [#3327](https://github.com/gogits/gogs/issues/3327)
 
 #### 功能改进
 

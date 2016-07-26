@@ -13,6 +13,7 @@ name: Changelog
 - Cannot mention user name contains dash [#3107](https://github.com/gogits/gogs/issues/3107)
 - 500 after delete base branch of pull request [#3181](https://github.com/gogits/gogs/issues/3181)
 - Wrong link of new pull request of fork repositories [#3186](https://github.com/gogits/gogs/issues/3186)
+- 500 when filtering issues by label [#3327](https://github.com/gogits/gogs/issues/3327)
 
 #### Improvements
 
