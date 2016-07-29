@@ -22,7 +22,7 @@ All downloads come with **MySQL** and **PostgreSQL** support, and build **with t
 
 |System|Type|SQLite|TiDB|PAM|Download ([GitHub](https://github.com/gogits/gogs/releases/tag/v0.9.48))|
 |------|----|------|----|---|--------|
-|Linux|386|N/A|N/A|N/A|LOCAL: N/A - CDN: N/A|
+|Linux|386|✅|❌|✅|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.48_linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/gogs_v0.9.48_linux_386.tar.gz) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.48_linux_386.zip) \| [TAR.GZ](https://cdn.gogs.io/gogs_v0.9.48_linux_386.tar.gz)|
 |Linux|amd64|✅|❌|✅|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.48_linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/gogs_v0.9.48_linux_amd64.tar.gz) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.48_linux_amd64.zip) \| [TAR.GZ](https://cdn.gogs.io/gogs_v0.9.48_linux_amd64.tar.gz)|
 |Linux|arm|❌|❌|❌|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.48_linux_arm.zip) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.48_linux_arm.zip)|
 |Raspberry Pi|v2|✅|❌|✅|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.48_raspi2.zip) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.48_raspi2.zip)|

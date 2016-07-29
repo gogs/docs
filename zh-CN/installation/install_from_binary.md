@@ -28,7 +28,7 @@ name: 二进制安装
 
 |系统名称|系统类型|SQLite|TiDB|PAM|下载（[GitHub](https://github.com/gogits/gogs/releases/tag/v0.9.48)）|
 |------|----|------|----|---|--------|
-|Linux|386|N/A|N/A|N/A|LOCAL: N/A - CDN: N/A|
+|Linux|386|✅|❌|✅|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.48_linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/gogs_v0.9.48_linux_386.tar.gz) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.48_linux_386.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.48_linux_386.tar.gz)|
 |Linux|amd64|✅|❌|✅|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.48_linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/gogs_v0.9.48_linux_amd64.tar.gz) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.48_linux_amd64.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.48_linux_amd64.tar.gz)|
 |Linux|arm|❌|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.48_linux_arm.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.48_linux_arm.zip)|
 |Raspberry Pi|v2|✅|❌|✅|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.48_raspi2.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.48_raspi2.zip)|
