@@ -4,7 +4,7 @@ name: 变更日志
 
 # 变更日志
 
-### v0.9.x（未发布）
+### v0.9.60 @ 2016-08-03
 
 #### Bug 修复
 
@@ -19,6 +19,12 @@ name: 变更日志
 
 - 对仓库进行分页显示 [#1384](https://github.com/gogits/gogs/issues/1384)
 - 针对仓库和用户使用不同的保留关键字和匹配模式 [#2903](https://github.com/gogits/gogs/issues/2903)
+
+#### 新增特性
+
+- 增加工单标签相关的 API
+- 支持删除工单评论 [#1601](https://github.com/gogits/gogs/issues/1601)
+- 支持下载文件对比差异的补丁文件（Patch）[#2641](https://github.com/gogits/gogs/issues/2641)
 
 ### v0.9.48 @ 2016-07-22
 
@@ -100,32 +106,4 @@ name: 变更日志
 
 - 增加芬兰语支持
 
-### v0.8.43 @ 2016-02-24
-
-#### Bug 修复
-
-- 对仓库没有操作权限后依旧显示相应的最近活动 [#2148](https://github.com/gogits/gogs/issues/2148)
-- 反向代理子路径下的工单（Issue）引用链接不正确 [#2229](https://github.com/gogits/gogs/issues/2229)
-- Email 中的换行符没用使用 HTML 格式 [#2332](https://github.com/gogits/gogs/issues/2332)
-- 较长的 Web 钩子 URL 被强行截断 [#2465](https://github.com/gogits/gogs/issues/2465)
-- 存在 Slack 类型的多个 Web 钩子会发送错误的推送信息 [#2485](https://github.com/gogits/gogs/issues/2485)
-- 图片 URL 包含空格时无法显示 [#2556](https://github.com/gogits/gogs/issues/2556)
-- 在转移仓库所有权后修改 Wiki 页面发生错误 [#2558](https://github.com/gogits/gogs/issues/2558)
-- 删除用户后访问版本发布页面发生错误 [#2596](https://github.com/gogits/gogs/issues/2596)
-- Web 钩子的 `avatar_url` 字段值不正确 [#2630](https://github.com/gogits/gogs/issues/2630)
-
-#### 功能改进
-
-- 支持在安装页面配置日志路径 [#691](https://github.com/gogits/gogs/issues/691)
-- 在 Web 钩子的仓库对象中增加 `default_branch` 字段 [#1059](https://github.com/gogits/gogs/issues/1059)
-- 增加显示关闭和重启工单的最近活动 [#1821](https://github.com/gogits/gogs/issues/1821)
-- 允许派生镜像仓库 [#2505](https://github.com/gogits/gogs/issues/2505)
-- 在工单页面高亮代码块 [#2538](https://github.com/gogits/gogs/pull/2538)
-
-#### 新增特性
-
-- 支持通过配置选项 `[markdown] CUSTOM_URL_SCHEMES` 来允许 Markdown 渲染自定义的 URL 协议 [#2406](https://github.com/gogits/gogs/pull/2406)
-- 支持在文件差异对比（Diff）页面显示代码高亮 [#2528](https://github.com/gogits/gogs/pull/2528)
-- 支持将镜像仓库转换为普通类型的仓库 [#2607](https://github.com/gogits/gogs/issues/2607)
-
-**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.8.43) 上找到。**
+**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.0) 上找到。**

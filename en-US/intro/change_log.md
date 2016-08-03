@@ -4,7 +4,7 @@ name: Changelog
 
 # Changelog
 
-### v0.9.x (unreleased)
+### v0.9.60 @ 2016-08-03
 
 #### Bug fixes
 
@@ -19,6 +19,12 @@ name: Changelog
 
 - Add pagination for repositories [#1384](https://github.com/gogits/gogs/issues/1384)
 - Use different reversed word and pattern list for repository and user [#2903](https://github.com/gogits/gogs/issues/2903)
+
+#### Features
+
+- Add issue labels APIs 
+- Support delete issue comment [#1601](https://github.com/gogits/gogs/issues/1601)
+- Support download diff as patch [#2641](https://github.com/gogits/gogs/issues/2641)
 
 ### v0.9.48 @ 2016-07-22
 
@@ -100,32 +106,4 @@ name: Changelog
 
 - Add Finnish support
 
-### v0.8.43 @ 2016-02-24
-
-#### Bug fixes
-
-- Old activities still visible for repositories that lost access [#2148](https://github.com/gogits/gogs/issues/2148)
-- Issue references have bad links behind a reverse proxy sub-path [#2229](https://github.com/gogits/gogs/issues/2229)
-- Line breaks in email is not in HTML format [#2332](https://github.com/gogits/gogs/issues/2332)
-- Long webhook URL is truncated [#2465](https://github.com/gogits/gogs/issues/2465)
-- Multiple Webhooks with Slack type send wrong payloads [#2485](https://github.com/gogits/gogs/issues/2485)
-- Image path breaks when it contains space [#2556](https://github.com/gogits/gogs/issues/2556)
-- 500 when edit wiki after transfer the repository [#2558](https://github.com/gogits/gogs/issues/2558)
-- 500 after delete user when view releases [#2596](https://github.com/gogits/gogs/issues/2596)
-- Wrong `avatar_url` field in webhook payload [#2630](https://github.com/gogits/gogs/issues/2630)
-
-#### Improvements
-
-- Able to config log path on install page [#691](https://github.com/gogits/gogs/issues/691)
-- Add `default_branch` field to repository object in webhooks [#1059](https://github.com/gogits/gogs/issues/1059)
-- Display activities for close and reopen issues [#1821](https://github.com/gogits/gogs/issues/1821)
-- Able to fork mirror repository [#2505](https://github.com/gogits/gogs/issues/2505)
-- Highlight code blocks in issue page [#2538](https://github.com/gogits/gogs/pull/2538)
-
-#### Features
-
-- Add config option `[markdown] CUSTOM_URL_SCHEMES` to allows Markdown render custom URL schemes [#2406](https://github.com/gogits/gogs/pull/2406)
-- Support syntax highlight on diff view [#2528](https://github.com/gogits/gogs/pull/2528)
-- Support convert mirror repository to regular type [#2607](https://github.com/gogits/gogs/issues/2607)
-
-**Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.8.43).**
+**Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.0).**
