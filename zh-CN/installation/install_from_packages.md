@@ -4,6 +4,8 @@ name: 包管理安装
 
 # 包管理安装
 
+以下均为第三方提供，后果自负！
+
 ### Packager.io
 
 - 当前支持 Ubuntu 12.04 + 14.04、CentOS 6 + 7 和 Debian 7 + 8 版本。

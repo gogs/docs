@@ -4,6 +4,8 @@ name: From packages
 
 # Install from packages
 
+Those are third-party providers, use on your own risks.
+
 ### Packager.io
 
 - Currently enabled for Ubuntu 12.04 + 14.04, CentOS 6 + 7 and Debian 7 + 8.
