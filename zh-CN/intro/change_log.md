@@ -4,6 +4,13 @@ name: 变更日志
 
 # 变更日志
 
+### v0.9.x（未发布）
+
+#### Bug 修复
+
+- 当标签已经存在时，版本发布没用使用标签的创建时间 [#3315](https://github.com/gogits/gogs/issues/3315)
+- 使用反向代理时无法显示图片 [#3348](https://github.com/gogits/gogs/issues/3348)
+
 ### v0.9.60 @ 2016-08-03
 
 #### Bug 修复
