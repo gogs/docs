@@ -11,6 +11,10 @@ name: 变更日志
 - 当标签已经存在时，版本发布没用使用标签的创建时间 [#3315](https://github.com/gogits/gogs/issues/3315)
 - 使用反向代理时无法显示图片 [#3348](https://github.com/gogits/gogs/issues/3348)
 
+#### 新增特性
+
+- 支持 Federated Avatars
+
 ### v0.9.60 @ 2016-08-03
 
 #### Bug 修复

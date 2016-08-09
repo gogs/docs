@@ -11,6 +11,10 @@ name: Changelog
 - Release date does not use tag's create date when exist [#3315](https://github.com/gogits/gogs/issues/3315)
 - Images breaks when use reverse proxy [#3348](https://github.com/gogits/gogs/issues/3348)
 
+#### Features
+
+- Support federated avatars
+
 ### v0.9.60 @ 2016-08-03
 
 #### Bug fixes
