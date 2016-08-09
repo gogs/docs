@@ -10,6 +10,8 @@ name: 变更日志
 
 - 当标签已经存在时，版本发布没用使用标签的创建时间 [#3315](https://github.com/gogits/gogs/issues/3315)
 - 使用反向代理时无法显示图片 [#3348](https://github.com/gogits/gogs/issues/3348)
+- JavaScript 行数生成破坏代码高亮的元素块 [#3316](https://github.com/gogits/gogs/issues/3316)
+- 组织的控制面板工单显示受限于用户的 `num_repos` 字段 [#3410](https://github.com/gogits/gogs/issues/3410)
 
 #### 新增特性
 

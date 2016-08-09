@@ -9,7 +9,9 @@ name: Changelog
 #### Bug fixes
 
 - Release date does not use tag's create date when exist [#3315](https://github.com/gogits/gogs/issues/3315)
+- JavaScript line number breaks syntax highlighting element block [#3316](https://github.com/gogits/gogs/issues/3316)
 - Images breaks when use reverse proxy [#3348](https://github.com/gogits/gogs/issues/3348)
+- Dashboard issues for organisations is limited to `num_repos` from the user [#3410](https://github.com/gogits/gogs/issues/3410)
 
 #### Features
 
