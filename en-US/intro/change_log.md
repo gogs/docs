@@ -4,20 +4,24 @@ name: Changelog
 
 # Changelog
 
-### v0.9.x (unreleased)
+### v0.9.71 @ 2016-08-10
 
 #### Bug fixes
 
 - Release date does not use tag's create date when exist [#3315](https://github.com/gogits/gogs/issues/3315)
 - JavaScript line number breaks syntax highlighting element block [#3316](https://github.com/gogits/gogs/issues/3316)
 - Images breaks when use reverse proxy [#3348](https://github.com/gogits/gogs/issues/3348)
+- 500 when user leaves organization without relations to any repositories [#3379](https://github.com/gogits/gogs/issues/3379)
+- Pull request conflict status not updating properly [#3396](https://github.com/gogits/gogs/issues/3396)
 - Dashboard issues for organisations is limited to `num_repos` from the user [#3410](https://github.com/gogits/gogs/issues/3410)
+- Wrong dashboard issue count for create by you category [#3417](https://github.com/gogits/gogs/issues/3417)
 
 #### Improvements
 
 - Always response with go-import metadata when `?go-get=1` [#2825](https://github.com/gogits/gogs/issues/2825)
 - Add config option `[git.timeout] GC` for Git GC timeout [#3091](https://github.com/gogits/gogs/issues/3091)
 - Skip `RUN_USER` check on Windows [#3158](https://github.com/gogits/gogs/issues/3158)
+- Add config option `[mirror] DEFAULT_INTERVAL` for default interval of mirror checking [#3091](https://github.com/gogits/gogs/issues/3091)
 
 #### Features
 
@@ -101,29 +105,4 @@ name: Changelog
 
 - Support search user and repository on both explore page and admin panel [#13](https://github.com/gogits/gogs/issues/13)
 
-### v0.9.0 @ 2016-03-06
-
-#### Bug fixes
-
-- Panic when close issue through commit message [#2697](https://github.com/gogits/gogs/issues/2697)
-- Panic when create issue with two or more labels using SQLite3 [#2700](https://github.com/gogits/gogs/issues/2700)
-
-#### Improvements
-
-- Able to test mail settings in admin panel [#1531](https://github.com/gogits/gogs/issues/1531)
-- Improve issue lable readability [#2033](https://github.com/gogits/gogs/issues/2033)
-- Add config options for Git operation timeout [#2653](https://github.com/gogits/gogs/issues/2653) [#2701](https://github.com/gogits/gogs/issues/2701) [#2704](https://github.com/gogits/gogs/issues/2704)
-- Able to delete current avatar of user and organization
-
-#### Features
-
-- More refined collaboration access rights [#1146](https://github.com/gogits/gogs/issues/1146)
-- Able to create pull requests between branches in same repository [#1597](https://github.com/gogits/gogs/issues/1597)
-- Able to checkout pull requests locally [#1655](https://github.com/gogits/gogs/issues/1655)
-- Able to delete Wiki page and entire data [#2183](https://github.com/gogits/gogs/issues/2183)
-
-#### Others
-
-- Add Finnish support
-
-**Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.0).**
+**Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.13).**

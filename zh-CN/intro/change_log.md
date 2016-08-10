@@ -4,20 +4,24 @@ name: 变更日志
 
 # 变更日志
 
-### v0.9.x（未发布）
+### v0.9.71 @ 2016-08-10
 
 #### Bug 修复
 
 - 当标签已经存在时，版本发布没用使用标签的创建时间 [#3315](https://github.com/gogits/gogs/issues/3315)
 - 使用反向代理时无法显示图片 [#3348](https://github.com/gogits/gogs/issues/3348)
 - JavaScript 行数生成破坏代码高亮的元素块 [#3316](https://github.com/gogits/gogs/issues/3316)
+- 用户离开组织时没有和任何仓库有关联时发生错误 [#3379](https://github.com/gogits/gogs/issues/3379)
+- 合并请求的冲突检查没有及时运行 [#3396](https://github.com/gogits/gogs/issues/3396)
 - 组织的控制面板工单显示受限于用户的 `num_repos` 字段 [#3410](https://github.com/gogits/gogs/issues/3410)
+- 工单控制面板由您创建分类的统计数字不正确 [#3417](https://github.com/gogits/gogs/issues/3417)
 
 #### 功能改进
 
 - 当 URL 参数包含 `?go-get=1` 时总是返回相应的 go-import 元数据 [#2825](https://github.com/gogits/gogs/issues/2825)
 - 增加配置选项 `[git.timeout] GC` 用于自定义 Git GC 超时 [#3091](https://github.com/gogits/gogs/issues/3091)
 - Windows 下不再检查 `RUN_USER` [#3158](https://github.com/gogits/gogs/issues/3158)
+- 增加配置选项 `[mirror] DEFAULT_INTERVAL` 用于自定义默认镜像更新检查间隔 [#3091](https://github.com/gogits/gogs/issues/3091)
 
 #### 新增特性
 
@@ -101,29 +105,4 @@ name: 变更日志
 
 - 支持在探索和管理面板搜索用户和仓库 [#13](https://github.com/gogits/gogs/issues/13)
 
-### v0.9.0 @ 2016-03-06
-
-#### Bug 修复
-
-- 使用代码提交消息关闭工单时发生错误 [#2697](https://github.com/gogits/gogs/issues/2697)
-- 使用 SQLite3 作为数据库时无法在创建工单时同时指定 2 个或更多的标签 [#2700](https://github.com/gogits/gogs/issues/2700)
-
-#### 功能改进
-
-- 允许在管理员面板测试邮件服务设置 [#1531](https://github.com/gogits/gogs/issues/1531)
-- 增强工单标签的可读性 [#2033](https://github.com/gogits/gogs/issues/2033)
-- 允许为 Git 操作自定义超时 [#2653](https://github.com/gogits/gogs/issues/2653) [#2701](https://github.com/gogits/gogs/issues/2701) [#2704](https://github.com/gogits/gogs/issues/2704)
-- 允许删除用户或组织的当前使用头像
-
-#### 新增特性
-
-- 更加细化的协作者权限管理 [#1146](https://github.com/gogits/gogs/issues/1146)
-- 支持在同个仓库内的不同分支之间发起合并请求 [#1597](https://github.com/gogits/gogs/issues/1597)
-- 支持在本地仓库检出合并请求 [#1655](https://github.com/gogits/gogs/issues/1655)
-- 允许删除 Wiki 页面和其所有数据 [#2183](https://github.com/gogits/gogs/issues/2183)
-
-#### 其它变更
-
-- 增加芬兰语支持
-
-**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.0) 上找到。**
+**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.13) 上找到。**
