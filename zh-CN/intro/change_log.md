@@ -13,9 +13,16 @@ name: 变更日志
 - JavaScript 行数生成破坏代码高亮的元素块 [#3316](https://github.com/gogits/gogs/issues/3316)
 - 组织的控制面板工单显示受限于用户的 `num_repos` 字段 [#3410](https://github.com/gogits/gogs/issues/3410)
 
+#### 功能改进
+
+- 当 URL 参数包含 `?go-get=1` 时总是返回相应的 go-import 元数据 [#2825](https://github.com/gogits/gogs/issues/2825)
+- 增加配置选项 `[git.timeout] GC` 用于自定义 Git GC 超时 [#3091](https://github.com/gogits/gogs/issues/3091)
+- Windows 下不再检查 `RUN_USER` [#3158](https://github.com/gogits/gogs/issues/3158)
+
 #### 新增特性
 
 - 支持 Federated Avatars
+- 允许使用 URL 参数 `?render=1` 使 HTML 在原始模式下返回渲染结果 [#2593](https://github.com/gogits/gogs/issues/2593)
 
 ### v0.9.60 @ 2016-08-03
 

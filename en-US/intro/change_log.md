@@ -13,9 +13,16 @@ name: Changelog
 - Images breaks when use reverse proxy [#3348](https://github.com/gogits/gogs/issues/3348)
 - Dashboard issues for organisations is limited to `num_repos` from the user [#3410](https://github.com/gogits/gogs/issues/3410)
 
+#### Improvements
+
+- Always response with go-import metadata when `?go-get=1` [#2825](https://github.com/gogits/gogs/issues/2825)
+- Add config option `[git.timeout] GC` for Git GC timeout [#3091](https://github.com/gogits/gogs/issues/3091)
+- Skip `RUN_USER` check on Windows [#3158](https://github.com/gogits/gogs/issues/3158)
+
 #### Features
 
 - Support federated avatars
+- Allow use `?render=1` to set HTML rendered in raw mode [#2593](https://github.com/gogits/gogs/issues/2593)
 
 ### v0.9.60 @ 2016-08-03
 
