@@ -4,6 +4,21 @@ name: 变更日志
 
 # 变更日志
 
+### v0.9.x（未发布）
+
+#### Bug 修复
+
+- 只有拥有仓库可写权限的用户能发表评论
+
+#### 功能改进
+
+- 支持 git-daemon-export-ok 文件 [#2940](https://github.com/gogits/gogs/issues/2940)
+
+#### 新增特性
+
+- 支持监听 Unix 套接字 [#2852](https://github.com/gogits/gogs/pull/2852)
+- 支持在迁移仓库同时迁移 Wiki [#3233](https://github.com/gogits/gogs/pull/3233)
+
 ### v0.9.71 @ 2016-08-10
 
 #### Bug 修复

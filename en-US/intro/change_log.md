@@ -4,6 +4,21 @@ name: Changelog
 
 # Changelog
 
+### v0.9.x (unreleased)
+
+#### Bug fixes
+
+- Only user with repository write access and make comments 
+
+#### Improvements
+
+- Add git-daemon-export-ok support [#2940](https://github.com/gogits/gogs/issues/2940)
+
+#### Features
+
+- Support listen on unix socket [#2852](https://github.com/gogits/gogs/pull/2852)
+- Support migrate wiki with repository when available [#3233](https://github.com/gogits/gogs/pull/3233)
+
 ### v0.9.71 @ 2016-08-10
 
 #### Bug fixes
