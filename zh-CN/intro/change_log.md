@@ -13,10 +13,12 @@ name: 变更日志
 #### 功能改进
 
 - 支持 git-daemon-export-ok 文件 [#2940](https://github.com/gogits/gogs/issues/2940)
+- 使用用户名作为邮件 FROM 字段的值 [#3279](https://github.com/gogits/gogs/issues/3279)
 
 #### 新增特性
 
 - 支持监听 Unix 套接字 [#2852](https://github.com/gogits/gogs/pull/2852)
+- 支持通过 Unix 套接字连接 PostgreSQL 数据库 [#3013](https://github.com/gogits/gogs/issues/3013)
 - 支持在迁移仓库同时迁移 Wiki [#3233](https://github.com/gogits/gogs/pull/3233)
 
 ### v0.9.71 @ 2016-08-10

@@ -13,10 +13,12 @@ name: Changelog
 #### Improvements
 
 - Add git-daemon-export-ok support [#2940](https://github.com/gogits/gogs/issues/2940)
+- Use user name as email FROM value [#3279](https://github.com/gogits/gogs/issues/3279)
 
 #### Features
 
 - Support listen on unix socket [#2852](https://github.com/gogits/gogs/pull/2852)
+- Support PostgreSQL with unix socket [#3013](https://github.com/gogits/gogs/issues/3013)
 - Support migrate wiki with repository when available [#3233](https://github.com/gogits/gogs/pull/3233)
 
 ### v0.9.71 @ 2016-08-10
