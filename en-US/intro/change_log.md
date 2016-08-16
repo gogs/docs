@@ -8,7 +8,7 @@ name: Changelog
 
 #### Bug fixes
 
-- Only user with repository write access and make comments 
+- Only user with repository write access can make comments 
 
 #### Improvements
 
