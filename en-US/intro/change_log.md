@@ -9,14 +9,17 @@ name: Changelog
 #### Bug fixes
 
 - Only user with repository write access can make comments 
+- Diff signs (+/-) are not showing [#3464](https://github.com/gogits/gogs/pull/3464)
 
 #### Improvements
 
 - Add git-daemon-export-ok support [#2940](https://github.com/gogits/gogs/issues/2940)
+- Redirect to landing page after login [#3089](https://github.com/gogits/gogs/issues/3089)
 - Use user name as email FROM value [#3279](https://github.com/gogits/gogs/issues/3279)
 
 #### Features
 
+- Support webhooks for pull requests [#2246](https://github.com/gogits/gogs/pull/2246)
 - Support listen on unix socket [#2852](https://github.com/gogits/gogs/pull/2852)
 - Support PostgreSQL with unix socket [#3013](https://github.com/gogits/gogs/issues/3013)
 - Support migrate wiki with repository when available [#3233](https://github.com/gogits/gogs/pull/3233)
