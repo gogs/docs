@@ -26,6 +26,7 @@ Any configuration option that is marked by :exclamation: means remain default un
 - `FORCE_PRIVATE`: Force every new repository to be private.
 - `MAX_CREATION_LIMIT`: Global maximum creation limit of repository per user, `-1` means no limit.
 - `PULL_REQUEST_QUEUE_LENGTH`:exclamation:: Length of pull request patch test queue, make it as large as possible.
+- `ARCHIVE_FULL_PATH`: Global boolean flag to indicate the incusion of full path of the repository when archived for downlaod or release, default `true`.
 
 ## UI (`ui`)
 
