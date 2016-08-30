@@ -10,6 +10,7 @@ name: Changelog
 
 - Only user with repository write access can make comments 
 - Diff signs (+/-) are not showing [#3464](https://github.com/gogits/gogs/pull/3464)
+- Archive includes full path on Windows [#3535](https://github.com/gogits/gogs/pull/3535)
 
 #### Improvements
 
@@ -23,6 +24,7 @@ name: Changelog
 - Support listen on unix socket [#2852](https://github.com/gogits/gogs/pull/2852)
 - Support PostgreSQL with unix socket [#3013](https://github.com/gogits/gogs/issues/3013)
 - Support migrate wiki with repository when available [#3233](https://github.com/gogits/gogs/pull/3233)
+- Support web editor for repository files [#3460](https://github.com/gogits/gogs/issues/3460)
 
 ### v0.9.71 @ 2016-08-10
 

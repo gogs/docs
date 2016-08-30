@@ -10,6 +10,7 @@ name: 变更日志
 
 - 只有拥有仓库可写权限的用户能发表评论
 - 对比差异符号（+/-）没有显示 [#3464](https://github.com/gogits/gogs/pull/3464)
+- 归档文件在 Windows 下包含了绝对路径 [#3535](https://github.com/gogits/gogs/pull/3535)
 
 #### 功能改进
 
@@ -23,6 +24,7 @@ name: 变更日志
 - 支持监听 Unix 套接字 [#2852](https://github.com/gogits/gogs/pull/2852)
 - 支持通过 Unix 套接字连接 PostgreSQL 数据库 [#3013](https://github.com/gogits/gogs/issues/3013)
 - 支持在迁移仓库同时迁移 Wiki [#3233](https://github.com/gogits/gogs/pull/3233)
+- 支持在线编辑仓库文件 [#3460](https://github.com/gogits/gogs/issues/3460)
 
 ### v0.9.71 @ 2016-08-10
 
