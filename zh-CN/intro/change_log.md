@@ -4,7 +4,7 @@ name: 变更日志
 
 # 变更日志
 
-### v0.9.x（未发布）
+### v0.9.97 @ 2016-09-01
 
 #### Bug 修复
 
@@ -111,22 +111,4 @@ name: 变更日志
 
 - 增加土耳其语支持
 
-### v0.9.13 @ 2016-03-19
-
-#### Bug 修复
-
-- 管理员无法在组织首页查看私有仓库 [#2372](https://github.com/gogits/gogs/issues/2372)
-- 非本地类型用户允许重置密码 [#2811](https://github.com/gogits/gogs/issues/2811)
-- 分支名称包含 '#' 符号时发起合并请求会发生错误 [#2822](https://github.com/gogits/gogs/issues/2822)
-- 内置 SSH 服务器潜在的并发问题 [#2850](https://github.com/gogits/gogs/issues/2850)
-
-#### 功能改进
-
-- 根据仓库信息输出相应的 HTML meta 值 [#2670](https://github.com/gogits/gogs/issues/2670)
-- 允许使用用户名或全名搜索用户 [#2792](https://github.com/gogits/gogs/issues/2792)
-
-#### 新增特性
-
-- 支持在探索和管理面板搜索用户和仓库 [#13](https://github.com/gogits/gogs/issues/13)
-
-**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.13) 上找到。**
+**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.46) 上找到。**

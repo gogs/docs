@@ -4,7 +4,7 @@ name: Changelog
 
 # Changelog
 
-### v0.9.x (unreleased)
+### v0.9.97 @ 2016-09-01
 
 #### Bug fixes
 
@@ -111,22 +111,4 @@ name: Changelog
 
 - Add Turkish support
 
-### v0.9.13 @ 2016-03-19
-
-#### Bug fixes
-
-- Site admin cannot see private repositories on organization home page [#2372](https://github.com/gogits/gogs/issues/2372)
-- Non-local users can reset their password [#2811](https://github.com/gogits/gogs/issues/2811)
-- 500 when compare branches with name contains '#' [#2822](https://github.com/gogits/gogs/issues/2822)
-- Potential concurrency issue with builtin SSH server [#2850](https://github.com/gogits/gogs/issues/2850)
-
-#### Improvements
-
-- Set HTML meta values for repository [#2670](https://github.com/gogits/gogs/issues/2670)
-- Able to search user with username and full name [#2792](https://github.com/gogits/gogs/issues/2792)
-
-#### Features
-
-- Support search user and repository on both explore page and admin panel [#13](https://github.com/gogits/gogs/issues/13)
-
-**Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.13).**
+**Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.46).**
