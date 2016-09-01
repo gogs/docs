@@ -20,6 +20,8 @@ name: Changelog
 
 #### Features
 
+- Support lable templates [#1562](https://github.com/gogits/gogs/issues/1562)
+- Support sync mirror repository on UI [#2018](https://github.com/gogits/gogs/issues/2018)
 - Support webhooks for pull requests [#2246](https://github.com/gogits/gogs/pull/2246)
 - Support listen on unix socket [#2852](https://github.com/gogits/gogs/pull/2852)
 - Support PostgreSQL with unix socket [#3013](https://github.com/gogits/gogs/issues/3013)

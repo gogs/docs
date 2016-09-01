@@ -20,6 +20,8 @@ name: 变更日志
 
 #### 新增特性
 
+- 支持标签模板 [#1562](https://github.com/gogits/gogs/issues/1562)
+- 支持通过 UI 同步镜像仓库 [#2018](https://github.com/gogits/gogs/issues/2018)
 - 支持合并请求的 Web 钩子 [#2246](https://github.com/gogits/gogs/pull/2246)
 - 支持监听 Unix 套接字 [#2852](https://github.com/gogits/gogs/pull/2852)
 - 支持通过 Unix 套接字连接 PostgreSQL 数据库 [#3013](https://github.com/gogits/gogs/issues/3013)
