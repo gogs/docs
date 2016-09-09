@@ -4,6 +4,21 @@ name: Changelog
 
 # Changelog
 
+### Unreleased
+
+#### Bug fixes
+
+- Wrong avatar link for user [#3577](https://github.com/gogits/gogs/issues/3577)
+- 404 on release draft edition [#3590](https://github.com/gogits/gogs/issues/3590)
+
+#### Improvements
+
+- Add config option `[other] SHOW_FOOTER_TEMPLATE_LOAD_TIME` to hide template load time [#3492](https://github.com/gogits/gogs/issues/3492)
+
+#### Features
+
+- Support search organizations on explore page [#2951](https://github.com/gogits/gogs/issues/2951)
+
 ### v0.9.97 @ 2016-09-01
 
 #### Bug fixes

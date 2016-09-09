@@ -4,6 +4,21 @@ name: 变更日志
 
 # 变更日志
 
+### 未发布
+
+#### Bug 修复
+
+- 生成错误的用户头像链接 [#3577](https://github.com/gogits/gogs/issues/3577)
+- 无法编辑版本发布草稿 [#3590](https://github.com/gogits/gogs/issues/3590)
+
+#### 功能改进
+
+- 增加配置选项 `[other] SHOW_FOOTER_TEMPLATE_LOAD_TIME` 以隐藏模板执行时间 [#3492](https://github.com/gogits/gogs/issues/3492)
+
+#### 新增特性
+
+- 支持在探索页面搜索组织 [#2951](https://github.com/gogits/gogs/issues/2951)
+
 ### v0.9.97 @ 2016-09-01
 
 #### Bug 修复

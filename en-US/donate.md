@@ -33,6 +33,7 @@ name: Donation
 
 | Donated at       | Donator    | Amount   |
 | ---------------- |:---------:| --------:|
+| 2016-09-06 | Mr. Hill | $10.00 |
 | 2016-07-27 | Mr. Gurnani | $5.00 |
 | 2016-07-23 | (Anonymous) | $25.00 |
 | 2016-07-22 | Mr. Espinosa | $10.00 |
