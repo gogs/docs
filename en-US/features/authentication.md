@@ -128,11 +128,11 @@ This option allow Gogs to login in your SMTP host as Gogs user. To configure thi
 - This authentication is activate
   - Enable or disable this auth
 
-##Freeipa
+ ## Freeipa
 
-- In order to login to the Gogs using FreeIPA credentials, you need to create a bind account for GOGS to use:
+- In order to login to the Gogs using FreeIPA credentials, you need to create a bind account for Gogs to use:
 
--  On the FreeIPA server, create a gogs.ldif file, replacing dc=example,dc=com with your DN, and providing an appropriately secure password:
+-  On the FreeIPA server, create a `gogs.ldif` file, replacing dc=example,dc=com with your DN, and providing an appropriately secure password:
 ```
   dn: uid=gogs,cn=sysaccounts,cn=etc,dc=example,dc=com
   changetype: add
@@ -158,6 +158,3 @@ This option allow Gogs to login in your SMTP host as Gogs user. To configure thi
 -  Now login to the gogs as an Admin, click on “Authentication” under Admin Panel. Then click New LDAP Source and fill in the details, changing all where appropriate to your own domain as photo below:
 
 ![Freeipa-Gogs](https://raw.githubusercontent.com/Karen09/docs/master/images/Freeipa-Gogs.png)
-
-
-
