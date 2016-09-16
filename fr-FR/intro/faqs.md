@@ -59,8 +59,8 @@ Essayez de suivre le template de configuration :
                  Allow from all
         </Proxy>
 
-        ProxyPass /git http://127.0.0.1:6000
-        ProxyPassReverse /git http://127.0.0.1:6000
+        ProxyPass /git http://127.0.0.1:3000/
+        ProxyPassReverse /git http://127.0.0.1:3000/
 </VirtualHost>
 ```
 
