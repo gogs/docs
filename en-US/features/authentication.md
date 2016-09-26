@@ -151,7 +151,7 @@ This option allow Gogs to login in your SMTP host as Gogs user. To configure thi
 ```
 -  Add an IPA group for gogs_users :
 ```
-  ipa group-add --desc="Foreman Users" gogs_users
+  ipa group-add --desc="Gogs Users" gogs_users
 ```
 -  Note! if you get error about ipa credentials please run kinit admin and give your admin accound password.
 
