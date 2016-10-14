@@ -24,6 +24,7 @@ The goal of this project is to make the easiest, fastest, and most painless way 
     - [emojify.js](https://github.com/Ranks/emojify.js)
     - [jQuery Date Time Picker](https://github.com/xdan/datetimepicker)
     - [jQuery MiniColors](https://github.com/claviska/jquery-minicolors)
+    - [CodeMirror](https://codemirror.net/)
 - ORM: [Xorm](https://github.com/go-xorm/xorm)
 - Database Drivers:
     - [github.com/go-sql-driver/mysql](https://github.com/go-sql-driver/mysql)
