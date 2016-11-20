@@ -55,22 +55,52 @@ Um NGINX zu erlauben, große Dateien in die Repositorys hochzuladen, schau dir b
 client_max_body_size 50m;
 ```
 
-##### Wie erstelle ich eine Sub-URL mit Apache 2?
+#### Wie benutze ich Apache 2 mit Reverse Proxy?
 
-Benutze die folgende Konfigurations-Vorlage:
+Stelle sicher, daß die folgenden Apache 2 Module geladen sind: proxy, proxy_http.
 
+`custom/conf/app.ini`:
 ```
-<VirtualHost *:443>
-        ...
-        <Proxy *>
-                 Order allow,deny
-                 Allow from all
-        </Proxy>
-
-        ProxyPass /git http://127.0.0.1:6000
-        ProxyPassReverse /git http://127.0.0.1:6000
+[server]
+ROOT_URL = http://git.domain.tld/
+...
+```
+`/etc/apache2/vhost.d/<yourconfig>.conf`:
+```
+<VirtualHost *:80>
+    ...
+    ProxyPreserveHost On
+    ProxyRequests off
+    ProxyPass / http://127.0.0.1:3000/
+    ProxyPassReverse / http://127.0.0.1:3000/
 </VirtualHost>
 ```
+
+##### Wie erstelle ich eine Sub-URL mit Apache 2?
+
+Benutze die folgenden Konfigurations-Vorlagen:
+
+`custom/conf/app.ini`:
+```
+[server]
+ROOT_URL = http://domain.tld/git
+...
+```
+`/etc/apache2/vhost.d/<yourconfig>.conf`:
+```
+<VirtualHost *:80>
+    ...
+    <Proxy *>
+         Order allow,deny
+         Allow from all
+    </Proxy>
+
+    ProxyPass /git http://127.0.0.1:3000
+    ProxyPassReverse /git http://127.0.0.1:3000
+</VirtualHost>
+```
+
+Wichtig ist hier, den Schrägstrich nach 3000 wegzulassen.
 
 ##### Wie erstelle ich eine Sub-URL mit lighttpd?
 
@@ -79,12 +109,12 @@ Benutze die folgende Konfigurations-Vorlage:
 ```
 server.modules  += ( "mod_proxy_backend_http" )
 $HTTP["url"] =~ "^/gogs" {
-        proxy-core.protocol = "http"
-        proxy-core.backends = ( "localhost:3000" )
-        proxy-core.rewrite-request = (
-          "_uri" => ( "^/gogs/?(.*)" => "/$1" ),
-          "Host" => ( ".*" => "localhost:3000" ),
-        )
+    proxy-core.protocol = "http"
+    proxy-core.backends = ( "localhost:3000" )
+    proxy-core.rewrite-request = (
+      "_uri" => ( "^/gogs/?(.*)" => "/$1" ),
+      "Host" => ( ".*" => "localhost:3000" ),
+    )
 }
 ```
 
@@ -103,6 +133,8 @@ KEY_FILE = custom/https/privater-schluessel.key
 Wenn du ein selbst-signiertes Zertifikat benutzen möchtest, kannst du das folgende Kommando ausführen, um die Zertifikats- und Schlüssel-Dateien zu erzeugen (stelle sicher, dass du das Programm mit dem Build-Tag `cert` kompilierst oder das offizielle Programm verwendest):
 
 	$ ./gogs cert -ca=true -duration=8760h0m0s -host=myhost.example.com
+
+Möchtest du SSL mit einer Apache 2 Proxykonfiguration nutzen, so konfiguriere gogs für http und Apache 2 für SSL.
 
 #### Wie starte ich Gogs im Offline-Modus/im Intranet?
 
