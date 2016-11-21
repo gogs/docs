@@ -43,8 +43,8 @@ Both the LDAP via BindDN and the simple auth LDAP share the following fields:
   - Example: `givenName`
 
 - Surname attribute (optional)
-  - The attribute of the user's LDAP record containing the user's surname This
-    will be used to populate their account information.
+  - The attribute of the user's LDAP record containing the user's surname.
+    This will be used to populate their account information.
   - Example: `sn`
 
 - E-mail attribute **(required)**
@@ -94,12 +94,12 @@ Both the LDAP via BindDN and the simple auth LDAP share the following fields:
 
 ## PAM
 
-To configure this you just need to set the 'PAM Service Name' to a filename in /etc/pam.d/.
-If you want it to work with normal linux passwords, the user running Gogs must have read access to /etc/shadow.
+To configure this you just need to set the 'PAM Service Name' to a filename in `/etc/pam.d/`.
+If you want it to work with normal Linux passwords, the user running Gogs must have read access to `/etc/shadow`.
 
 ## SMTP
 
-This option allow Gogs to login in your SMTP host as Gogs user. To configure this you just need to set fields below:
+This option allows Gogs to log in to your SMTP host as a Gogs user. To configure this, simply set the fields below:
 
 - Authentication Name **(required)**
   - A name to assign to the new method of authorization.
@@ -116,14 +116,14 @@ This option allow Gogs to login in your SMTP host as Gogs user. To configure thi
   - Example: `587
 
 - Allowed Domains
-  - Restrict what domains can login if you're using public SMTP host or SMTP host with multiple domains.
+  - Restrict what domains can log in if you're using public SMTP host or SMTP host with multiple domains.
   - Example: `gogs.io,mydomain.com,mydomain2.com`
 
 - Enable TLS Encryption
-  - Enable TLS encryption on authentication
+  - Enable TLS encryption on authentication.
 
 - Skip TLS Verify
-  - Disable TLS verify on authentication
+  - Disable TLS verify on authentication.
   
 - This authentication is activate
-  - Enable or disable this auth
+  - Enable or disable this auth.
