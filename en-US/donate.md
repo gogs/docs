@@ -5,7 +5,7 @@ name: Donation
 # Donation
 
 <h4>
-	<b><font color="red">We will continue hard working with your support!</font></b>
+	<b><font color="red">We will continue to work hard with your support!</font></b>
 </h4>
 
 <h4>
@@ -29,7 +29,7 @@ name: Donation
 - Awarding outstanding contributors
 - Holding community activities and lectures
 
-### Donation Lists (descending by donating time)
+### Donations List (descending, by time of donation)
 
 | Donated at       | Donator    | Amount   |
 | ---------------- |:---------:| --------:|
