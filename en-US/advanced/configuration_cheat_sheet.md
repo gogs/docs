@@ -4,45 +4,45 @@ name: Config Cheat Sheet
 
 # Configuration Cheat Sheet
 
-This is a cheat sheet for the Gogs configuration file, it helps some if you want to fully understand how it powers Gogs.
+This is a cheat sheet for the Gogs configuration file. It is helpful for more fully understanding how it powers Gogs.
 
-Before we get started, make sure you know that any change of configuration should be made in `custom/conf/app.ini` or any corresponding location.
+Before getting started, make sure you know that any change to the configuration should be made in `custom/conf/app.ini` or any corresponding location.
 
-All default settings can be found in [app.ini](https://github.com/gogits/gogs/blob/master/conf/app.ini). If you see anything like `%(X)s`, it's a feature powered by [ini](https://github.com/go-ini/ini/#recursive-values) for reading value recursively.
+All default settings can be found in [app.ini](https://github.com/gogits/gogs/blob/master/conf/app.ini). If you see anything which looks like `%(X)s`, it is a feature powered by [ini](https://github.com/go-ini/ini/#recursive-values) for reading values recursively.
 
-Any configuration option that is marked by :exclamation: means remain default unless you really understand what you are doing.
+Any configuration option that is marked by :exclamation: means that you should keep the default value unless you fully understand what you are doing.
 
 ## Overall
 
 - `APP_NAME`: Application name, change to whatever you want.
-- `RUN_USER`: The user to run Gogs as, we recommend it be `git`; however, change this to whatever your user name is if you run Gogs on your personal computer. Gogs may crash if this value is not set properly.
+- `RUN_USER`: The user to run Gogs as, we recommend it be `git`; however, change this to whatever your username is if you run Gogs on your personal computer. Gogs may crash if this value is not set properly.
 - `RUN_MODE`: For performance and other purposes, change this to `prod` when deployed to a production environment. The installation process will set this to `prod` automatically.
 
 ## Repository (`repository`)
 
-- `ROOT`: Root path for storing all users' repository data. It has to be an absolute path, default is `~/<user name>/gogs-repositories`.
+- `ROOT`: Root path for storing all users' repository data. It must be an absolute path. The default is `~/<username>/gogs-repositories`.
 - `SCRIPT_TYPE`: The script type your server supports, usually this is `bash`, but some customers report that they only have `sh`.
-- `ANSI_CHARSET`: The default charset for unrecognized charset.
+- `ANSI_CHARSET`: The default charset for an unrecognized charset.
 - `FORCE_PRIVATE`: Force every new repository to be private.
-- `MAX_CREATION_LIMIT`: Global maximum creation limit of repository per user, `-1` means no limit.
+- `MAX_CREATION_LIMIT`: Global maximum creation limit of repositories per user, `-1` means no limit.
 - `PULL_REQUEST_QUEUE_LENGTH`:exclamation:: Length of pull request patch test queue, make it as large as possible.
 
 ## UI (`ui`)
 
-- `EXPLORE_PAGING_NUM`: Number of repositories that are showed in one explore page.
-- `ISSUE_PAGING_NUM`: Number of issues that are showed in one page (for all pages that list issues).
-- `FEED_MAX_COMMIT_NUM`: Number of maximum commits showed in one activity feed.
+- `EXPLORE_PAGING_NUM`: Number of repositories that are shown in one explore page.
+- `ISSUE_PAGING_NUM`: Number of issues that are shown in one page (for all pages that list issues).
+- `FEED_MAX_COMMIT_NUM`: Number of maximum commits shown in one activity feed.
 
 ### UI - Admin (`ui.admin`)
 
-- `USER_PAGING_NUM`: Number of users that are showed in one page.
-- `REPO_PAGING_NUM`: Number of repos that are showed in one page.
-- `NOTICE_PAGING_NUM`: Number of notices that are showed in one page.
-- `ORG_PAGING_NUM`: Number of organization that are showed in one page.
+- `USER_PAGING_NUM`: Number of users that are shown in one page.
+- `REPO_PAGING_NUM`: Number of repos that are shown in one page.
+- `NOTICE_PAGING_NUM`: Number of notices that are shown in one page.
+- `ORG_PAGING_NUM`: Number of organizations that are shown in one page.
 
 ## Markdown (`markdown`)
 
-- `ENABLE_HARD_LINE_BREAK`: Enable hard line break extension or not.
+- `ENABLE_HARD_LINE_BREAK`: Whether or not to enable hard the line break extension.
 
 ## Server (`server`)
 
@@ -51,15 +51,15 @@ Any configuration option that is marked by :exclamation: means remain default un
 - `ROOT_URL`: Full public URL of Gogs server.
 - `HTTP_ADDR`: HTTP listen address.
 - `HTTP_PORT`: HTTP listen port.
-- `DISABLE_SSH`: Disable SSH feature when it's not available.
-- `START_SSH_SERVER`: Enable this to start builtin SSH server.
+- `DISABLE_SSH`: Disables SSH feature when it's not available.
+- `START_SSH_SERVER`: Starts built-in SSH server when enabled.
 - `SSH_PORT`: The SSH port, in case yours is not `22`.
-- `OFFLINE_MODE`: Enable this to not use CDN for static files, also Gravatar will be disabled automatically.
-- `DISABLE_ROUTER_LOG`: Enable this to not print router log.
+- `OFFLINE_MODE`: Disables use of CDN for static files and Gravatar for profile pictures.
+- `DISABLE_ROUTER_LOG`: Mutes printing of the router log.
 - `CERT_FILE`: Cert file path used for HTTPS.
 - `KEY_FILE`: Key file path used for HTTPS.
 - `STATIC_ROOT_PATH`: Upper level of template and static files path, default is the path where Gogs is located.
-- `ENABLE_GZIP`: Enable this to have application level GZIP support.
+- `ENABLE_GZIP`: Enables application-level GZIP support.
 - `LANDING_PAGE`: Non-logged-in users' landing page, either `home` or `explore`.
 
 ## Database (`database`)
@@ -67,7 +67,7 @@ Any configuration option that is marked by :exclamation: means remain default un
 - `DB_TYPE`: The database type you choose, either `mysql`, `postgres` or `sqlite3`.
 - `HOST`: Database host address and port.
 - `NAME`: Database name.
-- `USER`: Database user name.
+- `USER`: Database username.
 - `PASSWD`: Database user password.
 - `SSL_MODE`: For PostgreSQL only.
 - `PATH`: For SQLite3 only, the database file path.
@@ -76,9 +76,9 @@ Any configuration option that is marked by :exclamation: means remain default un
 
 - `INSTALL_LOCK`: Indicates whether to allow the open install page (setting admin account is involved, so it's a very important value).
 - `SECRET_KEY`: Global secret key for your server security, **you'd better change it** (will generate a random string every time you install).
-- `LOGIN_REMEMBER_DAYS`: The days of cookies' life time.
-- `COOKIE_USERNAME`: Cookie name to save username.
-- `COOKIE_REMEMBER_NAME`: Cookie name to save auto-login information.
+- `LOGIN_REMEMBER_DAYS`: Cookie lifetime, in days.
+- `COOKIE_USERNAME`: Name of the cookie that saves username.
+- `COOKIE_REMEMBER_NAME`: Name of cookie that saves auto-login information.
 - `REVERSE_PROXY_AUTHENTICATION_USER`: Header name for reverse proxy authentication username.
 
 ## Service (`service`)
@@ -101,7 +101,7 @@ Any configuration option that is marked by :exclamation: means remain default un
 - `QUEUE_LENGTH`:exclamation:: Hook task queue length.
 - `DELIVER_TIMEOUT`: Delivery timeout in seconds for shooting webhooks.
 - `SKIP_TLS_VERIFY`: Indicate whether to allow insecure certification or not.
-- `PAGING_NUM`: Number of webhook history that are showed in one page.
+- `PAGING_NUM`: Number of webhook history that are shown in one page.
 
 ## Mailer (`mailer`)
 
@@ -110,11 +110,11 @@ Any configuration option that is marked by :exclamation: means remain default un
 - `HELO_HOSTNAME`: Custom hostname for HELO operation.
 - `HOST`: SMTP mail host address and port (example: smtp.gogs.io:587).
 - `FROM`: Mail from address, RFC 5322. This can be just an email address, or the "Name" \<email@example.com\> format.
-- `USER`: User name of mailer (usually just your e-mail address).
+- `USER`: Username of mailer (usually just your e-mail address).
 - `PASSWD`: Password of mailer.
 - `SKIP_VERIFY`: Do not verify the self-signed certificates.
 
-Note: Actually, Gogs support only SMTP with STARTTLS.
+Note: Actually, Gogs supports only SMTP with STARTTLS.
 
 ## Cache (`cache`)
 
