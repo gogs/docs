@@ -43,8 +43,8 @@ Both the LDAP via BindDN and the simple auth LDAP share the following fields:
   - Example: `givenName`
 
 - Surname attribute (optional)
-  - The attribute of the user's LDAP record containing the user's surname This
-    will be used to populate their account information.
+  - The attribute of the user's LDAP record containing the user's surname.
+    This will be used to populate their account information.
   - Example: `sn`
 
 - E-mail attribute **(required)**
@@ -94,12 +94,12 @@ Both the LDAP via BindDN and the simple auth LDAP share the following fields:
 
 ## PAM
 
-To configure this you just need to set the 'PAM Service Name' to a filename in /etc/pam.d/.
-If you want it to work with normal linux passwords, the user running Gogs must have read access to /etc/shadow.
+To configure this you just need to set the 'PAM Service Name' to a filename in `/etc/pam.d/`.
+If you want it to work with normal Linux passwords, the user running Gogs must have read access to `/etc/shadow`.
 
 ## SMTP
 
-This option allow Gogs to login in your SMTP host as Gogs user. To configure this you just need to set fields below:
+This option allows Gogs to log in to your SMTP host as a Gogs user. To configure this, simply set the fields below:
 
 - Authentication Name **(required)**
   - A name to assign to the new method of authorization.
@@ -116,45 +116,14 @@ This option allow Gogs to login in your SMTP host as Gogs user. To configure thi
   - Example: `587
 
 - Allowed Domains
-  - Restrict what domains can login if you're using public SMTP host or SMTP host with multiple domains.
+  - Restrict what domains can log in if you're using public SMTP host or SMTP host with multiple domains.
   - Example: `gogs.io,mydomain.com,mydomain2.com`
 
 - Enable TLS Encryption
-  - Enable TLS encryption on authentication
+  - Enable TLS encryption on authentication.
 
 - Skip TLS Verify
-  - Disable TLS verify on authentication
+  - Disable TLS verify on authentication.
   
 - This authentication is activate
-  - Enable or disable this auth
-
- ## Freeipa
-
-- In order to login to the Gogs using FreeIPA credentials, you need to create a bind account for Gogs to use:
-
--  On the FreeIPA server, create a `gogs.ldif` file, replacing dc=example,dc=com with your DN, and providing an appropriately secure password:
-```
-  dn: uid=gogs,cn=sysaccounts,cn=etc,dc=example,dc=com
-  changetype: add
-  objectclass: account
-  objectclass: simplesecurityobject
-  uid: gogs
-  userPassword: secure password
-  passwordExpirationTime: 20380119031407Z
-  nsIdleTimeout: 0
-```
-
-- Import the LDIF (change localhost to an IPA server if needed), you’ll be prompted for your Directory Manager password:
-```
-  ldapmodify -h localhost -p 389 -x -D \
-  "cn=Directory Manager" -W -f gogs.ldif
-```
--  Add an IPA group for gogs_users :
-```
-  ipa group-add --desc="Gogs Users" gogs_users
-```
--  Note! if you get error about ipa credentials please run kinit admin and give your admin accound password.
-
--  Now login to the gogs as an Admin, click on “Authentication” under Admin Panel. Then click New LDAP Source and fill in the details, changing all where appropriate to your own domain as photo below:
-
-![Freeipa-Gogs](https://raw.githubusercontent.com/Karen09/docs/master/images/Freeipa-Gogs.png)
+  - Enable or disable this auth.
