@@ -33,6 +33,10 @@ name: Donation
 
 | Donated at       | Donator    | Amount   |
 | ---------------- |:---------:| --------:|
+| 2016-12-03 | Mr. Yzaguirre | $10.00 |
+| 2016-10-26 | Mr. Skacel | $10.00 |
+| 2016-10-23 | Mr. Magni | $10.00 |
+| 2016-09-18 | Mr. Shafarenko | $100.00 |
 | 2016-09-06 | Mr. Hill | $10.00 |
 | 2016-07-27 | Mr. Gurnani | $5.00 |
 | 2016-07-23 | (Anonymous) | $25.00 |
