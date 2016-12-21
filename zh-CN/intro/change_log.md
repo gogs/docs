@@ -8,6 +8,7 @@ name: 变更日志
 
 #### Bug 修复
 
+- 使用 Mac OS X 系统下的 Safari 浏览器会使控制面板的最近活动强行分行 [#2875](https://github.com/gogits/gogs/issues/2875)
 - 生成错误的用户头像链接 [#3577](https://github.com/gogits/gogs/issues/3577)
 - 无法编辑版本发布草稿 [#3590](https://github.com/gogits/gogs/issues/3590)
 

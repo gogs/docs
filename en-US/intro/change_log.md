@@ -8,6 +8,7 @@ name: Changelog
 
 #### Bug fixes
 
+- Dashboard feeds has unexpected line break on Mac OS X Safari [#2875](https://github.com/gogits/gogs/issues/2875)
 - Wrong avatar link for user [#3577](https://github.com/gogits/gogs/issues/3577)
 - 404 on release draft edition [#3590](https://github.com/gogits/gogs/issues/3590)
 
