@@ -71,7 +71,7 @@ This happens more often when you store repositories on a mounted device.
 
 ## Database 
 
-#### Incorrect MySQL storate engine
+#### Incorrect MySQL storage engine
 
 - Error: `Error 1071: Specified key was too long; max key length is 1000 bytes`
 - Causes: it is caused by MyISAM.
