@@ -11,6 +11,7 @@ name: 变更日志
 - 使用 Mac OS X 系统下的 Safari 浏览器会使控制面板的最近活动强行分行 [#2875](https://github.com/gogits/gogs/issues/2875)
 - 生成错误的用户头像链接 [#3577](https://github.com/gogits/gogs/issues/3577)
 - 无法编辑版本发布草稿 [#3590](https://github.com/gogits/gogs/issues/3590)
+- 工单提交者删除帐户后无法加载工单
 
 #### 功能改进
 
@@ -20,6 +21,7 @@ name: 变更日志
 
 - 支持在探索页面搜索组织 [#2951](https://github.com/gogits/gogs/issues/2951)
 - 在完成合并请求后可删除对应分支 [#3225](https://github.com/gogits/gogs/pull/3225)
+- 支持禁用仓库相关的 HTTP 操作 [#3667](https://github.com/gogits/gogs/pull/3667)
 - 支持使用 HTML5 标签来播放视频文件 [#3967](https://github.com/gogits/gogs/pull/3967)
 
 ### v0.9.97 @ 2016-09-01
