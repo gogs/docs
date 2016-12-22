@@ -19,6 +19,8 @@ name: 变更日志
 #### 新增特性
 
 - 支持在探索页面搜索组织 [#2951](https://github.com/gogits/gogs/issues/2951)
+- 在完成合并请求后可删除对应分支 [#3225](https://github.com/gogits/gogs/pull/3225)
+- 支持使用 HTML5 标签来播放视频文件 [#3967](https://github.com/gogits/gogs/pull/3967)
 
 ### v0.9.97 @ 2016-09-01
 

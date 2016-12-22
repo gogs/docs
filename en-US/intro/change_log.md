@@ -19,6 +19,8 @@ name: Changelog
 #### Features
 
 - Support search organizations on explore page [#2951](https://github.com/gogits/gogs/issues/2951)
+- Provide button to delete merged pull request branch [#3225](https://github.com/gogits/gogs/pull/3225)
+- Support for video files using the HTML5 video tag [#3967](https://github.com/gogits/gogs/pull/3967)
 
 ### v0.9.97 @ 2016-09-01
 
