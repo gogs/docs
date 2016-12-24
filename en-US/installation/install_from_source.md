@@ -33,7 +33,7 @@ $ sudo su - git
 $ cd ~
 # create a folder to install 'go'
 $ mkdir local
-# Download go (change go$VERSION.$OS-$ARCH.tar.gz to the latest realse)
+# Download go (change go$VERSION.$OS-$ARCH.tar.gz to the latest release)
 $ wget https://storage.googleapis.com/golang/go$VERSION.$OS-$ARCH.tar.gz
 # expand it to ~/local
 $ tar -C /home/git/local -xzf go$VERSION.$OS-$ARCH.tar.gz
