@@ -4,14 +4,18 @@ name: Changelog
 
 # Changelog
 
-### Unreleased
+### v0.9.113 @ 2016-12-24
 
 #### Bug fixes
 
+- HTTP push consumes a lot of RAM [#636](https://github.com/gogits/gogs/issues/636)
 - Dashboard feeds has unexpected line break on Mac OS X Safari [#2875](https://github.com/gogits/gogs/issues/2875)
 - Wrong avatar link for user [#3577](https://github.com/gogits/gogs/issues/3577)
 - 404 on release draft edition [#3590](https://github.com/gogits/gogs/issues/3590)
 - 500 when issue poster has deleted account
+- Ability to delete other people's secondary emails and application's tokens [#3959](https://github.com/gogits/gogs/issues/3959)
+- Ability to delete arbitrary repository's releases [#3962](https://github.com/gogits/gogs/issues/3962)
+- Ability to use labels from arbitrary repositories
 
 #### Improvements
 
@@ -23,6 +27,10 @@ name: Changelog
 - Provide button to delete merged pull request branch [#3225](https://github.com/gogits/gogs/pull/3225)
 - Support disable HTTP operations of repository [#3667](https://github.com/gogits/gogs/pull/3667)
 - Support for video files using the HTML5 video tag [#3967](https://github.com/gogits/gogs/pull/3967)
+
+#### Others
+
+- Add Korean and Galician support
 
 ### v0.9.97 @ 2016-09-01
 
@@ -101,34 +109,5 @@ name: Changelog
 - 500 when create pull request with SQLite3 [#3291](https://github.com/gogits/gogs/issues/3291)
 - Wrong LDAP username vaildation logic [#3295](https://github.com/gogits/gogs/issues/3295)
 - Rewrite update hook operation does not fix wrong permission of script [#3302](https://github.com/gogits/gogs/issues/3302)
-
-### v0.9.46 @ 2016-07-17
-
-#### Bug fixes
-
-- Crash with huge size text file [#1513](https://github.com/gogits/gogs/issues/1513)
-- Emojis are removed when issue is edited [#2458](https://github.com/gogits/gogs/issues/2458)
-- Did not validate attributes fetched from LDAP [#2709](https://github.com/gogits/gogs/issues/2709)
-- Raw file link broken when filename contains spaces [#2842](https://github.com/gogits/gogs/issues/2842)
-- No mail notification when issue is closed/reopened [#2854](https://github.com/gogits/gogs/issues/2854)
-- Possible to get webhooks from arbitrary repositories [#3057](https://github.com/gogits/gogs/issues/3057)
-- When repository name are `.` and `..` cause browser automatic behaviors [#3229](https://github.com/gogits/gogs/issues/3229)
-
-#### Improvements
-
-- Create archives with parent directory in repository name [#518](https://github.com/gogits/gogs/issues/518)
-- Use `text/plain` as default email content type [#1496](https://github.com/gogits/gogs/issues/1496)
-- Ask user to confirm before leaving page with unsaved changes [#2881](https://github.com/gogits/gogs/issues/2881)
-- Private forks will become independent repositories after upstream deletion [#3232](https://github.com/gogits/gogs/pull/3232)
-
-#### Features
-
-- Support prohibit user login [#2937](https://github.com/gogits/gogs/issues/2937)
-- Support alphanumeric issue style (ABC-1234) for external issue tracker [#2992](https://github.com/gogits/gogs/issues/2992)
-- Support PDF preview [#2993](https://github.com/gogits/gogs/issues/2993)
-
-#### Others
-
-- Add Turkish support
 
 **Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.46).**

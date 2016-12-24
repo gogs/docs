@@ -4,14 +4,18 @@ name: 变更日志
 
 # 变更日志
 
-### 未发布
+### v0.9.113 @ 2016-12-24
 
 #### Bug 修复
 
+- HTTP 推送占用大量内存 [#636](https://github.com/gogits/gogs/issues/636)
 - 使用 Mac OS X 系统下的 Safari 浏览器会使控制面板的最近活动强行分行 [#2875](https://github.com/gogits/gogs/issues/2875)
 - 生成错误的用户头像链接 [#3577](https://github.com/gogits/gogs/issues/3577)
 - 无法编辑版本发布草稿 [#3590](https://github.com/gogits/gogs/issues/3590)
 - 工单提交者删除帐户后无法加载工单
+- 攻击者可以删除任意用户的次要邮箱和应用令牌 [#3959](https://github.com/gogits/gogs/issues/3959)
+- 攻击者可以删除任意仓库的版本发布 [#3962](https://github.com/gogits/gogs/issues/3962)
+- 攻击者可以向工单添加任意仓库的标签
 
 #### 功能改进
 
@@ -23,6 +27,10 @@ name: 变更日志
 - 在完成合并请求后可删除对应分支 [#3225](https://github.com/gogits/gogs/pull/3225)
 - 支持禁用仓库相关的 HTTP 操作 [#3667](https://github.com/gogits/gogs/pull/3667)
 - 支持使用 HTML5 标签来播放视频文件 [#3967](https://github.com/gogits/gogs/pull/3967)
+
+#### 其它变更
+
+- 增加韩语和加利西亚语支持
 
 ### v0.9.97 @ 2016-09-01
 
@@ -101,34 +109,5 @@ name: 变更日志
 - 使用 SQLite3 创建合并请求（Pull Reuqest）时发生错误 [#3291](https://github.com/gogits/gogs/issues/3291)
 - 错误的 LDAP 用户名验证规则 [#3295](https://github.com/gogits/gogs/issues/3295)
 - 重新生成 Update 钩子操作没有修复错误的脚本权限 [#3302](https://github.com/gogits/gogs/issues/3302)
-
-### v0.9.46 @ 2016-07-17
-
-#### Bug 修复
-
-- 显示超大体积的文本文件时崩溃 [#1513](https://github.com/gogits/gogs/issues/1513)
-- 编辑工单后 Emoji 表情被过滤 [#2458](https://github.com/gogits/gogs/issues/2458)	
-- 没有对从 LDAP 获取的属性进行规则验证 [#2709](https://github.com/gogits/gogs/issues/2709)
-- 原始文件链接包含空格时跳转不正确 [#2842](https://github.com/gogits/gogs/issues/2842)
-- 工单被关闭或重新开启时没有邮件提醒 [#2854](https://github.com/gogits/gogs/issues/2854)
-- 用户可以获取任意仓库的 Web 钩子内容 [#3057](https://github.com/gogits/gogs/issues/3057)
-- 当仓库名称为 `.` 和 `..` 时会触发浏览器的自动行为 [#3229](https://github.com/gogits/gogs/issues/3229)
-
-#### 功能改进
-
-- 下载的档案压缩包内创建与仓库名称相同的父目录 [#518](https://github.com/gogits/gogs/issues/518)
-- 使用 `text/plain` 作为默认的邮件内容格式 [#1496](https://github.com/gogits/gogs/issues/1496)
-- 离开有未保存内容的页面时提醒用户确认 [#2881](https://github.com/gogits/gogs/issues/2881)
-- 私有仓库在被删除后所有分支将变成独立的仓库 [#3232](https://github.com/gogits/gogs/pull/3232)
-
-#### 新增特性
-
-- 支持禁止用户登录 [#2937](https://github.com/gogits/gogs/issues/2937)
-- 支持字母结合数字格式（ABC-1234）作为外部工单系统的匹配模式 [#2992](https://github.com/gogits/gogs/issues/2992)
-- 支持 PDF 预览 [#2993](https://github.com/gogits/gogs/issues/2993)
-
-#### 其它变更
-
-- 增加土耳其语支持
 
 **更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.46) 上找到。**
