@@ -4,6 +4,12 @@ name: Changelog
 
 # Changelog
 
+### Unreleased
+
+#### Bug fixes
+
+- Wrong anchors for non-latin headings [#3981](https://github.com/gogits/gogs/issues/3981)
+
 ### v0.9.113 @ 2016-12-24
 
 #### Bug fixes
