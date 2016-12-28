@@ -10,6 +10,10 @@ name: 变更日志
 
 - 非拉丁字符无法生成快捷链接 [#3981](https://github.com/gogits/gogs/issues/3981)
 
+#### 功能改进
+
+- 查看所有指派给我的工单 [#1820](https://github.com/gogits/gogs/issues/1820)
+
 ### v0.9.113 @ 2016-12-24
 
 #### Bug 修复
