@@ -9,6 +9,7 @@ name: 变更日志
 #### Bug 修复
 
 - 非拉丁字符无法生成快捷链接 [#3981](https://github.com/gogits/gogs/issues/3981)
+- 攻击者可以派生任意仓库 [#4006](https://github.com/gogits/gogs/issues/4006)
 
 #### 功能改进
 
