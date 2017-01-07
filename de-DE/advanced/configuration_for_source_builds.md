@@ -215,7 +215,7 @@ zu
 Weiter unten in der gleichen Datei setze den Pfad, sodass `init.d` unsere `gogs`-Installation finden kann, indem wir die `WORKING_DIR` Zeile ändern zu:
 
 ```ini
-WORKING_DIR=/home/git/go/src/github.com/gogits/gogs
+WORKINGDIR=/home/git/go/src/github.com/gogits/gogs
 ```
 
 Verschiebe die Datei nach `/etc/init.d` und update es:
@@ -225,7 +225,7 @@ Verschiebe die Datei nach `/etc/init.d` und update es:
 exit
 
 sudo mv /home/git/gogs.init /etc/init.d/gogs
-sudo chmod ug+x /etch/init.d/gogs
+sudo chmod ug+x /etc/init.d/gogs
 sudo update-rc.d gogs defaults 30 70
 ```
 
