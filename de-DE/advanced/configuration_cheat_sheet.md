@@ -80,7 +80,6 @@ Jede Konfiguration, die mit :exclamation: markiert ist, solltest du auf dem Stan
 - `COOKIE_USERNAME`: Cookie-Name zur Speicherung des Benutzernamens
 - `COOKIE_REMEMBER_NAME`: Cookie-Name zur Speicherung von Auto-Login-Informationen
 - `REVERSE_PROXY_AUTHENTICATION_USER`: Header-Name für Reverse-Proxy-Authentifizierung Benutzername
-- `ENABLE_CAPTCHA`: Aktivieren, um ein Captcha bei der Registrierung einzublenden.
 
 ## Service (`service`)
 
@@ -95,6 +94,7 @@ Jede Konfiguration, die mit :exclamation: markiert ist, solltest du auf dem Stan
 - `ENABLE_REVERSE_PROXY_AUTHENTICATION`: Aktivieren, um Reverse Proxy Authentication zu erlauben. Details: https://github.com/gogits/gogs/issues/165
 - `ENABLE_REVERSE_PROXY_AUTO_REGISTRATION`: Aktivieren, um Auto-Registrierung für Reverse Authentication zu erlauben.
 - `DISABLE_MINIMUM_KEY_SIZE_CHECK`: Überprüfe nicht die minimale Schlüssellänge für den Schlüsseltyp.
+- `ENABLE_CAPTCHA`: Aktivieren, um ein Captcha bei der Registrierung einzublenden.
 
 ## Webhook (`webhook`)
 
