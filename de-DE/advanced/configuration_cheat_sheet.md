@@ -24,6 +24,7 @@ Jede Konfiguration, die mit :exclamation: markiert ist, solltest du auf dem Stan
 - `SCRIPT_TYPE`: Die Skript-Sprache, die dein Server unterstützt. Normalerweise ist das `bash`, aber einige Benutzer haben gemeldet, sie haben bloß `sh`.
 - `ANSI_CHARSET`: Das Standard-Charset für unbekannte Charsets.
 - `FORCE_PRIVATE`: Jedes neue Projekt als private erzwingen.
+- `MAX_CREATION_LIMIT`: Maximale Anzahl an Repositorys pro User, `-1` bedeutet keine Begrenzung.
 - `PULL_REQUEST_QUEUE_LENGTH`:exclamation:: Test-Länge bei Pull-Requests. Mach es so lang wie möglich.
 
 ## UI (`ui`)
