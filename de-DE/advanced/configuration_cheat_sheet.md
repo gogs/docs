@@ -14,7 +14,7 @@ Jede Konfiguration, die mit :exclamation: markiert ist, solltest du auf dem Stan
 
 ## Generell
 
-- `APP_NAME`: Name der Applikation, ändere es zu was immer du haben willst-
+- `APP_NAME`: Name der Applikation, ändere es zu was immer du haben willst.
 - `RUN_USER`: Der Benutzer, unter dem Gogs läuft, wir empfehlen `git`; wie dem auch sei, ändere das zu was immer dein Benutzername ist, wenn du Gogs auf deinem Privatrechner ausführst. Gogs stürzt möglicherweise ab, wenn dieser Wert falsch gesetzt ist.
 - `RUN_MODE`: Aufgrund von Performance- und anderen Gründen ändere diesen Wert zu `prod` wenn du Gogs in einer Produktions-Umgebung verwendest. Der Installer wird diesen Wert automatisch auf `prod` setzen.
 
@@ -47,7 +47,7 @@ Jede Konfiguration, die mit :exclamation: markiert ist, solltest du auf dem Stan
 ## Server (`server`)
 
 - `PROTOCOL`: Entweder `http` oder `https`.
-- `DOMAIN`: Domain-Name deines Servers
+- `DOMAIN`: Domain-Name deines Servers.
 - `ROOT_URL`: Die komplette öffentliche URL deines Gogs Servers.
 - `HTTP_ADDR`: HTTP Adresse, auf der Gogs lauscht.
 - `HTTP_PORT`: HTTP Port, auf dem Gogs lauscht.
@@ -55,7 +55,7 @@ Jede Konfiguration, die mit :exclamation: markiert ist, solltest du auf dem Stan
 - `START_SSH_SERVER`: Aktivieren, um den eingebauten SSH-Server zu starten.
 - `SSH_PORT`: Der SSH-Port, falls es nicht `22` ist.
 - `OFFLINE_MODE`: Schaltet CDN und Gravatar aus.
-- `DISABLE_ROUTER_LOG`: Anschalten, um keine Router-Logs auszugeben
+- `DISABLE_ROUTER_LOG`: Anschalten, um keine Router-Logs auszugeben.
 - `CERT_FILE`: Pfad zur Zertifikats-Datei für HTTPS
 - `KEY_FILE`: Pfad zum Zertifikats-Key für HTTPS
 - `STATIC_ROOT_PATH`: Pfad, unter dem die Templates und statischen Dateien liegen. Standardmäßig ist das der Pfad, unter dem Gogs liegt.
@@ -124,7 +124,7 @@ Hinweis: Gogs unterstützt nur SMTP mit STARTTLS.
     - Redis: `network=tcp,addr=127.0.0.1:6379,password=macaron,db=0,pool_size=100,idle_timeout=180`
     - Memache: `127.0.0.1:9090;127.0.0.1:9091`
 
-## Sitzungs (`session`)
+## Sitzung (`session`)
 
 - `PROVIDER`: Sitzungs-Engine-Provider, entweder `memory`, `file`, `redis`, oder `mysql`.
 - `PROVIDER_CONFIG`: Für `file` der Pfad, für andere Server-Adresse und -Port.
@@ -178,7 +178,7 @@ Hinweis: Gogs unterstützt nur SMTP mit STARTTLS.
 - `MAX_GIT_DIFF_FILES`: Maximale Anzahl an Dateien, die in einem Diff angezeigt werden.
 - `GC_ARGS`: Optionen für den Befehl `git gc`, z. B. `--aggressive --auto`.
 
-## Other (`other`)
+## Andere (`other`)
 
 - `SHOW_FOOTER_BRANDING`: Aktivieren, um das Gogs Branding im Footer anzuzeigen.
 - `SHOW_FOOTER_VERSION`: Aktivieren, um die Gogs Version Informationen im Footer anzuzeigen.
