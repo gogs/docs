@@ -135,6 +135,7 @@ Hinweis: Gogs unterstützt nur SMTP mit STARTTLS.
 
 - `GRAVATAR_SOURCE`: Kann `gravatar`, `duoshuo` oder etwas wie `http://cn.gravatar.com/avatar/` sein.
 - `DISABLE_GRAVATAR`: Aktivieren, um nur lokale Gravatars zu benutzen.
+- `ENABLE_FEDERATED_AVATAR`: Aktivieren, um die Unterstüzung von "federated avatars" zu aktivieren(siehe http://www.libravatar.org)
 
 ## Anhänge (`attachment`)
 
