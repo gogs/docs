@@ -95,6 +95,7 @@ Jede Konfiguration, die mit :exclamation: markiert ist, solltest du auf dem Stan
 - `ENABLE_REVERSE_PROXY_AUTO_REGISTRATION`: Aktivieren, um Auto-Registrierung für Reverse Authentication zu erlauben.
 - `DISABLE_MINIMUM_KEY_SIZE_CHECK`: Überprüfe nicht die minimale Schlüssellänge für den Schlüsseltyp.
 - `ENABLE_CAPTCHA`: Aktivieren, um ein Captcha bei der Registrierung einzublenden.
+- `ENABLE_GIT_HOOKS`: Aktiviert das Ausführen von git Hook-Befehlen unter `ROOT/[user name]/[repo name].git/hooks`, welche sich von Webhooks unterscheiden
 
 ## Webhook (`webhook`)
 

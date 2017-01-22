@@ -95,6 +95,7 @@ Any configuration option that is marked by :exclamation: means that you should k
 - `ENABLE_REVERSE_PROXY_AUTO_REGISTRATION`: Enable this to allow auto-registration for reverse authentication.
 - `DISABLE_MINIMUM_KEY_SIZE_CHECK`: Do not check minimum key size with corresponding type.
 - `ENABLE_CAPTCHA`: Enable this to use captcha validation for registration.
+- `ENABLE_GIT_HOOKS`: Enable the execution of git hooks commands located in `ROOT/[user name]/[repo name].git/hooks` which are different from webhooks
 
 ## Webhook (`webhook`)
 
@@ -126,7 +127,7 @@ Note: Actually, Gogs supports only SMTP with STARTTLS.
 
 ## Session (`session`)
 
-- `PROVIDER`: Session engine provider, either `memory`, `file`, `redis`, or `mysql`.
+- `PROVIDER`: Session engine provider, either `memory`, `file`, or `redis`.
 - `PROVIDER_CONFIG`: For file, it's the root path; for others, it's the host address and port number.
 - `COOKIE_SECURE`: Enable this to force using HTTPS for all session access.
 - `GC_INTERVAL_TIME`: GC interval in seconds.
