@@ -71,6 +71,7 @@ Tous les paramètres par défaut peuvent être trouvés dans [app.ini](https://g
 - `ENABLE_REVERSE_PROXY_AUTHENTICATION`: Activez cette option pour permettre l'authentification de proxy inverse, plus en détail : https://github.com/gogits/gogs/issues/165
 - `ENABLE_REVERSE_PROXY_AUTO_REGISTRATION`: Activez cette option pour permettre l'auto-inscriptions pour l'authentification inverse.
 - `DISABLE_MINIMUM_KEY_SIZE_CHECK`: Ne pas vérifier la taille de clé minimale avec le type correspondant.
+- `ENABLE_GIT_HOOKS`: Activez cette option pour permettre l'exécution des git hook commandes qui sont situé sous `ROOT/[user name]/[repo name].git/hooks`
 
 ## Webhook
 
