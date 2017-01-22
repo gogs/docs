@@ -127,7 +127,7 @@ Note: Actually, Gogs supports only SMTP with STARTTLS.
 
 ## Session (`session`)
 
-- `PROVIDER`: Session engine provider, either `memory`, `file`, `redis`, or `mysql`.
+- `PROVIDER`: Session engine provider, either `memory`, `file`, or `redis`.
 - `PROVIDER_CONFIG`: For file, it's the root path; for others, it's the host address and port number.
 - `COOKIE_SECURE`: Enable this to force using HTTPS for all session access.
 - `GC_INTERVAL_TIME`: GC interval in seconds.
