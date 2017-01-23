@@ -14,7 +14,7 @@ Jede Konfiguration, die mit :exclamation: markiert ist, solltest du auf dem Stan
 
 ## Generell
 
-- `APP_NAME`: Name der Applikation, ändere es zu was immer du haben willst
+- `APP_NAME`: Name der Applikation, ändere es zu was immer du haben willst.
 - `RUN_USER`: Der Benutzer, unter dem Gogs läuft, wir empfehlen `git`; wie dem auch sei, ändere das zu was immer dein Benutzername ist, wenn du Gogs auf deinem Privatrechner ausführst. Gogs stürzt möglicherweise ab, wenn dieser Wert falsch gesetzt ist.
 - `RUN_MODE`: Aufgrund von Performance- und anderen Gründen ändere diesen Wert zu `prod` wenn du Gogs in einer Produktions-Umgebung verwendest. Der Installer wird diesen Wert automatisch auf `prod` setzen.
 
@@ -24,13 +24,14 @@ Jede Konfiguration, die mit :exclamation: markiert ist, solltest du auf dem Stan
 - `SCRIPT_TYPE`: Die Skript-Sprache, die dein Server unterstützt. Normalerweise ist das `bash`, aber einige Benutzer haben gemeldet, sie haben bloß `sh`.
 - `ANSI_CHARSET`: Das Standard-Charset für unbekannte Charsets.
 - `FORCE_PRIVATE`: Jedes neue Projekt als private erzwingen.
+- `MAX_CREATION_LIMIT`: Maximale Anzahl an Repositorys pro User, `-1` bedeutet keine Begrenzung.
 - `PULL_REQUEST_QUEUE_LENGTH`:exclamation:: Test-Länge bei Pull-Requests. Mach es so lang wie möglich.
 
 ## UI (`ui`)
 
 - `EXPLORE_PAGING_NUM`: Anzahl der Repositorys, die in einer Explore-Seite angezeigt werden.
 - `ISSUE_PAGING_NUM`: Anzahl an Issues, die auf einer Seite angezeigt werden (für alle Seiten, auf denen Issues angezeigt werden)
-- `FEED_MAX_COMMIT_NUM`: Anzahl an maximalen Commits. die im Aktivitäts-Feed angezeigt werden.
+- `FEED_MAX_COMMIT_NUM`: Anzahl an maximalen Commits, die im Aktivitäts-Feed angezeigt werden.
 
 ### UI - Admin (`ui.admin`)
 
@@ -41,12 +42,12 @@ Jede Konfiguration, die mit :exclamation: markiert ist, solltest du auf dem Stan
 
 ## Markdown (`markdown`)
 
-- `ENABLE_HARD_LINE_BREAK`: Entscheidet, ob harte Zeilenumbrüche aktiviert sind oder nicht
+- `ENABLE_HARD_LINE_BREAK`: Entscheidet, ob harte Zeilenumbrüche aktiviert sind oder nicht.
 
 ## Server (`server`)
 
 - `PROTOCOL`: Entweder `http` oder `https`.
-- `DOMAIN`: Domain-Name deines Servers
+- `DOMAIN`: Domain-Name deines Servers.
 - `ROOT_URL`: Die komplette öffentliche URL deines Gogs Servers.
 - `HTTP_ADDR`: HTTP Adresse, auf der Gogs lauscht.
 - `HTTP_PORT`: HTTP Port, auf dem Gogs lauscht.
@@ -54,7 +55,7 @@ Jede Konfiguration, die mit :exclamation: markiert ist, solltest du auf dem Stan
 - `START_SSH_SERVER`: Aktivieren, um den eingebauten SSH-Server zu starten.
 - `SSH_PORT`: Der SSH-Port, falls es nicht `22` ist.
 - `OFFLINE_MODE`: Schaltet CDN und Gravatar aus.
-- `DISABLE_ROUTER_LOG`: Anschalten, um keine Router-Logs auszugeben
+- `DISABLE_ROUTER_LOG`: Anschalten, um keine Router-Logs auszugeben.
 - `CERT_FILE`: Pfad zur Zertifikats-Datei für HTTPS
 - `KEY_FILE`: Pfad zum Zertifikats-Key für HTTPS
 - `STATIC_ROOT_PATH`: Pfad, unter dem die Templates und statischen Dateien liegen. Standardmäßig ist das der Pfad, unter dem Gogs liegt.
@@ -64,21 +65,21 @@ Jede Konfiguration, die mit :exclamation: markiert ist, solltest du auf dem Stan
 ## Datenbank (`database`)
 
 - `DB_TYPE`: Der Datenbanktyp, den du wählst, entweder `mysql`, `postgres` oder `sqlite3`.
-- `HOST`: Adresse und Port des Datenbank-Servers
-- `NAME`: Datenbank-Name
-- `USER`: Datenbank-Benutzer
-- `PASSWD`: Datenbank-Passwort
+- `HOST`: Adresse und Port des Datenbank-Servers.
+- `NAME`: Datenbank-Name.
+- `USER`: Datenbank-Benutzer.
+- `PASSWD`: Datenbank-Passwort.
 - `SSL_MODE`: Nur für PostgreSQL.
-- `PATH`: Nur für SQLite3, Pfad zur Datenbank-Datei
+- `PATH`: Nur für SQLite3, Pfad zur Datenbank-Datei.
 
 ## Sicherheit (`security`)
 
 - `INSTALL_LOCK`: Entscheidet, ob man die Installations-Seite aufrufen kann. (Das Setzen eines Administrator-Accounts ist Teil davon, es ist also ein sehr wichtiger Wert)
 - `SECRET_KEY`: Globaler geheimer Schlüssel für die Server-Sicherheit, **ändere ihn besser** (Es wird jedes mal, wenn du installierst ein zufälliger Schlüssel generiert)
-- `LOGIN_REMEMBER_DAYS`: Cookie-Lebenszeit in Tagen
-- `COOKIE_USERNAME`: Cookie-Name zur Speicherung des Benutzernamens
-- `COOKIE_REMEMBER_NAME`: Cookie-Name zur Speicherung von Auto-Login-Informationen
-- `REVERSE_PROXY_AUTHENTICATION_USER`: Header-Name für Reverse-Proxy-Authentifizierung Benutzername
+- `LOGIN_REMEMBER_DAYS`: Cookie-Lebenszeit in Tagen.
+- `COOKIE_USERNAME`: Cookie-Name zur Speicherung des Benutzernamens.
+- `COOKIE_REMEMBER_NAME`: Cookie-Name zur Speicherung von Auto-Login-Informationen.
+- `REVERSE_PROXY_AUTHENTICATION_USER`: Header-Name für Reverse-Proxy-Authentifizierung Benutzername.
 
 ## Service (`service`)
 
@@ -93,12 +94,13 @@ Jede Konfiguration, die mit :exclamation: markiert ist, solltest du auf dem Stan
 - `ENABLE_REVERSE_PROXY_AUTHENTICATION`: Aktivieren, um Reverse Proxy Authentication zu erlauben. Details: https://github.com/gogits/gogs/issues/165
 - `ENABLE_REVERSE_PROXY_AUTO_REGISTRATION`: Aktivieren, um Auto-Registrierung für Reverse Authentication zu erlauben.
 - `DISABLE_MINIMUM_KEY_SIZE_CHECK`: Überprüfe nicht die minimale Schlüssellänge für den Schlüsseltyp.
+- `ENABLE_CAPTCHA`: Aktivieren, um ein Captcha bei der Registrierung einzublenden.
 - `ENABLE_GIT_HOOKS`: Aktiviert das Ausführen von git Hook-Befehlen unter `ROOT/[user name]/[repo name].git/hooks`, welche sich von Webhooks unterscheiden
 
 ## Webhook (`webhook`)
 
-- `QUEUE_LENGTH`:exclamation:: Warteschlangenlänge für Hook Aufträge
-- `DELIVER_TIMEOUT`: Auslieferungs-Timeout in Sekunden für das Absenden von Webhooks
+- `QUEUE_LENGTH`:exclamation:: Warteschlangenlänge für Hook Aufträge.
+- `DELIVER_TIMEOUT`: Auslieferungs-Timeout in Sekunden für das Absenden von Webhooks.
 - `SKIP_TLS_VERIFY`: Entscheidet ob unsichere Zertifikate erlaubt sind oder nicht.
 - `PAGING_NUM`: Anzahl der Webhook-Historie, die auf einer Seite angezeigt wird.
 
@@ -118,12 +120,12 @@ Hinweis: Gogs unterstützt nur SMTP mit STARTTLS.
 ## Cache (`cache`)
 
 - `ADAPTER`: Cache-Engine-Adapter, entweder `memory`, `redis`, oder `memcache`. Wenn du `redis` oder `memcache` nutzen willst, stelle sicher, dass Gogs mit den Build-Tags `redis` oder `memcache` erstellt wurde (z.B. : `go build -tags='redis'`).
-- `INTERVAL`: Nur für Memory-Cache, Speicherbereinigungs-Intervall in Sekunden
+- `INTERVAL`: Nur für Memory-Cache, Speicherbereinigungs-Intervall in Sekunden.
 - `HOST`: Nur für redis und memcache, die Server-Adresse und Port.
     - Redis: `network=tcp,addr=127.0.0.1:6379,password=macaron,db=0,pool_size=100,idle_timeout=180`
     - Memache: `127.0.0.1:9090;127.0.0.1:9091`
 
-## Sitzungs (`session`)
+## Sitzung (`session`)
 
 - `PROVIDER`: Sitzungs-Engine-Provider, entweder `memory`, `file`, `redis`, oder `mysql`.
 - `PROVIDER_CONFIG`: Für `file` der Pfad, für andere Server-Adresse und -Port.
@@ -134,6 +136,7 @@ Hinweis: Gogs unterstützt nur SMTP mit STARTTLS.
 
 - `GRAVATAR_SOURCE`: Kann `gravatar`, `duoshuo` oder etwas wie `http://cn.gravatar.com/avatar/` sein.
 - `DISABLE_GRAVATAR`: Aktivieren, um nur lokale Gravatars zu benutzen.
+- `ENABLE_FEDERATED_AVATAR`: Aktivieren, um die Unterstüzung von "federated avatars" zu aktivieren(siehe http://www.libravatar.org)
 
 ## Anhänge (`attachment`)
 
@@ -145,10 +148,39 @@ Hinweis: Gogs unterstützt nur SMTP mit STARTTLS.
 
 ## Log (`log`)
 
-- `ROOT_PATH`: Wurzelpfad zum Log-Pfad
+- `ROOT_PATH`: Wurzelpfad zum Log-Pfad.
 - `MODE`: Logging-Methode. Standard ist `console`. Für mehrere Methoden liste sie kommasepariert auf.
 - `LEVEL`: Generelles Log-Level, Standard ist `Trace`.
+
+## Cron (`cron`)
+
+- `ENABLED`: Aktivieren, um Cron Tasks peridioschen auszuführen.
+- `RUN_AT_START`: Aktivieren, um Cron Tasks beim Start auszuführen.
+
+### Cron - Update Mirrors (`cron.update_mirrors`)
+
+- `SCHEDULE`: Cron Syntax für die Zeitplanung zum aktualisieren von Mirrors, z. B. `@every 1h`.
+
+### Cron - Repository Health Check (`cron.repo_health_check`)
+
+- `SCHEDULE`: Cron Syntax für die Zeitplanung des Repository Health Check, z. B. `@every 24h`.
+- `TIMEOUT`: Zeitdauer, nachdem der Repository Health Check abgebrochen wird, z. B. `60s`.
+- `ARGS`: Optionen für den Befehl `git fsck`, z. B. `--unreachable --tags`.
+
+### Cron - Repository Statistics Check (`cron.check_repo_stats`)
+
+- `RUN_AT_START`: Aktivieren, um den Repository Statistics Check beim Start auszuführen.
+- `SCHEDULE`:Cron Syntax für die Zeitplanung des Repository Statistics Check, z. B. `@every 24h`.
 
 ## Git (`git`)
 
 - `MAX_GIT_DIFF_LINES`: Maximale Anzahl an Zeilen, die in einem Diff angezeigt werden.
+- `MAX_GIT_DIFF_LINE_CHARACTERS`: Maximale Anzahl an Buchstaben einer Zeile, die in einem Diff angezeigt werden.
+- `MAX_GIT_DIFF_FILES`: Maximale Anzahl an Dateien, die in einem Diff angezeigt werden.
+- `GC_ARGS`: Optionen für den Befehl `git gc`, z. B. `--aggressive --auto`.
+
+## Andere (`other`)
+
+- `SHOW_FOOTER_BRANDING`: Aktivieren, um das Gogs Branding im Footer anzuzeigen.
+- `SHOW_FOOTER_VERSION`: Aktivieren, um die Gogs Version Informationen im Footer anzuzeigen.
+- `SHOW_FOOTER_TEMPLATE_LOAD_TIME`:Aktivieren, um die Gogs Template Ladedauer im Footer anzuzeigen.

@@ -183,3 +183,4 @@ Note: Actually, Gogs supports only SMTP with STARTTLS.
 
 - `SHOW_FOOTER_BRANDING`: Enable this to show Gogs branding in the footer.
 - `SHOW_FOOTER_VERSION`: Enable this to show Gogs version information in the footer.
+- `SHOW_FOOTER_TEMPLATE_LOAD_TIME`: Enable this to show Gogs template loading time in the footer.
