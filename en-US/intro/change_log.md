@@ -9,6 +9,7 @@ name: Changelog
 #### Bug fixes
 
 - Wrong anchors for non-latin headings [#3981](https://github.com/gogits/gogs/issues/3981)
+- Panic when try to get a file of bare repository [#3992](https://github.com/gogits/gogs/issues/3992)
 - Ability to fork arbitrary repository [#4006](https://github.com/gogits/gogs/issues/4006)
 
 #### Improvements
