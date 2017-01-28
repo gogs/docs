@@ -17,6 +17,10 @@ name: Changelog
 
 - View all issues assigned to me [#1820](https://github.com/gogits/gogs/issues/1820)
 
+#### Features
+
+- Add 'Organizations' page to user settings [#3587](https://github.com/gogits/gogs/pull/3587)
+
 ### v0.9.113 @ 2016-12-24
 
 #### Bug fixes

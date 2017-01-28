@@ -17,6 +17,10 @@ name: 变更日志
 
 - 查看所有指派给我的工单 [#1820](https://github.com/gogits/gogs/issues/1820)
 
+#### 新增特性
+
+- 在用户设置中添加管理组织页面 [#3587](https://github.com/gogits/gogs/pull/3587)
+
 ### v0.9.113 @ 2016-12-24
 
 #### Bug 修复
