@@ -4,18 +4,25 @@ name: 变更日志
 
 # 变更日志
 
-### 未发布
+### v0.9.128 @ 2017-01-31
 
 #### Bug 修复
 
 - 发起合并请求时没有使用当前正在浏览的分支作为对比分支 [#3604](https://github.com/gogits/gogs/issues/3604)
+- 无法将版本发布草稿再次保存为草稿 [#3669](https://github.com/gogits/gogs/issues/3669)
+- 非 Markdown 格式的 README 文件显示空白 [#3749](https://github.com/gogits/gogs/issues/3749)
+- 发送推送邮件时发生错误 [#3856](https://github.com/gogits/gogs/issues/3856)
 - 非拉丁字符无法生成快捷链接 [#3981](https://github.com/gogits/gogs/issues/3981)
 - 尝试向空仓库获取单个文件时发生错误 [#3992](https://github.com/gogits/gogs/issues/3992)
 - 攻击者可以派生任意仓库 [#4006](https://github.com/gogits/gogs/issues/4006)
+- 用户的邮箱可以被不同的用户重复注册使用
 
 #### 功能改进
 
 - 查看所有指派给我的工单 [#1820](https://github.com/gogits/gogs/issues/1820)
+- 发送邮件时忽略未激活用户 [#3814](https://github.com/gogits/gogs/issues/3814)
+- 添加配置选项 `[http] ACCESS_CONTROL_ALLOW_ORIGIN` 用以自定义 `Access-Control-Allow-Origin` 头信息 [#3987](https://github.com/gogits/gogs/issues/3987)
+- 添加配置选项 `[repository] ENABLE_LOCAL_PATH_MIGRATION` 用以开启服务器本地路径迁移功能（默认禁止）[#4033](https://github.com/gogits/gogs/issues/4033)
 
 #### 新增特性
 
@@ -119,12 +126,4 @@ name: 变更日志
 - 支持删除工单评论 [#1601](https://github.com/gogits/gogs/issues/1601)
 - 支持下载文件对比差异的补丁文件（Patch）[#2641](https://github.com/gogits/gogs/issues/2641)
 
-### v0.9.48 @ 2016-07-22
-
-#### Bug 修复
-
-- 使用 SQLite3 创建合并请求（Pull Reuqest）时发生错误 [#3291](https://github.com/gogits/gogs/issues/3291)
-- 错误的 LDAP 用户名验证规则 [#3295](https://github.com/gogits/gogs/issues/3295)
-- 重新生成 Update 钩子操作没有修复错误的脚本权限 [#3302](https://github.com/gogits/gogs/issues/3302)
-
-**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.46) 上找到。**
+**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.60) 上找到。**

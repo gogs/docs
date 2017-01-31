@@ -4,18 +4,25 @@ name: Changelog
 
 # Changelog
 
-### Unreleased
+### v0.9.128 @ 2017-01-31
 
 #### Bug fixes
 
 - Changed branch not reflected when creating PR [#3604](https://github.com/gogits/gogs/issues/3604)
+- Can not save release draft as draft again [#3669](https://github.com/gogits/gogs/issues/3669)
+- README file without Markdown is showing empty [#3749](https://github.com/gogits/gogs/issues/3749)
+- Incorrect composition when send notification emails [#3856](https://github.com/gogits/gogs/issues/3856)
 - Wrong anchors for non-latin headings [#3981](https://github.com/gogits/gogs/issues/3981)
 - Panic when try to get a file of bare repository [#3992](https://github.com/gogits/gogs/issues/3992)
 - Ability to fork arbitrary repository [#4006](https://github.com/gogits/gogs/issues/4006)
+- Users can register with used emails
 
 #### Improvements
 
 - View all issues assigned to me [#1820](https://github.com/gogits/gogs/issues/1820)
+- Skip sending emails to inactive users [#3814](https://github.com/gogits/gogs/issues/3814)
+- Add new config option `[http] ACCESS_CONTROL_ALLOW_ORIGIN` for custom `Access-Control-Allow-Origin` header [#3987](https://github.com/gogits/gogs/issues/3987)
+- Add new config option `[repository] ENABLE_LOCAL_PATH_MIGRATION` to control local path migration (and disabled by default) [#4033](https://github.com/gogits/gogs/issues/4033)
 
 #### Features
 
@@ -119,12 +126,4 @@ name: Changelog
 - Support delete issue comment [#1601](https://github.com/gogits/gogs/issues/1601)
 - Support download diff as patch [#2641](https://github.com/gogits/gogs/issues/2641)
 
-### v0.9.48 @ 2016-07-22
-
-#### Bug fixes
-
-- 500 when create pull request with SQLite3 [#3291](https://github.com/gogits/gogs/issues/3291)
-- Wrong LDAP username vaildation logic [#3295](https://github.com/gogits/gogs/issues/3295)
-- Rewrite update hook operation does not fix wrong permission of script [#3302](https://github.com/gogits/gogs/issues/3302)
-
-**Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.46).**
+**Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.60).**
