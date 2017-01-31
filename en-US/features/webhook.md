@@ -26,7 +26,13 @@ Following shows an example of event information that will be sent by Gogs to Pay
         "name": "Unknwon",
         "email": "u@gogs.io",
         "username": "unknwon"
-      }
+      },
+      "committer": {
+        "name": "Unknwon",
+        "email": "u@gogs.io",
+        "username": "unknwon"
+      },
+      "timestamp": "0001-01-01T00:00:00Z"
     },
     {
       "id": "94b2816446d1d700d1af0ec166e63375da6612f3",
@@ -36,7 +42,13 @@ Following shows an example of event information that will be sent by Gogs to Pay
         "name": "Unknwon",
         "email": "u@gogs.io",
         "username": "unknwon"
-      }
+      },
+      "committer": {
+        "name": "Unknwon",
+        "email": "u@gogs.io",
+        "username": "unknwon"
+      },
+      "timestamp": "0001-01-01T00:00:00Z"
     },
     {
       "id": "8411b50f5d4e3b30d7d601612ee2aa5e4921c968",
@@ -46,7 +58,13 @@ Following shows an example of event information that will be sent by Gogs to Pay
         "name": "Unknwon",
         "email": "u@gogs.io",
         "username": "unknwon"
-      }
+      },
+      "committer": {
+        "name": "Unknwon",
+        "email": "u@gogs.io",
+        "username": "unknwon"
+      },
+      "timestamp": "0001-01-01T00:00:00Z"
     },
     {
       "id": "8a87bee4346968e280e9b9a6e56373c1d2e1c357",
@@ -56,7 +74,13 @@ Following shows an example of event information that will be sent by Gogs to Pay
         "name": "Unknwon",
         "email": "u@gogs.io",
         "username": "unknwon"
-      }
+      },
+      "committer": {
+        "name": "Unknwon",
+        "email": "u@gogs.io",
+        "username": "unknwon"
+      },
+      "timestamp": "0001-01-01T00:00:00Z"
     },
     {
       "id": "1dfa693a5cd221fa43f10df3a9dc216753f82547",
@@ -66,31 +90,44 @@ Following shows an example of event information that will be sent by Gogs to Pay
         "name": "Unknwon",
         "email": "u@gogs.io",
         "username": "unknwon"
-      }
+      },
+      "committer": {
+        "name": "Unknwon",
+        "email": "u@gogs.io",
+        "username": "unknwon"
+      },
+      "timestamp": "0001-01-01T00:00:00Z"
     }
   ],
   "repository": {
     "id": 140,
     "name": "gogs",
-    "url": "https://try.gogs.io/gogs/gogs",
+    "full_name": "gogs/gogs",
     "description": "Gogs(Go Git Service) is a painless self-hosted Git Service written in Go.",
+    "private": false,
+    "fork": "",
+    "html_url": "https://try.gogs.io/gogs/gogs",
+    "ssh_url": "gogs@try.gogs.io:gogs/gogs",
+    "clone_url": "https://try.gogs.io/gogs/gogs.git",
     "website": "",
-    "watchers": 6,
-    "owner": {
-      "name": "gogs",
-      "email": "u@gogs.io",
-      "username": "gogs"
-    },
-    "private": false
+    "stars_count": 6,
+    "forks_count": 6,
+    "watchers_count": 6,
+    "open_issues_count": 6,
+    "default_branch": "master",
   },
   "pusher": {
-    "name": "unknwon",
+    "id": 1,
+    "username": "unknwon",
+    "full_name": "unknwon",
     "email": "u@gogs.io",
-    "username": "unknwon"
+    "avatar_url": "https://try.gogs.io///1.gravatar.com/avatar/d8b2871cdac01b57bbda23716cc03b96"
   },
   "sender": {
-    "login": "unknwon",
     "id": 1,
+    "username": "unknwon",
+    "full_name": "unknwon",
+    "email": "u@gogs.io",
     "avatar_url": "https://try.gogs.io///1.gravatar.com/avatar/d8b2871cdac01b57bbda23716cc03b96"
   }
 }
