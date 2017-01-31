@@ -8,14 +8,14 @@ This is a cheat sheet for the Gogs configuration file. It is helpful for more fu
 
 Before getting started, make sure you know that any change to the configuration should be made in `custom/conf/app.ini` or any corresponding location.
 
-All default settings can be found in [app.ini](https://github.com/gogits/gogs/blob/master/conf/app.ini). If you see anything which looks like `%(X)s`, it is a feature powered by [ini](https://github.com/go-ini/ini/#recursive-values) for reading values recursively.
+All **default settings** can be found in [app.ini](https://github.com/gogits/gogs/blob/master/conf/app.ini). If you see anything which looks like `%(X)s`, it is a feature powered by [ini](https://github.com/go-ini/ini/#recursive-values) for reading values recursively.
 
 Any configuration option that is marked by :exclamation: means that you should keep the default value unless you fully understand what you are doing.
 
 ## Overall
 
-- `APP_NAME`: Application name, change to whatever you want.
-- `RUN_USER`: The user to run Gogs as, we recommend it be `git`; however, change this to whatever your username is if you run Gogs on your personal computer. Gogs may crash if this value is not set properly.
+- `APP_NAME`: Application name, can be your company or team name.
+- `RUN_USER`: The name of the system user that runs Gogs. The best practice is to user `git`; however, change this to whatever your username is if you run Gogs on your personal computer. Gogs may crash if this value is not set properly.
 - `RUN_MODE`: For performance and other purposes, change this to `prod` when deployed to a production environment. The installation process will set this to `prod` automatically.
 
 ## Repository (`repository`)
@@ -25,7 +25,24 @@ Any configuration option that is marked by :exclamation: means that you should k
 - `ANSI_CHARSET`: The default charset for an unrecognized charset.
 - `FORCE_PRIVATE`: Force every new repository to be private.
 - `MAX_CREATION_LIMIT`: Global maximum creation limit of repositories per user, `-1` means no limit.
-- `PULL_REQUEST_QUEUE_LENGTH`:exclamation:: Length of pull request patch test queue, make it as large as possible.
+- `MIRROR_QUEUE_LENGTH`:exclamation:: Length of mirror task queue.
+- `PULL_REQUEST_QUEUE_LENGTH`:exclamation:: Length of pull request patch test queue.
+- `PREFERRED_LICENSES`: Preferred Licenses to place at the top of the list.
+- `DISABLE_HTTP_GIT`: Indicates whether or not to disable Git clone through HTTP/HTTPS. When disabled, users can only perform Git operations via SSH.
+- `ENABLE_LOCAL_PATH_MIGRATION`: Indicates whether or not to disable migrate repository by local path. When enabled, user still needs to be a site admin or get permission from site admin in order to use this feature.
+
+### Repository - Editor (`repository.editor`)
+
+- `LINE_WRAP_EXTENSIONS`: List of file extensions that should have line wraps in the CodeMirror editor. Separate extensions with a comma. To line wrap files without extension, just put a comma.
+- `PREVIEWABLE_FILE_MODES`: Valid file modes that have a preview API associated with them, such as `api/v1/markdown`. Separate values by commas. Preview tab in edit mode won't show if the file extension doesn't match.
+
+### Repository - Upload (`repository.upload`)
+
+- `ENABLED`: Indicates whether or not to enable repository file upload feature.
+- `TEMP_PATH`: Path to temporarily store uploads. Use the default or system temporary path.
+- `ALLOWED_TYPES`: File types that are allowed to be uploaded (e.g. `image/jpeg|image/png`). Leave empty means allow any file type.
+- `FILE_MAX_SIZE`: Maximum size of each file in MB.
+- `MAX_FILES`: Maximum number of files per upload.
 
 ## UI (`ui`)
 
