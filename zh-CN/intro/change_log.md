@@ -10,6 +10,10 @@ name: 变更日志
 
 - 支持重定向用户到设定的外部工单系统 [#3645](https://github.com/gogits/gogs/issues/3645)
 
+#### 新增特性
+
+- 支持 IPython Notebook 渲染 [#4070](https://github.com/gogits/gogs/pull/4070)
+
 ### v0.9.128 @ 2017-01-31
 
 #### Bug 修复

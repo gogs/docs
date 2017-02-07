@@ -10,6 +10,10 @@ name: Changelog
 
 - Able to redirect visitors to external issue tracker URL [#3645](https://github.com/gogits/gogs/issues/3645)
 
+#### Features
+
+- Support IPython Notebook rendering [#4070](https://github.com/gogits/gogs/pull/4070)
+
 ### v0.9.128 @ 2017-01-31
 
 #### Bug fixes
