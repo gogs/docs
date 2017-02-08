@@ -33,7 +33,7 @@ Any configuration option that is marked by :exclamation: means that you should k
 
 ### Repository - Editor (`repository.editor`)
 
-- `LINE_WRAP_EXTENSIONS`: List of file extensions that should have line wraps in the CodeMirror editor. Separate extensions with a comma. To line wrap files without extension, just put a comma.
+- `LINE_WRAP_EXTENSIONS`: List of file extensions that should have line wraps in the CodeMirror editor. Separate extensions with a comma. To line wrap files without extension, just put a comma, e.g. `.txt,`.
 - `PREVIEWABLE_FILE_MODES`: Valid file modes that have a preview API associated with them, such as `api/v1/markdown`. Separate values by commas. Preview tab in edit mode won't show if the file extension doesn't match.
 
 ### Repository - Upload (`repository.upload`)
@@ -49,17 +49,25 @@ Any configuration option that is marked by :exclamation: means that you should k
 - `EXPLORE_PAGING_NUM`: Number of repositories that are shown in one explore page.
 - `ISSUE_PAGING_NUM`: Number of issues that are shown in one page (for all pages that list issues).
 - `FEED_MAX_COMMIT_NUM`: Number of maximum commits shown in one activity feed.
+- `THEME_COLOR_META_TAG`: Value of "theme-color" meta tag, used by Android >= 5.0. An invalid color like "none" or "disable" will have the default style, see [more info](https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android).
+- `MAX_DISPLAY_FILE_SIZE`: Max size in bytes of files to be displayed.
 
 ### UI - Admin (`ui.admin`)
 
-- `USER_PAGING_NUM`: Number of users that are shown in one page.
-- `REPO_PAGING_NUM`: Number of repos that are shown in one page.
-- `NOTICE_PAGING_NUM`: Number of notices that are shown in one page.
-- `ORG_PAGING_NUM`: Number of organizations that are shown in one page.
+- `USER_PAGING_NUM`: Number of users that are shown in one page in admin panel.
+- `REPO_PAGING_NUM`: Number of repos that are shown in one page in admin panel.
+- `NOTICE_PAGING_NUM`: Number of notices that are shown in one page in admin panel.
+- `ORG_PAGING_NUM`: Number of organizations that are shown in one page in admin panel.
+
+### UI - User (`ui.user`)
+
+- `REPO_PAGING_NUM`: Number of repos that are showed in one page for user related pages.
 
 ## Markdown (`markdown`)
 
 - `ENABLE_HARD_LINE_BREAK`: Whether or not to enable hard the line break extension.
+- `CUSTOM_URL_SCHEMES`: List of custom URL-Schemes that are allowed as links when rendering Markdown, for example `git` (for `git://`) and `magnet` (for `magnet://`).
+- `FILE_EXTENSIONS`: List of file extensions that should be rendered/edited as Markdown. Separate extensions with a comma. To render files without extension as Markdown, just put a comma.
 
 ## Server (`server`)
 
@@ -68,16 +76,30 @@ Any configuration option that is marked by :exclamation: means that you should k
 - `ROOT_URL`: Full public URL of Gogs server.
 - `HTTP_ADDR`: HTTP listen address.
 - `HTTP_PORT`: HTTP listen port.
+- `UNIX_SOCKET_PERMISSION`: Permission for unix socket.
+- `LOCAL_ROOT_URL`: Local (DMZ) URL for Gogs workers (such as SSH update) accessing web service. In most cases you do not need to change the default value. Alter it only if your SSH server node is not the same as HTTP node.
 - `DISABLE_SSH`: Disables SSH feature when it's not available.
 - `START_SSH_SERVER`: Starts built-in SSH server when enabled.
-- `SSH_PORT`: The SSH port, in case yours is not `22`.
+- `SSH_DOMAIN`: Domain name to be exposed in SSH clone URL. The domain name that public network can access to your standalone SSH server.
+- `SSH_PORT`: Port number to be exposed in SSH clone URL. The port number that public network can access to your standalone SSH server, usually is the standard SSH port `22`.
+- `SSH_LISTEN_HOST`: Network interface builtin SSH server listens on.
+- `SSH_LISTEN_PORT`: Port number builtin SSH server listens on.
+- `SSH_ROOT_PATH`: Root path of SSH directory, default is `~/.ssh`, but you have to use `/home/git/.ssh`.
+- `SSH_KEY_TEST_PATH`: Directory to create temporary files when test publick key using ssh-keygen, default is system temporary directory.
+- `SSH_KEYGEN_PATH`: Path to ssh-keygen, default is `ssh-keygen` and let shell find out which one to call.
+- `MINIMUM_KEY_SIZE_CHECK`: Indicate whether to check minimum key size with corresponding type.
 - `OFFLINE_MODE`: Disables use of CDN for static files and Gravatar for profile pictures.
 - `DISABLE_ROUTER_LOG`: Mutes printing of the router log.
 - `CERT_FILE`: Cert file path used for HTTPS.
 - `KEY_FILE`: Key file path used for HTTPS.
 - `STATIC_ROOT_PATH`: Upper level of template and static files path, default is the path where Gogs is located.
+- `APP_DATA_PATH`: Default path for App data.
 - `ENABLE_GZIP`: Enables application-level GZIP support.
 - `LANDING_PAGE`: Non-logged-in users' landing page, either `home` or `explore`.
+
+## HTTP (`http`)
+
+- `ACCESS_CONTROL_ALLOW_ORIGIN`: Value for Access-Control-Allow-Origin header, default is not to present.
 
 ## Database (`database`)
 
@@ -127,7 +149,7 @@ Any configuration option that is marked by :exclamation: means that you should k
 - `DISABLE_HELO`: Disable HELO operation.
 - `HELO_HOSTNAME`: Custom hostname for HELO operation.
 - `HOST`: SMTP mail host address and port (example: smtp.gogs.io:587).
-- `FROM`: Mail from address, RFC 5322. This can be just an email address, or the "Name" \<email@example.com\> format.
+- `FROM`: Mail from address, RFC 5322. This can be just an email address, or the `"Name" <email@example.com>` format.
 - `USER`: Username of mailer (usually just your e-mail address).
 - `PASSWD`: Password of mailer.
 - `SKIP_VERIFY`: Do not verify the self-signed certificates.
@@ -151,9 +173,10 @@ Note: Actually, Gogs supports only SMTP with STARTTLS.
 
 ## Picture (`picture`)
 
+- `AVATAR_UPLOAD_PATH`: Path to store user uploaded avatars.
 - `GRAVATAR_SOURCE`: Can be `gravatar`, `duoshuo` or anything like `http://cn.gravatar.com/avatar/`.
 - `DISABLE_GRAVATAR`: Enable this to use local avatars only.
-- `ENABLE_FEDERATED_AVATAR`: Enable support for federated avatars (see http://www.libravatar.org)
+- `ENABLE_FEDERATED_AVATAR`: Indicate whether to enable for federated avatars (see http://www.libravatar.org). This value will be forced to be false in offline mode or Gravatar is disbaled.
 
 ## Attachment (`attachment`)
 
