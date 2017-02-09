@@ -107,19 +107,17 @@ A couple of things do not come with Gogs automatically, you need to compile Gogs
 
 Available build tags are:
 
-- `sqlite3`/`tidb`: SQLite3/TiDB database support
+- `sqlite3`: SQLite3 database support
 - `pam`: PAM authentication support
 - `cert`: Generate self-signed certificates support
 - `miniwinsvc`: Builtin windows service support (or you can use NSSM to create a service)
 
-**Note** Please follow [instructions](https://github.com/pingcap/tidb/blob/master/docs/QUICKSTART.md#pre-requirement) to install TiDB if you want to use it.
-
 For example, you want to support all of them, first delete directory `$GOPATH/pkg/${GOOS}_${GOARCH}/github.com/gogits/gogs` and then do:
 
 ```sh
-$ go get -u -tags "sqlite tidb pam cert" github.com/gogits/gogs
+$ go get -u -tags "sqlite pam cert" github.com/gogits/gogs
 $ cd $GOPATH/src/github.com/gogits/gogs
-$ go build -tags "sqlite tidb pam cert"
+$ go build -tags "sqlite pam cert"
 ```
 
 ## Next steps
