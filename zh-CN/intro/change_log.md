@@ -6,6 +6,10 @@ name: 变更日志
 
 ### 未发布
 
+#### Bug 修复
+
+- 同仓库内的合并请求显示 404 [#4074](https://github.com/gogits/gogs/issues/4074)
+
 #### 功能改进
 
 - 支持重定向用户到设定的外部工单系统 [#3645](https://github.com/gogits/gogs/issues/3645)

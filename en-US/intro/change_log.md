@@ -6,6 +6,10 @@ name: Changelog
 
 ### Unreleased
 
+#### Bug fixes
+
+- Pull request on same repository shows 404 [#4074](https://github.com/gogits/gogs/issues/4074)
+
 #### Improvements
 
 - Able to redirect visitors to external issue tracker URL [#3645](https://github.com/gogits/gogs/issues/3645)
