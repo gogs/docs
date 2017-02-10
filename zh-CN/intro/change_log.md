@@ -18,6 +18,11 @@ name: 变更日志
 #### 新增特性
 
 - 支持 IPython Notebook 渲染 [#4070](https://github.com/gogits/gogs/pull/4070)
+- 支持 Slack 作为日志输出
+
+#### 其它变更
+
+- 停止支持网络连接和 Email 作为日志输出
 
 ### v0.9.128 @ 2017-01-31
 

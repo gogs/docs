@@ -18,6 +18,11 @@ name: Changelog
 #### Features
 
 - Support IPython Notebook rendering [#4070](https://github.com/gogits/gogs/pull/4070)
+- Add Slack logger
+
+#### Others
+
+- Stop supporting network connection and email loggers
 
 ### v0.9.128 @ 2017-01-31
 
