@@ -9,6 +9,7 @@ name: Changelog
 #### Bug fixes
 
 - Pull request on same repository shows 404 [#4074](https://github.com/gogits/gogs/issues/4074)
+- Cannot delete branches with slashes in the name [#4089](https://github.com/gogits/gogs/issues/4089)
 
 #### Improvements
 

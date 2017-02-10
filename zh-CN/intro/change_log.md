@@ -9,6 +9,7 @@ name: 变更日志
 #### Bug 修复
 
 - 同仓库内的合并请求显示 404 [#4074](https://github.com/gogits/gogs/issues/4074)
+- 无法删除名称包含斜线的分支 [#4089](https://github.com/gogits/gogs/issues/4089)
 
 #### 功能改进
 
