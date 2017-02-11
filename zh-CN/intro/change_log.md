@@ -14,6 +14,7 @@ name: 变更日志
 #### 功能改进
 
 - 支持重定向用户到设定的外部工单系统 [#3645](https://github.com/gogits/gogs/issues/3645)
+- 支持 Open Graph Meta 标签 [#3664](https://github.com/gogits/gogs/pull/3664)
 
 #### 新增特性
 

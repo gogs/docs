@@ -14,6 +14,7 @@ name: Changelog
 #### Improvements
 
 - Able to redirect visitors to external issue tracker URL [#3645](https://github.com/gogits/gogs/issues/3645)
+- Add Open Graph Meta tags [#3664](https://github.com/gogits/gogs/pull/3664)
 
 #### Features
 
