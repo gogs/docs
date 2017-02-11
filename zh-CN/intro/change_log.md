@@ -4,10 +4,13 @@ name: 变更日志
 
 # 变更日志
 
-### 未发布
+### v0.9.141 @ 2017-02-11
 
 #### Bug 修复
 
+- 仓库重命名后无法编辑文件 [#3641](https://github.com/gogits/gogs/issues/3641)
+- Markdown 中 mailto 链接解析错误 [#3790](https://github.com/gogits/gogs/issues/3790)
+- 无法在 LDAP CN 字段中包含空格 [#3791](https://github.com/gogits/gogs/issues/3791)
 - 同仓库内的合并请求显示 404 [#4074](https://github.com/gogits/gogs/issues/4074)
 - 无法删除名称包含斜线的分支 [#4089](https://github.com/gogits/gogs/issues/4089)
 
@@ -18,6 +21,7 @@ name: 变更日志
 
 #### 新增特性
 
+- 支持禁止非管理员创建组织 [#1556](https://github.com/gogits/gogs/issues/1556)
 - 支持 IPython Notebook 渲染 [#4070](https://github.com/gogits/gogs/pull/4070)
 - 支持 Slack 作为日志输出
 
@@ -125,26 +129,4 @@ name: 变更日志
 - 支持 Federated Avatars
 - 允许使用 URL 参数 `?render=1` 使 HTML 在原始模式下返回渲染结果 [#2593](https://github.com/gogits/gogs/issues/2593)
 
-### v0.9.60 @ 2016-08-03
-
-#### Bug 修复
-
-- 合并请求（Pull Request）页面文件差异（Diff）对比的分列视图无法使用 [#2790](https://github.com/gogits/gogs/issues/2790)
-- 使用无效的标签名称创建版本发布时不能正确处理错误 [#3076](https://github.com/gogits/gogs/issues/3076)
-- 无法 @ 用户名包含横线的用户 [#3107](https://github.com/gogits/gogs/issues/3107)
-- 删除合并请求的基准分支后无法浏览页面 [#3181](https://github.com/gogits/gogs/issues/3181)
-- 派生仓库的新建合并请求所指向的链接不存在 [#3186](https://github.com/gogits/gogs/issues/3186)
-- 使用标签过滤工单时发生错误 [#3327](https://github.com/gogits/gogs/issues/3327)
-
-#### 功能改进
-
-- 对仓库进行分页显示 [#1384](https://github.com/gogits/gogs/issues/1384)
-- 针对仓库和用户使用不同的保留关键字和匹配模式 [#2903](https://github.com/gogits/gogs/issues/2903)
-
-#### 新增特性
-
-- 增加工单标签相关的 API
-- 支持删除工单评论 [#1601](https://github.com/gogits/gogs/issues/1601)
-- 支持下载文件对比差异的补丁文件（Patch）[#2641](https://github.com/gogits/gogs/issues/2641)
-
-**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.60) 上找到。**
+**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.71) 上找到。**

@@ -4,10 +4,13 @@ name: Changelog
 
 # Changelog
 
-### Unreleased
+### v0.9.141 @ 2017-02-11
 
 #### Bug fixes
 
+- Cannot edit file after rename repository [#3641](https://github.com/gogits/gogs/issues/3641)
+- mailto link incorrectly parsed in Markdown [#3790](https://github.com/gogits/gogs/issues/3790)
+- Cannot include spaces inside LDAP DN field [#3791](https://github.com/gogits/gogs/issues/3791)
 - Pull request on same repository shows 404 [#4074](https://github.com/gogits/gogs/issues/4074)
 - Cannot delete branches with slashes in the name [#4089](https://github.com/gogits/gogs/issues/4089)
 
@@ -18,6 +21,7 @@ name: Changelog
 
 #### Features
 
+- Able to disable creation of organizations for non-admins [#1556](https://github.com/gogits/gogs/issues/1556)
 - Support IPython Notebook rendering [#4070](https://github.com/gogits/gogs/pull/4070)
 - Add Slack logger
 
@@ -125,26 +129,4 @@ name: Changelog
 - Support federated avatars
 - Allow use `?render=1` to set HTML rendered in raw mode [#2593](https://github.com/gogits/gogs/issues/2593)
 
-### v0.9.60 @ 2016-08-03
-
-#### Bug fixes
-
-- Diff split view not working on pull requests [#2790](https://github.com/gogits/gogs/issues/2790)
-- 500 when creating a release with an invalid tag name [#3076](https://github.com/gogits/gogs/issues/3076)
-- Cannot mention user name contains dash [#3107](https://github.com/gogits/gogs/issues/3107)
-- 500 after delete base branch of pull request [#3181](https://github.com/gogits/gogs/issues/3181)
-- Wrong link of new pull request of fork repositories [#3186](https://github.com/gogits/gogs/issues/3186)
-- 500 when filtering issues by label [#3327](https://github.com/gogits/gogs/issues/3327)
-
-#### Improvements
-
-- Add pagination for repositories [#1384](https://github.com/gogits/gogs/issues/1384)
-- Use different reversed word and pattern list for repository and user [#2903](https://github.com/gogits/gogs/issues/2903)
-
-#### Features
-
-- Add issue labels APIs 
-- Support delete issue comment [#1601](https://github.com/gogits/gogs/issues/1601)
-- Support download diff as patch [#2641](https://github.com/gogits/gogs/issues/2641)
-
-**Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.60).**
+**Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.71).**
