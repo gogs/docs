@@ -27,7 +27,7 @@ name: 二进制安装
 ### v0.9.141 @ 2017-02-11
 
 |系统名称|系统类型|SQLite|PAM|下载（[GitHub](https://github.com/gogits/gogs/releases/tag/v0.9.141)）|
-|------|----|------|----|---|--------|
+|------|----|------|---|--------|
 |Linux|386|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.141_linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/gogs_v0.9.141_linux_386.tar.gz) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.141_linux_386.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.141_linux_386.tar.gz)|
 |Linux|amd64|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.141_linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/gogs_v0.9.141_linux_amd64.tar.gz) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.141_linux_amd64.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.141_linux_amd64.tar.gz)|
 |Linux|armv5|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.141_linux_armv5.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.141_linux_armv5.zip)|

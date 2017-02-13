@@ -21,7 +21,7 @@ All downloads come with **MySQL**, **PostgreSQL** and **TiDB** (via MySQL protoc
 ### v0.9.141 @ 2017-02-11
 
 |System|Type|SQLite|PAM|Download ([GitHub](https://github.com/gogits/gogs/releases/tag/v0.9.141))|
-|------|----|------|----|---|--------|
+|------|----|------|---|--------|
 |Linux|386|✅|✅|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.141_linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/gogs_v0.9.141_linux_386.tar.gz) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.141_linux_386.zip) \| [TAR.GZ](https://cdn.gogs.io/gogs_v0.9.141_linux_386.tar.gz)|
 |Linux|amd64|✅|✅|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.141_linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/gogs_v0.9.141_linux_amd64.tar.gz) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.141_linux_amd64.zip) \| [TAR.GZ](https://cdn.gogs.io/gogs_v0.9.141_linux_amd64.tar.gz)|
 |Linux|armv5|❌|❌|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.141_linux_armv5.zip) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.141_linux_armv5.zip)|
