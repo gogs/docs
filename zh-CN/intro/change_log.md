@@ -4,6 +4,12 @@ name: 变更日志
 
 # 变更日志
 
+### 未发布
+
+#### 新增特性
+
+- 支持 MSSQL [#3772](https://github.com/gogits/gogs/pull/3772)
+
 ### v0.9.141 @ 2017-02-11
 
 #### Bug 修复

@@ -4,6 +4,12 @@ name: Changelog
 
 # Changelog
 
+### Unreleased
+
+#### Features
+
+- Support MSSQL [#3772](https://github.com/gogits/gogs/pull/3772)
+
 ### v0.9.141 @ 2017-02-11
 
 #### Bug fixes
