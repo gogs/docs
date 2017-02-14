@@ -10,12 +10,10 @@ Before getting started, make sure you know that any change to the configuration 
 
 All **default settings** can be found in [app.ini](https://github.com/gogits/gogs/blob/master/conf/app.ini). If you see anything which looks like `%(X)s`, it is a feature powered by [ini](https://github.com/go-ini/ini/#recursive-values) for reading values recursively.
 
-Any configuration option that is marked by :exclamation: means that you should keep the default value unless you fully understand what you are doing.
-
 ## Overall
 
 Name|Description
--|-
+----|-----------
 `APP_NAME`|Application name, can be your company or team name.
 `RUN_USER`|The name of the system user that runs Gogs. The best practice is to user `git`; however, change this to whatever your username is if you run Gogs on your personal computer. Gogs may crash if this value is not set properly.
 `RUN_MODE`|For performance and other purposes, change this to `prod` when deployed to a production environment. The installation process will set this to `prod` automatically.
@@ -23,14 +21,12 @@ Name|Description
 ## Repository (`repository`)
 
 Name|Description
--|-
+----|-----------
 `ROOT`|Root path for storing all users' repository data. It must be an absolute path. The default is `~/<username>/gogs-repositories`.
 `SCRIPT_TYPE`|The script type your server supports, usually this is `bash`, but some customers report that they only have `sh`.
 `ANSI_CHARSET`|The default charset for an unrecognized charset.
 `FORCE_PRIVATE`|Force every new repository to be private.
 `MAX_CREATION_LIMIT`|Global maximum creation limit of repositories per user, `-1` means no limit.
-`MIRROR_QUEUE_LENGTH`:exclamation:|Length of mirror task queue.
-`PULL_REQUEST_QUEUE_LENGTH`:exclamation:|Length of pull request patch test queue.
 `PREFERRED_LICENSES`|Preferred Licenses to place at the top of the list.
 `DISABLE_HTTP_GIT`|Indicates whether or not to disable Git clone through HTTP/HTTPS. When disabled, users can only perform Git operations via SSH.
 `ENABLE_LOCAL_PATH_MIGRATION`|Indicates whether or not to disable migrate repository by local path. When enabled, user still needs to be a site admin or get permission from site admin in order to use this feature.
@@ -38,14 +34,14 @@ Name|Description
 ### Repository - Editor (`repository.editor`)
 
 Name|Description
--|-
+----|-----------
 `LINE_WRAP_EXTENSIONS`|List of file extensions that should have line wraps in the CodeMirror editor. Separate extensions with a comma. To line wrap files without extension, just put a comma, e.g. `.txt,`.
 `PREVIEWABLE_FILE_MODES`|Valid file modes that have a preview API associated with them, such as `api/v1/markdown`. Separate values by commas. Preview tab in edit mode won't show if the file extension doesn't match.
 
 ### Repository - Upload (`repository.upload`)
 
 Name|Description
--|-
+----|-----------
 `ENABLED`|Indicates whether or not to enable repository file upload feature.
 `TEMP_PATH`|Path to temporarily store uploads. Use the default or system temporary path.
 `ALLOWED_TYPES`|File types that are allowed to be uploaded (e.g. `image/jpeg|image/png`). Leave empty means allow any file type.
@@ -55,7 +51,7 @@ Name|Description
 ## UI (`ui`)
 
 Name|Description
--|-
+----|-----------
 `EXPLORE_PAGING_NUM`|Number of repositories that are shown in one explore page.
 `ISSUE_PAGING_NUM`|Number of issues that are shown in one page (for all pages that list issues).
 `FEED_MAX_COMMIT_NUM`|Number of maximum commits shown in one activity feed.
@@ -65,7 +61,7 @@ Name|Description
 ### UI - Admin (`ui.admin`)
 
 Name|Description
--|-
+----|-----------
 `USER_PAGING_NUM`|Number of users that are shown in one page in admin panel.
 `REPO_PAGING_NUM`|Number of repos that are shown in one page in admin panel.
 `NOTICE_PAGING_NUM`|Number of notices that are shown in one page in admin panel.
@@ -74,13 +70,13 @@ Name|Description
 ### UI - User (`ui.user`)
 
 Name|Description
--|-
+----|-----------
 `REPO_PAGING_NUM`|Number of repos that are showed in one page for user related pages.
 
 ## Markdown (`markdown`)
 
 Name|Description
--|-
+----|-----------
 `ENABLE_HARD_LINE_BREAK`|Whether or not to enable hard the line break extension.
 `CUSTOM_URL_SCHEMES`|List of custom URL-Schemes that are allowed as links when rendering Markdown, for example `git` (for `git://`) and `magnet` (for `magnet://`).
 `FILE_EXTENSIONS`|List of file extensions that should be rendered/edited as Markdown. Separate extensions with a comma. To render files without extension as Markdown, just put a comma.
@@ -88,7 +84,7 @@ Name|Description
 ## Server (`server`)
 
 Name|Description
--|-
+----|-----------
 `PROTOCOL`|Either `http` or `https`.
 `DOMAIN`|Domain name of your server.
 `ROOT_URL`|Full public URL of Gogs server.
@@ -118,13 +114,13 @@ Name|Description
 ## HTTP (`http`)
 
 Name|Description
--|-
+----|-----------
 `ACCESS_CONTROL_ALLOW_ORIGIN`|Value for Access-Control-Allow-Origin header, default is not to present.
 
 ## Database (`database`)
 
 Name|Description
--|-
+----|-----------
 `DB_TYPE`|The database type you choose, either `mysql`, `postgres` or `sqlite3`.
 `HOST`|Database host address and port.
 `NAME`|Database name.
@@ -136,7 +132,7 @@ Name|Description
 ## Security (`security`)
 
 Name|Description
--|-
+----|-----------
 `INSTALL_LOCK`|Indicates whether to allow the open install page (setting admin account is involved, so it's a very important value).
 `SECRET_KEY`|Global secret key for your server security, **you'd better change it** (will generate a random string every time you install).
 `LOGIN_REMEMBER_DAYS`|Cookie lifetime, in days.
@@ -147,7 +143,7 @@ Name|Description
 ## Service (`service`)
 
 Name|Description
--|-
+----|-----------
 `ACTIVE_CODE_LIVE_MINUTES`|The minutes of active code life time.
 `RESET_PASSWD_CODE_LIVE_MINUTES`|The minutes of reset password code life time.
 `REGISTER_EMAIL_CONFIRM`|Enable this to ask for mail confirmation of registration, requires `Mailer` to be enabled.
@@ -165,8 +161,7 @@ Name|Description
 ## Webhook (`webhook`)
 
 Name|Description
--|-
-`QUEUE_LENGTH`:exclamation:|Hook task queue length.
+----|-----------
 `DELIVER_TIMEOUT`|Delivery timeout in seconds for shooting webhooks.
 `SKIP_TLS_VERIFY`|Indicate whether to allow insecure certification or not.
 `PAGING_NUM`|Number of webhook history that are shown in one page.
@@ -174,7 +169,7 @@ Name|Description
 ## Mailer (`mailer`)
 
 Name|Description
--|-
+----|-----------
 `ENABLED`|Enable this to use a mail service.
 `DISABLE_HELO`|Disable HELO operation.
 `HELO_HOSTNAME`|Custom hostname for HELO operation.
@@ -199,7 +194,7 @@ Note: Actually, Gogs supports only SMTP with STARTTLS.
 ## Session (`session`)
 
 Name|Description
--|-
+----|-----------
 `PROVIDER`|Session engine provider, either `memory`, `file`, or `redis`.
 `PROVIDER_CONFIG`|For file, it's the root path; for others, it's the host address and port number.
 `COOKIE_SECURE`|Enable this to force using HTTPS for all session access.
@@ -208,7 +203,7 @@ Name|Description
 ## Picture (`picture`)
 
 Name|Description
--|-
+----|-----------
 `AVATAR_UPLOAD_PATH`|Path to store user uploaded avatars.
 `GRAVATAR_SOURCE`|Can be `gravatar`, `duoshuo` or anything like `http://cn.gravatar.com/avatar/`.
 `DISABLE_GRAVATAR`|Enable this to use local avatars only.
@@ -217,7 +212,7 @@ Name|Description
 ## Attachment (`attachment`)
 
 Name|Description
--|-
+----|-----------
 `ENABLED`|Enable this to allow users upload attachments.
 `PATH`|Path to store attachments.
 `ALLOWED_TYPES`|Allowed MIME types, e.g. `image/jpeg|image/png`, use `*/*` for all types.
@@ -227,7 +222,7 @@ Name|Description
 ## Log (`log`)
 
 Name|Description
--|-
+----|-----------
 `ROOT_PATH`|Root path for log files.
 `MODE`|Logging mode, default is `console`. For multiple modes, use comma to separate it.
 `LEVEL`|General log level, default is `Trace`.
@@ -235,20 +230,20 @@ Name|Description
 ## Cron (`cron`)
 
 Name|Description
--|-
+----|-----------
 `ENABLED`|Enable this to run cron tasks periodically.
 `RUN_AT_START`|Enable this to run cron tasks at start time.
 
 ### Cron - Update Mirrors (`cron.update_mirrors`)
 
 Name|Description
--|-
+----|-----------
 `SCHEDULE`|Cron syntax for scheduling update mirrors, e.g. `@every 1h`.
 
 ### Cron - Repository Health Check (`cron.repo_health_check`)
 
 Name|Description
--|-
+----|-----------
 `SCHEDULE`|Cron syntax for scheduling repository health check, e.g. `@every 24h`.
 `TIMEOUT`|Time duration syntax for health check execution timeout, e.g. `60s`.
 `ARGS`|Arguments for command `git fsck`, e.g. `--unreachable --tags`.
@@ -256,14 +251,14 @@ Name|Description
 ### Cron - Repository Statistics Check (`cron.check_repo_stats`)
 
 Name|Description
--|-
+----|-----------
 `RUN_AT_START`|Enable this to run repository statistics check at start time.
 `SCHEDULE`|Cron syntax for scheduling repository statistics check, e.g. `@every 24h`.
 
 ## Git (`git`)
 
 Name|Description
--|-
+----|-----------
 `MAX_GIT_DIFF_LINES`|Max number of lines allowed of a single file in diff view.
 `MAX_GIT_DIFF_LINE_CHARACTERS`|Max number of characters of a line allowed in diff view.
 `MAX_GIT_DIFF_FILES`|Max number of files shown in diff view.
@@ -272,7 +267,7 @@ Name|Description
 ## Other (`other`)
 
 Name|Description
--|-
+----|-----------
 `SHOW_FOOTER_BRANDING`|Enable this to show Gogs branding in the footer.
 `SHOW_FOOTER_VERSION`|Enable this to show Gogs version information in the footer.
 `SHOW_FOOTER_TEMPLATE_LOAD_TIME`|Enable this to show Gogs template loading time in the footer.
