@@ -6,6 +6,10 @@ name: 变更日志
 
 ### 未发布
 
+#### Bug 修复
+
+- 无法编辑标题包含 `#` 的 Wiki 页面 [#3767](https://github.com/gogits/gogs/issues/3767)
+
 #### 新增特性
 
 - 支持 MSSQL [#3772](https://github.com/gogits/gogs/pull/3772)

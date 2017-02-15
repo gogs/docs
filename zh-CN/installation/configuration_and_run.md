@@ -46,9 +46,6 @@ PASSWD = root
 $ make
 $ ./gogs web
 	```
-	
-- 您可以在 Gogs 源码目录使用命令 `bra run`：
-	- 安装 [bra](https://github.com/Unknwon/bra) 工具：`go get -u github.com/Unknwon/bra`
 
 ### 部署模式
 

@@ -6,6 +6,10 @@ name: Changelog
 
 ### Unreleased
 
+#### Bug fixes
+
+- Cannot edit wiki page title contains `#` [#3767](https://github.com/gogits/gogs/issues/3767)
+
 #### Features
 
 - Support MSSQL [#3772](https://github.com/gogits/gogs/pull/3772)

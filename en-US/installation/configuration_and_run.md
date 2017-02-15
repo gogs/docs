@@ -49,9 +49,6 @@ $ make
 $ ./gogs web
 	```
 
-- You can enable live compile by executing `bra run` in the Gogs source folder
-	- To install [bra](https://github.com/Unknwon/bra): `go get -u github.com/Unknwon/bra`
-
 ### For Deployment
 
 **Scripts are in the `scripts` directory, but execute them at root of the repository**
