@@ -10,7 +10,7 @@ Before getting started, make sure you know that any change to the configuration 
 
 All **default settings** can be found in [app.ini](https://github.com/gogits/gogs/blob/master/conf/app.ini). If you see anything which looks like `%(X)s`, it is a feature powered by [ini](https://github.com/go-ini/ini/#recursive-values) for reading values recursively.
 
-## Overall
+### Overall
 
 Name|Description
 ----|-----------
@@ -18,7 +18,7 @@ Name|Description
 `RUN_USER`|The name of the system user that runs Gogs. The best practice is to user `git`; however, change this to whatever your username is if you run Gogs on your personal computer. Gogs may crash if this value is not set properly.
 `RUN_MODE`|For performance and other purposes, change this to `prod` when deployed to a production environment. The installation process will set this to `prod` automatically.
 
-## Repository (`repository`)
+### Repository (`repository`)
 
 Name|Description
 ----|-----------
@@ -31,14 +31,14 @@ Name|Description
 `DISABLE_HTTP_GIT`|Indicates whether or not to disable Git clone through HTTP/HTTPS. When disabled, users can only perform Git operations via SSH.
 `ENABLE_LOCAL_PATH_MIGRATION`|Indicates whether or not to disable migrate repository by local path. When enabled, user still needs to be a site admin or get permission from site admin in order to use this feature.
 
-### Repository - Editor (`repository.editor`)
+#### Repository - Editor (`repository.editor`)
 
 Name|Description
 ----|-----------
 `LINE_WRAP_EXTENSIONS`|List of file extensions that should have line wraps in the CodeMirror editor. Separate extensions with a comma. To line wrap files without extension, just put a comma, e.g. `.txt,`.
 `PREVIEWABLE_FILE_MODES`|Valid file modes that have a preview API associated with them, such as `api/v1/markdown`. Separate values by commas. Preview tab in edit mode won't show if the file extension doesn't match.
 
-### Repository - Upload (`repository.upload`)
+#### Repository - Upload (`repository.upload`)
 
 Name|Description
 ----|-----------
@@ -48,7 +48,7 @@ Name|Description
 `FILE_MAX_SIZE`|Maximum size of each file in MB.
 `MAX_FILES`|Maximum number of files per upload.
 
-## UI (`ui`)
+### UI (`ui`)
 
 Name|Description
 ----|-----------
@@ -58,7 +58,7 @@ Name|Description
 `THEME_COLOR_META_TAG`|Value of "theme-color" meta tag, used by Android >= 5.0. An invalid color like "none" or "disable" will have the default style, see [more info](https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android).
 `MAX_DISPLAY_FILE_SIZE`|Max size in bytes of files to be displayed.
 
-### UI - Admin (`ui.admin`)
+#### UI - Admin (`ui.admin`)
 
 Name|Description
 ----|-----------
@@ -67,13 +67,13 @@ Name|Description
 `NOTICE_PAGING_NUM`|Number of notices that are shown in one page in admin panel.
 `ORG_PAGING_NUM`|Number of organizations that are shown in one page in admin panel.
 
-### UI - User (`ui.user`)
+#### UI - User (`ui.user`)
 
 Name|Description
 ----|-----------
 `REPO_PAGING_NUM`|Number of repos that are showed in one page for user related pages.
 
-## Markdown (`markdown`)
+### Markdown (`markdown`)
 
 Name|Description
 ----|-----------
@@ -81,7 +81,7 @@ Name|Description
 `CUSTOM_URL_SCHEMES`|List of custom URL-Schemes that are allowed as links when rendering Markdown, for example `git` (for `git://`) and `magnet` (for `magnet://`).
 `FILE_EXTENSIONS`|List of file extensions that should be rendered/edited as Markdown. Separate extensions with a comma. To render files without extension as Markdown, just put a comma.
 
-## Server (`server`)
+### Server (`server`)
 
 Name|Description
 ----|-----------
@@ -111,13 +111,13 @@ Name|Description
 `ENABLE_GZIP`|Enables application-level GZIP support.
 `LANDING_PAGE`|Non-logged-in users' landing page, either `home` or `explore`.
 
-## HTTP (`http`)
+### HTTP (`http`)
 
 Name|Description
 ----|-----------
 `ACCESS_CONTROL_ALLOW_ORIGIN`|Value for Access-Control-Allow-Origin header, default is not to present.
 
-## Database (`database`)
+### Database (`database`)
 
 Name|Description
 ----|-----------
@@ -129,7 +129,7 @@ Name|Description
 `SSL_MODE`|For PostgreSQL only.
 `PATH`|For SQLite3 only, the database file path.
 
-## Security (`security`)
+### Security (`security`)
 
 Name|Description
 ----|-----------
@@ -140,7 +140,7 @@ Name|Description
 `COOKIE_REMEMBER_NAME`|Name of cookie that saves auto-login information.
 `REVERSE_PROXY_AUTHENTICATION_USER`|Header name for reverse proxy authentication username.
 
-## Service (`service`)
+### Service (`service`)
 
 Name|Description
 ----|-----------
@@ -158,7 +158,7 @@ Name|Description
 `ENABLE_CAPTCHA`|Enable this to use captcha validation for registration.
 `ENABLE_GIT_HOOKS`|Enable the execution of git hooks commands located in `ROOT/[user name]/[repo name].git/hooks` which are different from webhooks
 
-## Webhook (`webhook`)
+### Webhook (`webhook`)
 
 Name|Description
 ----|-----------
@@ -166,7 +166,7 @@ Name|Description
 `SKIP_TLS_VERIFY`|Indicate whether to allow insecure certification or not.
 `PAGING_NUM`|Number of webhook history that are shown in one page.
 
-## Mailer (`mailer`)
+### Mailer (`mailer`)
 
 Name|Description
 ----|-----------
@@ -181,7 +181,7 @@ Name|Description
 
 Note: Actually, Gogs supports only SMTP with STARTTLS.
 
-## Cache (`cache`)
+### Cache (`cache`)
 
 |Name|Description
 |-|-
@@ -191,7 +191,7 @@ Note: Actually, Gogs supports only SMTP with STARTTLS.
 ||Redis: `network=tcp,addr=127.0.0.1:6379,password=macaron,db=0,pool_size=100,idle_timeout=180`. 
 ||Memache: `127.0.0.1:9090;127.0.0.1:9091`
 
-## Session (`session`)
+### Session (`session`)
 
 Name|Description
 ----|-----------
@@ -200,7 +200,7 @@ Name|Description
 `COOKIE_SECURE`|Enable this to force using HTTPS for all session access.
 `GC_INTERVAL_TIME`|GC interval in seconds.
 
-## Picture (`picture`)
+### Picture (`picture`)
 
 Name|Description
 ----|-----------
@@ -209,7 +209,7 @@ Name|Description
 `DISABLE_GRAVATAR`|Enable this to use local avatars only.
 `ENABLE_FEDERATED_AVATAR`|Indicate whether to enable for federated avatars (see http://www.libravatar.org). This value will be forced to be false in offline mode or Gravatar is disbaled.
 
-## Attachment (`attachment`)
+### Attachment (`attachment`)
 
 Name|Description
 ----|-----------
@@ -219,7 +219,7 @@ Name|Description
 `MAX_SIZE`|Maximum size in MB, e.g. `4`
 `MAX_FILES`|Maximum number of attachments can be uploaded at once, e.g. `5`.
 
-## Log (`log`)
+### Log (`log`)
 
 Name|Description
 ----|-----------
@@ -227,20 +227,20 @@ Name|Description
 `MODE`|Logging mode, default is `console`. For multiple modes, use comma to separate it.
 `LEVEL`|General log level, default is `Trace`.
 
-## Cron (`cron`)
+### Cron (`cron`)
 
 Name|Description
 ----|-----------
 `ENABLED`|Enable this to run cron tasks periodically.
 `RUN_AT_START`|Enable this to run cron tasks at start time.
 
-### Cron - Update Mirrors (`cron.update_mirrors`)
+#### Cron - Update Mirrors (`cron.update_mirrors`)
 
 Name|Description
 ----|-----------
 `SCHEDULE`|Cron syntax for scheduling update mirrors, e.g. `@every 1h`.
 
-### Cron - Repository Health Check (`cron.repo_health_check`)
+#### Cron - Repository Health Check (`cron.repo_health_check`)
 
 Name|Description
 ----|-----------
@@ -248,14 +248,14 @@ Name|Description
 `TIMEOUT`|Time duration syntax for health check execution timeout, e.g. `60s`.
 `ARGS`|Arguments for command `git fsck`, e.g. `--unreachable --tags`.
 
-### Cron - Repository Statistics Check (`cron.check_repo_stats`)
+#### Cron - Repository Statistics Check (`cron.check_repo_stats`)
 
 Name|Description
 ----|-----------
 `RUN_AT_START`|Enable this to run repository statistics check at start time.
 `SCHEDULE`|Cron syntax for scheduling repository statistics check, e.g. `@every 24h`.
 
-## Git (`git`)
+### Git (`git`)
 
 Name|Description
 ----|-----------
@@ -264,7 +264,7 @@ Name|Description
 `MAX_GIT_DIFF_FILES`|Max number of files shown in diff view.
 `GC_ARGS`|Arguments for command `git gc`, e.g. `--aggressive --auto`.
 
-## Other (`other`)
+### Other (`other`)
 
 Name|Description
 ----|-----------
