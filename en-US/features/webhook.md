@@ -103,7 +103,7 @@ Following shows an example of event information that will be sent by Gogs to Pay
     "id": 140,
     "name": "gogs",
     "full_name": "gogs/gogs",
-    "description": "Gogs(Go Git Service) is a painless self-hosted Git Service written in Go.",
+    "description": "Gogs is a painless self-hosted Git Service written in Go.",
     "private": false,
     "fork": "",
     "html_url": "https://try.gogs.io/gogs/gogs",

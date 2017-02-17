@@ -4,7 +4,7 @@ name: Einführung
 
 # Was ist Gogs?
 
-Gogs (Go Git Service) ist ein einfacher selbst-gehosteter Git Service.
+Gogs ist ein einfacher selbst-gehosteter Git Service.
 
 ## Ziel
 

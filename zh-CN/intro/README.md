@@ -4,7 +4,7 @@ name: 简介
 
 # 什么是 Gogs?
 
-Gogs (Go Git Service) 是一款极易搭建的自助 Git 服务。
+Gogs 是一款极易搭建的自助 Git 服务。
 
 ## 开发目的
 

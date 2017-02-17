@@ -8,7 +8,9 @@ name: Changelog
 
 #### Bug fixes
 
+- Cannot install or start server without mail service
 - Cannot edit wiki page title contains `#` [#3767](https://github.com/gogits/gogs/issues/3767)
+- Cannot delete branch after merging pull request [#4128](https://github.com/gogits/gogs/issues/4128)
 
 #### Features
 

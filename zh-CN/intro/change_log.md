@@ -8,7 +8,9 @@ name: 变更日志
 
 #### Bug 修复
 
+- 未配置邮件服务无法完成安装或启动程序
 - 无法编辑标题包含 `#` 的 Wiki 页面 [#3767](https://github.com/gogits/gogs/issues/3767)
+- 完成合并请求后无法删除发起分支 [#4128](https://github.com/gogits/gogs/issues/4128)
 
 #### 新增特性
 

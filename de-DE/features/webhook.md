@@ -73,7 +73,7 @@ Hier folgt ein Beispiel der Ereignis-Informationen, die Gogs an die URL sendet:
     "id": 140,
     "name": "gogs",
     "url": "https://try.gogs.io/gogs/gogs",
-    "description": "Gogs(Go Git Service) is a painless self-hosted Git Service written in Go.",
+    "description": "Gogs is a painless self-hosted Git Service written in Go.",
     "website": "",
     "watchers": 6,
     "owner": {

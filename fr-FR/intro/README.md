@@ -6,7 +6,7 @@ sort: 0
 
 # Qu'est-ce que Gogs ?
 
-Gogs (Go Git Service) est une solution Git auto-hébergée garantie sans prise de tête et écrite en Go.
+Gogs est une solution Git auto-hébergée garantie sans prise de tête et écrite en Go.
 
 ## Objectif
 

@@ -73,7 +73,7 @@ Gogs 支持针对仓库事件的 Web 钩子服务，您可以在仓库的设置�
     "id": 140,
     "name": "gogs",
     "url": "https://try.gogs.io/gogs/gogs",
-    "description": "Gogs(Go Git Service) is a painless self-hosted Git Service written in Go.",
+    "description": "Gogs is a painless self-hosted Git Service written in Go.",
     "website": "",
     "watchers": 6,
     "owner": {

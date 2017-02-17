@@ -40,7 +40,7 @@ The IP address can be anything in the range `127.0.0.2 - 127.254.254.254`, so lo
 To complete that network route, open Notepad.exe as administrator and include the following in `C:\Windows\System32\drivers\etc\hosts`:
 
 ```
-# Go Git Service local HTTPd
+# Gogs local HTTPd
 127.0.1.1        gogs
 ```
 
@@ -92,8 +92,8 @@ Application tab:
 
 Details tab:
 
-- Display name: `Go Gits Service`
-- Description: `Gogs (Go Git Service) is a painless self-hosted Git service.`
+- Display name: `Gogs`
+- Description: `A painless self-hosted Git service.`
 - Startup type: `Automatic (Delayed Start)`
 
 Note that we've chosen [delayed start](http://stackoverflow.com/a/11015576), so that the service will not impact the early boot time. Gogs will start two minutes after the non-delayed services.
@@ -169,7 +169,7 @@ At the time of writing this line, it will cause the following to print in `C:\go
 ```
 timestamp [T] Custom path: C:/gogs/custom
 timestamp [T] Log path: C:\gogs\log
-timestamp [I] Gogs: Go Git Service x.y.z
+timestamp [I] Gogs x.y.z
 timestamp [log.go:294 Error()] [E] Fail to set logger(file): invalid character 'g' in string escape code
 ```
 
