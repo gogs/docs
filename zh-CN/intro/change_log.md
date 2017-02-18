@@ -9,11 +9,20 @@ name: 变更日志
 #### Bug 修复
 
 - 未配置邮件服务无法完成安装或启动程序
+- 通过 HTTP 推送大量内容时内存溢出 [#636](https://github.com/gogits/gogs/issues/636)
+- 无法导航到 Wiki 标题包含 `-` 的页面 [#3754](https://github.com/gogits/gogs/issues/3754)
 - 无法编辑标题包含 `#` 的 Wiki 页面 [#3767](https://github.com/gogits/gogs/issues/3767)
+- Wiki 标题包含 Tab 键时崩溃 [#3916](https://github.com/gogits/gogs/issues/3916)
+- 无法通过 API 关闭里程碑 [#4102](https://github.com/gogits/gogs/issues/4102)
 - 完成合并请求后无法删除发起分支 [#4128](https://github.com/gogits/gogs/issues/4128)
+
+#### 功能改进
+
+- 允许使用短哈希下载仓库归档 [#3834](https://github.com/gogits/gogs/issues/3834)
 
 #### 新增特性
 
+- 支持 Discord Web 钩子
 - 支持 MSSQL [#3772](https://github.com/gogits/gogs/pull/3772)
 
 ### v0.9.141 @ 2017-02-11

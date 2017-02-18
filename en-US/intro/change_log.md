@@ -9,11 +9,20 @@ name: Changelog
 #### Bug fixes
 
 - Cannot install or start server without mail service
+- Out of memory when push large content through HTTP [#636](https://github.com/gogits/gogs/issues/636)
+- Cannot navigate to wiki page title contains `-` [#3754](https://github.com/gogits/gogs/issues/3754)
 - Cannot edit wiki page title contains `#` [#3767](https://github.com/gogits/gogs/issues/3767)
+- Crash when tabular spaces in title of wiki pages [#3916](https://github.com/gogits/gogs/issues/3916)
+- Cannot close a milestone using API [#4102](https://github.com/gogits/gogs/issues/4102)
 - Cannot delete branch after merging pull request [#4128](https://github.com/gogits/gogs/issues/4128)
+
+#### Improvements
+
+- Support short-hash for download archives [#3834](https://github.com/gogits/gogs/issues/3834)
 
 #### Features
 
+- Support Discord webhook
 - Support MSSQL [#3772](https://github.com/gogits/gogs/pull/3772)
 
 ### v0.9.141 @ 2017-02-11
