@@ -14,15 +14,19 @@ name: Changelog
 - Cannot edit wiki page title contains `#` [#3767](https://github.com/gogits/gogs/issues/3767)
 - Crash when tabular spaces in title of wiki pages [#3916](https://github.com/gogits/gogs/issues/3916)
 - Cannot close a milestone using API [#4102](https://github.com/gogits/gogs/issues/4102)
+- Repository local copy stops working after force push [#4123](https://github.com/gogits/gogs/issues/4123)
 - Cannot delete branch after merging pull request [#4128](https://github.com/gogits/gogs/issues/4128)
 
 #### Improvements
 
+- Add pagination to releases [#2164](https://github.com/gogits/gogs/issues/2164)
+- Assign issue to user with read-only access [#3739](https://github.com/gogits/gogs/issues/3739)
 - Support short-hash for download archives [#3834](https://github.com/gogits/gogs/issues/3834)
 
 #### Features
 
 - Support Discord webhook
+- Support protected branches [#776](https://github.com/gogits/gogs/issues/776)
 - Support MSSQL [#3772](https://github.com/gogits/gogs/pull/3772)
 
 ### v0.9.141 @ 2017-02-11
