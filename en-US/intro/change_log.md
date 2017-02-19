@@ -19,6 +19,7 @@ name: Changelog
 
 #### Improvements
 
+- Able to fork own repository [#1791](https://github.com/gogits/gogs/issues/1791)
 - Add pagination to releases [#2164](https://github.com/gogits/gogs/issues/2164)
 - Assign issue to user with read-only access [#3739](https://github.com/gogits/gogs/issues/3739)
 - Support short-hash for download archives [#3834](https://github.com/gogits/gogs/issues/3834)

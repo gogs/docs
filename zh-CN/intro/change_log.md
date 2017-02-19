@@ -19,6 +19,7 @@ name: 变更日志
 
 #### 功能改进
 
+- 允许派生自己的仓库 [#1791](https://github.com/gogits/gogs/issues/1791)
 - 版本发布增加分页功能 [#2164](https://github.com/gogits/gogs/issues/2164)
 - 允许将工单指定给只读权限的成员 [#3739](https://github.com/gogits/gogs/issues/3739)
 - 允许使用短哈希下载仓库归档 [#3834](https://github.com/gogits/gogs/issues/3834)
