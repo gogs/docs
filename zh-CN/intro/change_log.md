@@ -23,6 +23,7 @@ name: 变更日志
 - 版本发布增加分页功能 [#2164](https://github.com/gogits/gogs/issues/2164)
 - 允许将工单指定给只读权限的成员 [#3739](https://github.com/gogits/gogs/issues/3739)
 - 允许使用短哈希下载仓库归档 [#3834](https://github.com/gogits/gogs/issues/3834)
+- 文件差异对比页面可以高亮某一行
 
 #### 新增特性
 
