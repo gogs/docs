@@ -103,4 +103,4 @@ $ cd $GOPATH/src/github.com/gogits/gogs
 $ go build -tags "sqlite pam cert"
 ```
 
-安装完成后可继续参照 [配置与运行](configuration_and_run.html)。
+安装完成后可继续参照 [配置与运行](configuration_and_run.md)。
