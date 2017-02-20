@@ -65,16 +65,6 @@ $ cd $GOPATH/src/github.com/gogits/gogs
 $ go build
 ```
 
-If you have gopm available, you can try the following way to install Gogs:
-
-```sh
-# Check update of gopm
-$ gopm update -v
-
-# Download and build binary
-$ gopm bin -u -v gogs -d path/to/anywhere
-```
-
 ### Build from `develop` branch
 
 In case you want to try `develop` (or any other) branch:
@@ -86,7 +76,6 @@ $ cd $GOPATH/src/github.com/gogits
 # Make sure you don't use "https://github.com/gogits/gogs.git"
 $ git clone --depth=1 -b develop https://github.com/gogits/gogs
 $ cd gogs
-$ go get -u ./...
 $ go build
 ```
 

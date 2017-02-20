@@ -21,7 +21,7 @@ name: Troubleshooting
 - Causes: you moved Gogs binary to a different location from previous installation. 
 - Solution: go to admin dashboard (`/admin`) and run two tasks:
 	- `Rewrite '.ssh/authorized_keys' file`
-	- `Rewrite all update hook of repositories`
+	- `Resync pre-receive, update and post-receive hooks of all repositories`
 
 #### Push succeeds, but the dashboard timeline doesn't update
 
@@ -52,13 +52,6 @@ This happens more often when you store repositories on a mounted device.
 - Error: `repo.NewRepoContext(fail to set git user.email):`
 - Causes: it happens when Windows users install Git Bash without enabling the `cmd` option
 - Solution: reinstall and enable `cmd` option.
-
-## Form Validation
-
-- Error: `Repository/User name contains illegal characters`
-- Causes: in order to prevent unexpected exceptions, your user/repository name will be considered as illegal if they match any of the following rules:
-	- Name equals to any word of `"debug", "raw", "install", "api", "avatar", "user", "org", "help", "stars", "issues", "pulls", "commits", "repo", "template", "admin", "new"`.
-	- Name has suffix `".git", ".keys"`.
 
 ## Cache
 

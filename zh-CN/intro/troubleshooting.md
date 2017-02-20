@@ -21,7 +21,7 @@ name: 故障排查
 - 可能原因：您升级 Gogs 后将其移动到了和之前安装位置不同的目录
 - 解决方案：到管理员控制面板（`/admin`）执行以下操作：
 	- `重新生成 '.ssh/authorized_keys' 文件`
-	- `重新生成所有仓库的 Update 钩子`
+	- `重新同步所有仓库的 pre-receive、update 和 post-receive 钩子`
 
 #### 推送成功但控制面板没有活动更新
 
@@ -50,13 +50,6 @@ name: 故障排查
 - 错误描述：`repo.NewRepoContext(fail to set git user.email):`
 - 可能原因：该错误会发生在 Windows 安装 Git Bash 时未启用 `cmd` 选项。
 - 解决方案：重装并启用 `cmd` 选项。
-
-## 表单验证
-
-- 错误描述：`Repository/User name contains illegal characters`
-- 可能原因：为了防止不必要的异常，您的用户名或仓库在符合以下任意一条规则时会被认为非法：
-	- 名称为 `"debug", "raw", "install", "api", "avatar", "user", "org", "help", "stars", "issues", "pulls", "commits", "repo", "template", "admin", "new"`。
-	- 名称后缀为 `".git", ".keys"`。
 
 ## Cache
 

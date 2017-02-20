@@ -4,7 +4,7 @@ name: From packages
 
 # Install from packages
 
-Those are third-party providers, use on your own risks.
+**Those are third-party providers, use on your own risks.**
 
 ### Packager.io
 

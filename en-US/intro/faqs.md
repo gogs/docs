@@ -182,10 +182,6 @@ This is a **high-level permission which can damage your system** which you must 
 
 The current version of Gogs is written in plain text in the file `templates/.VERSION`.
 
-#### What is the `gogs serv` command for?
-
-You have no reason to execute this command manually; it will be called by the Git update hook whenever new SSH pushes arrive.
-
 #### Why Gogs isn't collaborating on its own?
 
 When was your last pull request to Gogs?

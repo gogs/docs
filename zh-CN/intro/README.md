@@ -24,9 +24,13 @@ Gogs 的目标是打造一个最简单、最快速和最轻松的方式搭建自
     - [emojify.js](https://github.com/Ranks/emojify.js)
     - [jQuery Date Time Picker](https://github.com/xdan/datetimepicker)
     - [jQuery MiniColors](https://github.com/claviska/jquery-minicolors)
+    - [CodeMirror](https://codemirror.net/)
+    - [notebook.js](https://github.com/jsvine/notebookjs)
+    - [marked](https://github.com/chjj/marked)
 - ORM：[Xorm](https://github.com/go-xorm/xorm)
 - 数据库驱动：
     - [github.com/go-sql-driver/mysql](https://github.com/go-sql-driver/mysql)
     - [github.com/lib/pq](https://github.com/lib/pq)
     - [github.com/mattn/go-sqlite3](https://github.com/mattn/go-sqlite3)
+    - [github.com/denisenkom/go-mssqldb](https://github.com/denisenkom/go-mssqldb)
 - 以及其它所有 Go 语言的第三方包依赖。

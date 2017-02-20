@@ -59,16 +59,6 @@ $ cd $GOPATH/src/github.com/gogits/gogs
 $ go build
 ```
 
-如果您已经安装 gopm，则可以尝试使用以下方式安装：
-
-```sh
-# 检查更新 Gopm
-$ gopm update -v
-
-# 下载并构建二进制
-$ gopm bin -u -v gogs -d path/to/anywhere
-```
-
 ### 构建 `develop` 分支版本
 
 如果您想要安装 `develop`（或其它）分支版本，则可以通过以下命令：
@@ -80,7 +70,6 @@ $ cd $GOPATH/src/github.com/gogits
 # 请确保没有使用 “https://github.com/gogits/gogs.git”
 $ git clone --depth=1 -b develop https://github.com/gogits/gogs
 $ cd gogs
-$ go get -u ./...
 $ go build
 ```
 

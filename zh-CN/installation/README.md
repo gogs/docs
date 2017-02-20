@@ -7,7 +7,9 @@ name: 下载安装
 - 数据库（选择以下一项）：
     - [MySQL](http://dev.mysql.com)：版本 >= 5.5.3
     - [PostgreSQL](http://www.postgresql.org/)
-    - 或者 **什么都不安装** 直接使用 SQLite3 或 TiDB
+    - [MSSQL](https://en.wikipedia.org/wiki/Microsoft_SQL_Server)
+    - [TiDB](https://github.com/pingcap/tidb)（实验性支持，使用 MySQL 协议连接）
+    - 或者 **什么都不安装** 直接使用 SQLite3
 - [git](http://git-scm.com/)（bash）：
     - 服务端和客户端均需版本 >= 1.7.1
     - Windows 系统建议使用最新版
@@ -17,7 +19,7 @@ name: 下载安装
 
 ### 安装数据库
 
-Gogs 支持 MySQL、PostgreSQL、SQLite3 和 TiDB（实验性支持），请根据您的选择进行安装：
+请根据您的选择进行安装：
 
 - [MySQL](http://dev.mysql.com/downloads/mysql/)（引擎：INNODB）
 - [PostgreSQL](http://www.postgresql.org/download/)
@@ -30,14 +32,14 @@ Gogs 支持 MySQL、PostgreSQL、SQLite3 和 TiDB（实验性支持），请根�
 
 假设您已经安装 [Homebrew](http://brew.sh/)：
 
-```
+```sh
 $ brew update
 $ brew install git
 ```
 
 #### Debian/Ubuntu
 
-```
+```sh
 $ sudo apt-get update
 $ sudo apt-get install git
 ```

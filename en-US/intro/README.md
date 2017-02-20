@@ -25,9 +25,12 @@ The goal of this project is to make the easiest, fastest, and most painless way 
     - [jQuery Date Time Picker](https://github.com/xdan/datetimepicker)
     - [jQuery MiniColors](https://github.com/claviska/jquery-minicolors)
     - [CodeMirror](https://codemirror.net/)
+    - [notebook.js](https://github.com/jsvine/notebookjs)
+    - [marked](https://github.com/chjj/marked)
 - ORM: [Xorm](https://github.com/go-xorm/xorm)
 - Database Drivers:
     - [github.com/go-sql-driver/mysql](https://github.com/go-sql-driver/mysql)
     - [github.com/lib/pq](https://github.com/lib/pq)
     - [github.com/mattn/go-sqlite3](https://github.com/mattn/go-sqlite3)
+    - [github.com/denisenkom/go-mssqldb](https://github.com/denisenkom/go-mssqldb)
 - And all other Go package dependencies

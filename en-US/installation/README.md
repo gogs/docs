@@ -7,7 +7,9 @@ name: Installation
 - Database (choose one of following):
     - [MySQL](http://dev.mysql.com): Version >= 5.5.3
     - [PostgreSQL](http://www.postgresql.org/)
-    - or **NOTHING** with SQLite3 or TiDB (experimental)
+    - [MSSQL](https://en.wikipedia.org/wiki/Microsoft_SQL_Server)
+    - [TiDB](https://github.com/pingcap/tidb) (experimental, connect by MySQL protocol)
+    - or **NOTHING** with SQLite3
 - [Git](http://git-scm.com/) (bash):
     - Version >= 1.7.1 for both server and client sides
     - Best to use latest version for Windows
@@ -15,9 +17,9 @@ name: Installation
     - **Ignore this if you're only going to use HTTP/HTTPS or use builtin SSH server**
     - Recommend [Cygwin OpenSSH](http://docs.oracle.com/cd/E24628_01/install.121/e22624/preinstall_req_cygwin_ssh.htm) or [Copssh](https://www.itefix.net/copssh) for Windows.
 
-### Install Database
+### Install database
 
-Gogs supports MySQL, PostgreSQL, SQLite3 and TiDB. Based on your choice, install either one of them or skip this step:
+Based on your choice, install one of supported databases or skip this step:
 
 - [MySQL](http://dev.mysql.com/downloads/mysql/) (Engine: INNODB)
 - [PostgreSQL](http://www.postgresql.org/download/)
@@ -30,14 +32,14 @@ Gogs supports MySQL, PostgreSQL, SQLite3 and TiDB. Based on your choice, install
 
 Assume you've installed [Homebrew](http://brew.sh/) already:
 
-```
+```sh
 $ brew update
 $ brew install git
 ```
 
 #### Debian/Ubuntu
 
-```
+```sh
 $ sudo apt-get update
 $ sudo apt-get install git
 ```
