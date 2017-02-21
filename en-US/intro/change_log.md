@@ -31,6 +31,10 @@ name: Changelog
 - Support protected branches [#776](https://github.com/gogits/gogs/issues/776)
 - Support MSSQL [#3772](https://github.com/gogits/gogs/pull/3772)
 
+#### Others
+
+- Stop supporting 0.6.x
+
 ### v0.9.141 @ 2017-02-11
 
 #### Bug fixes

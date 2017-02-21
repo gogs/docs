@@ -31,6 +31,10 @@ name: 变更日志
 - 支持保护分支 [#776](https://github.com/gogits/gogs/issues/776)
 - 支持 MSSQL [#3772](https://github.com/gogits/gogs/pull/3772)
 
+#### 其它变更
+
+- 停止支持 0.6.x 系列
+
 ### v0.9.141 @ 2017-02-11
 
 #### Bug 修复
