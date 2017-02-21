@@ -18,6 +18,36 @@ Name|Description
 `RUN_USER`|The name of the system user that runs Gogs. The best practice is to user `git`; however, change this to whatever your username is if you run Gogs on your personal computer. Gogs may crash if this value is not set properly.
 `RUN_MODE`|For performance and other purposes, change this to `prod` when deployed to a production environment. The installation process will set this to `prod` automatically.
 
+### Server (`server`)
+
+Name|Description
+----|-----------
+`PROTOCOL`|Either `http` or `https`.
+`DOMAIN`|Domain name of your server.
+`ROOT_URL`|Full public URL of Gogs server.
+`HTTP_ADDR`|HTTP listen address.
+`HTTP_PORT`|HTTP listen port.
+`UNIX_SOCKET_PERMISSION`|Permission for unix socket.
+`LOCAL_ROOT_URL`|Local (DMZ) URL for Gogs workers (such as SSH update) accessing web service. In most cases you do not need to change the default value. Alter it only if your SSH server node is not the same as HTTP node.
+`DISABLE_SSH`|Disables SSH feature when it's not available.
+`START_SSH_SERVER`|Starts built-in SSH server when enabled.
+`SSH_DOMAIN`|Domain name to be exposed in SSH clone URL. The domain name that public network can access to your standalone SSH server.
+`SSH_PORT`|Port number to be exposed in SSH clone URL. The port number that public network can access to your standalone SSH server, usually is the standard SSH port `22`.
+`SSH_LISTEN_HOST`|Network interface builtin SSH server listens on.
+`SSH_LISTEN_PORT`|Port number builtin SSH server listens on.
+`SSH_ROOT_PATH`|Root path of SSH directory, default is `~/.ssh`, but you have to use `/home/git/.ssh`.
+`SSH_KEY_TEST_PATH`|Directory to create temporary files when test publick key using ssh-keygen, default is system temporary directory.
+`SSH_KEYGEN_PATH`|Path to ssh-keygen, default is `ssh-keygen` and let shell find out which one to call.
+`MINIMUM_KEY_SIZE_CHECK`|Indicate whether to check minimum key size with corresponding type.
+`OFFLINE_MODE`|Disables use of CDN for static files and Gravatar for profile pictures.
+`DISABLE_ROUTER_LOG`|Mutes printing of the router log.
+`CERT_FILE`|Cert file path used for HTTPS.
+`KEY_FILE`|Key file path used for HTTPS.
+`STATIC_ROOT_PATH`|Upper level of template and static files path, default is the path where Gogs is located.
+`APP_DATA_PATH`|Default path for App data.
+`ENABLE_GZIP`|Enables application-level GZIP support.
+`LANDING_PAGE`|Non-logged-in users' landing page, either `home` or `explore`.
+
 ### Repository (`repository`)
 
 Name|Description
@@ -80,36 +110,6 @@ Name|Description
 `ENABLE_HARD_LINE_BREAK`|Whether or not to enable hard the line break extension.
 `CUSTOM_URL_SCHEMES`|List of custom URL-Schemes that are allowed as links when rendering Markdown, for example `git` (for `git://`) and `magnet` (for `magnet://`).
 `FILE_EXTENSIONS`|List of file extensions that should be rendered/edited as Markdown. Separate extensions with a comma. To render files without extension as Markdown, just put a comma.
-
-### Server (`server`)
-
-Name|Description
-----|-----------
-`PROTOCOL`|Either `http` or `https`.
-`DOMAIN`|Domain name of your server.
-`ROOT_URL`|Full public URL of Gogs server.
-`HTTP_ADDR`|HTTP listen address.
-`HTTP_PORT`|HTTP listen port.
-`UNIX_SOCKET_PERMISSION`|Permission for unix socket.
-`LOCAL_ROOT_URL`|Local (DMZ) URL for Gogs workers (such as SSH update) accessing web service. In most cases you do not need to change the default value. Alter it only if your SSH server node is not the same as HTTP node.
-`DISABLE_SSH`|Disables SSH feature when it's not available.
-`START_SSH_SERVER`|Starts built-in SSH server when enabled.
-`SSH_DOMAIN`|Domain name to be exposed in SSH clone URL. The domain name that public network can access to your standalone SSH server.
-`SSH_PORT`|Port number to be exposed in SSH clone URL. The port number that public network can access to your standalone SSH server, usually is the standard SSH port `22`.
-`SSH_LISTEN_HOST`|Network interface builtin SSH server listens on.
-`SSH_LISTEN_PORT`|Port number builtin SSH server listens on.
-`SSH_ROOT_PATH`|Root path of SSH directory, default is `~/.ssh`, but you have to use `/home/git/.ssh`.
-`SSH_KEY_TEST_PATH`|Directory to create temporary files when test publick key using ssh-keygen, default is system temporary directory.
-`SSH_KEYGEN_PATH`|Path to ssh-keygen, default is `ssh-keygen` and let shell find out which one to call.
-`MINIMUM_KEY_SIZE_CHECK`|Indicate whether to check minimum key size with corresponding type.
-`OFFLINE_MODE`|Disables use of CDN for static files and Gravatar for profile pictures.
-`DISABLE_ROUTER_LOG`|Mutes printing of the router log.
-`CERT_FILE`|Cert file path used for HTTPS.
-`KEY_FILE`|Key file path used for HTTPS.
-`STATIC_ROOT_PATH`|Upper level of template and static files path, default is the path where Gogs is located.
-`APP_DATA_PATH`|Default path for App data.
-`ENABLE_GZIP`|Enables application-level GZIP support.
-`LANDING_PAGE`|Non-logged-in users' landing page, either `home` or `explore`.
 
 ### HTTP (`http`)
 
