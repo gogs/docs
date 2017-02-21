@@ -4,7 +4,7 @@ name: Changelog
 
 # Changelog
 
-### Unreleased
+### 0.10 RC @ 2017-02-21
 
 #### Bug fixes
 
@@ -132,28 +132,4 @@ name: Changelog
 - Support migrate wiki with repository when available [#3233](https://github.com/gogits/gogs/pull/3233)
 - Support web editor for repository files [#3460](https://github.com/gogits/gogs/issues/3460)
 
-### v0.9.71 @ 2016-08-10
-
-#### Bug fixes
-
-- Release date does not use tag's create date when exist [#3315](https://github.com/gogits/gogs/issues/3315)
-- JavaScript line number breaks syntax highlighting element block [#3316](https://github.com/gogits/gogs/issues/3316)
-- Images breaks when use reverse proxy [#3348](https://github.com/gogits/gogs/issues/3348)
-- 500 when user leaves organization without relations to any repositories [#3379](https://github.com/gogits/gogs/issues/3379)
-- Pull request conflict status not updating properly [#3396](https://github.com/gogits/gogs/issues/3396)
-- Dashboard issues for organisations is limited to `num_repos` from the user [#3410](https://github.com/gogits/gogs/issues/3410)
-- Wrong dashboard issue count for create by you category [#3417](https://github.com/gogits/gogs/issues/3417)
-
-#### Improvements
-
-- Always response with go-import metadata when `?go-get=1` [#2825](https://github.com/gogits/gogs/issues/2825)
-- Add config option `[git.timeout] GC` for Git GC timeout [#3091](https://github.com/gogits/gogs/issues/3091)
-- Skip `RUN_USER` check on Windows [#3158](https://github.com/gogits/gogs/issues/3158)
-- Add config option `[mirror] DEFAULT_INTERVAL` for default interval of mirror checking [#3091](https://github.com/gogits/gogs/issues/3091)
-
-#### Features
-
-- Support federated avatars
-- Allow use `?render=1` to set HTML rendered in raw mode [#2593](https://github.com/gogits/gogs/issues/2593)
-
-**Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.71).**
+**Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.97).**

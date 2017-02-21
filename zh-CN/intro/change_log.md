@@ -4,7 +4,7 @@ name: 变更日志
 
 # 变更日志
 
-### 未发布
+### 0.10 RC @ 2017-02-21
 
 #### Bug 修复
 
@@ -132,28 +132,4 @@ name: 变更日志
 - 支持在迁移仓库同时迁移 Wiki [#3233](https://github.com/gogits/gogs/pull/3233)
 - 支持在线编辑仓库文件 [#3460](https://github.com/gogits/gogs/issues/3460)
 
-### v0.9.71 @ 2016-08-10
-
-#### Bug 修复
-
-- 当标签已经存在时，版本发布没用使用标签的创建时间 [#3315](https://github.com/gogits/gogs/issues/3315)
-- 使用反向代理时无法显示图片 [#3348](https://github.com/gogits/gogs/issues/3348)
-- JavaScript 行数生成破坏代码高亮的元素块 [#3316](https://github.com/gogits/gogs/issues/3316)
-- 用户离开组织时没有和任何仓库有关联时发生错误 [#3379](https://github.com/gogits/gogs/issues/3379)
-- 合并请求的冲突检查没有及时运行 [#3396](https://github.com/gogits/gogs/issues/3396)
-- 组织的控制面板工单显示受限于用户的 `num_repos` 字段 [#3410](https://github.com/gogits/gogs/issues/3410)
-- 工单控制面板由您创建分类的统计数字不正确 [#3417](https://github.com/gogits/gogs/issues/3417)
-
-#### 功能改进
-
-- 当 URL 参数包含 `?go-get=1` 时总是返回相应的 go-import 元数据 [#2825](https://github.com/gogits/gogs/issues/2825)
-- 增加配置选项 `[git.timeout] GC` 用于自定义 Git GC 超时 [#3091](https://github.com/gogits/gogs/issues/3091)
-- Windows 下不再检查 `RUN_USER` [#3158](https://github.com/gogits/gogs/issues/3158)
-- 增加配置选项 `[mirror] DEFAULT_INTERVAL` 用于自定义默认镜像更新检查间隔 [#3091](https://github.com/gogits/gogs/issues/3091)
-
-#### 新增特性
-
-- 支持 Federated Avatars
-- 允许使用 URL 参数 `?render=1` 使 HTML 在原始模式下返回渲染结果 [#2593](https://github.com/gogits/gogs/issues/2593)
-
-**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.71) 上找到。**
+**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.97) 上找到。**
