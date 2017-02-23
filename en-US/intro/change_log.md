@@ -4,6 +4,13 @@ name: Changelog
 
 # Changelog
 
+### Unreleased
+
+#### Bug fixes
+
+- Unexpected removal of migrated repository when wiki is detected
+- Cannot preview diff on web editor
+
 ### 0.10 RC @ 2017-02-21
 
 #### Bug fixes
