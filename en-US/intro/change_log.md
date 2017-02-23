@@ -10,6 +10,8 @@ name: Changelog
 
 - Unexpected removal of migrated repository when wiki is detected
 - Cannot preview diff on web editor
+- Organizational webhook last delivery status cannot be updated
+- Admin cannot delete organizational repository
 
 ### 0.10 RC @ 2017-02-21
 
