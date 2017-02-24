@@ -12,6 +12,7 @@ name: Changelog
 - Cannot preview diff on web editor
 - Organizational webhook last delivery status cannot be updated
 - Admin cannot delete organizational repository
+- Diff split view doesn't work on create pull reqeust [#3695](https://github.com/gogits/gogs/issues/3695)
 
 ### 0.10 RC @ 2017-02-21
 
