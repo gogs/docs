@@ -14,6 +14,10 @@ name: Changelog
 - Admin cannot delete organizational repository
 - Diff split view doesn't work on create pull reqeust [#3695](https://github.com/gogits/gogs/issues/3695)
 
+#### Improvements
+
+- Able to add organization member as repository collaborator
+
 ### 0.10 RC @ 2017-02-21
 
 #### Bug fixes
