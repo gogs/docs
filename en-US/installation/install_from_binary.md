@@ -4,7 +4,7 @@ name: From binary
 
 # Install from binary
 
-**Downloads are only available for latest 5 releases, older downloads can be found at [releases](https://github.com/gogits/gogs/releases?after=v0.9.97).**
+**Downloads are only available for latest 5 releases, older downloads can be found at [releases](https://github.com/gogits/gogs/releases?after=v0.9.113).**
 
 All downloads come with **MySQL**, **PostgreSQL** and **TiDB** (via MySQL protocol) support, and build **with tags `cert`**. Keep in mind that support status may be different from older releases, please follow the instructions on older Gogs instances.
 
@@ -69,16 +69,4 @@ All downloads come with **MySQL**, **PostgreSQL** and **TiDB** (via MySQL protoc
 |Windows|amd64|✅|❌|❌|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.113_windows_amd64.zip) \| [ZIP w/ mws](https://dl.gogs.io/gogs_v0.9.113_windows_amd64_mws.zip) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.113_windows_amd64.zip) \| [ZIP w/ mws](https://cdn.gogs.io/gogs_v0.9.113_windows_amd64_mws.zip)|
 |Mac OS|amd64|✅|❌|❌|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.113_darwin_amd64.zip) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.113_darwin_amd64.zip)|
 
-### v0.9.97 @ 2016-09-01
-
-|System|Type|SQLite|TiDB|PAM|Download ([GitHub](https://github.com/gogits/gogs/releases/tag/v0.9.97))|
-|------|----|------|----|---|--------|
-|Linux|386|✅|❌|✅|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.97_linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/gogs_v0.9.97_linux_386.tar.gz) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.97_linux_386.zip) \| [TAR.GZ](https://cdn.gogs.io/gogs_v0.9.97_linux_386.tar.gz)|
-|Linux|amd64|✅|❌|✅|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.97_linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/gogs_v0.9.97_linux_amd64.tar.gz) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.97_linux_amd64.zip) \| [TAR.GZ](https://cdn.gogs.io/gogs_v0.9.97_linux_amd64.tar.gz)|
-|Linux|arm|❌|❌|❌|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.97_linux_arm.zip) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.97_linux_arm.zip)|
-|Raspberry Pi|v2|✅|❌|✅|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.97_raspi2.zip) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.97_raspi2.zip)|
-|Windows|386|✅|❌|❌|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.97_windows_386.zip) \| [ZIP w/ mws](https://dl.gogs.io/gogs_v0.9.97_windows_386_mws.zip) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.97_windows_386.zip) \| [ZIP w/mws](https://cdn.gogs.io/gogs_v0.9.97_windows_386_mws.zip)|
-|Windows|amd64|✅|❌|❌|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.97_windows_amd64.zip) \| [ZIP w/ mws](https://dl.gogs.io/gogs_v0.9.97_windows_amd64_mws.zip) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.97_windows_amd64.zip) \| [ZIP w/ mws](https://cdn.gogs.io/gogs_v0.9.97_windows_amd64_mws.zip)|
-|Mac OS|amd64|✅|❌|❌|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.97_darwin_amd64.zip) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.97_darwin_amd64.zip)|
-
-See [Configuration and run](/docs/installation/configuration_and_run) to go further.
+See [Configuration and run](/docs/installation/configuration_and_run.html) to go further.

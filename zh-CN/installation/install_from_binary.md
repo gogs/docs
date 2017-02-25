@@ -4,7 +4,7 @@ name: 二进制安装
 
 # 二进制安装
 
-**目前只提供最近 5 次版本发布的二进制下载，更多版本下载请前往 [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.97) 查看。**
+**目前只提供最近 5 次版本发布的二进制下载，更多版本下载请前往 [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.113) 查看。**
 
 所有的版本都支持 **MySQL**、**PostgreSQL** 和 **TiDB**（使用 MySQL 协议）作为数据库，并且均使用构建标签（build tags）**`cert`** 进行构建。需要注意的是，不同的版本的支持状态有所不同，请根据实际的 Gogs 提示进行操作。
 
@@ -74,17 +74,5 @@ name: 二进制安装
 |Windows|386|✅|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.113_windows_386.zip) \| [ZIP w/ mws](https://dl.gogs.io/gogs_v0.9.113_windows_386_mws.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.113_windows_386.zip) \| [ZIP w/mws](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.113_windows_386_mws.zip)|
 |Windows|amd64|✅|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.113_windows_amd64.zip) \| [ZIP w/ mws](https://dl.gogs.io/gogs_v0.9.113_windows_amd64_mws.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.113_windows_amd64.zip) \| [ZIP w/ mws](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.113_windows_amd64_mws.zip)|
 |Mac OS|amd64|✅|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.113_darwin_amd64.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.113_darwin_amd64.zip)|
-
-### v0.9.97 @ 2016-09-01
-
-|系统名称|系统类型|SQLite|TiDB|PAM|下载（[GitHub](https://github.com/gogits/gogs/releases/tag/v0.9.97)）|
-|------|----|------|----|---|--------|
-|Linux|386|✅|❌|✅|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.97_linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/gogs_v0.9.97_linux_386.tar.gz) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.97_linux_386.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.97_linux_386.tar.gz)|
-|Linux|amd64|✅|❌|✅|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.97_linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/gogs_v0.9.97_linux_amd64.tar.gz) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.97_linux_amd64.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.97_linux_amd64.tar.gz)|
-|Linux|arm|❌|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.97_linux_arm.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.97_linux_arm.zip)|
-|Raspberry Pi|v2|✅|❌|✅|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.97_raspi2.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.97_raspi2.zip)|
-|Windows|386|✅|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.97_windows_386.zip) \| [ZIP w/ mws](https://dl.gogs.io/gogs_v0.9.97_windows_386_mws.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.97_windows_386.zip) \| [ZIP w/mws](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.97_windows_386_mws.zip)|
-|Windows|amd64|✅|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.97_windows_amd64.zip) \| [ZIP w/ mws](https://dl.gogs.io/gogs_v0.9.97_windows_amd64_mws.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.97_windows_amd64.zip) \| [ZIP w/ mws](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.97_windows_amd64_mws.zip)|
-|Mac OS|amd64|✅|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.97_darwin_amd64.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.97_darwin_amd64.zip)|
 
 安装完成后可继续参照 [配置与运行](configuration_and_run.html)。
