@@ -13,10 +13,17 @@ name: 变更日志
 - 组织级 Web 钩子最后推送状态无法被更新
 - 管理员无法删除组织仓库
 - 创建合并请求页面无法查看分列视图 [#3695](https://github.com/gogits/gogs/issues/3695)
+- 无法编辑派生仓库的版本发布 [#4174](https://github.com/gogits/gogs/issues/4174)
 
 #### 功能改进
 
 - 允许添加组织成员为仓库协作者
+- 允许设置自定义页面头部和底部内容 [#1286](https://github.com/gogits/gogs/issues/1286)
+- 允许测试推送只触发当前浏览的 Web 钩子 [#3030](https://github.com/gogits/gogs/issues/3030)
+- 允许仅启用部分类型的 Web 钩子 [#3356](https://github.com/gogits/gogs/issues/3356)
+- 支持 Web 钩子发送 SHA256 HMAC 校验和 [#3692](https://github.com/gogits/gogs/issues/3692)
+- 添加配置选项 `[session] CSRF_COOKIE_NAME` 用于自定义 CSRF Cookie 名称 [#4172](https://github.com/gogits/gogs/issues/4172)
+- 允许为组织仓库添加用户和团队推送白名单 [#4177](https://github.com/gogits/gogs/issues/4177)
 
 ### 0.10 RC @ 2017-02-21
 

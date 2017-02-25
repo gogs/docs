@@ -13,10 +13,17 @@ name: Changelog
 - Organizational webhook last delivery status cannot be updated
 - Admin cannot delete organizational repository
 - Diff split view doesn't work on create pull reqeust [#3695](https://github.com/gogits/gogs/issues/3695)
+- Cannot edit release of fork repository [#4174](https://github.com/gogits/gogs/issues/4174)
 
 #### Improvements
 
 - Able to add organization member as repository collaborator
+- Able to add custom head/footer [#1286](https://github.com/gogits/gogs/issues/1286)
+- Able to send test delivery for specific webhook [#3030](https://github.com/gogits/gogs/issues/3030)
+- Able to enable webhook types on choice [#3356](https://github.com/gogits/gogs/issues/3356)
+- Able to send SHA256 HMAC hex digest for webhooks [#3692](https://github.com/gogits/gogs/issues/3692)
+- Add config option `[session] CSRF_COOKIE_NAME` for custom CSRF cookie name [#4172](https://github.com/gogits/gogs/issues/4172)
+- Able to whitelist users and teams for protect branch of organizational repository [#4177](https://github.com/gogits/gogs/issues/4177)
 
 ### 0.10 RC @ 2017-02-21
 
