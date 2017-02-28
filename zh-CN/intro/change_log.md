@@ -4,7 +4,7 @@ name: 变更日志
 
 # 变更日志
 
-### 未发布
+### 0.10 @ 2017-02-27
 
 #### Bug 修复
 
@@ -133,28 +133,4 @@ name: 变更日志
 
 - 增加韩语和加利西亚语支持
 
-### v0.9.97 @ 2016-09-01
-
-#### Bug 修复
-
-- 只有拥有仓库可写权限的用户能发表评论
-- 对比差异符号（+/-）没有显示 [#3464](https://github.com/gogits/gogs/pull/3464)
-- 归档文件在 Windows 下包含了绝对路径 [#3535](https://github.com/gogits/gogs/pull/3535)
-
-#### 功能改进
-
-- 支持 git-daemon-export-ok 文件 [#2940](https://github.com/gogits/gogs/issues/2940)
-- 登陆后重定向到初始页面 [#3089](https://github.com/gogits/gogs/issues/3089)
-- 使用用户名作为邮件 FROM 字段的值 [#3279](https://github.com/gogits/gogs/issues/3279)
-
-#### 新增特性
-
-- 支持标签模板 [#1562](https://github.com/gogits/gogs/issues/1562)
-- 支持通过 UI 同步镜像仓库 [#2018](https://github.com/gogits/gogs/issues/2018)
-- 支持合并请求的 Web 钩子 [#2246](https://github.com/gogits/gogs/pull/2246)
-- 支持监听 Unix 套接字 [#2852](https://github.com/gogits/gogs/pull/2852)
-- 支持通过 Unix 套接字连接 PostgreSQL 数据库 [#3013](https://github.com/gogits/gogs/issues/3013)
-- 支持在迁移仓库同时迁移 Wiki [#3233](https://github.com/gogits/gogs/pull/3233)
-- 支持在线编辑仓库文件 [#3460](https://github.com/gogits/gogs/issues/3460)
-
-**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.97) 上找到。**
+**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.113) 上找到。**

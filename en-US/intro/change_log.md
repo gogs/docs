@@ -4,7 +4,7 @@ name: Changelog
 
 # Changelog
 
-### Unreleased
+### 0.10 @ 2017-02-27
 
 #### Bug fixes
 
@@ -133,28 +133,4 @@ name: Changelog
 
 - Add Korean and Galician support
 
-### v0.9.97 @ 2016-09-01
-
-#### Bug fixes
-
-- Only user with repository write access can make comments 
-- Diff signs (+/-) are not showing [#3464](https://github.com/gogits/gogs/pull/3464)
-- Archive includes full path on Windows [#3535](https://github.com/gogits/gogs/pull/3535)
-
-#### Improvements
-
-- Add git-daemon-export-ok support [#2940](https://github.com/gogits/gogs/issues/2940)
-- Redirect to landing page after login [#3089](https://github.com/gogits/gogs/issues/3089)
-- Use user name as email FROM value [#3279](https://github.com/gogits/gogs/issues/3279)
-
-#### Features
-
-- Support lable templates [#1562](https://github.com/gogits/gogs/issues/1562)
-- Support sync mirror repository on UI [#2018](https://github.com/gogits/gogs/issues/2018)
-- Support webhooks for pull requests [#2246](https://github.com/gogits/gogs/pull/2246)
-- Support listen on unix socket [#2852](https://github.com/gogits/gogs/pull/2852)
-- Support PostgreSQL with unix socket [#3013](https://github.com/gogits/gogs/issues/3013)
-- Support migrate wiki with repository when available [#3233](https://github.com/gogits/gogs/pull/3233)
-- Support web editor for repository files [#3460](https://github.com/gogits/gogs/issues/3460)
-
-**Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.97).**
+**Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.113).**
