@@ -4,7 +4,7 @@ name: Webhook
 
 # Webhook
 
-Gogs supports web hooks for repository events, you can find it in settings page(`/:username/:reponame/settings/hooks`). All event pushes are POST requests, and we currently support two versions of formats: Gogs and Slack.
+Gogs supports web hooks for repository events, you can find it in settings page(`/:username/:reponame/settings/hooks`). All event pushes are POST requests, and we currently support three versions of formats: Gogs, Slack, and Discord.
 
 ### Event information
 
