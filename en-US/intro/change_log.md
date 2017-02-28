@@ -4,6 +4,12 @@ name: Changelog
 
 # Changelog
 
+### 0.10.1 @ 2017-02-29
+
+#### Bug fixes
+
+- Non-organizational repository cannot save branch protection options
+
 ### 0.10 @ 2017-02-27
 
 #### Bug fixes
