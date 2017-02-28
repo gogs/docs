@@ -50,6 +50,7 @@ $ echo 'export GOROOT=$HOME/local/go' >> $HOME/.bashrc
 $ echo 'export GOPATH=$HOME/go' >> $HOME/.bashrc
 $ echo 'export PATH=$PATH:$GOROOT/bin:$GOPATH/bin' >> $HOME/.bashrc
 $ source $HOME/.bashrc
+$ mkdir -p $GOROOT
 ```
 
 ## Install Gogs
