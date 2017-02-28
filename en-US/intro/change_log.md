@@ -4,6 +4,18 @@ name: Changelog
 
 # Changelog
 
+### Unreleased
+
+#### Bug fixes
+
+- link contains an image does not point to the correct URL [#2636](https://github.com/gogits/gogs/issues/2636)
+- Web editor cannot create branch with slash [#3568](https://github.com/gogits/gogs/issues/3568)
+
+#### Improvements
+
+- Use `text/html` as default email content encoding and use `[mailer] USE_PLAIN_TEXT` to disable it
+- Able to perform initial commit on behave of actual user
+
 ### 0.10.1 @ 2017-02-29
 
 #### Bug fixes

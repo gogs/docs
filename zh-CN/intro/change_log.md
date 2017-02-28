@@ -4,6 +4,18 @@ name: 变更日志
 
 # 变更日志
 
+### 未发布
+
+#### Bug 修复
+
+- 包含图片的链接无法指向正确的 URL [#2636](https://github.com/gogits/gogs/issues/2636)
+- Web 编辑器无法创建带有斜杠的分支 [#3568](https://github.com/gogits/gogs/issues/3568)
+
+#### 功能改进
+
+- 邮箱文本编码默认设置为 `text/html`，并可使用配置选项 `[mailer] USE_PLAIN_TEXT` 禁用
+- 使用创建仓库的用户信息作为首个代码提交的作者，而不是系统用户
+
 ### 0.10.1 @ 2017-02-29
 
 #### Bug 修复
