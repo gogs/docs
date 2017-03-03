@@ -10,6 +10,7 @@ name: 变更日志
 
 - 包含图片的链接无法指向正确的 URL [#2636](https://github.com/gogits/gogs/issues/2636)
 - Web 编辑器无法创建带有斜杠的分支 [#3568](https://github.com/gogits/gogs/issues/3568)
+- Web 钩子的忽略 TLS 验证选项无法生效 [#4228](https://github.com/gogits/gogs/issues/4228)
 
 #### 功能改进
 

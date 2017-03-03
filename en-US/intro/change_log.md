@@ -10,6 +10,7 @@ name: Changelog
 
 - link contains an image does not point to the correct URL [#2636](https://github.com/gogits/gogs/issues/2636)
 - Web editor cannot create branch with slash [#3568](https://github.com/gogits/gogs/issues/3568)
+- Webhook Skip TLS Verify setting doesn't take effect [#4228](https://github.com/gogits/gogs/issues/4228)
 
 #### Improvements
 
