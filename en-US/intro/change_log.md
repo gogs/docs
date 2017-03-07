@@ -8,6 +8,7 @@ name: Changelog
 
 #### Bug fixes
 
+- Git hooks do not work on Windows `mws` version
 - link contains an image does not point to the correct URL [#2636](https://github.com/gogits/gogs/issues/2636)
 - Web editor cannot create branch with slash [#3568](https://github.com/gogits/gogs/issues/3568)
 - Cannot clone a repository without `.git` suffix [#4189](https://github.com/gogits/gogs/issues/4189)
