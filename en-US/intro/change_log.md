@@ -11,12 +11,15 @@ name: Changelog
 - link contains an image does not point to the correct URL [#2636](https://github.com/gogits/gogs/issues/2636)
 - Web editor cannot create branch with slash [#3568](https://github.com/gogits/gogs/issues/3568)
 - Cannot clone a repository without `.git` suffix [#4189](https://github.com/gogits/gogs/issues/4189)
+- Git hook working directory is not repository directory [#4225](https://github.com/gogits/gogs/issues/4225)
+- Regression on `go get` support [#4226](https://github.com/gogits/gogs/issues/4226)
 - Webhook Skip TLS Verify setting doesn't take effect [#4228](https://github.com/gogits/gogs/issues/4228)
 
 #### Improvements
 
 - Use `text/html` as default email content encoding and use `[mailer] USE_PLAIN_TEXT` to disable it
 - Able to perform initial commit on behave of actual user
+- Support Gogs-related environment variables for Git hooks [#4094](https://github.com/gogits/gogs/issues/4094)
 
 ### 0.10.1 @ 2017-02-29
 

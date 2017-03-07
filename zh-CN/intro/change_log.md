@@ -11,12 +11,15 @@ name: 变更日志
 - 包含图片的链接无法指向正确的 URL [#2636](https://github.com/gogits/gogs/issues/2636)
 - Web 编辑器无法创建带有斜杠的分支 [#3568](https://github.com/gogits/gogs/issues/3568)
 - 克隆仓库时无法省略 `.git` 后缀 [#4189](https://github.com/gogits/gogs/issues/4189)
+- Git 钩子工作目录不是仓库目录 [#4225](https://github.com/gogits/gogs/issues/4225)
+- `go get` 功能支持回退 [#4226](https://github.com/gogits/gogs/issues/4226)
 - Web 钩子的忽略 TLS 验证选项无法生效 [#4228](https://github.com/gogits/gogs/issues/4228)
 
 #### 功能改进
 
 - 邮箱文本编码默认设置为 `text/html`，并可使用配置选项 `[mailer] USE_PLAIN_TEXT` 禁用
 - 使用创建仓库的用户信息作为首个代码提交的作者，而不是系统用户
+- 支持 Gogs 相关的 Git 钩子环境变量 [#4094](https://github.com/gogits/gogs/issues/4094)
 
 ### 0.10.1 @ 2017-02-29
 
