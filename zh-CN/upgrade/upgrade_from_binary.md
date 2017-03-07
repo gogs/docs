@@ -28,10 +28,10 @@ $ mv gogs gogs_old
 
 ```bash
 # 请根据系统和类型获取相应的二进制版本
-$ wget https://dl.gogs.io/gogs_v$VERSION_$OS_$ARCH.tar.gz
-$ tar -zxvf gogs_v$VERSION_$OS_$ARCH.tar.gz
+$ wget wget https://dl.gogs.io/$VERSION/$OS_$ARCH.tar.gz
+$ tar -zxvf $OS_$ARCH.tar.gz
 $ ls
-gogs gogs_old  gogs-repositories gogs_v$VERSION_$OS_$ARCH.tar.gz
+gogs gogs_old  gogs-repositories $OS_$ARCH.tar.gz
 ```
 
 复制 `custom`、`data` 和 `log` 目录到新解压的目录中：
