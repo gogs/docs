@@ -78,31 +78,6 @@ Name|Description
 `FILE_MAX_SIZE`|Maximum size of each file in MB.
 `MAX_FILES`|Maximum number of files per upload.
 
-### UI (`ui`)
-
-Name|Description
-----|-----------
-`EXPLORE_PAGING_NUM`|Number of repositories that are shown in one explore page.
-`ISSUE_PAGING_NUM`|Number of issues that are shown in one page (for all pages that list issues).
-`FEED_MAX_COMMIT_NUM`|Number of maximum commits shown in one activity feed.
-`THEME_COLOR_META_TAG`|Value of "theme-color" meta tag, used by Android >= 5.0. An invalid color like "none" or "disable" will have the default style, see [more info](https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android).
-`MAX_DISPLAY_FILE_SIZE`|Max size in bytes of files to be displayed.
-
-#### UI - Admin (`ui.admin`)
-
-Name|Description
-----|-----------
-`USER_PAGING_NUM`|Number of users that are shown in one page in admin panel.
-`REPO_PAGING_NUM`|Number of repos that are shown in one page in admin panel.
-`NOTICE_PAGING_NUM`|Number of notices that are shown in one page in admin panel.
-`ORG_PAGING_NUM`|Number of organizations that are shown in one page in admin panel.
-
-#### UI - User (`ui.user`)
-
-Name|Description
-----|-----------
-`REPO_PAGING_NUM`|Number of repos that are showed in one page for user related pages.
-
 ### Markdown (`markdown`)
 
 Name|Description
@@ -128,6 +103,12 @@ Name|Description
 `PASSWD`|Database user password.
 `SSL_MODE`|For PostgreSQL only.
 `PATH`|For SQLite3 only, the database file path.
+
+### Admin (`admin`)
+
+Name|Description
+----|-----------
+`DISABLE_REGULAR_ORG_CREATION`|Disable regular (non-admin) users to create organizations.
 
 ### Security (`security`)
 
@@ -162,6 +143,7 @@ Name|Description
 
 Name|Description
 ----|-----------
+`TYPES`|Types are enabled for users to use, can be "gogs", "slack", "discord".
 `DELIVER_TIMEOUT`|Delivery timeout in seconds for shooting webhooks.
 `SKIP_TLS_VERIFY`|Indicate whether to allow insecure certification or not.
 `PAGING_NUM`|Number of webhook history that are shown in one page.
@@ -178,8 +160,9 @@ Name|Description
 `USER`|Username of mailer (usually just your e-mail address).
 `PASSWD`|Password of mailer.
 `SKIP_VERIFY`|Do not verify the self-signed certificates.
+`USE_PLAIN_TEXT`|Indicate whether to use `text/plain` as format of content or not.
 
-Note: Actually, Gogs supports only SMTP with STARTTLS.
+Note: Gogs supports only SMTP with STARTTLS.
 
 ### Cache (`cache`)
 
@@ -219,12 +202,18 @@ Name|Description
 `MAX_SIZE`|Maximum size in MB, e.g. `4`
 `MAX_FILES`|Maximum number of attachments can be uploaded at once, e.g. `5`.
 
+### Time (`time`)
+
+Name|Description
+----|-----------
+`FORMAT`|Specifies the format for fully outputed dates. Defaults to RFC1123. Special supported values are ANSIC, UnixDate, RubyDate, RFC822, RFC822Z, RFC850, RFC1123, RFC1123Z, RFC3339, RFC3339Nano, Kitchen, Stamp, StampMilli, StampMicro and StampNano. For more information about the format see http://golang.org/pkg/time/#pkg-constants.
+
 ### Log (`log`)
 
 Name|Description
 ----|-----------
 `ROOT_PATH`|Root path for log files.
-`MODE`|Logging mode, default is `console`. For multiple modes, use comma to separate it.
+`MODE`|Logging mode, default is `console`. For multiple modes, Use comma to separate multiple modes, e.g. "console, file".
 `LEVEL`|General log level, default is `Trace`.
 
 ### Cron (`cron`)
@@ -255,6 +244,14 @@ Name|Description
 `RUN_AT_START`|Enable this to run repository statistics check at start time.
 `SCHEDULE`|Cron syntax for scheduling repository statistics check, e.g. `@every 24h`.
 
+#### Cron - Repository Archives Cleanup (`cron.repo_archive_cleanup`)
+
+Name|Description
+----|-----------
+`RUN_AT_START`|Enable this to run repository archives cleanup at start time.
+`SCHEDULE`|Cron syntax for scheduling repository statistics check, e.g. `@every 24h`.
+`OLDER_THAN`|Time duration to check if archive should be cleaned, e.g. `24h`
+
 ### Git (`git`)
 
 Name|Description
@@ -263,6 +260,31 @@ Name|Description
 `MAX_GIT_DIFF_LINE_CHARACTERS`|Max number of characters of a line allowed in diff view.
 `MAX_GIT_DIFF_FILES`|Max number of files shown in diff view.
 `GC_ARGS`|Arguments for command `git gc`, e.g. `--aggressive --auto`.
+
+### UI (`ui`)
+
+Name|Description
+----|-----------
+`EXPLORE_PAGING_NUM`|Number of repositories that are shown in one explore page.
+`ISSUE_PAGING_NUM`|Number of issues that are shown in one page (for all pages that list issues).
+`FEED_MAX_COMMIT_NUM`|Number of maximum commits shown in one activity feed.
+`THEME_COLOR_META_TAG`|Value of "theme-color" meta tag, used by Android >= 5.0. An invalid color like "none" or "disable" will have the default style, see [more info](https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android).
+`MAX_DISPLAY_FILE_SIZE`|Max size in bytes of files to be displayed.
+
+#### UI - Admin (`ui.admin`)
+
+Name|Description
+----|-----------
+`USER_PAGING_NUM`|Number of users that are shown in one page in admin panel.
+`REPO_PAGING_NUM`|Number of repos that are shown in one page in admin panel.
+`NOTICE_PAGING_NUM`|Number of notices that are shown in one page in admin panel.
+`ORG_PAGING_NUM`|Number of organizations that are shown in one page in admin panel.
+
+#### UI - User (`ui.user`)
+
+Name|Description
+----|-----------
+`REPO_PAGING_NUM`|Number of repos that are showed in one page for user related pages.
 
 ### Other (`other`)
 
