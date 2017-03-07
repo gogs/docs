@@ -4,7 +4,7 @@ name: 变更日志
 
 # 变更日志
 
-### 未发布
+### 0.10.8 @ 2017-03-07
 
 #### Bug 修复
 
@@ -22,7 +22,7 @@ name: 变更日志
 - 使用创建仓库的用户信息作为首个代码提交的作者，而不是系统用户
 - 支持 Gogs 相关的 Git 钩子环境变量 [#4094](https://github.com/gogits/gogs/issues/4094)
 
-### 0.10.1 @ 2017-02-29
+### 0.10.1 @ 2017-02-28
 
 #### Bug 修复
 
@@ -129,32 +129,4 @@ name: 变更日志
 
 - 在用户设置中添加管理组织页面 [#3587](https://github.com/gogits/gogs/pull/3587)
 
-### v0.9.113 @ 2016-12-24
-
-#### Bug 修复
-
-- HTTP 推送占用大量内存 [#636](https://github.com/gogits/gogs/issues/636)
-- 使用 Mac OS X 系统下的 Safari 浏览器会使控制面板的最近活动强行分行 [#2875](https://github.com/gogits/gogs/issues/2875)
-- 生成错误的用户头像链接 [#3577](https://github.com/gogits/gogs/issues/3577)
-- 无法编辑版本发布草稿 [#3590](https://github.com/gogits/gogs/issues/3590)
-- 工单提交者删除帐户后无法加载工单
-- 攻击者可以删除任意用户的次要邮箱和应用令牌 [#3959](https://github.com/gogits/gogs/issues/3959)
-- 攻击者可以删除任意仓库的版本发布 [#3962](https://github.com/gogits/gogs/issues/3962)
-- 攻击者可以向工单添加任意仓库的标签
-
-#### 功能改进
-
-- 增加配置选项 `[other] SHOW_FOOTER_TEMPLATE_LOAD_TIME` 以隐藏模板执行时间 [#3492](https://github.com/gogits/gogs/issues/3492)
-
-#### 新增特性
-
-- 支持在探索页面搜索组织 [#2951](https://github.com/gogits/gogs/issues/2951)
-- 在完成合并请求后可删除对应分支 [#3225](https://github.com/gogits/gogs/pull/3225)
-- 支持禁用仓库相关的 HTTP 操作 [#3667](https://github.com/gogits/gogs/pull/3667)
-- 支持使用 HTML5 标签来播放视频文件 [#3967](https://github.com/gogits/gogs/pull/3967)
-
-#### 其它变更
-
-- 增加韩语和加利西亚语支持
-
-**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.113) 上找到。**
+**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.128) 上找到。**

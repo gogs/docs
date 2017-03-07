@@ -4,7 +4,7 @@ name: Changelog
 
 # Changelog
 
-### Unreleased
+### 0.10.8 @ 2017-03-07
 
 #### Bug fixes
 
@@ -22,7 +22,7 @@ name: Changelog
 - Able to perform initial commit on behave of actual user
 - Support Gogs-related environment variables for Git hooks [#4094](https://github.com/gogits/gogs/issues/4094)
 
-### 0.10.1 @ 2017-02-29
+### 0.10.1 @ 2017-02-28
 
 #### Bug fixes
 
@@ -129,32 +129,4 @@ name: Changelog
 
 - Add 'Organizations' page to user settings [#3587](https://github.com/gogits/gogs/pull/3587)
 
-### v0.9.113 @ 2016-12-24
-
-#### Bug fixes
-
-- HTTP push consumes a lot of RAM [#636](https://github.com/gogits/gogs/issues/636)
-- Dashboard feeds has unexpected line break on Mac OS X Safari [#2875](https://github.com/gogits/gogs/issues/2875)
-- Wrong avatar link for user [#3577](https://github.com/gogits/gogs/issues/3577)
-- 404 on release draft edition [#3590](https://github.com/gogits/gogs/issues/3590)
-- 500 when issue poster has deleted account
-- Ability to delete other people's secondary emails and application's tokens [#3959](https://github.com/gogits/gogs/issues/3959)
-- Ability to delete arbitrary repository's releases [#3962](https://github.com/gogits/gogs/issues/3962)
-- Ability to use labels from arbitrary repositories
-
-#### Improvements
-
-- Add config option `[other] SHOW_FOOTER_TEMPLATE_LOAD_TIME` to hide template load time [#3492](https://github.com/gogits/gogs/issues/3492)
-
-#### Features
-
-- Support search organizations on explore page [#2951](https://github.com/gogits/gogs/issues/2951)
-- Provide button to delete merged pull request branch [#3225](https://github.com/gogits/gogs/pull/3225)
-- Support disable HTTP operations of repository [#3667](https://github.com/gogits/gogs/pull/3667)
-- Support for video files using the HTML5 video tag [#3967](https://github.com/gogits/gogs/pull/3967)
-
-#### Others
-
-- Add Korean and Galician support
-
-**Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.113).**
+**Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.128).**
