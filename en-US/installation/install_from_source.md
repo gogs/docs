@@ -109,8 +109,7 @@ $ cd $GOPATH/src/github.com/gogits/gogs
 $ go build -tags "sqlite pam cert"
 ```
 
-If you get error: `fatal error: security/pam_appl.h: No such file or directory`
-then install missing package. `sudo apt-get install libpam0g-dev`
+If you get error: `fatal error: security/pam_appl.h: No such file or directory`, then install missing package via `sudo apt-get install libpam0g-dev`.
 
 ## Next steps
 
