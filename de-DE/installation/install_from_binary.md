@@ -8,7 +8,7 @@ Lade dir bei [GitHub die aktuellste Version von Gogs](https://github.com/gogits/
 
 ## Hinweis
 - Alle Versionen ab v0.7.33 unterstützen **MySQL** und **PostgreSQL** sowie **selbstsignierte Zertifikate**.
-- `mws` bedeutet eingebrauter Windows Service Support. Bitte nutze die jeweils andere Version, falls du NSSM nutzt.
+- `mws` bedeutet eingebauter Windows Service Support. Bitte nutze die jeweils andere Version, falls du NSSM nutzt.
 
 ## Wie die Downloads benutzen?
 
