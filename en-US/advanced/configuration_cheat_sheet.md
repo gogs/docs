@@ -137,7 +137,6 @@ Name|Description
 `ENABLE_REVERSE_PROXY_AUTO_REGISTRATION`|Enable this to allow auto-registration for reverse authentication.
 `DISABLE_MINIMUM_KEY_SIZE_CHECK`|Do not check minimum key size with corresponding type.
 `ENABLE_CAPTCHA`|Enable this to use captcha validation for registration.
-`ENABLE_GIT_HOOKS`|Enable the execution of git hooks commands located in `ROOT/[user name]/[repo name].git/hooks` which are different from webhooks
 
 ### Webhook (`webhook`)
 

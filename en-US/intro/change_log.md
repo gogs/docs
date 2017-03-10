@@ -4,6 +4,17 @@ name: Changelog
 
 # Changelog
 
+### Unreleased
+
+#### Bug fixes
+
+- Last updated is not changed after syncing for mirror repositories [#2807](https://github.com/gogits/gogs/issues/2807)
+
+#### Improvements
+
+- More webhook events
+- Whitelist users can bypass require pull request check for protected branches [#4207](https://github.com/gogits/gogs/issues/4207)
+
 ### 0.10.8 @ 2017-03-07
 
 #### Bug fixes
