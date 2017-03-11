@@ -9,6 +9,7 @@ name: Changelog
 #### Bug fixes
 
 - Last updated is not changed after syncing for mirror repositories [#2807](https://github.com/gogits/gogs/issues/2807)
+- **Regression** Cannot edit or view draft release [#4262](https://github.com/gogits/gogs/issues/4262)
 
 #### Improvements
 

@@ -9,6 +9,7 @@ name: 变更日志
 #### Bug 修复
 
 - 镜像仓库同步完成后未修改最后更新时间 [#2807](https://github.com/gogits/gogs/issues/2807)
+- **回退** 无法编辑和查看版本发布草稿 [#4262](https://github.com/gogits/gogs/issues/4262)
 
 #### 功能改进
 
