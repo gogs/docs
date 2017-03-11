@@ -15,6 +15,10 @@ name: 变更日志
 - 更多的 Web 钩子事件
 - 白名单用户可以跳过保护分支的合并请求检查 [#4207](https://github.com/gogits/gogs/issues/4207)
 
+#### 新增特性
+
+- 支持 Smartypants 以及其配置分区 `[smartypants]` [#4162](https://github.com/gogits/gogs/issues/4162)
+
 ### 0.10.8 @ 2017-03-07
 
 #### Bug 修复

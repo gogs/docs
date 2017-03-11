@@ -15,6 +15,10 @@ name: Changelog
 - More webhook events
 - Whitelist users can bypass require pull request check for protected branches [#4207](https://github.com/gogits/gogs/issues/4207)
 
+#### Features
+
+- Support Smartypants with config section `[smartypants]` [#4162](https://github.com/gogits/gogs/issues/4162)
+
 ### 0.10.8 @ 2017-03-07
 
 #### Bug fixes
