@@ -20,6 +20,7 @@ name: 变更日志
 #### 新增特性
 
 - 在管理面板显示仓库体积
+- 仓库分支页面 [#2310](https://github.com/gogits/gogs/issues/2310)
 - 支持 Smartypants 以及其配置分区 `[smartypants]` [#4162](https://github.com/gogits/gogs/issues/4162)
 
 ### 0.10.8 @ 2017-03-07
