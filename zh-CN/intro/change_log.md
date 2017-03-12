@@ -14,6 +14,7 @@ name: 变更日志
 #### 功能改进
 
 - 更多的 Web 钩子事件
+- 所有的工单参与者都会收到通知邮件 [#2929](https://github.com/gogits/gogs/issues/2929)
 - 白名单用户可以跳过保护分支的合并请求检查 [#4207](https://github.com/gogits/gogs/issues/4207)
 
 #### 新增特性

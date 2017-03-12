@@ -14,6 +14,7 @@ name: Changelog
 #### Improvements
 
 - More webhook events
+- Send notification emails to all issue participants [#2929](https://github.com/gogits/gogs/issues/2929)
 - Whitelist users can bypass require pull request check for protected branches [#4207](https://github.com/gogits/gogs/issues/4207)
 
 #### Features
