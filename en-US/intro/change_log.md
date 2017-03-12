@@ -19,6 +19,7 @@ name: Changelog
 
 #### Features
 
+- Able to view repository size in admin panel
 - Support Smartypants with config section `[smartypants]` [#4162](https://github.com/gogits/gogs/issues/4162)
 
 ### 0.10.8 @ 2017-03-07
