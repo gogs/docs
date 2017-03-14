@@ -20,6 +20,7 @@ name: Changelog
 #### Features
 
 - Able to view repository size in admin panel
+- Support add attachments to releases [#1614](https://github.com/gogits/gogs/issues/1614)
 - Repository branches page [#2310](https://github.com/gogits/gogs/issues/2310)
 - Support Smartypants with config section `[smartypants]` [#4162](https://github.com/gogits/gogs/issues/4162)
 
