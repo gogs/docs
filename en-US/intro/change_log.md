@@ -4,7 +4,7 @@ name: Changelog
 
 # Changelog
 
-### Unreleased
+### 0.10.18 @ 2017-03-14
 
 #### Bug fixes
 
