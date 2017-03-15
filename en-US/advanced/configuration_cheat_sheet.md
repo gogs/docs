@@ -66,7 +66,6 @@ Name|Description
 Name|Description
 ----|-----------
 `LINE_WRAP_EXTENSIONS`|List of file extensions that should have line wraps in the CodeMirror editor. Separate extensions with a comma. To line wrap files without extension, just put a comma, e.g. `.txt,`.
-`PREVIEWABLE_FILE_MODES`|Valid file modes that have a preview API associated with them, such as `api/v1/markdown`. Separate values by commas. Preview tab in edit mode won't show if the file extension doesn't match.
 
 #### Repository - Upload (`repository.upload`)
 

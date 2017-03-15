@@ -10,22 +10,72 @@ name: 配置文件手册
 
 完整的默认设置可以通过 [app.ini](https://github.com/gogits/gogs/blob/master/conf/app.ini) 文件查看。如果您看到类似 `%(X)s` 字符，这是由 [ini](https://github.com/go-ini/ini/tree/v1#recursive-values) 提供的递归取值的特性。
 
-任何带有 :exclamation: 标记的配置选项表示除非您完全了解修改后的影响，否则请保持默认值。
+### 概览
 
-## 概览
+名称|描述
+----|----
+`APP_NAME`|应用名称，可以改成您的组织或公司名称
+`RUN_USER`|运行应用的用户名称，我们建议您使用 `git`，但如果您在个人计算机上运行 Gogs，请修改为您的系统用户名称。如果没有正确设置这个值，很可能导致您的应用崩溃
+`RUN_MODE`|鉴于性能和其它考虑，建议在部署环境下修改为 `prod` 模式。在您完成安装操作时，该值也会被设置为 `prod`
 
-- `APP_NAME`：应用名称，可以改成您的组织或公司名称
-- `RUN_USER`：运行应用的用户名称，我们建议您使用 `git`，但如果您在个人计算机上运行 Gogs，请修改为您的系统用户名称。如果没有正确设置这个值，很可能导致您的应用崩溃
-- `RUN_MODE`：鉴于性能和其它考虑，建议在部署环境下修改为 `prod` 模式。在您完成安装操作时，该值也会被设置为 `prod`
+### 服务器 (`server`)
 
-## Repository (`repository`)
+名称|描述
+----|----
+`PROTOCOL`|`http` 或 `https`
+`DOMAIN`|服务器域名
+`ROOT_URL`|公开的完整 URL 路径
+`HTTP_ADDR`|应用 HTTP 监听地址
+`HTTP_PORT`|应用 HTTP 监听端口号
+`UNIX_SOCKET_PERMISSION`|Unix 套接字文件的权限
+`LOCAL_ROOT_URL`|用于 Gogs 工作进程（如：SSH）回访应用的本地（DMZ）URL，一般情况下请保持默认值，除非您的 SSH 服务器节点与 HTTP 并不是同一个节点入口
+`DISABLE_SSH`|当 SSH 功能不可用时可以禁用
+`START_SSH_SERVER`|启用该选项来启动内置 SSH 服务器
+`SSH_DOMAIN`|允许公用网络访问 SSH 的域名
+`SSH_PORT`|SSH 端口号，如果不为 `22` 的话可以在此修改
+`SSH_LISTEN_HOST`|内置 SSH 服务器监听的地址
+`SSH_LISTEN_PORT`|内置 SSH 服务器监听的端口
+`SSH_ROOT_PATH`|SSH 根目录，一般为 `~/.ssh`，但必须填写为 `/home/git/.ssh`
+`SSH_KEY_TEST_PATH`|用于测试 SSH 公钥的临时目录
+`SSH_KEYGEN_PATH`|`ssh-keygen` 程序的路径，默认为 `ssh-keygen` 即通过系统路径查找
+`MINIMUM_KEY_SIZE_CHECK`|指定不同类型的公钥的最小密钥大小
+`OFFLINE_MODE`|D激活该选项来禁止从 CDN 获取静态资源，同时 Gravatar 服务也将被自动禁用
+`DISABLE_ROUTER_LOG`|激活该选项来禁止打印路由日志
+`CERT_FILE`|HTTPS 授权文件路径
+`KEY_FILE`|HTTPS 的密钥文件路径
+`STATIC_ROOT_PATH`|模板文件和静态文件的上级目录，默认为应用二进制所在的位置
+`APP_DATA_PATH`|应用内部数据的存放目录
+`ENABLE_GZIP`|激活该选项来启用应用级别 GZIP 支持
+`LANDING_PAGE`|未登录用户的默认首页，可以是 `home` 或 `explore`（探索页）
 
-- `ROOT`：用户仓库存储根目录，必须为绝对路径，默认为 `~/<user name>/gogs-repositories`
-- `SCRIPT_TYPE`：系统脚本类型，一般情况下均为 `bash`，但有些用户反应只能使用 `sh`
-- `ANSI_CHARSET`：当遇到无法识别的字符集时使用的默认字符集
-- `FORCE_PRIVATE`：强制要求所有新建的仓库都是私有的
-- `MAX_CREATION_LIMIT`：全局默认的每个用户可创建创建仓库上限，`-1` 表示无限制
-- `PULL_REQUEST_QUEUE_LENGTH`:exclamation:：测试合并请求（Pull Request）的任务队列长度，该值越大越好
+### 仓库 (`repository`)
+
+名称|描述
+----|----
+`ROOT`|用户仓库存储根目录，必须为绝对路径，默认为 `~/<user name>/gogs-repositories`
+`SCRIPT_TYPE`|系统脚本类型，一般情况下均为 `bash`，但有些用户反应只能使用 `sh`
+`ANSI_CHARSET`|当遇到无法识别的字符集时使用的默认字符集
+`FORCE_PRIVATE`|强制要求所有新建的仓库都是私有的
+`MAX_CREATION_LIMIT`|全局默认的每个用户可创建创建仓库上限，`-1` 表示无限制
+`PREFERRED_LICENSES`|建议用户首选的授权类型
+`DISABLE_HTTP_GIT`|激活该选项来禁止用户通过 HTTP 对 Git 仓库进行交互操作，即用户只能通过 SSH 操作
+`ENABLE_LOCAL_PATH_MIGRATION`|激活该选项来启用本地路径迁移仓库功能。启动后默认只有管理员可以使用，普通用户必须经由管理员授权
+
+#### 仓库 - 编辑器 (`repository.editor`)
+
+名称|描述
+----|----
+`LINE_WRAP_EXTENSIONS`|需要显示为行包装的文件名后缀，通过逗号分隔。如果是无后缀名的文件，则单独放置一个逗号，例如：`.txt,`
+
+#### 仓库 - 文件上传 (`repository.upload`)
+
+名称|描述
+----|----
+`ENABLED`|激活该选项来启用仓库文件上传功能
+`TEMP_PATH`|文件上传的临时存放目录
+`ALLOWED_TYPES`|允许上传的文件类型（例如：`image/jpeg|image/png`），留空表示允许上传任意类型的文件
+`FILE_MAX_SIZE`|单个上传的文件的最大体积，以 MB 为单位
+`MAX_FILES`|单次同时上传的最多文件个数
 
 ## UI (`ui`)
 
@@ -43,24 +93,6 @@ name: 配置文件手册
 ## Markdown (`markdown`)
 
 - `ENABLE_HARD_LINE_BREAK`：指示是否启动硬性换行扩展
-
-## Server (`server`)
-
-- `PROTOCOL`：`http` 或 `https`
-- `DOMAIN`：服务器域名
-- `ROOT_URL`：公开的完整 URL 路径
-- `HTTP_ADDR`：应用 HTTP 监听地址
-- `HTTP_PORT`：应用 HTTP 监听端口号
-- `DISABLE_SSH`：当 SSH 功能不可用时可以禁用
-- `START_SSH_SERVER`：启用该选项来启动内置 SSH 服务器
-- `SSH_PORT`：SSH 端口号，如果不为 `22` 的话可以在此修改
-- `OFFLINE_MODE`：激活该选项来禁止从 CDN 获取静态资源，同时 Gravatar 服务也将被自动禁用
-- `DISABLE_ROUTER_LOG`：激活该选项来禁止打印路由日志
-- `CERT_FILE`：HTTPS 授权文件路径
-- `KEY_FILE`：HTTPS 的密钥文件路径
-- `STATIC_ROOT_PATH`：模板文件和静态文件的上级目录，默认为应用二进制所在的位置
-- `ENABLE_GZIP`：激活该选项来启用应用级别 GZIP 支持
-- `LANDING_PAGE`：未登录用户的默认首页，可以是 `home` 或 `explore`（探索页）
 
 ## Database (`database`)
 
