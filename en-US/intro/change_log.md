@@ -4,6 +4,12 @@ name: Changelog
 
 # Changelog
 
+### Unreleased
+
+#### Features
+
+- Able to backup and restore [#2924](https://github.com/gogits/gogs/issues/2924)
+
 ### 0.10.18 @ 2017-03-14
 
 #### Bug fixes
