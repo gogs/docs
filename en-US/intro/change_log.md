@@ -10,6 +10,10 @@ name: Changelog
 
 - Able to backup and restore [#2924](https://github.com/gogits/gogs/issues/2924)
 
+#### Improvements
+
+- Able to config number of newsfeed showed on Dashboard [#4247](https://github.com/gogits/gogs/issues/4247)
+
 ### 0.10.18 @ 2017-03-14
 
 #### Bug fixes

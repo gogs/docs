@@ -10,6 +10,10 @@ name: 变更日志
 
 - 支持备份及恢复 [#2924](https://github.com/gogits/gogs/issues/2924)
 
+#### 功能改进
+
+- 允许设置控制面板每页显示的活动数量 [#4247](https://github.com/gogits/gogs/issues/4247)
+
 ### 0.10.18 @ 2017-03-14
 
 #### Bug 修复
