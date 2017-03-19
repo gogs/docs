@@ -117,6 +117,29 @@ $HTTP["url"] =~ "^/gogs" {
     )
 }
 ```
+#### How do I use Caddy with Reverse Proxy?
+
+Add following server block to your Caddyfile and reload the configuration:
+
+```
+git.example.com {
+    proxy / http://localhost:3000
+}
+```
+
+##### How do I set up a sub-path with Caddy?
+
+In case you need to use a sub-path for your Gogs instance, you can change your Caddy configuration to the following
+(note to the suffix `/`):
+
+```
+git.example.com {
+
+    proxy /gogs/ http://localhost:3000
+}
+```
+
+
 
 #### How do I set up HTTPS?
 
