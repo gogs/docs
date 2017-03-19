@@ -134,12 +134,9 @@ In case you need to use a sub-path for your Gogs instance, you can change your C
 
 ```
 git.example.com {
-
     proxy /gogs/ http://localhost:3000
 }
 ```
-
-
 
 #### How do I set up HTTPS?
 
