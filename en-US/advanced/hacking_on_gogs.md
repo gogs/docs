@@ -29,8 +29,6 @@ Checkout the develop branch and use `go get -u ./...` again to fetch any new dep
 Gogs have a test suite that can be run with the `make test` command. Writing
 test cases is not mandatory to contribute, but we will be happy if you do.
 More information about writing tests in Go can be found on
-[the official documentation](golangtesting).
+[the official documentation](https://golang.org/pkg/testing/).
 
 That's it! You are ready to hack on Gogs. Test your changes, push them to your repository and open a pull request.
-
-[golangtesting]: https://golang.org/pkg/testing/
