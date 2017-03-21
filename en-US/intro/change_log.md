@@ -6,6 +6,10 @@ name: Changelog
 
 ### Unreleased
 
+#### Bug fixes
+
+- Unable to update non-local user profile [#4313](https://github.com/gogits/gogs/issues/4313)
+
 #### Features
 
 - Able to backup and restore [#2924](https://github.com/gogits/gogs/issues/2924)

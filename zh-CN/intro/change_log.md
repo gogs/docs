@@ -6,6 +6,10 @@ name: 变更日志
 
 ### 未发布
 
+#### Bug 修复
+
+- 非本地用户无法更新个人设置 [#4313](https://github.com/gogits/gogs/issues/4313)
+
 #### 新增特性
 
 - 支持备份及恢复 [#2924](https://github.com/gogits/gogs/issues/2924)
