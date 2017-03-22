@@ -109,6 +109,97 @@ name: 配置文件手册
 ----|----
 `DISABLE_REGULAR_ORG_CREATION`|激活该选项来禁止普通用户（非管理员）创建组织
 
+## 安全 (`security`)
+
+名称|描述
+----|----
+`INSTALL_LOCK`|用于指示是否允许访问安装页面（该页面可以设置管理员帐号，因此该选项非常重要）
+`SECRET_KEY`|全局的加密密钥，**务必修改该值以确保您的服务器安全**（会在每次安装时自动生成随机字符串）
+`LOGIN_REMEMBER_DAYS`|记住登录的天数
+`COOKIE_USERNAME`|记录用户名的 Cookie 名称
+`COOKIE_REMEMBER_NAME`|记录用户自动登录信息的 Cookie 名称
+`REVERSE_PROXY_AUTHENTICATION_USER`|反向代理认证用户的 Header 字段名
+
+## 服务 (`service`)
+
+名称|描述
+----|----
+`ACTIVE_CODE_LIVE_MINUTES`|激活码的有效期，单位为分钟
+`RESET_PASSWD_CODE_LIVE_MINUTES`|重置密码的有效期，单位为分钟
+`REGISTER_EMAIL_CONFIRM`|激活该选项来要求注册用户必须验证邮箱，要求已启用 `Mailer`
+`DISABLE_REGISTRATION`|激活该选项来禁止用户注册功能，只能由管理员创建帐号
+`SHOW_REGISTRATION_BUTTON`|用于指示是否显示注册按钮
+`REQUIRE_SIGNIN_VIEW`|激活该选项来要求用户必须登录才能浏览任何页面
+`ENABLE_CACHE_AVATAR`|激活该选项来缓存 Gravatar 的头像
+`ENABLE_NOTIFY_MAIL`|激活该选项来发送通知邮件给关注者，例如创建 issue 时，要求已启用 `Mailer`
+`ENABLE_REVERSE_PROXY_AUTHENTICATION`|激活该选项来开启反向代理用户认证，请从 https://github.com/gogits/gogs/issues/165 了解更多信息
+`ENABLE_REVERSE_PROXY_AUTO_REGISTRATION`|激活该选项来开启反向代理用户认证的自动注册功能
+`DISABLE_MINIMUM_KEY_SIZE_CHECK`|激活该选项来禁止检查响应类型的密钥最小长度
+`ENABLE_CAPTCHA`|激活该选项以在用户注册时要求输入验证码
+
+## Web 钩子 (`webhook`)
+
+名称|描述
+----|----
+`TYPES`|启动的 Web 钩子类型，可以是 `gogs`、`slack` 或 `discord`
+`DELIVER_TIMEOUT`|发送通知的超时时间，以秒为单位
+`SKIP_TLS_VERIFY`|指示是否允许向具有非信任证书的地址发送通知
+`PAGING_NUM`|Web 钩子历史页面每页显示记录条数
+
+## 邮件 (`mailer`)
+
+名称|描述
+----|----
+`ENABLED`|启用该选项以激活邮件服务
+`DISABLE_HELO`|禁用 HELO 操作
+`HELO_HOSTNAME`|HELO 操作的自定义主机名
+`HOST`|SMTP 主机地址与端口
+`FROM`|邮箱的来自地址，遵循 RFC 5322规范，可以是一个单纯的邮箱地址或者 `"名字" <email@example.com>` 的形式
+`USER`|邮箱用户名
+`PASSWD`|邮箱密码
+`SKIP_VERIFY`|不验证自签发证书的有效性
+`USE_PLAIN_TEXT`|使用 `text/plain` 作为邮件内容格式
+
+备注：Gogs 仅支持使用 STARTTLS 的 SMTP 协议
+
+## 缓存 (`cache`)
+
+名称|描述
+----|----
+`ADAPTER`|缓存引擎适配器，可以为 `momery`、`redis` 或 `memcache`。如果您使用 `redis` 或 `memcache`，请确保使用 `-tags` 选项重新构建所有依赖，例如：`go build -tags='redis'`
+`INTERVAL`|仅限内存缓存使用，GC 周期，单位为秒
+`HOST`|仅限 redis 和 memcache 使用，主机地址和端口号
+-|Redis：`network=tcp,addr=127.0.0.1:6379,password=macaron,db=0,pool_size=100,idle_timeout=180`
+-|Memache：`127.0.0.1:9090;127.0.0.1:9091`
+
+## 会话 (`session`)
+
+名称|描述
+----|----
+`PROVIDER`|Session 引擎提供者，可以是 `memory`、`file`、`redis` 或 `mysql`
+`PROVIDER_CONFIG`|如果提供者为 file，则为文件根目录；如果为其它提供者，则为主机地址和端口号
+`COOKIE_SECURE`|激活该选项以要求所有 session 操作均通过 HTTPS
+`GC_INTERVAL_TIME`|GC 周期，单位为秒
+
+## 图片 (`picture`)
+
+名称|描述
+----|----
+`AVATAR_UPLOAD_PATH`|存放用户上传头像的目录
+`GRAVATAR_SOURCE`|可以是 `gravatar`、`duoshuo` 或任何 URL，例如：`http://cn.gravatar.com/avatar/`
+`DISABLE_GRAVATAR`|激活该选项来仅使用本地头像
+`ENABLE_FEDERATED_AVATAR`|激活该选项来启用 Federated 头像服务（http://www.libravatar.org），当 Gravatar 被禁用时此选项无法生效
+
+## 附件 (`attachment`)
+
+名称|描述
+----|----
+`ENABLED`|启用该选项以允许用户上传附件
+`PATH`|存放附件的路径
+`ALLOWED_TYPES`|允许上传的 MIME 类型，例如 `image/jpeg|image/png`，使用 `*/*` 允许所有类型的文件
+`MAX_SIZE`|最大允许上传的附件体积，单位为 MB，例如 `4`
+`MAX_FILES`|最大允许一次性上传的附件个数，例如 `5`
+
 ## UI (`ui`)
 
 - `EXPLORE_PAGING_NUM`：探索页面每页显示仓库的数量
@@ -121,76 +212,6 @@ name: 配置文件手册
 - `REPO_PAGING_NUM`：仓库管理页面每页显示记录条数
 - `NOTICE_PAGING_NUM`：系统提示管理页面每页显示记录条数
 - `ORG_PAGING_NUM`：组织管理页面每页显示记录条数
-
-## Security (`security`)
-
-- `INSTALL_LOCK`：用于指示是否允许访问安装页面（该页面可以设置管理员帐号，因此该选项非常重要）
-- `SECRET_KEY`：全局的加密密钥，**务必修改该值以确保您的服务器安全**（会在每次安装时自动生成随机字符串）
-- `LOGIN_REMEMBER_DAYS`：记住登录的天数
-- `COOKIE_USERNAME`：记录用户名的 Cookie 名称
-- `COOKIE_REMEMBER_NAME`：记录用户自动登录信息的 Cookie 名称
-- `REVERSE_PROXY_AUTHENTICATION_USER`：反向代理认证用户的 Header 字段名
-
-## Service (`service`)
-
-- `ACTIVE_CODE_LIVE_MINUTES`：激活码的有效期，单位为分钟
-- `RESET_PASSWD_CODE_LIVE_MINUTES`：重置密码的有效期，单位为分钟
-- `REGISTER_EMAIL_CONFIRM`：激活该选项来要求注册用户必须验证邮箱，要求已启用 `Mailer`
-- `DISABLE_REGISTRATION`：激活该选项来禁止用户注册功能，只能由管理员创建帐号
-- `SHOW_REGISTRATION_BUTTON`：用于指示是否显示注册按钮
-- `REQUIRE_SIGNIN_VIEW`：激活该选项来要求用户必须登录才能浏览任何页面
-- `ENABLE_CACHE_AVATAR`：激活该选项来缓存 Gravatar 的头像
-- `ENABLE_NOTIFY_MAIL`：激活该选项来发送通知邮件给关注者，例如创建 issue 时，要求已启用 `Mailer`
-- `ENABLE_REVERSE_PROXY_AUTHENTICATION`：激活该选项来开启反向代理用户认证，请从 https://github.com/gogits/gogs/issues/165 了解更多信息
-- `ENABLE_REVERSE_PROXY_AUTO_REGISTRATION`：激活该选项来开启反向代理用户认证的自动注册功能
-- `DISABLE_MINIMUM_KEY_SIZE_CHECK`：激活该选项来禁止检查响应类型的密钥最小长度
-- `ENABLE_CAPTCHA`：激活该选项以在用户注册时要求输入验证码
-
-## Webhook (`webhook`)
-
-- `QUEUE_LENGTH`:exclamation:：发送通知的队列长度
-- `DELIVER_TIMEOUT`：发送通知的超时时间，以秒为单位
-- `SKIP_TLS_VERIFY`：指示是否允许向具有非信任证书的地址发送通知
-- `PAGING_NUM`：Web 钩子历史页面每页显示记录条数
-
-## Mailer (`mailer`)
-
-- `ENABLED`：启用该选项以激活邮件服务
-- `DISABLE_HELO`：禁用 HELO 操作
-- `HELO_HOSTNAME`：HELO 操作的自定义主机名
-- `HOST`：SMTP 主机地址与端口
-- `FROM`：邮箱的来自地址，遵循 RFC 5322规范，可以是一个单纯的邮箱地址或者 "名字" \<email@example.com\> 的形式
-- `USER`：邮箱用户名
-- `PASSWD`：邮箱密码
-- `SKIP_VERIFY`：不验证自签发证书的有效性
-
-## Cache (`cache`)
-
-- `ADAPTER`：缓存引擎适配器，可以为 `momery`、`redis` 或 `memcache`。如果您使用 `redis` 或 `memcache`，请确保使用 `-tags` 选项重新构建所有依赖，例如：`go build -tags='redis'`
-- `INTERVAL`：仅限内存缓存使用，GC 周期，单位为秒
-- `HOST`：仅限 redis 和 memcache 使用，主机地址和端口号
-    - Redis：`network=tcp,addr=127.0.0.1:6379,password=macaron,db=0,pool_size=100,idle_timeout=180`
-    - Memache：`127.0.0.1:9090;127.0.0.1:9091`
-
-## Session (`session`)
-
-- `PROVIDER`：Session 引擎提供者，可以是 `memory`、`file`、`redis` 或 `mysql`
-- `PROVIDER_CONFIG`：如果提供者为 file，则为文件根目录；如果为其它提供者，则为主机地址和端口号
-- `COOKIE_SECURE`：激活该选项以要求所有 session 操作均通过 HTTPS
-- `GC_INTERVAL_TIME`：GC 周期，单位为秒
-
-## Picture (`picture`)
-
-- `GRAVATAR_SOURCE`：可以是 `gravatar`、`duoshuo` 或任何 URL，例如：`http://cn.gravatar.com/avatar/`
-- `DISABLE_GRAVATAR`：激活该选项来仅使用本地头像
-
-## Attachment (`attachment`)
-
-- `ENABLED`：启用该选项以允许用户上传附件
-- `PATH`：存放附件的路径
-- `ALLOWED_TYPES`：允许上传的 MIME 类型，例如 `image/jpeg|image/png`，使用 `*/*` 允许所有类型的文件
-- `MAX_SIZE`：最大允许上传的附件体积，单位为 MB，例如 `4`
-- `MAX_FILES`：最大允许一次性上传的附件个数，例如 `5`
 
 ## Log (`log`)
 

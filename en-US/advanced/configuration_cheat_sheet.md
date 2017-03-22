@@ -141,7 +141,7 @@ Name|Description
 
 Name|Description
 ----|-----------
-`TYPES`|Types are enabled for users to use, can be "gogs", "slack", "discord".
+`TYPES`|Types are enabled for users to use, can be `gogs`, `slack` or `discord`.
 `DELIVER_TIMEOUT`|Delivery timeout in seconds for shooting webhooks.
 `SKIP_TLS_VERIFY`|Indicate whether to allow insecure certification or not.
 `PAGING_NUM`|Number of webhook history that are shown in one page.
@@ -166,7 +166,7 @@ Note: Gogs supports only SMTP with STARTTLS.
 
 Name|Description
 ----|-----------
-`ADAPTER`|Cache engine adapter, either `memory`, `redis`, or `memcache`. If you want to use `redis` or `memcache`, be sure to rebuild everything with build tags `redis` or `memcache`|`go build -tags='redis'`.
+`ADAPTER`|Cache engine adapter, either `memory`, `redis`, or `memcache`. If you want to use `redis` or `memcache`, be sure to rebuild everything with build tags `redis` or `memcache`, for example: `go build -tags='redis'`.
 `INTERVAL`|for memory cache only, GC interval in seconds.
 `HOST`|For redis and memcache, the host address and port number.
 -|Redis: `network=tcp,addr=127.0.0.1:6379,password=macaron,db=0,pool_size=100,idle_timeout=180`.
