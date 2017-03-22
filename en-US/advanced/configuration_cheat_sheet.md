@@ -89,13 +89,13 @@ Name|Description
 
 Name|Description
 ----|-----------
-`ACCESS_CONTROL_ALLOW_ORIGIN`|Value for Access-Control-Allow-Origin header, default is not to present.
+`ACCESS_CONTROL_ALLOW_ORIGIN`|Value for `Access-Control-Allow-Origin` header, default is not to present.
 
 ### Database (`database`)
 
 Name|Description
 ----|-----------
-`DB_TYPE`|The database type you choose, either `mysql`, `postgres` or `sqlite3`.
+`DB_TYPE`|The database type you choose, either `mysql`, `postgres`, `mssql` or `sqlite3`.
 `HOST`|Database host address and port.
 `NAME`|Database name.
 `USER`|Database username.

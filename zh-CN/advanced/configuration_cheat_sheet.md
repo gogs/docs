@@ -77,6 +77,38 @@ name: 配置文件手册
 `FILE_MAX_SIZE`|单个上传的文件的最大体积，以 MB 为单位
 `MAX_FILES`|单次同时上传的最多文件个数
 
+## Markdown (`markdown`)
+
+名称|描述
+----|----
+`ENABLE_HARD_LINE_BREAK`|指示是否启动硬性换行扩展
+`CUSTOM_URL_SCHEMES`|允许被解析为链接的自定义 URL 方案，例如 `git`（用于 `git://`）和`magnet`（用于 `magnet://`）
+`FILE_EXTENSIONS`|需要被渲染为 Markdown 格式的文件名后缀，通过逗号分隔。如果是无后缀名的文件，则单独放置一个逗号，例如：`.markdown,`
+
+### HTTP (`http`)
+
+名称|描述
+----|----
+`ACCESS_CONTROL_ALLOW_ORIGIN`|头信息 `Access-Control-Allow-Origin` 的自定义值，默认为空，即不响应此头信息
+
+## 数据库 (`database`)
+
+名称|描述
+----|----
+`DB_TYPE`|数据库类型，可以是 `mysql`、`postgres`、`mssql` 或 `sqlite3`
+`HOST`|数据库主机地址与端口
+`NAME`|数据库名称
+`USER`|数据库用户名
+`PASSWD`|数据库用户密码
+`SSL_MODE`|仅限 PostgreSQL 使用
+`PATH`|仅限 SQLite3 使用，数据库文件路径
+
+### 应用管理 (`admin`)
+
+名称|描述
+----|----
+`DISABLE_REGULAR_ORG_CREATION`|激活该选项来禁止普通用户（非管理员）创建组织
+
 ## UI (`ui`)
 
 - `EXPLORE_PAGING_NUM`：探索页面每页显示仓库的数量
@@ -89,20 +121,6 @@ name: 配置文件手册
 - `REPO_PAGING_NUM`：仓库管理页面每页显示记录条数
 - `NOTICE_PAGING_NUM`：系统提示管理页面每页显示记录条数
 - `ORG_PAGING_NUM`：组织管理页面每页显示记录条数
-
-## Markdown (`markdown`)
-
-- `ENABLE_HARD_LINE_BREAK`：指示是否启动硬性换行扩展
-
-## Database (`database`)
-
-- `DB_TYPE`：数据库类型，可以是 `mysql`、`postgres` 或 `sqlite3`
-- `HOST`：数据库主机地址与端口
-- `NAME`：数据库名称
-- `USER`：数据库用户名
-- `PASSWD`：数据库用户密码
-- `SSL_MODE`：仅限 PostgreSQL 使用
-- `PATH`：仅限 SQLite3 使用，数据库文件路径
 
 ## Security (`security`)
 
