@@ -8,14 +8,26 @@ name: Changelog
 
 #### Bug fixes
 
+- Incorrect file permission for session files [#3363](https://github.com/gogits/gogs/issues/3363)
+- API: Repository Permission object returns incorrect values [#4309](https://github.com/gogits/gogs/issues/4309)
 - Unable to update non-local user profile [#4313](https://github.com/gogits/gogs/issues/4313)
+- Redirect to random issue if index does not exist [#4315](https://github.com/gogits/gogs/issues/4315)
 
 #### Features
 
+- Able to retrigger webhook history [#2187](https://github.com/gogits/gogs/issues/2187)
+- Able to load more feeds on dashboard [#2511](https://github.com/gogits/gogs/issues/2511)
+- Add config option to set a cookie value indicates login status [#2885](https://github.com/gogits/gogs/issues/2885)
 - Able to backup and restore [#2924](https://github.com/gogits/gogs/issues/2924)
+- Able to use issues and wiki for bare repository [#4104](https://github.com/gogits/gogs/issues/4104)
+- Custom page size for commits page [#4230](https://github.com/gogits/gogs/issues/4230)
 
 #### Improvements
 
+- Include private but accessible repositories in explore page [#3088](https://github.com/gogits/gogs/issues/3088)
+- Able to choose console mode for logger [#3119](https://github.com/gogits/gogs/issues/3119)
+- Add config option for HTML render mode [#3608](https://github.com/gogits/gogs/issues/3608)
+- Webhook push event provice details about added/removed/modified files [#3897](https://github.com/gogits/gogs/issues/3897)
 - Able to config number of newsfeed showed on Dashboard [#4247](https://github.com/gogits/gogs/issues/4247)
 
 ### 0.10.18 @ 2017-03-14

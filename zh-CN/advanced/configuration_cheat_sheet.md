@@ -77,7 +77,7 @@ name: 配置文件手册
 `FILE_MAX_SIZE`|单个上传的文件的最大体积，以 MB 为单位
 `MAX_FILES`|单次同时上传的最多文件个数
 
-## Markdown (`markdown`)
+### Markdown (`markdown`)
 
 名称|描述
 ----|----
@@ -91,7 +91,7 @@ name: 配置文件手册
 ----|----
 `ACCESS_CONTROL_ALLOW_ORIGIN`|头信息 `Access-Control-Allow-Origin` 的自定义值，默认为空，即不响应此头信息
 
-## 数据库 (`database`)
+### 数据库 (`database`)
 
 名称|描述
 ----|----
@@ -109,7 +109,7 @@ name: 配置文件手册
 ----|----
 `DISABLE_REGULAR_ORG_CREATION`|激活该选项来禁止普通用户（非管理员）创建组织
 
-## 安全 (`security`)
+### 安全 (`security`)
 
 名称|描述
 ----|----
@@ -120,7 +120,7 @@ name: 配置文件手册
 `COOKIE_REMEMBER_NAME`|记录用户自动登录信息的 Cookie 名称
 `REVERSE_PROXY_AUTHENTICATION_USER`|反向代理认证用户的 Header 字段名
 
-## 服务 (`service`)
+### 服务 (`service`)
 
 名称|描述
 ----|----
@@ -137,7 +137,7 @@ name: 配置文件手册
 `DISABLE_MINIMUM_KEY_SIZE_CHECK`|激活该选项来禁止检查响应类型的密钥最小长度
 `ENABLE_CAPTCHA`|激活该选项以在用户注册时要求输入验证码
 
-## Web 钩子 (`webhook`)
+### Web 钩子 (`webhook`)
 
 名称|描述
 ----|----
@@ -146,7 +146,7 @@ name: 配置文件手册
 `SKIP_TLS_VERIFY`|指示是否允许向具有非信任证书的地址发送通知
 `PAGING_NUM`|Web 钩子历史页面每页显示记录条数
 
-## 邮件 (`mailer`)
+### 邮件 (`mailer`)
 
 名称|描述
 ----|----
@@ -162,7 +162,7 @@ name: 配置文件手册
 
 备注：Gogs 仅支持使用 STARTTLS 的 SMTP 协议
 
-## 缓存 (`cache`)
+### 缓存 (`cache`)
 
 名称|描述
 ----|----
@@ -172,7 +172,7 @@ name: 配置文件手册
 -|Redis：`network=tcp,addr=127.0.0.1:6379,password=macaron,db=0,pool_size=100,idle_timeout=180`
 -|Memache：`127.0.0.1:9090;127.0.0.1:9091`
 
-## 会话 (`session`)
+### 会话 (`session`)
 
 名称|描述
 ----|----
@@ -181,7 +181,7 @@ name: 配置文件手册
 `COOKIE_SECURE`|激活该选项以要求所有 session 操作均通过 HTTPS
 `GC_INTERVAL_TIME`|GC 周期，单位为秒
 
-## 图片 (`picture`)
+### 图片 (`picture`)
 
 名称|描述
 ----|----
@@ -190,7 +190,7 @@ name: 配置文件手册
 `DISABLE_GRAVATAR`|激活该选项来仅使用本地头像
 `ENABLE_FEDERATED_AVATAR`|激活该选项来启用 Federated 头像服务（http://www.libravatar.org），当 Gravatar 被禁用时此选项无法生效
 
-## 附件 (`attachment`)
+### 附件 (`attachment`)
 
 名称|描述
 ----|----
@@ -200,53 +200,53 @@ name: 配置文件手册
 `MAX_SIZE`|最大允许上传的附件体积，单位为 MB，例如 `4`
 `MAX_FILES`|最大允许一次性上传的附件个数，例如 `5`
 
-## UI (`ui`)
+### UI (`ui`)
 
 - `EXPLORE_PAGING_NUM`：探索页面每页显示仓库的数量
 - `ISSUE_PAGING_NUM`：每页显示工单（Issue）的数量（应用到所有以列表形式显示工单的页面）
 - `FEED_MAX_COMMIT_NUM`：一条最新活动中显示代码提交（Commit）的最大数量
 
-### UI - Admin (`ui.admin`)
+#### UI - Admin (`ui.admin`)
 
 - `USER_PAGING_NUM`：用户管理页面每页显示记录条数
 - `REPO_PAGING_NUM`：仓库管理页面每页显示记录条数
 - `NOTICE_PAGING_NUM`：系统提示管理页面每页显示记录条数
 - `ORG_PAGING_NUM`：组织管理页面每页显示记录条数
 
-## Log (`log`)
+### Log (`log`)
 
 - `ROOT_PATH`：日志文件的根目录
 - `MODE`：日志记录模式，默认为 `console`。如果想要开启多模式，请使用逗号分割
 - `LEVEL`：基本日志级别，默认为 `Trace`
 
-## Cron (`cron`)
+### Cron (`cron`)
 
 - `ENABLED`：激活该选项以允许周期性运行 Cron 任务
 - `RUN_AT_START`：激活该选项以允许在启动时执行 Cron 任务
 
-### Cron - Update Mirrors (`cron.update_mirrors`)
+#### Cron - Update Mirrors (`cron.update_mirrors`)
 
 - `SCHEDULE`：定时更新仓库镜像的 Cron 语法，例如：`@every 1h`
 
-### Cron - Repository Health Check (`cron.repo_health_check`)
+#### Cron - Repository Health Check (`cron.repo_health_check`)
 
 - `SCHEDULE`：定时进行仓库健康检查的 Cron 语法，例如：`@every 24h`
 - `TIMEOUT`：仓库健康检查超时的定义语法，例如：`60s`
 - `ARGS`：`git fsck` 命令的参数，例如：`--unreachable --tags`
 
-### Cron - Repository Statistics Check (`cron.check_repo_stats`)
+#### Cron - Repository Statistics Check (`cron.check_repo_stats`)
 
 - `RUN_AT_START`：激活该选项以在启动时执行仓库统计检查
 - `SCHEDULE`：定时进行仓库统计检查的 Cron 语法，例如：`@every 24h`
 
-## Git (`git`)
+### Git (`git`)
 
 - `MAX_GIT_DIFF_LINES`: 差异对比页面单个文件显示的最大行数
 - `MAX_GIT_DIFF_LINE_CHARACTERS`: 差异对比页面单行显示的最大字符数
 - `MAX_GIT_DIFF_FILES`: 差异对比页面文件显示的最多个数
 - `GC_ARGS`：`git gc` 命令的参数，例如：`--aggressive --auto`
 
-## Other (`other`)
+### Other (`other`)
 
 - `SHOW_FOOTER_BRANDING`：激活该选项以在页脚显示 Gogs 推广信息
 - `SHOW_FOOTER_VERSION`：激活该选项以在页脚显示 Gogs 版本信息

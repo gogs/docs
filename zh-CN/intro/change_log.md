@@ -8,14 +8,26 @@ name: 变更日志
 
 #### Bug 修复
 
+- 不正确的会话文件权限 [#3363](https://github.com/gogits/gogs/issues/3363)
+- API：仓库对象的权限字段返回无效的值 [#4309](https://github.com/gogits/gogs/issues/4309)
 - 非本地用户无法更新个人设置 [#4313](https://github.com/gogits/gogs/issues/4313)
+- 工单索引不存在会显示随机工单 [#4315](https://github.com/gogits/gogs/issues/4315)
 
 #### 新增特性
 
+- 支持重新推送 Web 钩子的历史记录 [#2187](https://github.com/gogits/gogs/issues/2187)
+- 支持在控制面板中加载更多的活动内容 [#2511](https://github.com/gogits/gogs/issues/2511)
+- 支持设置指定当前用户时候登录的 Cookie 值 [#2885](https://github.com/gogits/gogs/issues/2885)
 - 支持备份及恢复 [#2924](https://github.com/gogits/gogs/issues/2924)
+- 支持空仓库的工单和 Wiki 操作 [#4104](https://github.com/gogits/gogs/issues/4104)
+- 提交历史页面自定义每页显示的数量 [#4230](https://github.com/gogits/gogs/issues/4230)
 
 #### 功能改进
 
+- 探索页面显示私有但有访问权限的仓库 [#3088](https://github.com/gogits/gogs/issues/3088)
+- 允许在安装页面选择使用终端模式的日志 [#3119](https://github.com/gogits/gogs/issues/3119)
+- 添加有关 HTML 渲染模式的配置选项 [#3608](https://github.com/gogits/gogs/issues/3608)
+- Web 钩子推送事件添加有关文件被添加、删除和修改的信息 [#3897](https://github.com/gogits/gogs/issues/3897)
 - 允许设置控制面板每页显示的活动数量 [#4247](https://github.com/gogits/gogs/issues/4247)
 
 ### 0.10.18 @ 2017-03-14
