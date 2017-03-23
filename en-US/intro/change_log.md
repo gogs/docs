@@ -21,6 +21,7 @@ name: Changelog
 - Able to backup and restore [#2924](https://github.com/gogits/gogs/issues/2924)
 - Able to use issues and wiki for bare repository [#4104](https://github.com/gogits/gogs/issues/4104)
 - Custom page size for commits page [#4230](https://github.com/gogits/gogs/issues/4230)
+- Add repositories panel to user settings [#4277](https://github.com/gogits/gogs/issues/4277)
 
 #### Improvements
 

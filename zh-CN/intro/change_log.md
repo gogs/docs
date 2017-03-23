@@ -21,6 +21,7 @@ name: 变更日志
 - 支持备份及恢复 [#2924](https://github.com/gogits/gogs/issues/2924)
 - 支持空仓库的工单和 Wiki 操作 [#4104](https://github.com/gogits/gogs/issues/4104)
 - 提交历史页面自定义每页显示的数量 [#4230](https://github.com/gogits/gogs/issues/4230)
+- 用户设置页面添加管理仓库面板 [#4277](https://github.com/gogits/gogs/issues/4277)
 
 #### 功能改进
 
