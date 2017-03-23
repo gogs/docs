@@ -152,28 +152,4 @@ name: 变更日志
 
 - 停止支持网络连接和 Email 作为日志输出
 
-### v0.9.128 @ 2017-01-31
-
-#### Bug 修复
-
-- 发起合并请求时没有使用当前正在浏览的分支作为对比分支 [#3604](https://github.com/gogits/gogs/issues/3604)
-- 无法将版本发布草稿再次保存为草稿 [#3669](https://github.com/gogits/gogs/issues/3669)
-- 非 Markdown 格式的 README 文件显示空白 [#3749](https://github.com/gogits/gogs/issues/3749)
-- 发送推送邮件时发生错误 [#3856](https://github.com/gogits/gogs/issues/3856)
-- 非拉丁字符无法生成快捷链接 [#3981](https://github.com/gogits/gogs/issues/3981)
-- 尝试向空仓库获取单个文件时发生错误 [#3992](https://github.com/gogits/gogs/issues/3992)
-- 攻击者可以派生任意仓库 [#4006](https://github.com/gogits/gogs/issues/4006)
-- 用户的邮箱可以被不同的用户重复注册使用
-
-#### 功能改进
-
-- 查看所有指派给我的工单 [#1820](https://github.com/gogits/gogs/issues/1820)
-- 发送邮件时忽略未激活用户 [#3814](https://github.com/gogits/gogs/issues/3814)
-- 添加配置选项 `[http] ACCESS_CONTROL_ALLOW_ORIGIN` 用以自定义 `Access-Control-Allow-Origin` 头信息 [#3987](https://github.com/gogits/gogs/issues/3987)
-- 添加配置选项 `[repository] ENABLE_LOCAL_PATH_MIGRATION` 用以开启服务器本地路径迁移功能（默认禁止）[#4033](https://github.com/gogits/gogs/issues/4033)
-
-#### 新增特性
-
-- 在用户设置中添加管理组织页面 [#3587](https://github.com/gogits/gogs/pull/3587)
-
-**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.128) 上找到。**
+**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.141) 上找到。**
