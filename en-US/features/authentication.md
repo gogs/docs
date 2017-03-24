@@ -128,7 +128,7 @@ This option allows Gogs to log in to your SMTP host as a Gogs user. To configure
 - This authentication is activate
   - Enable or disable this auth.
 
- ## Freeipa
+## Freeipa
 
 - In order to login to the Gogs using FreeIPA credentials, you need to create a bind account for Gogs to use:
 
