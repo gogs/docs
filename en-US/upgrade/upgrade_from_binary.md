@@ -30,7 +30,7 @@ Download and unzip new binary:
 
 ```bash
 # Check latest release to download based on your actual OS and ARCH running
-$ wget wget https://dl.gogs.io/$VERSION/$OS_$ARCH.tar.gz
+$ wget https://dl.gogs.io/$VERSION/$OS_$ARCH.tar.gz
 $ tar -zxvf $OS_$ARCH.tar.gz
 $ ls
 gogs gogs_old  gogs-repositories $OS_$ARCH.tar.gz
