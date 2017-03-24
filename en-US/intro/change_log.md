@@ -12,6 +12,7 @@ name: Changelog
 - API: Repository Permission object returns incorrect values [#4309](https://github.com/gogits/gogs/issues/4309)
 - Unable to update non-local user profile [#4313](https://github.com/gogits/gogs/issues/4313)
 - Redirect to random issue if index does not exist [#4315](https://github.com/gogits/gogs/issues/4315)
+- Unable to propose pull request from secondary fork [#4324](https://github.com/gogits/gogs/issues/4324)
 
 #### Features
 

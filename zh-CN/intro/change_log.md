@@ -12,6 +12,7 @@ name: 变更日志
 - API：仓库对象的权限字段返回无效的值 [#4309](https://github.com/gogits/gogs/issues/4309)
 - 非本地用户无法更新个人设置 [#4313](https://github.com/gogits/gogs/issues/4313)
 - 工单索引不存在会显示随机工单 [#4315](https://github.com/gogits/gogs/issues/4315)
+- 无法从二级派生仓库发起合并请求 [#4324](https://github.com/gogits/gogs/issues/4324)
 
 #### 新增特性
 
