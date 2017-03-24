@@ -50,3 +50,10 @@ $ ./gogs web
 ```
 
 Well done!
+
+**Note** If you use the bundled `scripts`, make sure they are executable:
+
+```bash
+grep -rl '^#!' scripts | xargs chmod +x
+```
+
