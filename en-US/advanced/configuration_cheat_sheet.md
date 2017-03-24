@@ -211,7 +211,7 @@ Name|Description
 Name|Description
 ----|-----------
 `ROOT_PATH`|Root path for log files.
-`MODE`|Logging mode, default is `console`. For multiple modes, Use comma to separate multiple modes, e.g. "console, file".
+`MODE`|Logging mode, default is `console`. For multiple modes, Use comma to separate multiple modes, e.g. `"console, file"`.
 `LEVEL`|General log level, default is `Trace`.
 
 ### Cron (`cron`)

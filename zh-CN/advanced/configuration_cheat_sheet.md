@@ -200,53 +200,88 @@ name: 配置文件手册
 `MAX_SIZE`|最大允许上传的附件体积，单位为 MB，例如 `4`
 `MAX_FILES`|最大允许一次性上传的附件个数，例如 `5`
 
-### UI (`ui`)
+### 时间 (`time`)
 
-- `EXPLORE_PAGING_NUM`：探索页面每页显示仓库的数量
-- `ISSUE_PAGING_NUM`：每页显示工单（Issue）的数量（应用到所有以列表形式显示工单的页面）
-- `FEED_MAX_COMMIT_NUM`：一条最新活动中显示代码提交（Commit）的最大数量
+名称|描述
+----|----
+`FORMAT`|指定日期的输出格式，默认为 RFC1123，其它可选的格式为 ANSIC、UnixDate、RubyDate、RFC822、RFC822Z、RFC850、RFC1123、RFC1123Z、RFC3339、RFC3339Nano、Kitchen、Stamp、StampMilli、StampMicro 和 StampNano。访问 http://golang.org/pkg/time/#pkg-constants 查看详情
 
-#### UI - Admin (`ui.admin`)
+### 日志 (`log`)
 
-- `USER_PAGING_NUM`：用户管理页面每页显示记录条数
-- `REPO_PAGING_NUM`：仓库管理页面每页显示记录条数
-- `NOTICE_PAGING_NUM`：系统提示管理页面每页显示记录条数
-- `ORG_PAGING_NUM`：组织管理页面每页显示记录条数
-
-### Log (`log`)
-
-- `ROOT_PATH`：日志文件的根目录
-- `MODE`：日志记录模式，默认为 `console`。如果想要开启多模式，请使用逗号分割
-- `LEVEL`：基本日志级别，默认为 `Trace`
+名称|描述
+----|----
+`ROOT_PATH`|日志文件的根目录
+`MODE`|日志记录模式，默认为 `console`。如果想要开启多模式，请使用逗号分割，例如：`"console, file"`
+`LEVEL`|基本日志级别，默认为 `Trace`
 
 ### Cron (`cron`)
 
-- `ENABLED`：激活该选项以允许周期性运行 Cron 任务
-- `RUN_AT_START`：激活该选项以允许在启动时执行 Cron 任务
+名称|描述
+----|----
+`ENABLED`|激活该选项以允许周期性运行 Cron 任务
+`RUN_AT_START`|激活该选项以允许在启动时执行 Cron 任务
 
-#### Cron - Update Mirrors (`cron.update_mirrors`)
+#### Cron - 更新镜像 (`cron.update_mirrors`)
 
-- `SCHEDULE`：定时更新仓库镜像的 Cron 语法，例如：`@every 1h`
+名称|描述
+----|----
+`SCHEDULE`|定时更新仓库镜像的 Cron 语法，例如：`@every 1h`
 
-#### Cron - Repository Health Check (`cron.repo_health_check`)
+#### Cron - 仓库健康检查 (`cron.repo_health_check`)
 
-- `SCHEDULE`：定时进行仓库健康检查的 Cron 语法，例如：`@every 24h`
-- `TIMEOUT`：仓库健康检查超时的定义语法，例如：`60s`
-- `ARGS`：`git fsck` 命令的参数，例如：`--unreachable --tags`
+名称|描述
+----|----
+`SCHEDULE`|定时进行仓库健康检查的 Cron 语法，例如：`@every 24h`
+`TIMEOUT`|仓库健康检查超时的定义语法，例如：`60s`
+`ARGS`|`git fsck` 命令的参数，例如：`--unreachable --tags`
 
-#### Cron - Repository Statistics Check (`cron.check_repo_stats`)
+#### Cron - 仓库统计检查 (`cron.check_repo_stats`)
 
-- `RUN_AT_START`：激活该选项以在启动时执行仓库统计检查
-- `SCHEDULE`：定时进行仓库统计检查的 Cron 语法，例如：`@every 24h`
+名称|描述
+----|----
+`RUN_AT_START`|激活该选项以在启动时执行仓库统计检查
+`SCHEDULE`|定时进行仓库统计检查的 Cron 语法，例如：`@every 24h`
+
+#### Cron - 仓库归档清理 (`cron.repo_archive_cleanup`)
+
+名称|描述
+----|----
+`RUN_AT_START`|激活该选项以在启动时执行仓库归档清理
+`SCHEDULE`|定时进行仓库归档清理的 Cron 语法，例如：`@every 24h`
+`OLDER_THAN`|仓库归档的文件有效期，过期的归档将被清理，例如：`24h`
 
 ### Git (`git`)
 
-- `MAX_GIT_DIFF_LINES`: 差异对比页面单个文件显示的最大行数
-- `MAX_GIT_DIFF_LINE_CHARACTERS`: 差异对比页面单行显示的最大字符数
-- `MAX_GIT_DIFF_FILES`: 差异对比页面文件显示的最多个数
-- `GC_ARGS`：`git gc` 命令的参数，例如：`--aggressive --auto`
+名称|描述
+----|----
+`MAX_GIT_DIFF_LINES`: 差异对比页面单个文件显示的最大行数
+`MAX_GIT_DIFF_LINE_CHARACTERS`: 差异对比页面单行显示的最大字符数
+`MAX_GIT_DIFF_FILES`: 差异对比页面文件显示的最多个数
+`GC_ARGS`：`git gc` 命令的参数，例如：`--aggressive --auto`
 
-### Other (`other`)
+### UI (`ui`)
 
-- `SHOW_FOOTER_BRANDING`：激活该选项以在页脚显示 Gogs 推广信息
-- `SHOW_FOOTER_VERSION`：激活该选项以在页脚显示 Gogs 版本信息
+名称|描述
+----|----
+`EXPLORE_PAGING_NUM`|探索页面每页显示仓库的数量
+`ISSUE_PAGING_NUM`|每页显示工单（Issue）的数量（应用到所有以列表形式显示工单的页面）
+`FEED_MAX_COMMIT_NUM`|一条最新活动中显示代码提交（Commit）的最大数量
+`THEME_COLOR_META_TAG`|被用于 Android >= 5.0 版本 "theme-color" 标记的值，无效的值将被忽悠并使用默认值（[查看详情](https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android)）
+`MAX_DISPLAY_FILE_SIZE`|显示到页面的最大文件体积（Byte）
+
+#### UI - Admin (`ui.admin`)
+
+名称|描述
+----|----
+`USER_PAGING_NUM`|用户管理页面每页显示记录条数
+`REPO_PAGING_NUM`|仓库管理页面每页显示记录条数
+`NOTICE_PAGING_NUM`|系统提示管理页面每页显示记录条数
+`ORG_PAGING_NUM`|组织管理页面每页显示记录条数
+
+### 其他 (`other`)
+
+名称|描述
+----|----
+`SHOW_FOOTER_BRANDING`|激活该选项以在页脚显示 Gogs 推广信息
+`SHOW_FOOTER_VERSION`|激活该选项以在页脚显示 Gogs 版本信息
+`SHOW_FOOTER_TEMPLATE_LOAD_TIME`|激活该选项以在页脚显示 Gogs 模板加载时间
