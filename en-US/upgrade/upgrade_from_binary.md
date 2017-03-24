@@ -39,9 +39,7 @@ gogs gogs_old  gogs-repositories $OS_$ARCH.tar.gz
 Copy `custom`, `data` and `log` directories to unzipped directory:
 
 ```bash
-$ cp -R gogs_old/custom gogs
-$ cp -R gogs_old/data gogs
-$ cp -R gogs_old/log gogs
+$ cp -R gogs_old/{custom,data,log} gogs
 ```
 
 Then, run and test in your browser:
@@ -52,3 +50,10 @@ $ ./gogs web
 ```
 
 Well done!
+
+**Note** If you use the bundled `scripts`, make sure they are executable:
+
+```bash
+grep -rl '^#!' scripts | xargs chmod +x
+```
+
