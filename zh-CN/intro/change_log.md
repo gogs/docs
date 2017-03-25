@@ -17,6 +17,7 @@ name: 变更日志
 #### 新增特性
 
 - 支持重新推送 Web 钩子的历史记录 [#2187](https://github.com/gogits/gogs/issues/2187)
+- API：同步镜像仓库 [#2235](https://github.com/gogits/gogs/issues/2235)
 - 支持在控制面板中加载更多的活动内容 [#2511](https://github.com/gogits/gogs/issues/2511)
 - 支持设置指定当前用户时候登录的 Cookie 值 [#2885](https://github.com/gogits/gogs/issues/2885)
 - 支持备份及恢复 [#2924](https://github.com/gogits/gogs/issues/2924)
@@ -28,6 +29,7 @@ name: 变更日志
 
 - 探索页面显示私有但有访问权限的仓库 [#3088](https://github.com/gogits/gogs/issues/3088)
 - 允许在安装页面选择使用终端模式的日志 [#3119](https://github.com/gogits/gogs/issues/3119)
+- 允许配置 XORM 的日志器 [#3183](https://github.com/gogits/gogs/issues/3183)
 - 添加有关 HTML 渲染模式的配置选项 [#3608](https://github.com/gogits/gogs/issues/3608)
 - Web 钩子推送事件添加有关文件被添加、删除和修改的信息 [#3897](https://github.com/gogits/gogs/issues/3897)
 - 允许设置控制面板每页显示的活动数量 [#4247](https://github.com/gogits/gogs/issues/4247)

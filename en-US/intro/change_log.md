@@ -17,6 +17,7 @@ name: Changelog
 #### Features
 
 - Able to retrigger webhook history [#2187](https://github.com/gogits/gogs/issues/2187)
+- API: Add sync for mirror repository [#2235](https://github.com/gogits/gogs/issues/2235)
 - Able to load more feeds on dashboard [#2511](https://github.com/gogits/gogs/issues/2511)
 - Add config option to set a cookie value indicates login status [#2885](https://github.com/gogits/gogs/issues/2885)
 - Able to backup and restore [#2924](https://github.com/gogits/gogs/issues/2924)
@@ -28,6 +29,7 @@ name: Changelog
 
 - Include private but accessible repositories in explore page [#3088](https://github.com/gogits/gogs/issues/3088)
 - Able to choose console mode for logger [#3119](https://github.com/gogits/gogs/issues/3119)
+- Able to config logger for XORM [#3183](https://github.com/gogits/gogs/issues/3183)
 - Add config option for HTML render mode [#3608](https://github.com/gogits/gogs/issues/3608)
 - Webhook push event provice details about added/removed/modified files [#3897](https://github.com/gogits/gogs/issues/3897)
 - Able to config number of newsfeed showed on Dashboard [#4247](https://github.com/gogits/gogs/issues/4247)
