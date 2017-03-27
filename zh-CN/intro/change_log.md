@@ -13,6 +13,7 @@ name: 变更日志
 - 非本地用户无法更新个人设置 [#4313](https://github.com/gogits/gogs/issues/4313)
 - 工单索引不存在会显示随机工单 [#4315](https://github.com/gogits/gogs/issues/4315)
 - 无法从二级派生仓库发起合并请求 [#4324](https://github.com/gogits/gogs/issues/4324)
+- 无法更新保护分支白名单 [#4333](https://github.com/gogits/gogs/issues/4333)
 - 派生、迁移和镜像仓库的体积没有正确更新 [#4336](https://github.com/gogits/gogs/issues/4336)
 
 #### 新增特性
@@ -133,29 +134,4 @@ name: 变更日志
 
 - 停止支持 0.6.x 系列
 
-### v0.9.141 @ 2017-02-11
-
-#### Bug 修复
-
-- 仓库重命名后无法编辑文件 [#3641](https://github.com/gogits/gogs/issues/3641)
-- Markdown 中 mailto 链接解析错误 [#3790](https://github.com/gogits/gogs/issues/3790)
-- 无法在 LDAP CN 字段中包含空格 [#3791](https://github.com/gogits/gogs/issues/3791)
-- 同仓库内的合并请求显示 404 [#4074](https://github.com/gogits/gogs/issues/4074)
-- 无法删除名称包含斜线的分支 [#4089](https://github.com/gogits/gogs/issues/4089)
-
-#### 功能改进
-
-- 支持重定向用户到设定的外部工单系统 [#3645](https://github.com/gogits/gogs/issues/3645)
-- 支持 Open Graph Meta 标签 [#3664](https://github.com/gogits/gogs/pull/3664)
-
-#### 新增特性
-
-- 支持禁止非管理员创建组织 [#1556](https://github.com/gogits/gogs/issues/1556)
-- 支持 IPython Notebook 渲染 [#4070](https://github.com/gogits/gogs/pull/4070)
-- 支持 Slack 作为日志输出
-
-#### 其它变更
-
-- 停止支持网络连接和 Email 作为日志输出
-
-**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.141) 上找到。**
+**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.10rc) 上找到。**

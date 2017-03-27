@@ -13,6 +13,7 @@ name: Changelog
 - Unable to update non-local user profile [#4313](https://github.com/gogits/gogs/issues/4313)
 - Redirect to random issue if index does not exist [#4315](https://github.com/gogits/gogs/issues/4315)
 - Unable to propose pull request from secondary fork [#4324](https://github.com/gogits/gogs/issues/4324)
+- Unable to update protect branch whitelist [#4333](https://github.com/gogits/gogs/issues/4333)
 - Repository size does not update for fork, migrate and mirror [#4336](https://github.com/gogits/gogs/issues/4336)
 
 #### Features
@@ -133,29 +134,4 @@ name: Changelog
 
 - Stop supporting 0.6.x
 
-### v0.9.141 @ 2017-02-11
-
-#### Bug fixes
-
-- Cannot edit file after rename repository [#3641](https://github.com/gogits/gogs/issues/3641)
-- mailto link incorrectly parsed in Markdown [#3790](https://github.com/gogits/gogs/issues/3790)
-- Cannot include spaces inside LDAP DN field [#3791](https://github.com/gogits/gogs/issues/3791)
-- Pull request on same repository shows 404 [#4074](https://github.com/gogits/gogs/issues/4074)
-- Cannot delete branches with slashes in the name [#4089](https://github.com/gogits/gogs/issues/4089)
-
-#### Improvements
-
-- Able to redirect visitors to external issue tracker URL [#3645](https://github.com/gogits/gogs/issues/3645)
-- Add Open Graph Meta tags [#3664](https://github.com/gogits/gogs/pull/3664)
-
-#### Features
-
-- Able to disable creation of organizations for non-admins [#1556](https://github.com/gogits/gogs/issues/1556)
-- Support IPython Notebook rendering [#4070](https://github.com/gogits/gogs/pull/4070)
-- Add Slack logger
-
-#### Others
-
-- Stop supporting network connection and email loggers
-
-**Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.9.141).**
+**Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.10rc).**
