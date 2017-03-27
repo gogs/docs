@@ -13,9 +13,12 @@ name: Changelog
 - Unable to update non-local user profile [#4313](https://github.com/gogits/gogs/issues/4313)
 - Redirect to random issue if index does not exist [#4315](https://github.com/gogits/gogs/issues/4315)
 - Unable to propose pull request from secondary fork [#4324](https://github.com/gogits/gogs/issues/4324)
+- Repository size does not update for fork, migrate and mirror [#4336](https://github.com/gogits/gogs/issues/4336)
 
 #### Features
 
+- Support private repository with public issues [#649](https://github.com/gogits/gogs/issues/649)
+- Support private repository with public wiki [#2157](https://github.com/gogits/gogs/issues/2157)
 - Able to retrigger webhook history [#2187](https://github.com/gogits/gogs/issues/2187)
 - API: Add sync for mirror repository [#2235](https://github.com/gogits/gogs/issues/2235)
 - Able to load more feeds on dashboard [#2511](https://github.com/gogits/gogs/issues/2511)

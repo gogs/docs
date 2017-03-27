@@ -13,9 +13,12 @@ name: 变更日志
 - 非本地用户无法更新个人设置 [#4313](https://github.com/gogits/gogs/issues/4313)
 - 工单索引不存在会显示随机工单 [#4315](https://github.com/gogits/gogs/issues/4315)
 - 无法从二级派生仓库发起合并请求 [#4324](https://github.com/gogits/gogs/issues/4324)
+- 派生、迁移和镜像仓库的体积没有正确更新 [#4336](https://github.com/gogits/gogs/issues/4336)
 
 #### 新增特性
 
+- 支持私有仓库工单的公开访问 [#649](https://github.com/gogits/gogs/issues/649)
+- 支持私有仓库 Wiki 的公开访问 [#2157](https://github.com/gogits/gogs/issues/2157)
 - 支持重新推送 Web 钩子的历史记录 [#2187](https://github.com/gogits/gogs/issues/2187)
 - API：同步镜像仓库 [#2235](https://github.com/gogits/gogs/issues/2235)
 - 支持在控制面板中加载更多的活动内容 [#2511](https://github.com/gogits/gogs/issues/2511)
