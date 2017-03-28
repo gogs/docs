@@ -77,13 +77,29 @@ name: 配置文件手册
 `FILE_MAX_SIZE`|单个上传的文件的最大体积，以 MB 为单位
 `MAX_FILES`|单次同时上传的最多文件个数
 
+#### 版本发布 - 附件 (`release.attachment`)
+
+名称|描述
+----|----
+`ENABLED`|激活该选项来启用版本发布附件功能
+`PATH`|存放附件的路径
+`ALLOWED_TYPES`|允许上传的 MIME 类型，例如 `image/jpeg|image/png`，使用 `*/*` 允许所有类型的文件
+`MAX_SIZE`|最大允许上传的附件体积，单位为 MB，例如 `32`
+`MAX_FILES`|最大允许一次性上传的附件个数，例如 `10`
+
 ### Markdown (`markdown`)
 
 名称|描述
 ----|----
-`ENABLE_HARD_LINE_BREAK`|指示是否启动硬性换行扩展
+`ENABLE_HARD_LINE_BREAK`|指示是否启用硬性换行扩展
 `CUSTOM_URL_SCHEMES`|允许被解析为链接的自定义 URL 方案，例如 `git`（用于 `git://`）和`magnet`（用于 `magnet://`）
 `FILE_EXTENSIONS`|需要被渲染为 Markdown 格式的文件名后缀，通过逗号分隔。如果是无后缀名的文件，则单独放置一个逗号，例如：`.markdown,`
+
+### Smartypants (`smartypants`)
+
+名称|描述
+----|----
+`ENABLED`|指示是否启用 Smartypants 扩展
 
 ### HTTP (`http`)
 
@@ -194,7 +210,7 @@ name: 配置文件手册
 
 名称|描述
 ----|----
-`ENABLED`|启用该选项以允许用户上传附件
+`ENABLED`|激活该选项以允许用户上传附件
 `PATH`|存放附件的路径
 `ALLOWED_TYPES`|允许上传的 MIME 类型，例如 `image/jpeg|image/png`，使用 `*/*` 允许所有类型的文件
 `MAX_SIZE`|最大允许上传的附件体积，单位为 MB，例如 `4`
@@ -213,6 +229,30 @@ name: 配置文件手册
 `ROOT_PATH`|日志文件的根目录
 `MODE`|日志记录模式，默认为 `console`。如果想要开启多模式，请使用逗号分割，例如：`"console, file"`
 `LEVEL`|基本日志级别，默认为 `Trace`
+
+#### 日志 - 控制台 (`log.console`)
+
+名称|描述
+----|----
+`LEVEL`|控制台日志级别，留空则继承父值
+
+#### 日志 - 文件 (`log.file`)
+
+名称|描述
+----|----
+`LEVEL`|控制台日志级别，留空则继承父值
+`LOG_RORATE`|激活该选项以启用日志文件自转
+`DAILY_ROTATE`|激活该选项以进行日常自转
+`MAX_SIZE_SHIFT`|自转需要达到的最大文件体积，使用位左移，默认为 28 即 1 << 28，表示 256MB
+`MAX_LINES`|自转需要达到的最大文件行数，默认为 `1000000`
+`MAX_DAYS`|保留自转文件的最长期限，默认为 `7` 天后删除
+
+#### 日志 - Slack (`log.slack`)
+
+名称|描述
+----|----
+`LEVEL`|控制台日志级别，留空则继承父值
+`URL`|Slack Web 钩子 URL
 
 ### Cron (`cron`)
 
@@ -254,10 +294,21 @@ name: 配置文件手册
 
 名称|描述
 ----|----
+`DISABLE_DIFF_HIGHLIGHT`|激活该选项以禁用行内差异高亮
 `MAX_GIT_DIFF_LINES`|差异对比页面单个文件显示的最大行数
 `MAX_GIT_DIFF_LINE_CHARACTERS`|差异对比页面单行显示的最大字符数
 `MAX_GIT_DIFF_FILES`|差异对比页面文件显示的最多个数
 `GC_ARGS`|`git gc` 命令的参数，例如：`--aggressive --auto`
+
+#### Git - 超时 (`git.timeout`)
+
+名称|描述
+----|----
+`MIGRATE`|仓库迁移操作超时，默认为 `600` 秒
+`MIRROR`|仓库镜像同步操作超时，默认为 `300` 秒
+`CLONE`|仓库克隆操作超时，默认为 `300` 秒
+`PULL`|仓库拉取操作超时，默认为 `300` 秒
+`GC`|仓库垃圾回收操作超时，默认为 `60` 秒
 
 ### UI (`ui`)
 

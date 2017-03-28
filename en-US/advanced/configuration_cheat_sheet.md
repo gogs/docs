@@ -77,6 +77,16 @@ Name|Description
 `FILE_MAX_SIZE`|Maximum size of each file in MB.
 `MAX_FILES`|Maximum number of files per upload.
 
+#### Release - Attachment (`release.attachment`)
+
+Name|Description
+----|-----------
+`ENABLED`|Indicates whether or not to enable release attachment feature.
+`PATH`|Path to store attachments.
+`ALLOWED_TYPES`|Allowed MIME types, e.g. `image/jpeg|image/png`, use `*/*` for all types.
+`MAX_SIZE`|Maximum size in MB, e.g. `32`
+`MAX_FILES`|Maximum number of attachments can be uploaded at once, e.g. `10`.
+
 ### Markdown (`markdown`)
 
 Name|Description
@@ -84,6 +94,12 @@ Name|Description
 `ENABLE_HARD_LINE_BREAK`|Whether or not to enable hard the line break extension.
 `CUSTOM_URL_SCHEMES`|List of custom URL-Schemes that are allowed as links when rendering Markdown, for example `git` (for `git://`) and `magnet` (for `magnet://`).
 `FILE_EXTENSIONS`|List of file extensions that should be rendered/edited as Markdown. Separate extensions with a comma. To render files without extension as Markdown, just put a comma.
+
+### Smartypants (`smartypants`)
+
+Name|Description
+----|-----------
+`ENABLED`|Indicates whether or not to enable Smartypants extension.
 
 ### HTTP (`http`)
 
@@ -214,6 +230,30 @@ Name|Description
 `MODE`|Logging mode, default is `console`. For multiple modes, Use comma to separate multiple modes, e.g. `"console, file"`.
 `LEVEL`|General log level, default is `Trace`.
 
+#### Log - Console (`log.console`)
+
+Name|Description
+----|-----------
+`LEVEL`|Console log level, leave empty to inherit.
+
+#### Log - File (`log.file`)
+
+Name|Description
+----|-----------
+`LEVEL`|File log level, leave empty to inherit.
+`LOG_RORATE`|Enable this to have file rotation.
+`DAILY_ROTATE`|Enable this to segment log file daily.
+`MAX_SIZE_SHIFT`|Max size shift of single file for rotation, default is 28 means 1 << 28, 256MB.
+`MAX_LINES`|Max line number of single file for rotation, default is `1000000`.
+`MAX_DAYS`|Expired days of log file for rotation, default is to delete after `7` days.
+
+#### Log - Slack (`log.slack`)
+
+Name|Description
+----|-----------
+`LEVEL`|Slack log level, leave empty to inherit.
+`URL`|Slack webhook URL.
+
 ### Cron (`cron`)
 
 Name|Description
@@ -254,10 +294,21 @@ Name|Description
 
 Name|Description
 ----|-----------
+`DISABLE_DIFF_HIGHLIGHT`|Enable this to disable inline diff highlight.
 `MAX_GIT_DIFF_LINES`|Max number of lines allowed of a single file in diff view.
 `MAX_GIT_DIFF_LINE_CHARACTERS`|Max number of characters of a line allowed in diff view.
 `MAX_GIT_DIFF_FILES`|Max number of files shown in diff view.
 `GC_ARGS`|Arguments for command `git gc`, e.g. `--aggressive --auto`.
+
+#### Git - Timeout (`git.timeout`)
+
+Name|Description
+----|-----------
+`MIGRATE`|Repository migration timeout in seconds, default is `600`.
+`MIRROR`|Repository mirror sync timeout in seconds, default is `300`.
+`CLONE`|Repository clone timeout in seconds, default is `300`.
+`PULL`|Repository pull timeout in seconds, default is `300`.
+`GC`|Repository GC timeout in seconds, default is `60`.
 
 ### UI (`ui`)
 
