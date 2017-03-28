@@ -4,7 +4,7 @@ name: Changelog
 
 # Changelog
 
-### Unreleased
+### 0.11 RC @ 2017-03-27
 
 #### Bug fixes
 
