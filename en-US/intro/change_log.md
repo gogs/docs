@@ -4,6 +4,14 @@ name: Changelog
 
 # Changelog
 
+### Unreleased
+
+#### Bug fixes
+
+- Wrong repository count in organization dashboard [#4351](https://github.com/gogits/gogs/issues/4351)
+- Fail to migrate from version prior to 0.10 [#4355](https://github.com/gogits/gogs/issues/4355)
+- Private repository with public issues didn't handle anonymous visit properly [#4359](https://github.com/gogits/gogs/issues/4359)
+
 ### 0.11 RC @ 2017-03-27
 
 #### Bug fixes

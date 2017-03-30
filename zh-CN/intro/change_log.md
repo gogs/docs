@@ -4,6 +4,14 @@ name: 变更日志
 
 # 变更日志
 
+### 未发布
+
+#### Bug 修复
+
+- 组织控制面板显示错误的仓库统计 [#4351](https://github.com/gogits/gogs/issues/4351)
+- 从 0.10 之前的版本自动迁移失败 [#4355](https://github.com/gogits/gogs/issues/4355)
+- 允许公开访问工单的私有仓库没有正确处理匿名访问 [#4359](https://github.com/gogits/gogs/issues/4359)
+
 ### 0.11 RC @ 2017-03-27
 
 #### Bug 修复
