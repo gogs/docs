@@ -8,6 +8,7 @@ name: 变更日志
 
 #### Bug 修复
 
+- 编辑个人信息发生验证错误时丢失内容 [#1123](https://github.com/gogits/gogs/issues/1123)
 - 组织控制面板显示错误的仓库统计 [#4351](https://github.com/gogits/gogs/issues/4351)
 - 从 0.10 之前的版本自动迁移失败 [#4355](https://github.com/gogits/gogs/issues/4355)
 - 允许公开访问工单的私有仓库没有正确处理匿名访问 [#4359](https://github.com/gogits/gogs/issues/4359)
