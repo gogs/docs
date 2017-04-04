@@ -4,7 +4,7 @@ name: 变更日志
 
 # 变更日志
 
-### 未发布
+### 0.11 @ 2017-04-03
 
 #### Bug 修复
 
@@ -112,35 +112,4 @@ name: 变更日志
 - 添加配置选项 `[session] CSRF_COOKIE_NAME` 用于自定义 CSRF Cookie 名称 [#4172](https://github.com/gogits/gogs/issues/4172)
 - 允许为组织仓库添加用户和团队推送白名单 [#4177](https://github.com/gogits/gogs/issues/4177)
 
-### 0.10 RC @ 2017-02-21
-
-#### Bug 修复
-
-- 未配置邮件服务无法完成安装或启动程序
-- 通过 HTTP 推送大量内容时内存溢出 [#636](https://github.com/gogits/gogs/issues/636)
-- 无法导航到 Wiki 标题包含 `-` 的页面 [#3754](https://github.com/gogits/gogs/issues/3754)
-- 无法编辑标题包含 `#` 的 Wiki 页面 [#3767](https://github.com/gogits/gogs/issues/3767)
-- Wiki 标题包含 Tab 键时崩溃 [#3916](https://github.com/gogits/gogs/issues/3916)
-- 无法通过 API 关闭里程碑 [#4102](https://github.com/gogits/gogs/issues/4102)
-- 强制推送后仓库本地副本无法使用 [#4123](https://github.com/gogits/gogs/issues/4123)
-- 完成合并请求后无法删除发起分支 [#4128](https://github.com/gogits/gogs/issues/4128)
-
-#### 功能改进
-
-- 允许派生自己的仓库 [#1791](https://github.com/gogits/gogs/issues/1791)
-- 版本发布增加分页功能 [#2164](https://github.com/gogits/gogs/issues/2164)
-- 允许将工单指定给只读权限的成员 [#3739](https://github.com/gogits/gogs/issues/3739)
-- 允许使用短哈希下载仓库归档 [#3834](https://github.com/gogits/gogs/issues/3834)
-- 文件差异对比页面可以高亮某一行
-
-#### 新增特性
-
-- 支持 Discord Web 钩子
-- 支持保护分支 [#776](https://github.com/gogits/gogs/issues/776)
-- 支持 MSSQL [#3772](https://github.com/gogits/gogs/pull/3772)
-
-#### 其它变更
-
-- 停止支持 0.6.x 系列
-
-**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.10rc) 上找到。**
+**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.10) 上找到。**

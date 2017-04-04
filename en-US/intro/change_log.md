@@ -4,7 +4,7 @@ name: Changelog
 
 # Changelog
 
-### Unreleased
+### 0.11 @ 2017-04-03
 
 #### Bug fixes
 
@@ -112,35 +112,4 @@ name: Changelog
 - Add config option `[session] CSRF_COOKIE_NAME` for custom CSRF cookie name [#4172](https://github.com/gogits/gogs/issues/4172)
 - Able to whitelist users and teams for protect branch of organizational repository [#4177](https://github.com/gogits/gogs/issues/4177)
 
-### 0.10 RC @ 2017-02-21
-
-#### Bug fixes
-
-- Cannot install or start server without mail service
-- Out of memory when push large content through HTTP [#636](https://github.com/gogits/gogs/issues/636)
-- Cannot navigate to wiki page title contains `-` [#3754](https://github.com/gogits/gogs/issues/3754)
-- Cannot edit wiki page title contains `#` [#3767](https://github.com/gogits/gogs/issues/3767)
-- Crash when tabular spaces in title of wiki pages [#3916](https://github.com/gogits/gogs/issues/3916)
-- Cannot close a milestone using API [#4102](https://github.com/gogits/gogs/issues/4102)
-- Repository local copy stops working after force push [#4123](https://github.com/gogits/gogs/issues/4123)
-- Cannot delete branch after merging pull request [#4128](https://github.com/gogits/gogs/issues/4128)
-
-#### Improvements
-
-- Able to fork own repository [#1791](https://github.com/gogits/gogs/issues/1791)
-- Add pagination to releases [#2164](https://github.com/gogits/gogs/issues/2164)
-- Assign issue to user with read-only access [#3739](https://github.com/gogits/gogs/issues/3739)
-- Support short-hash for download archives [#3834](https://github.com/gogits/gogs/issues/3834)
-- Highlight a line on diff view
-
-#### Features
-
-- Support Discord webhook
-- Support protected branches [#776](https://github.com/gogits/gogs/issues/776)
-- Support MSSQL [#3772](https://github.com/gogits/gogs/pull/3772)
-
-#### Others
-
-- Stop supporting 0.6.x
-
-**Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.10rc).**
+**Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.10).**

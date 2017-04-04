@@ -11,17 +11,15 @@ name: 注册 Windows 服务
 1. 使用 `miniwinsvc` 构建标签获得内置 Windows 服务支持。
 2. 不使用 `miniwinsvc` 构建标签并通过 [NSSM](http://nssm.cc/) 注册为服务。
 
-First of all, you may choose to lock down file and directory permissions. Just keep in mind the paths to which Gogs requires write access, which includes the Gogs repository `ROOT`.
+在注册成为服务之前，需要确保给予 Gogs 二进制相应目录的读写权限，包括存放仓库的根目录（`[repository] ROOT`）。
 
-The following changes are made in `C:\Gogs\custom\conf\app.ini`:
+修改 `C:\Gogs\custom\conf\app.ini` 文件的相应信息：
 
 ```
 RUN_USER = COMPUTERNAME$
 ```
 
-Sets Gogs to run as the local system user.
-
-`COMPUTERNAME` is whatever the response is from `echo %COMPUTERNAME%` on the command line. If the response is `USER-PC` then `RUN_USER = USER-PC$`:
+通过上面的配置将 Gogs 的运行用户设置为本地系统用户。`COMPUTERNAME` 的值可以通过命令 `echo %COMPUTERNAME%` 获得，如果该命令的返回值为 `USER-PC` 则使用 `RUN_USER = USER-PC$`：
 
 ```
 [server]
