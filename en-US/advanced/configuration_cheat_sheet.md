@@ -73,7 +73,7 @@ Name|Description
 ----|-----------
 `ENABLED`|Indicates whether or not to enable repository file upload feature.
 `TEMP_PATH`|Path to temporarily store uploads. Use the default or system temporary path.
-`ALLOWED_TYPES`|File types that are allowed to be uploaded (e.g. `image/jpeg|image/png`). Leave empty means allow any file type.
+`ALLOWED_TYPES`|File types that are allowed to be uploaded (e.g. "image/jpeg\|image/png"). Leave empty means allow any file type.
 `FILE_MAX_SIZE`|Maximum size of each file in MB.
 `MAX_FILES`|Maximum number of files per upload.
 
@@ -83,7 +83,7 @@ Name|Description
 ----|-----------
 `ENABLED`|Indicates whether or not to enable release attachment feature.
 `PATH`|Path to store attachments.
-`ALLOWED_TYPES`|Allowed MIME types, e.g. `image/jpeg|image/png`, use `*/*` for all types.
+`ALLOWED_TYPES`|Allowed MIME types, e.g. "image/jpeg\|image/png", use `*/*` for all types.
 `MAX_SIZE`|Maximum size in MB, e.g. `32`
 `MAX_FILES`|Maximum number of attachments can be uploaded at once, e.g. `10`.
 
@@ -212,7 +212,7 @@ Name|Description
 ----|-----------
 `ENABLED`|Enable this to allow users upload attachments.
 `PATH`|Path to store attachments.
-`ALLOWED_TYPES`|Allowed MIME types, e.g. `image/jpeg|image/png`, use `*/*` for all types.
+`ALLOWED_TYPES`|Allowed MIME types, e.g. "image/jpeg\|image/png", use `*/*` for all types.
 `MAX_SIZE`|Maximum size in MB, e.g. `4`
 `MAX_FILES`|Maximum number of attachments can be uploaded at once, e.g. `5`.
 

@@ -73,7 +73,7 @@ name: 配置文件手册
 ----|----
 `ENABLED`|激活该选项来启用仓库文件上传功能
 `TEMP_PATH`|文件上传的临时存放目录
-`ALLOWED_TYPES`|允许上传的文件类型（例如：`image/jpeg|image/png`），留空表示允许上传任意类型的文件
+`ALLOWED_TYPES`|允许上传的文件类型（例如："image/jpeg\|image/png"），留空表示允许上传任意类型的文件
 `FILE_MAX_SIZE`|单个上传的文件的最大体积，以 MB 为单位
 `MAX_FILES`|单次同时上传的最多文件个数
 
@@ -83,7 +83,7 @@ name: 配置文件手册
 ----|----
 `ENABLED`|激活该选项来启用版本发布附件功能
 `PATH`|存放附件的路径
-`ALLOWED_TYPES`|允许上传的 MIME 类型，例如 `image/jpeg|image/png`，使用 `*/*` 允许所有类型的文件
+`ALLOWED_TYPES`|允许上传的 MIME 类型，例如 "image/jpeg\|image/png"，使用 `*/*` 允许所有类型的文件
 `MAX_SIZE`|最大允许上传的附件体积，单位为 MB，例如 `32`
 `MAX_FILES`|最大允许一次性上传的附件个数，例如 `10`
 
@@ -212,7 +212,7 @@ name: 配置文件手册
 ----|----
 `ENABLED`|激活该选项以允许用户上传附件
 `PATH`|存放附件的路径
-`ALLOWED_TYPES`|允许上传的 MIME 类型，例如 `image/jpeg|image/png`，使用 `*/*` 允许所有类型的文件
+`ALLOWED_TYPES`|允许上传的 MIME 类型，例如 "image/jpeg\|image/png"，使用 `*/*` 允许所有类型的文件
 `MAX_SIZE`|最大允许上传的附件体积，单位为 MB，例如 `4`
 `MAX_FILES`|最大允许一次性上传的附件个数，例如 `5`
 
