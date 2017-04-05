@@ -4,6 +4,15 @@ name: 变更日志
 
 # 变更日志
 
+### 0.11.4 @ 2017-04-05
+
+#### Bug 修复
+
+- 在进行 HTTP/HTTPS 推送和拉取时客户端没有提示用户输入凭据
+- 镜像用户凭据没有进行 URL 编码 [#4014](https://github.com/gogits/gogs/issues/4014)
+- 仓库禁用合并请求时，发起合并请求按钮仍旧在分支页面显示 [#4377](https://github.com/gogits/gogs/issues/4377)
+- 用户在安装页面发生验证错误时应用会崩溃 [#4383](https://github.com/gogits/gogs/issues/4014) 
+
 ### 0.11 @ 2017-04-03
 
 #### Bug 修复

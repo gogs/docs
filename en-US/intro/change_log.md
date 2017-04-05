@@ -4,6 +4,15 @@ name: Changelog
 
 # Changelog
 
+### 0.11.4 @ 2017-04-05
+
+#### Bug fixes
+
+- Client is not informed to provide credentials during HTTP/HTTPS push/pull
+- Mirror credentials are not URL encoded [#4014](https://github.com/gogits/gogs/issues/4014)
+- Create pull request buttons are showed on branches page when pull request is disabled [#4377](https://github.com/gogits/gogs/issues/4377)
+- Panic if user has vaildation error on installation [#4383](https://github.com/gogits/gogs/issues/4014)
+
 ### 0.11 @ 2017-04-03
 
 #### Bug fixes
