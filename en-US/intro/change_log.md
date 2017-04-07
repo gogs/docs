@@ -4,6 +4,12 @@ name: Changelog
 
 # Changelog
 
+### Unreleased
+
+#### Features
+
+- Support two-factor authentication [#945](https://github.com/gogits/gogs/issues/945)
+
 ### 0.11.4 @ 2017-04-05
 
 #### Bug fixes
