@@ -6,6 +6,10 @@ name: Changelog
 
 ### Unreleased
 
+#### Bug fixes
+
+- Broken relative path for image link in edit file preview [#4368](https://github.com/gogits/gogs/issues/4368)
+
 #### Features
 
 - Support two-factor authentication [#945](https://github.com/gogits/gogs/issues/945)
