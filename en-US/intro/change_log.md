@@ -10,6 +10,10 @@ name: Changelog
 
 - Support two-factor authentication [#945](https://github.com/gogits/gogs/issues/945)
 
+#### Improvements
+
+- Remain updated time unchanged if no new commits fetched for mirrors [#4341](https://github.com/gogits/gogs/issues/4341)
+
 ### 0.11.4 @ 2017-04-05
 
 #### Bug fixes

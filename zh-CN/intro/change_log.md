@@ -10,6 +10,10 @@ name: 变更日志
 
 - 支持两步验证登录 [#945](https://github.com/gogits/gogs/issues/945)
 
+#### 功能改进
+
+- 镜像仓库没有拉取新代码提交时不更新最后更新时间 [#4341](https://github.com/gogits/gogs/issues/4341)
+
 ### 0.11.4 @ 2017-04-05
 
 #### Bug 修复
