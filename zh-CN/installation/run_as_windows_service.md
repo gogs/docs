@@ -50,7 +50,7 @@ In a web browser, generally, `gogs/` in the address bar is sufficient to trigger
 Open a command prompt (`cmd.exe`) as an Administrator. Run the following command:
 
 ```
-C:\> sc create gogs start= auto binPath= ""C:\gogs\gogs.exe" web --config "C:\gogs\conf\app.ini""
+C:\> sc create gogs start= auto binPath= "\"C:\gogs\gogs.exe\" web --config \"C:\gogs\conf\app.ini\""
 ```
 
 Ensure there is a space after each `=`. You can choose to add additional Arguments to further modify your service, or modify it manually in the service management console.
