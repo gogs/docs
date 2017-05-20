@@ -317,7 +317,7 @@ name: 配置文件手册
 `EXPLORE_PAGING_NUM`|探索页面每页显示仓库的数量
 `ISSUE_PAGING_NUM`|每页显示工单（Issue）的数量（应用到所有以列表形式显示工单的页面）
 `FEED_MAX_COMMIT_NUM`|一条最新活动中显示代码提交（Commit）的最大数量
-`THEME_COLOR_META_TAG`|被用于 Android >= 5.0 版本 "theme-color" 标记的值，无效的值将被忽悠并使用默认值（[查看详情](https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android)）
+`THEME_COLOR_META_TAG`|被用于 Android >= 5.0 版本 "theme-color" 标记的值，无效的值将被忽略并使用默认值（[查看详情](https://developers.google.com/web/updates/2014/11/Support-for-theme-color-in-Chrome-39-for-Android)）
 `MAX_DISPLAY_FILE_SIZE`|显示到页面的最大文件体积（Byte）
 
 #### UI - Admin (`ui.admin`)
