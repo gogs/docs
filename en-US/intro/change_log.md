@@ -17,6 +17,7 @@ name: Changelog
 #### Improvements
 
 - Remain updated time unchanged if no new commits fetched for mirrors [#4341](https://github.com/gogits/gogs/issues/4341)
+- Support IPython notebook as README [#4367](https://github.com/gogits/gogs/issues/4367)
 
 ### 0.11.4 @ 2017-04-05
 

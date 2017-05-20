@@ -17,6 +17,7 @@ name: 变更日志
 #### 功能改进
 
 - 镜像仓库没有拉取新代码提交时不更新最后更新时间 [#4341](https://github.com/gogits/gogs/issues/4341)
+- 支持 IPython Notebook 形式的 README [#4367](https://github.com/gogits/gogs/issues/4367)
 
 ### 0.11.4 @ 2017-04-05
 
