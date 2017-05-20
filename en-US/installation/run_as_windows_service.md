@@ -70,6 +70,22 @@ The gogs service is starting.
 The gogs service was started successfully.
 ```
 
+#### :warning: Use absolute paths
+
+Windows services usualy run with under ``%WINDIR%\System32``, and to ensure correct function, specify absolute paths for server data, database files, and other paths in ``app.ini``. For example:
+
+Add ``APP_DATA_PATH`` to ``[server]`` where Gogs stores server data and cache:
+```
+[server]
+APP_DATA_PATH = c:/gogs/data
+```
+
+If you use sqlite3, change the ``PATH`` to include the full path:
+```
+[database]
+PATH     = c:/gogs/data/gogs.db
+```
+
 ### Use NSSM
 
 Get the [nssm.exe](http://nssm.cc/download) needed for your machine (32 or 64 bit; they're packaged together in Iain's zip file), and place it in a directory that is in (or will be added to) your ``%PATH%`` environment variable.
