@@ -16,6 +16,7 @@ name: Changelog
 
 #### Improvements
 
+- Installation checks port for SMTP host [#2243](https://github.com/gogits/gogs/issues/2243)
 - Remain updated time unchanged if no new commits fetched for mirrors [#4341](https://github.com/gogits/gogs/issues/4341)
 - Support IPython notebook as README [#4367](https://github.com/gogits/gogs/issues/4367)
 
