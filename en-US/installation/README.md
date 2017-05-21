@@ -11,7 +11,7 @@ name: Installation
     - [TiDB](https://github.com/pingcap/tidb) (experimental, connect by MySQL protocol)
     - or **NOTHING** with SQLite3
 - [Git](http://git-scm.com/) (bash):
-    - Version >= 1.7.1 for both server and client sides
+    - Version >= 1.7.2 for both server and client sides
     - Best to use latest version for Windows
 - A functioning SSH server:
     - **Ignore this if you're only going to use HTTP/HTTPS or use builtin SSH server**
