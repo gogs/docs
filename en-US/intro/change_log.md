@@ -14,6 +14,7 @@ name: Changelog
 #### Features
 
 - Support two-factor authentication [#945](https://github.com/gogits/gogs/issues/945)
+- Support filter by group membership for LDAP [#4398](https://github.com/gogits/gogs/pull/4398)
 
 #### Improvements
 

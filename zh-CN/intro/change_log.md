@@ -14,6 +14,7 @@ name: 变更日志
 #### 新增特性
 
 - 支持两步验证登录 [#945](https://github.com/gogits/gogs/issues/945)
+- 支持 LDAP 登录时验证组成员身份 [#4398](https://github.com/gogits/gogs/pull/4398)
 
 #### 功能改进
 

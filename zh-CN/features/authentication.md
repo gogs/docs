@@ -91,3 +91,21 @@ name: 授权认证
     form.
   - Example: `(&(objectClass=posixAccount)(cn=%s))`
   - Example: `(&(objectClass=posixAccount)(uid=%s))`
+
+**验证组成员** 需要填充以下字段：
+
+* 组搜索基准 DN（可选）
+    * The LDAP DN used for groups.
+    * Example: `ou=group,dc=mydomain,dc=com`
+
+* 组名称过滤（可选）
+    * An LDAP filter declaring how to find valid groups in the above DN.
+    * Example: `(|(cn=gogs_users)(cn=admins))`
+
+* 包含用户的组属性（可选）
+    * Which group LDAP attribute contains an array above user attribute names.
+    * Example: `memberUID`
+
+* 组内用户属性（可选）
+    * Which user LDAP attribute is listed in the group.
+    * Example: `uid`
