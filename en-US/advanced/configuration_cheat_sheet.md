@@ -10,7 +10,7 @@ Before getting started, make sure you know that any change to the configuration 
 
 All **default settings** can be found in [app.ini](https://github.com/gogits/gogs/blob/master/conf/app.ini). If you see anything which looks like `%(X)s`, it is a feature powered by [ini](https://github.com/go-ini/ini/#recursive-values) for reading values recursively.
 
-### Overall
+### Overall (`DEFAULT`)
 
 Name|Description
 ----|-----------
