@@ -9,6 +9,7 @@ name: 变更日志
 #### Bug 修复
 
 - PostgreSQL 恢复备份后出现错误 `unique constraint violation` [#4357](https://github.com/gogits/gogs/issues/4357)
+- IPython notebook 的图片无法显示 [#4366](https://github.com/gogits/gogs/issues/4366)
 - 编辑文件预览时无法正确处理图片相对链接 [#4368](https://github.com/gogits/gogs/issues/4368)
 - 提交历史页面无法渲染 Emoji [#4439](https://github.com/gogits/gogs/issues/4439)
 - 无法修改协作者的权限 [#4512](https://github.com/gogits/gogs/issues/4512)
