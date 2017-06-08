@@ -8,7 +8,7 @@ name: 源码安装
 
 ### 基本依赖
 
-- [Go 语言](http://golang.org)：版本 >= 1.5
+- [Go 语言](http://golang.org)：版本 >= 1.6
 
 ### 第三方包
 
