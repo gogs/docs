@@ -10,6 +10,7 @@ name: Changelog
 
 - Unable to go get subpkg [#1878](https://github.com/gogits/gogs/issues/1878)
 - Unique constraint violation after backup restored for PostgreSQL [#4357](https://github.com/gogits/gogs/issues/4357)
+- Images in IPython notebook are not displayed [#4366](https://github.com/gogits/gogs/issues/4366)
 - Broken relative path for image link in edit file preview [#4368](https://github.com/gogits/gogs/issues/4368)
 - Emoji not rendered on commits view [#4439](https://github.com/gogits/gogs/issues/4439)
 - Cannot change permissions of collaborators [#4512](https://github.com/gogits/gogs/issues/4512)
