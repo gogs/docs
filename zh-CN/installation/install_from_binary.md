@@ -28,13 +28,13 @@ name: 二进制安装
 
 |系统名称|系统类型|SQLite|PAM|下载（[GitHub](https://github.com/gogits/gogs/releases/tag/v0.11.19)）|
 |------|----|------|---|--------|
-|Linux|386|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.11.19/linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/0.11.19/linux_386.tar.gz) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.19/linux_386.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.19/linux_386.tar.gz)|
-|Linux|amd64|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.11.19/linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/0.11.19/linux_amd64.tar.gz) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.19/linux_amd64.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.19/linux_amd64.tar.gz)|
-|Linux|armv5|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/0.11.19/linux_armv5.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.19/linux_armv5.zip)|
-|Raspberry Pi|v2 / armv6|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.11.19/raspi2_armv6.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.19/raspi2_armv6.zip)|
-|Windows|386|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.11.19/windows_386.zip) \| [ZIP w/ mws](https://dl.gogs.io/0.11.19/windows_386_mws.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.19/windows_386.zip) \| [ZIP w/mws](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.19/windows_386_mws.zip)|
-|Windows|amd64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.11.19/windows_amd64.zip) \| [ZIP w/ mws](https://dl.gogs.io/0.11.19/windows_amd64_mws.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.19/windows_amd64.zip) \| [ZIP w/ mws](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.19/windows_amd64_mws.zip)|
-|Mac OS|amd64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.11.19/darwin_amd64.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.19/darwin_amd64.zip)|
+|Linux|386|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.11.19/linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/0.11.19/linux_386.tar.gz) - CDN: [ZIP](https://cdn.gogs.io/0.11.19/linux_386.zip) \| [TAR.GZ](https://cdn.gogs.io/0.11.19/linux_386.tar.gz)|
+|Linux|amd64|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.11.19/linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/0.11.19/linux_amd64.tar.gz) - CDN: [ZIP](https://cdn.gogs.io/0.11.19/linux_amd64.zip) \| [TAR.GZ](https://cdn.gogs.io/0.11.19/linux_amd64.tar.gz)|
+|Linux|armv5|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/0.11.19/linux_armv5.zip) - CDN: [ZIP](https://cdn.gogs.io/0.11.19/linux_armv5.zip)|
+|Raspberry Pi|v2 / armv6|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.11.19/raspi2_armv6.zip) - CDN: [ZIP](https://cdn.gogs.io/0.11.19/raspi2_armv6.zip)|
+|Windows|386|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.11.19/windows_386.zip) \| [ZIP w/ mws](https://dl.gogs.io/0.11.19/windows_386_mws.zip) - CDN: [ZIP](https://cdn.gogs.io/0.11.19/windows_386.zip) \| [ZIP w/mws](https://cdn.gogs.io/0.11.19/windows_386_mws.zip)|
+|Windows|amd64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.11.19/windows_amd64.zip) \| [ZIP w/ mws](https://dl.gogs.io/0.11.19/windows_amd64_mws.zip) - CDN: [ZIP](https://cdn.gogs.io/0.11.19/windows_amd64.zip) \| [ZIP w/ mws](https://cdn.gogs.io/0.11.19/windows_amd64_mws.zip)|
+|Mac OS|amd64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.11.19/darwin_amd64.zip) - CDN: [ZIP](https://cdn.gogs.io/0.11.19/darwin_amd64.zip)|
 
 ### 0.11.4 @ 2017-04-05
 
