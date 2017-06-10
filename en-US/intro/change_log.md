@@ -4,7 +4,7 @@ name: Changelog
 
 # Changelog
 
-### Unreleased
+### 0.11.19 @ 2017-06-10
 
 #### Bug fixes
 
@@ -120,31 +120,4 @@ name: Changelog
 - Able to perform initial commit on behave of actual user
 - Support Gogs-related environment variables for Git hooks [#4094](https://github.com/gogits/gogs/issues/4094)
 
-### 0.10.1 @ 2017-02-28
-
-#### Bug fixes
-
-- Non-organizational repository cannot save branch protection options
-
-### 0.10 @ 2017-02-27
-
-#### Bug fixes
-
-- Unexpected removal of migrated repository when wiki is detected
-- Cannot preview diff on web editor
-- Organizational webhook last delivery status cannot be updated
-- Admin cannot delete organizational repository
-- Diff split view doesn't work on create pull reqeust [#3695](https://github.com/gogits/gogs/issues/3695)
-- Cannot edit release of fork repository [#4174](https://github.com/gogits/gogs/issues/4174)
-
-#### Improvements
-
-- Able to add organization member as repository collaborator
-- Able to add custom head/footer [#1286](https://github.com/gogits/gogs/issues/1286)
-- Able to send test delivery for specific webhook [#3030](https://github.com/gogits/gogs/issues/3030)
-- Able to enable webhook types on choice [#3356](https://github.com/gogits/gogs/issues/3356)
-- Able to send SHA256 HMAC hex digest for webhooks [#3692](https://github.com/gogits/gogs/issues/3692)
-- Add config option `[session] CSRF_COOKIE_NAME` for custom CSRF cookie name [#4172](https://github.com/gogits/gogs/issues/4172)
-- Able to whitelist users and teams for protect branch of organizational repository [#4177](https://github.com/gogits/gogs/issues/4177)
-
-**Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.10).**
+**Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.10.8).**

@@ -4,7 +4,7 @@ name: 变更日志
 
 # 变更日志
 
-### 未发布
+### 0.11.19 @ 2017-06-10
 
 #### Bug 修复
 
@@ -120,31 +120,4 @@ name: 变更日志
 - 使用创建仓库的用户信息作为首个代码提交的作者，而不是系统用户
 - 支持 Gogs 相关的 Git 钩子环境变量 [#4094](https://github.com/gogits/gogs/issues/4094)
 
-### 0.10.1 @ 2017-02-28
-
-#### Bug 修复
-
-- 非组织仓库无法保存分支保护选项
-
-### 0.10 @ 2017-02-27
-
-#### Bug 修复
-
-- 迁移仓库时检测到 Wiki 会意外地将仓库本身删除
-- 无法通过 Web 编辑器预览文件对比差异
-- 组织级 Web 钩子最后推送状态无法被更新
-- 管理员无法删除组织仓库
-- 创建合并请求页面无法查看分列视图 [#3695](https://github.com/gogits/gogs/issues/3695)
-- 无法编辑派生仓库的版本发布 [#4174](https://github.com/gogits/gogs/issues/4174)
-
-#### 功能改进
-
-- 允许添加组织成员为仓库协作者
-- 允许设置自定义页面头部和底部内容 [#1286](https://github.com/gogits/gogs/issues/1286)
-- 允许测试推送只触发当前浏览的 Web 钩子 [#3030](https://github.com/gogits/gogs/issues/3030)
-- 允许仅启用部分类型的 Web 钩子 [#3356](https://github.com/gogits/gogs/issues/3356)
-- 支持 Web 钩子发送 SHA256 HMAC 校验和 [#3692](https://github.com/gogits/gogs/issues/3692)
-- 添加配置选项 `[session] CSRF_COOKIE_NAME` 用于自定义 CSRF Cookie 名称 [#4172](https://github.com/gogits/gogs/issues/4172)
-- 允许为组织仓库添加用户和团队推送白名单 [#4177](https://github.com/gogits/gogs/issues/4177)
-
-**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.10) 上找到。**
+**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.10.8) 上找到。**

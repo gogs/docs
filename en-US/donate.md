@@ -33,6 +33,7 @@ name: Donation
 
 | Donated at       | Donator    | Amount   |
 | ---------------- |:---------:| --------:|
+| 2017-06-10 | mrexodia | $10.00 |
 | 2017-05-11 | Mr. Ozols | $10.00 |
 | 2017-04-19 | (Anonymous) | $50.00 |
 | 2017-02-28 | Mr. Bullock | $10.00 |
