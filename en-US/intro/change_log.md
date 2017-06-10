@@ -9,10 +9,13 @@ name: Changelog
 #### Bug fixes
 
 - Unable to go get subpkg [#1878](https://github.com/gogits/gogs/issues/1878)
+- Does not set as admin after first LDAP login [#2855](https://github.com/gogits/gogs/issues/2855)
+- Panic when login via PAM [#4216](https://github.com/gogits/gogs/issues/4216)
 - Unique constraint violation after backup restored for PostgreSQL [#4357](https://github.com/gogits/gogs/issues/4357)
 - Images in IPython notebook are not displayed [#4366](https://github.com/gogits/gogs/issues/4366)
 - Broken relative path for image link in edit file preview [#4368](https://github.com/gogits/gogs/issues/4368)
 - Emoji not rendered on commits view [#4439](https://github.com/gogits/gogs/issues/4439)
+- High CPU when view single commit contains file mode change [#4475](https://github.com/gogits/gogs/issues/4475)
 - Cannot change permissions of collaborators [#4512](https://github.com/gogits/gogs/issues/4512)
 
 #### Features
@@ -25,6 +28,7 @@ name: Changelog
 - Installation checks port for SMTP host [#2243](https://github.com/gogits/gogs/issues/2243)
 - Remain updated time unchanged if no new commits fetched for mirrors [#4341](https://github.com/gogits/gogs/issues/4341)
 - Support IPython notebook as README [#4367](https://github.com/gogits/gogs/issues/4367)
+- Configurable TLS Support [#4450](https://github.com/gogits/gogs/issues/4450)
 
 ### 0.11.4 @ 2017-04-05
 

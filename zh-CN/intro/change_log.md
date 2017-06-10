@@ -9,10 +9,13 @@ name: 变更日志
 #### Bug 修复
 
 - 无法使用 go get 子包 [#1878](https://github.com/gogits/gogs/issues/1878)
+- 非首次使用 LDAP 登录无法更新用户为管理员 [#2855](https://github.com/gogits/gogs/issues/2855)
+- 使用 PAM 登录时发生错误 [#4216](https://github.com/gogits/gogs/issues/4216)
 - PostgreSQL 恢复备份后出现错误 `unique constraint violation` [#4357](https://github.com/gogits/gogs/issues/4357)
 - IPython notebook 的图片无法显示 [#4366](https://github.com/gogits/gogs/issues/4366)
 - 编辑文件预览时无法正确处理图片相对链接 [#4368](https://github.com/gogits/gogs/issues/4368)
 - 提交历史页面无法渲染 Emoji [#4439](https://github.com/gogits/gogs/issues/4439)
+- 查看包含文件权限更改的单个提交时 CPU 异常高 [#4475](https://github.com/gogits/gogs/issues/4475)
 - 无法修改协作者的权限 [#4512](https://github.com/gogits/gogs/issues/4512)
 
 #### 新增特性
@@ -25,6 +28,7 @@ name: 变更日志
 - 安装页面检查 SMTP 地址中是否包含端口号 [#2243](https://github.com/gogits/gogs/issues/2243)
 - 镜像仓库没有拉取新代码提交时不更新最后更新时间 [#4341](https://github.com/gogits/gogs/issues/4341)
 - 支持 IPython Notebook 形式的 README [#4367](https://github.com/gogits/gogs/issues/4367)
+- 支持自定义 TLS 相关配置 [#4450](https://github.com/gogits/gogs/issues/4450)
 
 ### 0.11.4 @ 2017-04-05
 
