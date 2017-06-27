@@ -1,139 +1,176 @@
 ---
-name: Fiche de configuration de triche
+name: Détails de configuration
 sort: 1
 ---
 
-# Fiche de configuration de triche
+# Aide mémoire pour la configuration
 
-Ceci est une feuille de triche pour le fichier de configuration Gogs, il aidera si vous voulez comprendre comment Gogs fonctionne.
+Ceci est un aide-mémoire relatif au fichier de configuration de Gogs, il vous aider à mieux comprendre le fonctionnement de Gogs.
 
-Avant de commencer, assurez-vous que tout changement de configuration doit être faite dans `custom/conf/app.ini` ou n'importe quel endroit correspondant.
+Avant de commencer, sachez que tout changement de configuration doit être fait dans `custom/conf/app.ini` ou n'importe quel fichier similaire.
 
-Tous les paramètres par défaut peuvent être trouvés dans [app.ini](https://github.com/gogits/gogs/blob/master/conf/app.ini). Si vous voyez quelque chose comme `%(X)s`, il est propulsé par la fonctionnalité [ini](https://github.com/go-ini/ini/tree/v1#recursive-values) pour la lecture de la valeur de manière récursive.
+Tous les **paramètres par défaut** peuvent être trouvés dans [app.ini](https://github.com/gogits/gogs/blob/master/conf/app.ini). Si vous voyez quelque chose comme `%(X)s`, c'est une fonctionnalité qui est au format [ini](https://github.com/go-ini/ini/tree/v1#recursive-values) pour la lecture recursive de la valeur.
 
-## Globalement
+## Global (`DEFAULT`)
 
-- `APP_NAME`: Nom de l'application, modifié comme vous le souhaitez.
-- `RUN_USER`: L'utilisateur du système nécessite de fonctionner, nous vous recommandons d'être sous l'utilisateur `git`; cependant, changer pour quel que soit votre nom d'utilisateur est si vous exécutez Gogs dans votre ordinateur personnel. Le serveur peut crasher si cette valeur n'est pas réglée correctement.
-- `RUN_MODE`: Pour des performances et autres finalités, changer pour `prod` quand déployer dans l'environnement de production. Le processus d'installation va définir ce `prod` automatiquement.
+Nom |Description
+----|-----------
+`APP_NAME`|Nom de l'application, à modifier comme vous le souhaitez.
+`RUN_USER`|Le nom de l'utilisateur système qui fait tourner Gogs. La recommandation est d'utiliser 'git'; cepandant vous pouvez le changer pour n'importe quel utilisateur faisant tourner Gogs sur votre ordinateur. Si cette valeur n'est pas bien renseignée, cela peut provoquer des crashs de Gogs.
+`RUN_MODE`|Pour des questions de performances et autres, changez ceci en `prod` quand Gogs est déployé dans un environnement de production. Le processus d'installation le passe à `prod` automatiquement.
 
-## Dépôts
 
-- `ROOT`: Chemin d'accès racine pour stocker des données dépôts de tous les utilisateurs, il doit être un chemin absolu, par défaut : `~/<user name>/gogs-repositories`.
-- `SCRIPT_TYPE`: Le script entré charger par votre serveur, est généralement `bash`, mais certains clients déclarent qu'ils ont seulement `sh`.
+## Serveur (`server`)
 
-## Serveur
+Nom|Description
+----|-----------
+`PROTOCOL`|`http` ou `https`.
+`DOMAIN`|Le nom de domaine de votre serveur.
+`ROOT_URL`|URL publiques complète du serveur Gogs.
+`HTTP_ADDR`|Adresse d'écoute HTTP.
+`HTTP_PORT`|Port d'écoute HTTP.
+`DISABLE_SSH`|Désactiver la fonction SSH quand elle n'est pas disponible.
+`SSH_PORT`|Le numéro de port à exposer dans l'URL de clonage SSH des dépôts. Le port public du serveur SSH externe, habituellement `22`.
+`OFFLINE_MODE`|Activez cette option pour ne pas utiliser des CDN pour les fichiers statiques, Gravatar sera également désactivé automatiquement.
+`DISABLE_ROUTER_LOG`|Activez cette option pour ne pas écrire les logs routeur.
+`CERT_FILE`|Chemin du fichier Cert utilisé pour le protocole HTTPS.
+`KEY_FILE`|Chemin du fichier clé utilisée pour le protocole HTTPS.
+`STATIC_ROOT_PATH`|Racine pour les modèles et les fichiers statiques, par défaut c'est le répertoire racine Gogs.
+`ENABLE_GZIP`|Activez cette option pour activer la compression GZIP dans l'application.
+`LANDING_PAGE`|Page de destination des utilisateurs non-connectés, `home` ou `explore`.
 
-- `PROTOCOL`: Pour `http` ou `https`.
-- `DOMAIN`: Le nom de domaine de votre serveur.
-- `ROOT_URL`: URL complète du serveur Gogs dans le domaine public.
-- `HTTP_ADDR`: Adresse d'écoute HTTP.
-- `HTTP_PORT`: Port d'écoute HTTP.
-- `DISABLE_SSH`: Désactiver la fonction SSH quand elle n'est pas disponible.
-- `SSH_PORT`: Le port SSH, si dans votre cas ce n'est pas `22`.
-- `OFFLINE_MODE`: Activez cette option pour ne pas utiliser des CDN pour les fichiers statiques, Gravatar sera également désactivé automatiquement.
-- `DISABLE_ROUTER_LOG`: Activez cette option pour ne pas écrire les logs routeur.
-- `CERT_FILE`: Chemin du fichier Cert utilisé pour le protocole HTTPS.
-- `KEY_FILE`: Chemin du fichier clé utilisée pour le protocole HTTPS.
-- `STATIC_ROOT_PATH`: Niveau supérieur de modèle et fichiers statiques chemin par défaut est le chemin où se trouve Gogs.
-- `ENABLE_GZIP`: Activez cette option pour avoir un niveau de demande de soutien GZIP.
-- `LANDING_PAGE`: Non-connecté la page de destination des utilisateurs, soit `home` ou `explore`.
+## Dépôts (`repository`)
 
-## Base de donnée
+Nom |Description
+----|-----------
+`ROOT`|Chemin pour stocker les dépôts de tous les utilisateurs, c'est un chemin absolu, par défaut : `~/<user name>/gogs-repositories`.
+`SCRIPT_TYPE`|Le shell supporté par le serveur, généralement `bash`, mais certains clients déclarent qu'ils ont seulement `sh`.
 
-- `DB_TYPE`: Le type de base de données que vous avez choisi, soit `mysql`, `postgres` ou `sqlite3`.
-- `HOST`: Adresse de l'hôte de base de données et du port.
-- `NAME`: Nom de la base.
-- `USER`: Utilisateur de la base.
-- `PASSWD`:  Mot de passe de l'utilisateur.
-- `SSL_MODE`: Pour PostgreSQL seulement.
-- `PATH`: Pour SQLite3 seulement, le chemin du fichier de base de données.
+## Base de donnée (`database`)
 
-## Securité
+Nom |Description
+----|-----------
+`DB_TYPE`|Le type de base de données que vous avez choisi, soit `mysql`, `postgres` ou `sqlite3`.
+`HOST`|Adresse de la base de données et port.
+`NAME`|Nom de la base.
+`USER`|Utilisateur de la base.
+`PASSWD`|Mot de passe de l'utilisateur.
+`SSL_MODE`|Pour PostgreSQL seulement.
+`PATH`|Pour SQLite3 seulement, le chemin du fichier de base de données.
 
-- `INSTALL_LOCK`: Pour indiquer si il faut ouvrir la page d'installation (création du compte admin impliqué c'est donc une valeur très importante).
-- `SECRET_KEY`: Clé secrète globale pour la sécurité de votre serveur, ** vous feriez mieux de changer ** (va générer une chaîne aléatoire à chaque fois que vous installez).
-- `LOGIN_REMEMBER_DAYS`: Les jours de temps de vie des cookies.
-- `COOKIE_USERNAME`: Le nom de cookie pour enregistrer le nom d'utilisateur.
-- `COOKIE_REMEMBER_NAME`: Le nom de cookie pour sauvegarder les informations de connexion automatique.
-- `REVERSE_PROXY_AUTHENTICATION_USER`: Nom d'en-tête pour proxy inverse authentification nom d'utilisateur.
+## Securité (`security`)
 
-## Service
+Nom |Description
+----|-----------
+`INSTALL_LOCK`|Indique si il faut charger la page d'installation (implique la création du compte administrateur, donc valeur critique).
+`SECRET_KEY`|Clé secrète globale pour la sécurité de votre serveur, ** à changer ** (une chaîne aléatoire est générée à chaque fois que vous installez).
+`LOGIN_REMEMBER_DAYS`|Durée de vie des cookies.
+`COOKIE_USERNAME`|Le nom du cookie pour enregistrer le nom d'utilisateur.
+`COOKIE_REMEMBER_NAME`|Le nom du cookie pour sauvegarder les informations de connexion automatique.
+`REVERSE_PROXY_AUTHENTICATION_USER`|En-tête utilisé pour l'authentification par nom d'utilisateur en cas de reverse-proxy.
 
-- `ACTIVE_CODE_LIVE_MINUTES`: Les minutes de durée de vie actif du code.
-- `RESET_PASSWD_CODE_LIVE_MINUTES`: Réinitialisation du mot de passe en minutes du temps de la vie du code.
-- `REGISTER_EMAIL_CONFIRM`: Activez cette option pour demander un email de confirmation d'inscription, il faut activer `Mailer`.
-- `DISABLE_REGISTRATION`: Désactiver les inscriptions, seul l'administrateur peut créer des comptes pour les utilisateurs.
-- `SHOW_REGISTRATION_BUTTON`: Indiquez si vous souhaitez afficher le bouton d'inscription ou non.
-- `REQUIRE_SIGNIN_VIEW`: Activez cette option pour forcer les utilisateurs à ce connecter pour visualiser une page spécifique.
-- `ENABLE_CACHE_AVATAR`: Activez cette option pour mettre en cache avatar à partir Gravatar.
-- `ENABLE_NOTIFY_MAIL`: Activez cette option pour envoyer des e-mail aux observateurs de dépôt quand quelque chose se passe comme créer des tickets/problème, exige d'activer `Mailer`.
-- `ENABLE_REVERSE_PROXY_AUTHENTICATION`: Activez cette option pour permettre l'authentification de proxy inverse, plus en détail : https://github.com/gogits/gogs/issues/165
-- `ENABLE_REVERSE_PROXY_AUTO_REGISTRATION`: Activez cette option pour permettre l'auto-inscriptions pour l'authentification inverse.
-- `DISABLE_MINIMUM_KEY_SIZE_CHECK`: Ne pas vérifier la taille de clé minimale avec le type correspondant.
-- `ENABLE_GIT_HOOKS`: Activez cette option pour permettre l'exécution des git hook commandes qui sont situé sous `ROOT/[user name]/[repo name].git/hooks`
+## Service ( `service` )
 
-## Webhook
+Nom |Description
+----|-----------
+`ACTIVE_CODE_LIVE_MINUTES`|Nombre de minutes pendant lequel le code d'activation est actif.
+`RESET_PASSWD_CODE_LIVE_MINUTES`|Nombre de minutes pendant lequel la remise à zéro du password est active.
+`REGISTER_EMAIL_CONFIRM`|Activez cette option pour forcer un email de confirmation d'inscription, il faut activer `Mailer`.
+`DISABLE_REGISTRATION`|Désactiver les inscriptions, seul l'administrateur peut créer des comptes pour les utilisateurs.
+`SHOW_REGISTRATION_BUTTON`|Indiquez si vous souhaitez afficher le bouton d'inscription ou non.
+`REQUIRE_SIGNIN_VIEW`|Activez cette option pour forcer les utilisateurs à se connecter pour visualiser une page spécifique.
+`ENABLE_CACHE_AVATAR`|Activez cette option pour mettre en cache l'avatar à partir Gravatar.
+`ENABLE_NOTIFY_MAIL`|Activez cette option pour envoyer des e-mail aux observateurs de dépôt lors d'évènements comme ticket/problème, exige d'activer `Mailer`.
+`ENABLE_REVERSE_PROXY_AUTHENTICATION`|Activez cette option pour permettre l'authentification avec reverse proxy, plus de détail sur [Github](https://github.com/gogits/gogs/issues/165)
+`ENABLE_REVERSE_PROXY_AUTO_REGISTRATION`|Activez cette option pour permettre l'auto-inscription dans le cas de l'authentification avec reverse-proxy.
+`DISABLE_MINIMUM_KEY_SIZE_CHECK`|Ne pas vérifier la taille de clé minimale pour le type correspondant.
+`ENABLE_GIT_HOOKS`|Activez cette option pour permettre l'exécution des git hooks, commandes qui sont situé dans `ROOT/[user name]/[repo name].git/hooks`
 
-- `TASK_INTERVAL`: Temps intercalé en minute entre les webhooks.
-- `DELIVER_TIMEOUT`: Délai de livraison en secondes de prise de vue webhooks.
-- `SKIP_TLS_VERIFY`: Indiquez si la certification est non-sécuriser ou non.
+## Webhook ( `webhook` )
 
-## Serveur de messagerie
+Nom |Description
+----|-----------
+`TASK_INTERVAL`|Délai en minute entre les webhooks.
+`DELIVER_TIMEOUT`|Délai entre la mise à jour du dépôt et le lancement des webhooks.
+`SKIP_TLS_VERIFY`|Indique si un certificat non-sécurisé est autorisé ou pas.
 
-- `ENABLED`: Activez cette option pour utiliser tous le service de messagerie.
-- `DISABLE_HELO`: Désactiver le fonctionnalité HELO.
-- `HELO_HOSTNAME`: Le nom d'hôte personnalisée pour le fonctionnement de HELO.
-- `HOST`: Adresse email SMTP hôte.
-- `FROM`: Adresse email, la RFC 5322. Cela peut être juste une adresse e-mail, ou le "Nom" sous le format <email@example.com>.
-- `USER`: Nom d'utilisateur du logiciel de messagerie du système (habituellement juste votre adresse e-mail).
-- `PASSWD`: Mot de passe entre vous et le programme de messagerie.
-- `SKIP_VERIFY`: Ne pas vérifier les certificats auto-signés.
+## Serveur de messagerie ( `mailer` )
+
+Nom |Description
+----|-----------
+`ENABLED`|Active le service de messagerie.
+`DISABLE_HELO`|Désactive la fonctionnalité HELO.
+`HELO_HOSTNAME`|Le nom d'hôte personnalisé utilisé par HELO.
+`HOST`|Adresse email du serveur SMTP.
+`FROM`|Adresse email, la RFC 5322. Cela peut être juste une adresse e-mail, ou une chaîne du type `"Nom" <email@example.com>`.
+`USER`|Nom d'utilisateur pour le serveur de messagerie (habituellement juste votre adresse e-mail).
+`PASSWD`|Mot de passe pour le serveur de messagerie.
+`SKIP_VERIFY`|Ne pas vérifier les certificats auto-signés.
 
 ## OAuth
 
-- `ENABLED`: Switch général pour OAuth, la valeur par défaut est "false"
+Nom |Description
+----|-----------
+`ENABLED`|Switch général pour OAuth, la valeur par défaut est "false"
 
-## Cache
+## Cache ( `cache` )
 
-- `ADAPTER`: Adaptateur de moteur de cache, soit `memory`, `redis`, ou `memcache`. Si vous souhaitez utiliser `redis` ou `memcache`, assurez-vous de tout reconstruire avec des tags de construction `redis` ou `memcache`: `go build -tags='redis'`.
-- `INTERVAL`: pour le cache de mémoire seulement, GC intervalle en secondes.
-- `HOST`: Pour redis et memcache, l'adresse de l'hôte et le numéro de port.
+Nom |Description
+----|-----------
+`ADAPTER`|Adaptateur de moteur de cache, soit `memory`, `redis`, ou `memcache`. Si vous souhaitez utiliser `redis` ou `memcache`, assurez-vous de tout reconstruire avec des tags de construction `redis` ou `memcache`: `go build -tags='redis'`. Voir [ici](https://gogs.io/docs/installation/install_from_source#construisez-avec-sqlite3%2Fredis%2Fmemcache)
+`INTERVAL`|pour le cache de mémoire seulement, l'intervalle en secondes du passage du ramasse-miettes (gc).
+`HOST`|Pour redis et memcache, l'adresse de l'hôte et le numéro de port.
 
-## Session
+## Session ( `session` )
 
-- `PROVIDER`: Fournisseur de moteur de session, soit `memory`, `file`, `redis`, ou `mysql`.
-- `PROVIDER_CONFIG`: Pour les dossiers, c'est le chemin racine; pour les autres, c'est l'adresse de l'hôte et numéro de port.
-- `COOKIE_SECURE`: Activez cette option pour forcer l'utilisation de HTTPS pour tous les accès de la session.
-- `GC_INTERVAL_TIME`: Intervalle de GC en secondes.
+Nom |Description
+----|-----------
+`PROVIDER`|Fournisseur de moteur de session, soit `memory`, `file`, `redis`, ou `mysql`.
+`PROVIDER_CONFIG`|Pour les fichiers, c'est le chemin ; pour les autres, c'est l'adresse du serveur et le numéro de port.
+`COOKIE_SECURE`|Activez cette option pour forcer l'utilisation de HTTPS pour tous les accès de la session.
+`GC_INTERVAL_TIME`|Intervalle du passage du ramasse-miettes (gc) en secondes.
 
-## Picture
+## Picture ( `picture` )
 
-- `GRAVATAR_SOURCE`: peut être modifié à `duoshuo` tant que Gravatar est bloqué en Chine.
-- `DISABLE_GRAVATAR`: Activer cette option pour utiliser les avatars local uniquement.
+Nom |Description
+----|-----------
+`GRAVATAR_SOURCE`|peut être modifié à `duoshuo` car Gravatar est bloqué en Chine.
+`DISABLE_GRAVATAR`|Activer cette option pour utiliser les avatars locaux uniquement.
 
-## Log
+## Log ( `log` )
 
-- `ROOT_PATH`: Chemin d'accès racine pour les fichiers logs.
-- `MODE`: Le mode de journalisation, par défaut est à `console`. Pour de multiples modes, utilisation de la virgule pour les séparer.
-- `LEVEL`: Niveau de journal général, par défaut est à `Trace`.
+Nom |Description
+----|-----------
+`ROOT_PATH`|Chemin du dossier pour les fichiers logs.
+`MODE`|Le mode de journalisation, par défaut `console`. Pour utiliser plusieurs modes, ajoutez des virgules pour les séparer.
+`LEVEL`|Niveau de journalisation, par défaut est à `Trace`.
 
-### log.console
+### log.console ( `log.console` )
 
-- `LEVEL`: Niveau de log pour la sortie de la console. Lorsque aucune valeur est définie, elle est le niveau de journal général.
+Nom |Description
+----|-----------
+`LEVEL`|Niveau de log pour la sortie console. Lorsqu'aucune valeur n'est définie, elle a le même niveau que le log général.
 
-### log.file
+### log.file ( `log.file` )
 
-- `LEVEL`: Niveau de log pour la sortie de fichier. Lorsque aucune valeur est définie, elle est le niveau de journal général.
+Nom |Description
+----|-----------
+`LEVEL`|Niveau de log pour la sortie fichier. Lorsqu'aucune valeur n'est définie, elle a le même niveau que le log général.
 
-### log.conn
+### log.conn ( `log.conn` )
 
-- `LEVEL`: Niveau de log pour la sortie de connexion. Lorsque aucune valeur est définie, elle est le niveau de journal général.
+Nom |Description
+----|-----------
+`LEVEL`|Niveau de log pour la sortie de connexion. Lorsqu'aucune valeur n'est définie, elle a le même niveau que le log général.
 
-### log.smtp
+### log.smtp ( `log.smtp` )
 
-- `LEVEL`: Niveau de log pour la sortie de smtp. Lorsque aucune valeur est définie, elle est le niveau de journal général.
+Nom |Description
+----|-----------
+`LEVEL`|Niveau de log pour la sortie smtp. Lorsqu'aucune valeur n'est définie, elle a le même niveau que le log général.
 
-## Git
+## Git ( `git` )
 
-- `MAX_GITDIFF_LINES`: Limite de lignes de maximum dans la page de diff.
+Nom |Description
+----|-----------
+`MAX_GITDIFF_LINES`|Nombre de lignes maximal affiché par diff.
