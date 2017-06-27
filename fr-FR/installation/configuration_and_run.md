@@ -9,20 +9,20 @@ sort: 7
 
 ### Configuration par défault
 
-La configuration par défaut est enregistré dans `conf/app.ini`, vous **n'**avez **pas** besoin de modifier la totalité. depuis `v0.6.0`, ce fichier est incorporé en binaire.
+La configuration par défaut est enregistrée dans `conf/app.ini`, vous **n'avez pas** besoin de modifier la totalité. depuis `v0.6.0`, ce fichier est incorporé au binaire.
 
 ### Configuration personnalisé
 
-Alors, comment faire la configuration personnalisée si vous n'êtes pas autorisé à modifier `conf/app.ini` ? Et bien, créer `custom/conf/app.ini` ! Remplacer les clefs correspondantes dans la section correspondante dans `custom/conf/app.ini`.
+Comment personnaliser la configuration si vous n'êtes pas autorisé à modifier `conf/app.ini` ? Et bien, créez `custom/conf/app.ini` ! Remplacez ensuite les clefs correspondantes dans `custom/conf/app.ini`.
 
-Par exemple, pour modifier le chemin de la racine de l'endroit où les données brutes dépôt étant stockées, ajouter quelque chose comme :
+Par exemple, pour modifier le chemin du dépôt, ajouter quelque chose comme :
 
 ```
 [repository]
 ROOT = /home/jiahuachen/gogs-repositories
 ```
 
-Bien sûr, vous pouvez changer le réglage de base de données ainsi :
+Vous pouvez également changer le mot de passe de la base de données comme ceci :
 
 ```
 [database]
@@ -31,27 +31,27 @@ PASSWD = root
 
 ### Pourquoi faisons-nous ça ?
 
-Oui, pourquoi ne pas simplement éditer `conf/app.ini` ? La raison en est que pour garder votre configuration personnalisée en sécurité :
+Oui, pourquoi ne pas simplement éditer `conf/app.ini` ? C'est pour vous permettre de garder votre configuration personnalisée en sécurité :
 
-- Pour les personnes qui installent le binaire, chaque fois après vous arrêter le programme, peut tout simplement copier et coller sans que rien ne re-configure.
-- Pour les personnes qui installent de la source, nous avons exclu le `custom/conf/app.ini` dans `.gitignore` afin de ne pas causer des changements dans le contrôle de version que vous avez à faire autres choses avant la mise à jour.
+- Pour les personnes qui installent le binaire, chaque fois que vous arrêter le programme, vous pouvez tout simplement copier et coller le fichier de configuration sans rien à re-configurer.
+- Pour les personnes qui installent depuis les sources, nous avons exclu le `custom/conf/app.ini` dans `.gitignore`, ainsi les modifications de ce fichier ne sont pas prises en compte lors de la mise à jour.
 
 ## Exécuter le serveur Gogs
 
 ### Pour développer
 
-- Vous devez définir la clé dans `security -> INSTALL_LOCK` et être à `true` dans le fichier `custom/conf/app.ini` afin d'exécuter la source.
-- Vous pouvez activer en temps réel la compilation en exécutant `bra run` dans le dossier source de Gogs
+- Vous devez définir la clé dans `security -> INSTALL_LOCK` à `true` dans le fichier `custom/conf/app.ini` afin d'exécuter depuis les sources.
+- Vous pouvez activer la compilation en temps réel en exécutant `bra run` dans le dossier source de Gogs
 	- Installer [bra](https://github.com/Unknwon/bra): `go get -u github.com/Unknwon/bra`
 
-### Pour déploiement
+### En production
 
-**Les scripts sont dans le dossier `scripts`, mais il faut les exécuter à la racine du dépôt**
+**Les scripts sont dans le dossier `scripts`, mais il faut les exécuter depuis la racine du dépôt**
 
 - Il y a 3 façons de démarrer par défaut :
-	- Plain: suffit d'utiliser `./gogs web`
-	- Supervisor:
+	- Simple: il suffit d'exécuter `./gogs web`
+	- Supervisord:
 		- Start: `./scripts/gogs_supervisord.sh start`
 		- Stop: `./scripts/gogs_supervisord.sh stop`
 		- Restart: `./scripts/gogs_supervisord.sh restart`
-- Allez dans `/install` pour faire votre configuration d'exécution pour la première fois.
+- Ouvrez l'URL `/install` pour faire votre créer votre configuration la première fois.
