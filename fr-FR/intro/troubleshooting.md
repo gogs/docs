@@ -8,50 +8,50 @@ sort: 2
 ## Installation
 
 - Erreur : `../gosrc/src/github.com/gogits/gogs/cmd/cert.go:79: undefined: elliptic.P224`
-- Causes : Le paquet golang dans RHEL/CentOS ne supporte pas la cryptographie à courbe elliptique (car il est breveté) et il est spécifiquement retiré CentOS/RHEL.
+- Causes : Le paquet golang dans RHEL/CentOS ne supporte pas la cryptographie à courbe elliptique (car il est breveté), cette fonctionnalité est retirée spécifiquement du build CentOS/RHEL.
 - Solution : Télécharger et installer Go à partir de [golang.org/dl](http://golang.org/dl).
 
 ## Git
 
 - Erreur : `bash /path/to/gogs: no such file or directory`
-- Causes : Vous avez modifié l'emplacement du serveur Gogs après un certain temps et de l'ancien chemin a été codé en dur dans le fichier `~/.ssh/authorized_keys`.
-- Solution : Executer `./gogs fix location <old Gogs path>` sous un nouveau répertoire Gogs.
+- Causes : Vous avez modifié l'emplacement du serveur Gogs mais l'ancien chemin a été codé en dur dans le fichier `~/.ssh/authorized_keys`.
+- Solution : Exécuter `./gogs fix location <old Gogs path>` depuis le nouveau répertoire Gogs.
 
 -----
 
 - Erreur :
 	- `fatal: 'XX/XX.git' does not appear to be a git repository`
 	- Commits pushed mais présente toujours comme un dépôt vide
-- Causes : Il y a des clés SSH dupliqué dans le fichier `~/.ssh/authorized_keys`, peut-être vous utilisez / avez utilisé GitLab pour le même utilisateur du système.
-- Solution : Supprimer l'ancienne et de garder celui qui a été ajoutée par Gogs seulement.
+- Causes : Il y a des clés SSH dupliquées dans le fichier `~/.ssh/authorized_keys`, peut-être utilisez vous (ou avez utilisé) GitLab avec le même utilisateur système.
+- Solution : Supprimer l'ancien fichier `~/.ssh/authorized_keys` et garder seulement la version ajoutée par Gogs.
 
 -----
 
 - Erreur : `repo.NewRepoContext(fail to set git user.emil):`
-- Causes : cela arrive quand les utilisateurs de Windows installent Git Bash sans activer l'option `cmd`.
-- Solution : Réinstaller et activé l'option `cmd`.
+- Causes : Cela arrive quand les utilisateurs de Windows installent Git Bash sans activer l'option `cmd`.
+- Solution : Réinstaller et activer l'option `cmd`.
 
 ## Validation de formulaire
 
 - Erreur : `Repository/User name contains illegal characters`
-- Causes : Afin d'éviter les exceptions inattendues, votre utilisateur / nom du dépôt sera considérée comme illégale si elles correspondent à l'une des règles suivantes :
-	- Nom est égal à aucun mot de `"raw", "install", "api", "avatar", "user", "org", "help", "stars", "issues", "pulls", "commits", "repo", "template", "admin", "new"`.
-	- Nom a suffixe `".git"`.
+- Causes : Afin d'éviter les exceptions, votre utilisateur / nom du dépôt sera considéré comme illégal si il correspond à l'une des règles suivantes :
+	- Nom parmi `"raw", "install", "api", "avatar", "user", "org", "help", "stars", "issues", "pulls", "commits", "repo", "template", "admin", "new"`.
+	- Nom ayant le suffix `".git"`.
 
 ## Cache
 
 - Erreur : `cache: unknown adaptername "memcache" (importation oublié?)`
-- Causes : Pour empêcher l'importation inutiles du paquet, nous utilisons la construction balises pour spécifier si nécessaire.
+- Causes : Pour empêcher l'importation inutiles du paquet, nous des tags à la construction pour spécifier si c'est nécessaire.
 - Solution :
 	- Téléchargement : `go get -tags memcache github.com/gogits.gogs`
 	- Construction : `go build -tags memcache`
-	- Mêmes étapes pour `redis` quand vous voulez qu'il soit l'adaptateur de cache.
+	- Suivre les mêmes étapes pour `redis` quand vous voulez qu'il soit l'adaptateur de cache.
 
 ## MySQL
 
 - Erreur : `Error 1071: Specified key was too long; max key length is 1000 bytes`
 - Causes : Elle est causée par MyISAM.
-- Solution : Une fois que vous importez le fichier `config/mysql.sql` puis connectez-vous à MySQL et lancer :
+- Solution : Une fois fichier `config/mysql.sql` importé connectez-vous à MySQL et lancer :
 
 	```sql
 	use gogs;
@@ -63,7 +63,7 @@ Après cela, allez à [http://localhost:3000/install](http://localhost:3000/inst
 -----
 
 - Erreur : `Database setting is not correct: This server only supports the insecure old password authentication. If you still want to use it, please add 'allowOldPasswords=1' to your DSN. See also https://github.com/go-sql-driver/mysql/wiki/old_passwords`
-- Causes : Seulement mettre à jour le mot de passe @localhost -- il y avait une seconde entrée de la table d'utilisateur où @% encore eu l'ancien mot de passe.
+- Causes : Le mot de passe a été mis à jour seulement pour l'utilisateur @localhost -- il y a une seconde entrée de la table d'utilisateur @% pour laquelle le mot de passe est encore l'ancien.
 - Solution : [Un commentaire GitHub](https://github.com/gogits/gogs/issues/385#issuecomment-54357073)
 
 ## Logiciel de messagerie
@@ -74,7 +74,7 @@ Après cela, allez à [http://localhost:3000/install](http://localhost:3000/inst
 	- Visitez https://accounts.google.com et connectez-vous.
 	- Allez sur https://accounts.google.com/DisplayUnlockCaptcha cliquez sur `continue`.
 	- Maintenant copier le lien qui ressemble à ceci (l'invite du journal du serveur Gogs) : https://accounts.google.com/ContinueSignIn?sarp=1&scc=1&plt=AKgnsbvPPN_E_25__nyS*******f18O9uuLNtz0Imw et connectez-vous à nouveau.
-	- Les choses devraient maintenant fonctionner. La dernière mais non le moindre, vérifiez votre boîte `spam` dans le cas où votre fournisseur de service de messagerie pense que votre gmail est un spammeur.
+	- Les choses devraient maintenant fonctionner. Enfin, vérifiez votre boîte `spam` dans le cas où votre fournisseur de service de messagerie penserait que gmail est un spammeur.
 
 ## Windows
 
@@ -92,20 +92,20 @@ fatal: '/cygdrive/d/svnroot/research/gogs/C:\Users\user\gogs-repositories\unos\t
 fatal: Could not read from remote repository.
 ```
 
-- Causes : Vous installez le système dans un autre shell, et a le style de chemin différent.
-- Solution : S'il vous plaît essayer de démarrer par défaut Gogs CMD.
+- Causes : Vous installez le système dans un shell qui a une arborescence différente de celle par défaut.
+- Solution : Démarrez Gogs avec les options par défaut de CMD.
 
 ## Autre
 
-- Erreur : Réponse de page extrêmement lente, mais montrent de temps sur le fond semble normal (sous 100ms)
-- Causes : elle peut être causée par Nginx qui tente de résoudre l'adresse IPv4 par IPv6.
-- Solution : Utiliser un hostname explicite `127.0.0.1` au lieu de `localhost`.
+- Erreur : Les pages répondent extrêment lentement, mais le temps indiqué au bas de de l'écran est normal (sous les 100ms)
+- Causes : elle peut être causée par Nginx qui tente de résoudre l'adresse IPv4 comme une adresse IPv6.
+- Solution : Utiliser un hostname explicite `127.0.0.1` au lieu de `localhost` par exemple.
 
 -----
 
 - Erreur : `Error 1062: Duplicate entry 'Unknown-Mac' pour la clé 'UQE_public_key_name'`
-- Causes : Il est dirigé par le code existant, `public_key` table utilisée pour avoir `UQE_public_key_name` règle unique pour nom de clé SSH dans la dernière version.
-- Solution : Vous pouvez supprimer cette unique règle manuellement pour résoudre ce problème.
+- Causes : Cette erreur est provoquée par du code ancien, la table `public_key` avait `UQE_public_key_name` comme règle unique pour le nom de la clef SSH dans les premières versions.
+- Solution : Vous pouvez supprimer cette règle manuellement pour résoudre ce problème.
 
 -----
 
@@ -115,5 +115,5 @@ fatal: Could not read from remote repository.
 -----
 
 - Erreur : `could not parse line: ; App name that shows on every page title`
-- Causes : Il ce peut que vous enregistrez le fichier comme `UTF8 with BOM`(qui passe normalement dans Windows).
-- Solution : Changer pour `UTF8`.
+- Causes : Le fichier est enregistré comme `UTF8 with BOM`(ce qui arrive dans Windows).
+- Solution : Changez pour `UTF8`.
