@@ -1,19 +1,18 @@
 ---
-name: Hacking sur Gogs
+name: Hacker Gogs
 sort: 3
 ---
 
-# Hacking sur Gogs/Contribuer à Gogs
+# Hacker Gogs/Contribuer 
 
-Si vous voulez contribuer à Gogs vous devriez forker le projet et travailler sur la branche dev.
-Il y a un hic cependant; certains paquets internes sont référencés par leur url Github. Alors
-vous devez tromper l'outil afin de faire croire que vous travaillez sur un clone du dépôt officiel.
+Si vous voulez contribuer à Gogs vous devriez forker le projet et travailler sur la branche `develop`.
+Il y a un problème avec Go cependant, l'arborescence inclue l'URL Github officielle du projet. Vous devez alors faire passer votre fork pour le dépôt officiel.
 
 Commencez par télécharger le code source comme vous le feriez normalement :
 
     $ go get github.com/gogits/gogs
 
-Désormais votre fork le projet sur Github et puis aller à la source du répertoire parent de Gogs :
+Faites un fork du projet sur Github et puis aller à la source du répertoire de Gogs :
 
     $ cd $GOPATH/src/github.com/gogits
 
@@ -22,10 +21,10 @@ Suprimmer le dépôt Gogs et cloner votre fork à sa place :
     $ rm -rf gogs
     $ git clone git@github.com:<USERNAME>/gogs.git gogs
 
-Allez dans le répertoire de Gogs, checkout de la branche dev et utiliser `go get` à nouveau pour chercher de nouvelles dépendances:
+Allez dans le répertoire de Gogs, faites un checkout de la branche `develop` et utilisez `go get` à nouveau pour chercher de nouvelles dépendances:
 
     $ cd gogs
     $ git checkout develop
     $ go get
 
-C'est tout! Vous êtes prêt à bidouiller sur Gogs. Testez vos modifications, envoyer-les à votre dépôt et ouvrez une demande.
+C'est tout! Vous êtes prêt à travailler sur Gogs. Testez vos modifications, envoyez-les sur votre dépôt et ouvrez un "pull-request" sur Github.
