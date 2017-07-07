@@ -18,3 +18,9 @@ name: aus Paketquellen
 	- Release: [AUR](https://aur.archlinux.org/packages/gogs/) [GitHub](https://github.com/fanningert/PKGBUILDs/tree/master/aur/gogs)
 
 Informationen zur Installation und Konfiguration auf Arch-Linux kann in diesem [Arch Linux Wiki Eintrag](https://wiki.archlinux.org/index.php/Gogs) gefunden werden.
+
+### Synology spk
+
+- Installation fur Arm, x386 und amd64
+
+https://github.com/davidmullerz/gogs-spk/releases/tag/1.1
