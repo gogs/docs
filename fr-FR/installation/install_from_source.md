@@ -16,17 +16,17 @@ Nous allons créer un nouvel utilisateur appelé `git` et installer / configurer
 
 `sudo adduser --disabled-login --gecos 'Gogs' git`
 
-### Paquets tierces
+### Paquets tiers
 
-Si vous êtes intéressé dans lequel une tierce partie paquets que nous utilisons, voir [gopmfile](https://github.com/gogits/gogs/blob/master/.gopmfile). Vous pouvez en avoir besoin quand vous faites une construction du paquet pour Gogs.
+Si vous êtes intéressé par les paquets tiers que nous utilisons, voyez [gopmfile](https://github.com/gogits/gogs/blob/master/.gopmfile). Vous pouvez en avoir besoin quand vous construisez un paquet pour Gogs.
 
 ## Installation de Go
 
 ### Téléchargement
 
-Si Go de votre système correspond aux exigences sauter cette section.
+Si la distribution de Go incluse dans votre système correspond aux exigences, veuillez ignorer cette section.
 
-Installez Go dans `/home/git/local/go` de sorte qu'il ne serait pas interférer avec les mises à jour futures du paquet le gestionnaire de votre système :
+Installez Go dans `/home/git/local/go` de sorte qu'il n'interfère pas avec les mises à jour futures de la version gérée par votre système d'exploitation :
 
 ```bash
 sudo su - git
@@ -57,25 +57,25 @@ source $HOME/.bashrc
 La façon générale d'installer Gogs, 
 
 ```
-# Download and install dependencies
+# Télécharger et installer les dépendances
 $ go get -u github.com/gogits/gogs
 
-# Build main program
+# Compiler le programme principal
 $ cd $GOPATH/src/github.com/gogits/gogs
 $ go build
 ```
 
-Si vous avez gopm disponible, vous pouvez essayer de la manière suivante pour installer Gogs :
+Si vous utilisez gopm, vous pouvez essayer d'installer Gogs de la manière suivante :
 
 ```
-# Check update of gopm
+# Vérification des mises à jour de gopm
 $ gopm update -v
 
-# Download and build binary
+# Télécharger et construire le binaire
 $ gopm bin -u -v gogs -d path/to/anywhere
 ```
 
-### Construit depuis la branche `develop`
+### Construire depuis la branche `develop`
 
 Dans le cas où vous voulez essayer la branche `develop` :
 
@@ -90,18 +90,18 @@ $ go build
 
 ### Test d'installation
 
-Pour vous assurer que fonctionne Gogs :
+Pour vous assurer que Gogs fonctionne correctement :
 
 ```
 cd $GOPATH/src/github.com/gogits/gogs
 ./gogs web
 ```
 
-Si vous ne voyez pas les messages d'erreur, appuyez sur `Ctrl-C` pour arrêter Gogs.
+Si vous ne voyez pas de messages d'erreur, appuyez sur `Ctrl-C` pour arrêter Gogs.
 
 ### Construisez avec SQLite3/Redis/Memcache
 
-Si vous devez activer SQLite3/Redis/Memcache, s'il vous plaît supprimer le répertoire `$GOPATH/pkg/{GOOS_GOARCH}/github.com/gogits/gogs` et fait :
+Si vous devez activer SQLite3/Redis/Memcache, supprimez le répertoire `$GOPATH/pkg/{GOOS_GOARCH}/github.com/gogits/gogs` et exécutez :
 
 ```
 $ go get -u -tags "sqlite redis memcache" github.com/gogits/gogs
@@ -111,5 +111,5 @@ $ go build -tags "sqlite redis memcache"
 
 ## Prochaines étapes
 
-- Voir [Configuration and run](configuration_and_run.md) pour aller plus loin.
-- Pour des instructions plus détaillées, y compris les paramètre du serveur Web et de la base de données, voir [les étapes détaillées](/docs/advanced/configuration_for_source_builds.md).
+- Voir [Configuration and run](configuration_and_run) pour aller plus loin.
+- Pour des instructions plus détaillées, y compris sur les paramètres du serveur Web et de la base de données, voir [les étapes détaillées](/docs/advanced/configuration_for_source_builds).
