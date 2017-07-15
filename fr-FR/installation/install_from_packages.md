@@ -22,4 +22,8 @@ Des informations pour l'installation et la configuration sur Arch Linux peuvent 
 - Démo disponible en vidéo [YouTube](http://www.youtube.com/watch?v=xllP7BP_qgs&feature=youtu.be).
 - Construits par [@crohr](https://github.com/crohr)(Cyril Rohr).
 
-### Mac OS X
+### Synology spk
+
+- Installation pour Arm, x386 et amd64
+
+https://github.com/davidmullerz/gogs-spk/releases/tag/1.1
