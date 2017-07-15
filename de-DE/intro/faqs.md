@@ -14,7 +14,7 @@ name: FAQs
 
 Dieser Parameter verändert für dich auch den Port in der Installationsseite, nimm also hier einen Port, den du Gogs zuweisen willst.
 
-#### Wie benutze ich NGIX mit Reverse Proxy?
+#### Wie benutze ich NGINX mit Reverse Proxy?
 
 Füge die folgende `server` Sektion in die `http` Sektion in der Datei `nginx.conf` ein und lade die Konfiguration neu:
 
