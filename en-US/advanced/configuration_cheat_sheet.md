@@ -91,7 +91,7 @@ Name|Description
 
 Name|Description
 ----|-----------
-`ENABLE_HARD_LINE_BREAK`|Whether or not to enable hard the line break extension.
+`ENABLE_HARD_LINE_BREAK`|Whether or not to enable the hard line break extension.
 `CUSTOM_URL_SCHEMES`|List of custom URL-Schemes that are allowed as links when rendering Markdown, for example `git` (for `git://`) and `magnet` (for `magnet://`).
 `FILE_EXTENSIONS`|List of file extensions that should be rendered/edited as Markdown. Separate extensions with a comma. To render files without extension as Markdown, just put a comma.
 
