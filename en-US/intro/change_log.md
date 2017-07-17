@@ -4,6 +4,12 @@ name: Changelog
 
 # Changelog
 
+### Unreleased
+
+#### Bug fixes
+
+- Private repository activity shown in "Public activity" tab, if the repository was once public [#4414](https://github.com/gogits/gogs/issues/4414)
+
 ### 0.11.19 @ 2017-06-10
 
 #### Bug fixes
