@@ -9,6 +9,8 @@ name: 变更日志
 #### Bug 修复
 
 - 如果仓库曾经为公开的，则变为私有后相关活动信息未被设为私有 [#4414](https://github.com/gogits/gogs/issues/4414)
+- 探索页面分页不正确 [#4441](https://github.com/gogits/gogs/issues/4441)
+- 创建合并请求完成后发生错误 [#4572](https://github.com/gogits/gogs/issues/4572)
 
 ### 0.11.19 @ 2017-06-10
 
