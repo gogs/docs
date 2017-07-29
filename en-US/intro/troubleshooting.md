@@ -127,8 +127,12 @@ fatal: Could not read from remote repository.
 ## Other
 
 - Error: extremely slow page response but time show on the bottom looks normal(under 100ms)
-- Causes: it may be caused by Nginx try to resolve IPv4 address as IPv6.
-- Solution: use explicit hostname `127.0.0.1` instead of `localhost`.
+- Causes:  
+  - (1) it may be caused by Nginx try to resolve IPv4 address as IPv6  
+  - (2) if you allow for avatar lookup with Gravatar without a valid email address    
+- Solution:  
+  - (1) use explicit hostname `127.0.0.1` instead of `localhost` when you run the initial `http://gogs-server:3000/install` setup  
+  - (2) either use a valid Gravatar email address for the created administrator account or uncheck the avatar lookup in the initial `http://gogs-server:3000/install` setup  
 
 -----
 
