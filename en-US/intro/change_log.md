@@ -9,6 +9,7 @@ name: Changelog
 #### Bug fixes
 
 - Private repository activity shown in "Public activity" tab, if the repository was once public [#4414](https://github.com/gogits/gogs/issues/4414)
+- No email notification if issue closed by commit [#4430](https://github.com/gogits/gogs/issues/4430)
 - Explore page incorrect paging [#4441](https://github.com/gogits/gogs/issues/4441)
 - Panic after created a pull request [#4572](https://github.com/gogits/gogs/issues/4572)
 
