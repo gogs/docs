@@ -90,10 +90,10 @@ Nom |Description
 
 Nom |Description
 ----|-----------
-`TYPES`|Types autorisés , options possibles `gogs`, `slack` ou `discord`
+`TYPES`|Types autorisés , options possibles `gogs`, `slack` ou `discord`.
 `DELIVER_TIMEOUT`|Délai entre la mise à jour du dépôt et le lancement des webhooks.
 `SKIP_TLS_VERIFY`|Indique si un certificat non-sécurisé est autorisé ou pas.
-`PAGING_NUM`|Indique si un certificat non-sécurisé est autorisé ou pas.
+`PAGING_NUM`|Nombre de webhook affiché sur une page d'historique.
 
 ## Serveur de messagerie ( `mailer` )
 
