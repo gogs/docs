@@ -4,13 +4,15 @@ name: 变更日志
 
 # 变更日志
 
-### 未发布
+### 0.11.29 @ 2017-08-15
 
 #### Bug 修复
 
 - 如果仓库曾经为公开的，则变为私有后相关活动信息未被设为私有 [#4414](https://github.com/gogits/gogs/issues/4414)
+- Web 钩子不接受 IPv6 URL [#4428](https://github.com/gogits/gogs/issues/4428)
 - 通过代码提交关闭工单后没有发送邮件提醒 [#4430](https://github.com/gogits/gogs/issues/4430)
 - 探索页面分页不正确 [#4441](https://github.com/gogits/gogs/issues/4441)
+- `/api/v1/repos/search` 返回空值 [#4522](https://github.com/gogits/gogs/issues/4522)
 - 创建合并请求完成后发生错误 [#4572](https://github.com/gogits/gogs/issues/4572)
 
 ### 0.11.19 @ 2017-06-10
@@ -111,22 +113,4 @@ name: 变更日志
 - 仓库分支页面 [#2310](https://github.com/gogits/gogs/issues/2310)
 - 支持 Smartypants 以及其配置分区 `[smartypants]` [#4162](https://github.com/gogits/gogs/issues/4162)
 
-### 0.10.8 @ 2017-03-07
-
-#### Bug 修复
-
-- Windows `mws` 版的 Git 钩子无法正常使用
-- 包含图片的链接无法指向正确的 URL [#2636](https://github.com/gogits/gogs/issues/2636)
-- Web 编辑器无法创建带有斜杠的分支 [#3568](https://github.com/gogits/gogs/issues/3568)
-- 克隆仓库时无法省略 `.git` 后缀 [#4189](https://github.com/gogits/gogs/issues/4189)
-- Git 钩子工作目录不是仓库目录 [#4225](https://github.com/gogits/gogs/issues/4225)
-- `go get` 功能支持回退 [#4226](https://github.com/gogits/gogs/issues/4226)
-- Web 钩子的忽略 TLS 验证选项无法生效 [#4228](https://github.com/gogits/gogs/issues/4228)
-
-#### 功能改进
-
-- 邮箱文本编码默认设置为 `text/html`，并可使用配置选项 `[mailer] USE_PLAIN_TEXT` 禁用
-- 使用创建仓库的用户信息作为首个代码提交的作者，而不是系统用户
-- 支持 Gogs 相关的 Git 钩子环境变量 [#4094](https://github.com/gogits/gogs/issues/4094)
-
-**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.10.8) 上找到。**
+**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.10.18) 上找到。**

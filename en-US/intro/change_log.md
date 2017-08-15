@@ -4,13 +4,15 @@ name: Changelog
 
 # Changelog
 
-### Unreleased
+### 0.11.29 @ 2017-08-15
 
 #### Bug fixes
 
 - Private repository activity shown in "Public activity" tab, if the repository was once public [#4414](https://github.com/gogits/gogs/issues/4414)
+- Webhooks refuse IPv6 URLs as invalid [#4428](https://github.com/gogits/gogs/issues/4428)
 - No email notification if issue closed by commit [#4430](https://github.com/gogits/gogs/issues/4430)
 - Explore page incorrect paging [#4441](https://github.com/gogits/gogs/issues/4441)
+- `/api/v1/repos/search` returns empty values [#4522](https://github.com/gogits/gogs/issues/4522)
 - Panic after created a pull request [#4572](https://github.com/gogits/gogs/issues/4572)
 
 ### 0.11.19 @ 2017-06-10
@@ -111,22 +113,4 @@ name: Changelog
 - Repository branches page [#2310](https://github.com/gogits/gogs/issues/2310)
 - Support Smartypants with config section `[smartypants]` [#4162](https://github.com/gogits/gogs/issues/4162)
 
-### 0.10.8 @ 2017-03-07
-
-#### Bug fixes
-
-- Git hooks do not work on Windows `mws` version
-- link contains an image does not point to the correct URL [#2636](https://github.com/gogits/gogs/issues/2636)
-- Web editor cannot create branch with slash [#3568](https://github.com/gogits/gogs/issues/3568)
-- Cannot clone a repository without `.git` suffix [#4189](https://github.com/gogits/gogs/issues/4189)
-- Git hook working directory is not repository directory [#4225](https://github.com/gogits/gogs/issues/4225)
-- Regression on `go get` support [#4226](https://github.com/gogits/gogs/issues/4226)
-- Webhook Skip TLS Verify setting doesn't take effect [#4228](https://github.com/gogits/gogs/issues/4228)
-
-#### Improvements
-
-- Use `text/html` as default email content encoding and use `[mailer] USE_PLAIN_TEXT` to disable it
-- Able to perform initial commit on behave of actual user
-- Support Gogs-related environment variables for Git hooks [#4094](https://github.com/gogits/gogs/issues/4094)
-
-**Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.10.8).**
+**Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.10.18).**
