@@ -1,62 +1,62 @@
 ---
 name: A partir des sources
-sort: 2
 ---
 
-# Installez à partir des sources
+# Installer à partir des sources
 
 ## Dépendances
 
 ### Global
 
 - [Go Programming Language](http://golang.org): Version >= 1.6
-- [Git](http://git-scm.com): Version >= 1.7.1
 
 Nous allons créer un nouvel utilisateur appelé `git` et installer / configurer tout sous cet utilisateur:
 
-`sudo adduser --disabled-login --gecos 'Gogs' git`
+```sh
+$ sudo adduser --disabled-login --gecos 'Gogs' git
+```
 
 ### Paquets tiers
 
-Si vous êtes intéressé par les paquets tiers que nous utilisons, voyez [gopmfile](https://github.com/gogits/gogs/blob/master/.gopmfile). Vous pouvez en avoir besoin quand vous construisez un paquet pour Gogs.
+Si vous êtes intéressé par les paquets tiers que nous utilisons, vous pouvez les consulter ici : [gopmfile](https://github.com/gogits/gogs/blob/master/.gopmfile). Vous pouvez en avoir besoin quand vous construisez un paquet pour Gogs.
 
 ## Installation de Go
 
-### Téléchargement
-
 Si la distribution de Go incluse dans votre système correspond aux exigences, veuillez ignorer cette section.
+
+### Téléchargement
 
 Installez Go dans `/home/git/local/go` de sorte qu'il n'interfère pas avec les mises à jour futures de la version gérée par votre système d'exploitation :
 
-```bash
-sudo su - git
-cd ~
-# create a folder to install 'go'
-mkdir local
-# Download go (change go$VERSION.$OS-$ARCH.tar.gz to the latest release)
-wget https://storage.googleapis.com/golang/go$VERSION.$OS-$ARCH.tar.gz
+```sh
+$ sudo su - git
+$ cd ~
+# Créer un dossier pour installer 'go'
+$ mkdir local
+# Télécharger Go (changer go$VERSION.$OS-$ARCH.tar.gz par la dernière version)
+$ wget https://storage.googleapis.com/golang/go$VERSION.$OS-$ARCH.tar.gz
 # expand it to ~/local
-tar -C /home/git/local -xzf go$VERSION.$OS-$ARCH.tar.gz
+$ tar -C /home/git/local -xzf go$VERSION.$OS-$ARCH.tar.gz
 ```
 
-### Configuration de l'environnement
+### Configurer l'environnement
 
 Définissez les chemins qui correspondent à votre système :
 
-```bash
-sudo su - git
-cd ~
-echo 'export GOROOT=$HOME/local/go' >> $HOME/.bashrc
-echo 'export GOPATH=$HOME/go' >> $HOME/.bashrc
-echo 'export PATH=$PATH:$GOROOT/bin:$GOPATH/bin' >> $HOME/.bashrc
-source $HOME/.bashrc
+```sh
+$ sudo su - git
+$ cd ~
+$ echo 'export GOROOT=$HOME/local/go' >> $HOME/.bashrc
+$ echo 'export GOPATH=$HOME/go' >> $HOME/.bashrc
+$ echo 'export PATH=$PATH:$GOROOT/bin:$GOPATH/bin' >> $HOME/.bashrc
+$ source $HOME/.bashrc
 ```
 
-## Installation Gogs
+## Installer Gogs
 
-La façon générale d'installer Gogs, 
+La façon générale d'installer Gogs :
 
-```
+```sh
 # Télécharger et installer les dépendances
 $ go get -u github.com/gogits/gogs
 
@@ -65,49 +65,51 @@ $ cd $GOPATH/src/github.com/gogits/gogs
 $ go build
 ```
 
-Si vous utilisez gopm, vous pouvez essayer d'installer Gogs de la manière suivante :
-
-```
-# Vérification des mises à jour de gopm
-$ gopm update -v
-
-# Télécharger et construire le binaire
-$ gopm bin -u -v gogs -d path/to/anywhere
-```
-
-### Construire depuis la branche `develop`
+### Compiler depuis la branche `develop`
 
 Dans le cas où vous voulez essayer la branche `develop` :
 
-```
+```sh
 $ mkdir -p $GOPATH/src/github.com/gogits
 $ cd $GOPATH/src/github.com/gogits
-$ git clone --depth=1 -b develop https://github.com/gogits/gogs.git
+
+# Assurez vous de ne pas utiliser "https://github.com/gogits/gogs.git"
+$ git clone --depth=1 -b develop https://github.com/gogits/gogs
 $ cd gogs
-$ go get ./...
 $ go build
 ```
 
-### Test d'installation
+### Tester l'installation
 
 Pour vous assurer que Gogs fonctionne correctement :
 
-```
-cd $GOPATH/src/github.com/gogits/gogs
-./gogs web
+```sh
+$ cd $GOPATH/src/github.com/gogits/gogs
+$ ./gogs web
 ```
 
 Si vous ne voyez pas de messages d'erreur, appuyez sur `Ctrl-C` pour arrêter Gogs.
 
-### Construisez avec SQLite3/Redis/Memcache
+### Compiler avec des Tags
 
-Si vous devez activer SQLite3/Redis/Memcache, supprimez le répertoire `$GOPATH/pkg/{GOOS_GOARCH}/github.com/gogits/gogs` et exécutez :
+Gogs ne fournit pas par défaut certains supports, vous devez compiler Gogs avec le support que vous souhaitez ajouter [build tags](https://golang.org/pkg/go/build/#hdr-Build_Constraints).
 
-```
-$ go get -u -tags "sqlite redis memcache" github.com/gogits/gogs
+Liste des tags disponibles :
+
+- `sqlite3`: Support de la base de données SQLite3
+- `pam`: Support de l'authentification PAM
+- `cert`: Support de la génération des certificats auto-signés
+- `miniwinsvc`: Support des services pour Windows (Vous pouvez aussi utiliser NSSM pour créer un service)
+
+Par exemple, si vous voulez activer tous les tags de la liste, vous devez commencer par supprimer le repertoire `$GOPATH/pkg/${GOOS}_${GOARCH}/github.com/gogits/gogs` et exécuter les commandes suivantes :
+
+```sh
+$ go get -u -tags "sqlite pam cert" github.com/gogits/gogs
 $ cd $GOPATH/src/github.com/gogits/gogs
-$ go build -tags "sqlite redis memcache"
+$ go build -tags "sqlite pam cert"
 ```
+
+Si vous avez l'erreur: `fatal error: security/pam_appl.h: No such file or directory`, installez les paquets en exécutant cette commande : `sudo apt-get install libpam0g-dev`.
 
 ## Prochaines étapes
 
