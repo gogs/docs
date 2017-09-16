@@ -39,7 +39,7 @@ $ brew install git
 
 #### Debian/Ubuntu
 
-```
+```sh
 $ sudo apt-get update
 $ sudo apt-get install git
 ```
