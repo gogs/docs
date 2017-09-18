@@ -16,7 +16,7 @@ This flag also changes the port number in the install page for you, so pick a nu
 
 #### How do I use NGINX with Reverse Proxy?
 
-Add following `server` section inside the `http` section of `nginx.conf` and reload the configuration:
+Add the following `server` section inside the `http` section of `nginx.conf` and reload the configuration:
 
 ```
 server {
@@ -32,7 +32,7 @@ server {
 ##### How do I set up a sub-path with NGINX?
 
 In case you need to use a sub-path for your Gogs instance, you can change your NGINX configuration to the following
-(note to the both suffixes `/` after **location** and **proxy_pass**):
+(note the `/` suffixes after **location** and **proxy_pass**):
 
 ```
 server {
@@ -49,7 +49,7 @@ Then set `[server] ROOT_URL = http://git.crystalnetwork.us/gogs/` in your config
 
 ##### Why am I getting errors when uploading large files?
 
-To allow NGINX to handle large file uploads in repositories, please see a relevant discussion [here](http://stackoverflow.com/a/15021750). `413` is a common NGINX error; append following line to your server block to fix this:
+To allow NGINX to handle large file uploads in repositories, please see a relevant discussion [here](http://stackoverflow.com/a/15021750). `413` is a common NGINX error; append the following line to your server block to fix this:
 
 ```
 client_max_body_size 50m;
@@ -78,7 +78,7 @@ ROOT_URL = http://git.domain.tld/
 
 ##### How do I set up a sub-URL with Apache 2?
 
-Use following configuration templates:
+Use the following configuration templates:
 
 `custom/conf/app.ini`:
 ```
@@ -104,7 +104,7 @@ It's important to omit a trailing slash after the port number.
 
 ##### How do I set up a sub-URL with lighttpd?
 
-Use following configuration template:
+Use the following configuration template:
 
 ```
 server.modules  += ( "mod_proxy_backend_http" )
@@ -119,7 +119,7 @@ $HTTP["url"] =~ "^/gogs" {
 ```
 #### How do I use Caddy with Reverse Proxy?
 
-Add following server block to your Caddyfile and reload the configuration:
+Add the following server block to your Caddyfile and reload the configuration:
 
 ```
 git.example.com {
@@ -130,7 +130,7 @@ git.example.com {
 ##### How do I set up a sub-path with Caddy?
 
 In case you need to use a sub-path for your Gogs instance, you can change your Caddy configuration to the following
-(note to the suffix `/`):
+(note the `/` suffix):
 
 ```
 git.example.com {
@@ -140,7 +140,7 @@ git.example.com {
 
 #### How do I set up HTTPS?
 
-Change following configuration options in `custom/conf/app.ini` in the section that looks like this sample:
+Change the following configuration options in `custom/conf/app.ini` in the section that looks like this sample:
 
 ```
 [server]
@@ -156,9 +156,9 @@ If you want to use self-signed HTTPS, you can execute the following command to g
 
 If you want to use SSL with an Apache 2 proxy configuration, configure gogs to use http and Apache 2 for SSL.
 
-#### How do I run Gogs in offline mode/in an intranet?
+#### How do I run Gogs in offline mode/on an intranet?
 
-To run Gogs in an intranet, change the configuration option `server -> OFFLINE_MODE` to `true` in the file `custom/conf/app.ini`.
+To run Gogs on an intranet, change the configuration option `server -> OFFLINE_MODE` to `true` in the file `custom/conf/app.ini`.
 
 #### How do I make a custom robots.txt?
 
@@ -174,7 +174,7 @@ Gogs has some third-party scripts that support running it as a daemon:
 
 #### How do I run Gogs at startup with Systemd?
 
-There's a [systemd service template file](https://github.com/gogits/gogs/blob/master/scripts/systemd/gogs.service) in the Gogs GitHub repository, and in the installed files at `./scripts/systemd/gogs.service`. You will likely need to modify it for your installation:
+There's a [systemd service template file](https://github.com/gogits/gogs/blob/master/scripts/systemd/gogs.service) in the Gogs GitHub repository and in the installed files at `./scripts/systemd/gogs.service`. You will likely need to modify it for your installation:
 
 1. Update `User`, `Group`, `WorkingDirectory`, `ExecStart`, and
    `Environment` with values appropriate to your Gogs installation.
