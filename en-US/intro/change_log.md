@@ -4,6 +4,12 @@ name: Changelog
 
 # Changelog
 
+### Unreleased
+
+#### Features
+
+- Add Dingtalk webhook support [#4773](https://github.com/gogits/gogs/pull/4773)
+
 ### 0.11.29 @ 2017-08-15
 
 #### Bug fixes
