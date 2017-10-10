@@ -109,3 +109,69 @@ name: 授权认证
 * 组内用户属性（可选）
     * Which user LDAP attribute is listed in the group.
     * Example: `uid`
+
+## PAM
+
+To configure this you just need to set the 'PAM Service Name' to a filename in `/etc/pam.d/`.
+If you want it to work with normal Linux passwords, the user running Gogs must have read access to `/etc/shadow`.
+
+## SMTP
+
+Gogs 支持通过指定邮箱服务器来对用户进行创建和认证，可以通过配置以下选项启用该功能：
+
+- 认证名称 **（必填）**
+  - A name to assign to the new method of authorization.
+
+- SMTP 认证类型 **（必填）**
+  - Type of authentication for use on your SMTP host, PLAIN or LOGIN.
+
+- 主机地址 **（必填）**
+  - The address where the SMTP host can be reached.
+  - Example: `smtp.mydomain.com`
+
+- 端口号 **（必填）**
+  - The port to use when connecting to the server.
+  - Example: `587`
+- 域名白名单
+  - Restrict what domains can log in if you're using public SMTP host or SMTP host with multiple domains.
+  - Example: `gogs.io,mydomain.com,mydomain2.com`
+
+- 启用 TLS 加密
+  - Enable TLS encryption on authentication.
+
+- 忽略 TLS 验证
+  - Disable TLS verify on authentication.
+  
+- This authentication is activate
+  - Enable or disable this auth.
+
+## Freeipa
+
+- In order to login to the Gogs using FreeIPA credentials, you need to create a bind account for Gogs to use:
+
+-  On the FreeIPA server, create a `gogs.ldif` file, replacing dc=example,dc=com with your DN, and providing an appropriately secure password:
+```
+  dn: uid=gogs,cn=sysaccounts,cn=etc,dc=example,dc=com
+  changetype: add
+  objectclass: account
+  objectclass: simplesecurityobject
+  uid: gogs
+  userPassword: secure password
+  passwordExpirationTime: 20380119031407Z
+  nsIdleTimeout: 0
+```
+
+- Import the LDIF (change localhost to an IPA server if needed), you’ll be prompted for your Directory Manager password:
+```
+  ldapmodify -h localhost -p 389 -x -D \
+  "cn=Directory Manager" -W -f gogs.ldif
+```
+-  Add an IPA group for gogs_users :
+```
+  ipa group-add --desc="Gogs Users" gogs_users
+```
+-  Note! if you get error about ipa credentials please run kinit admin and give your admin accound password.
+
+-  Now login to the gogs as an Admin, click on “Authentication” under Admin Panel. Then click New LDAP Source and fill in the details, changing all where appropriate to your own domain as photo below:
+
+![Freeipa-Gogs](https://raw.githubusercontent.com/Karen09/docs/master/images/Freeipa-Gogs.png)

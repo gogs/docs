@@ -131,8 +131,7 @@ This option allows Gogs to log in to your SMTP host as a Gogs user. To configure
 
 - Port **(required)**
   - The port to use when connecting to the server.
-  - Example: `587
-
+  - Example: `587`
 - Allowed Domains
   - Restrict what domains can log in if you're using public SMTP host or SMTP host with multiple domains.
   - Example: `gogs.io,mydomain.com,mydomain2.com`
