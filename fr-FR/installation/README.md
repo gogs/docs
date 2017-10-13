@@ -7,7 +7,9 @@ name: Installation
 - Base de données (choisissez en une dans cette liste) :
     - [MySQL](http://dev.mysql.com) : Version >= 5.5.3
     - [PostgreSQL](http://www.postgresql.org/)
-    - ou **RIEN** avec SQLite3 ou TiDB (expérimental)
+    - [MSSQL](https://fr.wikipedia.org/wiki/Microsoft_SQL_Server)
+    - [TiDB](https://github.com/pingcap/tidb) (expérimental, utilisez le protocole MySQL pour vous connecter)
+    - ou **RIEN** avec SQLite3
 - [Git](http://git-scm.com/) (bash) :
     - Version >= 1.7.1 pour le serveur et le client
     - Il est conseillé d'utiliser la dernière version pour Windows
@@ -17,7 +19,7 @@ name: Installation
 
 ### Installation de la base de données
 
-Gogs supporte MySQL, PostgreSQL, SQLite3 et TiDB. En fonction de votre choix, installez l'un d'entre eux ou passez cette étape :
+En fonction de votre choix, installez l'un d'entre eux ou passez cette étape :
 
 - [MySQL](http://dev.mysql.com/downloads/mysql/) (Moteur de stockage : INNODB)
 - [PostgreSQL](http://www.postgresql.org/download/)
@@ -30,14 +32,14 @@ Gogs supporte MySQL, PostgreSQL, SQLite3 et TiDB. En fonction de votre choix, in
 
 Supposons que vous avez déjà installé [Homebrew](http://brew.sh/) :
 
-```
+```sh
 $ brew update
 $ brew install git
 ```
 
 #### Debian/Ubuntu
 
-```
+```sh
 $ sudo apt-get update
 $ sudo apt-get install git
 ```
