@@ -15,7 +15,7 @@ name: 包管理安装
 
 - 基于源码构建，作者 [@fanningert](https://github.com/fanningert):
 	- `master` 分支：[AUR](https://aur.archlinux.org/packages/gogs-git/) [GitHub](https://github.com/fanningert/PKGBUILDs/tree/master/aur/gogs-git)
-	- `dev` 分支：[AUR](https://aur.archlinux.org/packages/gogs-dev-git/) [GitHub](https://github.com/fanningert/PKGBUILDs/tree/master/aur/gogs-git-dev)
+	- `develop` 分支：[AUR](https://aur.archlinux.org/packages/gogs-dev-git/) [GitHub](https://github.com/fanningert/PKGBUILDs/tree/master/aur/gogs-git-dev)
 	- 版本：[AUR](https://aur.archlinux.org/packages/gogs/) [GitHub](https://github.com/Martchus/PKGBUILDs/tree/master/gogs/default)
 
 能可以到 [Arch Linux Wiki entry](https://wiki.archlinux.org/index.php/Gogs) 查看完整说明。
