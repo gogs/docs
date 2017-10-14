@@ -32,7 +32,7 @@ server {
 ##### How do I set up a sub-path with NGINX?
 
 In case you need to use a sub-path for your Gogs instance, you can change your NGINX configuration to the following
-(note the `/` suffixes after **location** and **proxy_pass**):
+(note _both_ of the `/` suffixes after **location** and **proxy_pass**):
 
 ```
 server {
