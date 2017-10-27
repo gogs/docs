@@ -14,7 +14,7 @@ The default configuration is saved in `conf/app.ini`, you do **NOT** need to edi
 
 So how do you create a custom configuration if you are not allowed to edit `conf/app.ini`? Well, create `custom/conf/app.ini` then! Corresponding keys in corresponding sections in `custom/conf/app.ini` will overwrite the values set in `conf/app.ini`.
 
-For example, to change the root path of where repository raw data is being stored, add something like follows:
+For example, to change the root path of where raw repository data is being stored, add something like follows:
 
 ```
 [repository]
@@ -35,23 +35,23 @@ Note: please quote passwords using `` ` ``
 Yes, why don't you just edit `conf/app.ini`? The reason is to keep your custom configuration safe:
 
 - For people who install from binary, every time after you ship the program, you can just simply copy and paste without re-configuring anything.
-- For people who install from source, we've ruled out the `custom/conf/app.ini` in `.gitignore`, so it will not cause changes in version control which you have to do batch of other stuff before updating.
+- For people who install from source, we've ruled out the `custom/conf/app.ini` in `.gitignore`, so it will not cause changes in version control as a result of re-applying old configurations to the new version.
 
 ## Run Gogs server
 
 ### For Developers
 
-- You need to set key `security -> INSTALL_LOCK` to be `true` in file `custom/conf/app.ini` in order to run from source.
-- You can use famous `make` command:
+- You need to set key `security -> INSTALL_LOCK` to be `true` in the file `custom/conf/app.ini` in order to run from source.
+- You can use the famous `make` command:
 
-	```sh
+```sh
 $ make
 $ ./gogs web
-	```
+```
 
 ### For Deployment
 
-**Scripts are in the `scripts` directory, but execute them at root of the repository**
+**Scripts are in the `scripts` directory, but execute them at the root of the repository**
 
 - There are many ways to start:
 	- Plain: just use `./gogs web`
