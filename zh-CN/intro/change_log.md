@@ -6,6 +6,10 @@ name: 变更日志
 
 ### 未发布
 
+#### Bug 修复
+
+- 部分安全修复
+
 #### 新增特性
 
 - 添加钉钉 Web 钩子支持 [#4773](https://github.com/gogits/gogs/pull/4773)
