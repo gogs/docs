@@ -4,12 +4,12 @@ name: From packages
 
 # Install from packages
 
-**Those are third-party providers, use on your own risks.**
+**These are third-party providers—use at your own risk.**
 
 ### Packager.io
 
-- Currently enabled for Ubuntu 12.04 + 14.04 + 16.04, CentOS 6 + 7 and Debian 7 + 8.
-- Current packages available from [packager.io](https://packager.io/gh/pkgr/gogs) (the custom config for packager.io sometimes is in `/etc/default/gogs`).
+- Currently enabled for Ubuntu 12.04 + 14.04 + 16.04, CentOS 6 + 7, and Debian 7 + 8.
+- Current packages available from [packager.io](https://packager.io/gh/pkgr/gogs) (the custom config for packager.io is sometimes in `/etc/default/gogs`).
 
 ### Arch Linux
 
@@ -22,6 +22,6 @@ Information for installation and configuration on Arch Linux can be found at thi
 
 ### Synology spk
 
-- Installation for Arm, x386 and amd64
+- Installation for ARM, x386 and amd64
 
 https://github.com/davidmullerz/gogs-spk/releases/tag/1.1
