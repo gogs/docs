@@ -4,11 +4,11 @@ name: Installation
 
 ## Prerequisites
 
-- Database (choose one of following):
+- Database (choose one of the following):
     - [MySQL](http://dev.mysql.com): Version >= 5.5.3
     - [PostgreSQL](http://www.postgresql.org/)
     - [MSSQL](https://en.wikipedia.org/wiki/Microsoft_SQL_Server)
-    - [TiDB](https://github.com/pingcap/tidb) (experimental, connect by MySQL protocol)
+    - [TiDB](https://github.com/pingcap/tidb) (experimental, connect via the MySQL protocol)
     - or **NOTHING** with SQLite3
 - [Git](http://git-scm.com/) (bash):
     - Version >= 1.7.1 for both server and client sides
@@ -19,18 +19,18 @@ name: Installation
 
 ### Install database
 
-Based on your choice, install one of supported databases or skip this step:
+Based on your choice, install one of the supported databases (or skip this step):
 
 - [MySQL](http://dev.mysql.com/downloads/mysql/) (Engine: INNODB)
 - [PostgreSQL](http://www.postgresql.org/download/)
 
 **REMEMBER** Please use `scripts/mysql.sql` to create a database called `gogs` (default). If you create it manually, make sure the encoding is `utf8mb4`.
 
-### Install other requirements
+### Install additional requirements
 
 #### Mac OS X
 
-Assume you've installed [Homebrew](http://brew.sh/) already:
+Assuming you have [Homebrew](http://brew.sh/) already installed:
 
 ```sh
 $ brew update
