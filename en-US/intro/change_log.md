@@ -14,6 +14,10 @@ name: Changelog
 
 - Add Dingtalk webhook support [#4773](https://github.com/gogits/gogs/pull/4773)
 
+#### Improvements
+
+- Add repository setting to ignore whitespace when check pull request conflict [#4834](https://github.com/gogits/gogs/issues/4834)
+
 ### 0.11.29 @ 2017-08-15
 
 #### Bug fixes

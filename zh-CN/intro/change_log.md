@@ -14,6 +14,10 @@ name: 变更日志
 
 - 添加钉钉 Web 钩子支持 [#4773](https://github.com/gogits/gogs/pull/4773)
 
+#### 功能改进
+
+- 添加仓库设置以便在检查合并请求冲突时忽略空白符的差异 [#4834](https://github.com/gogits/gogs/issues/4834)
+
 ### 0.11.29 @ 2017-08-15
 
 #### Bug 修复
