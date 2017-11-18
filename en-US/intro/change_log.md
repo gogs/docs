@@ -18,6 +18,10 @@ name: Changelog
 
 - Add repository setting to ignore whitespace when check pull request conflict [#4834](https://github.com/gogits/gogs/issues/4834)
 
+#### Others
+
+- Add new language support: Slovak
+
 ### 0.11.29 @ 2017-08-15
 
 #### Bug fixes
