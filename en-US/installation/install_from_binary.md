@@ -25,7 +25,7 @@ All downloads come with **MySQL**, **PostgreSQL**, **MSSQL** and **TiDB** (via M
 |Linux|386|✅|✅|LOCAL: [ZIP](https://dl.gogs.io/0.11.33/linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/0.11.33/linux_386.tar.gz) - CDN: [ZIP](https://cdn.gogs.io/0.11.33/linux_386.zip) \| [TAR.GZ](https://cdn.gogs.io/0.11.33/linux_386.tar.gz)|
 |Linux|amd64|✅|✅|LOCAL: [ZIP](https://dl.gogs.io/0.11.33/linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/0.11.33/linux_amd64.tar.gz) - CDN: [ZIP](https://cdn.gogs.io/0.11.33/linux_amd64.zip) \| [TAR.GZ](https://cdn.gogs.io/0.11.33/linux_amd64.tar.gz)|
 |Linux|armv5|❌|❌|LOCAL: [ZIP](https://dl.gogs.io/0.11.33/linux_armv5.zip) - CDN: [ZIP](https://cdn.gogs.io/0.11.33/linux_armv5.zip)|
-|Raspberry Pi|v2 / armv6|✅|✅|LOCAL: [ZIP](https://dl.gogs.io/0.11.33/raspi2_armv6.zip) - CDN: [ZIP](https://cdn.gogs.io/0.11.33/raspi2_armv6.zip)|
+|Raspberry Pi|v2/v3 / armv6|✅|✅|LOCAL: [ZIP](https://dl.gogs.io/0.11.33/raspi2_armv6.zip) - CDN: [ZIP](https://cdn.gogs.io/0.11.33/raspi2_armv6.zip)|
 |Windows|386|✅|❌|LOCAL: [ZIP](https://dl.gogs.io/0.11.33/windows_386.zip) \| [ZIP w/ mws](https://dl.gogs.io/0.11.33/windows_386_mws.zip) - CDN: [ZIP](https://cdn.gogs.io/0.11.33/windows_386.zip) \| [ZIP w/mws](https://cdn.gogs.io/0.11.33/windows_386_mws.zip)|
 |Windows|amd64|✅|❌|LOCAL: [ZIP](https://dl.gogs.io/0.11.33/windows_amd64.zip) \| [ZIP w/ mws](https://dl.gogs.io/0.11.33/windows_amd64_mws.zip) - CDN: [ZIP](https://cdn.gogs.io/0.11.33/windows_amd64.zip) \| [ZIP w/ mws](https://cdn.gogs.io/0.11.33/windows_amd64_mws.zip)|
 |Mac OS|amd64|✅|❌|LOCAL: [ZIP](https://dl.gogs.io/0.11.33/darwin_amd64.zip) - CDN: [ZIP](https://cdn.gogs.io/0.11.33/darwin_amd64.zip)|
