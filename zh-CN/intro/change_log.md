@@ -4,18 +4,23 @@ name: 变更日志
 
 # 变更日志
 
-### 未发布
+### 0.11.33 @ 2017-11-19
 
 #### Bug 修复
 
 - 部分安全修复
+- 合并请求后发送的 Web 钩子推送内容包含错误的提交 ID [#4442](https://github.com/gogits/gogs/issues/4442)
+- HTML 标签 go-import 未响应正确的值 [#4832](https://github.com/gogits/gogs/issues/4832)
 
 #### 新增特性
 
 - 添加钉钉 Web 钩子支持 [#4773](https://github.com/gogits/gogs/pull/4773)
+- 支持合并请求前先进行衍合操作 [#4798](https://github.com/gogits/gogs/issues/4798)
 
 #### 功能改进
 
+- 在 LDAP BindDN 中支持使用 '%s' 作为用户名占位符 [#2526](https://github.com/gogits/gogs/issues/2526)
+- 允许通过环境变量指定 Docker 容器内 git 用户的 UID [#3520](https://github.com/gogits/gogs/issues/3520)
 - 添加仓库设置以便在检查合并请求冲突时忽略空白符的差异 [#4834](https://github.com/gogits/gogs/issues/4834)
 
 #### 其它变更
@@ -111,24 +116,4 @@ name: 变更日志
 - Web 钩子推送事件添加有关文件被添加、删除和修改的信息 [#3897](https://github.com/gogits/gogs/issues/3897)
 - 允许设置控制面板每页显示的活动数量 [#4247](https://github.com/gogits/gogs/issues/4247)
 
-### 0.10.18 @ 2017-03-14
-
-#### Bug 修复
-
-- 镜像仓库同步完成后未修改最后更新时间 [#2807](https://github.com/gogits/gogs/issues/2807)
-- **回退** 无法编辑和查看版本发布草稿 [#4262](https://github.com/gogits/gogs/issues/4262)
-
-#### 功能改进
-
-- 更多的 Web 钩子事件
-- 所有的工单参与者都会收到通知邮件 [#2929](https://github.com/gogits/gogs/issues/2929)
-- 白名单用户可以跳过保护分支的合并请求检查 [#4207](https://github.com/gogits/gogs/issues/4207)
-
-#### 新增特性
-
-- 在管理面板显示仓库体积
-- 支持添加附件到版本发布 [#1614](https://github.com/gogits/gogs/issues/1614)
-- 仓库分支页面 [#2310](https://github.com/gogits/gogs/issues/2310)
-- 支持 Smartypants 以及其配置分区 `[smartypants]` [#4162](https://github.com/gogits/gogs/issues/4162)
-
-**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.10.18) 上找到。**
+**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.11rc) 上找到。**

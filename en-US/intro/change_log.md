@@ -4,18 +4,23 @@ name: Changelog
 
 # Changelog
 
-### Unreleased
+### 0.11.33 @ 2017-11-19
 
 #### Bug fixes
 
 - Some security fixes
+- Wrong commit ID in webhook payload after merging pull request [#4442](https://github.com/gogits/gogs/issues/4442)
+- Meta tag go-import does not response correct value [#4832](https://github.com/gogits/gogs/issues/4832)
 
 #### Features
 
 - Add Dingtalk webhook support [#4773](https://github.com/gogits/gogs/pull/4773)
+- Allow rebase and merge pull request [#4798](https://github.com/gogits/gogs/issues/4798)
 
 #### Improvements
 
+- Add placeholder '%s' for username in LDAP BindDN [#2526](https://github.com/gogits/gogs/issues/2526)
+- Allow UID for git user in Docker container to be specified via ENV variable [#3520](https://github.com/gogits/gogs/issues/3520)
 - Add repository setting to ignore whitespace when check pull request conflict [#4834](https://github.com/gogits/gogs/issues/4834)
 
 #### Others
@@ -111,24 +116,4 @@ name: Changelog
 - Webhook push event provice details about added/removed/modified files [#3897](https://github.com/gogits/gogs/issues/3897)
 - Able to config number of newsfeed showed on Dashboard [#4247](https://github.com/gogits/gogs/issues/4247)
 
-### 0.10.18 @ 2017-03-14
-
-#### Bug fixes
-
-- Last updated is not changed after syncing for mirror repositories [#2807](https://github.com/gogits/gogs/issues/2807)
-- **Regression** Cannot edit or view draft release [#4262](https://github.com/gogits/gogs/issues/4262)
-
-#### Improvements
-
-- More webhook events
-- Send notification emails to all issue participants [#2929](https://github.com/gogits/gogs/issues/2929)
-- Whitelist users can bypass require pull request check for protected branches [#4207](https://github.com/gogits/gogs/issues/4207)
-
-#### Features
-
-- Able to view repository size in admin panel
-- Support add attachments to releases [#1614](https://github.com/gogits/gogs/issues/1614)
-- Repository branches page [#2310](https://github.com/gogits/gogs/issues/2310)
-- Support Smartypants with config section `[smartypants]` [#4162](https://github.com/gogits/gogs/issues/4162)
-
-**Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.10.18).**
+**Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.11rc).**
