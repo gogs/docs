@@ -24,17 +24,17 @@ name: 二进制安装
 2. 删除当前的 `templates` 目录。
 3. 解压压缩包并将所有内容复制粘贴到相应（当前）的位置。
 
-### 0.11.33 @ 2017-11-19
+### 0.11.34 @ 2017-11-22
 
-|系统名称|系统类型|SQLite|PAM|下载（[GitHub](https://github.com/gogits/gogs/releases/tag/v0.11.33)）|
+|系统名称|系统类型|SQLite|PAM|下载（[GitHub](https://github.com/gogits/gogs/releases/tag/v0.11.34)）|
 |------|----|------|---|--------|
-|Linux|386|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.11.33/linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/0.11.33/linux_386.tar.gz) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.33/linux_386.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.33/linux_386.tar.gz)|
-|Linux|amd64|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.11.33/linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/0.11.33/linux_amd64.tar.gz) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.33/linux_amd64.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.33/linux_amd64.tar.gz)|
-|Linux|armv5|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/0.11.33/linux_armv5.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.33/linux_armv5.zip)|
-|Raspberry Pi|v2&v3 / armv6|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.11.33/raspi2_armv6.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.33/raspi2_armv6.zip)|
-|Windows|386|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.11.33/windows_386.zip) \| [ZIP w/ mws](https://dl.gogs.io/0.11.33/windows_386_mws.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.33/windows_386.zip) \| [ZIP w/mws](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.33/windows_386_mws.zip)|
-|Windows|amd64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.11.33/windows_amd64.zip) \| [ZIP w/ mws](https://dl.gogs.io/0.11.33/windows_amd64_mws.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.33/windows_amd64.zip) \| [ZIP w/ mws](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.33/windows_amd64_mws.zip)|
-|Mac OS|amd64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.11.33/darwin_amd64.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.33/darwin_amd64.zip)|
+|Linux|386|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.11.34/linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/0.11.34/linux_386.tar.gz) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.34/linux_386.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.34/linux_386.tar.gz)|
+|Linux|amd64|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.11.34/linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/0.11.34/linux_amd64.tar.gz) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.34/linux_amd64.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.34/linux_amd64.tar.gz)|
+|Linux|armv5|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/0.11.34/linux_armv5.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.34/linux_armv5.zip)|
+|Raspberry Pi|v2&v3 / armv6|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.11.34/raspi2_armv6.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.34/raspi2_armv6.zip)|
+|Windows|386|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.11.34/windows_386.zip) \| [ZIP w/ mws](https://dl.gogs.io/0.11.34/windows_386_mws.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.34/windows_386.zip) \| [ZIP w/mws](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.34/windows_386_mws.zip)|
+|Windows|amd64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.11.34/windows_amd64.zip) \| [ZIP w/ mws](https://dl.gogs.io/0.11.34/windows_amd64_mws.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.34/windows_amd64.zip) \| [ZIP w/ mws](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.34/windows_amd64_mws.zip)|
+|Mac OS|amd64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.11.34/darwin_amd64.zip) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.34/darwin_amd64.zip)|
 
 ### 0.11.29 @ 2017-08-15
 

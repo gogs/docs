@@ -4,6 +4,12 @@ name: Changelog
 
 # Changelog
 
+### 0.11.34 @ 2017-11-22
+
+#### Bug fixes
+
+- *Regression*: Pull request is not working between different repositories [#4890](https://github.com/gogits/gogs/issues/4890)
+
 ### 0.11.33 @ 2017-11-19
 
 #### Bug fixes
