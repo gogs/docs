@@ -33,7 +33,7 @@ PASSWD = root
 
 Oui, pourquoi ne pas simplement éditer `conf/app.ini` ? C'est pour vous permettre de garder votre configuration personnalisée en sécurité :
 
-- Pour les personnes qui installent le binaire, chaque fois que vous arrêter le programme, vous pouvez tout simplement copier et coller le fichier de configuration sans rien à re-configurer.
+- Pour les personnes qui installent le binaire, chaque fois que vous arrêtez le programme, vous pouvez tout simplement copier et coller le fichier de configuration sans rien à re-configurer.
 - Pour les personnes qui installent depuis les sources, nous avons exclu le `custom/conf/app.ini` dans `.gitignore`, ainsi les modifications de ce fichier ne sont pas prises en compte lors de la mise à jour.
 
 ## Exécuter le serveur Gogs
@@ -54,4 +54,4 @@ Oui, pourquoi ne pas simplement éditer `conf/app.ini` ? C'est pour vous permett
 		- Start: `./scripts/gogs_supervisord.sh start`
 		- Stop: `./scripts/gogs_supervisord.sh stop`
 		- Restart: `./scripts/gogs_supervisord.sh restart`
-- Ouvrez l'URL `/install` pour faire votre créer votre configuration la première fois.
+- Ouvrez l'URL `/install` pour créer votre configuration la première fois.
