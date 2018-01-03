@@ -73,17 +73,19 @@ client_max_body_size 50m;
 
 ##### 有没有用 lighttpd 配置子路径的例子？
 
-可以尝试使用下面的配置模板：
+```
+server.modules  += ( "mod_proxy" )
+$HTTP["host"] == "git.example.com" {
+    proxy.server = ( "" => ( ( "host" => "127.0.0.1", "port" => "3000" ) ) )
+}
+```
 
 ```
-server.modules  += ( "mod_proxy_backend_http" )
-$HTTP["url"] =~ "^/gogs" {
-        proxy-core.protocol = "http"
-        proxy-core.backends = ( "localhost:3000" )
-        proxy-core.rewrite-request = (
-          "_uri" => ( "^/gogs/?(.*)" => "/$1" ),
-          "Host" => ( ".*" => "localhost:3000" ),
-        )
+# requires lighttpd 1.4.46 or later
+server.modules  += ( "mod_proxy" )
+$HTTP["url"] =~ "^/gogs/" {
+    proxy.server = ( "" => ( ( "host" => "localhost", "port" => "3000" ) ) )
+    proxy.header = ( "map-urlpath" => ( "/gogs/" => "/" ) )
 }
 ```
 

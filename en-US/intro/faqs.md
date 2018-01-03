@@ -102,21 +102,26 @@ ROOT_URL = http://domain.tld/git
 
 It's important to omit a trailing slash after the port number.
 
-##### How do I set up a sub-URL with lighttpd?
-
-Use the following configuration template:
+#### How do I use lighttpd with Reverse Proxy?
 
 ```
-server.modules  += ( "mod_proxy_backend_http" )
-$HTTP["url"] =~ "^/gogs" {
-    proxy-core.protocol = "http"
-    proxy-core.backends = ( "localhost:3000" )
-    proxy-core.rewrite-request = (
-      "_uri" => ( "^/gogs/?(.*)" => "/$1" ),
-      "Host" => ( ".*" => "localhost:3000" ),
-    )
+server.modules  += ( "mod_proxy" )
+$HTTP["host"] == "git.example.com" {
+    proxy.server = ( "" => ( ( "host" => "127.0.0.1", "port" => "3000" ) ) )
 }
 ```
+
+##### How do I set up a sub-URL with lighttpd?
+
+```
+# requires lighttpd 1.4.46 or later
+server.modules  += ( "mod_proxy" )
+$HTTP["url"] =~ "^/gogs/" {
+    proxy.server = ( "" => ( ( "host" => "localhost", "port" => "3000" ) ) )
+    proxy.header = ( "map-urlpath" => ( "/gogs/" => "/" ) )
+}
+```
+
 #### How do I use Caddy with Reverse Proxy?
 
 Add the following server block to your Caddyfile and reload the configuration:
