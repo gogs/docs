@@ -39,7 +39,7 @@ gogs gogs_old  gogs-repositories $OS_$ARCH.tar.gz
 Copy `custom`, `data`, and `log` directories to the unzipped directory:
 
 ```bash
-$ cp -R gogs_old/{custom,data,log} gogs
+$ cp -R gogs_old/{custom,data,log,gogs-repositories} gogs
 ```
 
 Then, run and test in your browser:
