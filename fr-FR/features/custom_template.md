@@ -14,6 +14,6 @@ Voici un example pour inclure un fichier CSS personnalisé dans votre instance G
 
 1. Créez un fichier nommé `custom.css` dans le répertoire `public/css`.
 2. Placez des règles CSS dans ce fichier.
-3. Editez le fichier `custom/templates/inject/head.tmpl` et ajoutez une ligne `<link rel="stylesheet" href="/css/custom.css">`
+3. Editez le fichier `templates/inject/head.tmpl` et ajoutez une ligne `<link rel="stylesheet" href="/css/custom.css">`
 4. Redémarrer Gogs
 5. Ajoutez plus de contenu CSS dans le fichier ne nécessite pas de redémarrer Gogs
