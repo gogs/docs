@@ -10,7 +10,7 @@ Lese mehr über "[inject custom head and footer](https://discuss.gogs.io/t/how-t
 
 ## Eigene CSS Datei laden
 
-Hier ist ein Beispiel, wie du deine eigene CSS Datei zu deiner Gogs Instanz hinzufügen kannst. Namen und Ordner sind nur zur Demonstration. Du kannst deinen Dateien überall speichern, solange sie von Netzwerkanfragen gelesen werden können.
+Hier ist ein Beispiel, wie du deine eigene CSS Datei zu deiner Gogs Instanz hinzufügen kannst. Namen und Ordner sind nur zur Demonstration. Du kannst deine Dateien überall speichern, solange sie von Netzwerkanfragen gelesen werden können.
 
 1. Erstelle eine Datei namens `custom.css` im `public/css` Verzeichnis.
 2. Erstelle deine CSS Regeln in der Datei.
