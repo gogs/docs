@@ -190,6 +190,38 @@ You can check the status of the Gogs service with `sudo systemctl status gogs -l
 
 The first registered user with `ID = 1` is an administrator. No e-mail confirmation is required for this (if enabled). The default administrator can log into `Admin` > `Users` and authorize another user. A user will also be an administrator if they register in the install page.
 
+#### Is there a simple way to reset forgotten administrator password?
+
+It's assumed that you're real server admin and you have shell access (local or remote) to your server with appropriate priviledges.
+In such a case, you can do the following steps:
+
+- In shell
+  - log in to the shell of your server
+  - stop gogs
+  - create new temporary user with administrator rights from command line (see below)
+  - start gogs
+- In web browser
+  - log in as new user (using web browser)
+  - set new password to your old administrator account by clicking `Edit` in the `Admin Panel` > `Users`
+  - log out
+  - log in as old administration (with new password)
+  - delete temporary user in the `Admin Panel` > `Users`
+
+Just for example, let's assume that `gogs` is run as user `git` and is installed to `/home/git/gogs` directory.
+
+To create new temporary user from command line you should execute something like that:
+
+```
+$ su git
+$ cd /home/git/gogs
+$ ./gogs admin create-user --name tmpuser --password tmppassword --admin --email email@example.com
+```
+
+Those commands create new admin user `tmpuser` with `tmppassword` password. 
+
+*Remark: I don't really know, is it necessary to keep gogs stopped while creating new user or not. 
+I suppose that it's safer to stop gogs before doing that.*
+
 ### Repository Management
 
 #### How do I give Git Hooks permission to users?
