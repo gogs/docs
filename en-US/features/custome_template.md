@@ -14,6 +14,6 @@ Here is an example of how you can include a custom CSS file to your Gogs instanc
 
 1. Create a file named `custom.css` under `public/css` directory.
 2. Put some CSS rules into the file.
-3. Edit file `templates/inject/head.tmpl` and add a line `<link rel="stylesheet" href="/css/custom.css">`
+3. Edit file `custom/templates/inject/head.tmpl` and add a line `<link rel="stylesheet" href="/css/custom.css">`
 4. Restart Gogs
 5. More editing to the custom CSS file does not require restart Gogs
