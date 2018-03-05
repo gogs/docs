@@ -96,7 +96,7 @@ A couple of things do not come with Gogs automatically, you need to compile Gogs
 
 Available build tags are:
 
-- `sqlite3`: SQLite3 database support
+- `sqlite`: SQLite3 database support
 - `pam`: PAM authentication support
 - `cert`: Generate self-signed certificates support
 - `miniwinsvc`: Builtin windows service support (or you can use NSSM to create a service)
