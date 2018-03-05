@@ -241,7 +241,7 @@ Name|Description
 Name|Description
 ----|-----------
 `LEVEL`|File log level, leave empty to inherit.
-`LOG_RORATE`|Enable this to have file rotation.
+`LOG_ROTATE`|Enable this to have file rotation.
 `DAILY_ROTATE`|Enable this to segment log file daily.
 `MAX_SIZE_SHIFT`|Max size shift of single file for rotation, default is 28 means 1 << 28, 256MB.
 `MAX_LINES`|Max line number of single file for rotation, default is `1000000`.
