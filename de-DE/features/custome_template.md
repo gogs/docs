@@ -14,6 +14,6 @@ Hier ist ein Beispiel, wie du deine eigene CSS Datei zu deiner Gogs Instanz hinz
 
 1. Erstelle eine Datei namens `custom.css` im `public/css` Verzeichnis.
 2. Erstelle deine CSS Regeln in der Datei.
-3. Editiere `templates/inject/head.tmpl` und füge die Zeile `<link rel="stylesheet" href="/css/custom.css">` hinzu.
+3. Editiere `custom/templates/inject/head.tmpl` und füge die Zeile `<link rel="stylesheet" href="/css/custom.css">` hinzu.
 4. Starte Gogs neu
 5. Weiteres Bearbeiten der eigenen CSS Datei erfordert keinen Neustart von Gogs
