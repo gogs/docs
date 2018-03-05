@@ -4,6 +4,12 @@ name: Changelog
 
 # Changelog
 
+### Unreleased
+
+#### Others
+
+- Add new languages support: Indonesian, Persian 
+
 ### 0.11.34 @ 2017-11-22
 
 #### Bug fixes
