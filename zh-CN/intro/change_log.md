@@ -6,6 +6,10 @@ name: 变更日志
 
 ### 未发布
 
+#### 功能改进
+
+- 支持 HTTP HEAD 请求 [#2857](https://github.com/gogits/gogs/issues/2857)
+
 #### 其它变更
 
 - 添加新语种支持：印度尼西亚语、波斯语

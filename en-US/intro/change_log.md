@@ -6,6 +6,10 @@ name: Changelog
 
 ### Unreleased
 
+#### Improvements
+
+- Support HTTP HEAD requests [#2857](https://github.com/gogits/gogs/issues/2857)
+
 #### Others
 
 - Add new languages support: Indonesian, Persian 
