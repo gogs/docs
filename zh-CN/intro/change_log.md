@@ -6,6 +6,10 @@ name: 变更日志
 
 ### 未发布
 
+#### Bug 修复
+
+- IPython Notebook 中的 SVG 支持 [#5077](https://github.com/gogits/gogs/issues/5077)
+
 #### 功能改进
 
 - 支持 HTTP HEAD 请求 [#2857](https://github.com/gogits/gogs/issues/2857)

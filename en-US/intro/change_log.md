@@ -6,6 +6,10 @@ name: Changelog
 
 ### Unreleased
 
+#### Bug fixes
+
+- SVG support in IPython notebook [#5077](https://github.com/gogits/gogs/issues/5077)
+
 #### Improvements
 
 - Support HTTP HEAD requests [#2857](https://github.com/gogits/gogs/issues/2857)
