@@ -8,6 +8,7 @@ name: Changelog
 
 #### Bug fixes
 
+- Wrong branch URL for name contains `#` in branches view [#4874](https://github.com/gogits/gogs/issues/4874)
 - SVG support in IPython notebook [#5077](https://github.com/gogits/gogs/issues/5077)
 
 #### Improvements
