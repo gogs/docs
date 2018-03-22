@@ -9,6 +9,7 @@ name: 变更日志
 #### Bug 修复
 
 - 分支页面名称包含 `#` 的分支链接错误 [#4874](https://github.com/gogits/gogs/issues/4874)
+- 在合并提交时使用衍合导致合并失效 [#5051](https://github.com/gogits/gogs/issues/5051)
 - IPython Notebook 中的 SVG 支持 [#5077](https://github.com/gogits/gogs/issues/5077)
 
 #### 功能改进

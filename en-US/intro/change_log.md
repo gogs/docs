@@ -9,6 +9,7 @@ name: Changelog
 #### Bug fixes
 
 - Wrong branch URL for name contains `#` in branches view [#4874](https://github.com/gogits/gogs/issues/4874)
+- Commits not merged after accepting pull request using rebase [#5051](https://github.com/gogits/gogs/issues/5051)
 - SVG support in IPython notebook [#5077](https://github.com/gogits/gogs/issues/5077)
 
 #### Improvements
