@@ -15,6 +15,7 @@ name: Changelog
 #### Improvements
 
 - Support HTTP HEAD requests [#2857](https://github.com/gogits/gogs/issues/2857)
+- Disable federated avatar lookup by default [#5126](https://github.com/gogits/gogs/pull/5126)
 
 #### Others
 

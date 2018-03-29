@@ -15,6 +15,7 @@ name: 变更日志
 #### 功能改进
 
 - 支持 HTTP HEAD 请求 [#2857](https://github.com/gogits/gogs/issues/2857)
+- 默认禁用联合头像查找 [#5126](https://github.com/gogits/gogs/pull/5126)
 
 #### 其它变更
 
