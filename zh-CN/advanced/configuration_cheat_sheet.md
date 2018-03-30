@@ -149,7 +149,7 @@ name: 配置文件手册
 `REQUIRE_SIGNIN_VIEW`|激活该选项来要求用户必须登录才能浏览任何页面
 `ENABLE_CACHE_AVATAR`|激活该选项来缓存 Gravatar 的头像
 `ENABLE_NOTIFY_MAIL`|激活该选项来发送通知邮件给关注者，例如创建 issue 时，要求已启用 `Mailer`
-`ENABLE_REVERSE_PROXY_AUTHENTICATION`|激活该选项来开启反向代理用户认证，请从 https://github.com/gogits/gogs/issues/165 了解更多信息
+`ENABLE_REVERSE_PROXY_AUTHENTICATION`|激活该选项来开启反向代理用户认证，请从 [#165](https://github.com/gogits/gogs/issues/165) 了解更多信息
 `ENABLE_REVERSE_PROXY_AUTO_REGISTRATION`|激活该选项来开启反向代理用户认证的自动注册功能
 `DISABLE_MINIMUM_KEY_SIZE_CHECK`|激活该选项来禁止检查响应类型的密钥最小长度
 `ENABLE_CAPTCHA`|激活该选项以在用户注册时要求输入验证码
@@ -168,13 +168,14 @@ name: 配置文件手册
 名称|描述
 ----|----
 `ENABLED`|启用该选项以激活邮件服务
+`SUBJECT_PREFIX`|邮件标题的前缀
+`HOST`|SMTP 主机地址与端口
 `DISABLE_HELO`|禁用 HELO 操作
 `HELO_HOSTNAME`|HELO 操作的自定义主机名
-`HOST`|SMTP 主机地址与端口
+`SKIP_VERIFY`|不验证自签发证书的有效性
 `FROM`|邮箱的来自地址，遵循 RFC 5322规范，可以是一个单纯的邮箱地址或者 `"名字" <email@example.com>` 的形式
 `USER`|邮箱用户名
 `PASSWD`|邮箱密码
-`SKIP_VERIFY`|不验证自签发证书的有效性
 `USE_PLAIN_TEXT`|使用 `text/plain` 作为邮件内容格式
 
 备注：Gogs 仅支持使用 STARTTLS 的 SMTP 协议

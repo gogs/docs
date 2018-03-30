@@ -149,7 +149,7 @@ Name|Description
 `REQUIRE_SIGNIN_VIEW`|Enable this to force users to log in to view any page.
 `ENABLE_CACHE_AVATAR`|Enable this to cache avatar from Gravatar.
 `ENABLE_NOTIFY_MAIL`|Enable this to send e-mail to watchers of repository when something happens like creating issues, requires `Mailer` to be enabled.
-`ENABLE_REVERSE_PROXY_AUTHENTICATION`|Enable this to allow reverse proxy authentication, more detail|https://github.com/gogits/gogs/issues/165
+`ENABLE_REVERSE_PROXY_AUTHENTICATION`|Enable this to allow reverse proxy authentication, more detail on [#165](https://github.com/gogits/gogs/issues/165)
 `ENABLE_REVERSE_PROXY_AUTO_REGISTRATION`|Enable this to allow auto-registration for reverse authentication.
 `DISABLE_MINIMUM_KEY_SIZE_CHECK`|Do not check minimum key size with corresponding type.
 `ENABLE_CAPTCHA`|Enable this to use captcha validation for registration.
@@ -168,13 +168,14 @@ Name|Description
 Name|Description
 ----|-----------
 `ENABLED`|Enable this to use a mail service.
+`SUBJECT_PREFIX`|Prefix prepended to the subject line.
+`HOST`|SMTP mail host address and port (example: smtp.gogs.io:587).
 `DISABLE_HELO`|Disable HELO operation.
 `HELO_HOSTNAME`|Custom hostname for HELO operation.
-`HOST`|SMTP mail host address and port (example: smtp.gogs.io:587).
+`SKIP_VERIFY`|Do not verify the self-signed certificates.
 `FROM`|Mail from address, RFC 5322. This can be just an email address, or the `"Name" <email@example.com>` format.
 `USER`|Username of mailer (usually just your e-mail address).
 `PASSWD`|Password of mailer.
-`SKIP_VERIFY`|Do not verify the self-signed certificates.
 `USE_PLAIN_TEXT`|Indicate whether to use `text/plain` as format of content or not.
 
 Note: Gogs supports only SMTP with STARTTLS.
