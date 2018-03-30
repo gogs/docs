@@ -36,6 +36,7 @@ Name|Description
 `SSH_LISTEN_HOST`|Network interface builtin SSH server listens on.
 `SSH_LISTEN_PORT`|Port number builtin SSH server listens on.
 `SSH_ROOT_PATH`|Root path of SSH directory, default is `~/.ssh`, but you have to use `/home/git/.ssh`.
+`REWRITE_AUTHORIZED_KEYS_AT_START`|Indicate whether to rewrite `authorized_keys` at start, ignored when use builtin SSH server.|
 `SSH_KEY_TEST_PATH`|Directory to create temporary files when test publick key using ssh-keygen, default is system temporary directory.
 `SSH_KEYGEN_PATH`|Path to ssh-keygen, default is `ssh-keygen` and let shell find out which one to call.
 `MINIMUM_KEY_SIZE_CHECK`|Indicate whether to check minimum key size with corresponding type.

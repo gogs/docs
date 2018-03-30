@@ -36,10 +36,11 @@ name: 配置文件手册
 `SSH_LISTEN_HOST`|内置 SSH 服务器监听的地址
 `SSH_LISTEN_PORT`|内置 SSH 服务器监听的端口
 `SSH_ROOT_PATH`|SSH 根目录，一般为 `~/.ssh`，但必须填写为 `/home/git/.ssh`
+`REWRITE_AUTHORIZED_KEYS_AT_START`|激活该选项以在应用启动时自动重写 `authorized_keys` 文件，该选项在使用内置 SSH 服务器时将会被自动禁用|
 `SSH_KEY_TEST_PATH`|用于测试 SSH 公钥的临时目录
 `SSH_KEYGEN_PATH`|`ssh-keygen` 程序的路径，默认为 `ssh-keygen` 即通过系统路径查找
 `MINIMUM_KEY_SIZE_CHECK`|指定不同类型的公钥的最小密钥大小
-`OFFLINE_MODE`|D激活该选项来禁止从 CDN 获取静态资源，同时 Gravatar 服务也将被自动禁用
+`OFFLINE_MODE`|激活该选项来禁止从 CDN 获取静态资源，同时 Gravatar 服务也将被自动禁用
 `DISABLE_ROUTER_LOG`|激活该选项来禁止打印路由日志
 `CERT_FILE`|HTTPS 授权文件路径
 `KEY_FILE`|HTTPS 的密钥文件路径
