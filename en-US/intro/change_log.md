@@ -4,17 +4,23 @@ name: Changelog
 
 # Changelog
 
-### Unreleased
+### 0.11.43 @ 2018-03-31
 
 #### Bug fixes
 
+- Protected branch can be deleted from the web after merge request [#4514](https://github.com/gogits/gogs/issues/4514)
+- Does not recognise SYSNAME datatype in MSSQL [#4642](https://github.com/gogits/gogs/issues/4642)
+- Quick guide is only showed for repository admin [#4646](https://github.com/gogits/gogs/issues/4646)
 - Wrong branch URL for name contains `#` in branches view [#4874](https://github.com/gogits/gogs/issues/4874)
 - Commits not merged after accepting pull request using rebase [#5051](https://github.com/gogits/gogs/issues/5051)
+- Once branch was protected "Lock" icon will never be removed [#5053](https://github.com/gogits/gogs/issues/5053)
 - SVG support in IPython notebook [#5077](https://github.com/gogits/gogs/issues/5077)
 
 #### Improvements
 
 - Support HTTP HEAD requests [#2857](https://github.com/gogits/gogs/issues/2857)
+- Add option to rewrite authorized_keys file at start [#4435](https://github.com/gogits/gogs/issues/4435)
+- Add option to prepend global prefix to the email subject [#4524](https://github.com/gogits/gogs/issues/4524)
 - Disable federated avatar lookup by default [#5126](https://github.com/gogits/gogs/pull/5126)
 
 #### Others
@@ -105,38 +111,4 @@ name: Changelog
 - Fail to migrate from version prior to 0.10 [#4355](https://github.com/gogits/gogs/issues/4355)
 - Private repository with public issues didn't handle anonymous visit properly [#4359](https://github.com/gogits/gogs/issues/4359)
 
-### 0.11 RC @ 2017-03-27
-
-#### Bug fixes
-
-- Incorrect file permission for session files [#3363](https://github.com/gogits/gogs/issues/3363)
-- API: Repository Permission object returns incorrect values [#4309](https://github.com/gogits/gogs/issues/4309)
-- Unable to update non-local user profile [#4313](https://github.com/gogits/gogs/issues/4313)
-- Redirect to random issue if index does not exist [#4315](https://github.com/gogits/gogs/issues/4315)
-- Unable to propose pull request from secondary fork [#4324](https://github.com/gogits/gogs/issues/4324)
-- Unable to update protect branch whitelist [#4333](https://github.com/gogits/gogs/issues/4333)
-- Repository size does not update for fork, migrate and mirror [#4336](https://github.com/gogits/gogs/issues/4336)
-
-#### Features
-
-- Support private repository with public issues [#649](https://github.com/gogits/gogs/issues/649)
-- Support private repository with public wiki [#2157](https://github.com/gogits/gogs/issues/2157)
-- Able to retrigger webhook history [#2187](https://github.com/gogits/gogs/issues/2187)
-- API: Add sync for mirror repository [#2235](https://github.com/gogits/gogs/issues/2235)
-- Able to load more feeds on dashboard [#2511](https://github.com/gogits/gogs/issues/2511)
-- Add config option to set a cookie value indicates login status [#2885](https://github.com/gogits/gogs/issues/2885)
-- Able to backup and restore [#2924](https://github.com/gogits/gogs/issues/2924)
-- Able to use issues and wiki for bare repository [#4104](https://github.com/gogits/gogs/issues/4104)
-- Custom page size for commits page [#4230](https://github.com/gogits/gogs/issues/4230)
-- Add repositories panel to user settings [#4277](https://github.com/gogits/gogs/issues/4277)
-
-#### Improvements
-
-- Include private but accessible repositories in explore page [#3088](https://github.com/gogits/gogs/issues/3088)
-- Able to choose console mode for logger [#3119](https://github.com/gogits/gogs/issues/3119)
-- Able to config logger for XORM [#3183](https://github.com/gogits/gogs/issues/3183)
-- Add config option for HTML render mode [#3608](https://github.com/gogits/gogs/issues/3608)
-- Webhook push event provice details about added/removed/modified files [#3897](https://github.com/gogits/gogs/issues/3897)
-- Able to config number of newsfeed showed on Dashboard [#4247](https://github.com/gogits/gogs/issues/4247)
-
-**Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.11rc).**
+**Older change logs can be found on [GitHub](https://github.com/gogits/gogs/releases?after=v0.11).**

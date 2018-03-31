@@ -16,10 +16,6 @@ Nous allons créer un nouvel utilisateur appelé `git` et installer / configurer
 $ sudo adduser --disabled-login --gecos 'Gogs' git
 ```
 
-### Paquets tiers
-
-Si vous êtes intéressé par les paquets tiers que nous utilisons, vous pouvez les consulter ici : [gopmfile](https://github.com/gogits/gogs/blob/master/.gopmfile). Vous pouvez en avoir besoin quand vous construisez un paquet pour Gogs.
-
 ## Installation de Go
 
 Si la distribution de Go incluse dans votre système correspond aux exigences, veuillez ignorer cette section.

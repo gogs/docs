@@ -16,10 +16,6 @@ We are going to create a new user called `git` and install/setup everything unde
 $ sudo adduser --disabled-login --gecos 'Gogs' git
 ```
 
-### Third-party Packages
-
-If you're interested in which third-party packages we are using, see [gopmfile](https://github.com/gogits/gogs/blob/master/.gopmfile). You may need this when you are making build package for Gogs.
-
 ## Installing Go
 
 If your system's Go matches the requirements, please skip this section.

@@ -10,10 +10,6 @@ name: 源码安装
 
 - [Go 语言](http://golang.org)：版本 >= 1.6
 
-### 第三方包
-
-请通过 [gopmfile](https://github.com/gogits/gogs/blob/master/.gopmfile) 查看完整的第三方包依赖列表。一般情况下只有在您为 Gogs 制作构建包的时候才会用到。
-
 ## 安装 Go 语言
 
 如果您的系统已经安装要求版本的 Go 语言，可以跳过此小节。

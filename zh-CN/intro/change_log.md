@@ -4,17 +4,23 @@ name: 变更日志
 
 # 变更日志
 
-### 未发布
+### 0.11.43 @ 2018-03-31
 
 #### Bug 修复
 
+- 保护分支可以在完成合并请求后被删除 [#4514](https://github.com/gogits/gogs/issues/4514)
+- 不支持 MSSQL 数据库的 SYSNAME 字段类型 [#4642](https://github.com/gogits/gogs/issues/4642)
+- 仓库快速开始页面只有仓库管理员可见 [#4646](https://github.com/gogits/gogs/issues/4646)
 - 分支页面名称包含 `#` 的分支链接错误 [#4874](https://github.com/gogits/gogs/issues/4874)
 - 在合并提交时使用衍合导致合并失效 [#5051](https://github.com/gogits/gogs/issues/5051)
+- 分支一旦被设置为保护后，加锁标志在取消保护后也不消失 [#5053](https://github.com/gogits/gogs/issues/5053)
 - IPython Notebook 中的 SVG 支持 [#5077](https://github.com/gogits/gogs/issues/5077)
 
 #### 功能改进
 
 - 支持 HTTP HEAD 请求 [#2857](https://github.com/gogits/gogs/issues/2857)
+- 添加配置选项以允许在启动时重写 authorized_keys 文件 [#4435](https://github.com/gogits/gogs/issues/4435)
+- 添加配置选项以设置邮件的全局主题前缀 [#4524](https://github.com/gogits/gogs/issues/4524)
 - 默认禁用联合头像查找 [#5126](https://github.com/gogits/gogs/pull/5126)
 
 #### 其它变更
@@ -105,38 +111,4 @@ name: 变更日志
 - 从 0.10 之前的版本自动迁移失败 [#4355](https://github.com/gogits/gogs/issues/4355)
 - 允许公开访问工单的私有仓库没有正确处理匿名访问 [#4359](https://github.com/gogits/gogs/issues/4359)
 
-### 0.11 RC @ 2017-03-27
-
-#### Bug 修复
-
-- 不正确的会话文件权限 [#3363](https://github.com/gogits/gogs/issues/3363)
-- API：仓库对象的权限字段返回无效的值 [#4309](https://github.com/gogits/gogs/issues/4309)
-- 非本地用户无法更新个人设置 [#4313](https://github.com/gogits/gogs/issues/4313)
-- 工单索引不存在会显示随机工单 [#4315](https://github.com/gogits/gogs/issues/4315)
-- 无法从二级派生仓库发起合并请求 [#4324](https://github.com/gogits/gogs/issues/4324)
-- 无法更新保护分支白名单 [#4333](https://github.com/gogits/gogs/issues/4333)
-- 派生、迁移和镜像仓库的体积没有正确更新 [#4336](https://github.com/gogits/gogs/issues/4336)
-
-#### 新增特性
-
-- 支持私有仓库工单的公开访问 [#649](https://github.com/gogits/gogs/issues/649)
-- 支持私有仓库 Wiki 的公开访问 [#2157](https://github.com/gogits/gogs/issues/2157)
-- 支持重新推送 Web 钩子的历史记录 [#2187](https://github.com/gogits/gogs/issues/2187)
-- API：同步镜像仓库 [#2235](https://github.com/gogits/gogs/issues/2235)
-- 支持在控制面板中加载更多的活动内容 [#2511](https://github.com/gogits/gogs/issues/2511)
-- 支持设置指定当前用户时候登录的 Cookie 值 [#2885](https://github.com/gogits/gogs/issues/2885)
-- 支持备份及恢复 [#2924](https://github.com/gogits/gogs/issues/2924)
-- 支持空仓库的工单和 Wiki 操作 [#4104](https://github.com/gogits/gogs/issues/4104)
-- 提交历史页面自定义每页显示的数量 [#4230](https://github.com/gogits/gogs/issues/4230)
-- 用户设置页面添加管理仓库面板 [#4277](https://github.com/gogits/gogs/issues/4277)
-
-#### 功能改进
-
-- 探索页面显示私有但有访问权限的仓库 [#3088](https://github.com/gogits/gogs/issues/3088)
-- 允许在安装页面选择使用终端模式的日志 [#3119](https://github.com/gogits/gogs/issues/3119)
-- 允许配置 XORM 的日志器 [#3183](https://github.com/gogits/gogs/issues/3183)
-- 添加有关 HTML 渲染模式的配置选项 [#3608](https://github.com/gogits/gogs/issues/3608)
-- Web 钩子推送事件添加有关文件被添加、删除和修改的信息 [#3897](https://github.com/gogits/gogs/issues/3897)
-- 允许设置控制面板每页显示的活动数量 [#4247](https://github.com/gogits/gogs/issues/4247)
-
-**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.11rc) 上找到。**
+**更早的变更日志可以在 [GitHub](https://github.com/gogits/gogs/releases?after=v0.11) 上找到。**
