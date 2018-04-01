@@ -7,7 +7,9 @@ name: Installation
 - Datenbank (wähle eine der folgenden)
     - [MySQL](http://dev.mysql.com): Version >= 5.5.3
     - [PostgreSQL](http://www.postgresql.org/)
-    - oder **KEINE** mit SQLite3 or TiDB (experimentell)
+    - [MSSQL](https://en.wikipedia.org/wiki/Microsoft_SQL_Server)
+    - [TiDB](https://github.com/pingcap/tidb) (experimentell, verbunden durch das MySQL Protokoll)
+    - oder **KEINE** mit SQLite3
 - [Git](http://git-scm.com/) (bash):
     - Version >= 1.7.1 sowohl für den Server als auch für Clients
     - Am besten die neuste Version für Windows benutzen
