@@ -4,7 +4,21 @@ name: Authentication
 
 # Authentication
 
-## LDAP
+## Load authentication source from file
+
+Starting from `0.11.45.0412`, you can define authentication source in local files to help better automate setup process.
+
+Files with suffix `.conf` under `conf/auth.d` of custom directory will be recognized as authentication sources. For example, `custom/conf/auth.d/my_auth_source.conf`. As long as the file name ends with `.conf`, you can name it to something help you remember. You can find examples of all supported types [here](https://github.com/gogits/gogs/tree/f2ecfdc96a338815ffb2be898b3114031f0da48c/conf/auth.d).
+
+Once files are loaded, they will appear in the **Admin Panel - Authentication Sources** page as before. They also work nicely with authentication sources defined in the database.
+
+![](/docs/images/auth_sources.png)
+
+However, do not try to edit file directly but edit via web interface because files are only read once when Gogs starts.
+
+## Configuration
+
+### LDAP
 
 Both the LDAP via BindDN and the simple auth LDAP share the following fields:
 
@@ -110,12 +124,12 @@ Both the LDAP via BindDN and the simple auth LDAP share the following fields:
     * Which group LDAP attribute contains an array above user attribute names.
     * Example: `memberUid`
 
-## PAM
+### PAM
 
-To configure this you just need to set the 'PAM Service Name' to a filename in `/etc/pam.d/`.
+To configure this you just need to set the **PAM Service Name** to a filename in `/etc/pam.d/`.
 If you want it to work with normal Linux passwords, the user running Gogs must have read access to `/etc/shadow`.
 
-## SMTP
+### SMTP
 
 This option allows Gogs to log in to your SMTP host as a Gogs user. To configure this, simply set the fields below:
 
@@ -145,7 +159,7 @@ This option allows Gogs to log in to your SMTP host as a Gogs user. To configure
 - This authentication is activate
   - Enable or disable this auth.
 
-## Freeipa
+### Freeipa
 
 - In order to login to the Gogs using FreeIPA credentials, you need to create a bind account for Gogs to use:
 
@@ -174,5 +188,5 @@ This option allows Gogs to log in to your SMTP host as a Gogs user. To configure
 
 -  Now login to the gogs as an Admin, click on “Authentication” under Admin Panel. Then click New LDAP Source and fill in the details, changing all where appropriate to your own domain as photo below:
 
-![Freeipa-Gogs](https://raw.githubusercontent.com/Karen09/docs/master/images/Freeipa-Gogs.png)
+![](/docs/images/Freeipa-Gogs.png)
 
