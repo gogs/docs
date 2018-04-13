@@ -5,7 +5,7 @@ name: Installation
 ## Prerequisites
 
 - Database (choose one of the following):
-    - [MySQL](http://dev.mysql.com): Version >= 5.5.3
+    - [MySQL](http://dev.mysql.com): Version >= 5.7
     - [PostgreSQL](http://www.postgresql.org/)
     - [MSSQL](https://en.wikipedia.org/wiki/Microsoft_SQL_Server)
     - [TiDB](https://github.com/pingcap/tidb) (experimental, connect via the MySQL protocol)

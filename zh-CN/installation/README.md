@@ -5,7 +5,7 @@ name: 下载安装
 ## 环境要求
 
 - 数据库（选择以下一项）：
-    - [MySQL](http://dev.mysql.com)：版本 >= 5.5.3
+    - [MySQL](http://dev.mysql.com)：版本 >= 5.7
     - [PostgreSQL](http://www.postgresql.org/)
     - [MSSQL](https://en.wikipedia.org/wiki/Microsoft_SQL_Server)
     - [TiDB](https://github.com/pingcap/tidb)（实验性支持，使用 MySQL 协议连接）
