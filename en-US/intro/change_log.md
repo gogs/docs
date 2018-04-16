@@ -14,6 +14,10 @@ name: Changelog
 
 - Support authentication source config file [#3142](https://github.com/gogits/gogs/issues/3142)
 
+#### Others
+
+- Add new languages support: Vietnamese
+
 ### 0.11.43 @ 2018-03-31
 
 #### Bug fixes
