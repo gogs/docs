@@ -4,6 +4,16 @@ name: Changelog
 
 # Changelog
 
+### Unreleased
+
+#### Bug fixes
+
+- 500 when merge branch when the base branch is not the default branch [#5138](https://github.com/gogits/gogs/issues/5138)
+
+#### Features
+
+- Support authentication source config file [#3142](https://github.com/gogits/gogs/issues/3142)
+
 ### 0.11.43 @ 2018-03-31
 
 #### Bug fixes

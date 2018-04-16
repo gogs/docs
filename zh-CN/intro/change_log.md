@@ -4,6 +4,16 @@ name: 变更日志
 
 # 变更日志
 
+### 未发布
+
+#### Bug 修复
+
+- 当基准分支不是默认分支时无法进行请求合并 [#5138](https://github.com/gogits/gogs/issues/5138)
+
+#### 新增特性
+
+- 支持通过本地文件加载认证源 [#3142](https://github.com/gogits/gogs/issues/3142)
+
 ### 0.11.43 @ 2018-03-31
 
 #### Bug 修复
