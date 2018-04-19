@@ -9,6 +9,7 @@ name: Changelog
 #### Bug fixes
 
 - 500 when merge branch when the base branch is not the default branch [#5138](https://github.com/gogits/gogs/issues/5138)
+- Gravatar URLs are badly generated [#5157](https://github.com/gogits/gogs/issues/5157)
 
 #### Features
 

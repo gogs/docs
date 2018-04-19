@@ -9,6 +9,7 @@ name: 变更日志
 #### Bug 修复
 
 - 当基准分支不是默认分支时无法进行请求合并 [#5138](https://github.com/gogits/gogs/issues/5138)
+- 生成的 Gravatar 链接不正确 [#5157](https://github.com/gogits/gogs/issues/5157)
 
 #### 新增特性
 
