@@ -8,6 +8,7 @@ name: 变更日志
 
 #### Bug 修复
 
+- 分支名包含 `#` 时无法进行正常操作 [#4601](https://github.com/gogits/gogs/issues/4601)
 - 尖括号中间的工单编号没有被渲染 [#4706](https://github.com/gogits/gogs/issues/4706)
 - 当基准分支不是默认分支时无法进行请求合并 [#5138](https://github.com/gogits/gogs/issues/5138)
 - 生成的 Gravatar 链接不正确 [#5157](https://github.com/gogits/gogs/issues/5157)

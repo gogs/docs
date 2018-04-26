@@ -8,6 +8,7 @@ name: Changelog
 
 #### Bug fixes
 
+- The branch name contains '#' not work correctly [#4601](https://github.com/gogits/gogs/issues/4601)
 - Issue mention does not render with square brackets [#4706](https://github.com/gogits/gogs/issues/4706)
 - 500 when merge branch when the base branch is not the default branch [#5138](https://github.com/gogits/gogs/issues/5138)
 - Gravatar URLs are badly generated [#5157](https://github.com/gogits/gogs/issues/5157)
