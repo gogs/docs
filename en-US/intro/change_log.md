@@ -19,6 +19,7 @@ name: Changelog
 
 #### Others
 
+- Security fixes
 - Add new languages support: Vietnamese
 
 ### 0.11.43 @ 2018-03-31
