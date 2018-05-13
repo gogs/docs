@@ -33,6 +33,7 @@ name: Donation
 
 | Donated at       | Donator    | Amount   |
 | ---------------- |:---------:| --------:|
+| 2018-05-03 | Mr. Warnotte | $1000.00 |
 | 2018-03-04 | Mr. Carr | $1000.00 |
 | 2018-02-23 | Mr. Weber | $5.00 |
 | 2018-01-31 | Mr. Hellsten | $10.00 |
