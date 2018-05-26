@@ -12,6 +12,7 @@ name: 变更日志
 - 尖括号中间的工单编号没有被渲染 [#4706](https://github.com/gogits/gogs/issues/4706)
 - 当基准分支不是默认分支时无法进行请求合并 [#5138](https://github.com/gogits/gogs/issues/5138)
 - 生成的 Gravatar 链接不正确 [#5157](https://github.com/gogits/gogs/issues/5157)
+- 允许重复使用相同的二步验证令牌
 
 #### 新增特性
 
@@ -19,6 +20,7 @@ name: 变更日志
 
 #### 其它变更
 
+- 将导入路径从 "gogits/gogs" 修改为 "gogs/gogs"
 - 安全漏洞修复
 - 添加新语种支持：越南语
 

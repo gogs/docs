@@ -12,6 +12,7 @@ name: Changelog
 - Issue mention does not render with square brackets [#4706](https://github.com/gogits/gogs/issues/4706)
 - 500 when merge branch when the base branch is not the default branch [#5138](https://github.com/gogits/gogs/issues/5138)
 - Gravatar URLs are badly generated [#5157](https://github.com/gogits/gogs/issues/5157)
+- Able to reuse two factor passcode
 
 #### Features
 
@@ -19,6 +20,7 @@ name: Changelog
 
 #### Others
 
+- Changed import path from "gogits/gogs" to "gogs/gogs"
 - Security fixes
 - Add new languages support: Vietnamese
 
