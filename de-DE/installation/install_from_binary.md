@@ -4,7 +4,7 @@ name: durch Download
 
 # Installation durch Download
 
-Lade dir bei [GitHub die aktuellste Version von Gogs](https://github.com/gogits/gogs/releases) für dein Betriebssystem herunter.
+Lade dir bei [GitHub die aktuellste Version von Gogs](https://github.com/gogs/gogs/releases) für dein Betriebssystem herunter.
 
 ## Hinweis
 - Alle Versionen ab v0.7.33 unterstützen **MySQL** und **PostgreSQL** sowie **selbstsignierte Zertifikate**.

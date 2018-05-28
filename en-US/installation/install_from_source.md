@@ -54,10 +54,10 @@ The general way to install Gogs:
 
 ```sh
 # Download and install dependencies
-$ go get -u github.com/gogits/gogs
+$ go get -u github.com/gogs/gogs
 
 # Build main program
-$ cd $GOPATH/src/github.com/gogits/gogs
+$ cd $GOPATH/src/github.com/gogs/gogs
 $ go build
 ```
 
@@ -66,11 +66,11 @@ $ go build
 In case you want to try `develop` (or any other) branch:
 
 ```sh
-$ mkdir -p $GOPATH/src/github.com/gogits
-$ cd $GOPATH/src/github.com/gogits
+$ mkdir -p $GOPATH/src/github.com/gogs
+$ cd $GOPATH/src/github.com/gogs
 
-# Make sure you don't use "https://github.com/gogits/gogs.git"
-$ git clone --depth=1 -b develop https://github.com/gogits/gogs
+# Make sure you don't use "https://github.com/gogs/gogs.git"
+$ git clone --depth=1 -b develop https://github.com/gogs/gogs
 $ cd gogs
 $ go build
 ```
@@ -80,7 +80,7 @@ $ go build
 To make sure Gogs is working:
 
 ```sh
-$ cd $GOPATH/src/github.com/gogits/gogs
+$ cd $GOPATH/src/github.com/gogs/gogs
 $ ./gogs web
 ```
 
@@ -97,11 +97,11 @@ Available build tags are:
 - `cert`: Generate self-signed certificates support
 - `miniwinsvc`: Builtin windows service support (or you can use NSSM to create a service)
 
-For example, you want to support all of them, first delete directory `$GOPATH/pkg/${GOOS}_${GOARCH}/github.com/gogits/gogs` and then do:
+For example, you want to support all of them, first delete directory `$GOPATH/pkg/${GOOS}_${GOARCH}/github.com/gogs/gogs` and then do:
 
 ```sh
-$ go get -u -tags "sqlite pam cert" github.com/gogits/gogs
-$ cd $GOPATH/src/github.com/gogits/gogs
+$ go get -u -tags "sqlite pam cert" github.com/gogs/gogs
+$ cd $GOPATH/src/github.com/gogs/gogs
 $ go build -tags "sqlite pam cert"
 ```
 

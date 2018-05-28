@@ -10,10 +10,10 @@ Du musst also das Go tool austricksen, sodass es denkt, du hättest einen Klon d
 
 Starte mit dem Download des Quellcodes, wie du es normalerweise tun würdest:
 
-    $ go get github.com/gogits/gogs
+    $ go get github.com/gogs/gogs
 
 Forke jetzt das Projekt auf Github und gehe dann in das Oberverzeichnis deines gogs Quellcode-Verzeichnisses:
-    $ cd $GOPATH/src/github.com/gogits
+    $ cd $GOPATH/src/github.com/gogs
 
 Lösche das gogs Repository und klone deinen Fork anstelle:
 

@@ -8,7 +8,7 @@ name: 配置文件手册
 
 请记住，任何修改都是发生在 `custom/conf/app.ini` 自定义配置文件中，该文件的具体位置与您的设置有关。
 
-完整的默认设置可以通过 [app.ini](https://github.com/gogits/gogs/blob/master/conf/app.ini) 文件查看。如果您看到类似 `%(X)s` 字符，这是由 [ini](https://github.com/go-ini/ini/tree/v1#recursive-values) 提供的递归取值的特性。
+完整的默认设置可以通过 [app.ini](https://github.com/gogs/gogs/blob/master/conf/app.ini) 文件查看。如果您看到类似 `%(X)s` 字符，这是由 [ini](https://github.com/go-ini/ini/tree/v1#recursive-values) 提供的递归取值的特性。
 
 ### 概览
 
@@ -149,7 +149,7 @@ name: 配置文件手册
 `REQUIRE_SIGNIN_VIEW`|激活该选项来要求用户必须登录才能浏览任何页面
 `ENABLE_CACHE_AVATAR`|激活该选项来缓存 Gravatar 的头像
 `ENABLE_NOTIFY_MAIL`|激活该选项来发送通知邮件给关注者，例如创建 issue 时，要求已启用 `Mailer`
-`ENABLE_REVERSE_PROXY_AUTHENTICATION`|激活该选项来开启反向代理用户认证，请从 [#165](https://github.com/gogits/gogs/issues/165) 了解更多信息
+`ENABLE_REVERSE_PROXY_AUTHENTICATION`|激活该选项来开启反向代理用户认证，请从 [#165](https://github.com/gogs/gogs/issues/165) 了解更多信息
 `ENABLE_REVERSE_PROXY_AUTO_REGISTRATION`|激活该选项来开启反向代理用户认证的自动注册功能
 `DISABLE_MINIMUM_KEY_SIZE_CHECK`|激活该选项来禁止检查响应类型的密钥最小长度
 `ENABLE_CAPTCHA`|激活该选项以在用户注册时要求输入验证码

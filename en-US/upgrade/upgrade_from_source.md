@@ -8,9 +8,9 @@ The general way to upgrade Gogs:
 
 ```bash
 # Upgrade source and install dependencies
-$ go get -u github.com/gogits/gogs
+$ go get -u github.com/gogs/gogs
 
-$ cd $GOPATH/src/github.com/gogits/gogs
+$ cd $GOPATH/src/github.com/gogs/gogs
 
 # Remove old build
 $ rm gogs

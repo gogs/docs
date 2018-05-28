@@ -6,7 +6,7 @@ name: 故障排查
 
 ## 安装
 
-- 错误描述：`../gosrc/src/github.com/gogits/gogs/cmd/cert.go:79: undefined: elliptic.P224`
+- 错误描述：`../gosrc/src/github.com/gogs/gogs/cmd/cert.go:79: undefined: elliptic.P224`
 - 可能原因：Go 语言的 RHEL/CentOS 官方发行版中因专利问题移除了相关加密算法的代码
 - 解决方案：从 [golang.org/dl](http://golang.org/dl) 下载安装 Go 语言
 
@@ -56,7 +56,7 @@ name: 故障排查
 - 错误描述：`cache: unknown adaptername "memcache" (forgotten import?)`
 - 可能原因：为了减少不必要的导入，您需要使用构建 tags 来启用某个缓存适配器。
 - 解决方案：
-	- 下载：`go get -tags memcache github.com/gogits/gogs`
+	- 下载：`go get -tags memcache github.com/gogs/gogs`
 	- 构建：`go build -tags memcache`
 	- 如果要启用 `redis` 也是一样的步骤。
 
@@ -79,7 +79,7 @@ name: 故障排查
 
 - 错误描述：`Database setting is not correct: This server only supports the insecure old password authentication. If you still want to use it, please add 'allowOldPasswords=1' to your DSN. See also https://github.com/go-sql-driver/mysql/wiki/old_passwords`
 - 可能原因：只更新了 @localhost 的密码，但 @% 用户依旧使用旧密码
-- 解决方案：[GitHub 讨论](https://github.com/gogits/gogs/issues/385#issuecomment-54357073)
+- 解决方案：[GitHub 讨论](https://github.com/gogs/gogs/issues/385#issuecomment-54357073)
 
 #### 连接到错误的 SQLite3 数据库
 

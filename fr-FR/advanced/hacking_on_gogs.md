@@ -10,11 +10,11 @@ Il y a un problème avec Go cependant, l'arborescence inclue l'URL Github offici
 
 Commencez par télécharger le code source comme vous le feriez normalement :
 
-    $ go get github.com/gogits/gogs
+    $ go get github.com/gogs/gogs
 
 Faites un fork du projet sur Github et puis aller à la source du répertoire de Gogs :
 
-    $ cd $GOPATH/src/github.com/gogits
+    $ cd $GOPATH/src/github.com/gogs
 
 Suprimmer le dépôt Gogs et cloner votre fork à sa place :
 

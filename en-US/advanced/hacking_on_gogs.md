@@ -10,11 +10,11 @@ you have to trick the Go tool to think that you work on a clone of the official 
 
 Start by downloading the source code as you normally would:
 
-    $ go get github.com/gogits/gogs
+    $ go get github.com/gogs/gogs
 
 Now fork the project on Github and then go to gogs' source directory:
 
-    $ cd $GOPATH/src/github.com/gogits/gogs
+    $ cd $GOPATH/src/github.com/gogs/gogs
 
 Configure the gogs repository to be a clone of your fork:
 

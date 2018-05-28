@@ -8,9 +8,9 @@ name: 源码升级
 
 ```bash
 # 更新源码以及依赖
-$ go get -u github.com/gogits/gogs
+$ go get -u github.com/gogs/gogs
 
-$ cd $GOPATH/src/github.com/gogits/gogs
+$ cd $GOPATH/src/github.com/gogs/gogs
 
 # 移除旧的二进制
 $ rm gogs

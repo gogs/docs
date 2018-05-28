@@ -6,7 +6,7 @@ name: Troubleshooting
 
 ## Installation
 
-- Error: `../gosrc/src/github.com/gogits/gogs/cmd/cert.go:79: undefined: elliptic.P224`
+- Error: `../gosrc/src/github.com/gogs/gogs/cmd/cert.go:79: undefined: elliptic.P224`
 - Causes: golang package in RHEL/CentOS does not support Elliptic Curve cryptography (because it's patented) and it's specifically removed from CentOS/RHEL.
 - Solution: download and install Go from [golang.org/dl](http://golang.org/dl).
 
@@ -58,7 +58,7 @@ This happens more often when you store repositories on a mounted device.
 - Error: `cache: unknown adaptername "memcache" (forgotten import?)`
 - Causes: To prevent unnecessary import of package, we use build tags to specify when needed
 - Solution:
-	- Download: `go get -tags memcache github.com/gogits/gogs`
+	- Download: `go get -tags memcache github.com/gogs/gogs`
 	- Build: `go build -tags memcache`
 	- Same steps for `redis` when you want it to be the cache adapter.
 
@@ -81,7 +81,7 @@ After that, go to [http://localhost:3000/install](http://localhost:3000/install)
 
 - Error: `Database setting is not correct: This server only supports the insecure old password authentication. If you still want to use it, please add 'allowOldPasswords=1' to your DSN. See also https://github.com/go-sql-driver/mysql/wiki/old_passwords`
 - Causes: only updated the password for @localhost -- there was a second entry in the user table where @% still had the old password.
-- Solution: [GitHub comments](https://github.com/gogits/gogs/issues/385#issuecomment-54357073)
+- Solution: [GitHub comments](https://github.com/gogs/gogs/issues/385#issuecomment-54357073)
 
 #### Connect to wrong SQLite3 database
 

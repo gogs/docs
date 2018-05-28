@@ -48,10 +48,10 @@ source $HOME/.bashrc
 
 ```sh
 # 下载并安装依赖
-$ go get -u github.com/gogits/gogs
+$ go get -u github.com/gogs/gogs
 
 # 构建主程序
-$ cd $GOPATH/src/github.com/gogits/gogs
+$ cd $GOPATH/src/github.com/gogs/gogs
 $ go build
 ```
 
@@ -60,11 +60,11 @@ $ go build
 如果您想要安装 `develop`（或其它）分支版本，则可以通过以下命令：
 
 ```sh
-$ mkdir -p $GOPATH/src/github.com/gogits
-$ cd $GOPATH/src/github.com/gogits
+$ mkdir -p $GOPATH/src/github.com/gogs
+$ cd $GOPATH/src/github.com/gogs
 
-# 请确保没有使用 “https://github.com/gogits/gogs.git”
-$ git clone --depth=1 -b develop https://github.com/gogits/gogs
+# 请确保没有使用 “https://github.com/gogs/gogs.git”
+$ git clone --depth=1 -b develop https://github.com/gogs/gogs
 $ cd gogs
 $ go build
 ```
@@ -74,7 +74,7 @@ $ go build
 您可以通过以下方式检查 Gogs 是否可以正常工作：
 
 ```sh
-cd $GOPATH/src/github.com/gogits/gogs
+cd $GOPATH/src/github.com/gogs/gogs
 ./gogs web
 ```
 
@@ -91,11 +91,11 @@ Gogs 默认并没有支持一些功能，这些功能需要在构建时明确使
 - `cert`：生成自定义证书支持
 - `miniwinsvc`：Windows 服务内置支持（或者您可以使用 NSSM 来创建服务）
 
-例如，您需要支持以上所有功能，则需要先删除 `$GOPATH/pkg/{GOOS_GOARCH}/github.com/gogits/gogs` 目录，然后执行以下命令：
+例如，您需要支持以上所有功能，则需要先删除 `$GOPATH/pkg/{GOOS_GOARCH}/github.com/gogs/gogs` 目录，然后执行以下命令：
 
 ```sh
-$ go get -u -tags "sqlite pam cert" github.com/gogits/gogs
-$ cd $GOPATH/src/github.com/gogits/gogs
+$ go get -u -tags "sqlite pam cert" github.com/gogs/gogs
+$ cd $GOPATH/src/github.com/gogs/gogs
 $ go build -tags "sqlite pam cert"
 ```
 

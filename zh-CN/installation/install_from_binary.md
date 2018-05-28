@@ -4,7 +4,7 @@ name: 二进制安装
 
 # 二进制安装
 
-**目前只提供最近发布的小版本二进制下载，更多版本下载请前往 [GitHub](https://github.com/gogits/gogs/releases) 查看。**
+**目前只提供最近发布的小版本二进制下载，更多版本下载请前往 [GitHub](https://github.com/gogs/gogs/releases) 查看。**
 
 所有的版本都支持 **MySQL**、**PostgreSQL**、**MSSQL** 和 **TiDB**（使用 MySQL 协议）作为数据库，并且均使用构建标签（build tags）**`cert`** 进行构建。需要注意的是，不同的版本的支持状态有所不同，请根据实际的 Gogs 提示进行操作。
 
@@ -26,7 +26,7 @@ name: 二进制安装
 
 ### 0.11.43 @ 2018-03-31
 
-|系统名称|系统类型|SQLite|PAM|下载（[GitHub](https://github.com/gogits/gogs/releases/tag/v0.11.43)）|
+|系统名称|系统类型|SQLite|PAM|下载（[GitHub](https://github.com/gogs/gogs/releases/tag/v0.11.43)）|
 |------|----|------|---|--------|
 |Linux|386|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.11.43/gogs_0.11.43_linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/0.11.43/gogs_0.11.43_linux_386.tar.gz) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_0.11.43_linux_386.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_0.11.43_linux_386.tar.gz)|
 |Linux|amd64|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.11.43/gogs_0.11.43_linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/0.11.43/gogs_0.11.43_linux_amd64.tar.gz) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_0.11.43_linux_amd64.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_0.11.43_linux_amd64.tar.gz)|
@@ -38,7 +38,7 @@ name: 二进制安装
 
 ### 0.11.34 @ 2017-11-22
 
-|系统名称|系统类型|SQLite|PAM|下载（[GitHub](https://github.com/gogits/gogs/releases/tag/v0.11.34)）|
+|系统名称|系统类型|SQLite|PAM|下载（[GitHub](https://github.com/gogs/gogs/releases/tag/v0.11.34)）|
 |------|----|------|---|--------|
 |Linux|386|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.11.34/linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/0.11.34/linux_386.tar.gz) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.34/linux_386.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.34/linux_386.tar.gz)|
 |Linux|amd64|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.11.34/linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/0.11.34/linux_amd64.tar.gz) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.34/linux_amd64.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.34/linux_amd64.tar.gz)|
@@ -50,7 +50,7 @@ name: 二进制安装
 
 ### 0.11.29 @ 2017-08-15
 
-|系统名称|系统类型|SQLite|PAM|下载（[GitHub](https://github.com/gogits/gogs/releases/tag/v0.11.29)）|
+|系统名称|系统类型|SQLite|PAM|下载（[GitHub](https://github.com/gogs/gogs/releases/tag/v0.11.29)）|
 |------|----|------|---|--------|
 |Linux|386|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.11.29/linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/0.11.29/linux_386.tar.gz) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.29/linux_386.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.29/linux_386.tar.gz)|
 |Linux|amd64|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.11.29/linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/0.11.29/linux_amd64.tar.gz) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.29/linux_amd64.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/0.11.29/linux_amd64.tar.gz)|
@@ -62,7 +62,7 @@ name: 二进制安装
 
 ### v0.9.141 @ 2017-02-11
 
-|系统名称|系统类型|SQLite|PAM|下载（[GitHub](https://github.com/gogits/gogs/releases/tag/v0.9.141)）|
+|系统名称|系统类型|SQLite|PAM|下载（[GitHub](https://github.com/gogs/gogs/releases/tag/v0.9.141)）|
 |------|----|------|---|--------|
 |Linux|386|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.141_linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/gogs_v0.9.141_linux_386.tar.gz) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.141_linux_386.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.141_linux_386.tar.gz)|
 |Linux|amd64|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/gogs_v0.9.141_linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/gogs_v0.9.141_linux_amd64.tar.gz) - CDN: [ZIP](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.141_linux_amd64.zip) \| [TAR.GZ](http://7d9nal.com2.z0.glb.qiniucdn.com/gogs_v0.9.141_linux_amd64.tar.gz)|

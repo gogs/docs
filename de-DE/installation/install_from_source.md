@@ -18,7 +18,7 @@ sudo adduser --disabled-login --gecos 'Gogs' git
 
 ### Drittanbieter-Software
 
-Wenn dich interessiert, welche Drittanbieter-Pakete wir benutzen, schaue dir das [gopmfile](https://github.com/gogits/gogs/blob/master/.gopmfile). Möglicherweise brauchst du das, wenn du Pakete für Gogs erstellst.
+Wenn dich interessiert, welche Drittanbieter-Pakete wir benutzen, schaue dir das [gopmfile](https://github.com/gogs/gogs/blob/master/.gopmfile). Möglicherweise brauchst du das, wenn du Pakete für Gogs erstellst.
 
 ## Go-Installation
 
@@ -60,10 +60,10 @@ Der allgemeine Weg um Go zu installieren:
 
 ```sh
 # Abhängigkeiten herunterladen und installieren
-$ go get -u github.com/gogits/gogs
+$ go get -u github.com/gogs/gogs
 
 # Hauptprogramm erstellen
-$ cd $GOPATH/src/github.com/gogits/gogs
+$ cd $GOPATH/src/github.com/gogs/gogs
 $ go build
 ```
 
@@ -82,11 +82,11 @@ $ gopm bin -u -v gogs -d path/to/anywhere
 Falls du den `develop`-branch ausprobieren möchtest:
 
 ```sh
-$ mkdir -p $GOPATH/src/github.com/gogits
-$ cd $GOPATH/src/github.com/gogits
+$ mkdir -p $GOPATH/src/github.com/gogs
+$ cd $GOPATH/src/github.com/gogs
 
-# Sicherstellen dass du nicht "https://github.com/gogits/gogs.git" benutzt
-$ git clone --depth=1 -b develop https://github.com/gogits/gogs
+# Sicherstellen dass du nicht "https://github.com/gogs/gogs.git" benutzt
+$ git clone --depth=1 -b develop https://github.com/gogs/gogs
 $ cd gogs
 $ go get -u ./...
 $ go build
@@ -97,7 +97,7 @@ $ go build
 Um zu testen, ob Gogs funktioniert:
 
 ```sh
-cd $GOPATH/src/github.com/gogits/gogs
+cd $GOPATH/src/github.com/gogs/gogs
 ./gogs web
 ```
 
@@ -116,11 +116,11 @@ Verfügbare Build-Tags sind:
 
 **Hinweis** Solltest du TiDB verwenden wollen, folge bitte dieser [Anleitung](https://github.com/pingcap/tidb/blob/master/docs/QUICKSTART.md#pre-requirement)
 
-Beispiel: Wenn du alles mit dabei haben willst, lösche zuerst den Ordner `$GOPATH/pkg/${GOOS}_$GOARCH}/github.com/gogits/gogs` und führe dann folgende Befehle aus:
+Beispiel: Wenn du alles mit dabei haben willst, lösche zuerst den Ordner `$GOPATH/pkg/${GOOS}_$GOARCH}/github.com/gogs/gogs` und führe dann folgende Befehle aus:
 
 ```sh
-$ go get -u -tags "sqlite tidb pam cert" github.com/gogits/gogs
-$ cd $GOPATH/src/github.com/gogits/gogs
+$ go get -u -tags "sqlite tidb pam cert" github.com/gogs/gogs
+$ cd $GOPATH/src/github.com/gogs/gogs
 $ go build -tags "sqlite tidb pam cert"
 ```
 

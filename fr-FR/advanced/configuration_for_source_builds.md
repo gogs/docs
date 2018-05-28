@@ -15,7 +15,7 @@ Pour le reste de ce document, nous posons les hypothèses suivantes :
 - `postgresql` est votre serveur de base de données
 - et vous voulez que votre dépôt ressemblent à URL git `git.example.com`
 
-Comme indiqué dans [Configuration and run](/docs/installation/configuration_and_run), vous devez créer votre propre fichier de configuration dans `$GOPATH/src/github.com/gogits/gogs/custom/conf/app.ini`
+Comme indiqué dans [Configuration and run](/docs/installation/configuration_and_run), vous devez créer votre propre fichier de configuration dans `$GOPATH/src/github.com/gogs/gogs/custom/conf/app.ini`
 
 Ensuite suivez les commandes suivantes :
 
@@ -24,25 +24,25 @@ sudo mkdir -p /var/log/gogs
 sudo chown git:git /var/log/gogs
 sudo su - git
 cd ~
-mkdir -p $GOPATH/src/github.com/gogits/gogs/custom/conf
+mkdir -p $GOPATH/src/github.com/gogs/gogs/custom/conf
 mkdir -p ~/gogs-repositories
 ```
 
 Maintenant, copiez le fichier de configuration de base afin que nous puissions le modifier :
 
 ```bash
-cd $GOPATH/src/github.com/gogits/gogs
+cd $GOPATH/src/github.com/gogs/gogs
 cp conf/app.ini custom/conf/
 ```
 
 En utilisant votre éditeur préféré, ouvrez le fichier de configuration :
 
-`$GOPATH/src/github.com/gogits/gogs/custom/conf/app.ini`
+`$GOPATH/src/github.com/gogs/gogs/custom/conf/app.ini`
 
 par exemple :
 
 ```bash
-vi $GOPATH/src/github.com/gogits/gogs/custom/conf/app.ini
+vi $GOPATH/src/github.com/gogs/gogs/custom/conf/app.ini
 ```
 
 ## Configurer un serveur
@@ -109,7 +109,7 @@ sudo -u git -H psql -d gogs_production
 gogs_production> \q
 ```
 
-Maintenant, nous pouvons mettre à jour `app.ini`, ouvrez à nouveau `$GOPATH/src/github.com/gogits/gogs/custom/conf/app.ini` dans votre éditeur et changez ce qui suit (assurez-vous que vous êtes l'utilisateur `git`, sinon faites `sudo su - git`):
+Maintenant, nous pouvons mettre à jour `app.ini`, ouvrez à nouveau `$GOPATH/src/github.com/gogs/gogs/custom/conf/app.ini` dans votre éditeur et changez ce qui suit (assurez-vous que vous êtes l'utilisateur `git`, sinon faites `sudo su - git`):
 
 ### Section `[database]`
 
@@ -159,7 +159,7 @@ sudo service nginx restart
 
 ```bash
 sudo su - git
-cd $GOPATH/src/github.com/gogits/gogs
+cd $GOPATH/src/github.com/gogs/gogs
 ./gogs web
 ```
 

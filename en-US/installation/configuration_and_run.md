@@ -55,5 +55,5 @@ $ ./gogs web
 
 - There are many ways to start:
 	- Plain: just use `./gogs web`
-	- Daemons: see [scripts](https://github.com/gogits/gogs/tree/master/scripts) folder
+	- Daemons: see [scripts](https://github.com/gogs/gogs/tree/master/scripts) folder
 - Go to `/install` to do your first-time run configuration.

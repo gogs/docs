@@ -14,7 +14,7 @@ For the rest fo this document, we'll assume the following:
 - `postgresql` is your database server
 - and you want your git repository URLs look like `git.example.com`
 
-As mentioned in [Configuration and run](/docs/installation/configuration_and_run), you should create your own configuration file in `$GOPATH/src/github.com/gogits/gogs/custom/conf/app.ini`
+As mentioned in [Configuration and run](/docs/installation/configuration_and_run), you should create your own configuration file in `$GOPATH/src/github.com/gogs/gogs/custom/conf/app.ini`
 
 Let's first setup some directories:
 
@@ -23,25 +23,25 @@ sudo mkdir -p /var/log/gogs
 sudo chown git:git /var/log/gogs
 sudo su - git
 cd ~
-mkdir -p $GOPATH/src/github.com/gogits/gogs/custom/conf
+mkdir -p $GOPATH/src/github.com/gogs/gogs/custom/conf
 mkdir -p ~/gogs-repositories
 ```
 
 Now copy the base configuration file so we can edit it:
 
 ```bash
-cd $GOPATH/src/github.com/gogits/gogs
+cd $GOPATH/src/github.com/gogs/gogs
 cp conf/app.ini custom/conf/
 ```
 
 Using your editor, open the configuration file:
 
-`$GOPATH/src/github.com/gogits/gogs/custom/conf/app.ini`
+`$GOPATH/src/github.com/gogs/gogs/custom/conf/app.ini`
 
 for example:
 
 ```bash
-vi $GOPATH/src/github.com/gogits/gogs/custom/conf/app.ini
+vi $GOPATH/src/github.com/gogs/gogs/custom/conf/app.ini
 ```
 
 ## Setting up server
@@ -116,7 +116,7 @@ sudo -u git -H psql -d gogs_production
 gogs_production> \q
 ```
 
-Now we can update `app.ini`, again open `$GOPATH/src/github.com/gogits/gogs/custom/conf/app.ini` in your editor and change the following (make sure you are the user `git`, if not enter `sudo su - git`):
+Now we can update `app.ini`, again open `$GOPATH/src/github.com/gogs/gogs/custom/conf/app.ini` in your editor and change the following (make sure you are the user `git`, if not enter `sudo su - git`):
 
 ### `[database]` section
 
@@ -168,7 +168,7 @@ and then:
 
 ```bash
 sudo su - git
-cd $GOPATH/src/github.com/gogits/gogs
+cd $GOPATH/src/github.com/gogs/gogs
 ./gogs web
 ```
 
@@ -186,7 +186,7 @@ You are basically done here, the next step outlines how to make Gogs start when 
 
 This section describes how to properly start *Gogs* when your linux system reboots. For other platforms, consult the documentation to see how you can do this. For Mac OSX see [this document](/docs/installation/install_gogs_on_mac#run-gogs-server) to control app start-ups.
 
-If you followed previous steps, you can now enable automatic start of gogs. Under `debian`/`ubuntu`, we will use the script from `$GOPATH/src/github.com/gogits/gogs/scripts/init/debian/gogs`.
+If you followed previous steps, you can now enable automatic start of gogs. Under `debian`/`ubuntu`, we will use the script from `$GOPATH/src/github.com/gogs/gogs/scripts/init/debian/gogs`.
 
 Let's copy the script and modify it:
 
@@ -194,7 +194,7 @@ Let's copy the script and modify it:
 # change to 'git' user
 sudo su - git
 cd ~
-cp $GOPATH/src/github.com/gogits/gogs/scripts/init/debian/gogs ./gogs.init
+cp $GOPATH/src/github.com/gogs/gogs/scripts/init/debian/gogs ./gogs.init
 ```
 
 Using your editor open `~/gogs.init` and modify it such as:
@@ -216,7 +216,7 @@ to
 Further down in the same file, set the location so `init.d` can find our `gogs` installation by changing `WORKING_DIR` line to:
 
 ```ini
-WORKINGDIR=/home/git/go/src/github.com/gogits/gogs
+WORKINGDIR=/home/git/go/src/github.com/gogs/gogs
 ```
 
 Move the file to `/etc/init.d` and update it:

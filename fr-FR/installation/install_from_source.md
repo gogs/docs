@@ -54,10 +54,10 @@ La façon générale d'installer Gogs :
 
 ```sh
 # Télécharger et installer les dépendances
-$ go get -u github.com/gogits/gogs
+$ go get -u github.com/gogs/gogs
 
 # Compiler le programme principal
-$ cd $GOPATH/src/github.com/gogits/gogs
+$ cd $GOPATH/src/github.com/gogs/gogs
 $ go build
 ```
 
@@ -66,11 +66,11 @@ $ go build
 Dans le cas où vous voulez essayer la branche `develop` :
 
 ```sh
-$ mkdir -p $GOPATH/src/github.com/gogits
-$ cd $GOPATH/src/github.com/gogits
+$ mkdir -p $GOPATH/src/github.com/gogs
+$ cd $GOPATH/src/github.com/gogs
 
-# Assurez vous de ne pas utiliser "https://github.com/gogits/gogs.git"
-$ git clone --depth=1 -b develop https://github.com/gogits/gogs
+# Assurez vous de ne pas utiliser "https://github.com/gogs/gogs.git"
+$ git clone --depth=1 -b develop https://github.com/gogs/gogs
 $ cd gogs
 $ go build
 ```
@@ -80,7 +80,7 @@ $ go build
 Pour vous assurer que Gogs fonctionne correctement :
 
 ```sh
-$ cd $GOPATH/src/github.com/gogits/gogs
+$ cd $GOPATH/src/github.com/gogs/gogs
 $ ./gogs web
 ```
 
@@ -97,11 +97,11 @@ Liste des tags disponibles :
 - `cert`: Support de la génération des certificats auto-signés
 - `miniwinsvc`: Support des services pour Windows (Vous pouvez aussi utiliser NSSM pour créer un service)
 
-Par exemple, si vous voulez activer tous les tags de la liste, vous devez commencer par supprimer le repertoire `$GOPATH/pkg/${GOOS}_${GOARCH}/github.com/gogits/gogs` et exécuter les commandes suivantes :
+Par exemple, si vous voulez activer tous les tags de la liste, vous devez commencer par supprimer le repertoire `$GOPATH/pkg/${GOOS}_${GOARCH}/github.com/gogs/gogs` et exécuter les commandes suivantes :
 
 ```sh
-$ go get -u -tags "sqlite pam cert" github.com/gogits/gogs
-$ cd $GOPATH/src/github.com/gogits/gogs
+$ go get -u -tags "sqlite pam cert" github.com/gogs/gogs
+$ cd $GOPATH/src/github.com/gogs/gogs
 $ go build -tags "sqlite pam cert"
 ```
 

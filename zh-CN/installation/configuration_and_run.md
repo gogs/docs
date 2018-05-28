@@ -53,5 +53,5 @@ $ ./gogs web
 
 - Gogs 支持多种方式的启动：
 	- 普通：只需执行 `./gogs web`
-	- 守护进程：详见 [scripts](https://github.com/gogits/gogs/tree/master/scripts) 文件夹
+	- 守护进程：详见 [scripts](https://github.com/gogs/gogs/tree/master/scripts) 文件夹
 - 然后访问 `/install` 来完成首次运行的配置工作

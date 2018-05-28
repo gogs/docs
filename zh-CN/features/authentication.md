@@ -8,7 +8,7 @@ name: 授权认证
 
 自 `0.11.45.0412` 版本起，您可以通过在本地文件中定义认证源来简化自动化部署流程。
 
-凡是在自定义路径的 `conf/auth.d` 目录下以 `.conf` 结尾的文件都将被识别为认证源。例如，`custom/conf/auth.d/my_auth_source.conf`。您可以随意命名这些文件帮助记忆，只要保证以 `.conf` 结尾即可。所有支持类型的示例文件可以在 [这里](https://github.com/gogits/gogs/tree/f2ecfdc96a338815ffb2be898b3114031f0da48c/conf/auth.d) 查看。
+凡是在自定义路径的 `conf/auth.d` 目录下以 `.conf` 结尾的文件都将被识别为认证源。例如，`custom/conf/auth.d/my_auth_source.conf`。您可以随意命名这些文件帮助记忆，只要保证以 `.conf` 结尾即可。所有支持类型的示例文件可以在 [这里](https://github.com/gogs/gogs/tree/f2ecfdc96a338815ffb2be898b3114031f0da48c/conf/auth.d) 查看。
 
 当文件加载完成之后，您就可以通过 **管理面板 - 认证源管理** 页面进行查看。通过本地文件加载和存储在数据库中的认证源相互兼容，并不冲突。
 

@@ -8,7 +8,7 @@ name: Authentication
 
 Starting from `0.11.45.0412`, you can define authentication source in local files to help better automate setup process.
 
-Files with suffix `.conf` under `conf/auth.d` of custom directory will be recognized as authentication sources. For example, `custom/conf/auth.d/my_auth_source.conf`. As long as the file name ends with `.conf`, you can name it to something help you remember. You can find examples of all supported types [here](https://github.com/gogits/gogs/tree/f2ecfdc96a338815ffb2be898b3114031f0da48c/conf/auth.d).
+Files with suffix `.conf` under `conf/auth.d` of custom directory will be recognized as authentication sources. For example, `custom/conf/auth.d/my_auth_source.conf`. As long as the file name ends with `.conf`, you can name it to something help you remember. You can find examples of all supported types [here](https://github.com/gogs/gogs/tree/f2ecfdc96a338815ffb2be898b3114031f0da48c/conf/auth.d).
 
 Once files are loaded, they will appear in the **Admin Panel - Authentication Sources** page as before. They also work nicely with authentication sources defined in the database.
 

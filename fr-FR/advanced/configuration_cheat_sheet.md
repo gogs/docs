@@ -9,7 +9,7 @@ Ceci est un aide-mémoire relatif au fichier de configuration de Gogs, il vous a
 
 Avant de commencer, sachez que tout changement de configuration doit être fait dans `custom/conf/app.ini` ou n'importe quel fichier similaire.
 
-Tous les **paramètres par défaut** peuvent être trouvés dans [app.ini](https://github.com/gogits/gogs/blob/master/conf/app.ini). Si vous voyez quelque chose comme `%(X)s`, c'est une fonctionnalité qui est au format [ini](https://github.com/go-ini/ini/tree/v1#recursive-values) pour la lecture recursive de la valeur.
+Tous les **paramètres par défaut** peuvent être trouvés dans [app.ini](https://github.com/gogs/gogs/blob/master/conf/app.ini). Si vous voyez quelque chose comme `%(X)s`, c'est une fonctionnalité qui est au format [ini](https://github.com/go-ini/ini/tree/v1#recursive-values) pour la lecture recursive de la valeur.
 
 ## Global (`DEFAULT`)
 
@@ -81,7 +81,7 @@ Nom |Description
 `REQUIRE_SIGNIN_VIEW`|Activez cette option pour forcer les utilisateurs à se connecter pour visualiser une page spécifique.
 `ENABLE_CACHE_AVATAR`|Activez cette option pour mettre en cache l'avatar à partir Gravatar.
 `ENABLE_NOTIFY_MAIL`|Activez cette option pour envoyer des e-mail aux observateurs de dépôt lors d'évènements comme ticket/problème, exige d'activer `Mailer`.
-`ENABLE_REVERSE_PROXY_AUTHENTICATION`|Activez cette option pour permettre l'authentification avec reverse proxy, plus de détail sur [Github](https://github.com/gogits/gogs/issues/165)
+`ENABLE_REVERSE_PROXY_AUTHENTICATION`|Activez cette option pour permettre l'authentification avec reverse proxy, plus de détail sur [Github](https://github.com/gogs/gogs/issues/165)
 `ENABLE_REVERSE_PROXY_AUTO_REGISTRATION`|Activez cette option pour permettre l'auto-inscription dans le cas de l'authentification avec reverse-proxy.
 `DISABLE_MINIMUM_KEY_SIZE_CHECK`|Ne pas vérifier la taille de clé minimale pour le type correspondant.
 `ENABLE_GIT_HOOKS`|Activez cette option pour permettre l'exécution des git hooks, commandes qui sont situé dans `ROOT/[user name]/[repo name].git/hooks`

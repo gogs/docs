@@ -7,7 +7,7 @@ sort: 2
 
 ## Installation
 
-- Erreur : `../gosrc/src/github.com/gogits/gogs/cmd/cert.go:79: undefined: elliptic.P224`
+- Erreur : `../gosrc/src/github.com/gogs/gogs/cmd/cert.go:79: undefined: elliptic.P224`
 - Causes : le paquet golang dans RHEL/CentOS ne supporte pas la cryptographie à courbe elliptique (car il est breveté), cette fonctionnalité est retirée spécifiquement du build CentOS/RHEL.
 - Solution : télécharger et installer Go à partir de [golang.org/dl](http://golang.org/dl).
 
@@ -43,7 +43,7 @@ sort: 2
 - Erreur : `cache: unknown adaptername "memcache" (importation oublié?)`
 - Causes : pour empêcher l'importation inutiles du paquet, nous des tags à la construction pour spécifier si c'est nécessaire.
 - Solution :
-	- téléchargement : `go get -tags memcache github.com/gogits.gogs`
+	- téléchargement : `go get -tags memcache github.com/gogs.gogs`
 	- construction : `go build -tags memcache`
 	- suivre les mêmes étapes pour `redis` quand vous voulez qu'il soit l'adaptateur de cache.
 
@@ -64,7 +64,7 @@ Après cela, allez à [http://localhost:3000/install](http://localhost:3000/inst
 
 - Erreur : `Database setting is not correct: This server only supports the insecure old password authentication. If you still want to use it, please add 'allowOldPasswords=1' to your DSN. See also https://github.com/go-sql-driver/mysql/wiki/old_passwords`
 - Causes : le mot de passe a été mis à jour seulement pour l'utilisateur @localhost -- il y a une seconde entrée de la table d'utilisateur @% pour laquelle le mot de passe est encore l'ancien.
-- Solution : [un commentaire GitHub](https://github.com/gogits/gogs/issues/385#issuecomment-54357073)
+- Solution : [un commentaire GitHub](https://github.com/gogs/gogs/issues/385#issuecomment-54357073)
 
 ## Logiciel de messagerie
 

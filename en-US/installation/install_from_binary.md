@@ -4,7 +4,7 @@ name: From binary
 
 # Install from binary
 
-**Downloads are only available for latest releases, older downloads can be found at [releases](https://github.com/gogits/gogs/releases).**
+**Downloads are only available for latest releases, older downloads can be found at [releases](https://github.com/gogs/gogs/releases).**
 
 All downloads come with **MySQL**, **PostgreSQL**, **MSSQL** and **TiDB** (via MySQL protocol) support, and build **with tags `cert`**. Keep in mind that support status may be different from older releases, please follow the instructions on older Gogs instances.
 
@@ -20,7 +20,7 @@ All downloads come with **MySQL**, **PostgreSQL**, **MSSQL** and **TiDB** (via M
 
 ### 0.11.43 @ 2018-03-31
 
-|System|Type|SQLite|PAM|Download ([GitHub](https://github.com/gogits/gogs/releases/tag/v0.11.43))|
+|System|Type|SQLite|PAM|Download ([GitHub](https://github.com/gogs/gogs/releases/tag/v0.11.43))|
 |------|----|------|---|--------|
 |Linux|386|✅|✅|LOCAL: [ZIP](https://dl.gogs.io/0.11.43/gogs_0.11.43_linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/0.11.43/gogs_0.11.43_linux_386.tar.gz) - CDN: [ZIP](https://cdn.gogs.io/0.11.43/gogs_0.11.43_linux_386.zip) \| [TAR.GZ](https://cdn.gogs.io/0.11.43/gogs_0.11.43_linux_386.tar.gz)|
 |Linux|amd64|✅|✅|LOCAL: [ZIP](https://dl.gogs.io/0.11.43/gogs_0.11.43_linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/0.11.43/gogs_0.11.43_linux_amd64.tar.gz) - CDN: [ZIP](https://cdn.gogs.io/0.11.43/gogs_0.11.43_linux_amd64.zip) \| [TAR.GZ](https://cdn.gogs.io/0.11.43/gogs_0.11.43_linux_amd64.tar.gz)|
@@ -32,7 +32,7 @@ All downloads come with **MySQL**, **PostgreSQL**, **MSSQL** and **TiDB** (via M
 
 ### 0.11.34 @ 2017-11-22
 
-|System|Type|SQLite|PAM|Download ([GitHub](https://github.com/gogits/gogs/releases/tag/v0.11.34))|
+|System|Type|SQLite|PAM|Download ([GitHub](https://github.com/gogs/gogs/releases/tag/v0.11.34))|
 |------|----|------|---|--------|
 |Linux|386|✅|✅|LOCAL: [ZIP](https://dl.gogs.io/0.11.34/linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/0.11.34/linux_386.tar.gz) - CDN: [ZIP](https://cdn.gogs.io/0.11.34/linux_386.zip) \| [TAR.GZ](https://cdn.gogs.io/0.11.34/linux_386.tar.gz)|
 |Linux|amd64|✅|✅|LOCAL: [ZIP](https://dl.gogs.io/0.11.34/linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/0.11.34/linux_amd64.tar.gz) - CDN: [ZIP](https://cdn.gogs.io/0.11.34/linux_amd64.zip) \| [TAR.GZ](https://cdn.gogs.io/0.11.34/linux_amd64.tar.gz)|
@@ -44,7 +44,7 @@ All downloads come with **MySQL**, **PostgreSQL**, **MSSQL** and **TiDB** (via M
 
 ### 0.11.29 @ 2017-08-15
 
-|System|Type|SQLite|PAM|Download ([GitHub](https://github.com/gogits/gogs/releases/tag/v0.11.29))|
+|System|Type|SQLite|PAM|Download ([GitHub](https://github.com/gogs/gogs/releases/tag/v0.11.29))|
 |------|----|------|---|--------|
 |Linux|386|✅|✅|LOCAL: [ZIP](https://dl.gogs.io/0.11.29/linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/0.11.29/linux_386.tar.gz) - CDN: [ZIP](https://cdn.gogs.io/0.11.29/linux_386.zip) \| [TAR.GZ](https://cdn.gogs.io/0.11.29/linux_386.tar.gz)|
 |Linux|amd64|✅|✅|LOCAL: [ZIP](https://dl.gogs.io/0.11.29/linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/0.11.29/linux_amd64.tar.gz) - CDN: [ZIP](https://cdn.gogs.io/0.11.29/linux_amd64.zip) \| [TAR.GZ](https://cdn.gogs.io/0.11.29/linux_amd64.tar.gz)|
@@ -56,7 +56,7 @@ All downloads come with **MySQL**, **PostgreSQL**, **MSSQL** and **TiDB** (via M
 
 ### v0.9.141 @ 2017-02-11
 
-|System|Type|SQLite|PAM|Download ([GitHub](https://github.com/gogits/gogs/releases/tag/v0.9.141))|
+|System|Type|SQLite|PAM|Download ([GitHub](https://github.com/gogs/gogs/releases/tag/v0.9.141))|
 |------|----|------|---|--------|
 |Linux|386|✅|✅|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.141_linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/gogs_v0.9.141_linux_386.tar.gz) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.141_linux_386.zip) \| [TAR.GZ](https://cdn.gogs.io/gogs_v0.9.141_linux_386.tar.gz)|
 |Linux|amd64|✅|✅|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.141_linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/gogs_v0.9.141_linux_amd64.tar.gz) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.141_linux_amd64.zip) \| [TAR.GZ](https://cdn.gogs.io/gogs_v0.9.141_linux_amd64.tar.gz)|

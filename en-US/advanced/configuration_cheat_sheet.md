@@ -8,7 +8,7 @@ This is a cheat sheet for the Gogs configuration file. It is helpful for more fu
 
 Before getting started, make sure you know that any change to the configuration should be made in `custom/conf/app.ini` or any corresponding location.
 
-All **default settings** can be found in [app.ini](https://github.com/gogits/gogs/blob/master/conf/app.ini). If you see anything which looks like `%(X)s`, it is a feature powered by [ini](https://github.com/go-ini/ini/#recursive-values) for reading values recursively.
+All **default settings** can be found in [app.ini](https://github.com/gogs/gogs/blob/master/conf/app.ini). If you see anything which looks like `%(X)s`, it is a feature powered by [ini](https://github.com/go-ini/ini/#recursive-values) for reading values recursively.
 
 ### Overall (`DEFAULT`)
 
@@ -149,7 +149,7 @@ Name|Description
 `REQUIRE_SIGNIN_VIEW`|Enable this to force users to log in to view any page.
 `ENABLE_CACHE_AVATAR`|Enable this to cache avatar from Gravatar.
 `ENABLE_NOTIFY_MAIL`|Enable this to send e-mail to watchers of repository when something happens like creating issues, requires `Mailer` to be enabled.
-`ENABLE_REVERSE_PROXY_AUTHENTICATION`|Enable this to allow reverse proxy authentication, more detail on [#165](https://github.com/gogits/gogs/issues/165)
+`ENABLE_REVERSE_PROXY_AUTHENTICATION`|Enable this to allow reverse proxy authentication, more detail on [#165](https://github.com/gogs/gogs/issues/165)
 `ENABLE_REVERSE_PROXY_AUTO_REGISTRATION`|Enable this to allow auto-registration for reverse authentication.
 `DISABLE_MINIMUM_KEY_SIZE_CHECK`|Do not check minimum key size with corresponding type.
 `ENABLE_CAPTCHA`|Enable this to use captcha validation for registration.
