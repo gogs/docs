@@ -13,6 +13,7 @@ name: Changelog
 - 500 when merge branch when the base branch is not the default branch [#5138](https://github.com/gogs/gogs/issues/5138)
 - Gravatar URLs are badly generated [#5157](https://github.com/gogs/gogs/issues/5157)
 - Able to reuse two factor passcode
+- Config option `[git] GC_ARGS` does not take effect
 
 #### Features
 

@@ -13,6 +13,7 @@ name: 变更日志
 - 当基准分支不是默认分支时无法进行请求合并 [#5138](https://github.com/gogs/gogs/issues/5138)
 - 生成的 Gravatar 链接不正确 [#5157](https://github.com/gogs/gogs/issues/5157)
 - 允许重复使用相同的二步验证令牌
+- 配置选项 `[git] GC_ARGS` 无法生效
 
 #### 新增特性
 
