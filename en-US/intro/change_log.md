@@ -4,7 +4,7 @@ name: Changelog
 
 # Changelog
 
-### Unreleased
+### 0.11.53 @ 2018-06-05
 
 #### Bug fixes
 
@@ -17,11 +17,13 @@ name: Changelog
 
 #### Features
 
+- Show mirror updates in activity timeline [#2017](https://github.com/gogs/gogs/issues/2017)
 - Support authentication source config file [#3142](https://github.com/gogs/gogs/issues/3142)
+- Trigger webhook after mirror sync [#4528](https://github.com/gogs/gogs/issues/4528)
 
 #### Others
 
-- Changed import path from "gogs/gogs" to "gogs/gogs"
+- Changed import path from "gogits/gogs" to "gogs/gogs"
 - Security fixes
 - Add new languages support: Vietnamese
 
@@ -114,22 +116,4 @@ name: Changelog
 - Support IPython notebook as README [#4367](https://github.com/gogs/gogs/issues/4367)
 - Configurable TLS Support [#4450](https://github.com/gogs/gogs/issues/4450)
 
-### 0.11.4 @ 2017-04-05
-
-#### Bug fixes
-
-- Client is not informed to provide credentials during HTTP/HTTPS push/pull
-- Mirror credentials are not URL encoded [#4014](https://github.com/gogs/gogs/issues/4014)
-- Create pull request buttons are showed on branches page when pull request is disabled [#4377](https://github.com/gogs/gogs/issues/4377)
-- Panic if user has vaildation error on installation [#4383](https://github.com/gogs/gogs/issues/4383)
-
-### 0.11 @ 2017-04-03
-
-#### Bug fixes
-
-- Profile editing looses changes on validation error [#1123](https://github.com/gogs/gogs/issues/1123)
-- Wrong repository count in organization dashboard [#4351](https://github.com/gogs/gogs/issues/4351)
-- Fail to migrate from version prior to 0.10 [#4355](https://github.com/gogs/gogs/issues/4355)
-- Private repository with public issues didn't handle anonymous visit properly [#4359](https://github.com/gogs/gogs/issues/4359)
-
-**Older change logs can be found on [GitHub](https://github.com/gogs/gogs/releases?after=v0.11).**
+**Older change logs can be found on [GitHub](https://github.com/gogs/gogs/releases?after=v0.11.19).**

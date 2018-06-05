@@ -4,7 +4,7 @@ name: 变更日志
 
 # 变更日志
 
-### 未发布
+### 0.11.53 @ 2018-06-05
 
 #### Bug 修复
 
@@ -17,11 +17,13 @@ name: 变更日志
 
 #### 新增特性
 
+- 在活动时间线显示镜像仓库更新 [#2017](https://github.com/gogs/gogs/issues/2017)
 - 支持通过本地文件加载认证源 [#3142](https://github.com/gogs/gogs/issues/3142)
+- 镜像同步后触发 Web 钩子 [#4528](https://github.com/gogs/gogs/issues/4528)
 
 #### 其它变更
 
-- 将导入路径从 "gogs/gogs" 修改为 "gogs/gogs"
+- 将导入路径从 "gogits/gogs" 修改为 "gogs/gogs"
 - 安全漏洞修复
 - 添加新语种支持：越南语
 
@@ -114,22 +116,4 @@ name: 变更日志
 - 支持 IPython Notebook 形式的 README [#4367](https://github.com/gogs/gogs/issues/4367)
 - 支持自定义 TLS 相关配置 [#4450](https://github.com/gogs/gogs/issues/4450)
 
-### 0.11.4 @ 2017-04-05
-
-#### Bug 修复
-
-- 在进行 HTTP/HTTPS 推送和拉取时客户端没有提示用户输入凭据
-- 镜像用户凭据没有进行 URL 编码 [#4014](https://github.com/gogs/gogs/issues/4014)
-- 仓库禁用合并请求时，发起合并请求按钮仍旧在分支页面显示 [#4377](https://github.com/gogs/gogs/issues/4377)
-- 用户在安装页面发生验证错误时应用会崩溃 [#4383](https://github.com/gogs/gogs/issues/4383) 
-
-### 0.11 @ 2017-04-03
-
-#### Bug 修复
-
-- 编辑个人信息发生验证错误时丢失内容 [#1123](https://github.com/gogs/gogs/issues/1123)
-- 组织控制面板显示错误的仓库统计 [#4351](https://github.com/gogs/gogs/issues/4351)
-- 从 0.10 之前的版本自动迁移失败 [#4355](https://github.com/gogs/gogs/issues/4355)
-- 允许公开访问工单的私有仓库没有正确处理匿名访问 [#4359](https://github.com/gogs/gogs/issues/4359)
-
-**更早的变更日志可以在 [GitHub](https://github.com/gogs/gogs/releases?after=v0.11) 上找到。**
+**更早的变更日志可以在 [GitHub](https://github.com/gogs/gogs/releases?after=v0.11.19) 上找到。**
