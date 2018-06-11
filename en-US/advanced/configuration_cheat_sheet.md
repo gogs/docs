@@ -206,7 +206,7 @@ Name|Description
 `AVATAR_UPLOAD_PATH`|Path to store user uploaded avatars.
 `GRAVATAR_SOURCE`|Can be `gravatar`, `duoshuo` or anything like `http://cn.gravatar.com/avatar/`.
 `DISABLE_GRAVATAR`|Enable this to use local avatars only.
-`ENABLE_FEDERATED_AVATAR`|Indicate whether to enable for federated avatars (see http://www.libravatar.org). This value will be forced to be false in offline mode or Gravatar is disbaled.
+`ENABLE_FEDERATED_AVATAR`|Indicate whether to enable for federated avatars (see http://www.libravatar.org). This value will be forced to be false in offline mode or Gravatar is disabled.
 
 ### Attachment (`attachment`)
 
