@@ -9,6 +9,7 @@ name: 变更日志
 #### Bug 修复
 
 - 删除仓库时未清理 Web 钩子和相关任务 [#5229](https://github.com/gogs/gogs/issues/5229)
+- 无法连接 MySQL 8.0 [#5187](https://github.com/gogs/gogs/issues/5187)
 
 ### 0.11.53 @ 2018-06-05
 
