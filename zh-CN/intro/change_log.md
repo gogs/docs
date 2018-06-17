@@ -11,6 +11,10 @@ name: 变更日志
 - 删除仓库时未清理 Web 钩子和相关任务 [#5229](https://github.com/gogs/gogs/issues/5229)
 - 无法连接 MySQL 8.0 [#5187](https://github.com/gogs/gogs/issues/5187)
 
+#### 功能改进
+
+- 默认忽略配置文件的行内注释
+
 ### 0.11.53 @ 2018-06-05
 
 #### Bug 修复
