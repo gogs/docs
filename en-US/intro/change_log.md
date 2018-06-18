@@ -8,8 +8,9 @@ name: Changelog
 
 #### Bug fixes
 
-- Webhook and its tasks are not cleaned up when delete repository [#5229](https://github.com/gogs/gogs/issues/5229)
+- Private repository with public wiki or issue does not show in search result [#4973](https://github.com/gogs/gogs/issues/4973)
 - Cannot start with MySQL 8.0 [#5187](https://github.com/gogs/gogs/issues/5187)
+- Webhook and its tasks are not cleaned up when delete repository [#5229](https://github.com/gogs/gogs/issues/5229)
 
 #### Improvements
 

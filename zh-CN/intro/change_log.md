@@ -8,8 +8,9 @@ name: 变更日志
 
 #### Bug 修复
 
-- 删除仓库时未清理 Web 钩子和相关任务 [#5229](https://github.com/gogs/gogs/issues/5229)
+- 可公开访问的 Wiki 或工单的私有仓库无法在搜索结果中显示 [#4973](https://github.com/gogs/gogs/issues/4973)
 - 无法连接 MySQL 8.0 [#5187](https://github.com/gogs/gogs/issues/5187)
+- 删除仓库时未清理 Web 钩子和相关任务 [#5229](https://github.com/gogs/gogs/issues/5229)
 
 #### 功能改进
 
