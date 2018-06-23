@@ -22,10 +22,10 @@ Name|Description
 
 Name|Description
 ----|-----------
-`PROTOCOL`|Either `http` or `https`.
+`PROTOCOL`|Either `http`, `https`, `unix` or `fcgi`.
 `DOMAIN`|Domain name of your server.
 `ROOT_URL`|Full public URL of Gogs server.
-`HTTP_ADDR`|HTTP listen address.
+`HTTP_ADDR`|HTTP listen address or path to UNIX socket.
 `HTTP_PORT`|HTTP listen port.
 `UNIX_SOCKET_PERMISSION`|Permission for unix socket.
 `LOCAL_ROOT_URL`|Local (DMZ) URL for Gogs workers (such as SSH update) accessing web service. In most cases you do not need to change the default value. Alter it only if your SSH server node is not the same as HTTP node.
