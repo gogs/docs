@@ -15,6 +15,7 @@ name: Changelog
 #### Improvements
 
 - Ignore configuration inline comment by default
+- Able to add custom merge commit description [#5276](https://github.com/gogs/gogs/pull/5276)
 
 ### 0.11.53 @ 2018-06-05
 
