@@ -45,6 +45,21 @@ $ sudo apt-get update
 $ sudo apt-get install git
 ```
 
+#### Fedora
+
+```sh
+$ sudo dnf update
+$ sudo dnf install git
+```
+
+#### RHEL/CentOS
+
+```sh
+$ sudo yum update
+$ sudo yum install git
+```
+
+
 #### Windows
 
 [Download and install Git](http://git-scm.com/downloads)
