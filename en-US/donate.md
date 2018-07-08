@@ -33,6 +33,7 @@ name: Donation
 
 | Donated at       | Donator    | Amount   |
 | ---------------- |:---------:| --------:|
+| 2018-07-06 | omlinux.com | $10.00 |
 | 2018-06-19 | Mr. MacGee | $15.00 |
 | 2018-06-17 | Mr. Jongh | €20.00 |
 | 2018-06-07 | Mr. Rensink | $25.00 |
