@@ -242,3 +242,10 @@ The current version of Gogs is written in plain text in the file `templates/.VER
 #### Why Gogs isn't collaborating on its own?
 
 When was your last pull request to Gogs?
+
+
+### Wiki
+
+#### Why can't I create a Wiki page for my new repo?
+
+Is your new repo a mirror? Mirrored repos can't have their own Wiki. If you don't see a green button marked "Create the first page" on the "Welcome to Wiki!" page, check that you didn't create your repo as a mirror. If that's what you intended, you'll have to edit the Wiki on the upstream of your mirror. Otherwise, convert your repo to a regular repository under Settings (down in the Danger Zone section).
