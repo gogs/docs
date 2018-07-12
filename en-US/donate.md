@@ -33,6 +33,7 @@ name: Donation
 
 | Donated at       | Donator    | Amount   |
 | ---------------- |:---------:| --------:|
+| 2018-07-12 | Mr. Medved | $10.00 |
 | 2018-07-06 | omlinux.com | $10.00 |
 | 2018-07-04 | Mr. Levy | $25.00 |
 | 2018-06-19 | Mr. MacGee | $15.00 |
