@@ -28,7 +28,7 @@ $ mv gogs gogs_old
 
 ```bash
 # 请根据系统和类型获取相应的二进制版本
-$ wget wget https://dl.gogs.io/$VERSION/$OS_$ARCH.tar.gz
+$ wget https://dl.gogs.io/$VERSION/$OS_$ARCH.tar.gz
 $ tar -zxvf $OS_$ARCH.tar.gz
 $ ls
 gogs gogs_old  gogs-repositories $OS_$ARCH.tar.gz
