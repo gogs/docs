@@ -71,8 +71,8 @@ ROOT_URL = http://git.domain.tld/
     ...
     ProxyPreserveHost On
     ProxyRequests off
-    ProxyPass / http://127.0.0.1:3000/
-    ProxyPassReverse / http://127.0.0.1:3000/
+    ProxyPass / http://127.0.0.1:3000
+    ProxyPassReverse / http://127.0.0.1:3000
 </VirtualHost>
 ```
 
