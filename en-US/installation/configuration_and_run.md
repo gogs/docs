@@ -57,3 +57,49 @@ $ ./gogs web
 	- Plain: just use `./gogs web`
 	- Daemons: see [scripts](https://github.com/gogs/gogs/tree/master/scripts) folder
 - Go to `/install` to do your first-time run configuration.
+
+### Running as daemon via init (eg. openrc)
+
+- Create a file named `/etc/init.d/gogs` as follows, assuming gogs is installed in the `/home/git` user:
+
+```
+#!/sbin/openrc-run
+
+SVCNAME=gogs
+GOGS_PIDFILE=/var/run/gogs.pid
+GOGS_USER=git
+GOGS_HOME=/home/$GOGS_USER
+GOGS_PATH=$GOGS_HOME/go/src/github.com/gogs/gogs
+COMMAND="${GOGS_PATH}/gogs"
+ARGS="web"
+
+depend() {
+    need net
+    use dns logger mysql
+}
+
+checkconfig() {
+    if [ ! -d "$GOGS_PATH" ] ; then
+        eerror "gogs not installed" || return 1
+    fi
+    return 0
+}
+
+start() {
+    checkconfig || return 1
+
+    ebegin "Starting ${SVCNAME}"
+    start-stop-daemon --start --quiet --background \
+        --make-pidfile --pidfile "${GOGS_PIDFILE}" \
+        --user "${GOGS_USER}" \
+        -d ${GOGS_PATH} \
+        --exec "${COMMAND}" "${ARGS}"
+    eend $?
+}
+
+stop() {
+    ebegin "Stopping ${SVCNAME}"
+    start-stop-daemon --stop --quiet --pidfile $GOGS_PIDFILE
+    eend $?
+}
+```
