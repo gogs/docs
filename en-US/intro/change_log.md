@@ -12,6 +12,7 @@ name: Changelog
 - Cannot start with MySQL 8.0 [#5187](https://github.com/gogs/gogs/issues/5187)
 - Webhook and its tasks are not cleaned up when delete repository [#5229](https://github.com/gogs/gogs/issues/5229)
 - Time set to current after restored from backup [#5264](https://github.com/gogs/gogs/issues/5264)
+- Delete branch after merged pull request does no trigger webhook [#5331](https://github.com/gogs/gogs/issues/5331)
 
 #### Improvements
 

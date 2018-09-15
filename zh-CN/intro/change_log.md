@@ -12,6 +12,7 @@ name: 变更日志
 - 无法连接 MySQL 8.0 [#5187](https://github.com/gogs/gogs/issues/5187)
 - 删除仓库时未清理 Web 钩子和相关任务 [#5229](https://github.com/gogs/gogs/issues/5229)
 - 恢复备份后时间戳全部变为当前时间 [#5264](https://github.com/gogs/gogs/issues/5264)
+- 合并请求后删除分支没有触发 Web 钩子 [#5331](https://github.com/gogs/gogs/issues/5331)
 
 #### 功能改进
 
