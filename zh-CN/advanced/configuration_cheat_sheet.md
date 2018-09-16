@@ -61,6 +61,7 @@ name: 配置文件手册
 `PREFERRED_LICENSES`|建议用户首选的授权类型
 `DISABLE_HTTP_GIT`|激活该选项来禁止用户通过 HTTP 对 Git 仓库进行交互操作，即用户只能通过 SSH 操作
 `ENABLE_LOCAL_PATH_MIGRATION`|激活该选项来启用本地路径迁移仓库功能。启动后默认只有管理员可以使用，普通用户必须经由管理员授权
+`ENABLE_RAW_FILE_RENDER_MODE`|激活该选项来启用在查看原始数据时对页面进行真实渲染，例如渲染实际的 HTML 页面，有潜在安全隐患
 
 #### 仓库 - 编辑器 (`repository.editor`)
 
@@ -242,7 +243,7 @@ name: 配置文件手册
 
 名称|描述
 ----|----
-`LEVEL`|控制台日志级别，留空则继承父值
+`LEVEL`|文件日志级别，留空则继承父值
 `LOG_ROTATE`|激活该选项以启用日志文件自转
 `DAILY_ROTATE`|激活该选项以进行日常自转
 `MAX_SIZE_SHIFT`|自转需要达到的最大文件体积，使用位左移，默认为 28 即 1 << 28，表示 256MB
@@ -253,8 +254,16 @@ name: 配置文件手册
 
 名称|描述
 ----|----
-`LEVEL`|控制台日志级别，留空则继承父值
+`LEVEL`|Slack 日志级别，留空则继承父值
 `URL`|Slack Web 钩子 URL
+
+#### 日志 - Discord (`log.discord`)
+
+名称|描述
+----|-----------
+`LEVEL`|Discord 日志级别，留空则继承父值
+`URL`|Discord Web 钩子 URL
+`USERNAME`|在 Web 钩子中显示的用户名
 
 ### Cron (`cron`)
 
@@ -330,6 +339,15 @@ name: 配置文件手册
 `REPO_PAGING_NUM`|仓库管理页面每页显示记录条数
 `NOTICE_PAGING_NUM`|系统提示管理页面每页显示记录条数
 `ORG_PAGING_NUM`|组织管理页面每页显示记录条数
+
+#### Prometheus (`prometheus`)
+
+名称|描述
+----|-----------
+`ENABLED`|激活该选项以启用 Prometheus 监控信息，默认为 `true`
+`ENABLE_BASIC_AUTH`|激活该选项以启用 HTTP 基本认证保护监控信息数据，默认为 `false`
+`BASIC_AUTH_USERNAME`|HTTP 基本认证的用户名
+`BASIC_AUTH_PASSWORD`|HTTP 基本认证的密码
 
 ### 其他 (`other`)
 

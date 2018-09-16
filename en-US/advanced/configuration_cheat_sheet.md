@@ -60,7 +60,8 @@ Name|Description
 `MAX_CREATION_LIMIT`|Global maximum creation limit of repositories per user, `-1` means no limit.
 `PREFERRED_LICENSES`|Preferred Licenses to place at the top of the list.
 `DISABLE_HTTP_GIT`|Indicates whether or not to disable Git clone through HTTP/HTTPS. When disabled, users can only perform Git operations via SSH.
-`ENABLE_LOCAL_PATH_MIGRATION`|Indicates whether or not to disable migrate repository by local path. When enabled, user still needs to be a site admin or get permission from site admin in order to use this feature.
+`ENABLE_LOCAL_PATH_MIGRATION`|Indicates whether or not to enable migrate repository by local path. When enabled, user still needs to be a site admin or get permission from site admin in order to use this feature.
+`ENABLE_RAW_FILE_RENDER_MODE`|Indicates whether or not to enable render when view raw file, e.g. render actual HTML page, have potential security issue.
 
 #### Repository - Editor (`repository.editor`)
 
@@ -256,6 +257,14 @@ Name|Description
 `LEVEL`|Slack log level, leave empty to inherit.
 `URL`|Slack webhook URL.
 
+#### Log - Discord (`log.discord`)
+
+Name|Description
+----|-----------
+`LEVEL`|Discord log level, leave empty to inherit.
+`URL`|Discord webhook URL.
+`USERNAME`|Username displayed in webhook.
+
 ### Cron (`cron`)
 
 Name|Description
@@ -336,6 +345,15 @@ Name|Description
 Name|Description
 ----|-----------
 `REPO_PAGING_NUM`|Number of repos that are showed in one page for user related pages.
+
+#### Prometheus (`prometheus`)
+
+Name|Description
+----|-----------
+`ENABLED`|Indicate whether or not to enable Prometheus metrics, default is `true`.
+`ENABLE_BASIC_AUTH`|Indicate whether or not to enable HTTP Basic Authentication to protect metrics data, default is `false`.
+`BASIC_AUTH_USERNAME`|Username for HTTP Basic Authentication.
+`BASIC_AUTH_PASSWORD`|Password for HTTP Basic Authentication.
 
 ### Other (`other`)
 
