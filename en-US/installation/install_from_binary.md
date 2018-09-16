@@ -18,6 +18,18 @@ All downloads come with **MySQL**, **PostgreSQL**, **MSSQL** and **TiDB** (via M
 2. `cd` into the directory just created.
 3. Execute `./gogs web` and you're done.
 
+### 0.11.66 @ 2018-09-16
+
+|System|Type|SQLite|PAM|Download ([GitHub](https://github.com/gogs/gogs/releases/tag/v0.11.66))|
+|------|----|------|---|--------|
+|Linux|386|✅|✅|LOCAL: [ZIP](https://dl.gogs.io/0.11.66/gogs_0.11.66_linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/0.11.66/gogs_0.11.66_linux_386.tar.gz) - CDN: [ZIP](https://cdn.gogs.io/0.11.66/gogs_0.11.66_linux_386.zip) \| [TAR.GZ](https://cdn.gogs.io/0.11.66/gogs_0.11.66_linux_386.tar.gz)|
+|Linux|amd64|✅|✅|LOCAL: [ZIP](https://dl.gogs.io/0.11.66/gogs_0.11.66_linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/0.11.66/gogs_0.11.66_linux_amd64.tar.gz) - CDN: [ZIP](https://cdn.gogs.io/0.11.66/gogs_0.11.66_linux_amd64.zip) \| [TAR.GZ](https://cdn.gogs.io/0.11.66/gogs_0.11.66_linux_amd64.tar.gz)|
+|Linux|armv5|❌|❌|LOCAL: [ZIP](https://dl.gogs.io/0.11.66/gogs_0.11.66_linux_armv5.zip) - CDN: [ZIP](https://cdn.gogs.io/0.11.66/gogs_0.11.66_linux_armv5.zip)|
+|Raspberry Pi|v2/v3 / armv6|✅|✅|LOCAL: [ZIP](https://dl.gogs.io/0.11.66/gogs_0.11.66_raspi2_armv6.zip) - CDN: [ZIP](https://cdn.gogs.io/0.11.66/gogs_0.11.66_raspi2_armv6.zip)|
+|Windows|386|✅|❌|LOCAL: [ZIP](https://dl.gogs.io/0.11.66/gogs_0.11.66_windows_386.zip) \| [ZIP w/ mws](https://dl.gogs.io/0.11.66/gogs_0.11.66_windows_386_mws.zip) - CDN: [ZIP](https://cdn.gogs.io/0.11.66/gogs_0.11.66_windows_386.zip) \| [ZIP w/mws](https://cdn.gogs.io/0.11.66/gogs_0.11.66_windows_386_mws.zip)|
+|Windows|amd64|✅|❌|LOCAL: [ZIP](https://dl.gogs.io/0.11.66/gogs_0.11.66_windows_amd64.zip) \| [ZIP w/ mws](https://dl.gogs.io/0.11.66/gogs_0.11.66_windows_amd64_mws.zip) - CDN: [ZIP](https://cdn.gogs.io/0.11.66/gogs_0.11.66_windows_amd64.zip) \| [ZIP w/ mws](https://cdn.gogs.io/0.11.66/gogs_0.11.66_windows_amd64_mws.zip)|
+|Mac OS|amd64|✅|❌|LOCAL: [ZIP](https://dl.gogs.io/0.11.66/gogs_0.11.66_darwin_amd64.zip) - CDN: [ZIP](https://cdn.gogs.io/0.11.66/gogs_0.11.66_darwin_amd64.zip)|
+
 ### 0.11.53 @ 2018-06-05
 
 |System|Type|SQLite|PAM|Download ([GitHub](https://github.com/gogs/gogs/releases/tag/v0.11.53))|
@@ -41,18 +53,5 @@ All downloads come with **MySQL**, **PostgreSQL**, **MSSQL** and **TiDB** (via M
 |Windows|386|✅|❌|LOCAL: [ZIP](https://dl.gogs.io/0.11.43/gogs_0.11.43_windows_386.zip) \| [ZIP w/ mws](https://dl.gogs.io/0.11.43/gogs_0.11.43_windows_386_mws.zip) - CDN: [ZIP](https://cdn.gogs.io/0.11.43/gogs_0.11.43_windows_386.zip) \| [ZIP w/mws](https://cdn.gogs.io/0.11.43/gogs_0.11.43_windows_386_mws.zip)|
 |Windows|amd64|✅|❌|LOCAL: [ZIP](https://dl.gogs.io/0.11.43/gogs_0.11.43_windows_amd64.zip) \| [ZIP w/ mws](https://dl.gogs.io/0.11.43/gogs_0.11.43_windows_amd64_mws.zip) - CDN: [ZIP](https://cdn.gogs.io/0.11.43/gogs_0.11.43_windows_amd64.zip) \| [ZIP w/ mws](https://cdn.gogs.io/0.11.43/gogs_0.11.43_windows_amd64_mws.zip)|
 |Mac OS|amd64|✅|❌|LOCAL: [ZIP](https://dl.gogs.io/0.11.43/gogs_0.11.43_darwin_amd64.zip) - CDN: [ZIP](https://cdn.gogs.io/0.11.43/gogs_0.11.43_darwin_amd64.zip)|
-
-### v0.9.141 @ 2017-02-11
-
-|System|Type|SQLite|PAM|Download ([GitHub](https://github.com/gogs/gogs/releases/tag/v0.9.141))|
-|------|----|------|---|--------|
-|Linux|386|✅|✅|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.141_linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/gogs_v0.9.141_linux_386.tar.gz) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.141_linux_386.zip) \| [TAR.GZ](https://cdn.gogs.io/gogs_v0.9.141_linux_386.tar.gz)|
-|Linux|amd64|✅|✅|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.141_linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/gogs_v0.9.141_linux_amd64.tar.gz) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.141_linux_amd64.zip) \| [TAR.GZ](https://cdn.gogs.io/gogs_v0.9.141_linux_amd64.tar.gz)|
-|Linux|armv5|❌|❌|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.141_linux_armv5.zip) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.141_linux_armv5.zip)|
-|Linux|armv6|❌|❌|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.141_linux_armv6.zip) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.141_linux_armv6.zip)|
-|Raspberry Pi|v2|✅|✅|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.141_raspi2_armv6.zip) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.141_raspi2_armv6.zip)|
-|Windows|386|✅|❌|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.141_windows_386.zip) \| [ZIP w/ mws](https://dl.gogs.io/gogs_v0.9.141_windows_386_mws.zip) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.141_windows_386.zip) \| [ZIP w/mws](https://cdn.gogs.io/gogs_v0.9.141_windows_386_mws.zip)|
-|Windows|amd64|✅|❌|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.141_windows_amd64.zip) \| [ZIP w/ mws](https://dl.gogs.io/gogs_v0.9.141_windows_amd64_mws.zip) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.141_windows_amd64.zip) \| [ZIP w/ mws](https://cdn.gogs.io/gogs_v0.9.141_windows_amd64_mws.zip)|
-|Mac OS|amd64|✅|❌|LOCAL: [ZIP](https://dl.gogs.io/gogs_v0.9.141_darwin_amd64.zip) - CDN: [ZIP](https://cdn.gogs.io/gogs_v0.9.141_darwin_amd64.zip)|
 
 See [Configuration and run](/docs/installation/configuration_and_run.html) to go further.

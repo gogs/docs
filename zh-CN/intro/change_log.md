@@ -4,20 +4,35 @@ name: 变更日志
 
 # 变更日志
 
-### 未发布
+### 0.11.66 @ 2018-09-16
 
 #### Bug 修复
 
+- Web 编辑器提交后无法触发 Git 钩子 [#4338](https://github.com/gogs/gogs/issues/4338)
+- 版本发布附件会由于删除任意评论而被清空 [#4627](https://github.com/gogs/gogs/issues/4627)
 - 可公开访问的 Wiki 或工单的私有仓库无法在搜索结果中显示 [#4973](https://github.com/gogs/gogs/issues/4973)
 - 无法连接 MySQL 8.0 [#5187](https://github.com/gogs/gogs/issues/5187)
 - 删除仓库时未清理 Web 钩子和相关任务 [#5229](https://github.com/gogs/gogs/issues/5229)
 - 恢复备份后时间戳全部变为当前时间 [#5264](https://github.com/gogs/gogs/issues/5264)
 - 合并请求后删除分支没有触发 Web 钩子 [#5331](https://github.com/gogs/gogs/issues/5331)
+- 派生仓库时没有检查用户仓库数量限制 [#5345](https://github.com/gogs/gogs/issues/5345)
+- 使用 PostgreSQL 时无法删除用户 [#5376](https://github.com/gogs/gogs/issues/5376)
+
+#### 新增特性
+
+- 支持为仓库添加头像 [#2340](https://github.com/gogs/gogs/issues/2340)
+- 增加由 Prometheus 提供的基本 Go Runtime 运行信息 [#4141](https://github.com/gogs/gogs/issues/4141)
 
 #### 功能改进
 
 - 默认忽略配置文件的行内注释
+- 浏览文件时剔除文件末的空行 [#5270](https://github.com/gogs/gogs/pull/5270)
+- 支持设定默认的用户认证方式 [#5274](https://github.com/gogs/gogs/issues/5274)
 - 支持添加自定义合并提交描述 [#5276](https://github.com/gogs/gogs/pull/5276)
+
+#### 其它变更
+
+- 安全漏洞修复
 
 ### 0.11.53 @ 2018-06-05
 
@@ -105,30 +120,4 @@ name: 变更日志
 - `/api/v1/repos/search` 返回空值 [#4522](https://github.com/gogs/gogs/issues/4522)
 - 创建合并请求完成后发生错误 [#4572](https://github.com/gogs/gogs/issues/4572)
 
-### 0.11.19 @ 2017-06-10
-
-#### Bug 修复
-
-- 无法使用 go get 子包 [#1878](https://github.com/gogs/gogs/issues/1878)
-- 非首次使用 LDAP 登录无法更新用户为管理员 [#2855](https://github.com/gogs/gogs/issues/2855)
-- 使用 PAM 登录时发生错误 [#4216](https://github.com/gogs/gogs/issues/4216)
-- PostgreSQL 恢复备份后出现错误 `unique constraint violation` [#4357](https://github.com/gogs/gogs/issues/4357)
-- IPython notebook 的图片无法显示 [#4366](https://github.com/gogs/gogs/issues/4366)
-- 编辑文件预览时无法正确处理图片相对链接 [#4368](https://github.com/gogs/gogs/issues/4368)
-- 提交历史页面无法渲染 Emoji [#4439](https://github.com/gogs/gogs/issues/4439)
-- 查看包含文件权限更改的单个提交时 CPU 异常高 [#4475](https://github.com/gogs/gogs/issues/4475)
-- 无法修改协作者的权限 [#4512](https://github.com/gogs/gogs/issues/4512)
-
-#### 新增特性
-
-- 支持两步验证登录 [#945](https://github.com/gogs/gogs/issues/945)
-- 支持 LDAP 登录时验证组成员身份 [#4398](https://github.com/gogs/gogs/pull/4398)
-
-#### 功能改进
-
-- 安装页面检查 SMTP 地址中是否包含端口号 [#2243](https://github.com/gogs/gogs/issues/2243)
-- 镜像仓库没有拉取新代码提交时不更新最后更新时间 [#4341](https://github.com/gogs/gogs/issues/4341)
-- 支持 IPython Notebook 形式的 README [#4367](https://github.com/gogs/gogs/issues/4367)
-- 支持自定义 TLS 相关配置 [#4450](https://github.com/gogs/gogs/issues/4450)
-
-**更早的变更日志可以在 [GitHub](https://github.com/gogs/gogs/releases?after=v0.11.19) 上找到。**
+**更早的变更日志可以在 [GitHub](https://github.com/gogs/gogs/releases?after=v0.11.29) 上找到。**

@@ -4,20 +4,35 @@ name: Changelog
 
 # Changelog
 
-### Unreleased
+### 0.11.66 @ 2018-09-16
 
 #### Bug fixes
 
+- Web editor doesn't execute hooks after commit [#4338](https://github.com/gogs/gogs/issues/4338)
+- Release attachments are deleted when delete any random comment [#4627](https://github.com/gogs/gogs/issues/4627)
 - Private repository with public wiki or issue does not show in search result [#4973](https://github.com/gogs/gogs/issues/4973)
 - Cannot start with MySQL 8.0 [#5187](https://github.com/gogs/gogs/issues/5187)
 - Webhook and its tasks are not cleaned up when delete repository [#5229](https://github.com/gogs/gogs/issues/5229)
 - Time set to current after restored from backup [#5264](https://github.com/gogs/gogs/issues/5264)
 - Delete branch after merged pull request does no trigger webhook [#5331](https://github.com/gogs/gogs/issues/5331)
+- Fork repository does not check of the limit of users [#5345](https://github.com/gogs/gogs/issues/5345)
+- Unable to delete user with PostgreSQL [#5376](https://github.com/gogs/gogs/issues/5376)
+
+#### Features
+
+- Able to add avatar for repository [#2340](https://github.com/gogs/gogs/issues/2340)
+- Add basic Go runtime metrics provided by Prometheus [#4141](https://github.com/gogs/gogs/issues/4141)
 
 #### Improvements
 
 - Ignore configuration inline comment by default
+- Add deletion of an empty line at the end of file in file view [#5270](https://github.com/gogs/gogs/pull/5270)
+- Able to set default authentication method for login [#5274](https://github.com/gogs/gogs/issues/5274)
 - Able to add custom merge commit description [#5276](https://github.com/gogs/gogs/pull/5276)
+
+#### Others
+
+- Security fixes
 
 ### 0.11.53 @ 2018-06-05
 
@@ -105,30 +120,4 @@ name: Changelog
 - `/api/v1/repos/search` returns empty values [#4522](https://github.com/gogs/gogs/issues/4522)
 - Panic after created a pull request [#4572](https://github.com/gogs/gogs/issues/4572)
 
-### 0.11.19 @ 2017-06-10
-
-#### Bug fixes
-
-- Unable to go get subpkg [#1878](https://github.com/gogs/gogs/issues/1878)
-- Does not set as admin after first LDAP login [#2855](https://github.com/gogs/gogs/issues/2855)
-- Panic when login via PAM [#4216](https://github.com/gogs/gogs/issues/4216)
-- Unique constraint violation after backup restored for PostgreSQL [#4357](https://github.com/gogs/gogs/issues/4357)
-- Images in IPython notebook are not displayed [#4366](https://github.com/gogs/gogs/issues/4366)
-- Broken relative path for image link in edit file preview [#4368](https://github.com/gogs/gogs/issues/4368)
-- Emoji not rendered on commits view [#4439](https://github.com/gogs/gogs/issues/4439)
-- High CPU when view single commit contains file mode change [#4475](https://github.com/gogs/gogs/issues/4475)
-- Cannot change permissions of collaborators [#4512](https://github.com/gogs/gogs/issues/4512)
-
-#### Features
-
-- Support two-factor authentication [#945](https://github.com/gogs/gogs/issues/945)
-- Support filter by group membership for LDAP [#4398](https://github.com/gogs/gogs/pull/4398)
-
-#### Improvements
-
-- Installation checks port for SMTP host [#2243](https://github.com/gogs/gogs/issues/2243)
-- Remain updated time unchanged if no new commits fetched for mirrors [#4341](https://github.com/gogs/gogs/issues/4341)
-- Support IPython notebook as README [#4367](https://github.com/gogs/gogs/issues/4367)
-- Configurable TLS Support [#4450](https://github.com/gogs/gogs/issues/4450)
-
-**Older change logs can be found on [GitHub](https://github.com/gogs/gogs/releases?after=v0.11.19).**
+**Older change logs can be found on [GitHub](https://github.com/gogs/gogs/releases?after=v0.11.29).**
