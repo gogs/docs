@@ -33,6 +33,7 @@ name: Donation
 
 | Donated at       | Donator    | Amount   |
 | ---------------- |:---------:| --------:|
+| 2018-09-20 | Mr. Potapov | $20.00 |
 | 2018-08-28 | Mr. Forceno | $5.00 |
 | 2018-07-12 | Mr. Medved | $10.00 |
 | 2018-07-06 | omlinux.com | $10.00 |
