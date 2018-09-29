@@ -4,6 +4,12 @@ name: Changelog
 
 # Changelog
 
+### Unreleased
+
+#### Bug fixes
+
+- Wrong redirect after updated protect branch setting whose name contains `#` [#5442](https://github.com/gogs/gogs/issues/5442)
+
 ### 0.11.66 @ 2018-09-16
 
 #### Bug fixes
