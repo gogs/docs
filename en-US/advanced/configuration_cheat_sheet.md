@@ -154,6 +154,7 @@ Name|Description
 `ENABLE_REVERSE_PROXY_AUTO_REGISTRATION`|Enable this to allow auto-registration for reverse authentication.
 `DISABLE_MINIMUM_KEY_SIZE_CHECK`|Do not check minimum key size with corresponding type.
 `ENABLE_CAPTCHA`|Enable this to use captcha validation for registration.
+`REQUIRE_SIGNIN_VIEW`|Enable this to deny all content until the user authenticates.
 
 ### Webhook (`webhook`)
 
