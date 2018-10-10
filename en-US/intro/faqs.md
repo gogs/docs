@@ -175,6 +175,7 @@ Gogs has some third-party scripts that support running it as a daemon:
 
 - [init.d/centos](https://github.com/gogs/gogs/blob/master/scripts/init/centos/gogs)
 - [init.d/debian](https://github.com/gogs/gogs/blob/master/scripts/init/debian/gogs)
+- [openrc/gentoo](https://gogs.io/docs/installation/configuration_and_run#running-as-daemon-via-init-(eg.-openrc))
 - Systemd in the following section.
 
 #### How do I run Gogs at startup with Systemd?
