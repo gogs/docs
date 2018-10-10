@@ -58,6 +58,32 @@ $ ./gogs web
 	- Daemons: see [scripts](https://github.com/gogs/gogs/tree/master/scripts) folder
 - Go to `/install` to do your first-time run configuration.
 
+
+### Running as daemon via systemctl 
+
+- Create a file named `gogs.service` in `/etc/systemd/system/` with the following contents, Assuming gogs installed in `/gogs` : 
+```
+[Unit]
+Description = Gogs Daemon
+
+[Service]
+ExecStart = /gogs/gogs web
+Restart=always
+RestartSec=10
+
+
+[Install]
+WantedBy = multi-user.target
+```
+- After that enable the new service with `systemctl enable gogs.service`
+- Start the service using `systemctl start gogs.service`
+
+Note: you can stop / start / restart using the following commands: 
+`systemctl start gogs.service`
+`systemctl restart gogs.service`
+`systemctl stop gogs.service`
+
+
 ### Running as daemon via init (eg. openrc)
 
 - Create a file named `/etc/init.d/gogs` as follows, assuming gogs is installed in the `/home/git` user:
