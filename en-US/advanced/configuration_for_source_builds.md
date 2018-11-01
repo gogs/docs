@@ -7,12 +7,12 @@ name: Detailed Config From Source
 Following the instruction of building [from source](/docs/installation/install_from_source), you should now have a local user `git` and a working setup of `go` and [Gogs](http://gogs.io/).
 We are going to setup Gogs along with **Nginx**. This way, we can take advantage of Nginx. This is useful for servers that already have an Nginx running.
 
-For the rest fo this document, we'll assume the following:
+For the rest of this document, we'll assume the following:
 
 - You want to serve 'Gogs' on `example.com` domain
 - Nginx is your webserver
 - `postgresql` is your database server
-- and you want your git repository URLs look like `git.example.com`
+- You want your git repository URLs to look like `git.example.com`
 
 As mentioned in [Configuration and run](/docs/installation/configuration_and_run), you should create your own configuration file in `$GOPATH/src/github.com/gogs/gogs/custom/conf/app.ini`
 
