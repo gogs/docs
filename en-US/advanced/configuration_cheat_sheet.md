@@ -15,7 +15,7 @@ All **default settings** can be found in [app.ini](https://github.com/gogs/gogs/
 Name|Description
 ----|-----------
 `APP_NAME`|Application name, can be your company or team name.
-`RUN_USER`|The name of the system user that runs Gogs. The best practice is to user `git`; however, change this to whatever your username is if you run Gogs on your personal computer. Gogs may crash if this value is not set properly.
+`RUN_USER`|The name of the system user that runs Gogs. The best practice is to use `git`; however, change this to whatever your username is if you run Gogs on your personal computer. Gogs may crash if this value is not set properly.
 `RUN_MODE`|For performance and other purposes, change this to `prod` when deployed to a production environment. The installation process will set this to `prod` automatically.
 
 ### Server (`server`)
@@ -28,24 +28,24 @@ Name|Description
 `HTTP_ADDR`|HTTP listen address or path to UNIX socket.
 `HTTP_PORT`|HTTP listen port.
 `UNIX_SOCKET_PERMISSION`|Permission for unix socket.
-`LOCAL_ROOT_URL`|Local (DMZ) URL for Gogs workers (such as SSH update) accessing web service. In most cases you do not need to change the default value. Alter it only if your SSH server node is not the same as HTTP node.
+`LOCAL_ROOT_URL`|Local (DMZ) URL for Gogs workers (such as SSH update) accessing web service. In most cases you do not need to change the default value. Alter it only if your SSH server node is not the same as the HTTP node.
 `DISABLE_SSH`|Disables SSH feature when it's not available.
 `START_SSH_SERVER`|Starts built-in SSH server when enabled.
-`SSH_DOMAIN`|Domain name to be exposed in SSH clone URL. The domain name that public network can access to your standalone SSH server.
-`SSH_PORT`|Port number to be exposed in SSH clone URL. The port number that public network can access to your standalone SSH server, usually is the standard SSH port `22`.
-`SSH_LISTEN_HOST`|Network interface builtin SSH server listens on.
-`SSH_LISTEN_PORT`|Port number builtin SSH server listens on.
-`SSH_ROOT_PATH`|Root path of SSH directory, default is `~/.ssh`, but you have to use `/home/git/.ssh`.
-`REWRITE_AUTHORIZED_KEYS_AT_START`|Indicate whether to rewrite `authorized_keys` at start, ignored when use builtin SSH server.|
-`SSH_KEY_TEST_PATH`|Directory to create temporary files when test publick key using ssh-keygen, default is system temporary directory.
-`SSH_KEYGEN_PATH`|Path to ssh-keygen, default is `ssh-keygen` and let shell find out which one to call.
-`MINIMUM_KEY_SIZE_CHECK`|Indicate whether to check minimum key size with corresponding type.
-`OFFLINE_MODE`|Disables use of CDN for static files and Gravatar for profile pictures.
+`SSH_DOMAIN`|Domain name to be exposed in the SSH clone URL. This is the domain name that public networks can access for your standalone SSH server.
+`SSH_PORT`|Port number to be exposed in the SSH clone URL. This is the port number that public networks can access for your standalone SSH server, usually the default SSH port `22`.
+`SSH_LISTEN_HOST`|Network interface which the built-in SSH server listens on.
+`SSH_LISTEN_PORT`|Port number which the built-in SSH server listens on.
+`SSH_ROOT_PATH`|Root path of the SSH directory. The default is `~/.ssh`, but you have to use `/home/git/.ssh`.
+`REWRITE_AUTHORIZED_KEYS_AT_START`|Indicate whether to rewrite `authorized_keys` at startup (ignored when using the built-in SSH server).
+`SSH_KEY_TEST_PATH`|Directory to create temporary files when the test public key is using ssh-keygen. The default is the system temporary directory.
+`SSH_KEYGEN_PATH`|The path to ssh-keygen. The default is `ssh-keygen` which lets the shell find out which to call.
+`MINIMUM_KEY_SIZE_CHECK`|Indicate whether to check minimum key size with its corresponding type.
+`OFFLINE_MODE`|Disables use of a CDN for static files and Gravatar for profile pictures.
 `DISABLE_ROUTER_LOG`|Mutes printing of the router log.
 `CERT_FILE`|Cert file path used for HTTPS.
 `KEY_FILE`|Key file path used for HTTPS.
-`STATIC_ROOT_PATH`|Upper level of template and static files path, default is the path where Gogs is located.
-`APP_DATA_PATH`|Default path for App data.
+`STATIC_ROOT_PATH`|Upper level of the templates and static files path. The default is the path where Gogs is located.
+`APP_DATA_PATH`|Default path for app data.
 `ENABLE_GZIP`|Enables application-level GZIP support.
 `LANDING_PAGE`|Non-logged-in users' landing page, either `home` or `explore`.
 
@@ -54,26 +54,26 @@ Name|Description
 Name|Description
 ----|-----------
 `ROOT`|Root path for storing all users' repository data. It must be an absolute path. The default is `~/<username>/gogs-repositories`.
-`SCRIPT_TYPE`|The script type your server supports, usually this is `bash`, but some customers report that they only have `sh`.
+`SCRIPT_TYPE`|The script type your server supports. Usually this is `bash`, but some customers report that they only have `sh`.
 `ANSI_CHARSET`|The default charset for an unrecognized charset.
 `FORCE_PRIVATE`|Force every new repository to be private.
-`MAX_CREATION_LIMIT`|Global maximum creation limit of repositories per user, `-1` means no limit.
-`PREFERRED_LICENSES`|Preferred Licenses to place at the top of the list.
+`MAX_CREATION_LIMIT`|Global maximum creation limit of repositories per user (`-1` means no limit).
+`PREFERRED_LICENSES`|Preferred licenses to place at the top of the list.
 `DISABLE_HTTP_GIT`|Indicates whether or not to disable Git clone through HTTP/HTTPS. When disabled, users can only perform Git operations via SSH.
-`ENABLE_LOCAL_PATH_MIGRATION`|Indicates whether or not to enable migrate repository by local path. When enabled, user still needs to be a site admin or get permission from site admin in order to use this feature.
-`ENABLE_RAW_FILE_RENDER_MODE`|Indicates whether or not to enable render when view raw file, e.g. render actual HTML page, have potential security issue.
+`ENABLE_LOCAL_PATH_MIGRATION`|Indicates whether or not to enable migrate repository by local path. When enabled, the user must still be a site admin or get permission from one in order to use this feature.
+`ENABLE_RAW_FILE_RENDER_MODE`|Indicates whether or not to enable the renderer when viewing raw files. Note that rendering actual HTML pages could have potential security issues.
 
 #### Repository - Editor (`repository.editor`)
 
 Name|Description
 ----|-----------
-`LINE_WRAP_EXTENSIONS`|List of file extensions that should have line wraps in the CodeMirror editor. Separate extensions with a comma. To line wrap files without extension, just put a comma, e.g. `.txt,`.
+`LINE_WRAP_EXTENSIONS`|List of file extensions that should have line wraps in the CodeMirror editor. Separate extensions with a comma. To line wrap files without an extension, just add a comma, e.g. `.txt,`.
 
 #### Repository - Upload (`repository.upload`)
 
 Name|Description
 ----|-----------
-`ENABLED`|Indicates whether or not to enable repository file upload feature.
+`ENABLED`|Indicates whether or not to enable the repository file upload feature.
 `TEMP_PATH`|Path to temporarily store uploads. Use the default or system temporary path.
 `ALLOWED_TYPES`|File types that are allowed to be uploaded (e.g. "image/jpeg\|image/png"). Leave empty means allow any file type.
 `FILE_MAX_SIZE`|Maximum size of each file in MB.
@@ -83,11 +83,11 @@ Name|Description
 
 Name|Description
 ----|-----------
-`ENABLED`|Indicates whether or not to enable release attachment feature.
+`ENABLED`|Indicates whether or not to enable the release attachment feature.
 `PATH`|Path to store attachments.
-`ALLOWED_TYPES`|Allowed MIME types, e.g. "image/jpeg\|image/png", use `*/*` for all types.
-`MAX_SIZE`|Maximum size in MB, e.g. `32`
-`MAX_FILES`|Maximum number of attachments can be uploaded at once, e.g. `10`.
+`ALLOWED_TYPES`|Allowed MIME types (e.g. `image/jpeg\|image/png`). Use `*/*` for all types.
+`MAX_SIZE`|Maximum size in MB, e.g. `32`.
+`MAX_FILES`|Maximum number of attachments that can be uploaded at once, e.g. `10`.
 
 ### Markdown (`markdown`)
 
@@ -95,19 +95,19 @@ Name|Description
 ----|-----------
 `ENABLE_HARD_LINE_BREAK`|Whether or not to enable the hard line break extension.
 `CUSTOM_URL_SCHEMES`|List of custom URL-Schemes that are allowed as links when rendering Markdown, for example `git` (for `git://`) and `magnet` (for `magnet://`).
-`FILE_EXTENSIONS`|List of file extensions that should be rendered/edited as Markdown. Separate extensions with a comma. To render files without extension as Markdown, just put a comma.
+`FILE_EXTENSIONS`|List of file extensions that should be rendered/edited as Markdown. Separate extensions with a comma. To render files without an extension as Markdown, just add a comma.
 
 ### Smartypants (`smartypants`)
 
 Name|Description
 ----|-----------
-`ENABLED`|Indicates whether or not to enable Smartypants extension.
+`ENABLED`|Indicates whether or not to enable the Smartypants extension.
 
 ### HTTP (`http`)
 
 Name|Description
 ----|-----------
-`ACCESS_CONTROL_ALLOW_ORIGIN`|Value for `Access-Control-Allow-Origin` header, default is not to present.
+`ACCESS_CONTROL_ALLOW_ORIGIN`|Value for the `Access-Control-Allow-Origin` header. The default is not to present.
 
 ### Database (`database`)
 
@@ -119,13 +119,13 @@ Name|Description
 `USER`|Database username.
 `PASSWD`|Database user password.
 `SSL_MODE`|For PostgreSQL only.
-`PATH`|For SQLite3 only, the database file path.
+`PATH`|For SQLite3 only: the database file path.
 
 ### Admin (`admin`)
 
 Name|Description
 ----|-----------
-`DISABLE_REGULAR_ORG_CREATION`|Disable regular (non-admin) users to create organizations.
+`DISABLE_REGULAR_ORG_CREATION`|Disallow regular (non-admin) users from creating organizations.
 
 ### Security (`security`)
 
