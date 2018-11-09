@@ -9,6 +9,7 @@ name: 变更日志
 #### Bug 修复
 
 - 若分支名称包含 `#` 则在更新保护分支设置后重定向到错误的地址 [#5442](https://github.com/gogs/gogs/issues/5442)
+- 过长的工单评论会超出控制面板的宽度 [#5502](https://github.com/gogs/gogs/issues/5502)
 
 #### 其它变更
 

@@ -9,6 +9,7 @@ name: Changelog
 #### Bug fixes
 
 - Wrong redirect after updated protect branch setting whose name contains `#` [#5442](https://github.com/gogs/gogs/issues/5442)
+- Large issue comment exceeds dashboard section [#5502](https://github.com/gogs/gogs/issues/5502)
 
 #### Others
 
