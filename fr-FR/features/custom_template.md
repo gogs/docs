@@ -4,13 +4,13 @@ name: Modèle personnalisé
 
 # Modèle personnalisé
 
-Il est possible d'inclure votre propre contenu header or footer dans Gogs sans toucher au code source original. Ceci est utile pour ajouter du code "analytics" ou pour inclure du contenu statique personnalisé.
+Il est possible d'inclure votre propre contenu header ou footer dans Gogs sans toucher au code source original. Ceci est utile pour ajouter du code "analytics" ou pour inclure du contenu statique personnalisé.
 
 Pour en savoir plus consultez : [inject custom head and footer](https://discuss.gogs.io/t/how-to-inject-custom-head-and-footer/943).
 
 ## Inclure un fichier CSS personnalisé
 
-Voici un example pour inclure un fichier CSS personnalisé dans votre instance Gogs. Les noms et répertoires sont arbitraires, ils peuvent être modifiés à votre guise, l'unique restriction étant qu'ils soient accesible par une requête.
+Voici un exemple pour inclure un fichier CSS personnalisé dans votre instance Gogs. Les noms et répertoires sont arbitraires, ils peuvent être modifiés à votre guise, l'unique restriction étant qu'ils soient accesibles par une requête.
 
 1. Créez un fichier nommé `custom.css` dans le répertoire `public/css`.
 2. Placez des règles CSS dans ce fichier.
