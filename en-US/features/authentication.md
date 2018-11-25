@@ -189,4 +189,4 @@ This option allows Gogs to log in to your SMTP host as a Gogs user. To configure
 
 -  Now log into Gogs as admin and click on “Authentication” under the Admin Panel. Then click *New LDAP Source* and fill in the details, changing all appropriate fields for your own domain as shown below:
 
-![](/images/Freeipa-Gogs.png)
+![](/docs/images/Freeipa-Gogs.png)
