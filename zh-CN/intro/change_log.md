@@ -8,6 +8,7 @@ name: 变更日志
 
 #### Bug 修复
 
+- 修复 API 路由中潜在的 CSRF 漏洞 [#5355](https://github.com/gogs/gogs/issues/5355)
 - 若分支名称包含 `#` 则在更新保护分支设置后重定向到错误的地址 [#5442](https://github.com/gogs/gogs/issues/5442)
 - 新的分支拉取到镜像仓库后，没有触发推送事件的 Web 钩子 [#5473](https://github.com/gogs/gogs/issues/5473)
 - 过长的工单评论会超出控制面板的宽度 [#5502](https://github.com/gogs/gogs/issues/5502)
