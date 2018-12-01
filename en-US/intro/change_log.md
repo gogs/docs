@@ -8,14 +8,20 @@ name: Changelog
 
 #### Bug fixes
 
+- LDAP group verification doesn't work when using 'dn' as user attribute [#4684](https://github.com/gogs/gogs/issues/4684)
+- LDAP group verification fails [#4792](https://github.com/gogs/gogs/issues/4792)
 - Fix critical CSRF vulnerabilities on API routes [#5355](https://github.com/gogs/gogs/issues/5355)
 - Wrong redirect after updated protect branch setting whose name contains `#` [#5442](https://github.com/gogs/gogs/issues/5442)
 - Push event webhook is not triggered when new branch fetched to mirror repository [#5473](https://github.com/gogs/gogs/issues/5473)
 - Large issue comment exceeds dashboard section [#5502](https://github.com/gogs/gogs/issues/5502)
 
+#### Improvements
+
+- Allow prefilling the title and body of new issues using query parameters [#5302](https://github.com/gogs/gogs/issues/5302)
+
 #### Others
 
-- Security fixes
+- Security fixes: [#5469](https://github.com/gogs/gogs/issues/5469)
 
 ### 0.11.66 @ 2018-09-16
 
