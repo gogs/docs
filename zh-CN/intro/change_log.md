@@ -18,6 +18,7 @@ name: 变更日志
 #### 功能改进
 
 - 支持使用 URL 查询参数自动填充新工单的标题和内容 [#5302](https://github.com/gogs/gogs/issues/5302)
+- 允许未登录用户调用仓库信息 API `/repos/:username/:reponame` [#5475](https://github.com/gogs/gogs/issues/5475)
 
 #### 其它变更
 

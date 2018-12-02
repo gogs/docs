@@ -18,6 +18,7 @@ name: Changelog
 #### Improvements
 
 - Allow prefilling the title and body of new issues using query parameters [#5302](https://github.com/gogs/gogs/issues/5302)
+- Allow non logged in users to call repository information API `/repos/:username/:reponame` [#5475](https://github.com/gogs/gogs/issues/5475)
 
 #### Others
 
