@@ -12,17 +12,17 @@ name: 变更日志
 - LDAP 组验证失败 [#4792](https://github.com/gogs/gogs/issues/4792)
 - 修复 API 路由中潜在的 CSRF 漏洞 [#5355](https://github.com/gogs/gogs/issues/5355)
 - 若分支名称包含 `#` 则在更新保护分支设置后重定向到错误的地址 [#5442](https://github.com/gogs/gogs/issues/5442)
+- 清除标签无法生效 [#5445](https://github.com/gogs/gogs/issues/5445)
+- [安全] 远程代码执行 [#5469](https://github.com/gogs/gogs/issues/5469)
 - 新的分支拉取到镜像仓库后，没有触发推送事件的 Web 钩子 [#5473](https://github.com/gogs/gogs/issues/5473)
 - 过长的工单评论会超出控制面板的宽度 [#5502](https://github.com/gogs/gogs/issues/5502)
+- 协作者 API 没有显示对应权限 [#5538](https://github.com/gogs/gogs/issues/5538)
+- [安全] 部分路由需要使用 POST 请求 [#5541](https://github.com/gogs/gogs/issues/5541)
 
 #### 功能改进
 
 - 支持使用 URL 查询参数自动填充新工单的标题和内容 [#5302](https://github.com/gogs/gogs/issues/5302)
 - 允许未登录用户调用仓库信息 API `/repos/:username/:reponame` [#5475](https://github.com/gogs/gogs/issues/5475)
-
-#### 其它变更
-
-- 安全漏洞修复：[#5469](https://github.com/gogs/gogs/issues/5469)
 
 ### 0.11.66 @ 2018-09-16
 

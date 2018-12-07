@@ -12,17 +12,17 @@ name: Changelog
 - LDAP group verification fails [#4792](https://github.com/gogs/gogs/issues/4792)
 - Fix critical CSRF vulnerabilities on API routes [#5355](https://github.com/gogs/gogs/issues/5355)
 - Wrong redirect after updated protect branch setting whose name contains `#` [#5442](https://github.com/gogs/gogs/issues/5442)
+- Clear labels not working [#5445](https://github.com/gogs/gogs/issues/5445)
+- [Security] Remote command execution [#5469](https://github.com/gogs/gogs/issues/5469)
 - Push event webhook is not triggered when new branch fetched to mirror repository [#5473](https://github.com/gogs/gogs/issues/5473)
 - Large issue comment exceeds dashboard section [#5502](https://github.com/gogs/gogs/issues/5502)
+- List collaborator API does not contain permission information [#5538](https://github.com/gogs/gogs/issues/5538)
+- [Security] Some routes need to be POST [#5541](https://github.com/gogs/gogs/issues/5541)
 
 #### Improvements
 
 - Allow prefilling the title and body of new issues using query parameters [#5302](https://github.com/gogs/gogs/issues/5302)
 - Allow non logged in users to call repository information API `/repos/:username/:reponame` [#5475](https://github.com/gogs/gogs/issues/5475)
-
-#### Others
-
-- Security fixes: [#5469](https://github.com/gogs/gogs/issues/5469)
 
 ### 0.11.66 @ 2018-09-16
 
