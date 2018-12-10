@@ -10,6 +10,7 @@ name: Changelog
 
 - LDAP group verification doesn't work when using 'dn' as user attribute [#4684](https://github.com/gogs/gogs/issues/4684)
 - LDAP group verification fails [#4792](https://github.com/gogs/gogs/issues/4792)
+- Emoji's do not work in wiki [#4869](https://github.com/gogs/gogs/issues/4869)
 - Fix critical CSRF vulnerabilities on API routes [#5355](https://github.com/gogs/gogs/issues/5355)
 - Wrong redirect after updated protect branch setting whose name contains `#` [#5442](https://github.com/gogs/gogs/issues/5442)
 - Clear labels not working [#5445](https://github.com/gogs/gogs/issues/5445)
@@ -17,6 +18,7 @@ name: Changelog
 - Push event webhook is not triggered when new branch fetched to mirror repository [#5473](https://github.com/gogs/gogs/issues/5473)
 - Large issue comment exceeds dashboard section [#5502](https://github.com/gogs/gogs/issues/5502)
 - List collaborator API does not contain permission information [#5538](https://github.com/gogs/gogs/issues/5538)
+- [Security] Log out only deletes browser cookies [#5540](https://github.com/gogs/gogs/issues/5540)
 - [Security] Some routes need to be POST [#5541](https://github.com/gogs/gogs/issues/5541)
 
 #### Improvements

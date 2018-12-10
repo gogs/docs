@@ -10,6 +10,7 @@ name: 变更日志
 
 - 在 LDAP 中使用 dn 作为用户查询属性时无效 [#4684](https://github.com/gogs/gogs/issues/4684)
 - LDAP 组验证失败 [#4792](https://github.com/gogs/gogs/issues/4792)
+- Emoji 在 Wiki 中无法显示 [#4869](https://github.com/gogs/gogs/issues/4869)
 - 修复 API 路由中潜在的 CSRF 漏洞 [#5355](https://github.com/gogs/gogs/issues/5355)
 - 若分支名称包含 `#` 则在更新保护分支设置后重定向到错误的地址 [#5442](https://github.com/gogs/gogs/issues/5442)
 - 清除标签无法生效 [#5445](https://github.com/gogs/gogs/issues/5445)
@@ -17,6 +18,7 @@ name: 变更日志
 - 新的分支拉取到镜像仓库后，没有触发推送事件的 Web 钩子 [#5473](https://github.com/gogs/gogs/issues/5473)
 - 过长的工单评论会超出控制面板的宽度 [#5502](https://github.com/gogs/gogs/issues/5502)
 - 协作者 API 没有显示对应权限 [#5538](https://github.com/gogs/gogs/issues/5538)
+- [安全] 登出仅删除客户端 Cookie [#5540](https://github.com/gogs/gogs/issues/5540)
 - [安全] 部分路由需要使用 POST 请求 [#5541](https://github.com/gogs/gogs/issues/5541)
 
 #### 功能改进
