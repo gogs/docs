@@ -24,6 +24,7 @@ name: 变更日志
 #### 功能改进
 
 - 支持使用 URL 查询参数自动填充新工单的标题和内容 [#5302](https://github.com/gogs/gogs/issues/5302)
+- 支持在 Markdown 中使用 Base64 编码的图像 [#5391](https://github.com/gogs/gogs/pull/5391)
 - 允许未登录用户调用仓库信息 API `/repos/:username/:reponame` [#5475](https://github.com/gogs/gogs/issues/5475)
 
 ### 0.11.66 @ 2018-09-16

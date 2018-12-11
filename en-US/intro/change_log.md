@@ -23,7 +23,8 @@ name: Changelog
 
 #### Improvements
 
-- Allow prefilling the title and body of new issues using query parameters [#5302](https://github.com/gogs/gogs/issues/5302)
+- Support prefilling the title and body of new issues using query parameters [#5302](https://github.com/gogs/gogs/issues/5302)
+- Support data URL of base64 encoded images in Markdown [#5391](https://github.com/gogs/gogs/pull/5391)
 - Allow non logged in users to call repository information API `/repos/:username/:reponame` [#5475](https://github.com/gogs/gogs/issues/5475)
 
 ### 0.11.66 @ 2018-09-16
