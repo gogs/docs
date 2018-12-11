@@ -11,6 +11,7 @@ name: Changelog
 - LDAP group verification doesn't work when using 'dn' as user attribute [#4684](https://github.com/gogs/gogs/issues/4684)
 - LDAP group verification fails [#4792](https://github.com/gogs/gogs/issues/4792)
 - Emoji's do not work in wiki [#4869](https://github.com/gogs/gogs/issues/4869)
+- Not able to go get a repository with non-80 port [#5305](https://github.com/gogs/gogs/issues/5305)
 - Fix critical CSRF vulnerabilities on API routes [#5355](https://github.com/gogs/gogs/issues/5355)
 - Wrong redirect after updated protect branch setting whose name contains `#` [#5442](https://github.com/gogs/gogs/issues/5442)
 - Clear labels not working [#5445](https://github.com/gogs/gogs/issues/5445)

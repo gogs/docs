@@ -11,6 +11,7 @@ name: 变更日志
 - 在 LDAP 中使用 dn 作为用户查询属性时无效 [#4684](https://github.com/gogs/gogs/issues/4684)
 - LDAP 组验证失败 [#4792](https://github.com/gogs/gogs/issues/4792)
 - Emoji 在 Wiki 中无法显示 [#4869](https://github.com/gogs/gogs/issues/4869)
+- 使用非 80 端口访问实例时无法使用 `go get` 命令下载 [#5305](https://github.com/gogs/gogs/issues/5305)
 - 修复 API 路由中潜在的 CSRF 漏洞 [#5355](https://github.com/gogs/gogs/issues/5355)
 - 若分支名称包含 `#` 则在更新保护分支设置后重定向到错误的地址 [#5442](https://github.com/gogs/gogs/issues/5442)
 - 清除标签无法生效 [#5445](https://github.com/gogs/gogs/issues/5445)
