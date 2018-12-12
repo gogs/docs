@@ -4,13 +4,14 @@ name: 变更日志
 
 # 变更日志
 
-### 未发布
+### 0.11.79 @ 2018-12-11
 
 #### Bug 修复
 
 - 在 LDAP 中使用 dn 作为用户查询属性时无效 [#4684](https://github.com/gogs/gogs/issues/4684)
 - LDAP 组验证失败 [#4792](https://github.com/gogs/gogs/issues/4792)
 - Emoji 在 Wiki 中无法显示 [#4869](https://github.com/gogs/gogs/issues/4869)
+- 配置中的日志级别不生效 [#5007](https://github.com/gogs/gogs/issues/5007)
 - 使用非 80 端口访问实例时无法使用 `go get` 命令下载 [#5305](https://github.com/gogs/gogs/issues/5305)
 - 修复 API 路由中潜在的 CSRF 漏洞 [#5355](https://github.com/gogs/gogs/issues/5355)
 - 若分支名称包含 `#` 则在更新保护分支设置后重定向到错误的地址 [#5442](https://github.com/gogs/gogs/issues/5442)
@@ -21,6 +22,7 @@ name: 变更日志
 - 协作者 API 没有显示对应权限 [#5538](https://github.com/gogs/gogs/issues/5538)
 - [安全] 登出仅删除客户端 Cookie [#5540](https://github.com/gogs/gogs/issues/5540)
 - [安全] 部分路由需要使用 POST 请求 [#5541](https://github.com/gogs/gogs/issues/5541)
+- [安全] 外部工单系统 URL 格式链接存在 XSS 漏洞 [#5545](https://github.com/gogs/gogs/issues/5545)
 
 #### 功能改进
 
@@ -133,15 +135,4 @@ name: 变更日志
 
 - 添加新语种支持：斯洛伐克语
 
-### 0.11.29 @ 2017-08-15
-
-#### Bug 修复
-
-- 如果仓库曾经为公开的，则变为私有后相关活动信息未被设为私有 [#4414](https://github.com/gogs/gogs/issues/4414)
-- Web 钩子不接受 IPv6 URL [#4428](https://github.com/gogs/gogs/issues/4428)
-- 通过代码提交关闭工单后没有发送邮件提醒 [#4430](https://github.com/gogs/gogs/issues/4430)
-- 探索页面分页不正确 [#4441](https://github.com/gogs/gogs/issues/4441)
-- `/api/v1/repos/search` 返回空值 [#4522](https://github.com/gogs/gogs/issues/4522)
-- 创建合并请求完成后发生错误 [#4572](https://github.com/gogs/gogs/issues/4572)
-
-**更早的变更日志可以在 [GitHub](https://github.com/gogs/gogs/releases?after=v0.11.29) 上找到。**
+**更早的变更日志可以在 [GitHub](https://github.com/gogs/gogs/releases?after=v0.11.33) 上找到。**

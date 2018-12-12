@@ -4,13 +4,14 @@ name: Changelog
 
 # Changelog
 
-### Unreleased
+### 0.11.79 @ 2018-12-11
 
 #### Bug fixes
 
 - LDAP group verification doesn't work when using 'dn' as user attribute [#4684](https://github.com/gogs/gogs/issues/4684)
 - LDAP group verification fails [#4792](https://github.com/gogs/gogs/issues/4792)
 - Emoji's do not work in wiki [#4869](https://github.com/gogs/gogs/issues/4869)
+- Log level not applied from configuration [#5007](https://github.com/gogs/gogs/issues/5007)
 - Not able to go get a repository with non-80 port [#5305](https://github.com/gogs/gogs/issues/5305)
 - Fix critical CSRF vulnerabilities on API routes [#5355](https://github.com/gogs/gogs/issues/5355)
 - Wrong redirect after updated protect branch setting whose name contains `#` [#5442](https://github.com/gogs/gogs/issues/5442)
@@ -21,6 +22,7 @@ name: Changelog
 - List collaborator API does not contain permission information [#5538](https://github.com/gogs/gogs/issues/5538)
 - [Security] Log out only deletes browser cookies [#5540](https://github.com/gogs/gogs/issues/5540)
 - [Security] Some routes need to be POST [#5541](https://github.com/gogs/gogs/issues/5541)
+- [Security] Stored XSS in external issue tracker URL format [#5545](https://github.com/gogs/gogs/issues/5545)
 
 #### Improvements
 
@@ -133,15 +135,4 @@ name: Changelog
 
 - Add new language support: Slovak
 
-### 0.11.29 @ 2017-08-15
-
-#### Bug fixes
-
-- Private repository activity shown in "Public activity" tab, if the repository was once public [#4414](https://github.com/gogs/gogs/issues/4414)
-- Webhooks refuse IPv6 URLs as invalid [#4428](https://github.com/gogs/gogs/issues/4428)
-- No email notification if issue closed by commit [#4430](https://github.com/gogs/gogs/issues/4430)
-- Explore page incorrect paging [#4441](https://github.com/gogs/gogs/issues/4441)
-- `/api/v1/repos/search` returns empty values [#4522](https://github.com/gogs/gogs/issues/4522)
-- Panic after created a pull request [#4572](https://github.com/gogs/gogs/issues/4572)
-
-**Older change logs can be found on [GitHub](https://github.com/gogs/gogs/releases?after=v0.11.29).**
+**Older change logs can be found on [GitHub](https://github.com/gogs/gogs/releases?after=v0.11.33).**
