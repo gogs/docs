@@ -4,6 +4,16 @@ name: 变更日志
 
 # 变更日志
 
+### 未发布
+
+#### Bug 修复
+
+- 使用外部工单系统时出现非预期的工单索引解析错误 [#5551](https://github.com/gogs/gogs/issues/5551)
+
+#### 新增特性
+
+- 支持使用 GitHub（企业版）作为认证源 [#5340](https://github.com/gogs/gogs/pull/5340)
+
 ### 0.11.79 @ 2018-12-11
 
 #### Bug 修复

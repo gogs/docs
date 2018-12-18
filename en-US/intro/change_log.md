@@ -4,6 +4,16 @@ name: Changelog
 
 # Changelog
 
+### Unreleased
+
+#### Bug fixes
+
+- Unexpected issue index parsing error while using external issue tracker [#5551](https://github.com/gogs/gogs/issues/5551)
+
+#### Features
+
+- Support GitHub (Enterprise) authentication source [#5340](https://github.com/gogs/gogs/pull/5340)
+
 ### 0.11.79 @ 2018-12-11
 
 #### Bug fixes
