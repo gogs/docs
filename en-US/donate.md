@@ -33,6 +33,8 @@ name: Donation
 
 | Donated at       | Donator    | Amount   |
 | ---------------- |:---------:| --------:|
+| 2019-01-17 | Mr. Presley | $20.00 |
+| 2019-01-11 | Mr. Wanichthanarak | $10.00 |
 | 2018-09-27 | Mr. Presley | $20.00 |
 | 2018-09-20 | Mr. Potapov | $20.00 |
 | 2018-08-28 | Mr. Forceno | $5.00 |
