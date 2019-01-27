@@ -9,6 +9,7 @@ name: Changelog
 #### Bug fixes
 
 - Unexpected issue index parsing error while using external issue tracker [#5551](https://github.com/gogs/gogs/issues/5551)
+- [Security] Remote Code execution or/and Denial of Service [#5558](https://github.com/gogs/gogs/issues/5558)
 
 #### Features
 

@@ -9,6 +9,7 @@ name: 变更日志
 #### Bug 修复
 
 - 使用外部工单系统时出现非预期的工单索引解析错误 [#5551](https://github.com/gogs/gogs/issues/5551)
+- [安全] 远程代码执行和潜在的拒绝服务攻击 [#5558](https://github.com/gogs/gogs/issues/5558)
 
 #### 新增特性
 
