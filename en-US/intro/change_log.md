@@ -4,16 +4,22 @@ name: Changelog
 
 # Changelog
 
-### Unreleased
+### 0.11.86 @ 2019-01-30
 
 #### Bug fixes
 
+- Layout misalignment in Firefox for Linux [#5299](https://github.com/gogs/gogs/issues/5299)
 - Unexpected issue index parsing error while using external issue tracker [#5551](https://github.com/gogs/gogs/issues/5551)
 - [Security] Remote Code execution or/and Denial of Service [#5558](https://github.com/gogs/gogs/issues/5558)
 
 #### Features
 
 - Support GitHub (Enterprise) authentication source [#5340](https://github.com/gogs/gogs/pull/5340)
+- Add API endpoint to get commit details by SHA [#5546](https://github.com/gogs/gogs/pull/5546)
+
+#### Others
+
+- Add new languages support: Portuguese
 
 ### 0.11.79 @ 2018-12-11
 

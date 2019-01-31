@@ -4,16 +4,22 @@ name: 变更日志
 
 # 变更日志
 
-### 未发布
+### 0.11.86 @ 2019-01-30
 
 #### Bug 修复
 
+- Linux 下 Firefox 显示问题 [#5299](https://github.com/gogs/gogs/issues/5299)
 - 使用外部工单系统时出现非预期的工单索引解析错误 [#5551](https://github.com/gogs/gogs/issues/5551)
 - [安全] 远程代码执行和潜在的拒绝服务攻击 [#5558](https://github.com/gogs/gogs/issues/5558)
 
 #### 新增特性
 
 - 支持使用 GitHub（企业版）作为认证源 [#5340](https://github.com/gogs/gogs/pull/5340)
+- 添加获取提交信息（Commit）详情的 API [#5546](https://github.com/gogs/gogs/pull/5546)
+
+#### 其它变更
+
+- 添加新语种支持：越南语
 
 ### 0.11.79 @ 2018-12-11
 
@@ -92,7 +98,7 @@ name: 变更日志
 
 - 将导入路径从 "gogits/gogs" 修改为 "gogs/gogs"
 - 安全漏洞修复
-- 添加新语种支持：越南语
+- 添加新语种支持：葡萄牙语
 
 ### 0.11.43 @ 2018-03-31
 
