@@ -30,10 +30,10 @@ Download and unzip the new binary:
 
 ```bash
 # Check for the latest release to download based on the OS and ARCH you are running
-$ wget https://dl.gogs.io/$VERSION/$OS_$ARCH.tar.gz
-$ tar -zxvf $OS_$ARCH.tar.gz
+$ wget https://dl.gogs.io/$VERSION/gogs_$VERSION_$OS_$ARCH.tar.gz
+$ tar -zxvf gogs_$VERSION_$OS_$ARCH.tar.gz
 $ ls
-gogs gogs_old  gogs-repositories $OS_$ARCH.tar.gz
+gogs gogs_old  gogs-repositories gogs_$VERSION_$OS_$ARCH.tar.gz
 ```
 
 Copy `custom`, `data`, and `log` directories to the unzipped directory:
