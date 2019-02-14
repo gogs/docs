@@ -4,6 +4,12 @@ name: 变更日志
 
 # 变更日志
 
+### 未发布
+
+#### Bug 修复
+
+- MySQL：无效的连接 [#5532](https://github.com/gogs/gogs/issues/5532)
+
 ### 0.11.86 @ 2019-01-30
 
 #### Bug 修复
