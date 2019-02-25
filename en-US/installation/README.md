@@ -17,6 +17,7 @@ name: Installation
     - **Ignore this if you're only going to use HTTP/HTTPS**
     - For using builtin SSH server on Windows, make sure you added `ssh-keygen` to your `%PATH%` environment variable.
     - For using standalone SSH server, recommend [Cygwin OpenSSH](http://docs.oracle.com/cd/E24628_01/install.121/e22624/preinstall_req_cygwin_ssh.htm) or [Copssh](https://www.itefix.net/copssh) for Windows.
+    - For Windows servers, please make sure Bash is the default shell not PowerShell.
 
 ### Install database
 
