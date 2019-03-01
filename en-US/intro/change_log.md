@@ -10,6 +10,11 @@ name: Changelog
 
 - MySQL: invalid connection [#5532](https://github.com/gogs/gogs/issues/5532)
 
+#### Improvements
+
+- Assignee receives email updates of issue thread [#4220](https://github.com/gogs/gogs/issues/4220)
+- Render Markdown in emails [#4552](https://github.com/gogs/gogs/issues/4552)
+
 ### 0.11.86 @ 2019-01-30
 
 #### Bug fixes

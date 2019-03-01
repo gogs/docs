@@ -10,6 +10,11 @@ name: 变更日志
 
 - MySQL：无效的连接 [#5532](https://github.com/gogs/gogs/issues/5532)
 
+#### 功能改进
+
+- 工单的被指派人能够收到邮件更新 [#4220](https://github.com/gogs/gogs/issues/4220)
+- 在邮件中渲染 Markdown [#4552](https://github.com/gogs/gogs/issues/4552)
+
 ### 0.11.86 @ 2019-01-30
 
 #### Bug 修复
