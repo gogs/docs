@@ -15,8 +15,8 @@ Avec Go, cela peut être fait avec une distribution binaire indépendante à tra
 
 ## Ressources utilisées
 
-- Web Framework : [Macaron](https://github.com/Unknwon/macaron)
-- UI Framework : [Semantic UI](http://semantic-ui.com/) + [GitHub Octicons](https://octicons.github.com/) + [Font Awesome](http://fontawesome.io/)
+- Web Framework : [Macaron](https://github.com/go-macaron/macaron)
+- UI Framework : [Semantic UI](https://semantic-ui.com/) + [GitHub Octicons](https://octicons.github.com/) + [Font Awesome](https://fontawesome.com/)
 - ORM : [Xorm](https://github.com/go-xorm/xorm)
 - Database Driver : [github.com/go-sql-driver/mysql](https://github.com/go-sql-driver/mysql) + [github.com/lib/pq](https://github.com/lib/pq) + [github.com/mattn/go-sqlite3](https://github.com/mattn/go-sqlite3)
 
