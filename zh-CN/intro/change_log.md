@@ -8,7 +8,8 @@ name: 变更日志
 
 #### Bug 修复
 
-- MySQL：无效的连接 [#5532](https://github.com/gogs/gogs/issues/5532)
+- MySQL: 无效的连接 [#5532](https://github.com/gogs/gogs/issues/5532)
+- Docker: 弃用的 OpenSSH 选项提示 [#5647](https://github.com/gogs/gogs/issues/5647)
 
 #### 功能改进
 

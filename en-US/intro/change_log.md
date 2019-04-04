@@ -9,6 +9,7 @@ name: Changelog
 #### Bug fixes
 
 - MySQL: invalid connection [#5532](https://github.com/gogs/gogs/issues/5532)
+- Docker: Deprecation Notice OpenSSH [#5647](https://github.com/gogs/gogs/issues/5647)
 
 #### Improvements
 
