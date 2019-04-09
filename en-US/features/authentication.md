@@ -87,10 +87,8 @@ Both the LDAP via BindDN and the simple auth LDAP share the following fields:
     to authenticate. The `%s` matching parameter will be substituted with login
     name given on the sign-in form.
   - Example: `(&(objectClass=posixAccount)(uid=%s))`
-  - To substitute more than once, `%[1]s` should be used instead, e.g. when
-    matching a supplied login name against multiple attributes such as user
-    identifier, email, or even phone number.
-  - Example: `(&(objectClass=Person)(|(uid=%[1]s)(mail=%[1]s)(mobile=%[1]s)))`
+  - To substitute more than once, e.g. when matching a supplied login name against multiple attributes such as user identifier, email, or even phone number.
+  - Example: `(&(objectClass=Person)(|(uid=%s)(mail=%s)(mobile=%s)))`
 
 **LDAP using simple auth** adds the following fields:
 
