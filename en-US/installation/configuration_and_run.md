@@ -103,3 +103,12 @@ stop() {
     eend $?
 }
 ```
+### Running as daemon via systemd
+Download and edit if the application is not placed in /home/git/gogs
+
+```
+curl -O https://raw.githubusercontent.com/gogs/gogs/master/scripts/systemd/gogs.service 
+sudo mv gogs.service /etc/systemd/system
+sudo systemctl enable gogs.service
+sudo service gogs start && sudo journalctl -f
+```
