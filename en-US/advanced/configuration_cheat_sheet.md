@@ -8,7 +8,7 @@ This is a cheat sheet for the Gogs configuration file. It is helpful for more fu
 
 Before getting started, make sure you know that any change to the configuration should be made in `custom/conf/app.ini` or any corresponding location.
 
-All **default settings** can be found in [app.ini](https://github.com/gogs/gogs/blob/master/conf/app.ini). If you see anything which looks like `%(X)s`, it is a feature powered by [ini](https://github.com/go-ini/ini/#recursive-values) for reading values recursively.
+All **default settings** can be found in [app.ini](https://github.com/gogs/gogs/blob/master/conf/app.ini). If you see anything which looks like `%(X)s`, it is a feature powered by [ini](https://ini.unknwon.io/docs/howto/work_with_values#recursive-values) for reading values recursively.
 
 ### Overall (`DEFAULT`)
 
