@@ -8,7 +8,8 @@ name: From packages
 
 ### Packager.io
 
-- Currently enabled for Ubuntu 12.04 + 14.04 + 16.04, CentOS 6 + 7, and Debian 7 + 8.
+- **Outdated and insecure!**
+- Currently enabled for Ubuntu 12.04 + 14.04 + 16.04, CentOS 6 + 7, and Debian 7 + 8 + 9.
 - Current packages available from [packager.io](https://packager.io/gh/pkgr/gogs) (the custom config for packager.io is sometimes in `/etc/default/gogs`).
 
 ### Arch Linux
