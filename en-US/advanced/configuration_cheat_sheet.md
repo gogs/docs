@@ -159,7 +159,8 @@ Name|Description
 
 Name|Description
 ----|-----------
-`TYPES`|Types are enabled for users to use, can be `gogs`, `slack` or `discord`.
+`TYPES`|Types are enabled for users to use, can be `gogs`, `slack`、`discord` or `dingtalk`.
+`QUEUE_LENGTH`|The length of the Webhook queue, increase if webhook shooting starts hanging
 `DELIVER_TIMEOUT`|Delivery timeout in seconds for shooting webhooks.
 `SKIP_TLS_VERIFY`|Indicate whether to allow insecure certification or not.
 `PAGING_NUM`|Number of webhook history that are shown in one page.

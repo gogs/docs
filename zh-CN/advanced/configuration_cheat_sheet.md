@@ -159,7 +159,8 @@ name: 配置文件手册
 
 名称|描述
 ----|----
-`TYPES`|启动的 Web 钩子类型，可以是 `gogs`、`slack` 或 `discord`
+`TYPES`|启动的 Web 钩子类型，可以是 `gogs`、`slack`、`discord`或`dingtalk`
+`QUEUE_LENGTH`|Web钩子队列长度，如果发现部分Webhook未能成功触发，可考虑增加该值
 `DELIVER_TIMEOUT`|发送通知的超时时间，以秒为单位
 `SKIP_TLS_VERIFY`|指示是否允许向具有非信任证书的地址发送通知
 `PAGING_NUM`|Web 钩子历史页面每页显示记录条数
