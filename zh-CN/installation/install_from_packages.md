@@ -8,8 +8,8 @@ name: 包管理安装
 
 ### Packager.io
 
-- 当前支持 Ubuntu 12.04 + 14.04、CentOS 6 + 7 和 Debian 7 + 8 版本。
-- 可以从 [packager.io](https://packager.io/gh/pkgr/gogs) 获取到相应包管理资源（该工具的自定义配置文件有时会放置在 `/etc/default/gogs`）。
+- 当前支持 Ubuntu 14.04 + 16.04 + 18.04、CentOS 6 + 7 和 Debian 8 + 9 + 10 版本。
+- 可以从 [packager.io](https://packager.io/gh/gogs/gogs) 获取到相应包管理资源（该工具的自定义配置文件有时会放置在 `/etc/default/gogs`）。
 
 ### Arch Linux
 

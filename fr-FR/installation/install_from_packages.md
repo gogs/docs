@@ -17,10 +17,9 @@ Des informations pour l'installation et la configuration sur Arch Linux peuvent 
 
 ### Ubuntu/Debian
 
-- Actuellement disponible pour  Ubuntu 14.04/12.04 et Debian 7.
-- Paquets actuellement disponibles sur [packager.io](https://packager.io/gh/pkgr/gogs).
+- Actuellement disponible pour Ubuntu 14.04/16.04/18.04, Debian 8/9/10, et CentOS 6/7.
+- Paquets actuellement disponibles sur [packager.io](https://packager.io/gh/gogs/gogs).
 - Démo disponible en vidéo [YouTube](http://www.youtube.com/watch?v=xllP7BP_qgs&feature=youtu.be).
-- Construits par [@crohr](https://github.com/crohr)(Cyril Rohr).
 
 ### Synology spk
 
