@@ -6,8 +6,8 @@ name: aus Paketquellen
 
 ### Packager.io
 
-- Aktuell für Ubuntu 12.04 und 14.04, CentOS 6/7 und Debian 7+8.
-- Aktuelle Pakete sind verfügbar von [packager.io](https://packager.io/gh/pkgr/gogs).
+- Aktuell für Ubuntu 14.04, 16.04 und 18.04, CentOS 6/7 und Debian 8/9/10.
+- Aktuelle Pakete sind verfügbar von [packager.io](https://packager.io/gh/gogs/gogs).
 - Hinweis: Die Pakete von Packager.io unterstützen derzeit nicht SQLite3, siehe [https://github.com/gogs/gogs/issues/2457](https://github.com/gogs/gogs/issues/2457).
 
 ### Arch Linux
