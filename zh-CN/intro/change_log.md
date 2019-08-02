@@ -10,6 +10,7 @@ name: 变更日志
 
 - MySQL: 无效的连接 [#5532](https://github.com/gogs/gogs/issues/5532)
 - Docker: 弃用的 OpenSSH 选项提示 [#5647](https://github.com/gogs/gogs/issues/5647)
+- [安全] 无效的 API 权限控制 [#5764](https://github.com/gogs/gogs/issues/5764)
 
 #### 功能改进
 

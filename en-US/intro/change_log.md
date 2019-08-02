@@ -10,6 +10,7 @@ name: Changelog
 
 - MySQL: invalid connection [#5532](https://github.com/gogs/gogs/issues/5532)
 - Docker: Deprecation Notice OpenSSH [#5647](https://github.com/gogs/gogs/issues/5647)
+- [Security] Incorrect API access control [#5764](https://github.com/gogs/gogs/issues/5764)
 
 #### Improvements
 
