@@ -4,18 +4,20 @@ name: 变更日志
 
 # 变更日志
 
-### 未发布
+### 0.11.91 @ 2019-08-11
 
 #### Bug 修复
 
 - MySQL: 无效的连接 [#5532](https://github.com/gogs/gogs/issues/5532)
 - Docker: 弃用的 OpenSSH 选项提示 [#5647](https://github.com/gogs/gogs/issues/5647)
+- 版权年份过时 [#5674](https://github.com/gogs/gogs/issues/5674)
 - [安全] 无效的 API 权限控制 [#5764](https://github.com/gogs/gogs/issues/5764)
 
 #### 功能改进
 
 - 工单的被指派人能够收到邮件更新 [#4220](https://github.com/gogs/gogs/issues/4220)
 - 在邮件中渲染 Markdown [#4552](https://github.com/gogs/gogs/issues/4552)
+- 添加 `rsync` 到 Docker 镜像 [#5773](https://github.com/gogs/gogs/pull/5773)
 
 ### 0.11.86 @ 2019-01-30
 

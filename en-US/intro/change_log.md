@@ -4,18 +4,20 @@ name: Changelog
 
 # Changelog
 
-### Unreleased
+### 0.11.91 @ 2019-08-11
 
 #### Bug fixes
 
 - MySQL: invalid connection [#5532](https://github.com/gogs/gogs/issues/5532)
 - Docker: Deprecation Notice OpenSSH [#5647](https://github.com/gogs/gogs/issues/5647)
+- Copyright is behind the times [#5674](https://github.com/gogs/gogs/issues/5674)
 - [Security] Incorrect API access control [#5764](https://github.com/gogs/gogs/issues/5764)
 
 #### Improvements
 
 - Assignee receives email updates of issue thread [#4220](https://github.com/gogs/gogs/issues/4220)
 - Render Markdown in emails [#4552](https://github.com/gogs/gogs/issues/4552)
+- Add `rsync` to the Docker image [#5773](https://github.com/gogs/gogs/pull/5773)
 
 ### 0.11.86 @ 2019-01-30
 
