@@ -21,7 +21,7 @@ To go further, see [Configuration and run](/docs/installation/configuration_and_
 
 Below are links to downloads for the latest releases.  Older downloads can be found at [releases](https://github.com/gogs/gogs/releases).
 
-Learn about [downloading Gogs via commandline](/docs/en-US/installation/download-commandline.md) (without GUI)
+Learn about [downloading Gogs via commandline](/docs/installation/download-commandline.md) (without GUI)
 
 ### 0.11.91 @ 2019-08-11
 
