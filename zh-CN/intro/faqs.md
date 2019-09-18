@@ -128,7 +128,7 @@ Gogs 拥有一些由第三方提供的脚本来支持以守护进程形式运行
 1. 更新 `User`、`Group`、`WorkingDirectory`、`ExecStart` 和 `Environment` 为相对应的值。其中 `WorkingDirectory` 为您的 Gogs 实际安装路径根目录。
 3. [可选] 如果您 Gogs 安装示例使用 `MySQL/MariaDB`、`PostgreSQL`、`Redis` 或 `memcached`，请去掉相应 `After` 属性的注释。
 
-当您完成修改后，请将文件保存至 `/etc/systemd/system/gogs.service`，然后通过 `sudo systemctl enable gogs` 命令激活，最后执行 `sudo systemctl start gogs`。
+当您完成修改后，请将文件保存至 `/usr/lib/systemd/system/gogs.service`，然后通过 `sudo systemctl enable gogs` 命令激活，最后执行 `sudo systemctl start gogs`。
 
 您可以通过 `sudo systemctl status gogs -l` 或 `sudo journalctl -b -u gogs`  命令检查 Gogs 的运行状态。
 
