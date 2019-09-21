@@ -4,11 +4,11 @@ name: Authentication
 
 # Authentication
 
-Gogs supports authentication by various external sources.  Currently supported are: LDAP, SMTP, PAM, and GitHub.  Sources can be configured in **Admin Panel - Authentication Sources**, or using configuration files in `custom/conf/auth.d`.  
+Gogs supports authentication by various external sources.  Currently supported are: LDAP, SMTP, PAM, and GitHub.  Sources can be configured in **Admin Panel - Authentication Sources**, or (starting from `0.11.45.0412`) using configuration files in `custom/conf/auth.d`.  
 
 ## Using configuration files
 
-Files with the suffix `.conf` under `custom/conf/auth.d` will be recognized as authentication sources.  An example for each of the supported sources can be found [here](https://github.com/gogs/gogs/tree/master/conf/auth.d).
+Since version `0.11.45.0412`, files with the suffix `.conf` under `custom/conf/auth.d` will be recognized as authentication sources.  An example for each of the supported sources can be found [here](https://github.com/gogs/gogs/tree/master/conf/auth.d).
 
 Authentication sources defined via configuration files appear in the **Admin Panel - Authentication Sources** just like sources created via the web interface.
 
@@ -25,14 +25,14 @@ There are two variants for LDAP authentication: with or without a separate Bind 
 The Bind DN mechanism has these advantages:
 
 - It may be more secure than blindy attempting to bind with a possibly non-existent User DN
-- It supports login with e.g. email address or phone number, as the preliminary search could look up the User DN using their `mail` or `mobile` attribute (but see the points in the FreeIPA section at the bottom of this page: features in Gogs may have obsoleted the need for this)
+- It supports login with e.g. email address or phone number.  The preliminary search could look up the User DN using their `mail` or `mobile` attribute (but see the FreeIPA section further down: features in Gogs may have obsoleted the need for this)
 - A Bind DN is required when the LDAP does not allow the User DN to query its own attributes or group memberships
 
 The downside to the Bind DN mechanism is that, unless the LDAP allows anonymous queries, it requires a bind DN to be defined in the LDAP, and Gogs needs to store its credentials.  Gogs currently does not encrypt these.
 
 In the ideal situation, the LDAP allows anonymous queries (at least in the "user container") and the Bind DN mechanism can be used without a Bind DN and password.  The options available to you depend on how the LDAP in your organisation has been configured.
 
-**Shared configuration fields** between Bind DN and Simple Auth authentication
+**Shared configuration fields** between _Bind DN_ and _Simple Auth_ authentication
 
 - Authentication Name **(required)**
   - A friendly name to assign to the new authentication source
@@ -42,7 +42,7 @@ In the ideal situation, the LDAP allows anonymous queries (at least in the "user
 
 - Host **(required)**
   - The address where the LDAP server can be reached.
-  - Example: `mydomain.com`
+  - Example: `ldap.mydomain.com`
 
 - Port **(required)**
   - The port to use when connecting to the server.
@@ -50,7 +50,7 @@ In the ideal situation, the LDAP allows anonymous queries (at least in the "user
 
 - User Filter **(required)**
   - An LDAP filter declaring which users should be allowed to log in.  Used as the
-    initial search query in the Bind DN authenticator, applied "on top of" the
+    initial search query in the Bind DN authenticator.  Applied "on top of" the
     authenticated user context in Simple Authentication. The `%s` matching parameter
     will be substituted with the login name given on the sign-in form.
     - Example: `(&(objectClass=posixAccount)(uid=%s))`
@@ -158,6 +158,7 @@ This option allows Gogs to log in to your SMTP host as a Gogs user. To configure
 - Port **(required)**
   - The port to use when connecting to the server.
   - Example: `587`
+
 - Allowed Domains
   - Restrict what domains can log in if you're using a public SMTP host or an SMTP host with multiple domains.
   - Example: `gogs.io,mydomain.com,mydomain2.com`
@@ -168,7 +169,7 @@ This option allows Gogs to log in to your SMTP host as a Gogs user. To configure
 - Skip TLS Verify
   - Disable TLS verify on authentication.
   
-- This authentication is activate
+- This authentication is activated
   - Enable or disable this auth method.
 
 ### FreeIPA
@@ -205,7 +206,7 @@ email addresses to unauthenticated LDAP clients) for a bind user account.
 logins to the corresponding user ID\* before it makes the authentication call to the
 backend LDAP.
 
-All that is required is that the user's _first login_ is with their user ID.
+All that is required is that the user's _first login_ is with their user ID,
 After that they can use user ID and email address.
 
 ---
