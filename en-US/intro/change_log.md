@@ -4,6 +4,12 @@ name: Changelog
 
 # Changelog
 
+### Unreleased
+
+#### Features
+
+- Allow admin to remove observers from the repository [#5803](https://github.com/gogs/gogs/pull/5803)
+
 ### 0.11.91 @ 2019-08-11
 
 #### Bug fixes
