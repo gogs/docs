@@ -6,6 +6,10 @@ name: Changelog
 
 ### Unreleased
 
+#### Bug fixes
+
+- Disallow multiple tokens with same name [#5587](https://github.com/gogs/gogs/issues/5587) [#5820](https://github.com/gogs/gogs/pull/5820)
+
 #### Features
 
 - Allow admin to remove observers from the repository [#5803](https://github.com/gogs/gogs/pull/5803)

@@ -6,6 +6,10 @@ name: 变更日志
 
 ### 未发布
 
+#### Bug 修复
+
+- 禁止个人令牌使用相同的名称 [#5587](https://github.com/gogs/gogs/issues/5587) [#5820](https://github.com/gogs/gogs/pull/5820)
+
 #### 新增特性
 
 - 允许管理员将用户从仓库的关注列表中移除 [#5803](https://github.com/gogs/gogs/pull/5803)
