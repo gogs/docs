@@ -27,19 +27,6 @@ cd gogs
 go build -o gogs
 ```
 
-### 构建 `develop` 分支版本
-
-如果您想要安装 `develop`（或其它）分支版本，则可以通过以下命令：
-
-```sh
-# 克隆仓库的 "develop" 分支到 "gogs" 子目录
-git clone --depth 1 -b develop https://github.com/gogs/gogs.git gogs
-# 修改工作目录
-cd gogs
-# 编译主程序，这个步骤会下载所有依赖
-go build -o gogs
-```
-
 ## 测试安装
 
 您可以通过以下方式检查 Gogs 是否可以正常工作：

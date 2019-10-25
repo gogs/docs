@@ -27,19 +27,6 @@ cd gogs
 go build -o gogs
 ```
 
-### Compile from `develop` branch
-
-In case you want to try `develop` (or any other) branch:
-
-```sh
-# Clone the "develop" branch of repository to the "gogs" subdirectory
-git clone --depth 1 -b develop https://github.com/gogs/gogs.git gogs
-# Change working directory
-cd gogs
-# Compile the main program, dependencies will be downloaded at this step
-go build -o gogs
-```
-
 ## Test Installation
 
 To make sure Gogs is working:
