@@ -6,13 +6,18 @@ name: 变更日志
 
 ### 未发布
 
+#### 新增特性
+
+- 允许管理员将用户从仓库的关注列表中移除 [#5803](https://github.com/gogs/gogs/pull/5803)
+- 下载仓库原始内容时设置 `Last-Modified` HTTP 头信息 [#5811](https://github.com/gogs/gogs/issues/5811)
+
+#### 功能修改
+
 #### Bug 修复
 
 - 禁止个人令牌使用相同的名称 [#5587](https://github.com/gogs/gogs/issues/5587) [#5820](https://github.com/gogs/gogs/pull/5820)
 
-#### 新增特性
-
-- 允许管理员将用户从仓库的关注列表中移除 [#5803](https://github.com/gogs/gogs/pull/5803)
+#### 其它变更
 
 ### 0.11.91 @ 2019-08-11
 

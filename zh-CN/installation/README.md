@@ -11,7 +11,7 @@ name: 下载安装
     - [TiDB](https://github.com/pingcap/tidb)（实验性支持，使用 MySQL 协议连接）
     - 或者 **什么都不安装** 直接使用 SQLite3
 - [git](http://git-scm.com/)（bash）：
-    - 服务端和客户端均需版本 >= 1.7.1
+    - 服务端和客户端均需版本 >= 1.8.3
     - Windows 系统建议使用最新版
 - SSH 服务器：
     - **如果您只使用 HTTP/HTTPS 的话请忽略此项**
