@@ -6,9 +6,9 @@ name: Introduction
 
 Gogs is a painless self-hosted Git service.
 
-## Purpose
+## Vision
 
-The goal of this project is to make the easiest, fastest, and most painless way of setting up a self-hosted Git service. With Go, this can be done with an independent binary distribution across **ALL platforms** that Go supports, including Linux, Mac OS X, Windows and ARM.
+This project aims to build a simple, stable and extensible self-hosted Git service that can be setup in the most painless way. With Go, this can be done with an independent binary distribution across ALL platforms that Go supports, including Linux, macOS, Windows and ARM.
 
 ## Open Source Components
 
