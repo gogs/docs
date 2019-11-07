@@ -10,6 +10,7 @@ name: Changelog
 
 - Allow admin to remove observers from the repository [#5803](https://github.com/gogs/gogs/pull/5803)
 - Use `Last-Modified` HTTP header for raw files [#5811](https://github.com/gogs/gogs/issues/5811)
+- Support syntax highlighting for SAS code files (`.r`, `.sas`, `.tex`, `.yaml`) [#5856](https://github.com/gogs/gogs/pull/5856)
 
 #### Changed
 

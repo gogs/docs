@@ -10,6 +10,7 @@ name: 变更日志
 
 - 允许管理员将用户从仓库的关注列表中移除 [#5803](https://github.com/gogs/gogs/pull/5803)
 - 下载仓库原始内容时设置 `Last-Modified` HTTP 头信息 [#5811](https://github.com/gogs/gogs/issues/5811)
+- 支持 SAS 代码文件的语法高亮（`.r`、`.sas`、`.tex`、`.yaml`）[#5856](https://github.com/gogs/gogs/pull/5856)
 
 #### 功能修改
 
