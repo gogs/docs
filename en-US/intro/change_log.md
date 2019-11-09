@@ -17,6 +17,7 @@ name: Changelog
 #### Fixed
 
 - Disallow multiple tokens with same name [#5587](https://github.com/gogs/gogs/issues/5587) [#5820](https://github.com/gogs/gogs/pull/5820)
+- Enable Federated Avatar Lookup could cause server to crash [#5848](https://github.com/gogs/gogs/issues/5848)
 
 #### Others
 
