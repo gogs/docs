@@ -19,6 +19,7 @@ name: 变更日志
 - [安全] 镜像仓库存在潜在的远程代码执行的威胁 [#5767](https://github.com/gogs/gogs/issues/5767)
 - 禁止个人令牌使用相同的名称 [#5587](https://github.com/gogs/gogs/issues/5587) [#5820](https://github.com/gogs/gogs/pull/5820)
 - 使用联合头像查找（Federated Avatar Lookup）功能时可能会导致程序崩溃 [#5848](https://github.com/gogs/gogs/issues/5848)
+- 组织页面列表无法显示私有仓库 [#5869](https://github.com/gogs/gogs/issues/5869)
 
 #### 其它变更
 
