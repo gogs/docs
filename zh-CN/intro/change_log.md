@@ -20,6 +20,7 @@ name: 变更日志
 - 禁止个人令牌使用相同的名称 [#5587](https://github.com/gogs/gogs/issues/5587) [#5820](https://github.com/gogs/gogs/pull/5820)
 - 使用联合头像查找（Federated Avatar Lookup）功能时可能会导致程序崩溃 [#5848](https://github.com/gogs/gogs/issues/5848)
 - 组织页面列表无法显示私有仓库 [#5869](https://github.com/gogs/gogs/issues/5869)
+- 在用户设置页面修改邮箱时出现服务端错误 [#5899](https://github.com/gogs/gogs/issues/5899)
 
 #### 其它变更
 
