@@ -20,6 +20,7 @@ name: Changelog
 - Disallow multiple tokens with same name [#5587](https://github.com/gogs/gogs/issues/5587) [#5820](https://github.com/gogs/gogs/pull/5820)
 - Enable Federated Avatar Lookup could cause server to crash [#5848](https://github.com/gogs/gogs/issues/5848)
 - Private repositories are hidden in the organization's view [#5869](https://github.com/gogs/gogs/issues/5869)
+- Server error when changing email address in user settings page [#5899](https://github.com/gogs/gogs/issues/5899)
 
 #### Others
 
