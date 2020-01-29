@@ -154,7 +154,7 @@ Hinweis: Gogs unterstützt nur SMTP mit STARTTLS.
 
 ## Cron (`cron`)
 
-- `ENABLED`: Aktivieren, um Cron Tasks peridioschen auszuführen.
+- `ENABLED`: Aktivieren, um Cron Tasks periodisch auszuführen.
 - `RUN_AT_START`: Aktivieren, um Cron Tasks beim Start auszuführen.
 
 ### Cron - Update Mirrors (`cron.update_mirrors`)
