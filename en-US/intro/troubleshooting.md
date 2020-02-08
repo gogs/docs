@@ -91,6 +91,8 @@ After that, go to [http://localhost:3000/install](http://localhost:3000/install)
 
 ## Mailer
 
+#### Gmail issues
+
 - Error: Gmail with Error 534: `Please log in via your web browser and then try again`
 - Causes: this is because Google does not trust your server
 - Solution:
@@ -98,6 +100,12 @@ After that, go to [http://localhost:3000/install](http://localhost:3000/install)
 	- Go to https://accounts.google.com/DisplayUnlockCaptcha click `continue`.
 	- Now copy the link looks like this(prompt in Gogs server log): https://accounts.google.com/ContinueSignIn?sarp=1&scc=1&plt=AKgnsbvPPN_E_25__nyS*******f18O9uuLNtz0Imw and log in again.
 	- Things should work now. Last but not the least, check your `spam` box in case your mail service provider thinks your gmail is a spammer.
+
+#### Authentication failed
+
+- Error: `gomail: could not send email 1: Auth: 535`
+- Causes: the password contains special characters
+- Solution: put the password into single quotes: `PASSWD = 'P4§$w0rd'`
 
 ## Windows
 
