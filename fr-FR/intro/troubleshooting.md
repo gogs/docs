@@ -76,6 +76,13 @@ Après cela, allez à [http://localhost:3000/install](http://localhost:3000/inst
 	- maintenant copier le lien qui ressemble à ceci (l'invite du journal du serveur Gogs) : https://accounts.google.com/ContinueSignIn?sarp=1&scc=1&plt=AKgnsbvPPN_E_25__nyS*******f18O9uuLNtz0Imw et connectez-vous à nouveau.
 	- les choses devraient maintenant fonctionner. Enfin, vérifiez votre boîte `spam` dans le cas où votre fournisseur de service de messagerie penserait que gmail est un spammeur.
 
+-----
+
+- Erreur : `gomail: could not send email 1: Auth: 535`
+- Causes : le mot de passe contient des caractères spéciaux
+- Solution : mettez le mot de passe entre guillemets simples: `PASSWD = 'P4§$w0rd'`
+
+
 ## Windows
 
 - Erreur :
