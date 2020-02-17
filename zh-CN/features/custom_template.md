@@ -13,7 +13,7 @@ name: 自定义模板
 1. 复制模板文件 `templates/home.tmpl` 的内容
 2. 将修改保存到文件 `custom/templates/home.tmpl`
 
-⚠ 所有针对自定义模板的修改都**需要重启 Gogs 实例**
+:warning: 所有针对自定义模板的修改都**需要重启 Gogs 实例**
 
 ## 重载静态文件
 
@@ -21,7 +21,7 @@ name: 自定义模板
 
 例如，可以通过保存自定义图标到 `custom/public/img/favicon.png` 实现站点图标的重载。
 
-⚠ 所有针对自定义静态文件的修改都**不需要重启 Gogs 实例**
+:warning: 所有针对自定义静态文件的修改都**不需要重启 Gogs 实例**
 
 ## 注入自定义内容到模板中
 

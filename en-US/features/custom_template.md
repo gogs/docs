@@ -13,7 +13,7 @@ An example is to customize the look and contents of the home page:
 1. Copy the content of template file `templates/home.tmpl`.
 2. Save edited file as `custom/templates/home.tmpl`.
 
-⚠ Edits to the custom HTML templates **require restarting Gogs**.
+:warning: Edits to the custom HTML templates **require restarting Gogs**.
 
 ## Override static files
 
@@ -21,7 +21,7 @@ You can override static files (CSS, JavaScript, images, etc.) by creating a cust
 
 For example, you can override the site favicon by putting your version of favicon to `custom/public/img/favicon.png`.
 
-⚠ Edits to the custom static files **DO NOT require restarting Gogs**.
+:warning: Edits to the custom static files **DO NOT require restarting Gogs**.
 
 ## Inject content into existing templates
 
