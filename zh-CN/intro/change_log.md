@@ -12,8 +12,11 @@ name: 变更日志
 - 下载仓库原始内容时设置 `Last-Modified` HTTP 头信息 [#5811](https://github.com/gogs/gogs/issues/5811)
 - 支持 SAS 代码文件的语法高亮（`.r`、`.sas`、`.tex`、`.yaml`）[#5856](https://github.com/gogs/gogs/pull/5856)
 - 允许通过模板文件自动填充合并请求的标题 [#5901](https://github.com/gogs/gogs/pull/5901)
+- 支持重载 `public/` 目录下的静态文件，请查阅[文档](https://gogs.io/docs/features/custom_template)查看具体用法 [#5920](https://github.com/gogs/gogs/pull/5920)
 
 #### 功能修改
+
+- 所有外部文件均嵌入到二进制中并默认从内存中读取，可以通过设置 `[server] LOAD_ASSETS_FROM_DISK = true` 修改为从本地文件系统读取 [#5920](https://github.com/gogs/gogs/pull/5920)
 
 #### Bug 修复
 
