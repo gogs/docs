@@ -15,6 +15,8 @@ name: 自定义模板
 
 :warning: 所有针对自定义模板的修改都**需要重启 Gogs 实例**
 
+:warning: 当用户配置 `[server] LOAD_ASSETS_FROM_DISK = true` 时，邮件模板无法被重载
+
 ## 重载静态文件
 
 用户可以通过在 `custom/public/` 目录下创建一个自定义版本的副本实现静态文件重载（CSS、JavaScript、图片等等），该文件不会因为版本升级而受到影响，但可以会因为改动过大导致与后续版本不兼容。

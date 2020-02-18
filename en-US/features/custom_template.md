@@ -15,6 +15,8 @@ An example is to customize the look and contents of the home page:
 
 :warning: Edits to the custom HTML templates **require restarting Gogs**.
 
+:warning: Override for email templates is disabled when `[server] LOAD_ASSETS_FROM_DISK = true`
+
 ## Override static files
 
 You can override static files (CSS, JavaScript, images, etc.) by creating a customized version under `custom/public/` directory. Your version of static files will survive code updates, but you may want to keep tabs on them in case functionality changes. Be careful when overriding static files as you may break things in future releases.
