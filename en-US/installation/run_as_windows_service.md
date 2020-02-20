@@ -8,8 +8,8 @@ name: Run As Windows Service
 
 To run Gogs as a service, you will need one of:
 
-1. Use `miniwinsvc` build tags to have builtin Windows service support.
-2. Do not use `miniwinsvc` build tags and use [NSSM](http://nssm.cc/).
+1. Use `minwinsvc` build tags to have builtin Windows service support.
+2. Do not use `minwinsvc` build tags and use [NSSM](http://nssm.cc/).
 
 First of all, you may choose to lock down file and directory permissions. Just keep in mind the paths to which Gogs requires write access, which includes the Gogs repository `ROOT`.
 

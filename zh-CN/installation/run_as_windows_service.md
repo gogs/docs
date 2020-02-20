@@ -8,8 +8,8 @@ name: 注册 Windows 服务
 
 想要使 Gogs 通过 Windows 服务的方式运行，必须满足以下两个条件：
 
-1. 使用 `miniwinsvc` 构建标签获得内置 Windows 服务支持。
-2. 不使用 `miniwinsvc` 构建标签并通过 [NSSM](http://nssm.cc/) 注册为服务。
+1. 使用 `minwinsvc` 构建标签获得内置 Windows 服务支持。
+2. 不使用 `minwinsvc` 构建标签并通过 [NSSM](http://nssm.cc/) 注册为服务。
 
 在注册成为服务之前，需要确保给予 Gogs 二进制相应目录的读写权限，包括存放仓库的根目录（`[repository] ROOT`）。
 
