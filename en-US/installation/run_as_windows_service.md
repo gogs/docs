@@ -30,7 +30,7 @@ PROTOCOL = http
 HTTP_ADDR = 127.0.1.1
 HTTP_PORT = 80
 OFFLINE_MODE = true
-ROOT_URL = http://gogs/
+EXTERNAL_URL = http://gogs/
 ```
 
 Moves Gogs' listen port to 80 on the local interface subnet, and tells the Gogs HTTPd that its virtual host is the "gogs" domain.
@@ -74,7 +74,8 @@ The gogs service was started successfully.
 
 Windows services usualy run with under ``%WINDIR%\System32``, and to ensure correct function, specify absolute paths for server data, database files, and other paths in ``app.ini``. For example:
 
-Add ``APP_DATA_PATH`` to ``[server]`` where Gogs stores server data and cache:
+Update where Gogs stores server data and cache:
+
 ```
 [server]
 APP_DATA_PATH = c:/gogs/data
@@ -108,7 +109,7 @@ Application tab:
 
 Details tab:
 
-- Display name: `Go Gits Service`
+- Display name: `Gogs`
 - Description: `Gogs is a painless self-hosted Git service.`
 - Startup type: `Automatic (Delayed Start)`
 

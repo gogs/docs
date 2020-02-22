@@ -28,7 +28,7 @@ PROTOCOL = http
 HTTP_ADDR = 127.0.1.1
 HTTP_PORT = 80
 OFFLINE_MODE = true
-ROOT_URL = http://gogs/
+EXTERNAL_URL = http://gogs/
 ```
 
 Moves Gogs' listen port to 80 on the local interface subnet, and tells the Gogs HTTPd that its virtual host is the "gogs" domain.
