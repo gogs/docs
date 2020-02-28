@@ -8,7 +8,7 @@ name: aus Quelldateien
 
 ### Allgemein
 
-- [Go Programming Language](http://golang.org): Version >= 1.8
+- [Go Programming Language](http://golang.org): Version >= 1.13
 
 Wir erstellen einen neuen Benutzer mit dem Namen `git` und installieren alles unter diesem Benutzer:
 
