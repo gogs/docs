@@ -46,7 +46,7 @@ Available build tags are:
 - `sqlite`: SQLite3 database support
 - `pam`: PAM authentication support
 - `cert`: Generate self-signed certificates support
-- `miniwinsvc`: Builtin windows service support (or you can use NSSM to create a service)
+- `minwinsvc`: Builtin windows service support (or you can use NSSM to create a service)
 
 ```sh
 go build -tags "sqlite pam cert" -o gogs

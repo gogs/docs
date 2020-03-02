@@ -112,7 +112,7 @@ Verfügbare Build-Tags sind:
 - `sqlite`/`tidb`: SQLite3/TiDB-Datenbank-Unterstützung
 - `pam`: PAM-Authentifizierungs-Support
 - `cert`: Unterstützung für selbst-signierte Zertifikate
-- `miniwinsvc`: Eingebauter Windows Service Support (alternativ NSSM nutzen um den Service zu erstellen)
+- `minwinsvc`: Eingebauter Windows Service Support (alternativ NSSM nutzen um den Service zu erstellen)
 
 **Hinweis** Solltest du TiDB verwenden wollen, folge bitte dieser [Anleitung](https://github.com/pingcap/tidb/blob/master/docs/QUICKSTART.md#pre-requirement)
 

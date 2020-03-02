@@ -95,7 +95,7 @@ Liste des tags disponibles :
 - `sqlite3`: Support de la base de données SQLite3
 - `pam`: Support de l'authentification PAM
 - `cert`: Support de la génération des certificats auto-signés
-- `miniwinsvc`: Support des services pour Windows (Vous pouvez aussi utiliser NSSM pour créer un service)
+- `minwinsvc`: Support des services pour Windows (Vous pouvez aussi utiliser NSSM pour créer un service)
 
 Par exemple, si vous voulez activer tous les tags de la liste, vous devez commencer par supprimer le repertoire `$GOPATH/pkg/${GOOS}_${GOARCH}/github.com/gogs/gogs` et exécuter les commandes suivantes :
 
