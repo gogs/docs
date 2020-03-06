@@ -7,7 +7,6 @@ name: Installation
 - Base de données (choisissez en une dans cette liste) :
     - [MySQL](http://dev.mysql.com) : Version >= 5.7
     - [PostgreSQL](http://www.postgresql.org/)
-    - [MSSQL](https://fr.wikipedia.org/wiki/Microsoft_SQL_Server)
     - [TiDB](https://github.com/pingcap/tidb) (expérimental, utilisez le protocole MySQL pour vous connecter)
     - ou **RIEN** avec SQLite3
 - [Git](http://git-scm.com/) (bash) :

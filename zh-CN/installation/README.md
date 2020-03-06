@@ -7,7 +7,6 @@ name: 下载安装
 - 数据库（选择以下一项）：
     - [MySQL](http://dev.mysql.com)：版本 >= 5.7
     - [PostgreSQL](http://www.postgresql.org/)
-    - [MSSQL](https://en.wikipedia.org/wiki/Microsoft_SQL_Server)
     - [TiDB](https://github.com/pingcap/tidb)（实验性支持，使用 MySQL 协议连接）
     - 或者 **什么都不安装** 直接使用 SQLite3
 - [git](http://git-scm.com/)（bash）：
