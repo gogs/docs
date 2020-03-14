@@ -56,6 +56,7 @@ X-Gogs-Signature: 1921679ed6274399b6514721056337f6913b6ff1cb35a24d340e983745d637
     "description": "",
     "private": false,
     "fork": false,
+    "url": "http://localhost:3000/unknwon/webhooks",
     "html_url": "http://localhost:3000/unknwon/webhooks",
     "ssh_url": "ssh://unknwon@localhost:2222/unknwon/webhooks.git",
     "clone_url": "http://localhost:3000/unknwon/webhooks.git",
