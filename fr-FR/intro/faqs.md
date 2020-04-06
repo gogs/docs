@@ -45,7 +45,7 @@ server {
 }
 ```
 
-Ensuite, configurez `[server] ROOT_URL = http://git.crystalnetwork.us/gogs/`.
+Ensuite, configurez `[server] EXTERNAL_URL = http://git.crystalnetwork.us/gogs/`.
 
 ##### Pourquoi y-t-il des erreurs lorsque j'upload de gros fichiers ?
 
@@ -62,7 +62,7 @@ Ne pas oublier d'activer les modules : proxy et proxy_http.
 `custom/conf/app.ini`:
 ```
 [server]
-ROOT_URL = http://git.domain.tld/
+EXTERNAL_URL = http://git.domain.tld/
 ...
 ```
 `/etc/apache2/vhost.d/<yourconfig>.conf`:
@@ -83,7 +83,7 @@ Essayez de suivre le modèle de configuration :
 `custom/conf/app.ini`:
 ```
 [server]
-ROOT_URL = http://domain.tld/git
+EXTERNAL_URL = http://domain.tld/git
 ```
 `etc/apache2/vhost.d/<yourconfig>.conf`:
 ```
@@ -149,7 +149,7 @@ Modifier les options de configuration suivantes dans le fichier `custom/conf/app
 ```
 [server]
 PROTOCOL = https
-ROOT_URL = https://try.gogs.io/
+EXTERNAL_URL = https://try.gogs.io/
 CERT_FILE = custom/https/unified.cert
 KEY_FILE = custom/https/decryped-private.key
 ```
