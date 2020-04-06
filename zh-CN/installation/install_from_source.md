@@ -6,7 +6,7 @@ name: 源码安装
 
 ## 安装 Go 语言
 
-Gogs 要求至少使用 Go 1.13 或更高的版本进行编译，具体安装步骤请参考 [官方文档](https://golang.org/doc/install)。
+Gogs 要求至少使用 Go 1.14 或更高的版本进行编译，具体安装步骤请参考 [官方文档](https://golang.org/doc/install)。
 
 ## 设置环境
 

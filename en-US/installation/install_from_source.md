@@ -6,7 +6,7 @@ name: From source
 
 ## Installing Go
 
-Gogs requires Go 1.13 to compile, please refer to the [official documentation](https://golang.org/doc/install) for how to install Go in your system.
+Gogs requires Go 1.14 to compile, please refer to the [official documentation](https://golang.org/doc/install) for how to install Go in your system.
 
 ## Set Up the Environment
 
