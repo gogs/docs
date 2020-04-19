@@ -43,13 +43,12 @@ A couple of things do not come with Gogs automatically, you need to compile Gogs
 
 Available build tags are:
 
-- `sqlite`: SQLite3 database support
 - `pam`: PAM authentication support
 - `cert`: Generate self-signed certificates support
 - `minwinsvc`: Builtin windows service support (or you can use NSSM to create a service)
 
 ```sh
-go build -tags "sqlite pam cert" -o gogs
+go build -tags "pam cert" -o gogs
 ```
 
 If you get error: `fatal error: security/pam_appl.h: No such file or directory`, then install missing package via `sudo apt-get install libpam0g-dev`.

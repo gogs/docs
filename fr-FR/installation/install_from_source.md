@@ -92,7 +92,6 @@ Gogs ne fournit pas par défaut certains supports, vous devez compiler Gogs avec
 
 Liste des tags disponibles :
 
-- `sqlite3`: Support de la base de données SQLite3
 - `pam`: Support de l'authentification PAM
 - `cert`: Support de la génération des certificats auto-signés
 - `minwinsvc`: Support des services pour Windows (Vous pouvez aussi utiliser NSSM pour créer un service)
@@ -100,9 +99,9 @@ Liste des tags disponibles :
 Par exemple, si vous voulez activer tous les tags de la liste, vous devez commencer par supprimer le repertoire `$GOPATH/pkg/${GOOS}_${GOARCH}/github.com/gogs/gogs` et exécuter les commandes suivantes :
 
 ```sh
-$ go get -u -tags "sqlite pam cert" github.com/gogs/gogs
+$ go get -u -tags "pam cert" github.com/gogs/gogs
 $ cd $GOPATH/src/github.com/gogs/gogs
-$ go build -tags "sqlite pam cert"
+$ go build -tags "pam cert"
 ```
 
 Si vous avez l'erreur: `fatal error: security/pam_appl.h: No such file or directory`, installez les paquets en exécutant cette commande : `sudo apt-get install libpam0g-dev`.

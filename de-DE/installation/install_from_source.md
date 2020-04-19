@@ -67,16 +67,6 @@ $ cd $GOPATH/src/github.com/gogs/gogs
 $ go build
 ```
 
-Wenn du gopm installiert hast, kannst du Gogs auch wie folgt installieren:
-
-```sh
-# gopm auf Updates überprüfen
-$ gopm update -v
-
-# Herunterladen und erstellen der Binärdatei
-$ gopm bin -u -v gogs -d path/to/anywhere
-```
-
 ### Build aus dem `develop`-Branch
 
 Falls du den `develop`-branch ausprobieren möchtest:
@@ -109,19 +99,16 @@ Einige Dinge sind nicht automatisch bei Gogs mit dabei, du musst Gogs mit den en
 
 Verfügbare Build-Tags sind:
 
-- `sqlite`/`tidb`: SQLite3/TiDB-Datenbank-Unterstützung
 - `pam`: PAM-Authentifizierungs-Support
 - `cert`: Unterstützung für selbst-signierte Zertifikate
 - `minwinsvc`: Eingebauter Windows Service Support (alternativ NSSM nutzen um den Service zu erstellen)
 
-**Hinweis** Solltest du TiDB verwenden wollen, folge bitte dieser [Anleitung](https://github.com/pingcap/tidb/blob/master/docs/QUICKSTART.md#pre-requirement)
-
 Beispiel: Wenn du alles mit dabei haben willst, lösche zuerst den Ordner `$GOPATH/pkg/${GOOS}_$GOARCH}/github.com/gogs/gogs` und führe dann folgende Befehle aus:
 
 ```sh
-$ go get -u -tags "sqlite tidb pam cert" github.com/gogs/gogs
+$ go get -u -tags "pam cert" github.com/gogs/gogs
 $ cd $GOPATH/src/github.com/gogs/gogs
-$ go build -tags "sqlite tidb pam cert"
+$ go build -tags "pam cert"
 ```
 
 ## Weitere Schritte

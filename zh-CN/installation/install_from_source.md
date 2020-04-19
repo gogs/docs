@@ -43,13 +43,12 @@ Gogs 默认并没有支持一些功能，这些功能需要在构建时明确使
 
 目前使用标签构建的功能如下：
 
-- `sqlite3`：SQLite3 数据库支持
 - `pam`：PAM 授权认证支持
 - `cert`：生成自定义证书支持
 - `minwinsvc`：Windows 服务内置支持（或者您可以使用 NSSM 来创建服务）
 
 ```sh
-go build -tags "sqlite pam cert" -o gogs
+go build -tags "pam cert" -o gogs
 ```
 
 安装完成后可继续参照 [配置与运行](configuration_and_run.html)。
