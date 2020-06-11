@@ -29,4 +29,5 @@ Das Ziel dieses Projektes ist es, eine einfache, schnelle und unkomplizierte Mö
     - [github.com/go-sql-driver/mysql](https://github.com/go-sql-driver/mysql)
     - [github.com/lib/pq](https://github.com/lib/pq)
     - [github.com/mattn/go-sqlite3](https://github.com/mattn/go-sqlite3)
+    - [github.com/denisenkom/go-mssqldb](https://github.com/denisenkom/go-mssqldb)
 - Und alle anderen Go-Paket-Abhängigkeiten
