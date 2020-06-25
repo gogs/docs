@@ -6,6 +6,7 @@ name: Installation
 
 - Database (choose one of the following):
     - [MySQL](http://dev.mysql.com): Version >= 5.7
+    - [MSSQL](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
     - [PostgreSQL](http://www.postgresql.org/)
     - [TiDB](https://github.com/pingcap/tidb) (experimental, connect via the MySQL protocol)
     - or **NOTHING** with SQLite3
