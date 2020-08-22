@@ -44,7 +44,7 @@ server {
 }
 ```
 
-然后在配置文件中设置 `[server] ROOT_URL = http://git.crystalnetwork.us/gogs/`。
+然后在配置文件中设置 `[server] EXTERNAL_URL = http://git.crystalnetwork.us/gogs/`。
 
 ##### 为什么上传大文件时总是发生错误？
 
@@ -96,7 +96,7 @@ $HTTP["url"] =~ "^/gogs/" {
 ```
 [server]
 PROTOCOL = https
-ROOT_URL = https://try.gogs.io/
+EXTERNAL_URL = https://try.gogs.io/
 CERT_FILE = custom/https/cert.pem
 KEY_FILE = custom/https/key.pem
 ```

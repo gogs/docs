@@ -6,7 +6,7 @@ name: Custom template
 
 ## Override HTML templates
 
-You can override HTML templates (including templates for emails) by creating a customized version by creating a customized version under `custom/templates/` directory. Your version of HTML templates will survive code updates, but you may want to keep tabs on them in case functionality changes. Be careful when overriding HTML templates as you may break things in future releases.
+You can override HTML templates (including templates for emails) by creating a customized version under `custom/templates/` directory. Your version of HTML templates will survive code updates, but you may want to keep tabs on them in case functionality changes. Be careful when overriding HTML templates as you may break things in future releases.
 
 An example is to customize the look and contents of the home page:
 
