@@ -30,21 +30,21 @@ name: 二进制安装
 
 |系统名称|系统类型|SQLite|PAM|下载（[GitHub](https://github.com/gogs/gogs/releases/tag/v0.12.0)）|
 |------|----|------|---|--------|
-|Linux|386|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.12.0/gogs_0.12.0_linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/0.12.0/gogs_0.12.0_linux_386.tar.gz) - CDN: [ZIP](https://cdn.gogs.io/0.12.0/gogs_0.12.0_linux_386.zip) \| [TAR.GZ](https://cdn.gogs.io/0.12.0/gogs_0.12.0_linux_386.tar.gz)|
-|Linux|amd64|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.12.0/gogs_0.12.0_linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/0.12.0/gogs_0.12.0_linux_amd64.tar.gz) - CDN: [ZIP](https://cdn.gogs.io/0.12.0/gogs_0.12.0_linux_amd64.zip) \| [TAR.GZ](https://cdn.gogs.io/0.12.0/gogs_0.12.0_linux_amd64.tar.gz)|
-|Linux|armv7|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.12.0/gogs_0.12.0_linux_armv7.zip) - CDN: [ZIP](https://cdn.gogs.io/0.12.0/gogs_0.12.0_linux_armv7.zip)|
-|Windows|amd64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.12.0/gogs_0.12.0_windows_amd64.zip) \| [ZIP w/ mws](https://dl.gogs.io/0.12.0/gogs_0.12.0_windows_amd64_mws.zip) - CDN: [ZIP](https://cdn.gogs.io/0.12.0/gogs_0.12.0_windows_amd64.zip) \| [ZIP w/ mws](https://cdn.gogs.io/0.12.0/gogs_0.12.0_windows_amd64_mws.zip)|
-|macOS|amd64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.12.0/gogs_0.12.0_darwin_amd64.zip) - CDN: [ZIP](https://cdn.gogs.io/0.12.0/gogs_0.12.0_darwin_amd64.zip)|
+|Linux|386|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.12.0/gogs_0.12.0_linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/0.12.0/gogs_0.12.0_linux_386.tar.gz)|
+|Linux|amd64|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.12.0/gogs_0.12.0_linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/0.12.0/gogs_0.12.0_linux_amd64.tar.gz)|
+|Linux|armv7|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.12.0/gogs_0.12.0_linux_armv7.zip)|
+|Windows|amd64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.12.0/gogs_0.12.0_windows_amd64.zip) \| [ZIP w/ mws](https://dl.gogs.io/0.12.0/gogs_0.12.0_windows_amd64_mws.zip)|
+|macOS|amd64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.12.0/gogs_0.12.0_darwin_amd64.zip)|
 
 ### 0.11.91 @ 2019-08-11
 
 |系统名称|系统类型|SQLite|PAM|下载（[GitHub](https://github.com/gogs/gogs/releases/tag/v0.11.91)）|
 |------|----|------|---|--------|
-|Linux|386|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.11.91/gogs_0.11.91_linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/0.11.91/gogs_0.11.91_linux_386.tar.gz) - CDN: [ZIP](https://cdn.gogs.io/0.11.91/gogs_0.11.91_linux_386.zip) \| [TAR.GZ](https://cdn.gogs.io/0.11.91/gogs_0.11.91_linux_386.tar.gz)|
-|Linux|amd64|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.11.91/gogs_0.11.91_linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/0.11.91/gogs_0.11.91_linux_amd64.tar.gz) - CDN: [ZIP](https://cdn.gogs.io/0.11.91/gogs_0.11.91_linux_amd64.zip) \| [TAR.GZ](https://cdn.gogs.io/0.11.91/gogs_0.11.91_linux_amd64.tar.gz)|
-|Linux|armv5|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/0.11.91/gogs_0.11.91_linux_armv5.zip) - CDN: [ZIP](https://cdn.gogs.io/0.11.91/gogs_0.11.91_linux_armv5.zip)|
-|Linux|armv6|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/0.11.91/gogs_0.11.91_linux_armv6.zip) - CDN: [ZIP](https://cdn.gogs.io/0.11.91/gogs_0.11.91_linux_armv6.zip)|
-|Raspberry Pi|v2/v3 / armv7|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.11.91/gogs_0.11.91_raspi_armv7.zip) \| [TAR.GZ](https://dl.gogs.io/0.11.91/gogs_0.11.91_raspi_armv7.tar.gz) - CDN: [ZIP](https://cdn.gogs.io/0.11.91/gogs_0.11.91_raspi_armv7.zip) \| [TAR.GZ](https://cdn.gogs.io/0.11.91/gogs_0.11.91_raspi_armv7.tar.gz)|
-|Windows|386|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.11.91/gogs_0.11.91_windows_386.zip) \| [ZIP w/ mws](https://dl.gogs.io/0.11.91/gogs_0.11.91_windows_386_mws.zip) - CDN: [ZIP](https://cdn.gogs.io/0.11.91/gogs_0.11.91_windows_386.zip) \| [ZIP w/ mws](https://cdn.gogs.io/0.11.91/gogs_0.11.91_windows_386_mws.zip)|
-|Windows|amd64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.11.91/gogs_0.11.91_windows_amd64.zip) \| [ZIP w/ mws](https://dl.gogs.io/0.11.91/gogs_0.11.91_windows_amd64_mws.zip) - CDN: [ZIP](https://cdn.gogs.io/0.11.91/gogs_0.11.91_windows_amd64.zip) \| [ZIP w/ mws](https://cdn.gogs.io/0.11.91/gogs_0.11.91_windows_amd64_mws.zip)|
-|macOS|amd64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.11.91/gogs_0.11.91_darwin_amd64.zip) - CDN: [ZIP](https://cdn.gogs.io/0.11.91/gogs_0.11.91_darwin_amd64.zip)|
+|Linux|386|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.11.91/gogs_0.11.91_linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/0.11.91/gogs_0.11.91_linux_386.tar.gz)|
+|Linux|amd64|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.11.91/gogs_0.11.91_linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/0.11.91/gogs_0.11.91_linux_amd64.tar.gz)|
+|Linux|armv5|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/0.11.91/gogs_0.11.91_linux_armv5.zip)|
+|Linux|armv6|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/0.11.91/gogs_0.11.91_linux_armv6.zip)|
+|Raspberry Pi|v2/v3 / armv7|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.11.91/gogs_0.11.91_raspi_armv7.zip) \| [TAR.GZ](https://dl.gogs.io/0.11.91/gogs_0.11.91_raspi_armv7.tar.gz)|
+|Windows|386|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.11.91/gogs_0.11.91_windows_386.zip) \| [ZIP w/ mws](https://dl.gogs.io/0.11.91/gogs_0.11.91_windows_386_mws.zip)|
+|Windows|amd64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.11.91/gogs_0.11.91_windows_amd64.zip) \| [ZIP w/ mws](https://dl.gogs.io/0.11.91/gogs_0.11.91_windows_amd64_mws.zip)|
+|macOS|amd64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.11.91/gogs_0.11.91_darwin_amd64.zip)|
