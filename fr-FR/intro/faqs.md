@@ -172,13 +172,13 @@ Créer un fichier `robots.txt` dans le dossier `custom`.
 
 Gogs fourni quelques scripts tiers pour supporter l'exécution en tant que démon :
 
-- [init.d/centos](https://github.com/gogs/gogs/blob/master/scripts/init/centos/gogs)
-- [init.d/debian](https://github.com/gogs/gogs/blob/master/scripts/init/debian/gogs)
+- [init.d/centos](https://github.com/gogs/gogs/blob/main/scripts/init/centos/gogs)
+- [init.d/debian](https://github.com/gogs/gogs/blob/main/scripts/init/debian/gogs)
 - Systemd dans la section suivante.
 
 #### Lancer Gogs au démarrage avec systemd 
 
-Dans le dépôt de Gogs sur GitHub est présent un [modèle de service systemd](https://github.com/gogs/gogs/blob/master/scripts/systemd/gogs.service). Il a besoin d'être adapté à votre installation.
+Dans le dépôt de Gogs sur GitHub est présent un [modèle de service systemd](https://github.com/gogs/gogs/blob/main/scripts/systemd/gogs.service). Il a besoin d'être adapté à votre installation.
 
 1. Mettre à jour `User`, `Group`, `WorkingDirectory`, `ExecStart`, et `Environment` pour correspondre à votre installation.
 2. (Optionnel) Si vous utilisez Gogs avec `MySQL/MariaDB`, `PostgreSQL`, `Redis`, or `memcached`, décommentez les lignes `After` concernées.

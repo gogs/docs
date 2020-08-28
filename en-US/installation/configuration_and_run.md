@@ -25,7 +25,7 @@ Of course, you want to change the database setting as well:
 
 ```
 [database]
-PASSWD = `root`
+PASSWORD = `root`
 ```
 
 Note: please quote passwords using `` ` ``
@@ -55,7 +55,7 @@ $ ./gogs web
 
 - There are many ways to start:
 	- Plain: just use `./gogs web`
-	- Daemons: see [scripts](https://github.com/gogs/gogs/tree/master/scripts) folder
+	- Daemons: see [scripts](https://github.com/gogs/gogs/tree/main/scripts) folder
 - Go to `/install` to do your first-time run configuration.
 
 ### Running as daemon via init (eg. openrc)

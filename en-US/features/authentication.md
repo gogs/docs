@@ -8,7 +8,7 @@ Gogs supports authentication by various external sources.  Currently supported a
 
 ## Using configuration files
 
-Since version `0.11.45.0412`, files with the suffix `.conf` under `custom/conf/auth.d` will be recognized as authentication sources.  An example for each of the supported sources can be found [here](https://github.com/gogs/gogs/tree/master/conf/auth.d).
+Since version `0.11.45.0412`, files with the suffix `.conf` under `custom/conf/auth.d` will be recognized as authentication sources.  An example for each of the supported sources can be found [here](https://github.com/gogs/gogs/tree/main/conf/auth.d).
 
 Authentication sources defined via configuration files appear in the **Admin Panel - Authentication Sources** just like sources created via the web interface.
 

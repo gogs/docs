@@ -49,5 +49,5 @@ Ja, warum nicht einfach `conf/app.ini` verändern? Der Grund ist, die eigene Kon
 
 - Es gibt einige Wege, Gogs zu starten:
 	- Einfach: Nutze einfach `./gogs web`
-	- Daemons: siehe [scripts](https://github.com/gogs/gogs/tree/master/scripts) Ordner
+	- Daemons: siehe [scripts](https://github.com/gogs/gogs/tree/main/scripts) Ordner
 - gucke in `/install` um die erste Konfiguration zu erstellen.

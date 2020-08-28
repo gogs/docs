@@ -117,13 +117,13 @@ KEY_FILE = custom/https/key.pem
 
 Gogs 拥有一些由第三方提供的脚本来支持以守护进程形式运行：
 
-- [init.d/centos](https://github.com/gogs/gogs/blob/master/scripts/init/centos/gogs)
-- [init.d/debian](https://github.com/gogs/gogs/blob/master/scripts/init/debian/gogs)
+- [init.d/centos](https://github.com/gogs/gogs/blob/main/scripts/init/centos/gogs)
+- [init.d/debian](https://github.com/gogs/gogs/blob/main/scripts/init/debian/gogs)
 - 下小节中的 Systemd 服务
 
 #### Systemd 服务
 
-在 GitHub 上的 Gogs 仓库有一个 [systemd 服务模版文件](https://github.com/gogs/gogs/blob/master/scripts/systemd/gogs.service)，您需要做出一定的修改才能够使用它：
+在 GitHub 上的 Gogs 仓库有一个 [systemd 服务模版文件](https://github.com/gogs/gogs/blob/main/scripts/systemd/gogs.service)，您需要做出一定的修改才能够使用它：
 
 1. 更新 `User`、`Group`、`WorkingDirectory`、`ExecStart` 和 `Environment` 为相对应的值。其中 `WorkingDirectory` 为您的 Gogs 实际安装路径根目录。
 3. [可选] 如果您 Gogs 安装示例使用 `MySQL/MariaDB`、`PostgreSQL`、`Redis` 或 `memcached`，请去掉相应 `After` 属性的注释。

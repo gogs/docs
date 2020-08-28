@@ -8,7 +8,7 @@ name: 配置文件手册
 
 请记住，任何修改都是发生在 `custom/conf/app.ini` 自定义配置文件中，该文件的具体位置与您的设置有关。
 
-完整的默认设置可以通过 [app.ini](https://github.com/gogs/gogs/blob/master/conf/app.ini) 文件查看。如果您看到类似 `%(X)s` 字符，这是由 [ini](https://ini.unknwon.io/docs/howto/work_with_values#recursive-values) 提供的递归取值的特性。
+完整的默认设置可以通过 [app.ini](https://github.com/gogs/gogs/blob/main/conf/app.ini) 文件查看。如果您看到类似 `%(X)s` 字符，这是由 [ini](https://ini.unknwon.io/docs/howto/work_with_values#recursive-values) 提供的递归取值的特性。
 
 ### 概览
 

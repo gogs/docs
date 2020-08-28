@@ -173,14 +173,14 @@ Create a file called `robots.txt` in the `custom` directory.
 
 Gogs has some third-party scripts that support running it as a daemon:
 
-- [init.d/centos](https://github.com/gogs/gogs/blob/master/scripts/init/centos/gogs)
-- [init.d/debian](https://github.com/gogs/gogs/blob/master/scripts/init/debian/gogs)
+- [init.d/centos](https://github.com/gogs/gogs/blob/main/scripts/init/centos/gogs)
+- [init.d/debian](https://github.com/gogs/gogs/blob/main/scripts/init/debian/gogs)
 - [openrc/gentoo](https://gogs.io/docs/installation/configuration_and_run#running-as-daemon-via-init-(eg.-openrc))
 - Systemd in the following section.
 
 #### How do I run Gogs at startup with Systemd?
 
-There's a [systemd service template file](https://github.com/gogs/gogs/blob/master/scripts/systemd/gogs.service) in the Gogs GitHub repository and in the installed files at `./scripts/systemd/gogs.service`. You will likely need to modify it for your installation:
+There's a [systemd service template file](https://github.com/gogs/gogs/blob/main/scripts/systemd/gogs.service) in the Gogs GitHub repository and in the installed files at `./scripts/systemd/gogs.service`. You will likely need to modify it for your installation:
 
 1. Update `User`, `Group`, `WorkingDirectory`, `ExecStart`, and
    `Environment` with values appropriate to your Gogs installation.
