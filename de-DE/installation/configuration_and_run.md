@@ -25,7 +25,7 @@ Natürlich kann man auch die Datenbank-Einstellungen ändern
 
 ```
 [database]
-PASSWD = root
+PASSWORD = root
 ```
 
 ### Warum tun wir das?
