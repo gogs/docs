@@ -143,6 +143,54 @@ git.example.com {
 }
 ```
 
+#### How do I use IIS with Reverse Proxy?
+
+Create a new website in IIS, and use the following `web.config` file:
+
+- Modifiy `git.crystalnetwork.us` to your actual domain name
+- If you don't use or need HTTPS to be handled by IIS, remove the entire `<rule name="RedirectToHttps" ...>` section
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <system.webServer>
+        <rewrite>
+            <rules>
+                <rule name="RedirectToHttps" stopProcessing="true">
+                    <match url=".*" />
+                    <conditions>
+                        <add input="{HTTPS}" pattern="off" ignoreCase="true" />
+                    </conditions>
+                    <action type="Redirect" url="https://{HTTP_HOST}{REQUEST_URI}" redirectType="Permanent" appendQueryString="false" />
+                </rule>
+                <rule name="ReverseProxyInboundRule" stopProcessing="true">
+                    <match url="(.*)" />
+                    <action type="Rewrite" url="http://localhost:3000/{R:1}" />
+                </rule>
+            </rules>
+            <outboundRules>
+                <rule name="ReverseProxyOutboundRule" preCondition="ResponseIsHtml">
+                    <match filterByTags="A, Form, Img" pattern="^http(s)?://localhost:3000/(.*)" />
+                    <action type="Rewrite" value="http{R:1}://git.crystalnetwork.us/{R:2}" />
+                </rule>
+                <preConditions>
+                    <preCondition name="ResponseIsHtml">
+                        <add input="{RESPONSE_CONTENT_TYPE}" pattern="^text/html" />
+                    </preCondition>
+                </preConditions>
+            </outboundRules>
+        </rewrite>
+    </system.webServer>
+</configuration>
+```
+
+Then, change the following configuration options in `custom/conf/app.ini`:
+
+```
+[server]
+EXTERNAL_URL = https://git.example.com/
+```
+
 #### How do I set up HTTPS?
 
 Change the following configuration options in `custom/conf/app.ini` in the section that looks like this sample:
