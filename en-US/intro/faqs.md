@@ -188,7 +188,7 @@ Then, change the following configuration options in `custom/conf/app.ini`:
 
 ```
 [server]
-ROOT_URL = https://git.crystalnetwork.us/
+EXTERNAL_URL = https://git.example.com/
 ```
 
 #### How do I set up HTTPS?
