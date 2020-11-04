@@ -18,7 +18,7 @@ name: 二进制安装
 1. 解压压缩包。
 2. 使用命令 `cd` 进入到刚刚创建的目录。
 3. 执行命令 `./gogs web`。
-4. Gogs 默认会在端口 `3000` 启动 HTTP 服务，访问 `/install` 以进行初始配置。（例如 http://localhost:3000/install ）
+4. Gogs 默认会在端口 `3000` 启动 HTTP 服务，访问 `/install` 以进行初始配置（例如 http://localhost:3000/install ）。
 
 安装完成后可继续参照 [配置与运行](configuration_and_run.html)。
 
