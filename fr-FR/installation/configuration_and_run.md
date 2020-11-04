@@ -26,7 +26,7 @@ Vous pouvez également changer le mot de passe de la base de données comme ceci
 
 ```
 [database]
-PASSWD = root
+PASSWORD = root
 ```
 
 ### Pourquoi faisons-nous ça ?
