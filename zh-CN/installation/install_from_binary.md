@@ -14,9 +14,11 @@ name: 二进制安装
 
 ## 如何使用下载好的压缩包？
 
+0. 检查[环境要求](/docs/installation)是否已满足
 1. 解压压缩包。
 2. 使用命令 `cd` 进入到刚刚创建的目录。
-3. 执行命令 `./gogs web`，然后，就没有然后了。
+3. 执行命令 `./gogs web`。
+4. Gogs 默认会在端口 `3000` 启动 HTTP 服务，访问 `/install` 以进行初始配置（例如 http://localhost:3000/install ）。
 
 安装完成后可继续参照 [配置与运行](configuration_and_run.html)。
 
