@@ -24,4 +24,4 @@ Information for installation and configuration on Arch Linux can be found at thi
 
 - Installation for ARM, x386 and amd64
 
-https://github.com/davidmullerz/gogs-spk/releases/tag/1.1
+https://github.com/davidmullerz/gogs_synology
