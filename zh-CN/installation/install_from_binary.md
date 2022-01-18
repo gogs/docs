@@ -8,9 +8,7 @@ name: 二进制安装
 
 所有的版本都支持 **MySQL**、**PostgreSQL** 和 **TiDB**（使用 MySQL 协议）作为数据库，并且均使用构建标签（build tags）**`cert`** 进行构建。需要注意的是，不同的版本的支持状态有所不同，请根据实际的 Gogs 提示进行操作。
 
-## 备注
-
-- `mws` 表示提供内置 Windows 服务支持，如果您使用 NSSM 请使用另外一个版本。
+`mws` 表示提供内置 Windows 服务支持，如果您使用 NSSM 请使用另外一个版本。
 
 ## 如何使用下载好的压缩包？
 
@@ -22,21 +20,21 @@ name: 二进制安装
 
 安装完成后可继续参照 [配置与运行](configuration_and_run.html)。
 
-## 如何通过二进制升级？
+## 下载二进制
 
-1. 下载最新版的压缩包。
-2. 删除当前的 `templates` 目录。
-3. 解压压缩包并将所有内容复制粘贴到相应（当前）的位置。
+本页仅展示最新版的二进制，旧版的二进制可以在 [GitHub release](https://github.com/gogs/gogs/releases) 上查看。
 
-### 0.12.3 @ 2020-10-07
+### 0.12.4 @ 2022-01-17
 
-|系统名称|系统类型|SQLite|PAM|下载（[GitHub](https://github.com/gogs/gogs/releases/tag/v0.12.3)）|
+|系统名称|系统类型|SQLite|PAM|下载 ([GitHub](https://github.com/gogs/gogs/releases/tag/v0.12.4))|
 |------|----|------|---|--------|
-|Linux|386|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.12.3/gogs_0.12.3_linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/0.12.3/gogs_0.12.3_linux_386.tar.gz)|
-|Linux|amd64|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.12.3/gogs_0.12.3_linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/0.12.3/gogs_0.12.3_linux_amd64.tar.gz)|
-|Linux|armv7|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.12.3/gogs_0.12.3_linux_armv7.zip)|
-|Windows|amd64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.12.3/gogs_0.12.3_windows_amd64.zip) \| [ZIP w/ mws](https://dl.gogs.io/0.12.3/gogs_0.12.3_windows_amd64_mws.zip)|
-|macOS|amd64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.12.3/gogs_0.12.3_darwin_amd64.zip)|
+|Linux|386|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.12.4/gogs_0.12.4_linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/0.12.4/gogs_0.12.4_linux_386.tar.gz)|
+|Linux|amd64|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.12.4/gogs_0.12.4_linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/0.12.4/gogs_0.12.4_linux_amd64.tar.gz)|
+|Linux|armv7|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.12.4/gogs_0.12.4_linux_armv7.zip) \| [TAR.GZ](https://dl.gogs.io/0.12.4/gogs_0.12.4_linux_armv7.tar.gz)|
+|Linux|armv8|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.12.4/gogs_0.12.4_linux_armv8.zip) \| [TAR.GZ](https://dl.gogs.io/0.12.4/gogs_0.12.4_linux_armv8.tar.gz)|
+|Windows|amd64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.12.4/gogs_0.12.4_windows_amd64.zip) \| [ZIP w/ mws](https://dl.gogs.io/0.12.4/gogs_0.12.4_windows_amd64_mws.zip)|
+|macOS|amd64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.12.4/gogs_0.12.4_darwin_amd64.zip)|
+|macOS|arm64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.12.4/gogs_0.12.4_darwin_arm64.zip)|
 
 ### 0.11.91 @ 2019-08-11
 
