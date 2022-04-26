@@ -11,7 +11,7 @@ sort: 7
 
 La configuration par défaut est enregistrée dans `conf/app.ini`, vous **n'avez pas** besoin de modifier la totalité. depuis `v0.6.0`, ce fichier est incorporé au binaire.
 
-### Configuration personnalisé
+### Configuration personnalisée
 
 Comment personnaliser la configuration si vous n'êtes pas autorisé à modifier `conf/app.ini` ? Et bien, créez `custom/conf/app.ini` ! Remplacez ensuite les clefs correspondantes dans `custom/conf/app.ini`.
 
