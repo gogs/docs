@@ -91,8 +91,8 @@ ROOT_URL = http://domain.tld/git
 <VirtualHost *:80>
     ...
     <Proxy *>
-         Order allow,deny
-         Allow from all
+         Require all denied
+         Require ip 10.0.0.0/24 192.168.0.0/24 ...
     </Proxy>
 
     ProxyPass /git http://127.0.0.1:3000
