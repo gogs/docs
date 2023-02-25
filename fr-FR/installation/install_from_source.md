@@ -8,7 +8,7 @@ name: A partir des sources
 
 ### Global
 
-- [Go Programming Language](http://golang.org): Version >= 1.17
+- [Go Programming Language](http://golang.org): Version >= 1.18
 
 Nous allons créer un nouvel utilisateur appelé `git` et installer / configurer tout sous cet utilisateur:
 

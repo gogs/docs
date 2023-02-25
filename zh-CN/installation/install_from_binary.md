@@ -24,17 +24,17 @@ name: 二进制安装
 
 本页仅展示最新版的二进制，旧版的二进制可以在 [GitHub release](https://github.com/gogs/gogs/releases) 上查看。
 
-### 0.12.10 @ 2022-08-02
+### 0.12.11 @ 2023-02-25
 
-|系统名称|系统类型|SQLite|PAM|下载 ([GitHub](https://github.com/gogs/gogs/releases/tag/v0.12.10))|
+|系统名称|系统类型|SQLite|PAM|下载 ([GitHub](https://github.com/gogs/gogs/releases/tag/v0.12.11))|
 |------|----|------|---|--------|
-|Linux|386|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.12.10/gogs_0.12.10_linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/0.12.10/gogs_0.12.10_linux_386.tar.gz)|
-|Linux|amd64|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.12.10/gogs_0.12.10_linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/0.12.10/gogs_0.12.10_linux_amd64.tar.gz)|
-|Linux|armv7|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.12.10/gogs_0.12.10_linux_armv7.zip) \| [TAR.GZ](https://dl.gogs.io/0.12.10/gogs_0.12.10_linux_armv7.tar.gz)|
-|Linux|armv8|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.12.10/gogs_0.12.10_linux_armv8.zip) \| [TAR.GZ](https://dl.gogs.io/0.12.10/gogs_0.12.10_linux_armv8.tar.gz)|
-|Windows|amd64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.12.10/gogs_0.12.10_windows_amd64.zip) \| [ZIP w/ mws](https://dl.gogs.io/0.12.10/gogs_0.12.10_windows_amd64_mws.zip)|
-|macOS|amd64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.12.10/gogs_0.12.10_darwin_amd64.zip)|
-|macOS|arm64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.12.10/gogs_0.12.10_darwin_arm64.zip)|
+|Linux|386|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.12.11/gogs_0.12.11_linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/0.12.11/gogs_0.12.11_linux_386.tar.gz)|
+|Linux|amd64|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.12.11/gogs_0.12.11_linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/0.12.11/gogs_0.12.11_linux_amd64.tar.gz)|
+|Linux|armv7|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.12.11/gogs_0.12.11_linux_armv7.zip) \| [TAR.GZ](https://dl.gogs.io/0.12.11/gogs_0.12.11_linux_armv7.tar.gz)|
+|Linux|armv8|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.12.11/gogs_0.12.11_linux_armv8.zip) \| [TAR.GZ](https://dl.gogs.io/0.12.11/gogs_0.12.11_linux_armv8.tar.gz)|
+|Windows|amd64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.12.11/gogs_0.12.11_windows_amd64.zip) \| [ZIP w/ mws](https://dl.gogs.io/0.12.11/gogs_0.12.11_windows_amd64_mws.zip)|
+|macOS|amd64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.12.11/gogs_0.12.11_darwin_amd64.zip)|
+|macOS|arm64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.12.11/gogs_0.12.11_darwin_arm64.zip)|
 
 ### 0.11.91 @ 2019-08-11
 
