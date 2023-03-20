@@ -18,7 +18,7 @@ sudo adduser --disabled-login --gecos 'Gogs' git
 
 ### Drittanbieter-Software
 
-Wenn dich interessiert, welche Drittanbieter-Pakete wir benutzen, schaue dir das [gopmfile](https://github.com/gogs/gogs/blob/main/.gopmfile). Möglicherweise brauchst du das, wenn du Pakete für Gogs erstellst.
+Wenn Dich interessiert, welche Drittanbieter-Pakete wir benutzen, schaue dir das gopmfile an. Möglicherweise brauchst du das, wenn du Pakete für Gogs erstellst.
 
 ## Go-Installation
 
