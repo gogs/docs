@@ -8,7 +8,7 @@ name: aus Quelldateien
 
 ### Allgemein
 
-- [Go Programming Language](http://golang.org): Version >= 1.18
+- [Go Programming Language](http://golang.org): Version >= 1.20
 
 Wir erstellen einen neuen Benutzer mit dem Namen `git` und installieren alles unter diesem Benutzer:
 
@@ -25,6 +25,7 @@ Wenn dich interessiert, welche Drittanbieter-Pakete wir benutzen, schaue dir das
 Wenn Go auf deinem System schon den Anforderungen entspricht, überspringe diesen Abschnitt.
 
 ### Download
+
 Die aktuellen Versionen für dein Betriebssystem findest du auf der offiziellen Seite [golang.org](https://golang.org/dl/)
 
 Installiere Go in `/home/git/local/go`, sodass es keine Konflikte mit zukünftigen Updates des Paketmanagers gibt:
