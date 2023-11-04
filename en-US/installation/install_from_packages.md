@@ -25,3 +25,9 @@ Information for installation and configuration on Arch Linux can be found at thi
 - Installation for ARM, x386 and amd64
 
 https://github.com/davidmullerz/gogs_synology
+
+### Syncloud
+
+- Install from Syncloud Store for arm, arm64, amd64
+
+https://github.com/syncloud/platform/wiki
