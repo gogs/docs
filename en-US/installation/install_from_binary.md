@@ -13,7 +13,7 @@ The Windows downloads with "mws" have built-in Windows service support; if you u
 0. Check that [prerequisites are installed](/docs/installation)
 1. Extract the archive.
 2. `cd` into the directory that was just created.
-3. Execute `./gogs web`.
+3. Execute `.\gogs web`.
 4. Gogs will start up a HTTP service at port `3000` as default. Browse `/install` for initial configuration (e.g. http://localhost:3000/install).
 
 To go further, see [Configuration and run](/docs/installation/configuration_and_run.html).
