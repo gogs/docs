@@ -165,7 +165,7 @@ Name|Description
 `SKIP_TLS_VERIFY`|Indicate whether to allow insecure certification or not.
 `PAGING_NUM`|Number of webhook history that are shown in one page.
 
-### Mailer (`mailer`)
+### Mailer (`email`)
 
 Name|Description
 ----|-----------
@@ -177,7 +177,7 @@ Name|Description
 `SKIP_VERIFY`|Do not verify the self-signed certificates.
 `FROM`|Mail from address, RFC 5322. This can be just an email address, or the `"Name" <email@example.com>` format.
 `USER`|Username of mailer (usually just your e-mail address).
-`PASSWD`|Password of mailer.
+`PASSWORD`|Password of mailer.
 `USE_PLAIN_TEXT`|Indicate whether to use `text/plain` as format of content or not.
 
 Note: Gogs supports only SMTP with STARTTLS.

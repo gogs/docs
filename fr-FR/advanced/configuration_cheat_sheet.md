@@ -95,7 +95,7 @@ Nom |Description
 `SKIP_TLS_VERIFY`|Indique si un certificat non-sécurisé est autorisé ou pas.
 `PAGING_NUM`|Nombre de webhook affiché sur une page d'historique.
 
-## Serveur de messagerie ( `mailer` )
+## Serveur de messagerie ( `email` )
 
 Nom |Description
 ----|-----------
@@ -105,7 +105,7 @@ Nom |Description
 `HOST`|Adresse email du serveur SMTP.
 `FROM`|Adresse email, la RFC 5322. Cela peut être juste une adresse e-mail, ou une chaîne du type `"Nom" <email@example.com>`.
 `USER`|Nom d'utilisateur pour le serveur de messagerie (habituellement juste votre adresse e-mail).
-`PASSWD`|Mot de passe pour le serveur de messagerie.
+`PASSWORD`|Mot de passe pour le serveur de messagerie.
 `SKIP_VERIFY`|Ne pas vérifier les certificats auto-signés.
 
 ## OAuth
