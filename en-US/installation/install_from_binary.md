@@ -22,14 +22,15 @@ To go further, see [Configuration and run](/docs/installation/configuration_and_
 
 Below are links to downloads for the latest releases. Older downloads can be found at [releases](https://github.com/gogs/gogs/releases).
 
-### 0.13.1 @ 2024-12-22
+### 0.13.2 @ 2024-12-23
 
-|System|Type|SQLite|PAM|Download ([GitHub](https://github.com/gogs/gogs/releases/tag/v0.13.1))|
+|System|Type|SQLite|PAM|Download ([GitHub](https://github.com/gogs/gogs/releases/tag/v0.13.2))|
 |------|----|------|---|--------|
-|Linux|amd64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.13.1/gogs_0.13.1_linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/0.13.1/gogs_0.13.1_linux_amd64.tar.gz)|
-|Linux|armv8|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.13.1/gogs_0.13.1_linux_armv8.zip) \| [TAR.GZ](https://dl.gogs.io/0.13.1/gogs_0.13.1_linux_armv8.tar.gz)|
-|Windows|amd64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.13.1/gogs_0.13.1_windows_amd64.zip) \| [ZIP w/ mws](https://dl.gogs.io/0.13.1/gogs_0.13.1_windows_amd64_mws.zip)|
-|macOS|arm64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.13.1/gogs_0.13.1_darwin_arm64.zip)|
+|Linux|amd64|✅|❌|HTTPS: [ZIP](https://github.com/gogs/gogs/releases/download/v0.13.2/gogs_0.13.2_linux_amd64.zip) \| [TAR.GZ](https://github.com/gogs/gogs/releases/download/v0.13.2/gogs_0.13.2_linux_amd64.tar.gz)|
+|Linux|armv8|✅|❌|HTTPS: [ZIP](https://github.com/gogs/gogs/releases/download/v0.13.2/gogs_0.13.2_linux_armv8.zip) \| [TAR.GZ](https://github.com/gogs/gogs/releases/download/v0.13.2/gogs_0.13.2_linux_armv8.tar.gz)|
+|Windows|amd64|✅|❌|HTTPS: [ZIP](https://github.com/gogs/gogs/releases/download/v0.13.2/gogs_0.13.2_windows_amd64.zip) \| [ZIP w/ mws](https://github.com/gogs/gogs/releases/download/v0.13.2/gogs_0.13.2_windows_amd64_mws.zip)|
+|macOS|amd64|✅|❌|HTTPS: [ZIP](https://github.com/gogs/gogs/releases/download/v0.13.2/gogs_0.13.2_darwin_amd64.zip)|
+|macOS|arm64|✅|❌|HTTPS: [ZIP](https://github.com/gogs/gogs/releases/download/v0.13.2/gogs_0.13.2_darwin_arm64.zip)|
 
 ### 0.12.11 @ 2023-02-25
 
