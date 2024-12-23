@@ -22,17 +22,14 @@ To go further, see [Configuration and run](/docs/installation/configuration_and_
 
 Below are links to downloads for the latest releases. Older downloads can be found at [releases](https://github.com/gogs/gogs/releases).
 
-### 0.13.0 @ 2023-02-25
+### 0.13.1 @ 2024-12-22
 
-|System|Type|SQLite|PAM|Download ([GitHub](https://github.com/gogs/gogs/releases/tag/v0.13.0))|
+|System|Type|SQLite|PAM|Download ([GitHub](https://github.com/gogs/gogs/releases/tag/v0.13.1))|
 |------|----|------|---|--------|
-|Linux|386|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.13.0/gogs_0.13.0_linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/0.13.0/gogs_0.13.0_linux_386.tar.gz)|
-|Linux|amd64|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.13.0/gogs_0.13.0_linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/0.13.0/gogs_0.13.0_linux_amd64.tar.gz)|
-|Linux|armv7|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.13.0/gogs_0.13.0_linux_armv7.zip) \| [TAR.GZ](https://dl.gogs.io/0.13.0/gogs_0.13.0_linux_armv7.tar.gz)|
-|Linux|armv8|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.13.0/gogs_0.13.0_linux_armv8.zip) \| [TAR.GZ](https://dl.gogs.io/0.13.0/gogs_0.13.0_linux_armv8.tar.gz)|
-|Windows|amd64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.13.0/gogs_0.13.0_windows_amd64.zip) \| [ZIP w/ mws](https://dl.gogs.io/0.13.0/gogs_0.13.0_windows_amd64_mws.zip)|
-|macOS|amd64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.13.0/gogs_0.13.0_darwin_amd64.zip)|
-|macOS|arm64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.13.0/gogs_0.13.0_darwin_arm64.zip)|
+|Linux|amd64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.13.1/gogs_0.13.1_linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/0.13.1/gogs_0.13.1_linux_amd64.tar.gz)|
+|Linux|armv8|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.13.1/gogs_0.13.1_linux_armv8.zip) \| [TAR.GZ](https://dl.gogs.io/0.13.1/gogs_0.13.1_linux_armv8.tar.gz)|
+|Windows|amd64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.13.1/gogs_0.13.1_windows_amd64.zip) \| [ZIP w/ mws](https://dl.gogs.io/0.13.1/gogs_0.13.1_windows_amd64_mws.zip)|
+|macOS|arm64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.13.1/gogs_0.13.1_darwin_arm64.zip)|
 
 ### 0.12.11 @ 2023-02-25
 
