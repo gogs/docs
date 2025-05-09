@@ -29,7 +29,7 @@ For example, you can override the site favicon by putting your version of favico
 
 You can inject your custom head or footer content to Gogs without touching source code of main repository. This is useful if you want to add analytics code or include custom static resources.
 
-Currently, there are two places can be injected with your custom HTML without worrying about losing or conflicting with upstream updates. This approach is recommended whenever possible because it has the minimum impact on templates.
+Currently, there are two places that can be injected with your custom HTML without worrying about losing or conflicting with upstream updates. This approach is recommended whenever possible because it has the minimum impact on templates.
 
 #### Head
 
