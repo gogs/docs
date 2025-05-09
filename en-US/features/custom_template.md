@@ -29,9 +29,15 @@ For example, you can override the site favicon by putting your version of favico
 
 You can inject your custom head or footer content to Gogs without touching source code of main repository. This is useful if you want to add analytics code or include custom static resources.
 
-[You can read more about injecting a custom head and footer here.](https://discuss.gogs.io/t/how-to-inject-custom-head-and-footer/943).
+Currently, there are two places can be injected with your custom HTML without worrying about losing or conflicting with upstream updates. This approach is recommended whenever possible because it has the minimum impact on templates.
 
-This approach is recommended whenever possible because it has the minimum impact on templates.
+#### Head
+
+Create a file named `custom/templates/inject/head.tmpl`. It is useful for making custom head metas and importing custom static resources (e.g. custom CSS file).
+
+#### Footer
+
+Create a file named `custom/templates/inject/footer.tmpl`. It is useful for adding custom JavaScript or tracking code from services like Google Analytics.
 
 ### Inject custom CSS file
 
