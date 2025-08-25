@@ -35,6 +35,69 @@ PASSWORD = root
 - 从二进制安装的用户，可以直接替换二进制及其它文件而不至于重新编写自定义配置。
 - 从源码安装的用户，可以避免由于版本管理系统导致的文件修改冲突。
 
+### 配置反向代理
+
+#### Nginx
+
+```nginx
+server {
+	listen 80;
+	server_name your-domain.com;
+	return 301 https://$host$request_uri;
+}
+
+server {
+		listen 443 ssl;
+		server_name your-domain.com;
+
+		ssl_certificate full_chain.pem;
+		ssl_certificate_key private.key;
+
+		location / {
+			client_max_body_size 1024M;
+			proxy_pass http://127.0.0.1:3000;
+			proxy_set_header Host $host;
+			proxy_set_header X-Real-IP $remote_addr;
+			proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+			proxy_set_header X-Forwarded-Proto $scheme;
+			add_header X-Cache $upstream_cache_status;
+			proxy_set_header Upgrade $http_upgrade;
+		}
+}
+```
+
+#### Apache
+
+```apache
+<VirtualHost *:80>
+    ServerName your-domain.com
+    Redirect permanent / https://your-domain.com/
+</VirtualHost>
+
+<VirtualHost *:443>
+    ServerName your-domain.com
+
+    SSLEngine on
+    SSLCertificateFile /path/to/full_chain.pem
+    SSLCertificateKeyFile /path/to/private.key
+
+    ProxyPreserveHost On
+    ProxyPass / http://127.0.0.1:3000/
+    ProxyPassReverse / http://127.0.0.1:3000/
+
+    RequestHeader set X-Real-IP %{REMOTE_ADDR}s
+    RequestHeader set X-Forwarded-For %{REMOTE_ADDR}s
+    RequestHeader set X-Forwarded-Proto "https"
+
+    LimitRequestBody 1073741824  # 1024M
+
+    RewriteEngine On
+    RewriteCond %{HTTP:Upgrade} websocket [NC]
+    RewriteCond %{HTTP:Connection} upgrade [NC]
+    RewriteRule ^/?(.*) "ws://127.0.0.1:3000/$1" [P,L]
+</VirtualHost>
+```
+
 ## 运行 Gogs 服务
 
 ### 开发者模式
