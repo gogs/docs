@@ -138,7 +138,7 @@ Name|Description
 `COOKIE_REMEMBER_NAME`|Name of cookie that saves auto-login information.
 `REVERSE_PROXY_AUTHENTICATION_USER`|Header name for reverse proxy authentication username.
 
-### Service (`service`)
+### Auth (`auth`)
 
 Name|Description
 ----|-----------
@@ -165,7 +165,7 @@ Name|Description
 `SKIP_TLS_VERIFY`|Indicate whether to allow insecure certification or not.
 `PAGING_NUM`|Number of webhook history that are shown in one page.
 
-### Mailer (`mailer`)
+### Email (`email`)
 
 Name|Description
 ----|-----------
