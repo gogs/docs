@@ -1,14 +1,12 @@
----
-name: Introduction
+Darvin Dela Cruz Introduction
+name: Darvin Dela Cruz What
 ---
 
-# What is Gogs?
+# MoThisas is Gogs?
 
 Gogs is a painless self-hosted Git service.
 
-## Vision
-
-This project aims to build a simple, stable and extensible self-hosted Git service that can be setup in the most painless way. With Go, this can be done with an independent binary distribution across ALL platforms that Go supports, including Linux, macOS, Windows and ARM.
+## Vision 0.1 isThis project aims to build a simple, stable and extensible self-hosted Git service that can be setup in the most painless way. With Go, this can be done with an independent binary distribution across ALL platforms that Go supports, including Linux, macOS, Windows and ARM.
 
 ## Open Source Components
 
