@@ -24,15 +24,15 @@ name: 二进制安装
 
 本页仅展示最新版的二进制，旧版的二进制可以在 [GitHub release](https://github.com/gogs/gogs/releases) 上查看。
 
-### 0.13.3 @ 2025-06-08
+### 0.13.4 @ 2026-01-23
 
-|系统名称|系统类型|SQLite|PAM|下载 ([GitHub](https://github.com/gogs/gogs/releases/tag/v0.13.3))|
+|系统名称|系统类型|SQLite|PAM|下载 ([GitHub](https://github.com/gogs/gogs/releases/tag/v0.13.4))|
 |------|----|------|---|--------|
-|Linux|amd64|✅|✅|HTTPS: [ZIP](https://github.com/gogs/gogs/releases/download/v0.13.3/gogs_0.13.3_linux_amd64.zip) \| [TAR.GZ](https://github.com/gogs/gogs/releases/download/v0.13.3/gogs_0.13.3_linux_amd64.tar.gz)|
-|Linux|armv8|✅|✅|HTTPS: [ZIP](https://github.com/gogs/gogs/releases/download/v0.13.3/gogs_0.13.3_linux_armv8.zip) \| [TAR.GZ](https://github.com/gogs/gogs/releases/download/v0.13.3/gogs_0.13.3_linux_armv8.tar.gz)|
-|Windows|amd64|✅|❌|HTTPS: [ZIP](https://github.com/gogs/gogs/releases/download/v0.13.3/gogs_0.13.3_windows_amd64.zip) \| [ZIP w/ mws](https://github.com/gogs/gogs/releases/download/v0.13.3/gogs_0.13.3_windows_amd64_mws.zip)|
-|macOS|amd64|✅|❌|HTTPS: [ZIP](https://github.com/gogs/gogs/releases/download/v0.13.3/gogs_0.13.3_darwin_amd64.zip)|
-|macOS|arm64|✅|❌|HTTPS: [ZIP](https://github.com/gogs/gogs/releases/download/v0.13.3/gogs_0.13.3_darwin_arm64.zip)|
+|Linux|amd64|✅|✅|HTTPS: [ZIP](https://github.com/gogs/gogs/releases/download/v0.13.4/gogs_0.13.4_linux_amd64.zip) \| [TAR.GZ](https://github.com/gogs/gogs/releases/download/v0.13.4/gogs_0.13.4_linux_amd64.tar.gz)|
+|Linux|armv8|✅|✅|HTTPS: [ZIP](https://github.com/gogs/gogs/releases/download/v0.13.4/gogs_0.13.4_linux_armv8.zip) \| [TAR.GZ](https://github.com/gogs/gogs/releases/download/v0.13.4/gogs_0.13.4_linux_armv8.tar.gz)|
+|Windows|amd64|✅|❌|HTTPS: [ZIP](https://github.com/gogs/gogs/releases/download/v0.13.4/gogs_0.13.4_windows_amd64.zip) \| [ZIP w/ mws](https://github.com/gogs/gogs/releases/download/v0.13.4/gogs_0.13.4_windows_amd64_mws.zip)|
+|macOS|amd64|✅|❌|HTTPS: [ZIP](https://github.com/gogs/gogs/releases/download/v0.13.4/gogs_0.13.4_darwin_amd64.zip)|
+|macOS|arm64|✅|❌|HTTPS: [ZIP](https://github.com/gogs/gogs/releases/download/v0.13.4/gogs_0.13.4_darwin_arm64.zip)|
 
 ### 0.12.11 @ 2023-02-25
 
