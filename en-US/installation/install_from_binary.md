@@ -4,55 +4,18 @@ name: From binary
 
 # Install from binary
 
-All downloads come with support for **MySQL**, **PostgreSQL**, and **TiDB**, and support self-signed certificates (build tag `cert`).
+All downloads come with support for **PostgreSQL**, **MySQL**, and **SQLite 3** as database backend.
 
-The Windows downloads with "mws" have built-in Windows service support; if you use NSSM, pick the alternative Windows download.
+The Windows downloads with "mws" suffix have built-in Windows service support; if you use NSSM, download the normal versions for Windows.
+
+Downloads are available in [dl.gogs.io](https://dl.gogs.io) and [GitHub releases](https://github.com/gogs/gogs/releases).
 
 ## How to use downloads?
 
-0. Check that [prerequisites are installed](/docs/installation)
-1. Extract the archive.
-2. `cd` into the directory that was just created.
-3. Execute `./gogs web`.
-4. Gogs will start up a HTTP service at port `3000` as default. Browse `/install` for initial configuration (e.g. http://localhost:3000/install).
+1. Check that [prerequisites are installed](/docs/installation)
+2. Extract the archive.
+3. `cd` into the directory that was just created.
+4. Execute `./gogs web`.
+5. Gogs will start up a HTTP service at port `3000` as default. Browse `/install` for initial configuration (e.g. http://localhost:3000/install).
 
 To go further, see [Configuration and run](/docs/installation/configuration_and_run.html).
-
-## Downloads
-
-Below are links to downloads for the latest releases. Older downloads can be found at [releases](https://github.com/gogs/gogs/releases).
-
-### 0.13.4 @ 2026-01-23
-
-|System|Type|SQLite|PAM|Download ([GitHub](https://github.com/gogs/gogs/releases/tag/v0.13.4))|
-|------|----|------|---|--------|
-|Linux|amd64|✅|❌|HTTPS: [ZIP](https://github.com/gogs/gogs/releases/download/v0.13.4/gogs_0.13.4_linux_amd64.zip) \| [TAR.GZ](https://github.com/gogs/gogs/releases/download/v0.13.4/gogs_0.13.4_linux_amd64.tar.gz)|
-|Linux|armv8|✅|❌|HTTPS: [ZIP](https://github.com/gogs/gogs/releases/download/v0.13.4/gogs_0.13.4_linux_armv8.zip) \| [TAR.GZ](https://github.com/gogs/gogs/releases/download/v0.13.4/gogs_0.13.4_linux_armv8.tar.gz)|
-|Windows|amd64|✅|❌|HTTPS: [ZIP](https://github.com/gogs/gogs/releases/download/v0.13.4/gogs_0.13.4_windows_amd64.zip) \| [ZIP w/ mws](https://github.com/gogs/gogs/releases/download/v0.13.4/gogs_0.13.4_windows_amd64_mws.zip)|
-|macOS|amd64|✅|❌|HTTPS: [ZIP](https://github.com/gogs/gogs/releases/download/v0.13.4/gogs_0.13.4_darwin_amd64.zip)|
-|macOS|arm64|✅|❌|HTTPS: [ZIP](https://github.com/gogs/gogs/releases/download/v0.13.4/gogs_0.13.4_darwin_arm64.zip)|
-
-### 0.12.11 @ 2023-02-25
-
-|System|Type|SQLite|PAM|Download ([GitHub](https://github.com/gogs/gogs/releases/tag/v0.12.11))|
-|------|----|------|---|--------|
-|Linux|386|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.12.11/gogs_0.12.11_linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/0.12.11/gogs_0.12.11_linux_386.tar.gz)|
-|Linux|amd64|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.12.11/gogs_0.12.11_linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/0.12.11/gogs_0.12.11_linux_amd64.tar.gz)|
-|Linux|armv7|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.12.11/gogs_0.12.11_linux_armv7.zip) \| [TAR.GZ](https://dl.gogs.io/0.12.11/gogs_0.12.11_linux_armv7.tar.gz)|
-|Linux|armv8|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.12.11/gogs_0.12.11_linux_armv8.zip) \| [TAR.GZ](https://dl.gogs.io/0.12.11/gogs_0.12.11_linux_armv8.tar.gz)|
-|Windows|amd64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.12.11/gogs_0.12.11_windows_amd64.zip) \| [ZIP w/ mws](https://dl.gogs.io/0.12.11/gogs_0.12.11_windows_amd64_mws.zip)|
-|macOS|amd64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.12.11/gogs_0.12.11_darwin_amd64.zip)|
-|macOS|arm64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.12.11/gogs_0.12.11_darwin_arm64.zip)|
-
-### 0.11.91 @ 2019-08-11
-
-|System|Type|SQLite|PAM|Download ([GitHub](https://github.com/gogs/gogs/releases/tag/v0.11.91))|
-|------|----|------|---|--------|
-|Linux|386|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.11.91/gogs_0.11.91_linux_386.zip) \| [TAR.GZ](https://dl.gogs.io/0.11.91/gogs_0.11.91_linux_386.tar.gz)|
-|Linux|amd64|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.11.91/gogs_0.11.91_linux_amd64.zip) \| [TAR.GZ](https://dl.gogs.io/0.11.91/gogs_0.11.91_linux_amd64.tar.gz)|
-|Linux|armv5|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/0.11.91/gogs_0.11.91_linux_armv5.zip)|
-|Linux|armv6|❌|❌|HTTPS: [ZIP](https://dl.gogs.io/0.11.91/gogs_0.11.91_linux_armv6.zip)|
-|Raspberry Pi|v2/v3 / armv7|✅|✅|HTTPS: [ZIP](https://dl.gogs.io/0.11.91/gogs_0.11.91_raspi_armv7.zip) \| [TAR.GZ](https://dl.gogs.io/0.11.91/gogs_0.11.91_raspi_armv7.tar.gz)|
-|Windows|386|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.11.91/gogs_0.11.91_windows_386.zip) \| [ZIP w/ mws](https://dl.gogs.io/0.11.91/gogs_0.11.91_windows_386_mws.zip)|
-|Windows|amd64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.11.91/gogs_0.11.91_windows_amd64.zip) \| [ZIP w/ mws](https://dl.gogs.io/0.11.91/gogs_0.11.91_windows_amd64_mws.zip)|
-|macOS|amd64|✅|❌|HTTPS: [ZIP](https://dl.gogs.io/0.11.91/gogs_0.11.91_darwin_amd64.zip)|
