@@ -104,7 +104,7 @@ Jede Konfiguration, die mit :exclamation: markiert ist, solltest du auf dem Stan
 - `SKIP_TLS_VERIFY`: Entscheidet ob unsichere Zertifikate erlaubt sind oder nicht.
 - `PAGING_NUM`: Anzahl der Webhook-Historie, die auf einer Seite angezeigt wird.
 
-## Mailer (`mailer`)
+## Mailer (`email`)
 
 - `ENABLED`: Aktivieren, um den Mail-Service zu benutzen.
 - `DISABLE_HELO`: HELO-Operation ausschalten.
@@ -112,7 +112,7 @@ Jede Konfiguration, die mit :exclamation: markiert ist, solltest du auf dem Stan
 - `HOST`: SMTP Server-Adresse und -Port (Beispiel: smtp.gogs.io:587).
 - `FROM`: Absender-Adresse, RFC 5322. Es kann eine einfache Adresse sein oder das "Name" <email@example.com> Format.
 - `USER`: Benutzername für den Mailer (Normalerweise deine e-Mail-Adresse).
-- `PASSWD`: Passwort für den Mailer.
+- `PASSWORD`: Passwort für den Mailer.
 - `SKIP_VERIFY`: Selbstsignierte Zertifikate nicht überprüfen.
 
 Hinweis: Gogs unterstützt nur SMTP mit STARTTLS.

@@ -165,7 +165,7 @@ name: 配置文件手册
 `SKIP_TLS_VERIFY`|指示是否允许向具有非信任证书的地址发送通知
 `PAGING_NUM`|Web 钩子历史页面每页显示记录条数
 
-### 邮件 (`mailer`)
+### 邮件 (`email`)
 
 名称|描述
 ----|----
@@ -177,7 +177,7 @@ name: 配置文件手册
 `SKIP_VERIFY`|不验证自签发证书的有效性
 `FROM`|邮箱的来自地址，遵循 RFC 5322规范，可以是一个单纯的邮箱地址或者 `"名字" <email@example.com>` 的形式
 `USER`|邮箱用户名
-`PASSWD`|邮箱密码
+`PASSWORD`|邮箱密码
 `USE_PLAIN_TEXT`|使用 `text/plain` 作为邮件内容格式
 
 备注：Gogs 仅支持使用 STARTTLS 的 SMTP 协议
